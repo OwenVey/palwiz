@@ -1,9 +1,10 @@
 "use client";
-
-import { Disclosure } from "@headlessui/react";
+import * as Accordion from "@radix-ui/react-accordion";
 import { cn } from "@/lib/utils";
 import { ThemeSelector } from "./ThemeSelector";
 import { MenuIcon, XIcon } from "lucide-react";
+import { Button } from "./ui/button";
+import Link from "next/link";
 
 const navigation = [
   { name: "Dashboard", href: "#", current: true },
@@ -14,22 +15,24 @@ const navigation = [
 
 export function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-gray-800">
-      {({ open }) => (
-        <>
+    <Accordion.Root type="single" collapsible asChild>
+      <Accordion.Item value="nav" asChild>
+        <nav className="bg-gray-800">
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-                  <span className="absolute -inset-0.5" />
-                  <span className="sr-only">Open main menu</span>
-                  {open ? (
-                    <XIcon className="block h-6 w-6" aria-hidden="true" />
-                  ) : (
-                    <MenuIcon className="block h-6 w-6" aria-hidden="true" />
-                  )}
-                </Disclosure.Button>
+                <Accordion.Header>
+                  <Accordion.Trigger className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                    <span className="absolute -inset-0.5" />
+                    <span className="sr-only">Open main menu</span>
+                    {false ? (
+                      <XIcon className="block h-6 w-6" aria-hidden="true" />
+                    ) : (
+                      <MenuIcon className="block h-6 w-6" aria-hidden="true" />
+                    )}
+                  </Accordion.Trigger>
+                </Accordion.Header>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
@@ -64,14 +67,10 @@ export function Navbar() {
               </div>
             </div>
           </div>
-
-          <Disclosure.Panel className="sm:hidden">
-            <div className="space-y-1 px-2 pb-3 pt-2">
-              {navigation.map((item) => (
-                <Disclosure.Button
-                  key={item.name}
-                  as="a"
-                  href={item.href}
+          <Accordion.Content className="space-y-1 px-2 pb-3 pt-2 sm:hidden">
+            {navigation.map((item) => (
+              <Accordion.Trigger key={item.name} asChild>
+                <Link
                   className={cn(
                     item.current
                       ? "bg-gray-900 text-white"
@@ -79,14 +78,15 @@ export function Navbar() {
                     "block rounded-md px-3 py-2 text-base font-medium"
                   )}
                   aria-current={item.current ? "page" : undefined}
+                  href={item.href}
                 >
                   {item.name}
-                </Disclosure.Button>
-              ))}
-            </div>
-          </Disclosure.Panel>
-        </>
-      )}
-    </Disclosure>
+                </Link>
+              </Accordion.Trigger>
+            ))}
+          </Accordion.Content>
+        </nav>
+      </Accordion.Item>
+    </Accordion.Root>
   );
 }
