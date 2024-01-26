@@ -1,4 +1,17 @@
+import * as radixColors from '@radix-ui/colors';
 import type { Config } from 'tailwindcss';
+import { createPlugin } from 'windy-radix-palette';
+
+const colors = createPlugin({
+  colors: {
+    gray: radixColors.gray,
+    grayDark: radixColors.grayDark,
+    cyan: radixColors.cyan,
+    cyanDark: radixColors.cyan,
+    red: radixColors.red,
+    redDark: radixColors.redDark,
+  },
+});
 
 const config = {
   darkMode: ['class'],
@@ -13,6 +26,9 @@ const config = {
       },
     },
     extend: {
+      colors: {
+        primary: colors.alias('cyan'),
+      },
       keyframes: {
         'accordion-down': {
           from: { height: '0' },
@@ -29,7 +45,7 @@ const config = {
       },
     },
   },
-  plugins: [require('tailwindcss-animate')],
+  plugins: [colors.plugin, require('tailwindcss-animate')],
 } satisfies Config;
 
 export default config;
