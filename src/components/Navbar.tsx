@@ -1,16 +1,15 @@
-"use client";
-import * as Accordion from "@radix-ui/react-accordion";
-import { cn } from "@/lib/utils";
-import { ThemeSelector } from "./ThemeSelector";
-import { MenuIcon, XIcon } from "lucide-react";
-import { Button } from "./ui/button";
-import Link from "next/link";
+'use client';
+import { ThemeSelector } from '@/components/ThemeSelector';
+import { cn } from '@/lib/utils';
+import * as Accordion from '@radix-ui/react-accordion';
+import { MenuIcon, XIcon } from 'lucide-react';
+import Link from 'next/link';
 
 const navigation = [
-  { name: "Dashboard", href: "#", current: true },
-  { name: "Team", href: "#", current: false },
-  { name: "Projects", href: "#", current: false },
-  { name: "Calendar", href: "#", current: false },
+  { name: 'Dashboard', href: '#', current: true },
+  { name: 'Team', href: '#', current: false },
+  { name: 'Projects', href: '#', current: false },
+  { name: 'Calendar', href: '#', current: false },
 ];
 
 export function Navbar() {
@@ -49,12 +48,10 @@ export function Navbar() {
                         key={item.name}
                         href={item.href}
                         className={cn(
-                          item.current
-                            ? "bg-gray-900 text-white"
-                            : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                          "rounded-md px-3 py-2 text-sm font-medium"
+                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                          'rounded-md px-3 py-2 text-sm font-medium',
                         )}
-                        aria-current={item.current ? "page" : undefined}
+                        aria-current={item.current ? 'page' : undefined}
                       >
                         {item.name}
                       </a>
@@ -72,12 +69,10 @@ export function Navbar() {
               <Accordion.Trigger key={item.name} asChild>
                 <Link
                   className={cn(
-                    item.current
-                      ? "bg-gray-900 text-white"
-                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                    "block rounded-md px-3 py-2 text-base font-medium"
+                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                    'block rounded-md px-3 py-2 text-base font-medium',
                   )}
-                  aria-current={item.current ? "page" : undefined}
+                  aria-current={item.current ? 'page' : undefined}
                   href={item.href}
                 >
                   {item.name}

@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import "leaflet/dist/leaflet.css";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import L, { LatLngBoundsExpression, LatLngExpression } from "leaflet";
+import L, { LatLngBoundsExpression } from 'leaflet';
+import 'leaflet/dist/leaflet.css';
+import { MapContainer, TileLayer } from 'react-leaflet';
 
 const Map = () => {
   const bounds = [
@@ -17,16 +17,11 @@ const Map = () => {
       zoom={1}
       worldCopyJump={true}
       maxBounds={bounds}
-      style={{ height: "100vh", width: "100%" }}
+      style={{ height: '100vh', width: '100%' }}
       maxZoom={MAX_ZOOM}
     >
       {/* Replace with your own custom tile */}
-      <TileLayer
-        url="http://localhost:1234/tiles/{z}/{x}/{y}.png"
-        noWrap={true}
-        bounds={bounds}
-        maxZoom={MAX_ZOOM}
-      />
+      <TileLayer url="http://localhost:1234/tiles/{z}/{x}/{y}.png" noWrap={true} bounds={bounds} maxZoom={MAX_ZOOM} />
     </MapContainer>
   );
 };
