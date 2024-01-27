@@ -29,6 +29,10 @@ const config = {
       colors: {
         primary: colors.alias('cyan'),
       },
+      fontFamily: {
+        sans: ['var(--font-inter)'],
+        mono: ['var(--font-geist-mono)'],
+      },
       keyframes: {
         'accordion-down': {
           from: { height: '0' },

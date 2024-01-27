@@ -1,6 +1,7 @@
 'use client';
 import { Logo } from '@/components/Logo';
 import { ThemeSelector } from '@/components/ThemeSelector';
+import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import * as Accordion from '@radix-ui/react-accordion';
 import { MenuIcon, XIcon } from 'lucide-react';
@@ -20,27 +21,29 @@ export function Navbar() {
   return (
     <Accordion.Root type="single" collapsible asChild>
       <Accordion.Item value="nav" asChild>
-        <nav className="border-gray-6 border-b">
+        <nav className="border-b border-gray-6">
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
                 <Accordion.Header>
-                  <Accordion.Trigger className="text-gray-10 hover:text-gray-12 hover:bg-gray-3 relative inline-flex items-center justify-center rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-                    <span className="absolute -inset-0.5" />
-                    <span className="sr-only">Open main menu</span>
-                    {false ? (
-                      <XIcon className="block size-6" aria-hidden="true" />
-                    ) : (
-                      <MenuIcon className="block size-6" aria-hidden="true" />
-                    )}
+                  <Accordion.Trigger asChild>
+                    <Button variant="ghost" size="icon" className="text-gray-8 hover:text-gray-12">
+                      <span className="absolute -inset-0.5" />
+                      <span className="sr-only">Open main menu</span>
+                      {false ? (
+                        <XIcon className="block size-6" aria-hidden="true" />
+                      ) : (
+                        <MenuIcon className="block size-6" aria-hidden="true" />
+                      )}
+                    </Button>
                   </Accordion.Trigger>
                 </Accordion.Header>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <Link href="/">
-                    <Logo className="text-primary-9 h-8 w-auto" />
+                    <Logo className="h-8 w-auto text-primary-9" />
                   </Link>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
