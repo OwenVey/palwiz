@@ -4,15 +4,15 @@ import { ThemeSelector } from '@/components/ThemeSelector';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import * as Accordion from '@radix-ui/react-accordion';
-import { MenuIcon, XIcon } from 'lucide-react';
+import { CatIcon, HeartIcon, MapIcon, MenuIcon, PencilRulerIcon, XIcon } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 const navigation = [
-  { name: 'Pals', href: '/pals' },
-  { name: 'Breeding', href: '/breeding' },
-  { name: 'Items', href: '/items' },
-  { name: 'Map', href: '/map' },
+  { name: 'Pals', href: '/pals', icon: CatIcon },
+  { name: 'Breeding', href: '/breeding', icon: HeartIcon },
+  { name: 'Items', href: '/items', icon: PencilRulerIcon },
+  { name: 'Map', href: '/map', icon: MapIcon },
 ];
 
 export function Navbar() {
@@ -47,18 +47,19 @@ export function Navbar() {
                   </Link>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex space-x-4">
+                  <div className="flex gap-4">
                     {navigation.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}
                         className={cn(
+                          'flex items-center gap-2 rounded-md px-4 py-2 text-sm font-medium',
                           pathname === item.href
                             ? 'bg-primary-9 text-white'
                             : 'text-gray-11 hover:bg-gray-3 hover:text-gray-12',
-                          'rounded-md px-3 py-2 text-sm font-medium',
                         )}
                       >
+                        <item.icon className="size-5" />
                         {item.name}
                       </a>
                     ))}
@@ -75,13 +76,14 @@ export function Navbar() {
               <Accordion.Trigger key={item.name} asChild>
                 <Link
                   className={cn(
+                    'flex items-center gap-3 rounded-md px-3 py-2 text-base font-medium',
                     pathname === item.href
                       ? 'bg-primary-9 text-white'
                       : 'text-gray-11 hover:bg-gray-3 hover:text-gray-12',
-                    'block rounded-md px-3 py-2 text-base font-medium',
                   )}
                   href={item.href}
                 >
+                  <item.icon className="size-6" />
                   {item.name}
                 </Link>
               </Accordion.Trigger>
