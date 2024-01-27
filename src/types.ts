@@ -1,3 +1,5 @@
+import { type WORK_SUITABILITIES } from '@/constants';
+
 export interface Pal {
   aiResponse: string;
   aiSightResponse: string;
@@ -56,7 +58,7 @@ export interface Pal {
   walkSpeed: number;
   weapon: string;
   weaponEquip: boolean;
-  work: Work;
+  workSuitabilities: Record<WorkSuitability, number>;
   zukanIndex: number;
   zukanIndexSuffix: string;
   battleBGM?: string;
@@ -65,18 +67,4 @@ export interface Pal {
   overridePartnerSkillTextID?: string;
 }
 
-export interface Work {
-  gathering: number;
-  cooling: number;
-  lumbering: number;
-  kindling: number;
-  'generating-electricity': number;
-  handiwork: number;
-  mining: number;
-  farming: number;
-  'oil-extraction': number;
-  'medicine-production': number;
-  planting: number;
-  transporting: number;
-  watering: number;
-}
+export type WorkSuitability = (typeof WORK_SUITABILITIES)[number];

@@ -57,7 +57,7 @@
     "walkSpeed": 160,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -133,7 +133,7 @@
     "walkSpeed": 160,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -209,7 +209,7 @@
     "walkSpeed": 160,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -285,7 +285,7 @@
     "walkSpeed": 105,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -361,7 +361,7 @@
     "walkSpeed": 105,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 1,
       "lumbering": 0,
@@ -437,7 +437,7 @@
     "walkSpeed": 150,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -513,7 +513,7 @@
     "walkSpeed": 40,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 1,
       "cooling": 0,
       "lumbering": 1,
@@ -589,7 +589,7 @@
     "walkSpeed": 60,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 1,
       "cooling": 0,
       "lumbering": 0,
@@ -665,7 +665,7 @@
     "walkSpeed": 120,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 2,
@@ -741,7 +741,7 @@
     "walkSpeed": 120,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 2,
@@ -817,7 +817,7 @@
     "walkSpeed": 120,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -893,7 +893,7 @@
     "walkSpeed": 200,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 2,
       "cooling": 0,
       "lumbering": 0,
@@ -969,7 +969,7 @@
     "walkSpeed": 140,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 2,
@@ -1045,7 +1045,7 @@
     "walkSpeed": 60,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -1121,7 +1121,7 @@
     "walkSpeed": 180,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 1,
       "cooling": 0,
       "lumbering": 0,
@@ -1197,7 +1197,7 @@
     "walkSpeed": 100,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 2,
@@ -1273,7 +1273,7 @@
     "walkSpeed": 60,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -1349,7 +1349,7 @@
     "walkSpeed": 60,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 1,
       "lumbering": 0,
@@ -1425,7 +1425,7 @@
     "walkSpeed": 130,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 1,
@@ -1501,7 +1501,7 @@
     "walkSpeed": 80,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -1577,7 +1577,7 @@
     "walkSpeed": 100,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 1,
       "cooling": 0,
       "lumbering": 0,
@@ -1653,7 +1653,7 @@
     "walkSpeed": 130,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 1,
       "cooling": 0,
       "lumbering": 0,
@@ -1729,7 +1729,7 @@
     "walkSpeed": 60,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 1,
       "lumbering": 0,
@@ -1805,7 +1805,7 @@
     "walkSpeed": 200,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -1881,7 +1881,7 @@
     "walkSpeed": 80,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -1957,7 +1957,7 @@
     "walkSpeed": 80,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -2033,7 +2033,7 @@
     "walkSpeed": 40,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -2109,7 +2109,7 @@
     "walkSpeed": 175,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -2185,7 +2185,7 @@
     "walkSpeed": 175,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -2261,7 +2261,7 @@
     "walkSpeed": 150,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -2337,7 +2337,7 @@
     "walkSpeed": 100,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 1,
       "cooling": 0,
       "lumbering": 0,
@@ -2413,7 +2413,7 @@
     "walkSpeed": 100,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 1,
       "cooling": 1,
       "lumbering": 0,
@@ -2489,7 +2489,7 @@
     "walkSpeed": 200,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -2565,7 +2565,7 @@
     "walkSpeed": 200,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -2641,7 +2641,7 @@
     "walkSpeed": 150,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 1,
@@ -2717,7 +2717,7 @@
     "walkSpeed": 150,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 1,
@@ -2793,7 +2793,7 @@
     "walkSpeed": 83,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 2,
@@ -2869,7 +2869,7 @@
     "walkSpeed": 83,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 2,
@@ -2945,7 +2945,7 @@
     "walkSpeed": 100,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -3021,7 +3021,7 @@
     "walkSpeed": 280,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 3,
       "lumbering": 2,
@@ -3097,7 +3097,7 @@
     "walkSpeed": 62,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -3173,7 +3173,7 @@
     "walkSpeed": 200,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -3249,7 +3249,7 @@
     "walkSpeed": 200,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 1,
       "cooling": 0,
       "lumbering": 0,
@@ -3325,7 +3325,7 @@
     "walkSpeed": 170,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 1,
@@ -3401,7 +3401,7 @@
     "walkSpeed": 150,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -3477,7 +3477,7 @@
     "walkSpeed": 60,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 1,
       "cooling": 0,
       "lumbering": 0,
@@ -3553,7 +3553,7 @@
     "walkSpeed": 10,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -3629,7 +3629,7 @@
     "walkSpeed": 100,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 2,
@@ -3705,7 +3705,7 @@
     "walkSpeed": 80,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -3781,7 +3781,7 @@
     "walkSpeed": 80,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 3,
       "lumbering": 0,
@@ -3857,7 +3857,7 @@
     "walkSpeed": 160,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 2,
       "cooling": 0,
       "lumbering": 0,
@@ -3933,7 +3933,7 @@
     "walkSpeed": 100,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 2,
       "cooling": 0,
       "lumbering": 1,
@@ -4009,7 +4009,7 @@
     "walkSpeed": 100,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 2,
       "cooling": 0,
       "lumbering": 1,
@@ -4085,7 +4085,7 @@
     "walkSpeed": 60,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -4161,7 +4161,7 @@
     "walkSpeed": 60,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -4237,7 +4237,7 @@
     "walkSpeed": 130,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -4313,7 +4313,7 @@
     "walkSpeed": 140,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 1,
       "cooling": 0,
       "lumbering": 0,
@@ -4389,7 +4389,7 @@
     "walkSpeed": 140,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 1,
       "cooling": 0,
       "lumbering": 0,
@@ -4465,7 +4465,7 @@
     "walkSpeed": 105,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -4541,7 +4541,7 @@
     "walkSpeed": 350,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -4617,7 +4617,7 @@
     "walkSpeed": 350,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 2,
       "lumbering": 0,
@@ -4693,7 +4693,7 @@
     "walkSpeed": 50,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 1,
       "cooling": 0,
       "lumbering": 0,
@@ -4769,7 +4769,7 @@
     "walkSpeed": 120,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 2,
@@ -4845,7 +4845,7 @@
     "walkSpeed": 120,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 2,
@@ -4921,7 +4921,7 @@
     "walkSpeed": 80,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -4997,7 +4997,7 @@
     "walkSpeed": 120,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 4,
       "lumbering": 0,
@@ -5073,7 +5073,7 @@
     "walkSpeed": 120,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 4,
       "cooling": 0,
       "lumbering": 0,
@@ -5149,7 +5149,7 @@
     "walkSpeed": 135,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 2,
@@ -5225,7 +5225,7 @@
     "walkSpeed": 135,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 2,
       "lumbering": 2,
@@ -5301,7 +5301,7 @@
     "walkSpeed": 100,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -5377,7 +5377,7 @@
     "walkSpeed": 75,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -5453,7 +5453,7 @@
     "walkSpeed": 75,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -5529,7 +5529,7 @@
     "walkSpeed": 200,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -5605,7 +5605,7 @@
     "walkSpeed": 400,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -5681,7 +5681,7 @@
     "walkSpeed": 70,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -5757,7 +5757,7 @@
     "walkSpeed": 70,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 2,
       "lumbering": 2,
@@ -5833,7 +5833,7 @@
     "walkSpeed": 80,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 1,
       "cooling": 0,
       "lumbering": 0,
@@ -5909,7 +5909,7 @@
     "walkSpeed": 100,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 2,
       "lumbering": 0,
@@ -5985,7 +5985,7 @@
     "walkSpeed": 60,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 1,
       "cooling": 0,
       "lumbering": 0,
@@ -6061,7 +6061,7 @@
     "walkSpeed": 145,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -6137,7 +6137,7 @@
     "walkSpeed": 170,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -6213,7 +6213,7 @@
     "walkSpeed": 70,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 1,
       "cooling": 0,
       "lumbering": 0,
@@ -6289,7 +6289,7 @@
     "walkSpeed": 100,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -6365,7 +6365,7 @@
     "walkSpeed": 100,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -6441,7 +6441,7 @@
     "walkSpeed": 120,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 1,
       "cooling": 0,
       "lumbering": 0,
@@ -6517,7 +6517,7 @@
     "walkSpeed": 55,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -6593,7 +6593,7 @@
     "walkSpeed": 100,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 2,
       "lumbering": 3,
@@ -6669,7 +6669,7 @@
     "walkSpeed": 100,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 3,
@@ -6745,7 +6745,7 @@
     "walkSpeed": 150,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 2,
       "cooling": 0,
       "lumbering": 0,
@@ -6821,7 +6821,7 @@
     "walkSpeed": 150,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 2,
       "cooling": 0,
       "lumbering": 0,
@@ -6897,7 +6897,7 @@
     "walkSpeed": 100,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 1,
       "cooling": 0,
       "lumbering": 0,
@@ -6973,7 +6973,7 @@
     "walkSpeed": 100,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 2,
       "cooling": 0,
       "lumbering": 0,
@@ -7049,7 +7049,7 @@
     "walkSpeed": 100,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 2,
       "cooling": 0,
       "lumbering": 0,
@@ -7125,7 +7125,7 @@
     "walkSpeed": 250,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 2,
       "cooling": 0,
       "lumbering": 1,
@@ -7201,7 +7201,7 @@
     "walkSpeed": 250,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 1,
       "cooling": 0,
       "lumbering": 1,
@@ -7277,7 +7277,7 @@
     "walkSpeed": 140,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 2,
       "cooling": 0,
       "lumbering": 0,
@@ -7353,7 +7353,7 @@
     "walkSpeed": 100,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 2,
@@ -7429,7 +7429,7 @@
     "walkSpeed": 100,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 2,
@@ -7505,7 +7505,7 @@
     "walkSpeed": 87,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 1,
@@ -7581,7 +7581,7 @@
     "walkSpeed": 210,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -7657,7 +7657,7 @@
     "walkSpeed": 60,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -7733,7 +7733,7 @@
     "walkSpeed": 150,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -7809,7 +7809,7 @@
     "walkSpeed": 195,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 3,
       "cooling": 0,
       "lumbering": 2,
@@ -7885,7 +7885,7 @@
     "walkSpeed": 130,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 2,
       "lumbering": 0,
@@ -7961,7 +7961,7 @@
     "walkSpeed": 800,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 3,
       "cooling": 0,
       "lumbering": 0,
@@ -8037,7 +8037,7 @@
     "walkSpeed": 140,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 1,
       "cooling": 0,
       "lumbering": 0,
@@ -8113,7 +8113,7 @@
     "walkSpeed": 48,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 1,
       "cooling": 0,
       "lumbering": 1,
@@ -8189,7 +8189,7 @@
     "walkSpeed": 180,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 2,
@@ -8265,7 +8265,7 @@
     "walkSpeed": 90,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 2,
@@ -8341,7 +8341,7 @@
     "walkSpeed": 80,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 1,
       "cooling": 0,
       "lumbering": 0,
@@ -8417,7 +8417,7 @@
     "walkSpeed": 80,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 1,
       "cooling": 3,
       "lumbering": 0,
@@ -8493,7 +8493,7 @@
     "walkSpeed": 50,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -8569,7 +8569,7 @@
     "walkSpeed": 100,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 1,
       "cooling": 1,
       "lumbering": 0,
@@ -8645,7 +8645,7 @@
     "walkSpeed": 120,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 2,
       "cooling": 2,
       "lumbering": 0,
@@ -8721,7 +8721,7 @@
     "walkSpeed": 145,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -8797,7 +8797,7 @@
     "walkSpeed": 100,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 1,
       "cooling": 0,
       "lumbering": 0,
@@ -8873,7 +8873,7 @@
     "walkSpeed": 200,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 1,
       "cooling": 0,
       "lumbering": 0,
@@ -8949,7 +8949,7 @@
     "walkSpeed": 110,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 3,
@@ -9025,7 +9025,7 @@
     "walkSpeed": 100,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 2,
@@ -9101,7 +9101,7 @@
     "walkSpeed": 60,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 1,
       "cooling": 0,
       "lumbering": 0,
@@ -9177,7 +9177,7 @@
     "walkSpeed": 110,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 2,
       "lumbering": 0,
@@ -9253,7 +9253,7 @@
     "walkSpeed": 180,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 1,
       "cooling": 1,
       "lumbering": 0,
@@ -9329,7 +9329,7 @@
     "walkSpeed": 240,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 2,
       "cooling": 0,
       "lumbering": 0,
@@ -9405,7 +9405,7 @@
     "walkSpeed": 100,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -9481,7 +9481,7 @@
     "walkSpeed": 200,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -9557,7 +9557,7 @@
     "walkSpeed": 160,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 1,
       "cooling": 0,
       "lumbering": 3,
@@ -9633,7 +9633,7 @@
     "walkSpeed": 150,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -9709,7 +9709,7 @@
     "walkSpeed": 350,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 2,
@@ -9785,7 +9785,7 @@
     "walkSpeed": 150,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 2,
       "cooling": 0,
       "lumbering": 0,
@@ -9861,7 +9861,7 @@
     "walkSpeed": 64,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 2,
       "cooling": 0,
       "lumbering": 0,
@@ -9937,7 +9937,7 @@
     "walkSpeed": 150,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -10013,7 +10013,7 @@
     "walkSpeed": 200,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 2,
@@ -10089,7 +10089,7 @@
     "walkSpeed": 185,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -10165,7 +10165,7 @@
     "walkSpeed": 40,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 1,
       "cooling": 0,
       "lumbering": 0,
@@ -10241,7 +10241,7 @@
     "walkSpeed": 150,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -10317,7 +10317,7 @@
     "walkSpeed": 98,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,
@@ -10393,7 +10393,7 @@
     "walkSpeed": 100,
     "weapon": "EPalWeaponType::None",
     "weaponEquip": false,
-    "work": {
+    "workSuitabilities": {
       "gathering": 0,
       "cooling": 0,
       "lumbering": 0,

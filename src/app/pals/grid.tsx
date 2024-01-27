@@ -1,18 +1,20 @@
 'use client';
 
 import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Separator } from '@/components/ui/separator';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
+import { PAL_ELEMENTS, WORK_SUITABILITIES } from '@/constants';
 import { isWithinRange } from '@/lib/utils';
-import { type Pal } from '@/types';
+import { type Pal, type WorkSuitability } from '@/types';
 import { SearchIcon } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { parseAsString, useQueryState } from 'nuqs';
+import { parseAsArrayOf, parseAsString, parseAsStringLiteral, useQueryState } from 'nuqs';
 
 type PalsGridProps = {
   pals: Pal[];
@@ -21,13 +23,19 @@ type PalsGridProps = {
 export default function PalsGrid({ pals }: PalsGridProps) {
   const [search, setSearch] = useQueryState('search', parseAsString.withDefault(''));
   const [rarity, setRarity] = useQueryState('rarity', parseAsString.withDefault(''));
+  const [elements, setElements] = useQueryState('elements', parseAsArrayOf(parseAsString).withDefault([]));
+  const [work, setWork] = useQueryState('work', parseAsStringLiteral(WORK_SUITABILITIES));
 
   const filteredPals = pals
-    .filter((pal) => (search === '' ? true : pal.name.toLowerCase().includes(search.toLowerCase())))
-    .filter((pal) => isCorrectRarity(rarity, pal.rarity));
+    .filter((pal) => (search ? pal.name.toLowerCase().includes(search.toLowerCase()) : true))
+    .filter((pal) => (rarity ? isCorrectRarity(rarity ?? 'all', pal.rarity) : true))
+    .filter((pal) =>
+      elements?.length ? [pal.elementType1, pal.elementType2].filter(Boolean).some((e) => elements.includes(e!)) : true,
+    )
+    .filter((pal) => (work ? pal.workSuitabilities[work] > 0 : true))
+    .sort((pal1, pal2) => (work ? pal2.workSuitabilities[work] - pal1.workSuitabilities[work] : 0));
 
-  const elements = [...new Set(pals.flatMap((pal) => pal.elementType1))];
-  const workSutibilities = [...new Set(pals.flatMap((pal) => Object.keys(pal.work)))];
+  console.log({ search, rarity, elements, work });
 
   function isCorrectRarity(rarity: string, rarityNum: number) {
     if (rarity === 'all') return true;
@@ -52,7 +60,7 @@ export default function PalsGrid({ pals }: PalsGridProps) {
 
         <div className="flex-1">
           <Label className="mb-1">Rarity</Label>
-          <Select value={rarity} onValueChange={setRarity}>
+          <Select value={rarity} onValueChange={(v) => setRarity(v && v !== 'all' ? v : null)}>
             <SelectTrigger>
               <SelectValue placeholder="Select rarity" />
             </SelectTrigger>
@@ -76,8 +84,13 @@ export default function PalsGrid({ pals }: PalsGridProps) {
 
         <div className="flex flex-col">
           <Label>Elements</Label>
-          <ToggleGroup type="single" className="mt-1">
-            {elements.map((e) => (
+          <ToggleGroup
+            className="mt-1"
+            type="multiple"
+            value={elements}
+            onValueChange={(e) => setElements(e.length > 0 ? e : null)}
+          >
+            {PAL_ELEMENTS.map((e) => (
               <ToggleGroupItem key={e} value={e} variant="secondary" size="icon">
                 <Image
                   className="size-6"
@@ -94,23 +107,37 @@ export default function PalsGrid({ pals }: PalsGridProps) {
         </div>
       </div>
 
-      <div className="mt-4 flex flex-col">
-        <Label>Work Sutibility</Label>
-        <ToggleGroup type="single" className="mt-1">
-          {workSutibilities.map((work) => (
-            <ToggleGroupItem key={work} value={work} variant="secondary" size="icon">
-              <Image
-                className="size-6"
-                src={`/images/work/${work}.png`}
-                alt={`${work} element`}
-                height={24}
-                width={24}
-                quality={100}
-                unoptimized
-              />
-            </ToggleGroupItem>
-          ))}
-        </ToggleGroup>
+      <div className="flex items-end justify-between">
+        <div className="mt-4 flex flex-col">
+          <Label>Work Sutibility</Label>
+          <ToggleGroup
+            type="single"
+            className="mt-1"
+            value={work ?? ''}
+            onValueChange={(v) => setWork(v === '' ? null : (v as WorkSuitability))}
+          >
+            {WORK_SUITABILITIES.map((work) => (
+              <ToggleGroupItem key={work} value={work} variant="secondary" size="icon">
+                <Image
+                  className="size-6"
+                  src={`/images/work/${work}.png`}
+                  alt={`${work} element`}
+                  height={24}
+                  width={24}
+                  quality={100}
+                  unoptimized
+                />
+              </ToggleGroupItem>
+            ))}
+          </ToggleGroup>
+        </div>
+
+        <div className="flex items-center gap-2">
+          <div className="text-sm text-gray-11">{filteredPals.length} results</div>
+          <Button asChild variant="secondary">
+            <Link href="/pals">Clear</Link>
+          </Button>
+        </div>
       </div>
 
       <Separator className="my-4" />
@@ -153,8 +180,9 @@ export default function PalsGrid({ pals }: PalsGridProps) {
               </div>
 
               <div className="absolute right-0 flex flex-col flex-wrap gap-0">
-                {Object.entries(pal.work)
-                  .filter(([_, value]) => value > 0)
+                {Object.entries(pal.workSuitabilities)
+                  .filter(([, value]) => value > 0)
+                  .sort(([, value1], [, value2]) => value2 - value1)
                   .map(([work, value]) => (
                     <Tooltip key={work}>
                       <TooltipTrigger className="flex items-center">
