@@ -2,32 +2,120 @@
 
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { Separator } from '@/components/ui/separator';
+import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
+import { isWithinRange } from '@/lib/utils';
 import { type Pal } from '@/types';
 import { SearchIcon } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
+import { parseAsString, useQueryState } from 'nuqs';
 
 type PalsGridProps = {
   pals: Pal[];
 };
 
 export default function PalsGrid({ pals }: PalsGridProps) {
-  const [search, setSearch] = useState('');
-  const filteredPals = search ? pals.filter((pal) => pal.name.toLowerCase().includes(search.toLowerCase())) : pals;
+  const [search, setSearch] = useQueryState('search', parseAsString.withDefault(''));
+  const [rarity, setRarity] = useQueryState('rarity', parseAsString.withDefault(''));
+
+  const filteredPals = pals
+    .filter((pal) => (search === '' ? true : pal.name.toLowerCase().includes(search.toLowerCase())))
+    .filter((pal) => isCorrectRarity(rarity, pal.rarity));
+
+  const elements = [...new Set(pals.flatMap((pal) => pal.elementType1))];
+  const workSutibilities = [...new Set(pals.flatMap((pal) => Object.keys(pal.work)))];
+
+  function isCorrectRarity(rarity: string, rarityNum: number) {
+    if (rarity === 'all') return true;
+    if (rarity === 'common') return isWithinRange(rarityNum, 0, 4);
+    if (rarity === 'rare') return isWithinRange(rarityNum, 5, 8);
+    if (rarity === 'epic') return isWithinRange(rarityNum, 8, 10);
+    if (rarity === 'legendary') return rarityNum > 10;
+    return true;
+  }
 
   return (
-    <div className="mt-10">
-      <Input
-        label="Search"
-        placeholder="Search pal name"
-        icon={SearchIcon}
-        value={search}
-        onChange={(event) => setSearch(event.target.value)}
-      />
+    <div>
+      <div className="flex items-end gap-4">
+        <Input
+          className="flex-1"
+          label="Search"
+          placeholder="Search pal name"
+          icon={SearchIcon}
+          value={search}
+          onChange={(event) => setSearch(event.target.value ? event.target.value : null)}
+        />
 
-      <div className="grid grid-cols-5 gap-4 py-4">
+        <div className="flex-1">
+          <Label className="mb-1">Rarity</Label>
+          <Select value={rarity} onValueChange={setRarity}>
+            <SelectTrigger>
+              <SelectValue placeholder="Select rarity" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="all">All</SelectItem>
+              <SelectItem value="common" className="text-gray-10 focus:text-gray-10">
+                Common
+              </SelectItem>
+              <SelectItem value="rare" className="text-blue-9 focus:text-blue-10 focus:bg-blue-3">
+                Rare
+              </SelectItem>
+              <SelectItem value="epic" className="text-purple-10 focus:bg-purple-3 focus:text-purple-10">
+                Epic
+              </SelectItem>
+              <SelectItem value="legendary" className="text-orange-10 focus:text-orange-10 focus:bg-orange-3">
+                Legendary
+              </SelectItem>
+            </SelectContent>
+          </Select>
+        </div>
+
+        <div className="flex flex-col">
+          <Label>Elements</Label>
+          <ToggleGroup type="single" className="mt-1">
+            {elements.map((e) => (
+              <ToggleGroupItem key={e} value={e} variant="secondary" size="icon">
+                <Image
+                  className="size-6"
+                  src={`/images/elements/${e}.png`}
+                  alt={`${e} element`}
+                  height={24}
+                  width={24}
+                  quality={100}
+                  unoptimized
+                />
+              </ToggleGroupItem>
+            ))}
+          </ToggleGroup>
+        </div>
+      </div>
+
+      <div className="mt-4 flex flex-col">
+        <Label>Work Sutibility</Label>
+        <ToggleGroup type="single" className="mt-1">
+          {workSutibilities.map((work) => (
+            <ToggleGroupItem key={work} value={work} variant="secondary" size="icon">
+              <Image
+                className="size-6"
+                src={`/images/work/${work}.png`}
+                alt={`${work} element`}
+                height={24}
+                width={24}
+                quality={100}
+                unoptimized
+              />
+            </ToggleGroupItem>
+          ))}
+        </ToggleGroup>
+      </div>
+
+      <Separator className="my-4" />
+
+      <div className="grid grid-cols-5 gap-4">
         {filteredPals.map((pal) => (
           <Link
             href={`/pals/${pal.id}`}

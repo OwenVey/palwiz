@@ -1,17 +1,18 @@
-import * as radixColors from '@radix-ui/colors';
 import type { Config } from 'tailwindcss';
 import { createPlugin } from 'windy-radix-palette';
 
-const colors = createPlugin({
-  colors: {
-    mauve: radixColors.mauve,
-    mauveDark: radixColors.mauveDark,
-    purple: radixColors.purple,
-    purpleDark: radixColors.purpleDark,
-    red: radixColors.red,
-    redDark: radixColors.redDark,
-  },
-});
+const colors = createPlugin();
+
+// const colors = createPlugin({
+//   colors: {
+//     mauve: radixColors.mauve,
+//     mauveDark: radixColors.mauveDark,
+//     purple: radixColors.purple,
+//     purpleDark: radixColors.purpleDark,
+//     red: radixColors.red,
+//     redDark: radixColors.redDark,
+//   },
+// });
 
 const config = {
   darkMode: ['class'],
