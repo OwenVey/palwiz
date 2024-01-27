@@ -1,3 +1,3 @@
 export default function MapPage() {
-  return <main>Map</main>;
+  return <div>Map</div>;
 }

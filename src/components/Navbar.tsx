@@ -40,7 +40,7 @@ export function Navbar() {
                   </Accordion.Trigger>
                 </Accordion.Header>
               </div>
-              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+              <div className="flex flex-1 items-center justify-center sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <Link href="/">
                     <Logo className="h-8 w-auto text-primary-9" />
@@ -54,7 +54,7 @@ export function Navbar() {
                         href={item.href}
                         className={cn(
                           pathname === item.href
-                            ? 'bg-gray-12 text-gray-1'
+                            ? 'bg-primary-9 text-white'
                             : 'text-gray-11 hover:bg-gray-3 hover:text-gray-12',
                           'rounded-md px-3 py-2 text-sm font-medium',
                         )}
@@ -76,8 +76,8 @@ export function Navbar() {
                 <Link
                   className={cn(
                     pathname === item.href
-                      ? 'bg-gray-900 text-white'
-                      : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                      ? 'bg-primary-9 text-white'
+                      : 'text-gray-11 hover:bg-gray-3 hover:text-gray-12',
                     'block rounded-md px-3 py-2 text-base font-medium',
                   )}
                   href={item.href}

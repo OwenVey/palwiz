@@ -13,7 +13,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Palworld',
+  title: 'Palwiz',
 };
 
 export default function RootLayout({
@@ -23,10 +23,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={cn(inter.variable, GeistMono.variable, 'bg-gray-1 font-sans')}>
+      <body className={cn(inter.variable, GeistMono.variable, 'bg-gray-1 font-sans antialiased')}>
         <Providers>
           <Navbar />
-          {children}
+          <main className="mx-auto max-w-7xl sm:px-6 lg:px-8">{children}</main>
         </Providers>
       </body>
     </html>

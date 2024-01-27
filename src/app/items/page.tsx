@@ -1,3 +1,3 @@
 export default function ItemsPage() {
-  return <main>Items</main>;
+  return <div>Items</div>;
 }

@@ -4,10 +4,10 @@ import { createPlugin } from 'windy-radix-palette';
 
 const colors = createPlugin({
   colors: {
-    gray: radixColors.gray,
-    grayDark: radixColors.grayDark,
-    cyan: radixColors.cyan,
-    cyanDark: radixColors.cyan,
+    mauve: radixColors.mauve,
+    mauveDark: radixColors.mauveDark,
+    purple: radixColors.purple,
+    purpleDark: radixColors.purpleDark,
     red: radixColors.red,
     redDark: radixColors.redDark,
   },
@@ -27,7 +27,8 @@ const config = {
     },
     extend: {
       colors: {
-        primary: colors.alias('cyan'),
+        primary: colors.alias('purple'),
+        gray: colors.alias('mauve'),
       },
       fontFamily: {
         sans: ['var(--font-inter)'],
