@@ -64,7 +64,6 @@ export default function PalsPage({ searchParams }: { searchParams: Record<string
                           height={24}
                           width={24}
                           quality={100}
-                          unoptimized
                         />
                       </TooltipTrigger>
                       <TooltipContent side="left" className="capitalize">
@@ -81,14 +80,7 @@ export default function PalsPage({ searchParams }: { searchParams: Record<string
                   .map(([work, value]) => (
                     <Tooltip key={work}>
                       <TooltipTrigger className="flex items-center">
-                        <Image
-                          src={`/images/work/${work}.png`}
-                          alt={`${work}`}
-                          height={24}
-                          width={24}
-                          quality={100}
-                          unoptimized
-                        />
+                        <Image src={`/images/work/${work}.png`} alt={`${work}`} height={24} width={24} quality={100} />
                         <span className="text-xs font-semibold text-gray-11">{value}</span>
                       </TooltipTrigger>
                       <TooltipContent side="left" className="fcapitalize">
@@ -107,7 +99,6 @@ export default function PalsPage({ searchParams }: { searchParams: Record<string
                 height={112}
                 width={112}
                 quality={100}
-                unoptimized
               />
 
               <div className="font-medium">{pal.name}</div>
