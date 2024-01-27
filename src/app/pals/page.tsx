@@ -5,7 +5,6 @@ import Image from 'next/image';
 
 export default function PalsPage() {
   const sortedPals = pals.sort((a, b) => a.zukanIndex - b.zukanIndex);
-  console.log(sortedPals.length);
 
   return (
     <main className="p-10">
@@ -13,7 +12,7 @@ export default function PalsPage() {
         {sortedPals.map((pal) => (
           <div key={pal.id} className="flex flex-col items-center rounded-lg border border-gray-6 p-2 shadow-sm">
             <Badge className="items-baseline self-start font-mono font-bold" variant="outline">
-              <span className="opacity-60">{'000'.slice(pal.zukanIndex.toString().length)}</span>
+              <span className="text-gray-8">{'000'.slice(pal.zukanIndex.toString().length)}</span>
               <span>{pal.zukanIndex}</span>
               <span className="text-[10px]">{pal.zukanIndexSuffix}</span>
             </Badge>
