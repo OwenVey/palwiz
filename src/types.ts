@@ -51,6 +51,7 @@ export interface Pal {
   slowWalkSpeed: number;
   stamina: number;
   support: number;
+  tagline: string;
   transportSpeed: number;
   tribe: string;
   viewingAngle: number;
