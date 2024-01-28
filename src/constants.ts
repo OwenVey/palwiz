@@ -30,12 +30,12 @@ export const PAL_ELEMENTS = [
 
 export const NAVIGATION = [
   { name: 'Pals', href: '/pals', icon: CatIcon, description: 'View information about Pals' },
-  { name: 'Breeding', href: '/breeding', icon: HeartIcon, description: 'Pal breeding calculator' },
   {
     name: 'Items',
     href: '/items',
     icon: PencilRulerIcon,
     description: 'List containing all information for in game items',
   },
+  { name: 'Breeding', href: '/breeding', icon: HeartIcon, description: 'Pal breeding calculator' },
   { name: 'Map', href: '/map', icon: MapIcon, description: 'Interactive map with all fast travel locations and more' },
 ] as const;

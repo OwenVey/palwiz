@@ -11,7 +11,7 @@ export default function PalsPage() {
   const sortedPals = pals.sort((a, b) => a.zukanIndex - b.zukanIndex);
 
   return (
-    <div className="mt-4">
+    <div className="py-4">
       <Suspense>
         <PalsGrid pals={sortedPals} />
       </Suspense>
