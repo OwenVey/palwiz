@@ -62,7 +62,7 @@ export default function PalsGrid({ pals }: PalsGridProps) {
           <div className="flex-1">
             <Label className="mb-1">Rarity</Label>
             <Select value={rarity} onValueChange={(v) => setRarity(v && v !== 'all' ? v : null)}>
-              <SelectTrigger className="min-w-36 sm:max-w-72">
+              <SelectTrigger className="min-w-36 sm:max-w-48">
                 <SelectValue placeholder="Select rarity" />
               </SelectTrigger>
               <SelectContent>
