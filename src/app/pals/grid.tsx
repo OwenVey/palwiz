@@ -48,101 +48,107 @@ export default function PalsGrid({ pals }: PalsGridProps) {
 
   return (
     <div>
-      <div className="flex items-end gap-4">
-        <Input
-          className="flex-1"
-          label="Search"
-          placeholder="Search pal name"
-          icon={SearchIcon}
-          value={search}
-          onChange={(event) => setSearch(event.target.value ? event.target.value : null)}
-        />
+      <div className="px-4 sm:px-0">
+        <div className="flex flex-wrap items-end gap-4">
+          <Input
+            className="w-full sm:max-w-72"
+            label="Search"
+            placeholder="Search pal name"
+            icon={SearchIcon}
+            value={search}
+            onChange={(event) => setSearch(event.target.value ? event.target.value : null)}
+          />
 
-        <div className="flex-1">
-          <Label className="mb-1">Rarity</Label>
-          <Select value={rarity} onValueChange={(v) => setRarity(v && v !== 'all' ? v : null)}>
-            <SelectTrigger>
-              <SelectValue placeholder="Select rarity" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="all">All</SelectItem>
-              <SelectItem value="common" className="text-gray-10 focus:text-gray-10">
-                Common
-              </SelectItem>
-              <SelectItem value="rare" className="text-blue-9 focus:text-blue-10 focus:bg-blue-3">
-                Rare
-              </SelectItem>
-              <SelectItem value="epic" className="text-purple-10 focus:bg-purple-3 focus:text-purple-10">
-                Epic
-              </SelectItem>
-              <SelectItem value="legendary" className="text-orange-10 focus:text-orange-10 focus:bg-orange-3">
-                Legendary
-              </SelectItem>
-            </SelectContent>
-          </Select>
+          <div className="flex-1">
+            <Label className="mb-1">Rarity</Label>
+            <Select value={rarity} onValueChange={(v) => setRarity(v && v !== 'all' ? v : null)}>
+              <SelectTrigger className="min-w-36 sm:max-w-72">
+                <SelectValue placeholder="Select rarity" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">All</SelectItem>
+                <SelectItem value="common" className="text-gray-10 focus:text-gray-10">
+                  Common
+                </SelectItem>
+                <SelectItem value="rare" className="text-blue-9 focus:bg-blue-3 focus:text-blue-10">
+                  Rare
+                </SelectItem>
+                <SelectItem value="epic" className="text-purple-10 focus:bg-purple-3 focus:text-purple-10">
+                  Epic
+                </SelectItem>
+                <SelectItem value="legendary" className="text-orange-10 focus:bg-orange-3 focus:text-orange-10">
+                  Legendary
+                </SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
         </div>
 
-        <div className="flex flex-col">
-          <Label>Elements</Label>
-          <ToggleGroup
-            className="mt-1"
-            type="multiple"
-            value={elements}
-            onValueChange={(e) => setElements(e.length > 0 ? e : null)}
-          >
-            {PAL_ELEMENTS.map((e) => (
-              <ToggleGroupItem key={e} value={e} variant="secondary" size="icon">
-                <Image
-                  className="size-6"
-                  src={`/images/elements/${e}.png`}
-                  alt={`${e} element`}
-                  height={24}
-                  width={24}
-                  quality={100}
-                  unoptimized
-                />
-              </ToggleGroupItem>
-            ))}
-          </ToggleGroup>
-        </div>
-      </div>
+        <div className="flex items-end justify-between">
+          <div className="flex w-full flex-wrap items-end gap-4">
+            <div className="mt-4 flex flex-col">
+              <Label>Work Suitability</Label>
+              <ToggleGroup
+                type="single"
+                className="mt-1"
+                value={work ?? ''}
+                onValueChange={(v) => setWork(v === '' ? null : (v as WorkSuitability))}
+              >
+                {WORK_SUITABILITIES.map((work) => (
+                  <ToggleGroupItem key={work} value={work} variant="secondary" size="icon">
+                    <Image
+                      className="size-6"
+                      src={`/images/work/${work}.png`}
+                      alt={`${work} element`}
+                      height={24}
+                      width={24}
+                      quality={100}
+                      unoptimized
+                    />
+                  </ToggleGroupItem>
+                ))}
+              </ToggleGroup>
+            </div>
 
-      <div className="flex items-end justify-between">
-        <div className="mt-4 flex flex-col">
-          <Label>Work Sutibility</Label>
-          <ToggleGroup
-            type="single"
-            className="mt-1"
-            value={work ?? ''}
-            onValueChange={(v) => setWork(v === '' ? null : (v as WorkSuitability))}
-          >
-            {WORK_SUITABILITIES.map((work) => (
-              <ToggleGroupItem key={work} value={work} variant="secondary" size="icon">
-                <Image
-                  className="size-6"
-                  src={`/images/work/${work}.png`}
-                  alt={`${work} element`}
-                  height={24}
-                  width={24}
-                  quality={100}
-                  unoptimized
-                />
-              </ToggleGroupItem>
-            ))}
-          </ToggleGroup>
-        </div>
+            <div className="flex w-full items-end justify-between">
+              <div className="flex flex-col">
+                <Label>Elements</Label>
+                <ToggleGroup
+                  className="mt-1"
+                  type="multiple"
+                  value={elements}
+                  onValueChange={(e) => setElements(e.length > 0 ? e : null)}
+                >
+                  {PAL_ELEMENTS.map((e) => (
+                    <ToggleGroupItem key={e} value={e} variant="secondary" size="icon">
+                      <Image
+                        className="size-6"
+                        src={`/images/elements/${e}.png`}
+                        alt={`${e} element`}
+                        height={24}
+                        width={24}
+                        quality={100}
+                        unoptimized
+                      />
+                    </ToggleGroupItem>
+                  ))}
+                </ToggleGroup>
+              </div>
 
-        <div className="flex items-center gap-2">
-          <div className="text-sm text-gray-11">{filteredPals.length} results</div>
-          <Button asChild variant="secondary">
-            <Link href="/pals">Clear</Link>
-          </Button>
+              <div className="flex items-center gap-2">
+                <div className="text-nowrap text-sm text-gray-11">{filteredPals.length} results</div>
+                <Button asChild variant="secondary">
+                  <Link href="/pals">Clear</Link>
+                </Button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       <Separator className="my-4" />
 
-      <div className="grid grid-cols-5 gap-4">
+      <div className="grid grid-cols-2 gap-4 px-4 sm:grid-cols-3 sm:px-0 lg:grid-cols-4 xl:grid-cols-5">
         {filteredPals.map((pal) => (
           <Link
             href={`/pals/${pal.id}`}
