@@ -199,7 +199,7 @@ export default function PalsGrid({ pals }: PalsGridProps) {
             <div className="flex flex-col items-center gap-3 py-2">
               <Image
                 className="size-28 rounded-full border border-gray-6 bg-gray-1"
-                src={`/images/pals/${pal.name.toLowerCase()}.png`}
+                src={`/images/pals/${pal.id}.png`}
                 alt={`image of ${pal.name}`}
                 height={112}
                 width={112}

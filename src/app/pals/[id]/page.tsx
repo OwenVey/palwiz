@@ -22,14 +22,14 @@ export default function PalPage({ params }: { params: { id: string } }) {
     <div className="py-4">
       <Image
         className="size-36 rounded-full border border-gray-6 bg-gray-1"
-        src={`/images/pals/${pal.name.toLowerCase()}.png`}
+        src={`/images/pals/${pal.id}.png`}
         alt={`image of ${pal.name}`}
         height={112}
         width={112}
         quality={100}
       />
       <h1 className="scroll-m-20 text-2xl font-semibold tracking-tight text-gray-12">{pal.name}</h1>
-      <p>{pal.tagline}</p>
+      <p>{pal.title}</p>
     </div>
   );
 }
