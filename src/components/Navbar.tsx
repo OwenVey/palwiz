@@ -2,18 +2,12 @@
 import { Logo } from '@/components/Logo';
 import { ThemeSelector } from '@/components/ThemeSelector';
 import { Button } from '@/components/ui/button';
+import { NAVIGATION } from '@/constants';
 import { cn } from '@/lib/utils';
 import * as Accordion from '@radix-ui/react-accordion';
-import { CatIcon, HeartIcon, MapIcon, MenuIcon, PencilRulerIcon, XIcon } from 'lucide-react';
+import { MenuIcon, XIcon } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-
-const navigation = [
-  { name: 'Pals', href: '/pals', icon: CatIcon },
-  { name: 'Breeding', href: '/breeding', icon: HeartIcon },
-  { name: 'Items', href: '/items', icon: PencilRulerIcon },
-  { name: 'Map', href: '/map', icon: MapIcon },
-];
 
 export function Navbar() {
   const pathname = usePathname();
@@ -42,13 +36,14 @@ export function Navbar() {
               </div>
               <div className="flex flex-1 items-center justify-center sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                  <Link href="/">
-                    <Logo className="h-8 w-auto text-primary-9" />
+                  <Link href="/" className="flex items-center gap-1">
+                    <Logo className="h-7 w-auto text-primary-9" />
+                    <div className="font-title text-3xl leading-none text-gray-12">palwiz</div>
                   </Link>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex gap-4">
-                    {navigation.map((item) => (
+                  <div className="flex gap-3">
+                    {NAVIGATION.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}
@@ -59,7 +54,7 @@ export function Navbar() {
                             : 'text-gray-11 hover:bg-gray-3 hover:text-gray-12',
                         )}
                       >
-                        <item.icon className="size-5" />
+                        <item.icon className="hidden size-5 md:block" />
                         {item.name}
                       </a>
                     ))}
@@ -72,7 +67,7 @@ export function Navbar() {
             </div>
           </div>
           <Accordion.Content className="space-y-1 px-2 pb-3 pt-2 sm:hidden">
-            {navigation.map((item) => (
+            {NAVIGATION.map((item) => (
               <Accordion.Trigger key={item.name} asChild>
                 <Link
                   className={cn(

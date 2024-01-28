@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils';
 import { GeistMono } from 'geist/font/mono';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import localFont from 'next/font/local';
 import './globals.css';
 
 const inter = Inter({
@@ -13,8 +14,17 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Palwiz',
+  title: {
+    template: 'Palwiz - %s',
+    default: 'Palwiz',
+  },
 };
+
+const vinque = localFont({
+  src: './vinque.otf',
+  display: 'swap',
+  variable: '--font-vinque',
+});
 
 export default function RootLayout({
   children,
@@ -23,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={cn(inter.variable, GeistMono.variable, 'bg-gray-1 font-sans antialiased')}>
+      <body className={cn(inter.variable, GeistMono.variable, vinque.variable, 'bg-gray-1 font-sans antialiased')}>
         <Providers>
           <Navbar />
           <main className="mx-auto max-w-7xl sm:px-6 lg:px-8">{children}</main>
