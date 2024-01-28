@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 export default function PalsPage() {
-  const sortedPals = pals.sort((a, b) => a.zukanIndex - b.zukanIndex);
+  const sortedPals = pals.filter((pal) => pal.zukanIndex > 0).sort((a, b) => a.zukanIndex - b.zukanIndex);
 
   return (
     <div className="py-4">

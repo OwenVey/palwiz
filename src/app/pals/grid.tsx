@@ -30,19 +30,19 @@ export default function PalsGrid({ pals }: PalsGridProps) {
     .filter((pal) => (search ? pal.name.toLowerCase().includes(search.toLowerCase()) : true))
     .filter((pal) => (rarity ? isCorrectRarity(rarity ?? 'all', pal.rarity) : true))
     .filter((pal) =>
-      elements?.length ? [pal.elementType1, pal.elementType2].filter(Boolean).some((e) => elements.includes(e!)) : true,
+      elements?.length ? [pal.elementType1, pal.elementType2].filter(Boolean).some((e) => elements.includes(e)) : true,
     )
     .filter((pal) => (work ? pal.workSuitabilities[work] > 0 : true))
     .sort((pal1, pal2) => (work ? pal2.workSuitabilities[work] - pal1.workSuitabilities[work] : 0));
 
   console.log({ search, rarity, elements, work });
 
-  function isCorrectRarity(rarity: string, rarityNum: number) {
-    if (rarity === 'all') return true;
-    if (rarity === 'common') return isWithinRange(rarityNum, 0, 4);
-    if (rarity === 'rare') return isWithinRange(rarityNum, 5, 8);
-    if (rarity === 'epic') return isWithinRange(rarityNum, 8, 10);
-    if (rarity === 'legendary') return rarityNum > 10;
+  function isCorrectRarity(rarityGroup: string, rarity: number) {
+    if (rarityGroup === 'all') return true;
+    if (rarityGroup === 'common') return isWithinRange(rarity, 0, 4);
+    if (rarityGroup === 'rare') return isWithinRange(rarity, 5, 8);
+    if (rarityGroup === 'epic') return isWithinRange(rarity, 8, 10);
+    if (rarityGroup === 'legendary') return rarity > 10;
     return true;
   }
 
@@ -101,7 +101,6 @@ export default function PalsGrid({ pals }: PalsGridProps) {
                   height={24}
                   width={24}
                   quality={100}
-                  unoptimized
                 />
               </ToggleGroupItem>
             ))}
@@ -126,7 +125,6 @@ export default function PalsGrid({ pals }: PalsGridProps) {
                     height={24}
                     width={24}
                     quality={100}
-                    unoptimized
                   />
                 </ToggleGroupItem>
               ))}
@@ -170,7 +168,6 @@ export default function PalsGrid({ pals }: PalsGridProps) {
                           height={24}
                           width={24}
                           quality={100}
-                          unoptimized
                         />
                       </TooltipTrigger>
                       <TooltipContent side="left" className="capitalize">
@@ -188,14 +185,7 @@ export default function PalsGrid({ pals }: PalsGridProps) {
                   .map(([work, value]) => (
                     <Tooltip key={work}>
                       <TooltipTrigger className="flex items-center">
-                        <Image
-                          src={`/images/work/${work}.png`}
-                          alt={`${work}`}
-                          height={24}
-                          width={24}
-                          quality={100}
-                          unoptimized
-                        />
+                        <Image src={`/images/work/${work}.png`} alt={`${work}`} height={24} width={24} quality={100} />
                         <span className="text-xs font-semibold text-gray-11">{value}</span>
                       </TooltipTrigger>
                       <TooltipContent side="left" className="fcapitalize">
@@ -214,7 +204,6 @@ export default function PalsGrid({ pals }: PalsGridProps) {
                 height={112}
                 width={112}
                 quality={100}
-                unoptimized
               />
 
               <div className="font-medium">{pal.name}</div>
