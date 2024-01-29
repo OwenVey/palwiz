@@ -1,5 +1,6 @@
 'use client';
 
+import { type GridPals } from '@/app/pals/page';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -10,18 +11,14 @@ import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
 import { PAL_ELEMENTS, WORK_SUITABILITIES } from '@/constants';
 import { isWithinRange } from '@/lib/utils';
-import { type Pal, type WorkSuitability } from '@/types';
+import { type WorkSuitability } from '@/types';
 import { SearchIcon } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { parseAsArrayOf, parseAsString, parseAsStringLiteral, useQueryState } from 'nuqs';
 
-type SimplePal = Pick<
-  Pal,
-  'id' | 'name' | 'zukanIndex' | 'zukanIndexSuffix' | 'rarity' | 'elementType1' | 'elementType2' | 'workSuitabilities'
->;
 type PalsGridProps = {
-  pals: SimplePal[];
+  pals: GridPals;
 };
 
 export default function PalsGrid({ pals }: PalsGridProps) {
