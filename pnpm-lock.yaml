@@ -66,8 +66,8 @@ dependencies:
     specifier: ^0.2.1
     version: 0.2.1(next@14.1.0)(react-dom@18.2.0)(react@18.2.0)
   nuqs:
-    specifier: ^1.15.4
-    version: 1.15.4(next@14.1.0)
+    specifier: ^1.16.0
+    version: 1.16.0(next@14.1.0)
   react:
     specifier: ^18
     version: 18.2.0
@@ -2919,8 +2919,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /nuqs@1.15.4(next@14.1.0):
-    resolution: {integrity: sha512-D4u2Y/Qe2O1wmHPxK9+/LM3ioToqRaK9mKyZiLc1PRo8JIXmUKTCce9JBg0MHEJHT+huz2h3pSINPQqKOwAD3A==}
+  /nuqs@1.16.0(next@14.1.0):
+    resolution: {integrity: sha512-UNXM/Wdk7S3XFRgMZQSxg08pzJZez6vu1bjJKNQLh4lbdfPlOyZvWUEVPJ60N2mGkmkeuez3s1YPxvdm6ncDKw==}
     peerDependencies:
       next: '>=13.4 <14.0.2 || ^14.0.3'
     dependencies:
