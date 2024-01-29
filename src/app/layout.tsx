@@ -1,6 +1,7 @@
 import { Navbar } from '@/components/Navbar';
 import { Providers } from '@/components/Providers';
 import { cn } from '@/lib/utils';
+import { Analytics } from '@vercel/analytics/react';
 import { GeistMono } from 'geist/font/mono';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
@@ -37,6 +38,7 @@ export default function RootLayout({
         <Providers>
           <Navbar />
           <main className="mx-auto max-w-7xl sm:px-6 lg:px-8">{children}</main>
+          <Analytics />
         </Providers>
       </body>
     </html>
