@@ -15,7 +15,8 @@ export function Navbar() {
   return (
     <Accordion.Root type="single" collapsible asChild>
       <Accordion.Item value="nav" asChild>
-        <nav className="sticky top-0 z-10 border-b border-gray-6 bg-gray-1">
+        <nav className="sticky top-0 z-10 border-b border-gray-6 dark:bg-gray-2">
+          <div className="glass-10" />
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -66,7 +67,7 @@ export function Navbar() {
               </div>
             </div>
           </div>
-          <Accordion.Content className="space-y-1 px-2 pb-3 pt-2 sm:hidden">
+          <Accordion.Content className="sticky space-y-1 px-2 pb-3 pt-2 sm:hidden">
             {NAVIGATION.map((item) => (
               <Accordion.Trigger key={item.name} asChild>
                 <Link
