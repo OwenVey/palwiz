@@ -16,8 +16,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { parseAsArrayOf, parseAsString, parseAsStringLiteral, useQueryState } from 'nuqs';
 
+type SimplePal = Pick<
+  Pal,
+  'id' | 'name' | 'zukanIndex' | 'zukanIndexSuffix' | 'rarity' | 'elementType1' | 'elementType2' | 'workSuitabilities'
+>;
 type PalsGridProps = {
-  pals: Pal[];
+  pals: SimplePal[];
 };
 
 export default function PalsGrid({ pals }: PalsGridProps) {
