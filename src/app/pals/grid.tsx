@@ -93,7 +93,7 @@ export default function PalsGrid({ pals }: PalsGridProps) {
             onValueChange={(v) => setWork(v === '' ? null : (v as WorkSuitability))}
           >
             {WORK_SUITABILITIES.map((work) => (
-              <ToggleGroupItem key={work} value={work} variant="secondary" size="icon">
+              <ToggleGroupItem key={work} value={work} size="icon">
                 <Image
                   className="size-6"
                   src={`/images/work/${work}.png`}
@@ -117,7 +117,7 @@ export default function PalsGrid({ pals }: PalsGridProps) {
               onValueChange={(e) => setElements(e.length > 0 ? e : null)}
             >
               {PAL_ELEMENTS.map((e) => (
-                <ToggleGroupItem key={e} value={e} variant="secondary" size="icon">
+                <ToggleGroupItem key={e} value={e} size="icon">
                   <Image
                     className="size-6"
                     src={`/images/elements/${e}.png`}
