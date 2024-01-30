@@ -11,9 +11,11 @@ export function generateMetadata({ params }: { params: { id: string } }) {
   };
 }
 export function generateStaticParams() {
-  return pals.map(({ id }) => ({
-    id,
-  }));
+  return pals
+    .filter((pal) => pal.zukanIndex > 0)
+    .map(({ id }) => ({
+      id,
+    }));
 }
 
 export default function PalPage({ params }: { params: { id: string } }) {
