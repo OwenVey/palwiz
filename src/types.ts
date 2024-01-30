@@ -1,4 +1,5 @@
-import type pals from '@/data/pals.json';
+import { type PalSchema } from '@/schemas/pal';
+import { type z } from 'zod';
 
-export type Pal = (typeof pals)[number];
+export type Pal = z.infer<typeof PalSchema>;
 export type WorkSuitability = keyof Pal['workSuitabilities'];
