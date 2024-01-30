@@ -12,6 +12,10 @@ import { usePathname } from 'next/navigation';
 export function Navbar() {
   const pathname = usePathname();
 
+  function isLinkActive(href: string) {
+    return pathname.includes(href);
+  }
+
   return (
     <Accordion.Root type="single" collapsible asChild>
       <Accordion.Item value="nav" asChild>
@@ -50,7 +54,7 @@ export function Navbar() {
                         href={item.href}
                         className={cn(
                           'flex items-center gap-2 rounded-md px-4 py-2 text-sm font-medium',
-                          pathname === item.href
+                          isLinkActive(item.href)
                             ? 'bg-primary-9 text-white'
                             : 'text-gray-11 hover:bg-gray-3 hover:text-gray-12',
                         )}
@@ -73,7 +77,7 @@ export function Navbar() {
                 <Link
                   className={cn(
                     'flex items-center gap-3 rounded-md px-3 py-2 text-base font-medium',
-                    pathname === item.href
+                    isLinkActive(item.href)
                       ? 'bg-primary-9 text-white'
                       : 'text-gray-11 hover:bg-gray-3 hover:text-gray-12',
                   )}
