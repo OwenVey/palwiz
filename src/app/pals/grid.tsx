@@ -37,8 +37,6 @@ export default function PalsGrid({ pals }: PalsGridProps) {
     .filter((pal) => (work ? pal.workSuitabilities[work] > 0 : true))
     .sort((pal1, pal2) => (work ? pal2.workSuitabilities[work] - pal1.workSuitabilities[work] : 0));
 
-  console.log({ search, rarity, elements, work });
-
   function isCorrectRarity(rarityGroup: string, rarity: number) {
     if (rarityGroup === 'all') return true;
     if (rarityGroup === 'common') return isWithinRange(rarity, 0, 4);

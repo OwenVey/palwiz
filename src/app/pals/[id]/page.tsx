@@ -22,35 +22,21 @@ export default function PalPage({ params }: { params: { id: string } }) {
   if (!pal) return <div>No pal found with the id {params.id}</div>;
 
   return (
-    <div className="flex gap-4 py-4">
-      <div className="sticky top-[81px] flex h-fit w-80 flex-col rounded-lg bg-gray-3 p-4">
-        <div className="absolute">
-          <Badge className="items-baseline font-mono text-sm font-bold tracking-wider" variant="outline">
-            <span className="text-gray-8">#{'000'.slice(pal.zukanIndex.toString().length)}</span>
-            <span>{pal.zukanIndex}</span>
-            <span className="text-xs">{pal.zukanIndexSuffix}</span>
-          </Badge>
+    <div className="flex gap-8 py-4">
+      <Card className="relative flex w-80 flex-col">
+        <Badge className="absolute items-baseline font-mono text-sm font-bold tracking-wider" variant="outline">
+          <span className="text-gray-8">#{'000'.slice(pal.zukanIndex.toString().length)}</span>
+          <span>{pal.zukanIndex}</span>
+          <span className="text-xs">{pal.zukanIndexSuffix}</span>
+        </Badge>
 
-          <div className="mt-2 flex flex-col gap-2">
-            {[pal.elementType1, pal.elementType2].filter(Boolean).map((element) => (
-              <ElementImage key={element} element={element} className="size-8" tooltipSide="left" />
-            ))}
-          </div>
+        <div className="absolute right-0 flex flex-col gap-2 pr-[inherit]">
+          {[pal.elementType1, pal.elementType2].filter(Boolean).map((element) => (
+            <ElementImage key={element} element={element} className="size-8" tooltipSide="left" />
+          ))}
         </div>
 
-        <PalImage pal={pal.id} className="mx-auto size-36 rounded-full border border-gray-6 bg-gray-1" />
-
-        <div className="absolute right-0 flex flex-col pr-[inherit]">
-          {Object.entries(pal.workSuitabilities)
-            .filter(([, value]) => value > 0)
-            .sort(([, value1], [, value2]) => value2 - value1)
-            .map(([work, value]) => (
-              <div key={work} className="flex items-center">
-                <WorkTypeImage workType={work} className="size-8" />
-                <span className="text-xs font-semibold text-gray-11">{value}</span>
-              </div>
-            ))}
-        </div>
+        <PalImage pal={pal.id} className="mx-auto mt-2 size-36 rounded-full border border-gray-6 bg-gray-1" />
 
         <div className="mt-2 text-center">
           <h1 className="text-2xl font-semibold text-gray-12">{pal.name}</h1>
@@ -58,26 +44,86 @@ export default function PalPage({ params }: { params: { id: string } }) {
         </div>
 
         <div>Stats</div>
-      </div>
+      </Card>
 
-      <div className="flex-1">
-        <div className="flex flex-col gap-2">
-          {pal.activeSkills.map((skill) => (
-            <div key={skill.id} className="rounded-lg bg-gray-3 p-3">
+      <div className="grid flex-1 grid-cols-2 gap-x-4 gap-y-8">
+        <Card heading="Description">
+          <p className="text-gray-11">{pal.description}</p>
+        </Card>
+
+        <Card heading="Work Suitability">
+          <div className="flex flex-col gap-2">
+            {Object.entries(pal.workSuitabilities)
+              .filter(([, value]) => value > 0)
+              .sort(([, value1], [, value2]) => value2 - value1)
+              .map(([work, value]) => (
+                <div
+                  key={work}
+                  className="flex items-center rounded border border-gray-5 bg-gray-3 px-3 py-2 text-gray-12"
+                >
+                  <WorkTypeImage workType={work} className="size-8" />
+                  <span className="ml-3 font-medium capitalize">{work.replace('-', ' ')}</span>
+                  <div className="ml-auto font-mono text-sm font-medium">
+                    Lv <span className="text-base">{value}</span>
+                  </div>
+                </div>
+              ))}
+          </div>
+        </Card>
+
+        <Card heading="Partner Skill">
+          {pal.partnerSkill.name !== null ? (
+            <div>
               <div className="flex justify-between">
                 <div className="flex gap-4">
-                  <ElementImage className="size-8" element={skill.element} tooltipSide="left" />
-                  <div className="text-lg font-semibold text-gray-12">{skill.name}</div>
+                  <ElementImage className="size-8" element="fire" tooltipSide="left" />
+                  <div className="font-medium text-gray-12">{pal.partnerSkill.name}</div>
                 </div>
-
-                <div>Lvl {skill.level}</div>
               </div>
               <div className="pl-12">
-                <p className="text-gray-11">{skill.description}</p>
+                <p className="text-sm text-gray-11">{pal.partnerSkill.description}</p>
               </div>
             </div>
-          ))}
-        </div>
+          ) : (
+            <div>None</div>
+          )}
+        </Card>
+
+        <Card heading="Active Skills" className="col-span-2">
+          <div className="flex flex-col gap-2">
+            {pal.activeSkills.map((skill) => (
+              <div key={skill.id} className="rounded-lg border border-gray-5 bg-gray-3 p-4">
+                <div className="flex justify-between">
+                  <div className="flex gap-4">
+                    <ElementImage className="size-8" element={skill.element} tooltipSide="left" />
+                    <div className="font-medium text-gray-12">{skill.name}</div>
+                  </div>
+
+                  <div className="font-mono text-sm font-medium">
+                    Lv <span className="text-base">{skill.level}</span>
+                  </div>
+                </div>
+                <div className="-mt-1 pl-12">
+                  <p className="text-sm text-gray-11">{skill.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </Card>
+      </div>
+    </div>
+  );
+}
+
+interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
+  heading?: string;
+}
+function Card({ heading, className, children, ...rest }: CardProps) {
+  return (
+    <div className={className}>
+      {heading && <h4 className="mb-1 text-xl font-semibold">{heading}</h4>}
+      <div className="rounded-lg border border-gray-4 bg-gray-2 p-4" {...rest}>
+        {children}
       </div>
     </div>
   );

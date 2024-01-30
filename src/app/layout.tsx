@@ -35,14 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={cn(
-          inter.variable,
-          GeistMono.variable,
-          vinque.variable,
-          'bg-gradient-to-t from-gray-1 to-gray-2 bg-fixed bg-no-repeat font-sans antialiased',
-        )}
-      >
+      <body className={cn(inter.variable, GeistMono.variable, vinque.variable, 'bg-gray-1 font-sans antialiased')}>
         <Providers>
           <Navbar />
           <main className="mx-auto max-w-7xl sm:px-6 lg:px-8">{children}</main>
