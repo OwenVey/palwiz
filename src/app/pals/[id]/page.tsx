@@ -2,6 +2,7 @@ import { ElementImage } from '@/components/ElementImage';
 import { PalImage } from '@/components/PalImage';
 import { WorkTypeImage } from '@/components/WorkTypeImage';
 import { Badge } from '@/components/ui/badge';
+import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import pals from '@/data/pals.json';
 
 export function generateMetadata({ params }: { params: { id: string } }) {
@@ -25,35 +26,66 @@ export default function PalPage({ params }: { params: { id: string } }) {
 
   return (
     <div className="flex gap-8 py-4">
-      <Card className="relative flex w-80 flex-col">
-        <Badge className="absolute items-baseline font-mono text-sm font-bold tracking-wider" variant="outline">
-          <span className="text-gray-8">#{'000'.slice(pal.zukanIndex.toString().length)}</span>
-          <span>{pal.zukanIndex}</span>
-          <span className="text-xs">{pal.zukanIndexSuffix}</span>
-        </Badge>
+      <Card className="sticky top-[81px] h-fit w-80">
+        <div className="relative flex flex-col">
+          <Badge className="absolute items-baseline font-mono text-sm font-bold tracking-wider" variant="outline">
+            <span className="text-gray-8">#{'000'.slice(pal.zukanIndex.toString().length)}</span>
+            <span>{pal.zukanIndex}</span>
+            <span className="text-xs">{pal.zukanIndexSuffix}</span>
+          </Badge>
 
-        <div className="absolute right-0 flex flex-col gap-2 pr-[inherit]">
-          {[pal.elementType1, pal.elementType2].filter(Boolean).map((element) => (
-            <ElementImage key={element} element={element} className="size-8" tooltipSide="left" />
-          ))}
+          <div className="absolute right-0 flex flex-col gap-2 pr-[inherit]">
+            {[pal.elementType1, pal.elementType2].filter(Boolean).map((element) => (
+              <ElementImage key={element} element={element} className="size-8" tooltipSide="left" />
+            ))}
+          </div>
+
+          <PalImage pal={pal.id} className="mx-auto mt-2 size-36 rounded-full border border-gray-6 bg-gray-1" />
+
+          <div className="mt-2 text-center">
+            <h1 className="text-2xl font-semibold text-gray-12">{pal.name}</h1>
+            <p className="text-gray-11">{pal.title}</p>
+          </div>
+
+          <div>Stats</div>
         </div>
-
-        <PalImage pal={pal.id} className="mx-auto mt-2 size-36 rounded-full border border-gray-6 bg-gray-1" />
-
-        <div className="mt-2 text-center">
-          <h1 className="text-2xl font-semibold text-gray-12">{pal.name}</h1>
-          <p className="text-gray-11">{pal.title}</p>
-        </div>
-
-        <div>Stats</div>
       </Card>
 
-      <div className="grid flex-1 grid-cols-2 gap-x-4 gap-y-8">
-        <Card heading="Description">
-          <p className="text-gray-11">{pal.description}</p>
-        </Card>
+      <div className="grid flex-1 grid-cols-2 gap-4">
+        <div className="grid gap-4">
+          <Card>
+            <CardHeader>
+              <CardTitle>Description</CardTitle>
+            </CardHeader>
+            <p className="text-gray-11">{pal.description}</p>
+          </Card>
 
-        <Card heading="Work Suitability">
+          <Card>
+            <CardHeader>
+              <CardTitle>Partner Skill</CardTitle>
+            </CardHeader>
+            {pal.partnerSkill.name !== null ? (
+              <div>
+                <div className="flex justify-between">
+                  <div className="flex gap-4">
+                    <ElementImage className="size-8" element="fire" tooltipSide="left" />
+                    <div className="font-medium text-gray-12">{pal.partnerSkill.name}</div>
+                  </div>
+                </div>
+                <div className="pl-12">
+                  <p className="text-sm text-gray-11">{pal.partnerSkill.description}</p>
+                </div>
+              </div>
+            ) : (
+              <div>None</div>
+            )}
+          </Card>
+        </div>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Work Suitability</CardTitle>
+          </CardHeader>
           <div className="flex flex-col gap-2">
             {Object.entries(pal.workSuitabilities)
               .filter(([, value]) => value > 0)
@@ -73,25 +105,10 @@ export default function PalPage({ params }: { params: { id: string } }) {
           </div>
         </Card>
 
-        <Card heading="Partner Skill">
-          {pal.partnerSkill.name !== null ? (
-            <div>
-              <div className="flex justify-between">
-                <div className="flex gap-4">
-                  <ElementImage className="size-8" element="fire" tooltipSide="left" />
-                  <div className="font-medium text-gray-12">{pal.partnerSkill.name}</div>
-                </div>
-              </div>
-              <div className="pl-12">
-                <p className="text-sm text-gray-11">{pal.partnerSkill.description}</p>
-              </div>
-            </div>
-          ) : (
-            <div>None</div>
-          )}
-        </Card>
-
-        <Card heading="Active Skills" className="col-span-2">
+        <Card className="col-span-2">
+          <CardHeader>
+            <CardTitle>Active Skills</CardTitle>
+          </CardHeader>
           <div className="flex flex-col gap-2">
             {pal.activeSkills.map((skill) => (
               <div key={skill.id} className="rounded-lg border border-gray-5 bg-gray-3 p-4">
@@ -112,20 +129,6 @@ export default function PalPage({ params }: { params: { id: string } }) {
             ))}
           </div>
         </Card>
-      </div>
-    </div>
-  );
-}
-
-interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
-  heading?: string;
-}
-function Card({ heading, className, children, ...rest }: CardProps) {
-  return (
-    <div className={className}>
-      {heading && <h4 className="mb-1 text-xl font-semibold">{heading}</h4>}
-      <div className="rounded-lg border border-gray-4 bg-gray-2 p-4" {...rest}>
-        {children}
       </div>
     </div>
   );
