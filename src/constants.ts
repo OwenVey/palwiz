@@ -1,4 +1,4 @@
-import { CatIcon, HeartIcon, MapIcon, PencilRulerIcon } from 'lucide-react';
+import { CatIcon, HeartIcon, MapIcon, PencilRulerIcon, ZapIcon } from 'lucide-react';
 
 export const WORK_SUITABILITIES = [
   'gathering',
@@ -35,6 +35,12 @@ export const NAVIGATION = [
     href: '/items',
     icon: PencilRulerIcon,
     description: 'List containing all information for in game items',
+  },
+  {
+    name: 'Skills',
+    href: '/skills',
+    icon: ZapIcon,
+    description: 'List of all partner and active skill',
   },
   { name: 'Breeding', href: '/breeding', icon: HeartIcon, description: 'Pal breeding calculator' },
   { name: 'Map', href: '/map', icon: MapIcon, description: 'Interactive map with all fast travel locations and more' },

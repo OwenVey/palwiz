@@ -1,6 +1,9 @@
 'use client';
 
 import { type GridPals } from '@/app/pals/page';
+import { ElementImage } from '@/components/ElementImage';
+import { PalImage } from '@/components/PalImage';
+import { WorkTypeImage } from '@/components/WorkTypeImage';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -8,12 +11,10 @@ import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Separator } from '@/components/ui/separator';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
-import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
 import { PAL_ELEMENTS, WORK_SUITABILITIES } from '@/constants';
 import { isWithinRange } from '@/lib/utils';
 import { type WorkSuitability } from '@/types';
 import { SearchIcon } from 'lucide-react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { parseAsArrayOf, parseAsString, parseAsStringLiteral, useQueryState } from 'nuqs';
 
@@ -95,14 +96,7 @@ export default function PalsGrid({ pals }: PalsGridProps) {
           >
             {WORK_SUITABILITIES.map((work) => (
               <ToggleGroupItem key={work} value={work} size="icon">
-                <Image
-                  className="size-6"
-                  src={`/images/work/${work}.png`}
-                  alt={`${work} element`}
-                  height={24}
-                  width={24}
-                  quality={100}
-                />
+                <WorkTypeImage workType={work} />
               </ToggleGroupItem>
             ))}
           </ToggleGroup>
@@ -117,16 +111,9 @@ export default function PalsGrid({ pals }: PalsGridProps) {
               value={elements}
               onValueChange={(e) => setElements(e.length > 0 ? e : null)}
             >
-              {PAL_ELEMENTS.map((e) => (
-                <ToggleGroupItem key={e} value={e} size="icon">
-                  <Image
-                    className="size-6"
-                    src={`/images/elements/${e}.png`}
-                    alt={`${e} element`}
-                    height={24}
-                    width={24}
-                    quality={100}
-                  />
+              {PAL_ELEMENTS.map((element) => (
+                <ToggleGroupItem key={element} value={element} size="icon">
+                  <ElementImage element={element} />
                 </ToggleGroupItem>
               ))}
             </ToggleGroup>
@@ -160,54 +147,26 @@ export default function PalsGrid({ pals }: PalsGridProps) {
 
                 <div className="mt-2 flex flex-col gap-1">
                   {[pal.elementType1, pal.elementType2].filter(Boolean).map((element) => (
-                    <Tooltip key={element}>
-                      <TooltipTrigger>
-                        <Image
-                          className="size-6"
-                          src={`/images/elements/${element}.png`}
-                          alt={`${element} element`}
-                          height={24}
-                          width={24}
-                          quality={100}
-                        />
-                      </TooltipTrigger>
-                      <TooltipContent side="left" className="capitalize">
-                        {element}
-                      </TooltipContent>
-                    </Tooltip>
+                    <ElementImage key={element} element={element} tooltipSide="left" />
                   ))}
                 </div>
               </div>
 
-              <div className="absolute right-0 flex flex-col flex-wrap gap-0">
+              <div className="absolute right-0 flex flex-col">
                 {Object.entries(pal.workSuitabilities)
                   .filter(([, value]) => value > 0)
                   .sort(([, value1], [, value2]) => value2 - value1)
                   .map(([work, value]) => (
-                    <Tooltip key={work}>
-                      <TooltipTrigger className="flex items-center">
-                        <Image src={`/images/work/${work}.png`} alt={`${work}`} height={24} width={24} quality={100} />
-                        <span className="text-xs font-semibold text-gray-11">{value}</span>
-                      </TooltipTrigger>
-                      <TooltipContent side="left" className="fcapitalize">
-                        {work.replace('-', ' ')}
-                      </TooltipContent>
-                    </Tooltip>
+                    <div key={work} className="flex items-center">
+                      <WorkTypeImage workType={work} />
+                      <span className="text-xs font-semibold text-gray-11">{value}</span>
+                    </div>
                   ))}
               </div>
             </div>
 
             <div className="flex flex-col items-center gap-3 py-2">
-              <Image
-                className="size-28 rounded-full border border-gray-6 bg-gray-1"
-                src={`/images/pals/${pal.id}.webp`}
-                alt={`image of ${pal.name}`}
-                height={112}
-                width={112}
-                quality={100}
-                unoptimized
-              />
-
+              <PalImage pal={pal.id} className="rounded-full border border-gray-6 bg-gray-1" />
               <div className="font-medium">{pal.name}</div>
             </div>
           </Link>
