@@ -167,19 +167,21 @@ export default function PalPage({ params }: { params: { id: string } }) {
           </CardHeader>
           <div className="flex flex-col gap-2">
             {pal.activeSkills.map((skill) => (
-              <div key={skill.id} className="relative rounded-lg border border-gray-5 bg-gray-3 p-4">
-                <div className="flex justify-between">
-                  <div className="flex gap-4">
-                    <ElementImage className="size-8" element={skill.element} tooltipSide="left" />
-                    <div className="font-medium text-gray-12">{skill.name}</div>
-                  </div>
+              <Link key={skill.id} href={`/skills/${skill.id}`}>
+                <Card className="relative bg-gray-3" hoverEffect>
+                  <div className="flex justify-between">
+                    <div className="flex gap-4">
+                      <ElementImage className="size-8" element={skill.element} tooltipSide="left" />
+                      <div className="font-medium text-gray-12">{skill.name}</div>
+                    </div>
 
-                  <Badge className="absolute right-2 top-2 bg-gray-5 font-mono text-sm">Lv {skill.level}</Badge>
-                </div>
-                <div className="-mt-1 pl-12">
-                  <p className="text-sm text-gray-11">{skill.description}</p>
-                </div>
-              </div>
+                    <Badge className="absolute right-2 top-2 bg-gray-5 font-mono text-sm">Lv {skill.level}</Badge>
+                  </div>
+                  <div className="-mt-1 pl-12">
+                    <p className="text-sm text-gray-11">{skill.description}</p>
+                  </div>
+                </Card>
+              </Link>
             ))}
           </div>
         </Card>

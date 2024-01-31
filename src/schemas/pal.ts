@@ -18,6 +18,7 @@ const SkillSchema = z.object({
   forceRagdollSize: z.string(),
   id: z.string(),
   ignoreRandomInherit: z.boolean(),
+  internalId: z.string(),
   isLeanBack: z.boolean(),
   maxRange: z.number(),
   minRange: z.number(),
