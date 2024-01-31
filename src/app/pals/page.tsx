@@ -27,10 +27,8 @@ export default function PalsPage() {
     .sort((a, b) => a.zukanIndex - b.zukanIndex);
 
   return (
-    <div className="py-4">
-      <Suspense>
-        <PalsGrid pals={sortedPals} />
-      </Suspense>
-    </div>
+    <Suspense>
+      <PalsGrid pals={sortedPals} />
+    </Suspense>
   );
 }

@@ -46,8 +46,8 @@ export default function PalPage({ params }: { params: { id: string } }) {
   if (!pal) return <div>No pal found with the id {params.id}</div>;
 
   return (
-    <div className="flex gap-4 py-4">
-      <Card className="sticky top-[81px] h-fit w-80">
+    <div className="flex flex-col gap-4 lg:flex-row">
+      <Card className="h-fit lg:sticky lg:top-[81px] lg:w-80">
         <div className="relative flex flex-col">
           <Badge className="absolute items-baseline font-mono text-sm font-bold tracking-wider">
             <span className="text-gray-8">#{'000'.slice(pal.zukanIndex.toString().length)}</span>
@@ -72,7 +72,7 @@ export default function PalPage({ params }: { params: { id: string } }) {
         </div>
       </Card>
 
-      <div className="grid flex-1 grid-cols-2 gap-4">
+      <div className="flex flex-1 grid-cols-1 flex-col gap-4 lg:grid lg:grid-cols-2">
         <div className="grid gap-4">
           <Card>
             <CardHeader>

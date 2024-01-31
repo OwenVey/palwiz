@@ -60,7 +60,7 @@ export default function PalsGrid({ pals }: PalsGridProps) {
 
   return (
     <div>
-      <div className="flex flex-col gap-4 px-4 sm:px-0">
+      <div className="flex flex-col gap-4">
         <div className="flex flex-wrap items-end gap-4">
           <Input
             className="w-full sm:max-w-72"
@@ -139,7 +139,7 @@ export default function PalsGrid({ pals }: PalsGridProps) {
       </div>
 
       <Separator className="my-4" />
-      <div className="grid grid-cols-2 gap-4 px-4 sm:grid-cols-3 sm:px-0 lg:grid-cols-4 xl:grid-cols-5">
+      <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
         {filteredPals.map((pal) => (
           <Link href={`/pals/${pal.id}`} key={pal.id} className="">
             <Card className="p-2" hoverEffect>
