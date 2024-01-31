@@ -27,7 +27,9 @@ const SkillSchema = z.object({
 });
 
 const DropSchema = z.object({
+  description: z.string(),
   id: z.string(),
+  internalId: z.string(),
   name: z.string(),
   rate: z.number(),
   min: z.number(),

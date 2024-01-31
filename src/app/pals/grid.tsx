@@ -145,7 +145,7 @@ export default function PalsGrid({ pals }: PalsGridProps) {
             <Card className="p-2" hoverEffect>
               <div className="relative flex w-full justify-between">
                 <div className="absolute left-0 flex flex-col">
-                  <Badge className="h-fit items-baseline font-mono font-bold tracking-wide" variant="outline">
+                  <Badge className="h-fit items-baseline font-mono font-bold tracking-wide">
                     <span className="text-gray-8">#{'000'.slice(pal.zukanIndex.toString().length)}</span>
                     <span>{pal.zukanIndex}</span>
                     <span className="text-[10px]">{pal.zukanIndexSuffix}</span>

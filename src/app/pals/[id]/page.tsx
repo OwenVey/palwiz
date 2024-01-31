@@ -1,9 +1,14 @@
 import { ElementImage } from '@/components/ElementImage';
+import { ItemImage } from '@/components/ItemImage';
 import { PalImage } from '@/components/PalImage';
 import { WorkTypeImage } from '@/components/WorkTypeImage';
-import { Badge } from '@/components/ui/badge';
+import { Badge, type BadgeProps } from '@/components/ui/badge';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
+import { Label } from '@/components/ui/label';
+import { Switch } from '@/components/ui/switch';
+import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
 import pals from '@/data/pals.json';
+import Link from 'next/link';
 
 export function generateMetadata({ params }: { params: { id: string } }) {
   const pal = pals.find((pal) => pal.id === params.id);
@@ -19,16 +24,32 @@ export function generateStaticParams() {
     }));
 }
 
+const getBadgeVariantForRate = (rate: number): BadgeProps['variant'] => {
+  if (rate >= 0 && rate <= 20) {
+    return 'red';
+  } else if (rate > 20 && rate <= 40) {
+    return 'yellow';
+  } else if (rate > 40 && rate <= 60) {
+    return 'orange';
+  } else if (rate > 60 && rate <= 80) {
+    return 'lime';
+  } else if (rate > 80 && rate <= 100) {
+    return 'green';
+  } else {
+    return 'default';
+  }
+};
+
 export default function PalPage({ params }: { params: { id: string } }) {
   const pal = pals.find((pal) => pal.id === params.id);
 
   if (!pal) return <div>No pal found with the id {params.id}</div>;
 
   return (
-    <div className="flex gap-8 py-4">
+    <div className="flex gap-4 py-4">
       <Card className="sticky top-[81px] h-fit w-80">
         <div className="relative flex flex-col">
-          <Badge className="absolute items-baseline font-mono text-sm font-bold tracking-wider" variant="outline">
+          <Badge className="absolute items-baseline font-mono text-sm font-bold tracking-wider">
             <span className="text-gray-8">#{'000'.slice(pal.zukanIndex.toString().length)}</span>
             <span>{pal.zukanIndex}</span>
             <span className="text-xs">{pal.zukanIndexSuffix}</span>
@@ -107,20 +128,53 @@ export default function PalPage({ params }: { params: { id: string } }) {
 
         <Card className="col-span-2">
           <CardHeader>
+            <CardTitle className="relative flex justify-between">
+              Item Drops
+              <div className="absolute right-0 flex items-center gap-2">
+                <Label htmlFor="alpha-mode">Normal</Label>
+                <Switch id="alpha-mode" />
+                <Label htmlFor="alpha-mode">Alpha</Label>
+              </div>
+            </CardTitle>
+          </CardHeader>
+          <div className="grid grid-cols-4 gap-2">
+            {pal.drops.map((item) => (
+              <Tooltip key={item.id}>
+                <TooltipTrigger asChild>
+                  <Link href={`/items/${item.id}`}>
+                    <Card className="relative flex h-full flex-col items-center bg-gray-3 p-2" hoverEffect>
+                      <div className="absolute top-0 flex w-full justify-between p-[inherit] font-mono text-xs tracking-wider text-white">
+                        <Badge variant="iris">{item.min === item.max ? item.min : `${item.min}-${item.max}`}</Badge>
+                        <Badge variant={getBadgeVariantForRate(item.rate)}>{item.rate}</Badge>
+                      </div>
+
+                      <div className="w-fit rounded-full border border-gray-5 bg-gray-4 p-2">
+                        <ItemImage id={item.id} className="size-14" />
+                      </div>
+                      <div className="mt-2 text-center font-medium text-gray-12">{item.name}</div>
+                    </Card>
+                  </Link>
+                </TooltipTrigger>
+                <TooltipContent className="max-w-64">{item.description}</TooltipContent>
+              </Tooltip>
+            ))}
+          </div>
+        </Card>
+
+        <Card className="col-span-2">
+          <CardHeader>
             <CardTitle>Active Skills</CardTitle>
           </CardHeader>
           <div className="flex flex-col gap-2">
             {pal.activeSkills.map((skill) => (
-              <div key={skill.id} className="rounded-lg border border-gray-5 bg-gray-3 p-4">
+              <div key={skill.id} className="relative rounded-lg border border-gray-5 bg-gray-3 p-4">
                 <div className="flex justify-between">
                   <div className="flex gap-4">
                     <ElementImage className="size-8" element={skill.element} tooltipSide="left" />
                     <div className="font-medium text-gray-12">{skill.name}</div>
                   </div>
 
-                  <div className="font-mono text-sm font-medium">
-                    Lv <span className="text-base">{skill.level}</span>
-                  </div>
+                  <Badge className="absolute right-2 top-2 bg-gray-5 font-mono text-sm">Lv {skill.level}</Badge>
                 </div>
                 <div className="-mt-1 pl-12">
                   <p className="text-sm text-gray-11">{skill.description}</p>
