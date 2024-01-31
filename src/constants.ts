@@ -1,19 +1,19 @@
 import { CatIcon, HeartIcon, MapIcon, PencilRulerIcon, ZapIcon } from 'lucide-react';
 
 export const WORK_SUITABILITIES = [
-  'gathering',
-  'cooling',
-  'lumbering',
-  'kindling',
-  'generating-electricity',
-  'handiwork',
-  'mining',
-  'farming',
-  'oil-extraction',
-  'medicine-production',
-  'planting',
-  'transporting',
-  'watering',
+  { id: 'gathering', label: 'Gathering' },
+  { id: 'cooling', label: 'Cooling' },
+  { id: 'lumbering', label: 'Lumbering' },
+  { id: 'kindling', label: 'Kindling' },
+  { id: 'generatingElectricity', label: 'Generating Electricity' },
+  { id: 'handiwork', label: 'Handiwork' },
+  { id: 'mining', label: 'Mining' },
+  { id: 'farming', label: 'Farming' },
+  { id: 'oilExtraction', label: 'Oil Extraction' },
+  { id: 'medicineProduction', label: 'Medicine Production' },
+  { id: 'planting', label: 'Planting' },
+  { id: 'transporting', label: 'Transporting' },
+  { id: 'watering', label: 'Watering' },
 ] as const;
 
 export const PAL_ELEMENTS = [

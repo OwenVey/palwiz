@@ -1,22 +1,24 @@
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
+import { WORK_SUITABILITIES } from '@/constants';
 import { cn } from '@/lib/utils';
 import { type TooltipContentProps } from '@radix-ui/react-tooltip';
 import Image, { type ImageProps } from 'next/image';
 
 type WorkTypeImageProps = Omit<ImageProps, 'src' | 'alt'> & {
-  workType: string;
+  id: string;
   tooltipSide?: TooltipContentProps['side'];
 };
 
-export function WorkTypeImage({ workType, tooltipSide, className, ...rest }: WorkTypeImageProps) {
+export function WorkTypeImage({ id, tooltipSide, className, ...rest }: WorkTypeImageProps) {
+  const workSuitability = WORK_SUITABILITIES.find((w) => w.id === id)!;
   return (
     <Tooltip>
       <TooltipTrigger asChild>
         <span>
           <Image
             className={cn('size-6', className)}
-            src={`/images/work/${workType}.png`}
-            alt={`${workType} work suitability`}
+            src={`/images/work/${id}.png`}
+            alt={`${workSuitability.label} work suitability`}
             height={24}
             width={24}
             quality={100}
@@ -25,7 +27,7 @@ export function WorkTypeImage({ workType, tooltipSide, className, ...rest }: Wor
         </span>
       </TooltipTrigger>
       <TooltipContent side={tooltipSide} className="capitalize">
-        {workType.replace('-', ' ')}
+        {workSuitability.label}
       </TooltipContent>
     </Tooltip>
   );

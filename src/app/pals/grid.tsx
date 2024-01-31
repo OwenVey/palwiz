@@ -38,7 +38,7 @@ export default function PalsGrid({ pals }: PalsGridProps) {
   const [search, setSearch] = useQueryState('search', parseAsString.withDefault(''));
   const [rarity, setRarity] = useQueryState('rarity', parseAsString.withDefault(''));
   const [elements, setElements] = useQueryState('elements', parseAsArrayOf(parseAsString).withDefault([]));
-  const [work, setWork] = useQueryState('work', parseAsStringLiteral(WORK_SUITABILITIES));
+  const [work, setWork] = useQueryState('work', parseAsStringLiteral(WORK_SUITABILITIES.map(({ id }) => id)));
 
   const filteredPals = pals
     .filter((pal) => (search ? pal.name.toLowerCase().includes(search.toLowerCase()) : true))
@@ -105,8 +105,8 @@ export default function PalsGrid({ pals }: PalsGridProps) {
             onValueChange={(v) => setWork(v === '' ? null : (v as WorkSuitability))}
           >
             {WORK_SUITABILITIES.map((work) => (
-              <ToggleGroupItem key={work} value={work} size="icon">
-                <WorkTypeImage workType={work} />
+              <ToggleGroupItem key={work.id} value={work.id} size="icon">
+                <WorkTypeImage id={work.id} />
               </ToggleGroupItem>
             ))}
           </ToggleGroup>
@@ -164,7 +164,7 @@ export default function PalsGrid({ pals }: PalsGridProps) {
                     .sort(([, value1], [, value2]) => value2 - value1)
                     .map(([work, value]) => (
                       <div key={work} className="flex items-center">
-                        <WorkTypeImage workType={work} />
+                        <WorkTypeImage id={work} />
                         <span className="text-xs font-semibold text-gray-11">{value}</span>
                       </div>
                     ))}
