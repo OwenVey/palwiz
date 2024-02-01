@@ -183,7 +183,7 @@ export default function PalPage({ params }: { params: { id: string } }) {
               .map(([workId, value]) => (
                 <div
                   key={workId}
-                  className="flex items-center rounded border border-gray-5 bg-gray-3 px-3 py-2 text-gray-12"
+                  className="flex items-center rounded border border-gray-4 bg-gray-3 px-3 py-2 text-gray-12"
                 >
                   <WorkTypeImage id={workId} className="size-8" />
                   <span className="ml-3 font-medium capitalize">{getWorkLabel(workId)}</span>
@@ -204,7 +204,7 @@ export default function PalPage({ params }: { params: { id: string } }) {
           <div className="flex flex-col gap-2">
             {pal.activeSkills.map((skill) => (
               <Link key={skill.id} href={`/skills/${skill.id}`}>
-                <Card className="relative bg-gray-3" hoverEffect>
+                <Card className="relative border-gray-5 bg-gray-3" hoverEffect>
                   <div className="flex justify-between">
                     <div className="flex gap-4">
                       <ElementImage className="size-8" element={skill.element} tooltipSide="left" />
