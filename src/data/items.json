@@ -2051,7 +2051,7 @@
     "description": "Now with cheese, this dish has reached the highest level of fine cuisine. Eat to increase Attack by +20% and stay full longer for a period of time."
   },
   {
-    "id": "chikipi-sauté",
+    "id": "chikipi-saute",
     "imageName": "food-chicken-saute",
     "internalId": "ChickenSaute",
     "name": "Chikipi Sauté",
