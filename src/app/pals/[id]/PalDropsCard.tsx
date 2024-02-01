@@ -57,7 +57,7 @@ export function ItemDropsCard({ drops, alphaDrops }: ItemDropsCardProps) {
                 <Card className="relative flex h-full flex-col items-center bg-gray-3 p-2" hoverEffect>
                   <div className="absolute top-0 flex w-full justify-between p-[inherit] font-mono text-xs tracking-wider text-white">
                     <Badge variant="iris">{drop.min === drop.max ? drop.min : `${drop.min}-${drop.max}`}</Badge>
-                    <Badge variant={getBadgeVariantForRate(drop.rate)}>{drop.rate}</Badge>
+                    <Badge variant={getBadgeVariantForRate(drop.rate)}>{drop.rate}%</Badge>
                   </div>
 
                   <div className="w-fit rounded-full border border-gray-5 bg-gray-4 p-2">
