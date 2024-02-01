@@ -6,6 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import pals from '@/data/pals.json';
 import { getWorkLabel } from '@/lib/utils';
+import { PalSchema } from '@/schemas/pal';
 import Link from 'next/link';
 
 export function generateMetadata({ params }: { params: { id: string } }) {
@@ -23,7 +24,7 @@ export function generateStaticParams() {
 }
 
 export default function PalPage({ params }: { params: { id: string } }) {
-  const pal = pals.find((pal) => pal.id === params.id);
+  const pal = PalSchema.parse(pals.find(({ id }) => id === params.id));
 
   if (!pal) return <div>No pal found with the id {params.id}</div>;
 

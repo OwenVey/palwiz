@@ -1,6 +1,7 @@
+import { ItemSchema } from '@/schemas/item';
 import { z } from 'zod';
 
-const SkillSchema = z.object({
+export const SkillSchema = z.object({
   level: z.number(),
   bIsWeaponDamage: z.boolean(),
   cameraShake: z.string(),
@@ -27,11 +28,9 @@ const SkillSchema = z.object({
   specialAttackRateInfos: z.array(z.object({})),
 });
 
-const DropSchema = z.object({
-  description: z.string(),
+export const DropSchema = z.object({
   id: z.string(),
-  internalId: z.string(),
-  name: z.string(),
+  item: ItemSchema,
   rate: z.number(),
   min: z.number(),
   max: z.number(),

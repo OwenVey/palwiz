@@ -53,7 +53,7 @@ export function ItemDropsCard({ drops, alphaDrops }: ItemDropsCardProps) {
         {dropsToShow.map((drop) => (
           <Tooltip key={drop.id}>
             <TooltipTrigger asChild>
-              <Link href={`/items/${drop.id}`}>
+              <Link href={`/items/${drop.item.id}`}>
                 <Card className="relative flex h-full flex-col items-center bg-gray-3 p-2" hoverEffect>
                   <div className="absolute top-0 flex w-full justify-between p-[inherit] font-mono text-xs tracking-wider text-white">
                     <Badge variant="iris">{drop.min === drop.max ? drop.min : `${drop.min}-${drop.max}`}</Badge>
@@ -61,13 +61,13 @@ export function ItemDropsCard({ drops, alphaDrops }: ItemDropsCardProps) {
                   </div>
 
                   <div className="w-fit rounded-full border border-gray-5 bg-gray-4 p-2">
-                    <ItemImage id={drop.id} className="size-14" />
+                    {drop.item.imageName && <ItemImage id={drop.item.imageName} className="size-14" />}
                   </div>
-                  <div className="mt-2 text-center font-medium text-gray-12">{drop.name}</div>
+                  <div className="mt-2 text-center font-medium text-gray-12">{drop.item.name}</div>
                 </Card>
               </Link>
             </TooltipTrigger>
-            <TooltipContent className="max-w-64">{drop.description}</TooltipContent>
+            <TooltipContent className="max-w-64">{drop.item.description}</TooltipContent>
           </Tooltip>
         ))}
       </div>
