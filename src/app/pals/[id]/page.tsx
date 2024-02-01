@@ -1,11 +1,12 @@
-import ItemDropsCard from '@/app/pals/[id]/PalDropsCard';
+import { ItemDropsCard } from '@/app/pals/[id]/PalDropsCard';
+import { PalStatsSidebar } from '@/app/pals/[id]/PalStatsSidebar';
 import { ElementImage } from '@/components/ElementImage';
-import { PalImage } from '@/components/PalImage';
+import { PartnerSkillImage } from '@/components/PartnerSkillImage';
 import { WorkTypeImage } from '@/components/WorkTypeImage';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import pals from '@/data/pals.json';
-import { cn, getEntityFromListById, getWorkLabel } from '@/lib/utils';
+import { getEntityFromListById, getWorkLabel } from '@/lib/utils';
 import { PalSchema } from '@/schemas/pal';
 import Link from 'next/link';
 
@@ -30,116 +31,9 @@ export default function PalPage({ params }: { params: { id: string } }) {
     return <div>{error}</div>;
   }
 
-  const stats = [
-    {
-      label: 'Size',
-      value: pal.size,
-    },
-    {
-      label: 'Rarity',
-      value: pal.rarity,
-    },
-    {
-      label: 'HP',
-      value: pal.hp,
-    },
-    {
-      label: 'Melee Attack',
-      value: pal.meleeAttack,
-    },
-    {
-      label: 'Shot Attack',
-      value: pal.shotAttack,
-    },
-    {
-      label: 'Defense',
-      value: pal.defense,
-    },
-    {
-      label: 'Support',
-      value: pal.support,
-    },
-    {
-      label: 'Craft Speed',
-      value: pal.craftSpeed,
-    },
-    {
-      label: 'Capture Rate',
-      value: pal.captureRateCorrect,
-    },
-    {
-      label: 'Price',
-      value: pal.price,
-    },
-    {
-      label: 'Slow Walk Speed',
-      value: pal.slowWalkSpeed,
-    },
-    {
-      label: 'Walk Speed',
-      value: pal.walkSpeed,
-    },
-    {
-      label: 'Transport Speed',
-      value: pal.transportSpeed,
-    },
-    {
-      label: 'Run Speed',
-      value: pal.runSpeed,
-    },
-    {
-      label: 'Ride Sprint Speed',
-      value: pal.rideSprintSpeed,
-    },
-    {
-      label: 'Food Amount',
-      value: pal.foodAmount,
-    },
-    {
-      label: 'Male Probability',
-      value: pal.maleProbability,
-    },
-  ];
-
   return (
     <div className="flex flex-col gap-4 lg:flex-row">
-      <Card className="h-fit lg:sticky lg:top-[81px] lg:w-80">
-        <div className="relative flex flex-col">
-          <Badge className="absolute items-baseline font-mono text-sm font-bold tracking-wider">
-            <span className="text-gray-8">#{'000'.slice(pal.zukanIndex.toString().length)}</span>
-            <span>{pal.zukanIndex}</span>
-            <span className="text-xs">{pal.zukanIndexSuffix}</span>
-          </Badge>
-
-          <div className="absolute right-0 flex flex-col gap-2 pr-[inherit]">
-            {[pal.elementType1, pal.elementType2].filter(Boolean).map((element) => (
-              <ElementImage key={element} element={element} className="size-10" tooltipSide="left" />
-            ))}
-          </div>
-
-          <PalImage pal={pal.id} className="mx-auto mt-2 size-36 rounded-full border border-gray-6 bg-gray-1" />
-
-          <div className="mt-2 text-center">
-            <h1 className="text-2xl font-semibold text-gray-12">{pal.name}</h1>
-            <p className="text-gray-11">{pal.title}</p>
-          </div>
-
-          <dl className="mt-4">
-            {stats.map((stat, index) => (
-              <div
-                key={stat.label}
-                className={cn(
-                  'flex items-center justify-between rounded-md p-3 text-sm',
-                  index % 2 === 0 && 'bg-gray-3',
-                )}
-              >
-                <dt className="font-medium text-gray-12">{stat.label}</dt>
-                <dd className="font-mono text-gray-11">{stat.value.toLocaleString()}</dd>
-              </div>
-            ))}
-          </dl>
-        </div>
-      </Card>
+      <PalStatsSidebar className="h-fit lg:sticky lg:top-[81px] lg:w-80" pal={pal} />
 
       <div className="flex flex-1 grid-cols-1 flex-col gap-4 lg:grid lg:grid-cols-2">
         <div className="grid gap-4">
@@ -158,7 +52,7 @@ export default function PalPage({ params }: { params: { id: string } }) {
               <div>
                 <div className="flex justify-between">
                   <div className="flex gap-4">
-                    <ElementImage className="size-8" element="fire" tooltipSide="left" />
+                    <PartnerSkillImage id={pal.partnerSkillIcon.toString()} className="size-8 scale-[2]" />
                     <div className="font-medium text-gray-12">{pal.partnerSkill.name}</div>
                   </div>
                 </div>
@@ -195,7 +89,7 @@ export default function PalPage({ params }: { params: { id: string } }) {
           </div>
         </Card>
 
-        <ItemDropsCard drops={pal.drops} alphaDrops={pal.bossDrops} />
+        <ItemDropsCard className="col-span-2" drops={pal.drops} alphaDrops={pal.bossDrops} />
 
         <Card className="col-span-2">
           <CardHeader>
@@ -213,7 +107,21 @@ export default function PalPage({ params }: { params: { id: string } }) {
 
                     <Badge className="absolute right-2 top-2 bg-gray-5 font-mono text-sm">Lv {skill.level}</Badge>
                   </div>
-                  <div className="-mt-1 pl-12">
+                  <div className="-mt-1 space-y-2 pl-12">
+                    {/* <p className="text-sm text-gray-11">{skill.description}</p> */}
+                    <div className="flex gap-2">
+                      <Badge className="font-mono" variant="red">
+                        Power: {skill.power}
+                      </Badge>
+                      <Badge className="font-mono" variant="yellow">
+                        CT: {skill.cooldownTime}
+                      </Badge>
+                      <Badge className="font-mono">
+                        Range:{' '}
+                        {skill.minRange === skill.maxRange ? skill.minRange : `${skill.minRange}-${skill.maxRange}`}
+                      </Badge>
+                    </div>
+
                     <p className="text-sm text-gray-11">{skill.description}</p>
                   </div>
                 </Card>

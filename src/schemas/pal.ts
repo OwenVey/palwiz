@@ -54,6 +54,7 @@ export const PalSchema = z.object({
     name: z.string().nullable(),
     description: z.string().nullable(),
   }),
+  partnerSkillIcon: z.number(),
   passiveSkill1: z.string(),
   passiveSkill2: z.string(),
   passiveSkill3: z.string(),

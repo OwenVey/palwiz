@@ -28,17 +28,17 @@ const getBadgeVariantForRate = (rate: number): BadgeProps['variant'] => {
   }
 };
 
-interface ItemDropsCardProps {
+interface ItemDropsCardProps extends React.HTMLAttributes<HTMLDivElement> {
   drops: Drop[];
   alphaDrops: Drop[];
 }
 
-export function ItemDropsCard({ drops, alphaDrops }: ItemDropsCardProps) {
+export function ItemDropsCard({ drops, alphaDrops, ...rest }: ItemDropsCardProps) {
   const [showAlphaDrops, setShowAlphaDrops] = useState(false);
   const dropsToShow = showAlphaDrops ? alphaDrops : drops;
 
   return (
-    <Card className="col-span-2">
+    <Card {...rest}>
       <CardHeader>
         <CardTitle className="relative flex justify-between">
           Item Drops
@@ -74,5 +74,3 @@ export function ItemDropsCard({ drops, alphaDrops }: ItemDropsCardProps) {
     </Card>
   );
 }
-
-export default ItemDropsCard;
