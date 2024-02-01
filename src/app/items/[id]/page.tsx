@@ -1,8 +1,9 @@
 import items from '@/data/items.json';
+import { getEntityFromListById } from '@/lib/utils';
 import { ItemSchema } from '@/schemas/item';
 
 export function generateMetadata({ params }: { params: { id: string } }) {
-  const item = items.find((pal) => pal.id === params.id);
+  const item = items.find(({ id }) => id === params.id);
   return {
     title: item ? item.name : 'Not Found',
   };
@@ -12,9 +13,11 @@ export function generateStaticParams() {
 }
 
 export default function ItemPage({ params }: { params: { id: string } }) {
-  const item = ItemSchema.parse(items.find(({ id }) => id === params.id));
+  const { data: item, error } = getEntityFromListById(items, params.id, ItemSchema);
 
-  if (!item) return <div>No item found with the id {params.id}</div>;
+  if (error !== null) {
+    return <div>{error}</div>;
+  }
 
   return <div>{item.name}</div>;
 }

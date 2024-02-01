@@ -1,12 +1,17 @@
+import { ItemImage } from '@/components/ItemImage';
 import { Card } from '@/components/ui/card';
-import itemJson from '@/data/items.json';
+import itemsJson from '@/data/items.json';
 import { ItemSchema } from '@/schemas/item';
-import Image from 'next/image';
+import { type Metadata } from 'next';
 import Link from 'next/link';
 import { z } from 'zod';
 
+export const metadata: Metadata = {
+  title: 'Items',
+};
+
 export default function ItemsPage() {
-  const items = z.array(ItemSchema).parse(itemJson);
+  const items = z.array(ItemSchema).parse(itemsJson);
 
   return (
     <div>
@@ -17,17 +22,7 @@ export default function ItemsPage() {
           <Link key={item.internalId} href={`/items/${item.id}`}>
             <Card className="grid h-full place-items-center text-balance text-center text-sm" hoverEffect>
               <div className="rounded-full border border-gray-4 bg-gray-3 p-2">
-                {item.imageName ? (
-                  <Image
-                    src={`/images/items/${item.imageName}.webp`}
-                    alt={item.internalId}
-                    width={50}
-                    height={50}
-                    unoptimized
-                  />
-                ) : (
-                  <div className="bg-red-9">NONE</div>
-                )}
+                {item.imageName && <ItemImage className="size-12" id={item.imageName} />}
               </div>
 
               <div className="mt-2">{item.name}</div>

@@ -1,32 +1,6 @@
 import { ItemSchema } from '@/schemas/item';
+import { SkillSchema } from '@/schemas/skill';
 import { z } from 'zod';
-
-export const SkillSchema = z.object({
-  level: z.number(),
-  bIsWeaponDamage: z.boolean(),
-  cameraShake: z.string(),
-  category: z.string(),
-  coolTime: z.number(),
-  description: z.string(),
-  disabledData: z.boolean(),
-  effectType1: z.string(),
-  effectType2: z.string(),
-  effectValue1: z.number(),
-  effectValue2: z.number(),
-  effectValueEx1: z.number(),
-  effectValueEx2: z.number(),
-  element: z.string(),
-  forceRagdollSize: z.string(),
-  id: z.string(),
-  ignoreRandomInherit: z.boolean(),
-  internalId: z.string(),
-  isLeanBack: z.boolean(),
-  maxRange: z.number(),
-  minRange: z.number(),
-  name: z.string(),
-  power: z.number(),
-  specialAttackRateInfos: z.array(z.object({})),
-});
 
 export const DropSchema = z.object({
   id: z.string(),
@@ -37,7 +11,7 @@ export const DropSchema = z.object({
 });
 
 export const PalSchema = z.object({
-  activeSkills: z.array(SkillSchema),
+  activeSkills: z.array(SkillSchema.merge(z.object({ level: z.number() }))),
   aiResponse: z.string(),
   aiSightResponse: z.string(),
   battleBgm: z.string(),

@@ -2051,7 +2051,7 @@
     "description": "Now with cheese, this dish has reached the highest level of fine cuisine. Eat to increase Attack by +20% and stay full longer for a period of time."
   },
   {
-    "id": "chikipi-saute",
+    "id": "chikipi-sauté",
     "imageName": "food-chicken-saute",
     "internalId": "ChickenSaute",
     "name": "Chikipi Sauté",
@@ -5499,7 +5499,7 @@
     "imageName": "essential-skill-unlock-saddle",
     "internalId": "SkillUnlock_KingAlpaca_Ice",
     "name": "Ice Kingpaca Saddle",
-    "description": "Saddle for safely riding Ice Kingpaca."
+    "description": "Saddle for safely riding Kingpaca Cryst."
   },
   {
     "id": "blazamut-saddle",
@@ -5628,10 +5628,10 @@
     "description": "Saddle for safely riding Surfent."
   },
   {
-    "id": "aquadon-terra-saddle",
+    "id": "surfent-terra-saddle",
     "imageName": "essential-skill-unlock-saddle",
     "internalId": "SkillUnlock_Serpent_Ground",
-    "name": "Aquadon Terra Saddle",
+    "name": "Surfent Terra Saddle",
     "description": "Saddle for safely riding Surfent Terra."
   },
   {
@@ -5695,7 +5695,7 @@
     "imageName": "essential-skill-unlock-saddle",
     "internalId": "SkillUnlock_VolcanicMonster_Ice",
     "name": "Ice Reptyro Saddle",
-    "description": "Saddle for safely riding Ice Reptyro."
+    "description": "Saddle for safely riding Reptyro Cryst."
   },
   {
     "id": "chillet-saddle",
@@ -5709,14 +5709,14 @@
     "imageName": "essential-skill-unlock-gloves",
     "internalId": "SkillUnlock_WindChimes",
     "name": "Hangyu's Gloves",
-    "description": "Gloves for gently holding on to Hangyu's arms. If Hangyu is in your team, it can be used as a glider."
+    "description": "Gloves for gently holding on to WindChimes's arms. If WindChimes is in your team, it can be used as a glider."
   },
   {
     "id": "hangyu-cryst-s-glove",
     "imageName": "essential-skill-unlock-gloves",
     "internalId": "SkillUnlock_WindChimes_Ice",
     "name": "Hangyu Cryst's Glove",
-    "description": "Gloves for gently holding on to Hangyu Cryst's arms. If Hangyu Cryst is in your team, it can be used as a glider."
+    "description": "Gloves for gently holding on to WindChimes_Ice's arms. If WindChimes_Ice is in your team, it can be used as a glider."
   },
   {
     "id": "en-text-saddle",

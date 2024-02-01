@@ -12,8 +12,8 @@ export function ItemImage({ id, alt, className, ...rest }: ItemImageProps) {
       className={cn('size-28', className)}
       src={`/images/items/${id}.webp`}
       alt={alt ?? id}
-      height={24}
-      width={24}
+      height={112}
+      width={112}
       quality={100}
       unoptimized
       {...rest}

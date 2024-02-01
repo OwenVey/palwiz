@@ -1,0 +1,1941 @@
+[
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 2,
+    "description": "Hurls a high speed ball of water at an enemy.",
+    "effects": [
+      {
+        "name": "Wetness",
+        "value": 35
+      }
+    ],
+    "element": "water",
+    "id": "hydro-jet",
+    "internalId": "AquaJet",
+    "maxRange": 5000,
+    "minRange": 500,
+    "name": "Hydro Jet",
+    "power": 30,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 4,
+    "description": "Hurls a ball of water straight at an enemy.",
+    "effects": [
+      {
+        "name": "Wetness",
+        "value": 50
+      }
+    ],
+    "element": "water",
+    "id": "aqua-gun",
+    "internalId": "WaterGun",
+    "maxRange": 5000,
+    "minRange": 500,
+    "name": "Aqua Gun",
+    "power": 40,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 13,
+    "description": "Fires numerous bubbles that slowly pursue an enemy.",
+    "effects": [
+      {
+        "name": "Wetness",
+        "value": 100
+      }
+    ],
+    "element": "water",
+    "id": "bubble-blast",
+    "internalId": "BubbleShot",
+    "maxRange": 3500,
+    "minRange": 1000,
+    "name": "Bubble Blast",
+    "power": 65,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 18,
+    "description": "Creates acidic clouds that pour down acid rain on enemies.",
+    "effects": [
+      {
+        "name": "Wetness",
+        "value": 100
+      }
+    ],
+    "element": "water",
+    "id": "acid-rain",
+    "internalId": "AcidRain",
+    "maxRange": 1000,
+    "minRange": 100,
+    "name": "Acid Rain",
+    "power": 80,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 30,
+    "description": "Creates a giant ball of water and hurls it at an enemy.",
+    "effects": [
+      {
+        "name": "Wetness",
+        "value": 100
+      }
+    ],
+    "element": "water",
+    "id": "aqua-burst",
+    "internalId": "WaterBall",
+    "maxRange": 9999,
+    "minRange": 1000,
+    "name": "Aqua Burst",
+    "power": 100,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 55,
+    "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.",
+    "effects": [
+      {
+        "name": "Wetness",
+        "value": 100
+      }
+    ],
+    "element": "water",
+    "id": "hydro-laser",
+    "internalId": "HydroPump",
+    "maxRange": 1800,
+    "minRange": 500,
+    "name": "Hydro Laser",
+    "power": 150,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 1,
+    "description": "Punch with conviction; believe in the power of the fist.",
+    "effects": [],
+    "element": "neutral",
+    "id": "punch",
+    "internalId": "Human_Punch",
+    "maxRange": 600,
+    "minRange": 500,
+    "name": "Punch",
+    "power": 12,
+    "specialAttackRates": [
+      {
+        "rate": 1.5,
+        "type": "vsWood"
+      },
+      {
+        "rate": 1.5,
+        "type": "vsStone"
+      }
+    ]
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 2,
+    "description": "Quickly fires a burst of highly pressurized air.",
+    "effects": [],
+    "element": "neutral",
+    "id": "air-cannon",
+    "internalId": "AirCanon",
+    "maxRange": 4000,
+    "minRange": 500,
+    "name": "Air Cannon",
+    "power": 25,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 1,
+    "description": "Chikipi's special skill. Flies at enemies in its sights, attacking them with its sharp beak.",
+    "effects": [],
+    "element": "neutral",
+    "id": "chicken-rush",
+    "internalId": "Unique_ChickenPal_ChickenPeck",
+    "maxRange": 500,
+    "minRange": 0,
+    "name": "Chicken Rush",
+    "power": 30,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 4,
+    "description": "Charges energy into a focused blast.",
+    "effects": [],
+    "element": "neutral",
+    "id": "power-shot",
+    "internalId": "PowerShot",
+    "maxRange": 3000,
+    "minRange": 600,
+    "name": "Power Shot",
+    "power": 35,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 1,
+    "description": "Lamball's special skill. Curls into a ball, rolling after any enemies in its way. Becomes dizzy and unable to move after the attack ends.",
+    "effects": [],
+    "element": "neutral",
+    "id": "roly-poly",
+    "internalId": "Unique_SheepBall_Roll",
+    "maxRange": 1000,
+    "minRange": 0,
+    "name": "Roly Poly",
+    "power": 35,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 1,
+    "description": "Cattiva's special skill. Pursues enemies, repeatedly punching them with both its fists.",
+    "effects": [],
+    "element": "neutral",
+    "id": "punch-flurry",
+    "internalId": "Unique_PinkCat_CatPunch",
+    "maxRange": 500,
+    "minRange": 0,
+    "name": "Punch Flurry",
+    "power": 40,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 4,
+    "description": "Melpaca's exclusive skill. Charges forward while clad in an aura of sublime adorableness.",
+    "effects": [],
+    "element": "neutral",
+    "id": "fluffy-tackle",
+    "internalId": "Unique_Alpaca_Tackle",
+    "maxRange": 1500,
+    "minRange": 300,
+    "name": "Fluffy Tackle",
+    "power": 40,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 2,
+    "description": "Direhowl's special skill. Swiftly leaps at an enemy and bites into them.",
+    "effects": [],
+    "element": "neutral",
+    "id": "fierce-fang",
+    "internalId": "Unique_Garm_Bite",
+    "maxRange": 900,
+    "minRange": 800,
+    "name": "Fierce Fang",
+    "power": 45,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 5,
+    "description": "Eikthyrdeer's exclusive skill. Charges at foes and uses antlers to launch them into the air. If used while riding, the direction of the charge can be controlled.",
+    "effects": [],
+    "element": "neutral",
+    "id": "antler-uppercut",
+    "internalId": "Unique_Deer_PushupHorn",
+    "maxRange": 2000,
+    "minRange": 550,
+    "name": "Antler Uppercut",
+    "power": 50,
+    "specialAttackRates": [
+      {
+        "rate": 1.1,
+        "type": "vsWood"
+      }
+    ]
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 2,
+    "description": "Rushoar's special skill. Takes aim at a foe and rushes at them with a mad charge.",
+    "effects": [],
+    "element": "neutral",
+    "id": "reckless-charge",
+    "internalId": "Unique_Boar_Tackle",
+    "maxRange": 2500,
+    "minRange": 300,
+    "name": "Reckless Charge",
+    "power": 55,
+    "specialAttackRates": [
+      {
+        "rate": 3,
+        "type": "vsStone"
+      }
+    ]
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 8,
+    "description": "Galeclaw's exclusive skill. Soars through the air with its talons outstretched forward.",
+    "effects": [],
+    "element": "neutral",
+    "id": "gale-claw",
+    "internalId": "Unique_Eagle_GlidingNail",
+    "maxRange": 1000,
+    "minRange": 0,
+    "name": "Gale Claw",
+    "power": 60,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 9,
+    "description": "Grintale's exclusive skill. Grins menacingly before leaping into the air and smashing foes with its body.",
+    "effects": [],
+    "element": "neutral",
+    "id": "cat-press",
+    "internalId": "Unique_NaughtyCat_CatPress",
+    "maxRange": 1500,
+    "minRange": 0,
+    "name": "Cat Press",
+    "power": 60,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 13,
+    "description": "Nitewing's exclusive skill. Generates a tornado before soaring towards its target.",
+    "effects": [],
+    "element": "neutral",
+    "id": "tornado-attack",
+    "internalId": "Unique_HawkBird_Storm",
+    "maxRange": 2500,
+    "minRange": 0,
+    "name": "Tornado Attack",
+    "power": 65,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 15,
+    "description": "Charges a massive amount of energy before firing a large destructive ball.",
+    "effects": [],
+    "element": "neutral",
+    "id": "power-bomb",
+    "internalId": "PowerBall",
+    "maxRange": 9999,
+    "minRange": 1000,
+    "name": "Power Bomb",
+    "power": 70,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 12,
+    "description": "Broncherry's exclusive skill. Turns sideways before tackling enemies in front of it, sending them flying into the air.",
+    "effects": [],
+    "element": "neutral",
+    "id": "muscle-slam",
+    "internalId": "Unique_SakuraSaurus_SideTackle",
+    "maxRange": 400,
+    "minRange": 0,
+    "name": "Muscle Slam",
+    "power": 80,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 14,
+    "description": "Gorirat's exclusive skill. Pounds the ground twice before leaping into the air and unleashing a powerful punch.",
+    "effects": [],
+    "element": "neutral",
+    "id": "ground-pound",
+    "internalId": "Unique_Gorilla_GroundPunch",
+    "maxRange": 500,
+    "minRange": 0,
+    "name": "Ground Pound",
+    "power": 85,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 15,
+    "description": "Fenglope's exclusive skill. Charges forward while manipulating the atmosphere to create a pressurized wind tunnel around itself.",
+    "effects": [],
+    "element": "neutral",
+    "id": "cloud-tempest",
+    "internalId": "Unique_FengyunDeeper_CloudTempest",
+    "maxRange": 2000,
+    "minRange": 550,
+    "name": "Cloud Tempest",
+    "power": 90,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 21,
+    "description": "Kingpaca's exclusive skill. Leaps high into the air before smashing into an enemy with its massive body.",
+    "effects": [],
+    "element": "neutral",
+    "id": "kingly-slam",
+    "internalId": "Unique_KingAlpaca_BodyPress",
+    "maxRange": 1000,
+    "minRange": 0,
+    "name": "Kingly Slam",
+    "power": 100,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 40,
+    "description": "Paladius's exclusive skill. Clads itself in holy power before charging forward with its spear. The shield in its other hand protects from attacks during the charge.",
+    "effects": [],
+    "element": "neutral",
+    "id": "spear-thrust",
+    "internalId": "Unique_SaintCentaur_OneSpearRushes",
+    "maxRange": 2500,
+    "minRange": 0,
+    "name": "Spear Thrust",
+    "power": 120,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 55,
+    "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.",
+    "effects": [],
+    "element": "neutral",
+    "id": "pal-blast",
+    "internalId": "HyperBeam",
+    "maxRange": 1800,
+    "minRange": 500,
+    "name": "Pal Blast",
+    "power": 150,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 55,
+    "description": "Risks its life to cause a violent explosion. Becomes incapacitated afterwards.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 100
+      }
+    ],
+    "element": "neutral",
+    "id": "implode",
+    "internalId": "SelfDestruct",
+    "maxRange": 1000,
+    "minRange": 0,
+    "name": "Implode",
+    "power": 230,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 55,
+    "description": "Risks its life to cause a violent explosion, but receives the honor of falling in battle.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 100
+      }
+    ],
+    "element": "grass",
+    "id": "bee-quiet",
+    "internalId": "SelfDestruct_Bee",
+    "maxRange": 1000,
+    "minRange": 0,
+    "name": "Bee Quiet",
+    "power": 250,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 55,
+    "description": "Risks life to cause a massive explosion. Those who perish for their duty become glistening stars in the night sky.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 100
+      }
+    ],
+    "element": "neutral",
+    "id": "megaton-implode",
+    "internalId": "SelfExplosion",
+    "maxRange": 1000,
+    "minRange": 0,
+    "name": "Megaton Implode",
+    "power": 500,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 2,
+    "description": "Fires a high speed blade of wind that flies straight at an enemy.",
+    "effects": [
+      {
+        "name": "IvyCling",
+        "value": 35
+      }
+    ],
+    "element": "grass",
+    "id": "wind-cutter",
+    "internalId": "WindCutter",
+    "maxRange": 5000,
+    "minRange": 500,
+    "name": "Wind Cutter",
+    "power": 30,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 9,
+    "description": "Fires a volley of hard seeds at enemies in front of it.",
+    "effects": [
+      {
+        "name": "IvyCling",
+        "value": 100
+      }
+    ],
+    "element": "grass",
+    "id": "seed-machine-gun",
+    "internalId": "SeedMachinegun",
+    "maxRange": 300,
+    "minRange": 0,
+    "name": "Seed Machine Gun",
+    "power": 50,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 8,
+    "description": "Dinossom's exclusive skill. Uses large tail to smash the ground in front of it, damaging enemies over a wide area.",
+    "effects": [
+      {
+        "name": "IvyCling",
+        "value": 100
+      }
+    ],
+    "element": "grass",
+    "id": "botanical-smash",
+    "internalId": "Unique_FlowerDinosaur_Whip",
+    "maxRange": 1500,
+    "minRange": 0,
+    "name": "Botanical Smash",
+    "power": 60,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 12,
+    "description": "The user fires three high-speed blades of wind in quick succession that fly straight at enemies.",
+    "effects": [
+      {
+        "name": "IvyCling",
+        "value": 35
+      }
+    ],
+    "element": "grass",
+    "id": "multicutter",
+    "internalId": "SpecialCutter",
+    "maxRange": 5000,
+    "minRange": 500,
+    "name": "Multicutter",
+    "power": 60,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 13,
+    "description": "Launches a deadly seed. If it hits an enemy, the seed explodes.",
+    "effects": [
+      {
+        "name": "IvyCling",
+        "value": 100
+      }
+    ],
+    "element": "grass",
+    "id": "seed-mine",
+    "internalId": "SeedMine",
+    "maxRange": 9999,
+    "minRange": 800,
+    "name": "Seed Mine",
+    "power": 65,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 9,
+    "description": "Robinquill's exclusive skill. Takes aim while drawing its bow before loosing a powerful shot at an enemy.",
+    "effects": [
+      {
+        "name": "IvyCling",
+        "value": 100
+      }
+    ],
+    "element": "grass",
+    "id": "focus-shot",
+    "internalId": "Unique_RobinHood_BowSnipe",
+    "maxRange": 5000,
+    "minRange": 1000,
+    "name": "Focus Shot",
+    "power": 65,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 9,
+    "description": "Elizabee's exclusive skill. Channels power into its staff, and unleashes it in a whirl.",
+    "effects": [
+      {
+        "name": "IvyCling",
+        "value": 100
+      }
+    ],
+    "element": "grass",
+    "id": "spinning-lance",
+    "internalId": "Unique_QueenBee_SpinLance",
+    "maxRange": 600,
+    "minRange": 0,
+    "name": "Spinning Lance",
+    "power": 70,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 18,
+    "description": "Generates two tornadoes on either side before launching them at an enemy.",
+    "effects": [
+      {
+        "name": "IvyCling",
+        "value": 65
+      }
+    ],
+    "element": "grass",
+    "id": "grass-tornado",
+    "internalId": "GrassTornado",
+    "maxRange": 3000,
+    "minRange": 700,
+    "name": "Grass Tornado",
+    "power": 80,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 18,
+    "description": "Mossanda's exclusive skill. Winds up its fist before striking an enemy with a devastating punch.",
+    "effects": [],
+    "element": "grass",
+    "id": "crushing-punch",
+    "internalId": "Unique_GrassPanda_MusclePunch",
+    "maxRange": 700,
+    "minRange": 0,
+    "name": "Crushing Punch",
+    "power": 85,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 25,
+    "description": "Generates spiny thorns that chase an enemy along the ground, piercing them from below.",
+    "effects": [
+      {
+        "name": "IvyCling",
+        "value": 100
+      }
+    ],
+    "element": "grass",
+    "id": "spine-vine",
+    "internalId": "RootAttack",
+    "maxRange": 9999,
+    "minRange": 500,
+    "name": "Spine Vine",
+    "power": 95,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 55,
+    "description": "Charges solar energy before blasting enemies with a powerful beam.",
+    "effects": [
+      {
+        "name": "IvyCling",
+        "value": 100
+      }
+    ],
+    "element": "grass",
+    "id": "solar-blast",
+    "internalId": "SolarBeam",
+    "maxRange": 1800,
+    "minRange": 500,
+    "name": "Solar Blast",
+    "power": 150,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 3,
+    "description": "Creates ice lances in the air that fly towards enemies.",
+    "effects": [
+      {
+        "name": "Freeze",
+        "value": 103
+      }
+    ],
+    "element": "ice",
+    "id": "ice-missile",
+    "internalId": "IceMissile",
+    "maxRange": 3000,
+    "minRange": 800,
+    "name": "Ice Missile",
+    "power": 30,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 10,
+    "description": "Creates a crescent blade of ice and hurls it forward.",
+    "effects": [
+      {
+        "name": "Freeze",
+        "value": 50
+      }
+    ],
+    "element": "ice",
+    "id": "icicle-cutter",
+    "internalId": "IceBlade",
+    "maxRange": 4000,
+    "minRange": 500,
+    "name": "Icicle Cutter",
+    "power": 55,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 9,
+    "description": "Reindrix's exclusive skill. Charges at an enemy with antlers adorned in ice.",
+    "effects": [
+      {
+        "name": "Freeze",
+        "value": 50
+      }
+    ],
+    "element": "ice",
+    "id": "freezing-charge",
+    "internalId": "Unique_IceDeer_IceHorn",
+    "maxRange": 2000,
+    "minRange": 550,
+    "name": "Freezing Charge",
+    "power": 65,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 15,
+    "description": "Summons a sharp ice lance under an enemy.",
+    "effects": [
+      {
+        "name": "Freeze",
+        "value": 100
+      }
+    ],
+    "element": "ice",
+    "id": "iceberg",
+    "internalId": "BlizzardLance",
+    "maxRange": 9999,
+    "minRange": 100,
+    "name": "Iceberg",
+    "power": 70,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 10,
+    "description": "Penking's exclusive skill. Lies on its belly while generating frozen air all around it before sliding at enemies at high speed.",
+    "effects": [
+      {
+        "name": "Freeze",
+        "value": 50
+      }
+    ],
+    "element": "ice",
+    "id": "emperor-slide",
+    "internalId": "Unique_CaptainPenguin_BodySlide",
+    "maxRange": 3000,
+    "minRange": 500,
+    "name": "Emperor Slide",
+    "power": 70,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 22,
+    "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.",
+    "effects": [
+      {
+        "name": "Freeze",
+        "value": 100
+      }
+    ],
+    "element": "ice",
+    "id": "cryst-breath",
+    "internalId": "FrostBreath",
+    "maxRange": 1000,
+    "minRange": 100,
+    "name": "Cryst Breath",
+    "power": 90,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 45,
+    "description": "Reptyro Cryst's exclusive skill. Raises its front legs and slams them into the ground causing frozen blasts under its enemies. It simultaneously pounds them with snow balls from above.",
+    "effects": [
+      {
+        "name": "Freeze",
+        "value": 100
+      }
+    ],
+    "element": "ice",
+    "id": "frost-burst",
+    "internalId": "Unique_VolcanicMonster_Ice_IceAttack",
+    "maxRange": 9999,
+    "minRange": 0,
+    "name": "Frost Burst",
+    "power": 100,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 24,
+    "description": "Frostallion's exclusive skill. Dashes forward while creating frigid air around its wings, using them to slash enemies.",
+    "effects": [
+      {
+        "name": "Freeze",
+        "value": 100
+      }
+    ],
+    "element": "ice",
+    "id": "crystal-wing",
+    "internalId": "Unique_IceHorse_IceBladeAttack",
+    "maxRange": 2500,
+    "minRange": 0,
+    "name": "Crystal Wing",
+    "power": 110,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 45,
+    "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.",
+    "effects": [
+      {
+        "name": "Freeze",
+        "value": 100
+      }
+    ],
+    "element": "ice",
+    "id": "blizzard-spike",
+    "internalId": "IcicleThrow",
+    "maxRange": 9999,
+    "minRange": 1000,
+    "name": "Blizzard Spike",
+    "power": 130,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 2,
+    "description": "Hurls a ball of fire straight at an enemy.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 50
+      }
+    ],
+    "element": "fire",
+    "id": "ignis-blast",
+    "internalId": "FireBlast",
+    "maxRange": 5000,
+    "minRange": 500,
+    "name": "Ignis Blast",
+    "power": 30,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 7,
+    "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 100
+      }
+    ],
+    "element": "fire",
+    "id": "spirit-fire",
+    "internalId": "FireSeed",
+    "maxRange": 3000,
+    "minRange": 1000,
+    "name": "Spirit Fire",
+    "power": 45,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 9,
+    "description": "Arsox's exclusive skill. Takes aim and rushes at an enemy with a mad dash.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 50
+      }
+    ],
+    "element": "fire",
+    "id": "blazing-horn",
+    "internalId": "Unique_FlameBuffalo_FlameHorn",
+    "maxRange": 2500,
+    "minRange": 1000,
+    "name": "Blazing Horn",
+    "power": 50,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 10,
+    "description": "Fires three flaming arrows in succession that home in on an enemy.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 103
+      }
+    ],
+    "element": "fire",
+    "id": "flare-arrow",
+    "internalId": "FlareArrow",
+    "maxRange": 5000,
+    "minRange": 500,
+    "name": "Flare Arrow",
+    "power": 55,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 9,
+    "description": "Bushi's exclusive skill. After Holding the sword, he appears in front of the enemy in an instant and unleashes a Ultra-fast sword draw attack.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 50
+      }
+    ],
+    "element": "fire",
+    "id": "iaigiri",
+    "internalId": "Unique_Ronin_Iai",
+    "maxRange": 9999,
+    "minRange": 1000,
+    "name": "Iaigiri",
+    "power": 65,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 15,
+    "description": "Shoots flames at an enemy, dealing continuous damage.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 100
+      }
+    ],
+    "element": "fire",
+    "id": "ignis-breath",
+    "internalId": "Flamethrower",
+    "maxRange": 1500,
+    "minRange": 500,
+    "name": "Ignis Breath",
+    "power": 70,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 10,
+    "description": "Incineram's exclusive skill. Draws near enemies using its left claw to slash them into the air before cutting them down with its right claw.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 100
+      }
+    ],
+    "element": "fire",
+    "id": "hellfire-claw",
+    "internalId": "Unique_Baphomet_SwallowKite",
+    "maxRange": 1200,
+    "minRange": 1100,
+    "name": "Hellfire Claw",
+    "power": 70,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 10,
+    "description": "Kitsun's exclusive skill. Charges forward with great speed while clad in intense blue flames.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 100
+      }
+    ],
+    "element": "fire",
+    "id": "daring-flames",
+    "internalId": "Unique_AmaterasuWolf_FireCharge",
+    "maxRange": 3500,
+    "minRange": 1000,
+    "name": "Daring Flames",
+    "power": 75,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 18,
+    "description": "Generates two flaming tornadoes on either side before launching them at an enemy.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 65
+      }
+    ],
+    "element": "fire",
+    "id": "flare-storm",
+    "internalId": "FlareTornado",
+    "maxRange": 3000,
+    "minRange": 700,
+    "name": "Flare Storm",
+    "power": 80,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 14,
+    "description": "Pyrin's exclusive skill. Charges forward while clad in a veil of flames. Flames continue to burn in its wake.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 100
+      }
+    ],
+    "element": "fire",
+    "id": "ignis-slam",
+    "internalId": "Unique_FireKirin_Tackle",
+    "maxRange": 2500,
+    "minRange": 0,
+    "name": "Ignis Slam",
+    "power": 85,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 45,
+    "description": "Reptyro's exclusive skill. Raises its front legs before slamming them into the ground, causing volcanic eruptions under its enemies. It simultaneously bombards them with volcanic bombs from above.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 100
+      }
+    ],
+    "element": "fire",
+    "id": "volcanic-burst",
+    "internalId": "Unique_VolcanicMonster_MagmaAttack",
+    "maxRange": 9999,
+    "minRange": 0,
+    "name": "Volcanic Burst",
+    "power": 100,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 40,
+    "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 100
+      }
+    ],
+    "element": "fire",
+    "id": "ignis-rage",
+    "internalId": "Inferno",
+    "maxRange": 1000,
+    "minRange": 100,
+    "name": "Ignis Rage",
+    "power": 120,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 28,
+    "description": "Faleris's special skill. Covers its body in a tornado of flames before charging forward.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 100
+      }
+    ],
+    "element": "fire",
+    "id": "phoenix-flare",
+    "internalId": "Unique_Horus_FlareBird",
+    "maxRange": 3000,
+    "minRange": 500,
+    "name": "Phoenix Flare",
+    "power": 135,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 55,
+    "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 100
+      }
+    ],
+    "element": "fire",
+    "id": "fire-ball",
+    "internalId": "FireBall",
+    "maxRange": 9999,
+    "minRange": 500,
+    "name": "Fire Ball",
+    "power": 150,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 7,
+    "description": "Generates two lightning bolts that advance left and right, blocking either direction.",
+    "effects": [],
+    "element": "electric",
+    "id": "cross-lightning",
+    "internalId": "CrossThunder",
+    "maxRange": 1000,
+    "minRange": 500,
+    "name": "Cross Lightning",
+    "power": 1,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 20,
+    "description": "Calls lightning that strikes an enemy after a set amount of time has passed.",
+    "effects": [
+      {
+        "name": "Electrical",
+        "value": 80
+      }
+    ],
+    "element": "electric",
+    "id": "lightning-rain",
+    "internalId": "ThunderRain",
+    "maxRange": 1000,
+    "minRange": 500,
+    "name": "Lightning Rain",
+    "power": 1,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 2,
+    "description": "The user releases a lightning ball that expands outward in a forward, circular pattern.",
+    "effects": [
+      {
+        "name": "Electrical",
+        "value": 100
+      }
+    ],
+    "element": "electric",
+    "id": "spark-blast",
+    "internalId": "SpreadPulse",
+    "maxRange": 5000,
+    "minRange": 500,
+    "name": "Spark Blast",
+    "power": 30,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 4,
+    "description": "Quickly discharges electricity, shocking those around it.",
+    "effects": [
+      {
+        "name": "Electrical",
+        "value": 103
+      }
+    ],
+    "element": "electric",
+    "id": "shockwave",
+    "internalId": "ElecWave",
+    "maxRange": 300,
+    "minRange": 0,
+    "name": "Shockwave",
+    "power": 40,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 9,
+    "description": "Fires an electric ball that slowly pursues an enemy.",
+    "effects": [
+      {
+        "name": "Electrical",
+        "value": 50
+      }
+    ],
+    "element": "electric",
+    "id": "electric-ball",
+    "internalId": "ThunderBall",
+    "maxRange": 2500,
+    "minRange": 500,
+    "name": "Electric Ball",
+    "power": 50,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 13,
+    "description": "Creates two balls of electric energy that fire numerous bolts of lightning at enemies.",
+    "effects": [
+      {
+        "name": "Electrical",
+        "value": 100
+      }
+    ],
+    "element": "electric",
+    "id": "plasma-tornado",
+    "internalId": "ThunderFunnel",
+    "maxRange": 9999,
+    "minRange": 500,
+    "name": "Plasma Tornado",
+    "power": 65,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 15,
+    "description": "Takes aim at an enemy before firing a super high speed laser.",
+    "effects": [
+      {
+        "name": "Electrical",
+        "value": 100
+      }
+    ],
+    "element": "electric",
+    "id": "lock-on-laser",
+    "internalId": "LockonLaser",
+    "maxRange": 5000,
+    "minRange": 0,
+    "name": "Lock-on Laser",
+    "power": 70,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 22,
+    "description": "Grizzbolt's special skill. After leaping at an enemy and tearing at it twice with its electrically charged claws, it attacks the ground, sending an electric shock throughout the area.",
+    "effects": [
+      {
+        "name": "Electrical",
+        "value": 100
+      }
+    ],
+    "element": "electric",
+    "id": "lightning-claw",
+    "internalId": "Unique_ElecPanda_ElecScratch",
+    "maxRange": 700,
+    "minRange": 0,
+    "name": "Lightning Claw",
+    "power": 90,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 16,
+    "description": "Generates a lightning bolt that moves forward in a line.",
+    "effects": [
+      {
+        "name": "Electrical",
+        "value": 100
+      }
+    ],
+    "element": "electric",
+    "id": "lightning-streak",
+    "internalId": "LineThunder",
+    "maxRange": 2000,
+    "minRange": 500,
+    "name": "Lightning Streak",
+    "power": 75,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 14,
+    "description": "Mossanda Lux's exclusive skill. Winds up its fist before pummeling an enemy with a flurry of electrically charged punches.",
+    "effects": [
+      {
+        "name": "Electrical",
+        "value": 100
+      }
+    ],
+    "element": "electric",
+    "id": "blast-punch",
+    "internalId": "Unique_GrassPanda_Electric_ElectricPunch",
+    "maxRange": 700,
+    "minRange": 0,
+    "name": "Blast Punch",
+    "power": 85,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 22,
+    "description": "Generates lightning that strikes an enemy three times from above.",
+    "effects": [
+      {
+        "name": "Electrical",
+        "value": 103
+      }
+    ],
+    "element": "electric",
+    "id": "tri-lightning",
+    "internalId": "ThreeThunder",
+    "maxRange": 9999,
+    "minRange": 0,
+    "name": "Tri-Lightning",
+    "power": 90,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 30,
+    "description": "Univolt's exclusive skill. Generates bolts of lightning all around while charging at its target.",
+    "effects": [],
+    "element": "electric",
+    "id": "lightning-tackle",
+    "internalId": "Unique_Kirin_LightningTackle",
+    "maxRange": 2500,
+    "minRange": 0,
+    "name": "Lightning Tackle",
+    "power": 100,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 30,
+    "description": "Orserk's exclusive skill. Summons a blade of lightning while leaping into the air before throwing it at an enemy.",
+    "effects": [
+      {
+        "name": "Electrical",
+        "value": 100
+      }
+    ],
+    "element": "electric",
+    "id": "kerauno",
+    "internalId": "Unique_ThunderDragonMan_ThunderSwordAttack",
+    "maxRange": 9999,
+    "minRange": 0,
+    "name": "Kerauno",
+    "power": 100,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 40,
+    "description": "Acts as a lightning rod, calling down thunderbolts that electrocute the surrounding area.",
+    "effects": [
+      {
+        "name": "Electrical",
+        "value": 100
+      }
+    ],
+    "element": "electric",
+    "id": "lightning-strike",
+    "internalId": "LightningStrike",
+    "maxRange": 500,
+    "minRange": 0,
+    "name": "Lightning Strike",
+    "power": 120,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 55,
+    "description": "Charges electric energy before blasting enemies with a powerful shock.",
+    "effects": [
+      {
+        "name": "Electrical",
+        "value": 100
+      }
+    ],
+    "element": "electric",
+    "id": "lightning-bolt",
+    "internalId": "Thunderbolt",
+    "maxRange": 3000,
+    "minRange": 500,
+    "name": "Lightning Bolt",
+    "power": 150,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 4,
+    "description": "Hurls sticky mud at an enemy.",
+    "effects": [
+      {
+        "name": "Muddy",
+        "value": 50
+      }
+    ],
+    "element": "ground",
+    "id": "sand-blast",
+    "internalId": "MudShot",
+    "maxRange": 3000,
+    "minRange": 500,
+    "name": "Sand Blast",
+    "power": 40,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 10,
+    "description": "Fires a barrage of stones forward.",
+    "effects": [
+      {
+        "name": "Muddy",
+        "value": 100
+      }
+    ],
+    "element": "ground",
+    "id": "stone-blast",
+    "internalId": "StoneShotgun",
+    "maxRange": 4000,
+    "minRange": 500,
+    "name": "Stone Blast",
+    "power": 55,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 9,
+    "description": "Digtoise's exclusive skill. Moves while spinning its whole body at high speeds. Drills through enemies, dealing continuous damage.",
+    "effects": [],
+    "element": "ground",
+    "id": "shell-spin",
+    "internalId": "Unique_DrillGame_ShellAttack",
+    "maxRange": 1500,
+    "minRange": 200,
+    "name": "Shell Spin",
+    "power": 65,
+    "specialAttackRates": [
+      {
+        "rate": 3.5,
+        "type": "vsStone"
+      }
+    ]
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 15,
+    "description": "Digs up a boulder and hurls it at an enemy.",
+    "effects": [
+      {
+        "name": "Muddy",
+        "value": 35
+      },
+      {
+        "name": "Stun",
+        "value": 20
+      }
+    ],
+    "element": "ground",
+    "id": "stone-cannon",
+    "internalId": "ThrowRock",
+    "maxRange": 2500,
+    "minRange": 500,
+    "name": "Stone Cannon",
+    "power": 70,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 11,
+    "description": "Warsect 's exclusive skill. Skewers enemies with its four sturdy horns.",
+    "effects": [],
+    "element": "ground",
+    "id": "giga-horn",
+    "internalId": "Unique_HerculesBeetle_BeetleTackle",
+    "maxRange": 2500,
+    "minRange": 0,
+    "name": "Giga Horn",
+    "power": 75,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 18,
+    "description": "Generates two sand tornadoes on either side before launching them at an enemy.",
+    "effects": [
+      {
+        "name": "Muddy",
+        "value": 65
+      }
+    ],
+    "element": "ground",
+    "id": "sand-tornado",
+    "internalId": "SandTornado",
+    "maxRange": 3000,
+    "minRange": 100,
+    "name": "Sand Tornado",
+    "power": 80,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 21,
+    "description": "Anubis's special skill. Performs a spin kick with its strong legs, cutting down enemies over a wide area.",
+    "effects": [],
+    "element": "ground",
+    "id": "spinning-roundhouse",
+    "internalId": "Unique_Anubis_LowRoundKick",
+    "maxRange": 300,
+    "minRange": 0,
+    "name": "Spinning Roundhouse",
+    "power": 100,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 30,
+    "description": "Mammorest's exclusive skill. Uses massive body to shake the earth, dealing damage over a wide area.",
+    "effects": [],
+    "element": "ground",
+    "id": "earth-impact",
+    "internalId": "Unique_Grassmammoth_Earthquake",
+    "maxRange": 9999,
+    "minRange": 0,
+    "name": "Earth Impact",
+    "power": 100,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 28,
+    "description": "Anubis's special skill. Pursues its foe with a high speed dash while releasing energy and unleashes a powerful punch.",
+    "effects": [],
+    "element": "ground",
+    "id": "forceful-charge",
+    "internalId": "Unique_Anubis_Tackle",
+    "maxRange": 5000,
+    "minRange": 1500,
+    "name": "Forceful Charge",
+    "power": 120,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 35,
+    "description": "Anubis's special skill. Leaps high into the air before diving to the ground with a punch. The force of the impact deals damage over a wide area.",
+    "effects": [
+      {
+        "name": "Muddy",
+        "value": 100
+      }
+    ],
+    "element": "ground",
+    "id": "ground-smash",
+    "internalId": "Unique_Anubis_GroundPunch",
+    "maxRange": 5000,
+    "minRange": 0,
+    "name": "Ground Smash",
+    "power": 140,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 55,
+    "description": "Generates a sharp rock spear under an enemy.",
+    "effects": [
+      {
+        "name": "Muddy",
+        "value": 100
+      }
+    ],
+    "element": "ground",
+    "id": "rock-lance",
+    "internalId": "RockLance",
+    "maxRange": 9999,
+    "minRange": 100,
+    "name": "Rock Lance",
+    "power": 150,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 2,
+    "description": "Hurls an energy ball imbued with draconic energy at an enemy.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 35
+      }
+    ],
+    "element": "dragon",
+    "id": "dragon-cannon",
+    "internalId": "DragonCanon",
+    "maxRange": 4000,
+    "minRange": 500,
+    "name": "Dragon Cannon",
+    "power": 30,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 10,
+    "description": "Quickly discharges draconic energy, damaging those around it.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 50
+      }
+    ],
+    "element": "dragon",
+    "id": "dragon-burst",
+    "internalId": "DragonWave",
+    "maxRange": 200,
+    "minRange": 0,
+    "name": "Dragon Burst",
+    "power": 55,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 15,
+    "description": "Exhales breath imbued with draconic energy, dealing continuous damage to those in front of it.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 100
+      }
+    ],
+    "element": "dragon",
+    "id": "draconic-breath",
+    "internalId": "DragonBreath",
+    "maxRange": 1500,
+    "minRange": 500,
+    "name": "Draconic Breath",
+    "power": 70,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 10,
+    "description": "Elphidran's exclusive skill. Generates twin whirlwinds imbued with a mysterious power that pursues enemies.",
+    "effects": [],
+    "element": "dragon",
+    "id": "mystic-whirlwind",
+    "internalId": "Unique_FairyDragon_FairyTornado",
+    "maxRange": 3000,
+    "minRange": 0,
+    "name": "Mystic Whirlwind",
+    "power": 70,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 50,
+    "description": "Jetragon's exclusive skill. Flies at enemies on illuminated wings while firing innumerable beams. The beams explode on impact.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 100
+      }
+    ],
+    "element": "dragon",
+    "id": "beam-comet",
+    "internalId": "Unique_JetDragon_JumpBeam",
+    "maxRange": 9999,
+    "minRange": 1000,
+    "name": "Beam Comet",
+    "power": 140,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 55,
+    "description": "Calls down numerous small meteorites and launches them at an enemy.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 45
+      }
+    ],
+    "element": "dragon",
+    "id": "dragon-meteor",
+    "internalId": "DragonMeteor",
+    "maxRange": 5000,
+    "minRange": 500,
+    "name": "Dragon Meteor",
+    "power": 150,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 30,
+    "description": "Generates a fog of poison in front, causing the opponent to become poisoned.",
+    "effects": [
+      {
+        "name": "Poison",
+        "value": 9999
+      }
+    ],
+    "element": "dark",
+    "id": "poison-fog",
+    "internalId": "PoisonFog",
+    "maxRange": 200,
+    "minRange": 0,
+    "name": "Poison Fog",
+    "power": 0,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 2,
+    "description": "Hurls poison sludge at an enemy.",
+    "effects": [
+      {
+        "name": "Poison",
+        "value": 100
+      }
+    ],
+    "element": "dark",
+    "id": "poison-blast",
+    "internalId": "PoisonShot",
+    "maxRange": 3000,
+    "minRange": 500,
+    "name": "Poison Blast",
+    "power": 30,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 4,
+    "description": "Unleashes a sphere of darkness that slowly tracks down an enemy.",
+    "effects": [
+      {
+        "name": "Darkness",
+        "value": 35
+      }
+    ],
+    "element": "dark",
+    "id": "dark-ball",
+    "internalId": "DarkBall",
+    "maxRange": 1000,
+    "minRange": 500,
+    "name": "Dark Ball",
+    "power": 40,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 10,
+    "description": "Quickly discharges dark energy, damaging those around it.",
+    "effects": [
+      {
+        "name": "Darkness",
+        "value": 50
+      }
+    ],
+    "element": "dark",
+    "id": "shadow-burst",
+    "internalId": "DarkWave",
+    "maxRange": 300,
+    "minRange": 0,
+    "name": "Shadow Burst",
+    "power": 55,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 7,
+    "description": "Cawgnito's exclusive skill. Teleports next to an enemy before attacking with its beak.",
+    "effects": [
+      {
+        "name": "Darkness",
+        "value": 50
+      }
+    ],
+    "element": "dark",
+    "id": "phantom-peck",
+    "internalId": "Unique_DarkCrow_TelePoke",
+    "maxRange": 9999,
+    "minRange": 0,
+    "name": "Phantom Peck",
+    "power": 55,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 7,
+    "description": "WereWolf's exclusive skill. Leaps forward and attacks twice with vicious claws imbued with dark energy.",
+    "effects": [
+      {
+        "name": "Darkness",
+        "value": 50
+      }
+    ],
+    "element": "dark",
+    "id": "jumping-claw",
+    "internalId": "Unique_Werewolf_Scratch",
+    "maxRange": 500,
+    "minRange": 400,
+    "name": "Jumping Claw",
+    "power": 55,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 16,
+    "description": "Fires three balls of malice that relentlessly pursue an enemy.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 102
+      }
+    ],
+    "element": "dark",
+    "id": "spirit-flame",
+    "internalId": "GhostFlame",
+    "maxRange": 5000,
+    "minRange": 500,
+    "name": "Spirit Flame",
+    "power": 75,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 14,
+    "description": "Pyrin Noct's exclusive skill. Charges forward while clad in a veil of dark flames. Flames continue to burn in its trajectory.",
+    "effects": [
+      {
+        "name": "Darkness",
+        "value": 50
+      }
+    ],
+    "element": "dark",
+    "id": "dark-charge",
+    "internalId": "Unique_FireKirin_Dark_DarkTossin",
+    "maxRange": 2500,
+    "minRange": 0,
+    "name": "Dark Charge",
+    "power": 85,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 30,
+    "description": "Creates a giant ball of darkness and hurls it at an enemy.",
+    "effects": [
+      {
+        "name": "Darkness",
+        "value": 65
+      }
+    ],
+    "element": "dark",
+    "id": "nightmare-ball",
+    "internalId": "ShadowBall",
+    "maxRange": 9999,
+    "minRange": 1000,
+    "name": "Nightmare Ball",
+    "power": 100,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 35,
+    "description": "Utilizes psychokinesis to grab enemies before flinging them to the ground from above.",
+    "effects": [],
+    "element": "dark",
+    "id": "psycho-gravity",
+    "internalId": "Psychokinesis",
+    "maxRange": 300,
+    "minRange": 0,
+    "name": "Psycho Gravity",
+    "power": 110,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 40,
+    "description": "Necromus' exclusive skill. Clads its twin spears with vicious whirlwinds and charges forward, thrusting them one after the other.",
+    "effects": [],
+    "element": "dark",
+    "id": "twin-spears",
+    "internalId": "Unique_BlackCentaur_TwoSpearRushes",
+    "maxRange": 1000,
+    "minRange": 0,
+    "name": "Twin Spears",
+    "power": 120,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 55,
+    "description": "Charges dark energy before blasting enemies with a powerful beam.",
+    "effects": [
+      {
+        "name": "Darkness",
+        "value": 100
+      }
+    ],
+    "element": "dark",
+    "id": "dark-laser",
+    "internalId": "DarkLaser",
+    "maxRange": 1800,
+    "minRange": 500,
+    "name": "Dark Laser",
+    "power": 150,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 45,
+    "description": "Shadowbeak's exclusive skill. Charges forward while generating orbs of light that automatically capture enemies. The orbs automatically capture enemies, before releasing a barrage of lasers.",
+    "effects": [],
+    "element": "dark",
+    "id": "divine-disaster",
+    "internalId": "Unique_BlackGriffon_TackleLaser",
+    "maxRange": 2500,
+    "minRange": 0,
+    "name": "Divine Disaster",
+    "power": 160,
+    "specialAttackRates": []
+  },
+  {
+    "category": "EPalWazaCategory",
+    "cooldownTime": 45,
+    "description": "Fires a menacing ball of dark energy that pursues enemies.",
+    "effects": [
+      {
+        "name": "Darkness",
+        "value": 100
+      }
+    ],
+    "element": "dark",
+    "id": "dark-whisp",
+    "internalId": "DarkLegion",
+    "maxRange": 1000,
+    "minRange": 500,
+    "name": "Dark Whisp",
+    "power": 160,
+    "specialAttackRates": []
+  }
+]
