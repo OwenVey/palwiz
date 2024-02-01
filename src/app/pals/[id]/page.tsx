@@ -5,7 +5,7 @@ import { WorkTypeImage } from '@/components/WorkTypeImage';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import pals from '@/data/pals.json';
-import { getEntityFromListById, getWorkLabel } from '@/lib/utils';
+import { cn, getEntityFromListById, getWorkLabel } from '@/lib/utils';
 import { PalSchema } from '@/schemas/pal';
 import Link from 'next/link';
 
@@ -30,6 +30,77 @@ export default function PalPage({ params }: { params: { id: string } }) {
     return <div>{error}</div>;
   }
 
+  const stats = [
+    {
+      label: 'Size',
+      value: pal.size,
+    },
+    {
+      label: 'Rarity',
+      value: pal.rarity,
+    },
+    {
+      label: 'HP',
+      value: pal.hp,
+    },
+    {
+      label: 'Melee Attack',
+      value: pal.meleeAttack,
+    },
+    {
+      label: 'Shot Attack',
+      value: pal.shotAttack,
+    },
+    {
+      label: 'Defense',
+      value: pal.defense,
+    },
+    {
+      label: 'Support',
+      value: pal.support,
+    },
+    {
+      label: 'Craft Speed',
+      value: pal.craftSpeed,
+    },
+    {
+      label: 'Capture Rate',
+      value: pal.captureRateCorrect,
+    },
+    {
+      label: 'Price',
+      value: pal.price,
+    },
+    {
+      label: 'Slow Walk Speed',
+      value: pal.slowWalkSpeed,
+    },
+    {
+      label: 'Walk Speed',
+      value: pal.walkSpeed,
+    },
+    {
+      label: 'Transport Speed',
+      value: pal.transportSpeed,
+    },
+    {
+      label: 'Run Speed',
+      value: pal.runSpeed,
+    },
+    {
+      label: 'Ride Sprint Speed',
+      value: pal.rideSprintSpeed,
+    },
+    {
+      label: 'Food Amount',
+      value: pal.foodAmount,
+    },
+    {
+      label: 'Male Probability',
+      value: pal.maleProbability,
+    },
+  ];
+
   return (
     <div className="flex flex-col gap-4 lg:flex-row">
       <Card className="h-fit lg:sticky lg:top-[81px] lg:w-80">
@@ -42,7 +113,7 @@ export default function PalPage({ params }: { params: { id: string } }) {
 
           <div className="absolute right-0 flex flex-col gap-2 pr-[inherit]">
             {[pal.elementType1, pal.elementType2].filter(Boolean).map((element) => (
-              <ElementImage key={element} element={element} className="size-8" tooltipSide="left" />
+              <ElementImage key={element} element={element} className="size-10" tooltipSide="left" />
             ))}
           </div>
 
@@ -53,7 +124,20 @@ export default function PalPage({ params }: { params: { id: string } }) {
             <p className="text-gray-11">{pal.title}</p>
           </div>
 
-          <div>Stats</div>
+          <dl className="mt-4">
+            {stats.map((stat, index) => (
+              <div
+                key={stat.label}
+                className={cn(
+                  'flex items-center justify-between rounded-md p-3 text-sm',
+                  index % 2 === 0 && 'bg-gray-3',
+                )}
+              >
+                <dt className="font-medium text-gray-12">{stat.label}</dt>
+                <dd className="font-mono text-gray-11">{stat.value.toLocaleString()}</dd>
+              </div>
+            ))}
+          </dl>
         </div>
       </Card>
 
