@@ -1,14 +1,12 @@
+import { PalActiveSkillsCard } from '@/app/pals/[id]/PalActiveSkillsCard';
 import { ItemDropsCard } from '@/app/pals/[id]/PalDropsCard';
 import { PalStatsSidebar } from '@/app/pals/[id]/PalStatsSidebar';
-import { ElementImage } from '@/components/ElementImage';
 import { PartnerSkillImage } from '@/components/PartnerSkillImage';
 import { WorkTypeImage } from '@/components/WorkTypeImage';
-import { Badge } from '@/components/ui/badge';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import pals from '@/data/pals.json';
 import { getEntityFromListById, getWorkLabel } from '@/lib/utils';
 import { PalSchema } from '@/schemas/pal';
-import Link from 'next/link';
 
 export function generateMetadata({ params }: { params: { id: string } }) {
   const pal = pals.find((pal) => pal.id === params.id);
@@ -91,44 +89,7 @@ export default function PalPage({ params }: { params: { id: string } }) {
 
         <ItemDropsCard className="col-span-2" drops={pal.drops} alphaDrops={pal.bossDrops} />
 
-        <Card className="col-span-2">
-          <CardHeader>
-            <CardTitle>Active Skills</CardTitle>
-          </CardHeader>
-          <div className="flex flex-col gap-2">
-            {pal.activeSkills.map((skill) => (
-              <Link key={skill.id} href={`/skills/${skill.id}`}>
-                <Card className="relative border-gray-5 bg-gray-3" hoverEffect>
-                  <div className="flex justify-between">
-                    <div className="flex gap-4">
-                      <ElementImage className="size-8" element={skill.element} tooltipSide="left" />
-                      <div className="font-medium text-gray-12">{skill.name}</div>
-                    </div>
-
-                    <Badge className="absolute right-2 top-2 bg-gray-5 font-mono text-sm">Lv {skill.level}</Badge>
-                  </div>
-                  <div className="-mt-1 space-y-2 pl-12">
-                    {/* <p className="text-sm text-gray-11">{skill.description}</p> */}
-                    <div className="flex gap-2">
-                      <Badge className="font-mono" variant="red">
-                        Power: {skill.power}
-                      </Badge>
-                      <Badge className="font-mono" variant="yellow">
-                        CT: {skill.cooldownTime}
-                      </Badge>
-                      <Badge className="font-mono" variant="gray">
-                        Range:{' '}
-                        {skill.minRange === skill.maxRange ? skill.minRange : `${skill.minRange}-${skill.maxRange}`}
-                      </Badge>
-                    </div>
-
-                    <p className="text-sm text-gray-11">{skill.description}</p>
-                  </div>
-                </Card>
-              </Link>
-            ))}
-          </div>
-        </Card>
+        <PalActiveSkillsCard className="col-span-2" pal={pal} />
       </div>
     </div>
   );
