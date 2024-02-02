@@ -106,7 +106,7 @@ export function PalStatsSidebar({ pal, ...rest }: PalStatsSidebarProps) {
           {stats.map((stat, index) => (
             <div
               key={stat.label}
-              className={cn('flex items-center justify-between rounded-md p-3 text-sm', index % 2 === 0 && 'bg-gray-3')}
+              className={cn('flex items-center justify-between rounded-lg p-3 text-sm', index % 2 === 0 && 'bg-gray-3')}
             >
               <dt className="font-medium text-gray-12">{stat.label}</dt>
               <dd className="font-mono text-gray-11">{stat.value.toLocaleString()}</dd>

@@ -19,9 +19,10 @@ export function WorkTypeImage({ id, tooltipSide, className, ...rest }: WorkTypeI
             className={cn('size-6', className)}
             src={`/images/work/${id}.png`}
             alt={`${workSuitability.label} work suitability`}
-            height={24}
-            width={24}
+            height={40}
+            width={40}
             quality={100}
+            unoptimized
             {...rest}
           />
         </span>

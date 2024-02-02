@@ -53,7 +53,7 @@ export function Navbar() {
                         key={item.name}
                         href={item.href}
                         className={cn(
-                          'flex items-center gap-2 rounded-md px-4 py-2 text-sm font-medium',
+                          'flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium',
                           isLinkActive(item.href)
                             ? 'bg-primary-9 text-white'
                             : 'text-gray-11 hover:bg-gray-3 hover:text-gray-12',
@@ -76,7 +76,7 @@ export function Navbar() {
               <Accordion.Trigger key={item.name} asChild>
                 <Link
                   className={cn(
-                    'flex items-center gap-3 rounded-md px-3 py-2 text-base font-medium',
+                    'flex items-center gap-3 rounded-lg px-3 py-2 text-base font-medium',
                     isLinkActive(item.href)
                       ? 'bg-primary-9 text-white'
                       : 'text-gray-11 hover:bg-gray-3 hover:text-gray-12',

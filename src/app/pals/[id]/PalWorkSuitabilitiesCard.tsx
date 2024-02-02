@@ -23,8 +23,8 @@ export function PalWorkSuitabilitiesCard({ workSuitabilities, ...rest }: PalWork
               className="flex items-center rounded border border-gray-4 bg-gray-3 px-3 py-2 text-gray-12"
             >
               <WorkTypeImage id={workId} className="size-8" />
-              <span className="ml-3 font-medium capitalize">{getWorkLabel(workId)}</span>
-              <div className="ml-auto font-mono text-sm font-medium">
+              <span className="ml-3 truncate font-medium capitalize">{getWorkLabel(workId)}</span>
+              <div className="ml-auto whitespace-nowrap font-mono text-sm font-medium">
                 Lv <span className="text-base">{value}</span>
               </div>
             </div>
