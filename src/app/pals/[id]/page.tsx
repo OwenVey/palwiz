@@ -1,11 +1,11 @@
 import { PalActiveSkillsCard } from '@/app/pals/[id]/PalActiveSkillsCard';
 import { ItemDropsCard } from '@/app/pals/[id]/PalDropsCard';
 import { PalStatsSidebar } from '@/app/pals/[id]/PalStatsSidebar';
+import { PalWorkSuitabilitiesCard } from '@/app/pals/[id]/PalWorkSuitabilitiesCard';
 import { PartnerSkillImage } from '@/components/PartnerSkillImage';
-import { WorkTypeImage } from '@/components/WorkTypeImage';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import pals from '@/data/pals.json';
-import { getEntityFromListById, getWorkLabel } from '@/lib/utils';
+import { getEntityFromListById } from '@/lib/utils';
 import { PalSchema } from '@/schemas/pal';
 
 export function generateMetadata({ params }: { params: { id: string } }) {
@@ -64,28 +64,7 @@ export default function PalPage({ params }: { params: { id: string } }) {
           </Card>
         </div>
 
-        <Card>
-          <CardHeader>
-            <CardTitle>Work Suitability</CardTitle>
-          </CardHeader>
-          <div className="flex flex-col gap-2">
-            {Object.entries(pal.workSuitabilities)
-              .filter(([, value]) => value > 0)
-              .sort(([, value1], [, value2]) => value2 - value1)
-              .map(([workId, value]) => (
-                <div
-                  key={workId}
-                  className="flex items-center rounded border border-gray-4 bg-gray-3 px-3 py-2 text-gray-12"
-                >
-                  <WorkTypeImage id={workId} className="size-8" />
-                  <span className="ml-3 font-medium capitalize">{getWorkLabel(workId)}</span>
-                  <div className="ml-auto font-mono text-sm font-medium">
-                    Lv <span className="text-base">{value}</span>
-                  </div>
-                </div>
-              ))}
-          </div>
-        </Card>
+        <PalWorkSuitabilitiesCard workSuitabilities={pal.workSuitabilities} />
 
         <ItemDropsCard className="col-span-2" drops={pal.drops} alphaDrops={pal.bossDrops} />
 
