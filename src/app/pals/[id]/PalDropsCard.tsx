@@ -9,6 +9,7 @@ import { Badge, type BadgeProps } from '@/components/ui/badge';
 import { Label } from '@/components/ui/label';
 import { Switch } from '@/components/ui/switch';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
+import { cn } from '@/lib/utils';
 import { type Drop } from '@/types';
 import Link from 'next/link';
 
@@ -33,12 +34,12 @@ interface ItemDropsCardProps extends React.HTMLAttributes<HTMLDivElement> {
   alphaDrops: Drop[];
 }
 
-export function ItemDropsCard({ drops, alphaDrops, ...rest }: ItemDropsCardProps) {
+export function ItemDropsCard({ drops, alphaDrops, className, ...rest }: ItemDropsCardProps) {
   const [showAlphaDrops, setShowAlphaDrops] = useState(false);
   const dropsToShow = showAlphaDrops ? alphaDrops : drops;
 
   return (
-    <Card {...rest}>
+    <Card {...rest} className={cn('@container', className)}>
       <CardHeader>
         <CardTitle className="relative flex justify-between">
           Item Drops
@@ -49,7 +50,7 @@ export function ItemDropsCard({ drops, alphaDrops, ...rest }: ItemDropsCardProps
           </div>
         </CardTitle>
       </CardHeader>
-      <div className="grid grid-cols-4 gap-2">
+      <div className="@sm:grid-cols-2 @xl:grid-cols-3 @3xl:grid-cols-4 grid grid-cols-1 gap-2">
         {dropsToShow.map((drop) => (
           <Tooltip key={drop.id}>
             <TooltipTrigger asChild>

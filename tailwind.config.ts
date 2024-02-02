@@ -1,3 +1,4 @@
+import containerQueriesPlugin from '@tailwindcss/container-queries';
 import type { Config } from 'tailwindcss';
 import plugin from 'tailwindcss/plugin';
 import { createPlugin } from 'windy-radix-palette';
@@ -85,7 +86,7 @@ const config = {
       },
     },
   },
-  plugins: [colors.plugin, require('tailwindcss-animate'), glassPlugin],
+  plugins: [colors.plugin, require('tailwindcss-animate'), glassPlugin, containerQueriesPlugin],
 } satisfies Config;
 
 export default config;
