@@ -50,13 +50,13 @@ export function ItemDropsCard({ drops, alphaDrops, className, ...rest }: ItemDro
           </div>
         </CardTitle>
       </CardHeader>
-      <div className="@sm:grid-cols-2 @xl:grid-cols-3 @3xl:grid-cols-4 grid grid-cols-1 gap-2">
+      <div className="@xs:grid-cols-2 @lg:grid-cols-3 @2xl:grid-cols-4 grid grid-cols-1 gap-2">
         {dropsToShow.map((drop) => (
           <Tooltip key={drop.id}>
             <TooltipTrigger asChild>
               <Link href={`/items/${drop.item.id}`}>
                 <Card className="relative flex h-full flex-col items-center border-gray-5 bg-gray-3 p-2" hoverEffect>
-                  <div className="absolute top-0 flex w-full justify-between p-[inherit] font-mono text-xs tracking-wider text-white">
+                  <div className="absolute top-0 flex w-full justify-between p-1 font-mono text-xs tracking-wider text-white">
                     <Badge variant="iris">{drop.min === drop.max ? drop.min : `${drop.min}-${drop.max}`}</Badge>
                     <Badge variant={getBadgeVariantForRate(drop.rate)}>{drop.rate}%</Badge>
                   </div>
