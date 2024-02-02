@@ -17,6 +17,7 @@ const badgeVariants = cva(
         lime: 'bg-lime-3 text-lime-11 border-lime-6',
         green: 'bg-green-3 text-green-11 border-green-6',
         iris: 'bg-iris-3 text-iris-11 border-iris-6',
+        gray: 'text-gray-11 bg-gray-3 border-gray-6',
       },
     },
     defaultVariants: {

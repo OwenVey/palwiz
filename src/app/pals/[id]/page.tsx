@@ -116,7 +116,7 @@ export default function PalPage({ params }: { params: { id: string } }) {
                       <Badge className="font-mono" variant="yellow">
                         CT: {skill.cooldownTime}
                       </Badge>
-                      <Badge className="font-mono">
+                      <Badge className="font-mono" variant="gray">
                         Range:{' '}
                         {skill.minRange === skill.maxRange ? skill.minRange : `${skill.minRange}-${skill.maxRange}`}
                       </Badge>
