@@ -43,7 +43,7 @@ export function ItemDropsCard({ drops, alphaDrops, className, ...rest }: ItemDro
       <CardHeader>
         <CardTitle className="relative flex justify-between">
           Item Drops
-          <div className="absolute right-0 flex items-center gap-2">
+          <div className="absolute -top-1 right-0 flex items-center gap-2">
             <Label htmlFor="alpha-mode">Normal</Label>
             <Switch id="alpha-mode" checked={showAlphaDrops} onCheckedChange={setShowAlphaDrops} />
             <Label htmlFor="alpha-mode">Alpha</Label>

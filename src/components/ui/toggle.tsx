@@ -12,7 +12,7 @@ const toggleVariants = cva(
     variants: {
       variant: {
         default:
-          'bg-gray-3 hover:bg-gray-4 data-[state=on]:bg-primary-5 border border-gray-7 hover:border-gray-8 data-[state=on]:border-primary-9',
+          'bg-gray-3 hover:bg-gray-4 data-[state=on]:bg-primary-5 border border-gray-6 hover:border-gray-8 data-[state=on]:border-primary-9',
         secondary:
           'bg-transparent hover:bg-gray-3 hover:text-gray-11 data-[state=on]:bg-gray-5 data-[state=on]:text-gray-12',
         outline:
