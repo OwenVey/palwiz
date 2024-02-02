@@ -7,7 +7,7 @@ const glassPlugin = plugin(({ matchUtilities, theme }) => {
   matchUtilities(
     {
       glass: (value, { modifier }) => {
-        const extendedBy = modifier || '6rem';
+        const extendedBy = typeof modifier === 'string' ? modifier : '6rem';
         const cutoff = `calc(100% - ${extendedBy})`;
 
         return {
@@ -20,7 +20,7 @@ const glassPlugin = plugin(({ matchUtilities, theme }) => {
             bottom: `calc(-1 * ${extendedBy})`,
             // Mask out the part falling outside the nav
             '-webkit-mask-image': `linear-gradient(to bottom, black 0, black ${cutoff}, transparent ${cutoff})`,
-            'backdrop-filter': `blur(${value || '1rem'})`,
+            'backdrop-filter': `blur(${value?.toString() ?? '1rem'})`,
           },
         };
       },
@@ -36,17 +36,6 @@ const glassPlugin = plugin(({ matchUtilities, theme }) => {
 });
 
 const colors = createPlugin();
-
-// const colors = createPlugin({
-//   colors: {
-//     mauve: radixColors.mauve,
-//     mauveDark: radixColors.mauveDark,
-//     purple: radixColors.purple,
-//     purpleDark: radixColors.purpleDark,
-//     red: radixColors.red,
-//     redDark: radixColors.redDark,
-//   },
-// });
 
 const config = {
   darkMode: ['class'],
