@@ -10,6 +10,8 @@ type PalGridViewProps = {
   pals: Pal[];
 };
 export function PalGridView({ pals }: PalGridViewProps) {
+  if (pals.length === 0) return <div className="grid h-full place-items-center text-gray-11">No pals found</div>;
+
   return (
     <div className="grid grid-cols-1 gap-4 @sm:grid-cols-2 @xl:grid-cols-3 @3xl:grid-cols-4 @5xl:grid-cols-5">
       {pals.map((pal) => (

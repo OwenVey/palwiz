@@ -1,11 +1,12 @@
 'use client';
 
 import { PalGridView } from '@/app/pals/pal-grid-view';
-import { PalTableView } from '@/app/pals/pal-table-view';
+import { PalTableView, columns } from '@/app/pals/pal-table-view';
 import { ElementImage } from '@/components/ElementImage';
 import { WorkTypeImage } from '@/components/WorkTypeImage';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
+import { ColumnToggle } from '@/components/ui/column-toggle';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
@@ -14,9 +15,19 @@ import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import { PAL_ELEMENTS, WORK_SUITABILITIES } from '@/constants';
 import { isWithinRange } from '@/lib/utils';
 import { type Pal, type WorkSuitability } from '@/types';
+import {
+  getCoreRowModel,
+  getFilteredRowModel,
+  getSortedRowModel,
+  useReactTable,
+  type ColumnFiltersState,
+  type SortingState,
+  type VisibilityState,
+} from '@tanstack/react-table';
 import { LayoutGridIcon, SearchIcon, TableIcon } from 'lucide-react';
 import Link from 'next/link';
 import { parseAsArrayOf, parseAsString, parseAsStringLiteral, useQueryState } from 'nuqs';
+import { useEffect, useState } from 'react';
 
 type PalListProps = {
   pals: Pal[];
@@ -28,6 +39,36 @@ export default function PalList({ pals }: PalListProps) {
   const [rarity, setRarity] = useQueryState('rarity', parseAsString.withDefault(''));
   const [elements, setElements] = useQueryState('elements', parseAsArrayOf(parseAsString).withDefault([]));
   const [work, setWork] = useQueryState('work', parseAsStringLiteral(WORK_SUITABILITIES.map(({ id }) => id)));
+
+  const [sorting, setSorting] = useState<SortingState>([]);
+  const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([{ id: 'Name', value: search }]);
+  const [columnVisibility, setColumnVisibility] = useState<VisibilityState>({});
+
+  const table = useReactTable({
+    data: pals,
+    columns,
+    getCoreRowModel: getCoreRowModel(),
+    onSortingChange: setSorting,
+    getSortedRowModel: getSortedRowModel(),
+    onColumnFiltersChange: setColumnFilters,
+    getFilteredRowModel: getFilteredRowModel(),
+    onColumnVisibilityChange: setColumnVisibility,
+    state: {
+      sorting,
+      columnFilters,
+      columnVisibility: {
+        'Slow Walk Speed': false,
+        'Walk Speed': false,
+        'Transport Speed': false,
+        'Run Speed': false,
+        'Ride Sprint Speed': false,
+      },
+    },
+  });
+
+  useEffect(() => {
+    table.getColumn('Name')?.setFilterValue(search);
+  }, [table, search]);
 
   const filteredPals = pals
     .filter((pal) => (search ? pal.name.toLowerCase().includes(search.toLowerCase()) : true))
@@ -73,7 +114,7 @@ export default function PalList({ pals }: PalListProps) {
             placeholder="Search pals"
             icon={SearchIcon}
             value={search}
-            onChange={(event) => setSearch(event.target.value ? event.target.value : null)}
+            onChange={({ target }) => setSearch(target.value ? target.value : null)}
           />
 
           <TabsContent value="grid" className="flex flex-col gap-4">
@@ -133,10 +174,14 @@ export default function PalList({ pals }: PalListProps) {
             </div>
           </TabsContent>
 
+          <TabsContent value="table" className="flex flex-col gap-4">
+            <ColumnToggle table={table} />
+          </TabsContent>
+
           <div className="ml-auto flex items-center gap-2">
             <div className="text-nowrap text-sm text-gray-11">{filteredPals.length} results</div>
             <Button asChild variant="secondary">
-              <Link href="/pals">Clear</Link>
+              <Link href={{ pathname: '/pals', query: { view } }}>Clear</Link>
             </Button>
           </div>
         </div>
@@ -147,7 +192,7 @@ export default function PalList({ pals }: PalListProps) {
       </TabsContent>
 
       <TabsContent value="table" className="flex-1">
-        <PalTableView pals={pals} search={search} />
+        <PalTableView table={table} />
       </TabsContent>
     </Tabs>
   );
