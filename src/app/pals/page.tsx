@@ -1,4 +1,4 @@
-import PalsGrid from '@/app/pals/grid';
+import PalList from '@/app/pals/pal-list';
 import palsJson from '@/data/pals.json';
 import { PalSchema } from '@/schemas/pal';
 import { type Metadata } from 'next';
@@ -14,21 +14,21 @@ export default function PalsPage() {
 
   const sortedPals = pals
     .filter((pal) => pal.zukanIndex > 0)
-    .map(({ id, name, zukanIndex, zukanIndexSuffix, rarity, elementType1, elementType2, workSuitabilities }) => ({
-      id,
-      name,
-      zukanIndex,
-      zukanIndexSuffix,
-      rarity,
-      elementType1,
-      elementType2,
-      workSuitabilities,
-    }))
+    // .map(({ id, name, zukanIndex, zukanIndexSuffix, rarity, elementType1, elementType2, workSuitabilities }) => ({
+    //   id,
+    //   name,
+    //   zukanIndex,
+    //   zukanIndexSuffix,
+    //   rarity,
+    //   elementType1,
+    //   elementType2,
+    //   workSuitabilities,
+    // }))
     .sort((a, b) => a.zukanIndex - b.zukanIndex);
 
   return (
     <Suspense>
-      <PalsGrid pals={sortedPals} />
+      <PalList pals={sortedPals} />
     </Suspense>
   );
 }

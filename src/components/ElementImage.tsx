@@ -12,7 +12,7 @@ export function ElementImage({ element, tooltipSide, className, ...rest }: Eleme
   return (
     <Tooltip>
       <TooltipTrigger asChild>
-        <span>
+        <span className="block w-fit">
           <Image
             className={cn('size-6', className)}
             src={`/images/elements/${element}.png`}
