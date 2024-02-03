@@ -24,7 +24,7 @@ const SelectTrigger = React.forwardRef<React.ElementRef<typeof SelectPrimitive.T
         {label && <Label htmlFor={id}>{label}</Label>}
         <SelectPrimitive.Trigger
           ref={ref}
-          className="flex h-10 w-full items-center justify-between rounded-lg border border-gray-5 bg-gray-1 px-3 py-2 text-sm ring-offset-gray-1 hover:border-gray-7 focus:border-primary-9 focus:outline-none focus:ring-2 focus:ring-primary-4 disabled:cursor-not-allowed disabled:opacity-50 data-[placeholder]:text-gray-10 [&>span]:line-clamp-1"
+          className="flex h-10 w-full items-center justify-between rounded-lg border border-gray-6 bg-gray-1 px-3 py-2 text-sm ring-offset-gray-1 transition-colors hover:border-gray-7 focus:border-primary-9 focus:outline-none focus:ring-2 focus:ring-primary-4 disabled:cursor-not-allowed disabled:opacity-50 data-[placeholder]:text-gray-10 [&>span]:line-clamp-1"
           {...props}
         >
           {children}
@@ -74,7 +74,7 @@ const SelectContent = React.forwardRef<
     <SelectPrimitive.Content
       ref={ref}
       className={cn(
-        'relative z-50 max-h-96 min-w-[8rem] overflow-hidden rounded-lg border border-gray-5 bg-gray-1 text-gray-12 shadow-md data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2',
+        'relative z-50 max-h-96 min-w-[8rem] overflow-hidden rounded-lg border border-gray-6 bg-gray-1 text-gray-12 shadow-md data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2',
         position === 'popper' &&
           'data-[side=bottom]:translate-y-1 data-[side=left]:-translate-x-1 data-[side=right]:translate-x-1 data-[side=top]:-translate-y-1',
         className,
