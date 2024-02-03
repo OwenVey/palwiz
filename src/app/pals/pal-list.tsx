@@ -178,10 +178,11 @@ export default function PalList({ pals }: PalListProps) {
             <ColumnToggle table={table} />
           </TabsContent>
 
-          <div className="ml-auto flex items-center gap-2">
-            <div className="text-nowrap text-sm text-gray-11">{filteredPals.length} results</div>
-            <Button asChild variant="secondary">
-              <Link href={{ pathname: '/pals', query: { view } }}>Clear</Link>
+          <div className="w-full">
+            <div className="float-right mb-2 text-nowrap text-sm text-gray-11">{filteredPals.length} results</div>
+
+            <Button asChild variant="secondary" className="w-full">
+              <Link href={{ pathname: '/pals', query: { view } }}>Clear Filters</Link>
             </Button>
           </div>
         </div>
