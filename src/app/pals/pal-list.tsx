@@ -42,7 +42,13 @@ export default function PalList({ pals }: PalListProps) {
 
   const [sorting, setSorting] = useState<SortingState>([]);
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([{ id: 'Name', value: search }]);
-  const [columnVisibility, setColumnVisibility] = useState<VisibilityState>({});
+  const [columnVisibility, setColumnVisibility] = useState<VisibilityState>({
+    'Slow Walk Speed': false,
+    'Walk Speed': false,
+    'Transport Speed': false,
+    'Run Speed': false,
+    'Ride Sprint Speed': false,
+  });
 
   const table = useReactTable({
     data: pals,
@@ -56,13 +62,7 @@ export default function PalList({ pals }: PalListProps) {
     state: {
       sorting,
       columnFilters,
-      columnVisibility: {
-        'Slow Walk Speed': false,
-        'Walk Speed': false,
-        'Transport Speed': false,
-        'Run Speed': false,
-        'Ride Sprint Speed': false,
-      },
+      columnVisibility,
     },
   });
 
