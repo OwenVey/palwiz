@@ -22,7 +22,7 @@ export const columns = [
     cell: ({ row, getValue }) => (
       <div className="flex items-center gap-2">
         <PalImage pal={row.original.id} className="border-5 size-8 rounded-full border border-gray-3" />
-        <span>{getValue()}</span>
+        <span className="text-nowrap">{getValue()}</span>
       </div>
     ),
   }),
@@ -61,13 +61,13 @@ export const columns = [
   }),
 ];
 
-interface PalTableViewProps {
+interface PalTableViewProps extends React.HTMLAttributes<HTMLTableElement> {
   table: TableType<Pal>;
 }
 
-export function PalTableView({ table }: PalTableViewProps) {
+export function PalTableView({ table, ...rest }: PalTableViewProps) {
   return (
-    <Table>
+    <Table {...rest}>
       <TableHeader>
         {table.getHeaderGroups().map((headerGroup) => (
           <TableRow key={headerGroup.id}>

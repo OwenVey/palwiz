@@ -192,8 +192,8 @@ export default function PalList({ pals }: PalListProps) {
         <PalGridView pals={filteredPals} />
       </TabsContent>
 
-      <TabsContent value="table" className="flex-1">
-        <PalTableView table={table} />
+      <TabsContent value="table" asChild>
+        <PalTableView table={table} className="flex-1 overflow-auto" />
       </TabsContent>
     </Tabs>
   );
