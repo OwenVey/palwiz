@@ -8,8 +8,8 @@ export default function HomePage() {
   return (
     <div className="flex flex-col items-center justify-center">
       <div className="my-6 flex flex-col items-center">
-        <Logo className="h-8 w-auto text-primary-9" />
-        <h1 className="font-title text-4xl leading-none text-gray-12">palwiz</h1>
+        <Logo className="h-10 w-auto text-primary-9" />
+        <h1 className="font-title text-5xl leading-none text-gray-12">palwiz</h1>
       </div>
 
       <div className="mt-4 grid w-full grid-cols-1 gap-4 sm:max-w-xl sm:grid-cols-2">

@@ -30,6 +30,7 @@ import {
 import {
   ArrowDownNarrowWideIcon,
   ArrowDownWideNarrowIcon,
+  ArrowUpDownIcon,
   GemIcon,
   LayoutGridIcon,
   MinusIcon,
@@ -192,7 +193,7 @@ export default function PalList({ pals }: PalListProps) {
               value={sort ?? ''}
               onValueChange={(v) => setSort(v === '' ? null : (v as (typeof SORTS)[number]['value']))}
             >
-              <SelectTrigger label="Sort" icon={GemIcon} placeholder="Sort by" />
+              <SelectTrigger label="Sort" icon={ArrowUpDownIcon} placeholder="Sort by" />
 
               <SelectContent>
                 {SORTS.map(({ label, value }) => (

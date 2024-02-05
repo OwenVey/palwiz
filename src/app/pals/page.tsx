@@ -12,19 +12,7 @@ export const metadata: Metadata = {
 export default function PalsPage() {
   const pals = z.array(PalSchema).parse(palsJson);
 
-  const sortedPals = pals
-    .filter((pal) => pal.zukanIndex > 0)
-    // .map(({ id, name, zukanIndex, zukanIndexSuffix, rarity, elementType1, elementType2, workSuitabilities }) => ({
-    //   id,
-    //   name,
-    //   zukanIndex,
-    //   zukanIndexSuffix,
-    //   rarity,
-    //   elementType1,
-    //   elementType2,
-    //   workSuitabilities,
-    // }))
-    .sort((a, b) => a.zukanIndex - b.zukanIndex);
+  const sortedPals = pals.sort((a, b) => a.zukanIndex - b.zukanIndex);
 
   return (
     <Suspense>

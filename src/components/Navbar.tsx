@@ -42,7 +42,7 @@ export function Navbar() {
               <div className="flex flex-1 items-center justify-center sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <Link href="/" className="flex items-center gap-1">
-                    <Logo className="h-7 w-auto text-primary-9" />
+                    <Logo className="h-6 w-auto text-primary-9" />
                     <div className="font-title text-3xl leading-none text-gray-12">palwiz</div>
                   </Link>
                 </div>

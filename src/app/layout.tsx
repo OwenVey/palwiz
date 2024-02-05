@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     template: 'Palwiz - %s',
     default: 'Palwiz',
   },
+  description: 'All in one source for Palword information',
 };
 
 const vinque = localFont({
