@@ -1,6 +1,7 @@
 'use client';
 
 import { ElementImage } from '@/components/ElementImage';
+import { Badge } from '@/components/ui/badge';
 import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { type Skill } from '@/types';
@@ -30,20 +31,33 @@ export function SkillsGrid({ skills }: SkillsGridProps) {
         />
       </Card>
 
-      <div className="grid flex-1 grid-cols-3 gap-4">
-        {filteredSkills.map((skill) => (
-          <Link key={skill.id} href={`/skills/${skill.id}`}>
-            <Card className="flex h-full flex-col gap-2" hoverEffect>
-              <div className="flex items-center gap-2">
-                <ElementImage element={skill.element} />
-                <div>{skill.name}</div>
-              </div>
-              {/* <div className="font-mono text-xs text-gray-11">{skill.id}</div> */}
-              {/* <div className="font-mono text-xs text-gray-11">{skill.internalId}</div> */}
-              <p className="text-sm text-gray-11">{skill.description}</p>
-            </Card>
-          </Link>
-        ))}
+      <div className="flex-1 @container">
+        <div className="grid grid-cols-1 gap-4 @2xl:grid-cols-2">
+          {filteredSkills.map((skill) => (
+            <Link key={skill.id} href={`/skills/${skill.id}`}>
+              <Card className="flex h-full flex-col gap-2" hoverEffect>
+                <div className="flex items-center gap-2">
+                  <ElementImage element={skill.element} />
+                  <div>{skill.name}</div>
+                </div>
+                {/* <div className="font-mono text-xs text-gray-11">{skill.id}</div> */}
+                {/* <div className="font-mono text-xs text-gray-11">{skill.internalId}</div> */}
+                <div className="flex gap-2">
+                  <Badge className="font-mono" variant="red">
+                    Power: {skill.power}
+                  </Badge>
+                  <Badge className="font-mono" variant="yellow">
+                    CT: {skill.cooldownTime}
+                  </Badge>
+                  <Badge className="font-mono" variant="gray">
+                    Range: {skill.minRange === skill.maxRange ? skill.minRange : `${skill.minRange}-${skill.maxRange}`}
+                  </Badge>
+                </div>
+                <p className="text-sm text-gray-11">{skill.description}</p>
+              </Card>
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );

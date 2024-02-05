@@ -28,18 +28,20 @@ export function ItemsGrid({ items }: ItemsGridProps) {
         />
       </Card>
 
-      <div className="grid flex-1 grid-cols-5 gap-4">
-        {filteredItems.map((item) => (
-          <Link key={item.internalId} href={`/items/${item.id}`}>
-            <Card className="grid h-full place-items-center text-balance text-center text-sm" hoverEffect>
-              <div className="rounded-full border border-gray-4 bg-gray-3 p-2">
-                {item.imageName && <ItemImage className="size-12" id={item.imageName} />}
-              </div>
+      <div className="flex-1 @container">
+        <div className="grid grid-cols-2 gap-4 @2xl:grid-cols-3 @4xl:grid-cols-4">
+          {filteredItems.map((item) => (
+            <Link key={item.internalId} href={`/items/${item.id}`}>
+              <Card className="grid h-full place-items-center text-balance text-center text-sm" hoverEffect>
+                <div className="rounded-full border border-gray-4 bg-gray-3 p-2">
+                  {item.imageName && <ItemImage className="size-12" id={item.imageName} />}
+                </div>
 
-              <div className="mt-2">{item.name}</div>
-            </Card>
-          </Link>
-        ))}
+                <div className="mt-2">{item.name}</div>
+              </Card>
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );
