@@ -43,11 +43,25 @@ export default function PalList({ pals }: PalListProps) {
   const [sorting, setSorting] = useState<SortingState>([]);
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([{ id: 'Name', value: search }]);
   const [columnVisibility, setColumnVisibility] = useState<VisibilityState>({
-    'Slow Walk Speed': false,
-    'Walk Speed': false,
-    'Transport Speed': false,
+    'Capture Rate': false,
+    Defense: true,
+    'Food Amount': false,
+    HP: true,
+    'Male Probability': false,
+    'Max Full Stomach': false,
+    'Melee Attack': true,
+    Price: false,
+    Rarity: false,
+    'Ride Sprint Speed': true,
     'Run Speed': false,
-    'Ride Sprint Speed': false,
+    'Shot Attack': true,
+    'Slow Walk Speed': false,
+    Stamina: false,
+    Support: false,
+    'Transport Speed': false,
+    'Type 1': false,
+    'Type 2': false,
+    'Walk Speed': false,
   });
 
   const table = useReactTable({

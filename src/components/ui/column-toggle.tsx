@@ -8,6 +8,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
 } from '@/components/ui/dropdown-menu';
+import { ScrollArea } from '@/components/ui/scroll-area';
 import { DropdownMenuTrigger } from '@radix-ui/react-dropdown-menu';
 import { type Table } from '@tanstack/react-table';
 import { SlidersHorizontalIcon } from 'lucide-react';
@@ -29,21 +30,23 @@ export function ColumnToggle<TData>({ table }: ColumnToggleProps<TData>) {
           Toggle Columns
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="w-[--radix-dropdown-menu-trigger-width] max-w-52">
+      <DropdownMenuContent align="end" className="w-[--radix-dropdown-menu-trigger-width] max-w-72">
         <DropdownMenuLabel>Toggle columns</DropdownMenuLabel>
         <DropdownMenuSeparator />
-        {columns.map((column) => {
-          return (
-            <DropdownMenuCheckboxItem
-              key={column.id}
-              className="capitalize"
-              checked={column.getIsVisible()}
-              onCheckedChange={(value) => column.toggleVisibility(!!value)}
-            >
-              {column.id}
-            </DropdownMenuCheckboxItem>
-          );
-        })}
+        <ScrollArea className="h-96">
+          {columns.map((column) => {
+            return (
+              <DropdownMenuCheckboxItem
+                key={column.id}
+                className="capitalize"
+                checked={column.getIsVisible()}
+                onCheckedChange={(value) => column.toggleVisibility(!!value)}
+              >
+                {column.id}
+              </DropdownMenuCheckboxItem>
+            );
+          })}
+        </ScrollArea>
       </DropdownMenuContent>
     </DropdownMenu>
   );

@@ -26,6 +26,70 @@ export const columns = [
       </div>
     ),
   }),
+  columnHelper.accessor('captureRateCorrect', {
+    id: 'Capture Rate',
+    header: ({ column }) => <ColumnHeader column={column} />,
+  }),
+  columnHelper.accessor('defense', {
+    id: 'Defense',
+    header: ({ column }) => <ColumnHeader column={column} />,
+  }),
+  columnHelper.accessor('foodAmount', {
+    id: 'Food Amount',
+    header: ({ column }) => <ColumnHeader column={column} />,
+  }),
+  columnHelper.accessor('hp', {
+    id: 'HP',
+    header: ({ column }) => <ColumnHeader column={column} />,
+  }),
+  columnHelper.accessor('maleProbability', {
+    id: 'Male Probability',
+    header: ({ column }) => <ColumnHeader column={column} />,
+  }),
+  columnHelper.accessor('maxFullStomach', {
+    id: 'Max Full Stomach',
+    header: ({ column }) => <ColumnHeader column={column} />,
+  }),
+  columnHelper.accessor('meleeAttack', {
+    id: 'Melee Attack',
+    header: ({ column }) => <ColumnHeader column={column} />,
+  }),
+  columnHelper.accessor('price', {
+    id: 'Price',
+    header: ({ column }) => <ColumnHeader column={column} />,
+  }),
+  columnHelper.accessor('rarity', {
+    id: 'Rarity',
+    header: ({ column }) => <ColumnHeader column={column} />,
+  }),
+  columnHelper.accessor('rideSprintSpeed', {
+    id: 'Ride Sprint Speed',
+    header: ({ column }) => <ColumnHeader column={column} />,
+  }),
+  columnHelper.accessor('runSpeed', {
+    id: 'Run Speed',
+    header: ({ column }) => <ColumnHeader column={column} />,
+  }),
+  columnHelper.accessor('shotAttack', {
+    id: 'Shot Attack',
+    header: ({ column }) => <ColumnHeader column={column} />,
+  }),
+  columnHelper.accessor('slowWalkSpeed', {
+    id: 'Slow Walk Speed',
+    header: ({ column }) => <ColumnHeader column={column} />,
+  }),
+  columnHelper.accessor('stamina', {
+    id: 'Stamina',
+    header: ({ column }) => <ColumnHeader column={column} />,
+  }),
+  columnHelper.accessor('support', {
+    id: 'Support',
+    header: ({ column }) => <ColumnHeader column={column} />,
+  }),
+  columnHelper.accessor('transportSpeed', {
+    id: 'Transport Speed',
+    header: ({ column }) => <ColumnHeader column={column} />,
+  }),
   columnHelper.accessor('elementType1', {
     id: 'Type 1',
     header: ({ column }) => <ColumnHeader column={column} />,
@@ -39,24 +103,8 @@ export const columns = [
       return type && <ElementImage className="w-fit" key={type} element={type} />;
     },
   }),
-  columnHelper.accessor('slowWalkSpeed', {
-    id: 'Slow Walk Speed',
-    header: ({ column }) => <ColumnHeader column={column} />,
-  }),
   columnHelper.accessor('walkSpeed', {
     id: 'Walk Speed',
-    header: ({ column }) => <ColumnHeader column={column} />,
-  }),
-  columnHelper.accessor('transportSpeed', {
-    id: 'Transport Speed',
-    header: ({ column }) => <ColumnHeader column={column} />,
-  }),
-  columnHelper.accessor('runSpeed', {
-    id: 'Run Speed',
-    header: ({ column }) => <ColumnHeader column={column} />,
-  }),
-  columnHelper.accessor('rideSprintSpeed', {
-    id: 'Ride Sprint Speed',
     header: ({ column }) => <ColumnHeader column={column} />,
   }),
 ];
