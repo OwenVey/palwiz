@@ -1,7 +1,7 @@
 'use client';
 
 import * as SelectPrimitive from '@radix-ui/react-select';
-import { Check, ChevronDown, ChevronUp } from 'lucide-react';
+import { Check, ChevronDown, ChevronUp, type LucideIcon } from 'lucide-react';
 import * as React from 'react';
 
 import { Label } from '@/components/ui/label';
@@ -15,19 +15,25 @@ const SelectValue = SelectPrimitive.Value;
 
 type SelectTriggerProps = React.ComponentPropsWithoutRef<typeof SelectPrimitive.Trigger> & {
   label?: string;
+  icon?: LucideIcon;
+  placeholder?: string;
 };
 const SelectTrigger = React.forwardRef<React.ElementRef<typeof SelectPrimitive.Trigger>, SelectTriggerProps>(
-  ({ className, label, children, ...props }, ref) => {
+  ({ className, label, icon: Icon, placeholder, children, ...props }, ref) => {
     const id = React.useId();
     return (
-      <div className={cn('flex flex-col gap-1.5', className)}>
+      <div className={cn('flex w-full flex-col gap-1.5', className)}>
         {label && <Label htmlFor={id}>{label}</Label>}
         <SelectPrimitive.Trigger
           ref={ref}
           className="flex h-10 w-full items-center justify-between rounded-lg border border-gray-6 bg-gray-1 px-3 py-2 text-sm ring-offset-gray-1 transition-colors hover:border-gray-7 focus:border-primary-9 focus:outline-none focus:ring-2 focus:ring-primary-4 disabled:cursor-not-allowed disabled:opacity-50 data-[placeholder]:text-gray-10 [&>span]:line-clamp-1"
           {...props}
         >
-          {children}
+          <div className="flex items-center gap-2">
+            {Icon && <div className="">{<Icon className="size-5 text-gray-10" aria-hidden="true" />}</div>}
+            {placeholder && <SelectValue placeholder={placeholder} />}
+            {children}
+          </div>
           <SelectPrimitive.Icon asChild>
             <ChevronDown className="h-4 w-4 opacity-50" />
           </SelectPrimitive.Icon>

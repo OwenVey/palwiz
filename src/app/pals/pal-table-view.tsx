@@ -12,8 +12,8 @@ const columnHelper = createColumnHelper<Pal>();
 
 export const columns = [
   columnHelper.accessor((row) => `${row.zukanIndex.toString()}${row.zukanIndexSuffix}`, {
-    id: '#',
-    header: ({ column }) => <ColumnHeader column={column} />,
+    id: 'Paldeck Number',
+    header: ({ column }) => <ColumnHeader column={column} title="#" />,
     cell: ({ row }) => `${row.original.zukanIndex}${row.original.zukanIndexSuffix}`,
   }),
   columnHelper.accessor('name', {

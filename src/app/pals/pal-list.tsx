@@ -11,7 +11,7 @@ import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/component
 import { ColumnToggle } from '@/components/ui/column-toggle';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { Select, SelectContent, SelectItem, SelectTrigger } from '@/components/ui/select';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import { PAL_ELEMENTS, WORK_SUITABILITIES } from '@/constants';
@@ -27,7 +27,16 @@ import {
   type SortingState,
   type VisibilityState,
 } from '@tanstack/react-table';
-import { ChevronsDownUpIcon, ChevronsUpDownIcon, LayoutGridIcon, SearchIcon, TableIcon } from 'lucide-react';
+import {
+  ArrowDownNarrowWideIcon,
+  ArrowDownWideNarrowIcon,
+  GemIcon,
+  LayoutGridIcon,
+  MinusIcon,
+  PlusIcon,
+  SearchIcon,
+  TableIcon,
+} from 'lucide-react';
 import Link from 'next/link';
 import { parseAsArrayOf, parseAsString, parseAsStringLiteral, useQueryState } from 'nuqs';
 import { useEffect, useState } from 'react';
@@ -36,8 +45,38 @@ type PalListProps = {
   pals: Pal[];
 };
 
+const SORTS = [
+  { label: 'Capture Rate', value: 'captureRateCorrect' },
+  { label: 'Defense', value: 'defense' },
+  { label: 'Food Amount', value: 'foodAmount' },
+  { label: 'HP', value: 'hp' },
+  { label: 'Male Probability', value: 'maleProbability' },
+  { label: 'Max Full Stomach', value: 'maxFullStomach' },
+  { label: 'Melee Attack', value: 'meleeAttack' },
+  { label: 'Name', value: 'name' },
+  { label: 'Paldeck Number', value: 'zukanIndex' },
+  { label: 'Price', value: 'price' },
+  { label: 'Rarity', value: 'rarity' },
+  { label: 'Ride Sprint Speed', value: 'rideSprintSpeed' },
+  { label: 'Run Speed', value: 'runSpeed' },
+  { label: 'Shot Attack', value: 'shotAttack' },
+  { label: 'Slow Walk Speed', value: 'slowWalkSpeed' },
+  { label: 'Stamina', value: 'stamina' },
+  { label: 'Support', value: 'support' },
+  { label: 'Transport Speed', value: 'transportSpeed' },
+  { label: 'Walk Speed', value: 'walkSpeed' },
+] satisfies Array<{ label: string; value: keyof Pal }>;
+
 export default function PalList({ pals }: PalListProps) {
   const [view, setView] = useQueryState('view', parseAsStringLiteral(['grid', 'table']).withDefault('grid'));
+  const [sort, setSort] = useQueryState(
+    'sort',
+    parseAsStringLiteral(SORTS.map((s) => s.value)).withDefault('zukanIndex'),
+  );
+  const [sortDirection, setSortDirection] = useQueryState(
+    'sortDirection',
+    parseAsStringLiteral(['asc', 'desc']).withDefault('asc'),
+  );
   const [search, setSearch] = useQueryState('search', parseAsString.withDefault(''));
   const [rarity, setRarity] = useQueryState('rarity', parseAsString.withDefault(''));
   const [elements, setElements] = useQueryState('elements', parseAsArrayOf(parseAsString).withDefault([]));
@@ -96,7 +135,19 @@ export default function PalList({ pals }: PalListProps) {
     )
     .filter((pal) => (work ? pal.workSuitabilities[work] > 0 : true))
     .filter((pal) => (partnerSkill ? pal.partnerSkillIcon === +partnerSkill : true))
-    .sort((pal1, pal2) => (work ? pal2.workSuitabilities[work] - pal1.workSuitabilities[work] : 0));
+    .sort((pal1, pal2) => (work ? pal2.workSuitabilities[work] - pal1.workSuitabilities[work] : 0))
+    .sort((pal1, pal2) => {
+      if (!sort) return 0;
+      const val1 = sortDirection === 'asc' ? pal1[sort] : pal2[sort];
+      const val2 = sortDirection === 'asc' ? pal2[sort] : pal1[sort];
+      if (typeof val1 === 'string' && typeof val2 === 'string') {
+        return val1.localeCompare(val2);
+      } else if (typeof val1 === 'number' && typeof val2 === 'number') {
+        return val1 - val2;
+      } else {
+        return 0;
+      }
+    });
 
   function isCorrectRarity(rarityGroup: string, rarity: number) {
     if (rarityGroup === 'all') return true;
@@ -136,29 +187,62 @@ export default function PalList({ pals }: PalListProps) {
             onChange={({ target }) => setSearch(target.value ? target.value : null)}
           />
 
+          <div className="flex flex-col items-end gap-2">
+            <Select
+              value={sort ?? ''}
+              onValueChange={(v) => setSort(v === '' ? null : (v as (typeof SORTS)[number]['value']))}
+            >
+              <SelectTrigger label="Sort" icon={GemIcon} placeholder="Sort by" />
+
+              <SelectContent>
+                {SORTS.map(({ label, value }) => (
+                  <SelectItem key={value} value={value}>
+                    {label}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+            <ToggleGroup
+              type="single"
+              className="flex w-full"
+              size="sm"
+              variant="outline"
+              value={sortDirection}
+              onValueChange={async (value: 'asc' | 'desc') => {
+                if (value) await setSortDirection(value);
+              }}
+            >
+              <ToggleGroupItem value="asc" className="flex-1">
+                <ArrowDownNarrowWideIcon className="mr-1 size-4" />
+                Asc
+              </ToggleGroupItem>
+              <ToggleGroupItem value="desc" className="flex-1">
+                <ArrowDownWideNarrowIcon className="mr-1 size-4" />
+                Desc
+              </ToggleGroupItem>
+            </ToggleGroup>
+          </div>
+
           <TabsContent value="grid" className="flex flex-col gap-4">
-            <div>
-              <Select value={rarity} onValueChange={(v) => setRarity(v && v !== 'all' ? v : null)}>
-                <SelectTrigger className="w-full" label="Rarity">
-                  <SelectValue placeholder="Select rarity" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="all">All</SelectItem>
-                  <SelectItem value="common" className="text-gray-10 focus:text-gray-10">
-                    Common
-                  </SelectItem>
-                  <SelectItem value="rare" className="text-blue-9 focus:bg-blue-3 focus:text-blue-10">
-                    Rare
-                  </SelectItem>
-                  <SelectItem value="epic" className="text-purple-10 focus:bg-purple-3 focus:text-purple-10">
-                    Epic
-                  </SelectItem>
-                  <SelectItem value="legendary" className="text-orange-10 focus:bg-orange-3 focus:text-orange-10">
-                    Legendary
-                  </SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
+            <Select value={rarity} onValueChange={(v) => setRarity(v && v !== 'all' ? v : null)}>
+              <SelectTrigger label="Rarity" icon={GemIcon} placeholder="Select rarity" />
+
+              <SelectContent>
+                <SelectItem value="all">All</SelectItem>
+                <SelectItem value="common" className="text-gray-10 focus:text-gray-10">
+                  Common
+                </SelectItem>
+                <SelectItem value="rare" className="text-blue-9 focus:bg-blue-3 focus:text-blue-10">
+                  Rare
+                </SelectItem>
+                <SelectItem value="epic" className="text-purple-10 focus:bg-purple-3 focus:text-purple-10">
+                  Epic
+                </SelectItem>
+                <SelectItem value="legendary" className="text-orange-10 focus:bg-orange-3 focus:text-orange-10">
+                  Legendary
+                </SelectItem>
+              </SelectContent>
+            </Select>
 
             <CollapsibleFilter label="Work Suitability" defaultOpen>
               <ToggleGroup
@@ -244,8 +328,8 @@ function CollapsibleFilter({ label, className, children, ...rest }: CollapsibleF
       <div className="flex items-center justify-between">
         <Label>{label}</Label>
         <CollapsibleTrigger className="group grid size-6 place-items-center rounded-md text-gray-11 transition-colors hover:bg-gray-4 hover:text-gray-12">
-          <ChevronsUpDownIcon className="hidden size-4 group-data-[state=closed]:block" />
-          <ChevronsDownUpIcon className="hidden size-4 group-data-[state=open]:block" />
+          <PlusIcon className="hidden size-4 group-data-[state=closed]:block" />
+          <MinusIcon className="hidden size-4 group-data-[state=open]:block" />
         </CollapsibleTrigger>
       </div>
       <CollapsibleContent>{children}</CollapsibleContent>
