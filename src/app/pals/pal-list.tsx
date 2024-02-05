@@ -3,9 +3,11 @@
 import { PalGridView } from '@/app/pals/pal-grid-view';
 import { PalTableView, columns } from '@/app/pals/pal-table-view';
 import { ElementImage } from '@/components/ElementImage';
+import { PartnerSkillImage } from '@/components/PartnerSkillImage';
 import { WorkTypeImage } from '@/components/WorkTypeImage';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 import { ColumnToggle } from '@/components/ui/column-toggle';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -13,8 +15,9 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import { PAL_ELEMENTS, WORK_SUITABILITIES } from '@/constants';
-import { isWithinRange } from '@/lib/utils';
+import { cn, isWithinRange } from '@/lib/utils';
 import { type Pal, type WorkSuitability } from '@/types';
+import { type CollapsibleProps } from '@radix-ui/react-collapsible';
 import {
   getCoreRowModel,
   getFilteredRowModel,
@@ -24,7 +27,7 @@ import {
   type SortingState,
   type VisibilityState,
 } from '@tanstack/react-table';
-import { LayoutGridIcon, SearchIcon, TableIcon } from 'lucide-react';
+import { ChevronsDownUpIcon, ChevronsUpDownIcon, LayoutGridIcon, SearchIcon, TableIcon } from 'lucide-react';
 import Link from 'next/link';
 import { parseAsArrayOf, parseAsString, parseAsStringLiteral, useQueryState } from 'nuqs';
 import { useEffect, useState } from 'react';
@@ -39,6 +42,7 @@ export default function PalList({ pals }: PalListProps) {
   const [rarity, setRarity] = useQueryState('rarity', parseAsString.withDefault(''));
   const [elements, setElements] = useQueryState('elements', parseAsArrayOf(parseAsString).withDefault([]));
   const [work, setWork] = useQueryState('work', parseAsStringLiteral(WORK_SUITABILITIES.map(({ id }) => id)));
+  const [partnerSkill, setPartnerSkill] = useQueryState('partnerSkill');
 
   const [sorting, setSorting] = useState<SortingState>([]);
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([{ id: 'Name', value: search }]);
@@ -91,6 +95,7 @@ export default function PalList({ pals }: PalListProps) {
       elements?.length ? [pal.elementType1, pal.elementType2].filter(Boolean).some((e) => elements.includes(e)) : true,
     )
     .filter((pal) => (work ? pal.workSuitabilities[work] > 0 : true))
+    .filter((pal) => (partnerSkill ? pal.partnerSkillIcon === +partnerSkill : true))
     .sort((pal1, pal2) => (work ? pal2.workSuitabilities[work] - pal1.workSuitabilities[work] : 0));
 
   function isCorrectRarity(rarityGroup: string, rarity: number) {
@@ -155,8 +160,7 @@ export default function PalList({ pals }: PalListProps) {
               </Select>
             </div>
 
-            <div className="flex flex-col gap-1.5">
-              <Label>Work Suitability</Label>
+            <CollapsibleFilter label="Work Suitability" defaultOpen>
               <ToggleGroup
                 type="single"
                 className="md:grid md:grid-cols-6 md:gap-1"
@@ -169,10 +173,9 @@ export default function PalList({ pals }: PalListProps) {
                   </ToggleGroupItem>
                 ))}
               </ToggleGroup>
-            </div>
+            </CollapsibleFilter>
 
-            <div className="flex flex-col gap-1.5">
-              <Label>Elements</Label>
+            <CollapsibleFilter label="Elements" defaultOpen>
               <ToggleGroup
                 type="multiple"
                 className="md:grid md:grid-cols-6 md:gap-1"
@@ -185,7 +188,26 @@ export default function PalList({ pals }: PalListProps) {
                   </ToggleGroupItem>
                 ))}
               </ToggleGroup>
-            </div>
+            </CollapsibleFilter>
+
+            <CollapsibleFilter label="Partner Skill">
+              <ToggleGroup
+                type="single"
+                className="md:grid md:grid-cols-6 md:gap-1"
+                value={partnerSkill?.toString() ?? ''}
+                onValueChange={(v) => setPartnerSkill(v === '' ? null : v)}
+              >
+                {[...new Set(pals.map((p) => p.partnerSkillIcon))].map((partnerSkillIcon) => (
+                  <ToggleGroupItem
+                    key={partnerSkillIcon}
+                    value={partnerSkillIcon.toString()}
+                    className="w-10 p-0 md:w-auto"
+                  >
+                    <PartnerSkillImage id={partnerSkillIcon.toString()} />
+                  </ToggleGroupItem>
+                ))}
+              </ToggleGroup>
+            </CollapsibleFilter>
           </TabsContent>
 
           <TabsContent value="table" className="flex flex-col gap-4">
@@ -210,5 +232,23 @@ export default function PalList({ pals }: PalListProps) {
         <PalTableView table={table} className="flex-1 overflow-auto" />
       </TabsContent>
     </Tabs>
+  );
+}
+
+interface CollapsibleFilterProps extends CollapsibleProps {
+  label: string;
+}
+function CollapsibleFilter({ label, className, children, ...rest }: CollapsibleFilterProps) {
+  return (
+    <Collapsible className={cn('space-y-1', className)} {...rest}>
+      <div className="flex items-center justify-between">
+        <Label>{label}</Label>
+        <CollapsibleTrigger className="group grid size-6 place-items-center rounded-md text-gray-11 transition-colors hover:bg-gray-4 hover:text-gray-12">
+          <ChevronsUpDownIcon className="hidden size-4 group-data-[state=closed]:block" />
+          <ChevronsDownUpIcon className="hidden size-4 group-data-[state=open]:block" />
+        </CollapsibleTrigger>
+      </div>
+      <CollapsibleContent>{children}</CollapsibleContent>
+    </Collapsible>
   );
 }

@@ -14,7 +14,7 @@ export function ElementImage({ element, tooltipSide, className, ...rest }: Eleme
       <TooltipTrigger asChild>
         <span className="block w-fit">
           <Image
-            className={cn('size-6', className)}
+            className={cn('size-6 object-cover', className)}
             src={`/images/elements/${element}.png`}
             alt={`${element} element`}
             height={24}

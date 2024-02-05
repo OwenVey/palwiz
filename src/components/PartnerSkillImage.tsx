@@ -9,7 +9,7 @@ type PartnerSkillImageProps = Omit<ImageProps, 'src' | 'alt'> & {
 export function PartnerSkillImage({ id, alt, className, ...rest }: PartnerSkillImageProps) {
   return (
     <Image
-      className={cn('size-10', className)}
+      className={cn('size-10 object-cover', className)}
       src={`/images/partner-skills/${id}.webp`}
       alt={alt ?? id}
       height={112}

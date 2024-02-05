@@ -9,7 +9,7 @@ type ItemImageProps = Omit<ImageProps, 'src' | 'alt'> & {
 export function ItemImage({ id, alt, className, ...rest }: ItemImageProps) {
   return (
     <Image
-      className={cn('size-28', className)}
+      className={cn('size-28 object-cover', className)}
       src={`/images/items/${id}.webp`}
       alt={alt ?? id}
       height={112}

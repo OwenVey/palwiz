@@ -16,7 +16,7 @@ export function WorkTypeImage({ id, tooltipSide, className, ...rest }: WorkTypeI
       <TooltipTrigger asChild>
         <span>
           <Image
-            className={cn('size-6', className)}
+            className={cn('size-6 object-cover', className)}
             src={`/images/work/${id}.png`}
             alt={`${workSuitability.label} work suitability`}
             height={40}
