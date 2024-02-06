@@ -8,7 +8,7 @@ import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger } from '@/components/ui/select';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
-import { sortArrayByPropertyInDirection } from '@/lib/utils';
+import { cn, sortArrayByPropertyInDirection } from '@/lib/utils';
 import { type Item } from '@/types';
 import { capitalCase } from 'change-case';
 import { ArrowDownNarrowWideIcon, ArrowDownWideNarrowIcon, ArrowUpDownIcon, SearchIcon } from 'lucide-react';
@@ -57,6 +57,23 @@ export function ItemsGrid({ items }: ItemsGridProps) {
     .filter((item) => (categories.length > 0 ? categories.includes(item.typeA) : true));
 
   const ALL_CATEGORIES = [...new Set(items.map((item) => item.typeA))].sort();
+
+  function getItemRarityClass(rarity: number) {
+    switch (rarity) {
+      case 0:
+        return 'bg-gray-2 border-gray-4 hover:bg-gray-3 hover:border-gray-9 hover:shadow-gray-5';
+      case 1:
+        return 'bg-green-2 border-green-4 hover:bg-green-3 hover:border-green-9 hover:shadow-green-5';
+      case 2:
+        return 'bg-blue-2 border-blue-4 hover:bg-blue-3 hover:border-blue-9 hover:shadow-blue-5';
+      case 3:
+        return 'bg-purple-2 border-purple-4 hover:bg-purple-3 hover:border-purple-9 hover:shadow-purple-5';
+      case 4:
+        return 'bg-yellow-2 border-yellow-4 hover:bg-yellow-3 hover:border-yellow-8 hover:shadow-yellow-5';
+      default:
+        return 'bg-red-2 border-red-4 hover:bg-red-3 hover:border-red-9 hover:shadow-red-5';
+    }
+  }
 
   return (
     <div className="flex flex-col gap-4 md:flex-row">
@@ -129,7 +146,7 @@ export function ItemsGrid({ items }: ItemsGridProps) {
         <div className="grid grid-cols-2 gap-4 @2xl:grid-cols-3 @5xl:grid-cols-4">
           {filteredItems.map((item) => (
             <Link key={item.internalId} href={`/items/${item.id}`}>
-              <Card className="relative flex h-full flex-col" hoverEffect>
+              <Card className={cn('relative flex h-full flex-col', getItemRarityClass(item.rarity))} hoverEffect>
                 {sort !== 'name' && (
                   <Badge variant="primary" className="absolute -right-1 -top-1 font-mono">
                     {item[sort].toLocaleString()}
