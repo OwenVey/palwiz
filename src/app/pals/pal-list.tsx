@@ -14,7 +14,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger } from '@/components/u
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import { PAL_ELEMENTS, WORK_SUITABILITIES } from '@/constants';
-import { isWithinRange } from '@/lib/utils';
+import { isWithinRange, sortArrayByPropertyInDirection } from '@/lib/utils';
 import { type Pal, type WorkSuitability } from '@/types';
 import {
   getCoreRowModel,
@@ -42,7 +42,7 @@ type PalListProps = {
   pals: Pal[];
 };
 
-const SORTS = [
+export const PAL_SORTS = [
   { label: 'Capture Rate', value: 'captureRateCorrect' },
   { label: 'Defense', value: 'defense' },
   { label: 'Food Amount', value: 'foodAmount' },
@@ -68,7 +68,7 @@ export default function PalList({ pals }: PalListProps) {
   const [view, setView] = useQueryState('view', parseAsStringLiteral(['grid', 'table']).withDefault('grid'));
   const [sort, setSort] = useQueryState(
     'sort',
-    parseAsStringLiteral(SORTS.map((s) => s.value)).withDefault('zukanIndex'),
+    parseAsStringLiteral(PAL_SORTS.map((s) => s.value)).withDefault('zukanIndex'),
   );
   const [sortDirection, setSortDirection] = useQueryState(
     'sortDirection',
@@ -124,7 +124,7 @@ export default function PalList({ pals }: PalListProps) {
     table.getColumn('Name')?.setFilterValue(search);
   }, [table, search]);
 
-  const filteredPals = pals
+  const filteredPals = sortArrayByPropertyInDirection(pals, sort, sortDirection)
     .filter((pal) => (search ? pal.name.toLowerCase().includes(search.toLowerCase()) : true))
     .filter((pal) => (rarity ? isCorrectRarity(rarity ?? 'all', pal.rarity) : true))
     .filter((pal) =>
@@ -132,19 +132,7 @@ export default function PalList({ pals }: PalListProps) {
     )
     .filter((pal) => (work ? pal.workSuitabilities[work] > 0 : true))
     .filter((pal) => (partnerSkill ? pal.partnerSkillIcon === +partnerSkill : true))
-    .sort((pal1, pal2) => (work ? pal2.workSuitabilities[work] - pal1.workSuitabilities[work] : 0))
-    .sort((pal1, pal2) => {
-      if (!sort) return 0;
-      const val1 = sortDirection === 'asc' ? pal1[sort] : pal2[sort];
-      const val2 = sortDirection === 'asc' ? pal2[sort] : pal1[sort];
-      if (typeof val1 === 'string' && typeof val2 === 'string') {
-        return val1.localeCompare(val2);
-      } else if (typeof val1 === 'number' && typeof val2 === 'number') {
-        return val1 - val2;
-      } else {
-        return 0;
-      }
-    });
+    .sort((pal1, pal2) => (work ? pal2.workSuitabilities[work] - pal1.workSuitabilities[work] : 0));
 
   function isCorrectRarity(rarityGroup: string, rarity: number) {
     if (rarityGroup === 'all') return true;
@@ -187,12 +175,12 @@ export default function PalList({ pals }: PalListProps) {
           <div className="flex flex-col items-end gap-2">
             <Select
               value={sort ?? ''}
-              onValueChange={(v) => setSort(v === '' ? null : (v as (typeof SORTS)[number]['value']))}
+              onValueChange={(v) => setSort(v === '' ? null : (v as (typeof PAL_SORTS)[number]['value']))}
             >
               <SelectTrigger label="Sort" icon={ArrowUpDownIcon} placeholder="Sort by" />
 
               <SelectContent>
-                {SORTS.map(({ label, value }) => (
+                {PAL_SORTS.map(({ label, value }) => (
                   <SelectItem key={value} value={value}>
                     {label}
                   </SelectItem>
@@ -305,7 +293,7 @@ export default function PalList({ pals }: PalListProps) {
       </Card>
 
       <TabsContent value="grid" className="flex-1 @container">
-        <PalGridView pals={filteredPals} />
+        <PalGridView pals={filteredPals} sort={sort} />
       </TabsContent>
 
       <TabsContent value="table" asChild>

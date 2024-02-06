@@ -5,18 +5,25 @@ import { Badge } from '@/components/ui/badge';
 import { Card } from '@/components/ui/card';
 import { type Pal } from '@/types';
 import Link from 'next/link';
+import { type PAL_SORTS } from './pal-list';
 
 type PalGridViewProps = {
   pals: Pal[];
+  sort: (typeof PAL_SORTS)[number]['value'];
 };
-export function PalGridView({ pals }: PalGridViewProps) {
+export function PalGridView({ pals, sort }: PalGridViewProps) {
   if (pals.length === 0) return <div className="grid h-full place-items-center text-gray-11">No pals found</div>;
 
   return (
     <div className="grid grid-cols-1 gap-4 @sm:grid-cols-2 @xl:grid-cols-3 @3xl:grid-cols-4 @5xl:grid-cols-5">
       {pals.map((pal) => (
         <Link href={`/pals/${pal.id}`} key={pal.id} className="">
-          <Card className="p-2" hoverEffect>
+          <Card className="relative p-2" hoverEffect>
+            {sort !== 'name' && sort !== 'zukanIndex' && (
+              <Badge variant="primary" className="absolute -right-1 -top-1 z-10 font-mono">
+                {pal[sort].toLocaleString()}
+              </Badge>
+            )}
             <div className="relative flex w-full justify-between">
               <div className="absolute left-0 flex flex-col">
                 <Badge className="h-fit items-baseline font-mono font-bold tracking-wide">

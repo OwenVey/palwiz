@@ -8,13 +8,14 @@ import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger } from '@/components/ui/select';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
+import { sortArrayByPropertyInDirection } from '@/lib/utils';
 import { type Item } from '@/types';
 import { capitalCase } from 'change-case';
 import { ArrowDownNarrowWideIcon, ArrowDownWideNarrowIcon, ArrowUpDownIcon, SearchIcon } from 'lucide-react';
 import Link from 'next/link';
 import { parseAsArrayOf, parseAsString, parseAsStringLiteral, useQueryState } from 'nuqs';
 
-const SORTS = [
+const ITEM_SORTS = [
   { label: 'Corruption Factor', value: 'corruptionFactor' },
   { label: 'Durability', value: 'durability' },
   { label: 'HP', value: 'hpValue' },
@@ -40,28 +41,21 @@ type ItemsGridProps = {
 };
 export function ItemsGrid({ items }: ItemsGridProps) {
   const [search, setSearch] = useQueryState('search', parseAsString.withDefault(''));
-  const [sort, setSort] = useQueryState('sort', parseAsStringLiteral(SORTS.map((s) => s.value)).withDefault('name'));
+  const [sort, setSort] = useQueryState(
+    'sort',
+    parseAsStringLiteral(ITEM_SORTS.map((s) => s.value)).withDefault('name'),
+  );
   const [sortDirection, setSortDirection] = useQueryState(
     'sortDirection',
     parseAsStringLiteral(['asc', 'desc']).withDefault('asc'),
   );
 
   const [categories, setCategories] = useQueryState('categories', parseAsArrayOf(parseAsString).withDefault([]));
-  const filteredItems = items
+
+  const filteredItems = sortArrayByPropertyInDirection(items, sort, sortDirection)
     .filter(({ name }) => (search ? name.toLowerCase().includes(search.toLowerCase()) : true))
-    .filter((item) => (categories.length > 0 ? categories.includes(item.typeA) : true))
-    .sort((item1, item2) => {
-      if (!sort) return 0;
-      const val1 = sortDirection === 'asc' ? item1[sort] : item2[sort];
-      const val2 = sortDirection === 'asc' ? item2[sort] : item1[sort];
-      if (typeof val1 === 'string' && typeof val2 === 'string') {
-        return val1.localeCompare(val2);
-      } else if (typeof val1 === 'number' && typeof val2 === 'number') {
-        return val1 - val2;
-      } else {
-        return 0;
-      }
-    });
+    .filter((item) => (categories.length > 0 ? categories.includes(item.typeA) : true));
+
   const ALL_CATEGORIES = [...new Set(items.map((item) => item.typeA))].sort();
 
   return (
@@ -79,12 +73,12 @@ export function ItemsGrid({ items }: ItemsGridProps) {
         <div className="flex flex-col items-end gap-2">
           <Select
             value={sort ?? ''}
-            onValueChange={(v) => setSort(v === '' ? null : (v as (typeof SORTS)[number]['value']))}
+            onValueChange={(v) => setSort(v === '' ? null : (v as (typeof ITEM_SORTS)[number]['value']))}
           >
             <SelectTrigger label="Sort" icon={ArrowUpDownIcon} placeholder="Sort by" />
 
             <SelectContent>
-              {SORTS.map(({ label, value }) => (
+              {ITEM_SORTS.map(({ label, value }) => (
                 <SelectItem key={value} value={value}>
                   {label}
                 </SelectItem>

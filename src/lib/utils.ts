@@ -32,3 +32,18 @@ export function getEntityFromListById<T extends { id: string }>(dataList: T[], i
     }
   }
 }
+
+export function sortArrayByPropertyInDirection<T>(items: T[], sort: keyof T, sortDirection: 'asc' | 'desc'): T[] {
+  return items.sort(function (item1, item2) {
+    if (!sort) return 0;
+    const val1 = sortDirection === 'asc' ? item1[sort] : item2[sort];
+    const val2 = sortDirection === 'asc' ? item2[sort] : item1[sort];
+    if (typeof val1 === 'string' && typeof val2 === 'string') {
+      return val1.localeCompare(val2);
+    } else if (typeof val1 === 'number' && typeof val2 === 'number') {
+      return val1 - val2;
+    } else {
+      return 0;
+    }
+  });
+}
