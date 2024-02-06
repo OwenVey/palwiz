@@ -11,6 +11,9 @@ const badgeVariants = cva(
         default: 'text-gray-12 border-gray-6',
         secondary: 'border-transparent bg-gray-3 text-gray-12',
         tertiary: 'border-transparent bg-gray-12 text-gray-1',
+
+        // colors
+        primary: 'bg-primary-3 text-primary-11 border-primary-6',
         red: 'bg-red-3 text-red-11 border-red-6',
         orange: 'bg-orange-3 text-orange-11 border-orange-6',
         yellow: 'bg-yellow-3 text-yellow-11 border-yellow-6',
