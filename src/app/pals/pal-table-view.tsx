@@ -21,7 +21,7 @@ export const columns = [
     header: ({ column }) => <ColumnHeader column={column} />,
     cell: ({ row, getValue }) => (
       <div className="flex items-center gap-2">
-        <PalImage pal={row.original.id} className="border-5 size-8 rounded-full border border-gray-3" />
+        <PalImage id={row.original.id} className="border-5 size-8 rounded-full border border-gray-3" />
         <span className="text-nowrap">{getValue()}</span>
       </div>
     ),

@@ -6,7 +6,7 @@ export const ItemSchema = z.object({
   internalId: z.string(),
   name: z.string(),
   description: z.string(),
-  rarity: z.union([z.literal(0), z.literal(1), z.literal(2), z.literal(3), z.literal(4)]),
+  rarity: z.number(),
   maxStackCount: z.number(),
   weight: z.number(),
   price: z.number(),

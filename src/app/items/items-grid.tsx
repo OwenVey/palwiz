@@ -44,6 +44,7 @@ const RARITY_MAP = {
   3: 'epic',
   4: 'legendary',
 } as const;
+type RarityKey = keyof typeof RARITY_MAP;
 
 export function ItemsGrid() {
   const [search, setSearch] = useQueryState('search', parseAsString.withDefault(''));
@@ -61,7 +62,14 @@ export function ItemsGrid() {
   const filteredItems = sortArrayByPropertyInDirection(items, sort, sortDirection)
     .filter(({ name }) => (search ? name.toLowerCase().includes(search.toLowerCase()) : true))
     .filter((item) => (categories.length > 0 ? categories.includes(item.typeA) : true))
-    .filter((item) => (rarities.length > 0 ? rarities.includes(RARITY_MAP[item.rarity]) : true));
+    .filter((item) => {
+      const rarityKey = item.rarity as RarityKey;
+      if (rarityKey in RARITY_MAP) {
+        return rarities.length > 0 ? rarities.includes(RARITY_MAP[rarityKey]) : true;
+      } else {
+        return false;
+      }
+    });
 
   const ALL_CATEGORIES = [...new Set(items.map((item) => item.typeA))].sort();
 
@@ -200,7 +208,7 @@ export function ItemsGrid() {
             <Link key={item.internalId} href={`/items/${item.id}`}>
               <Card className={cn('relative flex h-full flex-col', getItemRarityClass(item.rarity))} hoverEffect>
                 {sort !== 'name' && (
-                  <Badge variant="primary" className="absolute -right-1 -top-1 font-mono">
+                  <Badge variant="primary" className="absolute -right-1 -top-1">
                     {item[sort].toLocaleString()}
                   </Badge>
                 )}

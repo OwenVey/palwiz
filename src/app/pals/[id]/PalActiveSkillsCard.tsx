@@ -24,17 +24,13 @@ export function PalActiveSkillsCard({ pal, ...rest }: PalActiveSkillsCardProps) 
                   <div className="font-medium text-gray-12">{skill.name}</div>
                 </div>
 
-                <Badge className="absolute right-2 top-2 bg-gray-5 font-mono text-sm">Lv {skill.level}</Badge>
+                <Badge className="absolute right-2 top-2 bg-gray-5 text-sm">Lv {skill.level}</Badge>
               </div>
               <div className="-mt-1 space-y-2 pl-12">
                 <div className="flex gap-2">
-                  <Badge className="font-mono" variant="red">
-                    Power: {skill.power}
-                  </Badge>
-                  <Badge className="font-mono" variant="yellow">
-                    CT: {skill.cooldownTime}
-                  </Badge>
-                  <Badge className="font-mono" variant="gray">
+                  <Badge variant="red">Power: {skill.power}</Badge>
+                  <Badge variant="yellow">CT: {skill.cooldownTime}</Badge>
+                  <Badge variant="gray">
                     Range: {skill.minRange === skill.maxRange ? skill.minRange : `${skill.minRange}-${skill.maxRange}`}
                   </Badge>
                 </div>

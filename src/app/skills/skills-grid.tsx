@@ -37,8 +37,6 @@ export function SkillsGrid() {
                   <ElementImage element={skill.element} />
                   <div>{skill.name}</div>
                 </div>
-                {/* <div className="font-mono text-xs text-gray-11">{skill.id}</div> */}
-                {/* <div className="font-mono text-xs text-gray-11">{skill.internalId}</div> */}
                 <div className="flex gap-2">
                   <Badge className="font-mono" variant="red">
                     Power: {skill.power}

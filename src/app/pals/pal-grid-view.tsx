@@ -20,13 +20,13 @@ export function PalGridView({ pals, sort }: PalGridViewProps) {
         <Link href={`/pals/${pal.id}`} key={pal.id} className="">
           <Card className="relative p-2" hoverEffect>
             {sort !== 'name' && sort !== 'zukanIndex' && (
-              <Badge variant="primary" className="absolute -right-1 -top-1 z-10 font-mono">
+              <Badge variant="primary" className="absolute -right-1 -top-1 z-10">
                 {pal[sort].toLocaleString()}
               </Badge>
             )}
             <div className="relative flex w-full justify-between">
               <div className="absolute left-0 flex flex-col">
-                <Badge className="h-fit items-baseline font-mono font-bold tracking-wide">
+                <Badge className="h-fit items-baseline">
                   <span className="text-gray-8">#{'000'.slice(pal.zukanIndex.toString().length)}</span>
                   <span>{pal.zukanIndex}</span>
                   <span className="text-[10px]">{pal.zukanIndexSuffix}</span>
@@ -53,7 +53,7 @@ export function PalGridView({ pals, sort }: PalGridViewProps) {
             </div>
 
             <div className="flex flex-col items-center gap-3 py-2">
-              <PalImage pal={pal.id} className="rounded-full border border-gray-6 bg-gray-1" />
+              <PalImage id={pal.id} className="rounded-full border border-gray-6 bg-gray-1" />
               <div className="font-medium">{pal.name}</div>
             </div>
           </Card>

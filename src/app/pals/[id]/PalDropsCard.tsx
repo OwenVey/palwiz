@@ -56,7 +56,7 @@ export function ItemDropsCard({ drops, alphaDrops, className, ...rest }: ItemDro
             <TooltipTrigger asChild>
               <Link href={`/items/${drop.item.id}`}>
                 <Card className="relative flex h-full flex-col items-center border-gray-5 bg-gray-3 p-2" hoverEffect>
-                  <div className="absolute top-0 flex w-full justify-between p-1 font-mono text-xs tracking-wider text-white">
+                  <div className="absolute top-0 flex w-full justify-between p-1">
                     <Badge variant="iris">{drop.min === drop.max ? drop.min : `${drop.min}-${drop.max}`}</Badge>
                     <Badge variant={getBadgeVariantForRate(drop.rate)}>{drop.rate}%</Badge>
                   </div>

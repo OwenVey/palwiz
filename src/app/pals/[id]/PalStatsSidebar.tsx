@@ -83,7 +83,7 @@ export function PalStatsSidebar({ pal, ...rest }: PalStatsSidebarProps) {
   return (
     <Card {...rest}>
       <div className="relative flex flex-col">
-        <Badge className="absolute items-baseline font-mono text-sm font-bold tracking-wider">
+        <Badge className="absolute items-baseline text-sm tracking-wider">
           <span className="text-gray-8">#{'000'.slice(pal.zukanIndex.toString().length)}</span>
           <span>{pal.zukanIndex}</span>
           <span className="text-xs">{pal.zukanIndexSuffix}</span>
@@ -95,7 +95,7 @@ export function PalStatsSidebar({ pal, ...rest }: PalStatsSidebarProps) {
           ))}
         </div>
 
-        <PalImage pal={pal.id} className="mx-auto mt-2 size-36 rounded-full border border-gray-6 bg-gray-1" />
+        <PalImage id={pal.id} className="mx-auto mt-2 size-36 rounded-full border border-gray-6 bg-gray-1" />
 
         <div className="mt-2 text-center">
           <h1 className="text-2xl font-semibold text-gray-12">{pal.name}</h1>

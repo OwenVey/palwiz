@@ -1,5 +1,5 @@
 import { WORK_SUITABILITIES } from '@/constants';
-import { items, pals, skills } from '@/data/parsed';
+import { itemRecipes, items, pals, skills } from '@/data/parsed';
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
@@ -30,6 +30,10 @@ export function sortArrayByPropertyInDirection<T>(items: T[], sort: keyof T, sor
   });
 }
 
+export function notEmpty<TValue>(value: TValue | null | undefined): value is TValue {
+  return value !== null && value !== undefined;
+}
+
 export function getPalById(id: string) {
   return pals.find((pal) => pal.id === id);
 }
@@ -40,4 +44,8 @@ export function getItemById(id: string) {
 
 export function getSkillById(id: string) {
   return skills.find((skill) => skill.id === id);
+}
+
+export function getItemRecipeById(id: string) {
+  return itemRecipes.find((itemRecipe) => itemRecipe.id === id);
 }
