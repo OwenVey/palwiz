@@ -4,15 +4,12 @@ import { ElementImage } from '@/components/ElementImage';
 import { Badge } from '@/components/ui/badge';
 import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
-import { type Skill } from '@/types';
+import { skills } from '@/data/parsed';
 import { SearchIcon } from 'lucide-react';
 import Link from 'next/link';
 import { parseAsString, useQueryState } from 'nuqs';
 
-type SkillsGridProps = {
-  skills: Skill[];
-};
-export function SkillsGrid({ skills }: SkillsGridProps) {
+export function SkillsGrid() {
   const [search, setSearch] = useQueryState('search', parseAsString.withDefault(''));
   const filteredSkills = skills.filter(({ name }) =>
     search ? name.toLowerCase().includes(search.toLowerCase()) : true,

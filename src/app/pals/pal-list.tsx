@@ -14,6 +14,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger } from '@/components/u
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import { PAL_ELEMENTS, WORK_SUITABILITIES } from '@/constants';
+import { pals } from '@/data/parsed';
 import { isWithinRange, sortArrayByPropertyInDirection } from '@/lib/utils';
 import { type Pal, type WorkSuitability } from '@/types';
 import {
@@ -38,10 +39,6 @@ import Link from 'next/link';
 import { parseAsArrayOf, parseAsString, parseAsStringLiteral, useQueryState } from 'nuqs';
 import { useEffect, useState } from 'react';
 
-type PalListProps = {
-  pals: Pal[];
-};
-
 export const PAL_SORTS = [
   { label: 'Capture Rate', value: 'captureRateCorrect' },
   { label: 'Defense', value: 'defense' },
@@ -64,7 +61,7 @@ export const PAL_SORTS = [
   { label: 'Walk Speed', value: 'walkSpeed' },
 ] satisfies Array<{ label: string; value: keyof Pal }>;
 
-export default function PalList({ pals }: PalListProps) {
+export default function PalList() {
   const [view, setView] = useQueryState('view', parseAsStringLiteral(['grid', 'table']).withDefault('grid'));
   const [sort, setSort] = useQueryState(
     'sort',

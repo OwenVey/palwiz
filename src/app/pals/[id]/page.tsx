@@ -4,29 +4,24 @@ import { PalStatsSidebar } from '@/app/pals/[id]/PalStatsSidebar';
 import { PalWorkSuitabilitiesCard } from '@/app/pals/[id]/PalWorkSuitabilitiesCard';
 import { PartnerSkillImage } from '@/components/PartnerSkillImage';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
-import pals from '@/data/pals.json';
-import { getEntityFromListById } from '@/lib/utils';
-import { PalSchema } from '@/schemas/pal';
+import { pals } from '@/data/parsed';
+import { getPalById } from '@/lib/utils';
 
 export function generateMetadata({ params }: { params: { id: string } }) {
-  const pal = pals.find((pal) => pal.id === params.id);
+  const pal = getPalById(params.id);
   return {
     title: pal ? pal.name : 'Not Found',
   };
 }
 export function generateStaticParams() {
-  return pals
-    .filter((pal) => pal.zukanIndex > 0)
-    .map(({ id }) => ({
-      id,
-    }));
+  return pals.filter((pal) => pal.zukanIndex > 0).map(({ id }) => ({ id }));
 }
 
 export default function PalPage({ params }: { params: { id: string } }) {
-  const { data: pal, error } = getEntityFromListById(pals, params.id, PalSchema);
+  const pal = getPalById(params.id);
 
-  if (error !== null) {
-    return <div>{error}</div>;
+  if (!pal) {
+    return <div>No pal found with id: {params.id}</div>;
   }
 
   return (

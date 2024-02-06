@@ -1,9 +1,8 @@
-import skills from '@/data/skills.json';
-import { getEntityFromListById } from '@/lib/utils';
-import { SkillSchema } from '@/schemas/skill';
+import { skills } from '@/data/parsed';
+import { getSkillById } from '@/lib/utils';
 
 export function generateMetadata({ params }: { params: { id: string } }) {
-  const skill = skills.find(({ id }) => id === params.id);
+  const skill = getSkillById(params.id);
   return {
     title: skill ? skill.name : 'Not Found',
   };
@@ -13,10 +12,10 @@ export function generateStaticParams() {
 }
 
 export default function SkillPage({ params }: { params: { id: string } }) {
-  const { data: skill, error } = getEntityFromListById(skills, params.id, SkillSchema);
+  const skill = getSkillById(params.id);
 
-  if (error !== null) {
-    return <div>{error}</div>;
+  if (!skill) {
+    return <div>Could not find skill with id: {params.id}</div>;
   }
 
   return <div>{skill.name}</div>;
