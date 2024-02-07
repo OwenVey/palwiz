@@ -122,9 +122,7 @@ export function ItemsGrid() {
             className="flex w-full"
             size="sm"
             value={sortDirection}
-            onValueChange={async (value: 'asc' | 'desc') => {
-              if (value) await setSortDirection(value);
-            }}
+            onValueChange={(value: 'asc' | 'desc') => value && setSortDirection(value)}
           >
             <ToggleGroupItem value="asc" className="flex-1">
               <ArrowDownNarrowWideIcon className="mr-1 size-4" />
