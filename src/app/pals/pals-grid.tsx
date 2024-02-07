@@ -63,7 +63,8 @@ export function PalsGrid() {
         if (pal.zukanIndex <= 0 || pal.isBoss) return false;
         if (search && !pal.name.toLowerCase().includes(search.toLowerCase())) return false;
         if (rarity && !isCorrectRarity(rarity ?? 'all', pal.rarity)) return false;
-        if (elements?.length && ![pal.elementType1, pal.elementType2].some((e) => elements.includes(e))) return false;
+        if (elements.length && ![pal.elementType1, pal.elementType2].some((e) => e && elements.includes(e)))
+          return false;
         if (work && pal.workSuitabilities[work] <= 0) return false;
         if (partnerSkill && pal.partnerSkillIcon !== +partnerSkill) return false;
         return true;
