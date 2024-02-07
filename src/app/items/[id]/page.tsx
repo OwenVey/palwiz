@@ -1,9 +1,11 @@
 import { ItemImage } from '@/components/ItemImage';
+import { PalImage } from '@/components/PalImage';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
-import { items } from '@/data/parsed';
-import { cn, getItemById, getItemRecipeById, notEmpty } from '@/lib/utils';
+import { allPals, items } from '@/data/parsed';
+import { cn, getBadgeVariantForRate, getItemById, getItemRecipeById, notEmpty } from '@/lib/utils';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export function generateMetadata({ params }: { params: { id: string } }) {
@@ -25,6 +27,18 @@ export default function ItemPage({ params }: { params: { id: string } }) {
 
   const recipe = getItemRecipeById(item.id);
   const materials = recipe?.materials.map((m) => ({ ...m, item: getItemById(m.id)! })).filter(notEmpty) ?? [];
+
+  const droppedByPals = allPals
+    .filter((pal) => pal.drops.some((drop) => drop.id === item.id))
+    .map(({ id, name, isBoss, internalName, drops }) => ({
+      name,
+      isBoss,
+      internalName,
+      ...drops.find((drop) => drop.id === item.id)!,
+      id,
+    }));
+
+  console.log(droppedByPals);
 
   const stats = [
     { label: 'Corruption Factor', value: item.corruptionFactor },
@@ -108,6 +122,41 @@ export default function ItemPage({ params }: { params: { id: string } }) {
                   </TooltipTrigger>
                   <TooltipContent className="max-w-64">{material.item.description}</TooltipContent>
                 </Tooltip>
+              ))}
+            </div>
+          </Card>
+        )}
+
+        {droppedByPals.length > 0 && (
+          <Card className="@container">
+            <CardHeader>
+              <CardTitle>Dropped By</CardTitle>
+            </CardHeader>
+
+            <div className="grid grid-cols-1 gap-2 @xs:grid-cols-2 @lg:grid-cols-3 @2xl:grid-cols-4">
+              {droppedByPals.map((pal) => (
+                <Link key={pal.internalName} href={`/pals/${pal.id}`}>
+                  <Card className="relative flex h-full flex-col items-center border-gray-5 bg-gray-3 p-2" hoverEffect>
+                    <div className="absolute top-0 flex w-full justify-between p-1">
+                      <Badge variant="iris">{pal.min === pal.max ? pal.min : `${pal.min}-${pal.max}`}</Badge>
+                      <Badge variant={getBadgeVariantForRate(pal.rate)}>{pal.rate}%</Badge>
+                    </div>
+                    <PalImage id={pal.id} className="size-[74px] rounded-full border border-gray-6 bg-gray-4" />
+
+                    <div className="relative">
+                      {pal.isBoss && (
+                        <Image
+                          className="absolute -left-7 size-6"
+                          src="/images/alpha.png"
+                          alt="alpha"
+                          height={24}
+                          width={24}
+                        />
+                      )}
+                      <div className="text-center font-medium text-gray-12">{pal.name}</div>{' '}
+                    </div>
+                  </Card>
+                </Link>
               ))}
             </div>
           </Card>

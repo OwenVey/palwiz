@@ -5,30 +5,14 @@ import { useState } from 'react';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 
 import { ItemImage } from '@/components/ItemImage';
-import { Badge, type BadgeProps } from '@/components/ui/badge';
+import { Badge } from '@/components/ui/badge';
 import { Label } from '@/components/ui/label';
 import { Switch } from '@/components/ui/switch';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
 import { allPals } from '@/data/parsed';
-import { cn, getItemById } from '@/lib/utils';
+import { cn, getBadgeVariantForRate, getItemById } from '@/lib/utils';
 import { type Pal } from '@/types';
 import Link from 'next/link';
-
-const getBadgeVariantForRate = (rate: number): BadgeProps['variant'] => {
-  if (rate >= 0 && rate <= 20) {
-    return 'red';
-  } else if (rate > 20 && rate <= 40) {
-    return 'yellow';
-  } else if (rate > 40 && rate <= 60) {
-    return 'orange';
-  } else if (rate > 60 && rate <= 80) {
-    return 'lime';
-  } else if (rate > 80 && rate <= 100) {
-    return 'green';
-  } else {
-    return 'default';
-  }
-};
 
 interface ItemDropsCardProps extends React.HTMLAttributes<HTMLDivElement> {
   pal: Pal;

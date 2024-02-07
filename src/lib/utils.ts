@@ -1,3 +1,4 @@
+import { type BadgeProps } from '@/components/ui/badge';
 import { WORK_SUITABILITIES } from '@/constants';
 import { itemRecipes, items, normalPals, skills } from '@/data/parsed';
 import { clsx, type ClassValue } from 'clsx';
@@ -48,4 +49,20 @@ export function getSkillById(id: string) {
 
 export function getItemRecipeById(id: string) {
   return itemRecipes.find((itemRecipe) => itemRecipe.id === id);
+}
+
+export function getBadgeVariantForRate(rate: number): BadgeProps['variant'] {
+  if (rate >= 0 && rate <= 20) {
+    return 'red';
+  } else if (rate > 20 && rate <= 40) {
+    return 'yellow';
+  } else if (rate > 40 && rate <= 60) {
+    return 'orange';
+  } else if (rate > 60 && rate <= 80) {
+    return 'lime';
+  } else if (rate > 80 && rate <= 100) {
+    return 'green';
+  } else {
+    return 'default';
+  }
 }
