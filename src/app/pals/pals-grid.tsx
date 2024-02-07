@@ -18,6 +18,7 @@ import { type Pal, type WorkSuitability } from '@/types';
 import { ArrowDownNarrowWideIcon, ArrowDownWideNarrowIcon, ArrowUpDownIcon, GemIcon, SearchIcon } from 'lucide-react';
 import Link from 'next/link';
 import { parseAsArrayOf, parseAsString, parseAsStringLiteral, useQueryState } from 'nuqs';
+import { useMemo } from 'react';
 
 export const PAL_SORTS = [
   { label: 'Capture Rate', value: 'captureRateCorrect' },
@@ -42,6 +43,7 @@ export const PAL_SORTS = [
 ] satisfies Array<{ label: string; value: keyof Pal }>;
 
 export function PalsGrid() {
+  const [search, setSearch] = useQueryState('search', parseAsString.withDefault(''));
   const [sort, setSort] = useQueryState(
     'sort',
     parseAsStringLiteral(PAL_SORTS.map((s) => s.value)).withDefault('zukanIndex'),
@@ -50,25 +52,26 @@ export function PalsGrid() {
     'sortDirection',
     parseAsStringLiteral(['asc', 'desc']).withDefault('asc'),
   );
-  const [search, setSearch] = useQueryState('search', parseAsString.withDefault(''));
   const [rarity, setRarity] = useQueryState('rarity', parseAsString.withDefault(''));
-  const [elements, setElements] = useQueryState('elements', parseAsArrayOf(parseAsString).withDefault([]));
   const [work, setWork] = useQueryState('work', parseAsStringLiteral(WORK_SUITABILITIES.map(({ id }) => id)));
+  const [elements, setElements] = useQueryState('elements', parseAsArrayOf(parseAsString).withDefault([]));
   const [partnerSkill, setPartnerSkill] = useQueryState('partnerSkill');
 
-  const filteredPals = sortArrayByPropertyInDirection(
-    normalPals.filter((pal) => pal.zukanIndex > 0 && pal.isBoss === false),
-    sort,
-    sortDirection,
-  )
-    .filter((pal) => (search ? pal.name.toLowerCase().includes(search.toLowerCase()) : true))
-    .filter((pal) => (rarity ? isCorrectRarity(rarity ?? 'all', pal.rarity) : true))
-    .filter((pal) =>
-      elements?.length ? [pal.elementType1, pal.elementType2].filter(Boolean).some((e) => elements.includes(e)) : true,
-    )
-    .filter((pal) => (work ? pal.workSuitabilities[work] > 0 : true))
-    .filter((pal) => (partnerSkill ? pal.partnerSkillIcon === +partnerSkill : true))
-    .sort((pal1, pal2) => (work ? pal2.workSuitabilities[work] - pal1.workSuitabilities[work] : 0));
+  const filteredPals = useMemo(() => {
+    return sortArrayByPropertyInDirection(
+      normalPals.filter((pal) => {
+        if (pal.zukanIndex <= 0 || pal.isBoss) return false;
+        if (search && !pal.name.toLowerCase().includes(search.toLowerCase())) return false;
+        if (rarity && !isCorrectRarity(rarity ?? 'all', pal.rarity)) return false;
+        if (elements?.length && ![pal.elementType1, pal.elementType2].some((e) => elements.includes(e))) return false;
+        if (work && pal.workSuitabilities[work] <= 0) return false;
+        if (partnerSkill && pal.partnerSkillIcon !== +partnerSkill) return false;
+        return true;
+      }),
+      sort,
+      sortDirection,
+    ).sort((pal1, pal2) => (work ? pal2.workSuitabilities[work] - pal1.workSuitabilities[work] : 0));
+  }, [elements, partnerSkill, rarity, search, sort, sortDirection, work]);
 
   function isCorrectRarity(rarityGroup: string, rarity: number) {
     if (rarityGroup === 'all') return true;
