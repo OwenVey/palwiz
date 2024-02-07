@@ -38,8 +38,6 @@ export default function ItemPage({ params }: { params: { id: string } }) {
       id,
     }));
 
-  console.log(droppedByPals);
-
   const stats = [
     { label: 'Corruption Factor', value: item.corruptionFactor },
     { label: 'Durability', value: item.durability },
