@@ -91,7 +91,7 @@ export function PalStatsSidebar({ pal, ...rest }: PalStatsSidebarProps) {
 
         <div className="absolute right-0 flex flex-col gap-2 pr-[inherit]">
           {[pal.elementType1, pal.elementType2].filter(Boolean).map((element) => (
-            <ElementImage key={element} element={element} className="size-8" tooltipSide="left" />
+            <ElementImage key={element} element={element} className="size-8" />
           ))}
         </div>
 

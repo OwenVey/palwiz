@@ -22,7 +22,7 @@ export function PalActiveSkillsCard({ pal, ...rest }: PalActiveSkillsCardProps) 
             <Card className="relative border-gray-5 bg-gray-3" hoverEffect>
               <div className="flex justify-between">
                 <div className="flex gap-4">
-                  <ElementImage className="size-8" element={skill.element} tooltipSide="left" />
+                  <ElementImage className="size-8" element={skill.element} />
                   <div className="font-medium text-gray-12">{skill.name}</div>
                 </div>
 

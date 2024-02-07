@@ -214,7 +214,7 @@ export function PalsGrid() {
         {filteredPals.length > 0 ? (
           <div className="grid grid-cols-1 gap-4 @sm:grid-cols-2 @xl:grid-cols-3 @3xl:grid-cols-4 @5xl:grid-cols-5">
             {filteredPals.map((pal) => (
-              <Link href={`/pals/${pal.id}`} key={pal.id} className="">
+              <Link href={`/pals/${pal.id}`} key={pal.id}>
                 <Card className="relative p-2" hoverEffect>
                   {sort !== 'name' && sort !== 'zukanIndex' && (
                     <Badge variant="primary" className="absolute -right-1 -top-1 z-10">
@@ -231,7 +231,7 @@ export function PalsGrid() {
 
                       <div className="mt-2 flex flex-col gap-1">
                         {[pal.elementType1, pal.elementType2].filter(Boolean).map((element) => (
-                          <ElementImage key={element} element={element} tooltipSide="left" />
+                          <ElementImage key={element} element={element} />
                         ))}
                       </div>
                     </div>
