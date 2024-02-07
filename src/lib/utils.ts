@@ -1,5 +1,5 @@
 import { WORK_SUITABILITIES } from '@/constants';
-import { itemRecipes, items, pals, skills } from '@/data/parsed';
+import { itemRecipes, items, normalPals, skills } from '@/data/parsed';
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
@@ -35,7 +35,7 @@ export function notEmpty<TValue>(value: TValue | null | undefined): value is TVa
 }
 
 export function getPalById(id: string) {
-  return pals.find((pal) => pal.id === id);
+  return normalPals.find((pal) => pal.id === id);
 }
 
 export function getItemById(id: string) {

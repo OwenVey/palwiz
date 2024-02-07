@@ -1,6 +1,7 @@
 import { ElementImage } from '@/components/ElementImage';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
+import { getSkillById } from '@/lib/utils';
 import { type Pal } from '@/types';
 import Link from 'next/link';
 
@@ -9,13 +10,14 @@ interface PalActiveSkillsCardProps extends React.HTMLAttributes<HTMLDivElement> 
 }
 
 export function PalActiveSkillsCard({ pal, ...rest }: PalActiveSkillsCardProps) {
+  const activeSkills = pal.activeSkills.map((skill) => ({ ...skill, ...getSkillById(skill.id)! }));
   return (
     <Card {...rest}>
       <CardHeader>
         <CardTitle>Active Skills</CardTitle>
       </CardHeader>
       <div className="flex flex-col gap-2">
-        {pal.activeSkills.map((skill) => (
+        {activeSkills.map((skill) => (
           <Link key={skill.id} href={`/skills/${skill.id}`}>
             <Card className="relative border-gray-5 bg-gray-3" hoverEffect>
               <div className="flex justify-between">

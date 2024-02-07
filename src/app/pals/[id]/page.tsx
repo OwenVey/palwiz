@@ -4,7 +4,7 @@ import { PalStatsSidebar } from '@/app/pals/[id]/PalStatsSidebar';
 import { PalWorkSuitabilitiesCard } from '@/app/pals/[id]/PalWorkSuitabilitiesCard';
 import { PartnerSkillImage } from '@/components/PartnerSkillImage';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
-import { pals } from '@/data/parsed';
+import { normalPals } from '@/data/parsed';
 import { getPalById } from '@/lib/utils';
 
 export function generateMetadata({ params }: { params: { id: string } }) {
@@ -14,7 +14,7 @@ export function generateMetadata({ params }: { params: { id: string } }) {
   };
 }
 export function generateStaticParams() {
-  return pals.filter((pal) => pal.zukanIndex > 0).map(({ id }) => ({ id }));
+  return normalPals.map(({ id }) => ({ id }));
 }
 
 export default function PalPage({ params }: { params: { id: string } }) {
@@ -45,7 +45,9 @@ export default function PalPage({ params }: { params: { id: string } }) {
               <div>
                 <div className="flex justify-between">
                   <div className="flex gap-4">
-                    <PartnerSkillImage id={pal.partnerSkillIcon.toString()} className="size-8 scale-[2]" />
+                    {pal.partnerSkillIcon !== null && (
+                      <PartnerSkillImage id={pal.partnerSkillIcon.toString()} className="size-8 scale-[2]" />
+                    )}
                     <div className="font-medium text-gray-12">{pal.partnerSkill.name}</div>
                   </div>
                 </div>
@@ -61,7 +63,7 @@ export default function PalPage({ params }: { params: { id: string } }) {
 
         <PalWorkSuitabilitiesCard workSuitabilities={pal.workSuitabilities} />
 
-        <ItemDropsCard className="col-span-2" drops={pal.drops} alphaDrops={pal.bossDrops} />
+        <ItemDropsCard className="col-span-2" pal={pal} />
 
         <PalActiveSkillsCard className="col-span-2" pal={pal} />
       </div>

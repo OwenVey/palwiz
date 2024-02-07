@@ -1,21 +1,18 @@
-import { ItemSchema } from '@/schemas/item';
-import { SkillSchema } from '@/schemas/skill';
 import { z } from 'zod';
 
 export const DropSchema = z.object({
   id: z.string(),
-  item: ItemSchema,
+  // item: ItemSchema,
   rate: z.number(),
   min: z.number(),
   max: z.number(),
 });
 
 export const PalSchema = z.object({
-  activeSkills: z.array(SkillSchema.merge(z.object({ level: z.number() }))),
+  activeSkills: z.array(z.object({ id: z.string(), level: z.number() })),
   aiResponse: z.string(),
   aiSightResponse: z.string(),
   battleBgm: z.string(),
-  bossDrops: z.array(DropSchema),
   biologicalGrade: z.number(),
   captureRateCorrect: z.number(),
   combiRank: z.number(),
@@ -54,7 +51,7 @@ export const PalSchema = z.object({
     name: z.string().nullable(),
     description: z.string().nullable(),
   }),
-  partnerSkillIcon: z.number(),
+  partnerSkillIcon: z.number().nullable(),
   passiveSkill1: z.string(),
   passiveSkill2: z.string(),
   passiveSkill3: z.string(),

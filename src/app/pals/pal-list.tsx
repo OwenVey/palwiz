@@ -14,8 +14,8 @@ import { Select, SelectContent, SelectItem, SelectTrigger } from '@/components/u
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import { PAL_ELEMENTS, WORK_SUITABILITIES } from '@/constants';
-import { pals } from '@/data/parsed';
-import { isWithinRange, sortArrayByPropertyInDirection } from '@/lib/utils';
+import { normalPals } from '@/data/parsed';
+import { isWithinRange, notEmpty, sortArrayByPropertyInDirection } from '@/lib/utils';
 import { type Pal, type WorkSuitability } from '@/types';
 import {
   getCoreRowModel,
@@ -102,7 +102,7 @@ export default function PalList() {
   });
 
   const table = useReactTable({
-    data: pals,
+    data: normalPals,
     columns,
     getCoreRowModel: getCoreRowModel(),
     onSortingChange: setSorting,
@@ -121,7 +121,11 @@ export default function PalList() {
     table.getColumn('Name')?.setFilterValue(search);
   }, [table, search]);
 
-  const filteredPals = sortArrayByPropertyInDirection(pals, sort, sortDirection)
+  const filteredPals = sortArrayByPropertyInDirection(
+    normalPals.filter((pal) => pal.zukanIndex > 0 && pal.isBoss === false),
+    sort,
+    sortDirection,
+  )
     .filter((pal) => (search ? pal.name.toLowerCase().includes(search.toLowerCase()) : true))
     .filter((pal) => (rarity ? isCorrectRarity(rarity ?? 'all', pal.rarity) : true))
     .filter((pal) =>
@@ -262,7 +266,7 @@ export default function PalList() {
                 value={partnerSkill?.toString() ?? ''}
                 onValueChange={(v) => setPartnerSkill(v === '' ? null : v)}
               >
-                {[...new Set(pals.map((p) => p.partnerSkillIcon))].map((partnerSkillIcon) => (
+                {[...new Set(normalPals.map((p) => p.partnerSkillIcon).filter(notEmpty))].map((partnerSkillIcon) => (
                   <ToggleGroupItem
                     key={partnerSkillIcon}
                     value={partnerSkillIcon.toString()}
