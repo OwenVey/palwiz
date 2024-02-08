@@ -9,12 +9,14 @@ import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger } from '@/components/ui/select';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import { items } from '@/data/parsed';
-import { cn, sortArrayByPropertyInDirection } from '@/lib/utils';
+import { cn, parseAsArrayOfStrings, sortArrayByPropertyInDirection } from '@/lib/utils';
 import { type Item } from '@/types';
+import { useDebounce } from '@uidotdev/usehooks';
 import { capitalCase } from 'change-case';
 import { ArrowDownNarrowWideIcon, ArrowDownWideNarrowIcon, ArrowUpDownIcon, SearchIcon } from 'lucide-react';
 import Link from 'next/link';
-import { parseAsArrayOf, parseAsString, parseAsStringLiteral, useQueryState } from 'nuqs';
+import { parseAsString, parseAsStringLiteral, useQueryState } from 'nuqs';
+import { memo, useMemo } from 'react';
 
 const ITEM_SORTS = [
   { label: 'Corruption Factor', value: 'corruptionFactor' },
@@ -46,6 +48,23 @@ const RARITY_MAP = {
 } as const;
 type RarityKey = keyof typeof RARITY_MAP;
 
+function getItemRarityClass(rarity: number) {
+  switch (rarity) {
+    case 0:
+      return 'bg-gray-2 border-gray-4 hover:bg-gray-3 hover:border-gray-9 hover:shadow-gray-5';
+    case 1:
+      return 'bg-green-2 border-green-4 hover:bg-green-3 hover:border-green-9 hover:shadow-green-5';
+    case 2:
+      return 'bg-blue-2 border-blue-4 hover:bg-blue-3 hover:border-blue-9 hover:shadow-blue-5';
+    case 3:
+      return 'bg-purple-2 border-purple-4 hover:bg-purple-3 hover:border-purple-9 hover:shadow-purple-5';
+    case 4:
+      return 'bg-yellow-2 border-yellow-4 hover:bg-yellow-3 hover:border-yellow-8 hover:shadow-yellow-5';
+    default:
+      return 'bg-red-2 border-red-4 hover:bg-red-3 hover:border-red-9 hover:shadow-red-5';
+  }
+}
+
 export function ItemsGrid() {
   const [search, setSearch] = useQueryState('search', parseAsString.withDefault(''));
   const [sort, setSort] = useQueryState(
@@ -56,39 +75,28 @@ export function ItemsGrid() {
     'sortDirection',
     parseAsStringLiteral(['asc', 'desc']).withDefault('asc'),
   );
-  const [categories, setCategories] = useQueryState('categories', parseAsArrayOf(parseAsString).withDefault([]));
-  const [rarities, setRarities] = useQueryState('rarity', parseAsArrayOf(parseAsString).withDefault([]));
+  const [categories, setCategories] = useQueryState('categories', parseAsArrayOfStrings);
+  const [rarities, setRarities] = useQueryState('rarity', parseAsArrayOfStrings);
 
-  const filteredItems = sortArrayByPropertyInDirection(items, sort, sortDirection)
-    .filter(({ name }) => (search ? name.toLowerCase().includes(search.toLowerCase()) : true))
-    .filter((item) => (categories.length > 0 ? categories.includes(item.typeA) : true))
-    .filter((item) => {
-      const rarityKey = item.rarity as RarityKey;
-      if (rarityKey in RARITY_MAP) {
-        return rarities.length > 0 ? rarities.includes(RARITY_MAP[rarityKey]) : true;
-      } else {
-        return false;
-      }
-    });
+  const debouncedSearch = useDebounce(search, 100);
 
-  const ALL_CATEGORIES = [...new Set(items.map((item) => item.typeA))].sort();
+  const filteredItems = useMemo(
+    () =>
+      sortArrayByPropertyInDirection(items, sort, sortDirection)
+        .filter(({ name }) => (debouncedSearch ? name.toLowerCase().includes(debouncedSearch.toLowerCase()) : true))
+        .filter((item) => (categories.length > 0 ? categories.includes(item.typeA) : true))
+        .filter((item) => {
+          const rarityKey = item.rarity as RarityKey;
+          if (rarityKey in RARITY_MAP) {
+            return rarities.length > 0 ? rarities.includes(RARITY_MAP[rarityKey]) : true;
+          } else {
+            return false;
+          }
+        }),
+    [categories, debouncedSearch, rarities, sort, sortDirection],
+  );
 
-  function getItemRarityClass(rarity: number) {
-    switch (rarity) {
-      case 0:
-        return 'bg-gray-2 border-gray-4 hover:bg-gray-3 hover:border-gray-9 hover:shadow-gray-5';
-      case 1:
-        return 'bg-green-2 border-green-4 hover:bg-green-3 hover:border-green-9 hover:shadow-green-5';
-      case 2:
-        return 'bg-blue-2 border-blue-4 hover:bg-blue-3 hover:border-blue-9 hover:shadow-blue-5';
-      case 3:
-        return 'bg-purple-2 border-purple-4 hover:bg-purple-3 hover:border-purple-9 hover:shadow-purple-5';
-      case 4:
-        return 'bg-yellow-2 border-yellow-4 hover:bg-yellow-3 hover:border-yellow-8 hover:shadow-yellow-5';
-      default:
-        return 'bg-red-2 border-red-4 hover:bg-red-3 hover:border-red-9 hover:shadow-red-5';
-    }
-  }
+  const ALL_CATEGORIES = useMemo(() => [...new Set(items.map((item) => item.typeA))].sort(), []);
 
   return (
     <div className="flex flex-col gap-4 md:flex-row">
@@ -201,34 +209,42 @@ export function ItemsGrid() {
       </Card>
 
       <div className="flex-1 @container">
-        <div className="grid grid-cols-2 gap-4 @2xl:grid-cols-3 @5xl:grid-cols-4">
-          {filteredItems.map((item) => (
-            <Link key={item.internalId} href={`/items/${item.id}`}>
-              <Card className={cn('relative flex h-full flex-col', getItemRarityClass(item.rarity))} hoverEffect>
-                {sort !== 'name' && (
-                  <Badge variant="primary" className="absolute -right-1 -top-1">
-                    {item[sort].toLocaleString()}
-                  </Badge>
-                )}
-                <div className="flex items-center gap-2">
-                  <div className="shrink-0 rounded-full border border-gray-4 bg-gray-3 p-1">
-                    <ItemImage className="size-10" id={item.imageName} />
-                  </div>
-
-                  <div className="">
-                    <div className="line-clamp-1 text-sm text-gray-12">{capitalCase(item.name)}</div>
-                    <div className="text-sm text-gray-11">{capitalCase(item.typeA)}</div>
-                  </div>
-                </div>
-
-                <div className="mt-2">
-                  <p className="line-clamp-2 text-sm text-gray-11">{item.description}</p>
-                </div>
-              </Card>
-            </Link>
-          ))}
-        </div>
+        <Grid items={filteredItems} sort={sort} />
       </div>
     </div>
   );
 }
+
+const Grid = memo(function Grid({ items, sort }: { items: Item[]; sort: keyof Item }) {
+  console.log('[GRID]');
+
+  return (
+    <div className="grid grid-cols-2 gap-4 @2xl:grid-cols-3 @5xl:grid-cols-4">
+      {items.map((item) => (
+        <Link key={item.internalId} href={`/items/${item.id}`}>
+          <Card className={cn('relative flex h-full flex-col', getItemRarityClass(item.rarity))} hoverEffect>
+            {sort !== 'name' && (
+              <Badge variant="primary" className="absolute -right-1 -top-1">
+                {item[sort].toLocaleString()}
+              </Badge>
+            )}
+            <div className="flex items-center gap-2">
+              <div className="shrink-0 rounded-full border border-gray-4 bg-gray-3 p-1">
+                <ItemImage className="size-10" id={item.imageName} />
+              </div>
+
+              <div className="">
+                <div className="line-clamp-1 text-sm text-gray-12">{capitalCase(item.name)}</div>
+                <div className="text-sm text-gray-11">{capitalCase(item.typeA)}</div>
+              </div>
+            </div>
+
+            <div className="mt-2">
+              <p className="line-clamp-2 text-sm text-gray-11">{item.description}</p>
+            </div>
+          </Card>
+        </Link>
+      ))}
+    </div>
+  );
+});

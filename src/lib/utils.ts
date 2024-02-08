@@ -2,6 +2,7 @@ import { type BadgeProps } from '@/components/ui/badge';
 import { WORK_SUITABILITIES } from '@/constants';
 import { itemRecipes, items, normalPals, skills } from '@/data/parsed';
 import { clsx, type ClassValue } from 'clsx';
+import { parseAsArrayOf, parseAsString } from 'nuqs';
 import { twMerge } from 'tailwind-merge';
 
 export function cn(...inputs: ClassValue[]) {
@@ -66,3 +67,5 @@ export function getBadgeVariantForRate(rate: number): BadgeProps['variant'] {
     return 'default';
   }
 }
+
+export const parseAsArrayOfStrings = parseAsArrayOf(parseAsString).withDefault([]);
