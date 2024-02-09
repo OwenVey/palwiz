@@ -6,7 +6,10 @@ import { Input } from '@/components/ui/input';
 import { CRS, Icon } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { SearchIcon } from 'lucide-react';
-import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
+import { MapContainer, TileLayer } from 'react-leaflet';
+
+const MAP_SIZE = 256;
+const BOUND_SIZE = 256;
 
 export default function MyMap() {
   const alphaIcon = new Icon({ iconUrl: '/images/alpha.png', iconSize: [30, 30] });
@@ -32,10 +35,20 @@ export default function MyMap() {
           zoomDelta={1}
           className="h-full !bg-[#102536]"
           zoomControl={false}
+          maxBounds={[
+            [BOUND_SIZE, -BOUND_SIZE],
+            [-MAP_SIZE - BOUND_SIZE, MAP_SIZE + BOUND_SIZE],
+          ]}
         >
+          {/* <Marker position={[0, 0]} icon={alphaIcon}>
+            <Popup className="bg-red-500">Alpha</Popup>
+          </Marker>
           <Marker position={[-128, 128]} icon={alphaIcon}>
             <Popup className="bg-red-500">Alpha</Popup>
           </Marker>
+          <Marker position={[-256, 256]} icon={alphaIcon}>
+            <Popup className="bg-red-500">Alpha</Popup>
+          </Marker> */}
           <TileLayer url="/images/map/{z}/{x}/{y}.webp" minZoom={1} maxZoom={6} tileSize={256} />
           {/* <ImageOverlay url="/images/map.png" bounds={bounds} /> */}
         </MapContainer>
