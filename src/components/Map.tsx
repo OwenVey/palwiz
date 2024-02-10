@@ -1,16 +1,19 @@
 'use client';
 
 import { CollapsibleFilter } from '@/components/CollapsibleFilter';
+import { PalImage } from '@/components/PalImage';
 import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
+import { ScrollArea } from '@/components/ui/scroll-area';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import mapLocations from '@/data/map-locations.json';
+import { normalPals } from '@/data/parsed';
 import { parseAsArrayOfStrings } from '@/lib/utils';
 import { CRS, Icon } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { SearchIcon } from 'lucide-react';
 import Image from 'next/image';
-import { useQueryState } from 'nuqs';
+import { parseAsString, useQueryState } from 'nuqs';
 import { useState } from 'react';
 import { MapContainer, Marker, Popup, TileLayer, useMapEvents } from 'react-leaflet';
 
@@ -53,38 +56,66 @@ function getInGameCoords([x, y]: [number, number]) {
 
 export default function MyMap() {
   const [filters, setFilters] = useQueryState('filters', parseAsArrayOfStrings);
+  const [filterPal, setFilterPal] = useQueryState('pal', parseAsString);
 
   return (
     <div>
-      <Card className="fixed m-4 flex w-[425px] flex-col gap-5">
-        <Input label="Search" icon={SearchIcon} placeholder="Search" />
+      <Card className="fixed bottom-0 top-[65px] m-4 w-[425px] p-0">
+        <ScrollArea className="h-full w-full p-4">
+          <div className="flex flex-col gap-5">
+            <Input label="Search" icon={SearchIcon} placeholder="Search" />
 
-        {Object.entries(LOCATION_GROUPS).map(([group, locations]) => (
-          <CollapsibleFilter key={group} label={group} defaultOpen>
-            <ToggleGroup
-              type="multiple"
-              className="md:grid md:grid-cols-2 md:gap-1"
-              value={filters}
-              onValueChange={(v) => setFilters(v.length > 0 ? v : null)}
-            >
-              {locations.map((category) => (
-                <ToggleGroupItem key={category.name} value={category.name} className="h-fit gap-2 px-2 py-1">
-                  <div className="rounded-full border border-gray-6 bg-gray-2 p-1">
-                    <Image className="size-6" src={category.icon} width={24} height={24} alt={category.name} />
-                  </div>
-                  <div className="flex flex-1 items-center justify-between">
-                    <span>{category.name}</span>
-                    <span className="text-xs text-gray-11">
-                      {mapLocations.find((l) => l.name === category.name)?.locations.length}
-                    </span>
-                  </div>
-                </ToggleGroupItem>
-              ))}
-            </ToggleGroup>
-          </CollapsibleFilter>
-        ))}
+            {Object.entries(LOCATION_GROUPS).map(([group, locations]) => (
+              <CollapsibleFilter key={group} label={group} defaultOpen>
+                <ToggleGroup
+                  type="multiple"
+                  className="md:grid md:grid-cols-2 md:gap-1"
+                  value={filters}
+                  onValueChange={(v) => setFilters(v.length > 0 ? v : null)}
+                >
+                  {locations.map((category) => (
+                    <ToggleGroupItem key={category.name} value={category.name} className="h-fit gap-2 px-2 py-1">
+                      <div className="rounded-full border border-gray-6 bg-gray-2 p-1">
+                        <Image className="size-6" src={category.icon} width={24} height={24} alt={category.name} />
+                      </div>
+                      <div className="flex flex-1 items-center justify-between">
+                        <span>{category.name}</span>
+                        <span className="text-xs text-gray-11">
+                          {mapLocations.find((l) => l.name === category.name)?.locations.length}
+                        </span>
+                      </div>
+                    </ToggleGroupItem>
+                  ))}
+                </ToggleGroup>
+              </CollapsibleFilter>
+            ))}
 
-        <CollapsibleFilter label="Pals">TODO</CollapsibleFilter>
+            <CollapsibleFilter label="Pals">
+              <ToggleGroup
+                type="single"
+                className="md:grid md:grid-cols-2 md:gap-1"
+                value={filterPal ?? ''}
+                onValueChange={(v) => setFilterPal(v ? v : null)}
+              >
+                {normalPals.map((pal) => (
+                  <ToggleGroupItem key={pal.name} value={pal.name} className="h-fit gap-2 px-2 py-1">
+                    <PalImage
+                      className="size-[34px] rounded-full border border-gray-6 bg-gray-2"
+                      id={pal.id}
+                      width={34}
+                      height={34}
+                      alt={pal.name}
+                    />
+
+                    <div className="flex flex-1 items-center justify-between">
+                      <span>{pal.name}</span>
+                    </div>
+                  </ToggleGroupItem>
+                ))}
+              </ToggleGroup>
+            </CollapsibleFilter>
+          </div>
+        </ScrollArea>
       </Card>
 
       <div className="absolute left-0 top-0 z-[-1] h-dvh w-dvw">
