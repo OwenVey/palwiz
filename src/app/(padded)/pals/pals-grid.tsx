@@ -88,128 +88,127 @@ export function PalsGrid() {
 
   return (
     <div className="flex flex-col gap-4 md:flex-row">
-      <Card className="h-fit md:sticky md:top-[81px] md:w-72">
-        <div className="flex flex-col gap-5">
-          <Input
-            className="w-full"
-            label="Search"
-            placeholder="Search pals"
-            icon={SearchIcon}
-            value={search}
-            onChange={({ target }) => setSearch(target.value ? target.value : null)}
-          />
+      <Card className="flex h-fit flex-col gap-5 md:sticky md:top-[81px] md:w-72">
+        <Input
+          className="w-full"
+          label="Search"
+          placeholder="Search pals"
+          icon={SearchIcon}
+          value={search}
+          onChange={({ target }) => setSearch(target.value ? target.value : null)}
+        />
 
-          <div className="flex flex-col items-end gap-2">
-            <Select
-              value={sort ?? ''}
-              onValueChange={(v) => setSort(v === '' ? null : (v as (typeof PAL_SORTS)[number]['value']))}
-            >
-              <SelectTrigger label="Sort" icon={ArrowUpDownIcon} placeholder="Sort by" />
-
-              <SelectContent>
-                {PAL_SORTS.map(({ label, value }) => (
-                  <SelectItem key={value} value={value}>
-                    {label}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
-            <ToggleGroup
-              type="single"
-              className="flex w-full"
-              size="sm"
-              value={sortDirection}
-              onValueChange={async (value: 'asc' | 'desc') => {
-                if (value) await setSortDirection(value);
-              }}
-            >
-              <ToggleGroupItem value="asc" className="flex-1">
-                <ArrowDownNarrowWideIcon className="mr-1 size-4" />
-                Asc
-              </ToggleGroupItem>
-              <ToggleGroupItem value="desc" className="flex-1">
-                <ArrowDownWideNarrowIcon className="mr-1 size-4" />
-                Desc
-              </ToggleGroupItem>
-            </ToggleGroup>
-          </div>
-
-          <Select value={rarity} onValueChange={(v) => setRarity(v && v !== 'all' ? v : null)}>
-            <SelectTrigger label="Rarity" icon={GemIcon} placeholder="Select rarity" />
+        <div className="flex flex-col items-end gap-2">
+          <Select
+            value={sort ?? ''}
+            onValueChange={(v) => setSort(v === '' ? null : (v as (typeof PAL_SORTS)[number]['value']))}
+          >
+            <SelectTrigger label="Sort" icon={ArrowUpDownIcon} placeholder="Sort by" />
 
             <SelectContent>
-              <SelectItem value="all">All</SelectItem>
-              <SelectItem value="common" className="text-gray-10 focus:text-gray-10">
-                Common
-              </SelectItem>
-              <SelectItem value="rare" className="text-blue-9 focus:bg-blue-3 focus:text-blue-10">
-                Rare
-              </SelectItem>
-              <SelectItem value="epic" className="text-purple-10 focus:bg-purple-3 focus:text-purple-10">
-                Epic
-              </SelectItem>
-              <SelectItem value="legendary" className="text-orange-10 focus:bg-orange-3 focus:text-orange-10">
-                Legendary
-              </SelectItem>
+              {PAL_SORTS.map(({ label, value }) => (
+                <SelectItem key={value} value={value}>
+                  {label}
+                </SelectItem>
+              ))}
             </SelectContent>
           </Select>
 
-          <CollapsibleFilter label="Work Suitability" defaultOpen>
-            <ToggleGroup
-              type="single"
-              className="md:grid md:grid-cols-6 md:gap-1"
-              value={work ?? ''}
-              onValueChange={(v) => setWork(v === '' ? null : (v as WorkSuitability))}
-            >
-              {WORK_SUITABILITIES.map((work) => (
-                <ToggleGroupItem key={work.id} value={work.id} className="w-10 p-0 md:w-auto">
-                  <WorkTypeImage id={work.id} className="size-7" />
-                </ToggleGroupItem>
-              ))}
-            </ToggleGroup>
-          </CollapsibleFilter>
+          <ToggleGroup
+            type="single"
+            className="flex w-full"
+            size="sm"
+            value={sortDirection}
+            onValueChange={async (value: 'asc' | 'desc') => {
+              if (value) await setSortDirection(value);
+            }}
+          >
+            <ToggleGroupItem value="asc" className="flex-1">
+              <ArrowDownNarrowWideIcon className="mr-1 size-4" />
+              Asc
+            </ToggleGroupItem>
+            <ToggleGroupItem value="desc" className="flex-1">
+              <ArrowDownWideNarrowIcon className="mr-1 size-4" />
+              Desc
+            </ToggleGroupItem>
+          </ToggleGroup>
+        </div>
 
-          <CollapsibleFilter label="Elements" defaultOpen>
-            <ToggleGroup
-              type="multiple"
-              className="md:grid md:grid-cols-6 md:gap-1"
-              value={elements}
-              onValueChange={(e) => setElements(e.length > 0 ? e : null)}
-            >
-              {PAL_ELEMENTS.map((element) => (
-                <ToggleGroupItem key={element} value={element} className="w-10 p-0 md:w-auto">
-                  <ElementImage element={element} />
-                </ToggleGroupItem>
-              ))}
-            </ToggleGroup>
-          </CollapsibleFilter>
+        <Select value={rarity} onValueChange={(v) => setRarity(v && v !== 'all' ? v : null)}>
+          <SelectTrigger label="Rarity" icon={GemIcon} placeholder="Select rarity" />
 
-          <CollapsibleFilter label="Partner Skill">
-            <ToggleGroup
-              type="single"
-              className="md:grid md:grid-cols-6 md:gap-1"
-              value={partnerSkill?.toString() ?? ''}
-              onValueChange={(v) => setPartnerSkill(v === '' ? null : v)}
-            >
-              {[...new Set(normalPals.map((p) => p.partnerSkillIcon).filter(notEmpty))].map((partnerSkillIcon) => (
-                <ToggleGroupItem
-                  key={partnerSkillIcon}
-                  value={partnerSkillIcon.toString()}
-                  className="w-10 p-0 md:w-auto"
-                >
-                  <PartnerSkillImage id={partnerSkillIcon.toString()} />
-                </ToggleGroupItem>
-              ))}
-            </ToggleGroup>
-          </CollapsibleFilter>
+          <SelectContent>
+            <SelectItem value="all">All</SelectItem>
+            <SelectItem value="common" className="text-gray-10 focus:text-gray-10">
+              Common
+            </SelectItem>
+            <SelectItem value="rare" className="text-blue-9 focus:bg-blue-3 focus:text-blue-10">
+              Rare
+            </SelectItem>
+            <SelectItem value="epic" className="text-purple-10 focus:bg-purple-3 focus:text-purple-10">
+              Epic
+            </SelectItem>
+            <SelectItem value="legendary" className="text-orange-10 focus:bg-orange-3 focus:text-orange-10">
+              Legendary
+            </SelectItem>
+          </SelectContent>
+        </Select>
 
-          <div className="w-full">
-            <div className="float-right mb-2 text-nowrap text-sm text-gray-11">{filteredPals.length} results</div>
+        <CollapsibleFilter label="Work Suitability" defaultOpen>
+          <ToggleGroup
+            type="single"
+            className="md:grid md:grid-cols-6 md:gap-1"
+            value={work ?? ''}
+            onValueChange={(v) => setWork(v === '' ? null : (v as WorkSuitability))}
+          >
+            {WORK_SUITABILITIES.map((work) => (
+              <ToggleGroupItem key={work.id} value={work.id} className="w-10 p-0 md:w-auto">
+                <WorkTypeImage id={work.id} className="size-7" />
+              </ToggleGroupItem>
+            ))}
+          </ToggleGroup>
+        </CollapsibleFilter>
 
-            <Button asChild variant="secondary" className="w-full">
-              <Link href="/pals">Clear Filters</Link>
-            </Button>
-          </div>
+        <CollapsibleFilter label="Elements" defaultOpen>
+          <ToggleGroup
+            type="multiple"
+            className="md:grid md:grid-cols-6 md:gap-1"
+            value={elements}
+            onValueChange={(e) => setElements(e.length > 0 ? e : null)}
+          >
+            {PAL_ELEMENTS.map((element) => (
+              <ToggleGroupItem key={element} value={element} className="w-10 p-0 md:w-auto">
+                <ElementImage element={element} />
+              </ToggleGroupItem>
+            ))}
+          </ToggleGroup>
+        </CollapsibleFilter>
+
+        <CollapsibleFilter label="Partner Skill">
+          <ToggleGroup
+            type="single"
+            className="md:grid md:grid-cols-6 md:gap-1"
+            value={partnerSkill?.toString() ?? ''}
+            onValueChange={(v) => setPartnerSkill(v === '' ? null : v)}
+          >
+            {[...new Set(normalPals.map((p) => p.partnerSkillIcon).filter(notEmpty))].map((partnerSkillIcon) => (
+              <ToggleGroupItem
+                key={partnerSkillIcon}
+                value={partnerSkillIcon.toString()}
+                className="w-10 p-0 md:w-auto"
+              >
+                <PartnerSkillImage id={partnerSkillIcon.toString()} />
+              </ToggleGroupItem>
+            ))}
+          </ToggleGroup>
+        </CollapsibleFilter>
+
+        <div className="w-full">
+          <div className="float-right mb-2 text-nowrap text-sm text-gray-11">{filteredPals.length} results</div>
+
+          <Button asChild variant="secondary" className="w-full">
+            <Link href="/pals">Clear Filters</Link>
+          </Button>
         </div>
       </Card>
 
