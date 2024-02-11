@@ -13,7 +13,13 @@ import { cn, parseAsArrayOfStrings, sortArrayByPropertyInDirection } from '@/lib
 import { type Item } from '@/types';
 import { useDebounce } from '@uidotdev/usehooks';
 import { capitalCase } from 'change-case';
-import { ArrowDownNarrowWideIcon, ArrowDownWideNarrowIcon, ArrowUpDownIcon, SearchIcon } from 'lucide-react';
+import {
+  ArrowDownNarrowWideIcon,
+  ArrowDownWideNarrowIcon,
+  ArrowUpDownIcon,
+  FilterXIcon,
+  SearchIcon,
+} from 'lucide-react';
 import Link from 'next/link';
 import { parseAsString, parseAsStringLiteral, useQueryState } from 'nuqs';
 import { memo, useMemo } from 'react';
@@ -65,6 +71,8 @@ function getItemRarityClass(rarity: number) {
   }
 }
 
+const ALL_CATEGORIES = [...new Set(items.map((item) => item.typeA))].sort();
+
 export function ItemsGrid() {
   const [search, setSearch] = useQueryState('search', parseAsString.withDefault(''));
   const [sort, setSort] = useQueryState(
@@ -95,8 +103,6 @@ export function ItemsGrid() {
         }),
     [categories, debouncedSearch, rarities, sort, sortDirection],
   );
-
-  const ALL_CATEGORIES = useMemo(() => [...new Set(items.map((item) => item.typeA))].sort(), []);
 
   return (
     <div className="flex flex-col gap-4 md:flex-row">
@@ -203,8 +209,11 @@ export function ItemsGrid() {
           </ToggleGroup>
         </CollapsibleFilter>
 
-        <Button asChild variant="secondary" className="w-full">
-          <Link href="/items">Clear Filters</Link>
+        <Button asChild variant="outline" className="w-full">
+          <Link href="/items">
+            <FilterXIcon className="mr-2 size-4" />
+            Clear Filters
+          </Link>
         </Button>
       </Card>
 
@@ -216,7 +225,9 @@ export function ItemsGrid() {
 }
 
 const Grid = memo(function Grid({ items, sort }: { items: Item[]; sort: keyof Item }) {
-  console.log('[GRID]');
+  console.log('[ITEMS GRID]');
+
+  if (items.length === 0) return <div className="grid h-full place-items-center text-gray-11">No items found</div>;
 
   return (
     <div className="grid grid-cols-2 gap-4 @2xl:grid-cols-3 @5xl:grid-cols-4">

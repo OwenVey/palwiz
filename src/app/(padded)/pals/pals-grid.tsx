@@ -16,7 +16,14 @@ import { normalPals } from '@/data/parsed';
 import { isWithinRange, notEmpty, parseAsArrayOfStrings, sortArrayByPropertyInDirection } from '@/lib/utils';
 import { type Pal, type WorkSuitability } from '@/types';
 import { useDebounce } from '@uidotdev/usehooks';
-import { ArrowDownNarrowWideIcon, ArrowDownWideNarrowIcon, ArrowUpDownIcon, GemIcon, SearchIcon } from 'lucide-react';
+import {
+  ArrowDownNarrowWideIcon,
+  ArrowDownWideNarrowIcon,
+  ArrowUpDownIcon,
+  FilterXIcon,
+  GemIcon,
+  SearchIcon,
+} from 'lucide-react';
 import Link from 'next/link';
 import { parseAsString, parseAsStringLiteral, useQueryState } from 'nuqs';
 import { memo, useMemo } from 'react';
@@ -206,71 +213,72 @@ export function PalsGrid() {
         <div className="w-full">
           <div className="float-right mb-2 text-nowrap text-sm text-gray-11">{filteredPals.length} results</div>
 
-          <Button asChild variant="secondary" className="w-full">
-            <Link href="/pals">Clear Filters</Link>
+          <Button asChild variant="outline" className="w-full">
+            <Link href="/pals">
+              <FilterXIcon className="mr-2 size-4" />
+              Clear Filters
+            </Link>
           </Button>
         </div>
       </Card>
 
-      <Grid pals={filteredPals} sort={sort} />
+      <div className="flex-1 @container">
+        <Grid pals={filteredPals} sort={sort} />
+      </div>
     </div>
   );
 }
 
 const Grid = memo(function Grid({ pals, sort }: { pals: Pal[]; sort: keyof Pal }) {
-  console.log('[GRID]');
+  console.log('[PALS GRID]');
+
+  if (pals.length === 0) return <div className="grid h-full place-items-center text-gray-11">No pals found</div>;
 
   return (
-    <div className="flex-1 @container">
-      {pals.length > 0 ? (
-        <div className="grid grid-cols-1 gap-4 @sm:grid-cols-2 @xl:grid-cols-3 @3xl:grid-cols-4 @5xl:grid-cols-5">
-          {pals.map((pal) => (
-            <Link href={`/pals/${pal.id}`} key={pal.id}>
-              <Card className="relative p-2" hoverEffect>
-                {sort !== 'name' && sort !== 'zukanIndex' && (
-                  <Badge variant="primary" className="absolute -right-1 -top-1 z-10">
-                    {pal[sort]!.toLocaleString()}
-                  </Badge>
-                )}
-                <div className="relative flex w-full justify-between">
-                  <div className="absolute left-0 flex flex-col">
-                    <Badge className="h-fit items-baseline">
-                      <span className="text-gray-8">#{'000'.slice(pal.zukanIndex.toString().length)}</span>
-                      <span>{pal.zukanIndex}</span>
-                      <span className="text-[10px]">{pal.zukanIndexSuffix}</span>
-                    </Badge>
+    <div className="grid grid-cols-1 gap-4 @sm:grid-cols-2 @xl:grid-cols-3 @3xl:grid-cols-4 @5xl:grid-cols-5">
+      {pals.map((pal) => (
+        <Link href={`/pals/${pal.id}`} key={pal.id}>
+          <Card className="relative p-2" hoverEffect>
+            {sort !== 'name' && sort !== 'zukanIndex' && (
+              <Badge variant="primary" className="absolute -right-1 -top-1 z-10">
+                {pal[sort]!.toLocaleString()}
+              </Badge>
+            )}
+            <div className="relative flex w-full justify-between">
+              <div className="absolute left-0 flex flex-col">
+                <Badge className="h-fit items-baseline">
+                  <span className="text-gray-8">#{'000'.slice(pal.zukanIndex.toString().length)}</span>
+                  <span>{pal.zukanIndex}</span>
+                  <span className="text-[10px]">{pal.zukanIndexSuffix}</span>
+                </Badge>
 
-                    <div className="mt-2 flex flex-col gap-1">
-                      {[pal.elementType1, pal.elementType2].filter(Boolean).map((element) => (
-                        <ElementImage key={element} element={element} />
-                      ))}
+                <div className="mt-2 flex flex-col gap-1">
+                  {[pal.elementType1, pal.elementType2].filter(Boolean).map((element) => (
+                    <ElementImage key={element} element={element} />
+                  ))}
+                </div>
+              </div>
+
+              <div className="absolute right-0 flex flex-col">
+                {Object.entries(pal.workSuitabilities)
+                  .filter(([, value]) => value > 0)
+                  .sort(([, value1], [, value2]) => value2 - value1)
+                  .map(([work, value]) => (
+                    <div key={work} className="flex items-center">
+                      <WorkTypeImage id={work} />
+                      <span className="text-xs font-semibold text-gray-11">{value}</span>
                     </div>
-                  </div>
+                  ))}
+              </div>
+            </div>
 
-                  <div className="absolute right-0 flex flex-col">
-                    {Object.entries(pal.workSuitabilities)
-                      .filter(([, value]) => value > 0)
-                      .sort(([, value1], [, value2]) => value2 - value1)
-                      .map(([work, value]) => (
-                        <div key={work} className="flex items-center">
-                          <WorkTypeImage id={work} />
-                          <span className="text-xs font-semibold text-gray-11">{value}</span>
-                        </div>
-                      ))}
-                  </div>
-                </div>
-
-                <div className="flex flex-col items-center gap-3 py-2">
-                  <PalImage id={pal.id} className="rounded-full border border-gray-6 bg-gray-1" />
-                  <div className="font-medium">{pal.name}</div>
-                </div>
-              </Card>
-            </Link>
-          ))}
-        </div>
-      ) : (
-        <div className="grid h-full place-items-center text-gray-11">No pals found</div>
-      )}
+            <div className="flex flex-col items-center gap-3 py-2">
+              <PalImage id={pal.id} className="rounded-full border border-gray-6 bg-gray-1" />
+              <div className="font-medium">{pal.name}</div>
+            </div>
+          </Card>
+        </Link>
+      ))}
     </div>
   );
 });

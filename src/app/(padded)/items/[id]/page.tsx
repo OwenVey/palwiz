@@ -135,13 +135,16 @@ export default function ItemPage({ params }: { params: { id: string } }) {
               {droppedByPals.map((pal) => (
                 <Link key={pal.internalName} href={`/pals/${pal.id}`}>
                   <Card className="relative flex h-full flex-col items-center border-gray-5 bg-gray-3 p-2" hoverEffect>
-                    <div className="absolute top-0 flex w-full justify-between p-1">
-                      <Badge variant="iris">{pal.min === pal.max ? pal.min : `${pal.min}-${pal.max}`}</Badge>
-                      <Badge variant={getBadgeVariantForRate(pal.rate)}>{pal.rate}%</Badge>
-                    </div>
+                    <Badge variant="iris" className="absolute left-1 top-1">
+                      {pal.min === pal.max ? pal.min : `${pal.min}-${pal.max}`}
+                    </Badge>
+                    <Badge variant={getBadgeVariantForRate(pal.rate)} className="absolute right-1 top-1">
+                      {pal.rate}%
+                    </Badge>
+
                     <PalImage id={pal.id} className="size-[74px] rounded-full border border-gray-6 bg-gray-4" />
 
-                    <div className="relative">
+                    <div className="relative mt-2">
                       {pal.isBoss && (
                         <Image
                           className="absolute -left-7 size-6"
