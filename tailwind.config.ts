@@ -62,6 +62,9 @@ const config = {
         sans: ['var(--font-inter)'],
         mono: ['var(--font-geist-mono)'],
       },
+      fontSize: {
+        '2xs': ['10px', '13px'],
+      },
       keyframes: {
         'accordion-down': {
           from: { height: '0' },

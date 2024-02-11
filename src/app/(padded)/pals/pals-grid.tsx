@@ -249,7 +249,7 @@ const Grid = memo(function Grid({ pals, sort }: { pals: Pal[]; sort: keyof Pal }
                 <Badge className="h-fit items-baseline">
                   <span className="text-gray-8">#{'000'.slice(pal.zukanIndex.toString().length)}</span>
                   <span>{pal.zukanIndex}</span>
-                  <span className="text-[10px]">{pal.zukanIndexSuffix}</span>
+                  <span className="text-2xs">{pal.zukanIndexSuffix}</span>
                 </Badge>
 
                 <div className="mt-2 flex flex-col gap-1">
