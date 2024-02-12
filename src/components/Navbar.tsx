@@ -56,7 +56,7 @@ export function Navbar() {
                           'flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium',
                           isLinkActive(item.href)
                             ? 'bg-primary-9 text-white'
-                            : 'text-gray-11 hover:bg-gray-3 hover:text-gray-12',
+                            : 'text-gray-11 hover:bg-gray-4 hover:text-gray-12',
                         )}
                       >
                         <item.icon className="hidden size-5 md:block" />
@@ -79,7 +79,7 @@ export function Navbar() {
                     'flex items-center gap-3 rounded-lg px-3 py-2 text-base font-medium',
                     isLinkActive(item.href)
                       ? 'bg-primary-9 text-white'
-                      : 'text-gray-11 hover:bg-gray-3 hover:text-gray-12',
+                      : 'text-gray-11 hover:bg-gray-4 hover:text-gray-12',
                   )}
                   href={item.href}
                 >

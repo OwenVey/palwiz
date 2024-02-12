@@ -1,3 +1,4 @@
+import { Spinner } from '@/components/Spinner';
 import dynamic from 'next/dynamic';
 import { useMemo } from 'react';
 
@@ -5,7 +6,11 @@ export default function MyPage() {
   const Map = useMemo(
     () =>
       dynamic(() => import('@/components/Map'), {
-        loading: () => <p>A map is loading</p>,
+        loading: () => (
+          <div className="grid h-screen w-full place-items-center">
+            <Spinner className="size-6" />
+          </div>
+        ),
         ssr: false,
       }),
     [],
