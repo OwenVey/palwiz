@@ -12,19 +12,24 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 import { normalPals } from '@/data/parsed';
 import { cn } from '@/lib/utils';
 import { type Pal } from '@/types';
-import { type PopoverProps } from '@radix-ui/react-popover';
+import { type PopoverTriggerProps } from '@radix-ui/react-popover';
 
-interface PalComboboxProps extends Omit<PopoverProps, 'open' | 'onOpenChange'> {
+interface PalComboboxProps extends PopoverTriggerProps {
   label?: string;
 }
-export function PalCombobox({ label, ...rest }: PalComboboxProps) {
+export function PalCombobox({ label, className, ...rest }: PalComboboxProps) {
   const [open, setOpen] = React.useState(false);
   const [value, setValue] = React.useState('');
 
   return (
-    <Popover {...rest} open={open} onOpenChange={setOpen}>
-      <PopoverTrigger asChild>
-        <Button variant="outline" role="combobox" aria-expanded={open} className="w-64 justify-between px-3">
+    <Popover open={open} onOpenChange={setOpen}>
+      <PopoverTrigger asChild {...rest}>
+        <Button
+          variant="outline"
+          role="combobox"
+          aria-expanded={open}
+          className={cn(className, 'min-w-56 justify-between px-3')}
+        >
           {value ? (
             <SelectedPal pal={normalPals.find((pal) => pal.id === value)} />
           ) : (

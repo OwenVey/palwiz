@@ -1,6 +1,7 @@
 'use client';
 
 import { CollapsibleFilter } from '@/components/CollapsibleFilter';
+import { PalCombobox } from '@/components/PalCombobox';
 import { PalImage } from '@/components/PalImage';
 import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -64,6 +65,8 @@ export default function MyMap() {
         <ScrollArea className="h-full w-full p-4">
           <div className="flex flex-col gap-5">
             <Input label="Search" icon={SearchIcon} placeholder="Search" />
+
+            <PalCombobox />
 
             {Object.entries(LOCATION_GROUPS).map(([group, locations]) => (
               <CollapsibleFilter key={group} label={group} defaultOpen>
