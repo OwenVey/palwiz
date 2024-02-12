@@ -1,5 +1,6 @@
 import containerQueriesPlugin from '@tailwindcss/container-queries';
 import type { Config } from 'tailwindcss';
+import defaultTheme from 'tailwindcss/defaultTheme';
 import plugin from 'tailwindcss/plugin';
 import { createPlugin } from 'windy-radix-palette';
 
@@ -59,8 +60,8 @@ const config = {
       },
       fontFamily: {
         title: ['var(--font-vinque)'],
-        sans: ['var(--font-inter)'],
-        mono: ['var(--font-geist-mono)'],
+        sans: ['var(--font-inter)', ...defaultTheme.fontFamily.sans],
+        mono: ['var(--font-geist-mono)', ...defaultTheme.fontFamily.mono],
       },
       fontSize: {
         '2xs': ['10px', '13px'],
