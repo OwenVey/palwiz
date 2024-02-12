@@ -7,7 +7,7 @@ export default function MyPage() {
     () =>
       dynamic(() => import('@/components/Map'), {
         loading: () => (
-          <div className="grid h-screen w-full place-items-center">
+          <div className="fixed grid h-screen w-screen place-items-center">
             <Spinner className="size-6" />
           </div>
         ),
