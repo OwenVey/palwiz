@@ -63,7 +63,7 @@ export function PalsGrid() {
   const [rarity, setRarity] = useQueryState('rarity', parseAsString.withDefault(''));
   const [work, setWork] = useQueryState('work', parseAsStringLiteral(WORK_SUITABILITIES.map(({ id }) => id)));
   const [elements, setElements] = useQueryState('elements', parseAsArrayOfStrings);
-  const [partnerSkill, setPartnerSkill] = useQueryState('partnerSkill');
+  const [partnerSkills, setPartnerSkills] = useQueryState('partnerSkill', parseAsArrayOfStrings);
 
   const debouncedSearch = useDebounce(search, 100);
 
@@ -76,13 +76,14 @@ export function PalsGrid() {
         if (elements.length && ![pal.elementType1, pal.elementType2].some((e) => e && elements.includes(e)))
           return false;
         if (work && pal.workSuitabilities[work] <= 0) return false;
-        if (partnerSkill && pal.partnerSkillIcon !== +partnerSkill) return false;
+        if (partnerSkills.length && pal.partnerSkillIcon && !partnerSkills.includes(pal.partnerSkillIcon.toString()))
+          return false;
         return true;
       }),
       sort,
       sortDirection,
     ).sort((pal1, pal2) => (work ? pal2.workSuitabilities[work] - pal1.workSuitabilities[work] : 0));
-  }, [elements, partnerSkill, rarity, debouncedSearch, sort, sortDirection, work]);
+  }, [sort, sortDirection, debouncedSearch, rarity, elements, work, partnerSkills]);
 
   function isCorrectRarity(rarityGroup: string, rarity: number) {
     if (rarityGroup === 'all') return true;
@@ -191,12 +192,12 @@ export function PalsGrid() {
           </ToggleGroup>
         </CollapsibleFilter>
 
-        <CollapsibleFilter label="Partner Skill">
+        <CollapsibleFilter label="Partner Skills" defaultOpen>
           <ToggleGroup
-            type="single"
+            type="multiple"
             className="md:grid md:grid-cols-6 md:gap-1"
-            value={partnerSkill?.toString() ?? ''}
-            onValueChange={(v) => setPartnerSkill(v === '' ? null : v)}
+            value={partnerSkills}
+            onValueChange={(v) => setPartnerSkills(v.length > 0 ? v : null)}
           >
             {[...new Set(normalPals.map((p) => p.partnerSkillIcon).filter(notEmpty))].map((partnerSkillIcon) => (
               <ToggleGroupItem
