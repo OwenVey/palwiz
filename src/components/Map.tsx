@@ -7,9 +7,9 @@ import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
-import mapLocations from '@/data/map-locations.json';
+import mapLocationsJson from '@/data/map-locations.json';
 import { normalPals } from '@/data/parsed';
-import { parseAsArrayOfStrings } from '@/lib/utils';
+import { cn, parseAsArrayOfStrings } from '@/lib/utils';
 import { CRS, Icon } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { SearchIcon } from 'lucide-react';
@@ -20,10 +20,19 @@ import { MapContainer, Marker, Popup, TileLayer, useMapEvents } from 'react-leaf
 
 const LOCATION_GROUPS = {
   locations: [
-    { name: 'Fast Travel', icon: '/images/fast-travel.png', iconSize: 40 },
-    { name: 'Respawn Point', icon: '/images/respawn-point.png', iconSize: 50 },
+    { name: 'Fast Travel', icon: '/images/map/icons/fast-travel.png', iconSize: 40 },
+    { name: 'Respawn Point', icon: '/images/map/icons/respawn-point.png', iconSize: 50 },
+    { name: 'Syndicate Tower', icon: '/images/map/icons/syndicate-tower.png', iconSize: 50 },
+    { name: 'Sealed Realm', icon: '/images/map/icons/sealed-dungeon.png', iconSize: 30 },
+    { name: 'Dungeon', icon: '/images/map/icons/sealed-dungeon.png', iconSize: 30 },
+    { name: 'Statue of Power', icon: '/images/map/icons/star.png', iconSize: 40, iconClass: 'scale-125' },
+    { name: 'NPC', icon: '/images/map/icons/man.svg', iconSize: 30 },
   ],
-  collectibles: [{ name: 'Lifmunk Effigy', icon: '/images/items/relic.webp', iconSize: 20 }],
+  collectibles: [
+    { name: 'Lifmunk Effigy', icon: '/images/items/relic.webp', iconSize: 20 },
+    { name: 'Note', icon: '/images/map/icons/note.svg', iconSize: 20, iconClass: 'p-1' },
+    { name: 'Skill Fruit Tree', icon: '/images/map/icons/apple.svg', iconSize: 20, iconClass: 'p-1' },
+  ],
 } as const;
 
 const BOUND_SIZE = 500;
@@ -55,6 +64,8 @@ function getInGameCoords([x, y]: [number, number]) {
   return `(${newX}, ${newY})`;
 }
 
+const mapLocations = mapLocationsJson.filter((l) => l.enabled);
+
 export default function MyMap() {
   const [filters, setFilters] = useQueryState('filters', parseAsArrayOfStrings);
   const [filterPal, setFilterPal] = useQueryState('pal', parseAsString);
@@ -79,7 +90,13 @@ export default function MyMap() {
                   {locations.map((category) => (
                     <ToggleGroupItem key={category.name} value={category.name} className="h-fit gap-2 px-2 py-1">
                       <div className="rounded-full border border-gray-6 bg-gray-2 p-1">
-                        <Image className="size-6" src={category.icon} width={24} height={24} alt={category.name} />
+                        <Image
+                          className={cn('size-6', category.iconClass)}
+                          src={category.icon}
+                          width={24}
+                          height={24}
+                          alt={category.name}
+                        />
                       </div>
                       <div className="flex flex-1 items-center justify-between">
                         <span>{category.name}</span>
@@ -143,7 +160,12 @@ export default function MyMap() {
                   <Marker
                     key={location.x}
                     position={getLeafletCoords(location)}
-                    icon={new Icon({ iconUrl: category.icon, iconSize: [category.iconSize, category.iconSize] })}
+                    icon={
+                      new Icon({
+                        iconUrl: category.icon,
+                        iconSize: [category.iconSize, category.iconSize],
+                      })
+                    }
                   >
                     <Popup>
                       {category.name}: {getInGameCoords(getLeafletCoords(location))}
@@ -154,7 +176,7 @@ export default function MyMap() {
           )}
           <Coordinates />
 
-          <TileLayer url="/images/map/{z}/{x}/{y}.webp" minZoom={1} maxZoom={6} />
+          <TileLayer url="/images/map/tiles/{z}/{x}/{y}.webp" minZoom={1} maxZoom={6} />
           {/* <ImageOverlay url="/images/map.png" bounds={bounds} /> */}
         </MapContainer>
       </div>
