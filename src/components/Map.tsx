@@ -18,7 +18,13 @@ import { parseAsString, useQueryState } from 'nuqs';
 import { useState } from 'react';
 import { MapContainer, Marker, Popup, TileLayer, useMapEvents } from 'react-leaflet';
 
-const LOCATION_GROUPS = {
+type LocationGroup = {
+  name: string;
+  icon: string;
+  iconSize: number;
+  iconClass?: string;
+};
+const LOCATION_GROUPS: Record<string, LocationGroup[]> = {
   locations: [
     { name: 'Fast Travel', icon: '/images/map/icons/fast-travel.png', iconSize: 40 },
     { name: 'Respawn Point', icon: '/images/map/icons/respawn-point.png', iconSize: 50 },
