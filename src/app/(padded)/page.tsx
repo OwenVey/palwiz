@@ -1,21 +1,14 @@
+import { LogoImage } from '@/components/LogoImage';
 import { Card } from '@/components/ui/card';
 import { NAVIGATION } from '@/constants';
 import { cn } from '@/lib/utils';
-import Image from 'next/image';
 import Link from 'next/link';
 
 export default function HomePage() {
   return (
     <div className="flex flex-col items-center justify-center">
       <div className="mt-10 flex flex-col items-center">
-        <Image
-          src="/images/logo-dark.webp"
-          height={48}
-          width={195}
-          alt="Palwiz logo"
-          className="h-12 w-auto"
-          priority
-        />
+        <LogoImage className="h-12" priority />
       </div>
 
       <div className="mt-6 grid w-full grid-cols-1 gap-4 sm:max-w-xl sm:grid-cols-2">

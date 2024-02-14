@@ -1,19 +1,15 @@
-import { getImageProps } from 'next/image';
+import { cn } from '@/lib/utils';
+import Image, { type ImageProps } from 'next/image';
+import logoDark from '~/public/images/logo-dark.webp';
+import logoLight from '~/public/images/logo-light.webp';
 
-export default function LogoImage() {
-  const common = { alt: 'Palwiz Logo', width: 800, height: 400 };
-  const {
-    props: { srcSet: dark },
-  } = getImageProps({ ...common, src: '/images/logo-dark.webp' });
-  const {
-    props: { srcSet: light, ...rest },
-  } = getImageProps({ ...common, src: '/images/logo-dark.webp' });
+type Props = Omit<ImageProps, 'src' | 'loading' | 'alt'>;
 
+export function LogoImage({ className, ...rest }: Props) {
   return (
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcSet={dark} />
-      <source media="(prefers-color-scheme: light)" srcSet={light} />
-      <img {...rest} />
-    </picture>
+    <>
+      <Image {...rest} alt="Palwiz Logo" src={logoLight} className={cn(className, 'w-auto dark:hidden')} />
+      <Image {...rest} alt="Palwiz Logo" src={logoDark} className={cn(className, 'hidden w-auto dark:block')} />
+    </>
   );
 }

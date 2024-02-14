@@ -1,11 +1,11 @@
 'use client';
+import { LogoImage } from '@/components/LogoImage';
 import { ThemeSelector } from '@/components/ThemeSelector';
 import { Button } from '@/components/ui/button';
 import { NAVIGATION } from '@/constants';
 import { cn } from '@/lib/utils';
 import * as Accordion from '@radix-ui/react-accordion';
 import { MenuIcon, XIcon } from 'lucide-react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -42,14 +42,7 @@ export function Navbar() {
               <div className="flex flex-1 items-center justify-center sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <Link href="/" className="flex items-center gap-1">
-                    <Image
-                      src="/images/logo-dark.webp"
-                      height={28}
-                      width={110}
-                      alt="Palwiz logo"
-                      className="h-7 w-auto"
-                      priority
-                    />
+                    <LogoImage className="h-6" priority />
                   </Link>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
