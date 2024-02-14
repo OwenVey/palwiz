@@ -68,4 +68,6 @@ export function getBadgeVariantForRate(rate: number): BadgeProps['variant'] {
   }
 }
 
-export const parseAsArrayOfStrings = parseAsArrayOf(parseAsString).withDefault([]);
+export const parseAsArrayOfStrings = parseAsArrayOf(parseAsString)
+  .withDefault([])
+  .withOptions({ clearOnDefault: true });

@@ -14,7 +14,7 @@ import { CRS, Icon } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { SearchIcon } from 'lucide-react';
 import Image from 'next/image';
-import { parseAsString, useQueryState } from 'nuqs';
+import { useQueryState } from 'nuqs';
 import { useState } from 'react';
 import { MapContainer, Marker, Popup, TileLayer, useMapEvents } from 'react-leaflet';
 
@@ -74,7 +74,7 @@ const mapLocations = mapLocationsJson.filter((l) => l.enabled);
 
 export default function MyMap() {
   const [filters, setFilters] = useQueryState('filters', parseAsArrayOfStrings);
-  const [filterPal, setFilterPal] = useQueryState('pal', parseAsString);
+  const [filterPal, setFilterPal] = useQueryState('pal', { defaultValue: '', clearOnDefault: true });
 
   return (
     <div>
@@ -120,8 +120,8 @@ export default function MyMap() {
               <ToggleGroup
                 type="single"
                 className="md:grid md:grid-cols-2 md:gap-1"
-                value={filterPal ?? ''}
-                onValueChange={(v) => setFilterPal(v ? v : null)}
+                value={filterPal}
+                onValueChange={setFilterPal}
               >
                 {normalPals.map((pal) => (
                   <ToggleGroupItem key={pal.name} value={pal.name} className="h-fit gap-2 px-2 py-1">

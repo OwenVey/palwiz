@@ -25,7 +25,7 @@ import {
   SearchIcon,
 } from 'lucide-react';
 import Link from 'next/link';
-import { parseAsString, parseAsStringLiteral, useQueryState } from 'nuqs';
+import { parseAsStringLiteral, useQueryState } from 'nuqs';
 import { memo, useMemo } from 'react';
 
 export const PAL_SORTS = [
@@ -51,17 +51,22 @@ export const PAL_SORTS = [
 ] satisfies Array<{ label: string; value: keyof Pal }>;
 
 export function PalsGrid() {
-  const [search, setSearch] = useQueryState('search', parseAsString.withDefault(''));
+  const [search, setSearch] = useQueryState('search', { defaultValue: '', clearOnDefault: true });
   const [sort, setSort] = useQueryState(
     'sort',
-    parseAsStringLiteral(PAL_SORTS.map((s) => s.value)).withDefault('zukanIndex'),
+    parseAsStringLiteral(PAL_SORTS.map((s) => s.value))
+      .withDefault('zukanIndex')
+      .withOptions({ clearOnDefault: true }),
   );
   const [sortDirection, setSortDirection] = useQueryState(
     'sortDirection',
-    parseAsStringLiteral(['asc', 'desc']).withDefault('asc'),
+    parseAsStringLiteral(['asc', 'desc']).withDefault('asc').withOptions({ clearOnDefault: true }),
   );
-  const [rarity, setRarity] = useQueryState('rarity', parseAsString.withDefault(''));
-  const [work, setWork] = useQueryState('work', parseAsStringLiteral(WORK_SUITABILITIES.map(({ id }) => id)));
+  const [rarity, setRarity] = useQueryState('rarity', { defaultValue: '', clearOnDefault: true });
+  const [work, setWork] = useQueryState(
+    'work',
+    parseAsStringLiteral(WORK_SUITABILITIES.map(({ id }) => id)).withOptions({ clearOnDefault: true }),
+  );
   const [elements, setElements] = useQueryState('elements', parseAsArrayOfStrings);
   const [partnerSkills, setPartnerSkills] = useQueryState('partnerSkill', parseAsArrayOfStrings);
 
@@ -103,14 +108,11 @@ export function PalsGrid() {
           placeholder="Search pals"
           icon={SearchIcon}
           value={search}
-          onChange={({ target }) => setSearch(target.value ? target.value : null)}
+          onChange={(e) => setSearch(e.target.value)}
         />
 
         <div className="flex flex-col items-end gap-2">
-          <Select
-            value={sort ?? ''}
-            onValueChange={(v) => setSort(v === '' ? null : (v as (typeof PAL_SORTS)[number]['value']))}
-          >
+          <Select value={sort ?? ''} onValueChange={(v) => setSort(v as (typeof PAL_SORTS)[number]['value'])}>
             <SelectTrigger label="Sort" icon={ArrowUpDownIcon} placeholder="Sort by" />
 
             <SelectContent>
@@ -127,9 +129,7 @@ export function PalsGrid() {
             className="flex w-full"
             size="sm"
             value={sortDirection}
-            onValueChange={async (value: 'asc' | 'desc') => {
-              if (value) await setSortDirection(value);
-            }}
+            onValueChange={(value: 'asc' | 'desc') => value && setSortDirection(value)}
           >
             <ToggleGroupItem value="asc" className="flex-1">
               <ArrowDownNarrowWideIcon className="mr-1 size-4" />
@@ -142,7 +142,7 @@ export function PalsGrid() {
           </ToggleGroup>
         </div>
 
-        <Select value={rarity} onValueChange={(v) => setRarity(v && v !== 'all' ? v : null)}>
+        <Select value={rarity} onValueChange={(v) => setRarity(v === 'all' ? '' : v)}>
           <SelectTrigger label="Rarity" icon={GemIcon} placeholder="Select rarity" />
 
           <SelectContent>
@@ -182,7 +182,7 @@ export function PalsGrid() {
             type="multiple"
             className="md:grid md:grid-cols-6 md:gap-1"
             value={elements}
-            onValueChange={(e) => setElements(e.length > 0 ? e : null)}
+            onValueChange={(v) => setElements(v.length > 0 ? v : null)}
           >
             {PAL_ELEMENTS.map((element) => (
               <ToggleGroupItem key={element} value={element} className="w-10 p-0 md:w-auto">

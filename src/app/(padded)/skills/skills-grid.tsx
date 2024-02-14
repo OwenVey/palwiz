@@ -36,14 +36,16 @@ const SKILL_SORTS = [
 const ALL_EFFECTS = [...new Set(skills.flatMap((skill) => skill.effects.map((effect) => effect.name)))];
 
 export function SkillsGrid() {
-  const [search, setSearch] = useQueryState('search', parseAsString.withDefault(''));
+  const [search, setSearch] = useQueryState('search', { defaultValue: '', clearOnDefault: true });
   const [sort, setSort] = useQueryState(
     'sort',
-    parseAsStringLiteral(SKILL_SORTS.map((s) => s.value)).withDefault('name'),
+    parseAsStringLiteral(SKILL_SORTS.map((s) => s.value))
+      .withDefault('name')
+      .withOptions({ clearOnDefault: true }),
   );
   const [sortDirection, setSortDirection] = useQueryState(
     'sortDirection',
-    parseAsStringLiteral(['asc', 'desc']).withDefault('asc'),
+    parseAsStringLiteral(['asc', 'desc']).withDefault('asc').withOptions({ clearOnDefault: true }),
   );
   const [elements, setElements] = useQueryState('elements', parseAsArrayOfStrings);
   const [category, setCategory] = useQueryState('category', parseAsString);
@@ -72,14 +74,11 @@ export function SkillsGrid() {
           placeholder="Search skills"
           icon={SearchIcon}
           value={search}
-          onChange={({ target }) => setSearch(target.value ? target.value : null)}
+          onChange={(e) => setSearch(e.target.value)}
         />
 
         <div className="flex flex-col items-end gap-2">
-          <Select
-            value={sort ?? ''}
-            onValueChange={(v) => setSort(v === '' ? null : (v as (typeof SKILL_SORTS)[number]['value']))}
-          >
+          <Select value={sort ?? ''} onValueChange={(v) => setSort(v as (typeof SKILL_SORTS)[number]['value'])}>
             <SelectTrigger label="Sort" icon={ArrowUpDownIcon} placeholder="Sort by" />
 
             <SelectContent>

@@ -21,7 +21,7 @@ import {
   SearchIcon,
 } from 'lucide-react';
 import Link from 'next/link';
-import { parseAsString, parseAsStringLiteral, useQueryState } from 'nuqs';
+import { parseAsStringLiteral, useQueryState } from 'nuqs';
 import { memo, useMemo } from 'react';
 
 const ITEM_SORTS = [
@@ -74,14 +74,16 @@ function getItemRarityClass(rarity: number) {
 const ALL_CATEGORIES = [...new Set(items.map((item) => item.typeA))].sort();
 
 export function ItemsGrid() {
-  const [search, setSearch] = useQueryState('search', parseAsString.withDefault(''));
+  const [search, setSearch] = useQueryState('search', { defaultValue: '', clearOnDefault: true });
   const [sort, setSort] = useQueryState(
     'sort',
-    parseAsStringLiteral(ITEM_SORTS.map((s) => s.value)).withDefault('name'),
+    parseAsStringLiteral(ITEM_SORTS.map((s) => s.value))
+      .withDefault('name')
+      .withOptions({ clearOnDefault: true }),
   );
   const [sortDirection, setSortDirection] = useQueryState(
     'sortDirection',
-    parseAsStringLiteral(['asc', 'desc']).withDefault('asc'),
+    parseAsStringLiteral(['asc', 'desc']).withDefault('asc').withOptions({ clearOnDefault: true }),
   );
   const [categories, setCategories] = useQueryState('categories', parseAsArrayOfStrings);
   const [rarities, setRarities] = useQueryState('rarity', parseAsArrayOfStrings);
@@ -113,14 +115,11 @@ export function ItemsGrid() {
           placeholder="Search items"
           icon={SearchIcon}
           value={search}
-          onChange={({ target }) => setSearch(target.value ? target.value : null)}
+          onChange={(e) => setSearch(e.target.value)}
         />
 
         <div className="flex flex-col items-end gap-2">
-          <Select
-            value={sort ?? ''}
-            onValueChange={(v) => setSort(v === '' ? null : (v as (typeof ITEM_SORTS)[number]['value']))}
-          >
+          <Select value={sort} onValueChange={(v) => setSort(v as (typeof ITEM_SORTS)[number]['value'])}>
             <SelectTrigger label="Sort" icon={ArrowUpDownIcon} placeholder="Sort by" />
 
             <SelectContent>
