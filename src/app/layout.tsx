@@ -6,7 +6,6 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import { GeistMono } from 'geist/font/mono';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import localFont from 'next/font/local';
 import './globals.css';
 
 const inter = Inter({
@@ -23,12 +22,6 @@ export const metadata: Metadata = {
   description: 'All in one source for Palword information',
 };
 
-const vinque = localFont({
-  src: './vinque.otf',
-  display: 'swap',
-  variable: '--font-vinque',
-});
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -36,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={cn(inter.variable, GeistMono.variable, vinque.variable, 'bg-gray-1 font-sans antialiased')}>
+      <body className={cn(inter.variable, GeistMono.variable, 'bg-gray-1 font-sans antialiased')}>
         <Providers>
           <Navbar />
           <main>{children}</main>

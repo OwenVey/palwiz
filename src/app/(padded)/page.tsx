@@ -1,18 +1,24 @@
-import { Logo } from '@/components/Logo';
 import { Card } from '@/components/ui/card';
 import { NAVIGATION } from '@/constants';
 import { cn } from '@/lib/utils';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function HomePage() {
   return (
     <div className="flex flex-col items-center justify-center">
-      <div className="my-6 flex flex-col items-center">
-        <Logo className="h-10 w-auto text-primary-9" />
-        <h1 className="font-title text-5xl leading-none text-gray-12">palwiz</h1>
+      <div className="mt-10 flex flex-col items-center">
+        <Image
+          src="/images/logo-dark.webp"
+          height={48}
+          width={195}
+          alt="Palwiz logo"
+          className="h-12 w-auto"
+          priority
+        />
       </div>
 
-      <div className="mt-4 grid w-full grid-cols-1 gap-4 sm:max-w-xl sm:grid-cols-2">
+      <div className="mt-6 grid w-full grid-cols-1 gap-4 sm:max-w-xl sm:grid-cols-2">
         {NAVIGATION.map((item) => (
           <Link key={item.name} href={item.href} className={cn('group', item.name === 'Pals' && 'sm:col-span-2')}>
             <Card hoverEffect className="flex h-full items-center gap-4 sm:flex-col sm:p-6">

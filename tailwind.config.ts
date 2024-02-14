@@ -59,7 +59,6 @@ const config = {
         gray: colors.alias('mauve'),
       },
       fontFamily: {
-        title: ['var(--font-vinque)'],
         sans: ['var(--font-inter)', ...defaultTheme.fontFamily.sans],
         mono: ['var(--font-geist-mono)', ...defaultTheme.fontFamily.mono],
       },
