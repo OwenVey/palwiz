@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     default: 'Palwiz',
   },
   description: 'All in one source for Palword information',
+  metadataBase: new URL('https://palwiz.app'),
 };
 
 export default function RootLayout({
