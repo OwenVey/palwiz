@@ -42,7 +42,7 @@ export function Navbar() {
               <div className="flex flex-1 items-center justify-center sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <Link href="/" className="flex items-center gap-1">
-                    <LogoImage className="h-6" priority />
+                    <LogoImage className="h-7" priority />
                   </Link>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
