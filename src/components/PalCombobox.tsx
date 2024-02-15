@@ -44,24 +44,26 @@ export function PalCombobox({ label, className, ...rest }: PalComboboxProps) {
           <CommandEmpty>No pals found</CommandEmpty>
           <CommandGroup className="px-0">
             <ScrollArea className="flex max-h-72 flex-col px-1">
-              {normalPals.map((pal) => (
-                <CommandItem
-                  className={cn(value === pal.id && 'bg-primary-9 aria-selected:bg-primary-10')}
-                  key={pal.internalName}
-                  value={pal.id}
-                  onSelect={(currentValue) => {
-                    setValue(currentValue === value ? '' : currentValue);
-                    setOpen(false);
-                  }}
-                >
-                  <PalImage id={pal.id} className="mr-2 size-6 rounded-full" />
-                  {pal.name}
-                  <Badge variant="gray" className="ml-auto text-2xs">
-                    #{pal.zukanIndex}
-                    {pal.zukanIndexSuffix}
-                  </Badge>
-                </CommandItem>
-              ))}
+              {normalPals
+                .sort((a, b) => a.name.localeCompare(b.name))
+                .map((pal) => (
+                  <CommandItem
+                    className={cn(value === pal.id && 'bg-primary-9 aria-selected:bg-primary-10')}
+                    key={pal.internalName}
+                    value={pal.id}
+                    onSelect={(currentValue) => {
+                      setValue(currentValue === value ? '' : currentValue);
+                      setOpen(false);
+                    }}
+                  >
+                    <PalImage id={pal.id} className="mr-2 size-6 rounded-full" />
+                    {pal.name}
+                    <Badge variant="gray" className="ml-auto text-2xs">
+                      #{pal.zukanIndex}
+                      {pal.zukanIndexSuffix}
+                    </Badge>
+                  </CommandItem>
+                ))}
             </ScrollArea>
           </CommandGroup>
         </Command>
