@@ -29,7 +29,7 @@ export function OneParent() {
     <>
       <PalCombobox label="Parent" value={parentAId} setValue={setParentAId} />
 
-      <BreedingComboList combos={combos} />
+      {parentA && <BreedingComboList combos={combos} />}
     </>
   );
 }
