@@ -1,5 +1,6 @@
 'use client';
 
+import { DesiredChild } from '@/app/(padded)/breeding/desired-child';
 import { OneParent } from '@/app/(padded)/breeding/one-parent';
 import { TwoParents } from '@/app/(padded)/breeding/two-parents';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -22,6 +23,9 @@ export function BreedingTabs() {
         </TabsContent>
         <TabsContent value="one-parent">
           <OneParent />
+        </TabsContent>
+        <TabsContent value="desired-child">
+          <DesiredChild />
         </TabsContent>
       </div>
     </Tabs>

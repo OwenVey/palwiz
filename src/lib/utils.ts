@@ -80,21 +80,13 @@ export function getBreedingResult(parentAId: string, parentBId: string): Pal {
   const parentA = normalPals.find((pal) => pal.id === parentAId)!;
   const parentB = normalPals.find((pal) => pal.id === parentBId)!;
 
-  // if (!parentA || !parentB) return null;
-
   const averageCombiRank = Math.floor((parentA.combiRank + parentB.combiRank + 1) / 2);
 
   const child = breedOrderPals.reduce((closestPal, pal) => {
     const currentDiff = Math.abs(pal.combiRank - averageCombiRank);
     const closestDiff = Math.abs(closestPal.combiRank - averageCombiRank);
-
-    if (currentDiff === closestDiff) {
-      // console.log('tie', { pal: pal.name, closestPal: closestPal.name });
-    }
     return currentDiff < closestDiff ? pal : closestPal;
   });
-
-  console.log(`${parentA.name} + ${parentB.name} = ${child.name}`);
 
   return child;
 }

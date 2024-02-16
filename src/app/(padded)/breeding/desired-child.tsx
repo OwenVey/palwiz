@@ -9,15 +9,23 @@ import { EqualIcon, PlusIcon } from 'lucide-react';
 import { useQueryState } from 'nuqs';
 import { useEffect, useState } from 'react';
 
-export function OneParent() {
+export function DesiredChild() {
   const [parentAId, setParentAId] = useQueryState('parentA', { defaultValue: '', clearOnDefault: true });
-  const [combos, setCombos] = useState<Array<{ parentB: Pal; child: Pal }>>([]);
+  const [combos, setCombos] = useState<Array<{ parentA: Pal; parentB: Pal }>>([]);
 
-  const parentA = normalPals.find((pal) => pal.id === parentAId);
+  const child = normalPals.find((pal) => pal.id === parentAId);
 
   useEffect(() => {
     if (parentAId) {
-      const combos = normalPals.map((parentB) => ({ parentB, child: getBreedingResult(parentAId, parentB.id) }));
+      const combos: Array<{ parentA: Pal; parentB: Pal }> = [];
+      for (const parentA of normalPals) {
+        for (const parentB of normalPals) {
+          const child = getBreedingResult(parentA.id, parentB.id);
+          if (child.id === parentAId) {
+            combos.push({ parentA, parentB });
+          }
+        }
+      }
       setCombos(combos);
     }
   }, [parentAId]);
@@ -27,9 +35,9 @@ export function OneParent() {
       <PalCombobox label="Parent 1" className="w-fit" value={parentAId} setValue={setParentAId} />
 
       <div className="mt-4 flex flex-col gap-2">
-        {parentA &&
-          combos.map(({ parentB, child }) => (
-            <div key={parentB.id} className="flex items-center gap-4">
+        {child &&
+          combos.map(({ parentA, parentB }) => (
+            <div key={`${parentA.id}+${parentB.id}`} className="flex items-center gap-4">
               <BreedingCard pal={parentA} />
               <PlusIcon className="size-4 text-gray-11" />
               <BreedingCard pal={parentB} />
