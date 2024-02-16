@@ -3,5 +3,5 @@ export default function PaddedLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <main className="mx-auto max-w-7xl p-4">{children}</main>;
+  return <div className="mx-auto max-w-7xl p-4">{children}</div>;
 }
