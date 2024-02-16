@@ -13,24 +13,25 @@ export function BreedingTabs() {
 
   return (
     <Tabs value={tab} onValueChange={setTab} className="flex flex-col items-center">
-      <TabsList className="mb-10 w-full sm:max-w-3xl">
-        <TabsTrigger value="two-parents" className="flex-1">
+      <TabsList className="mb-10 h-fit w-full flex-col sm:max-w-3xl sm:flex-row">
+        <TabsTrigger value="two-parents" className="w-full flex-1">
           <UsersIcon className="mr-2 size-4" />
           Two Parents
         </TabsTrigger>
-        <TabsTrigger value="one-parent" className="flex-1">
+        <TabsTrigger value="one-parent" className="w-full flex-1">
           <UserIcon className="mr-2 size-4" />
           One Parent
         </TabsTrigger>
-        <TabsTrigger value="desired-child" className="flex-1">
+        <TabsTrigger value="desired-child" className="w-full flex-1">
           <UserSearchIcon className="mr-2 size-4" />
           Desired Child
         </TabsTrigger>
-        <TabsTrigger value="shortest-path" className="flex-1">
+        <TabsTrigger value="shortest-path" className="w-full flex-1">
           <RouteIcon className="mr-2 size-4" />
           Shortest Path
         </TabsTrigger>
       </TabsList>
+
       <TabsContent value="two-parents" className="mx-auto flex w-full max-w-xl flex-col items-center">
         <TwoParents />
       </TabsContent>
