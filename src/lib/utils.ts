@@ -1,5 +1,5 @@
 import { type BadgeProps } from '@/components/ui/badge';
-import { WORK_SUITABILITIES } from '@/constants';
+import { UNIQUE_BREEDING_COMBO_MAP, WORK_SUITABILITIES } from '@/constants';
 import { breedOrderPals, itemRecipes, items, normalPals, skills } from '@/data/parsed';
 import { type Pal } from '@/types';
 import { clsx, type ClassValue } from 'clsx';
@@ -74,7 +74,10 @@ export const parseAsArrayOfStrings = parseAsArrayOf(parseAsString)
   .withOptions({ clearOnDefault: true });
 
 export function getBreedingResult(parentAId: string, parentBId: string): Pal {
+  if (parentAId === parentBId) return normalPals.find((pal) => pal.id === parentAId)!;
+
   const uniqueMatch = checkUniqueBreedingCombos(parentAId, parentBId);
+
   if (uniqueMatch) return uniqueMatch;
 
   const parentA = normalPals.find((pal) => pal.id === parentAId)!;
@@ -91,40 +94,9 @@ export function getBreedingResult(parentAId: string, parentBId: string): Pal {
   return child;
 }
 
-const UNIQUE_BREEDING_COMBO_MAP = [
-  { parents: ['relaxaurus', 'sparkit'], childId: 'relaxaurus-lux' },
-  { parents: ['incineram', 'maraith'], childId: 'incineram-noct' },
-  { parents: ['mau', 'pengullet'], childId: 'mau-cryst' },
-  { parents: ['vanwyrm', 'foxcicle'], childId: 'vanwyrm-cryst' },
-  { parents: ['eikthyrdeer', 'hangyu'], childId: 'eikthyrdeer-terra' },
-  { parents: ['elphidran', 'surfent'], childId: 'elphidran-aqua' },
-  { parents: ['pyrin', 'katress'], childId: 'pyrin-noct' },
-  { parents: ['mammorest', 'wumpo'], childId: 'mammorest-cryst' },
-  { parents: ['mossanda', 'grizzbolt'], childId: 'mossanda-lux' },
-  { parents: ['dinossom', 'rayhound'], childId: 'dinossom-lux' },
-  { parents: ['jolthog', 'pengullet'], childId: 'jolthog-cryst' },
-  { parents: ['frostallion', 'helzephyr'], childId: 'frostallion-noct' },
-  { parents: ['kingpaca', 'reindrix'], childId: 'kingpaca-cryst' },
-  { parents: ['lyleen', 'menasting'], childId: 'lyleen-noct' },
-  { parents: ['leezpunk', 'flambelle'], childId: 'leezpunk-ignis' },
-  { parents: ['blazehowl', 'felbat'], childId: 'blazehowl-noct' },
-  { parents: ['robinquill', 'fuddler'], childId: 'robinquill-terra' },
-  { parents: ['broncherry', 'fuack'], childId: 'broncherry-aqua' },
-  { parents: ['surfent', 'dumud'], childId: 'surfent-terra' },
-  { parents: ['gobfin', 'rooby'], childId: 'gobfin-ignis' },
-  { parents: ['suzaku', 'jormuntide'], childId: 'suzaku-aqua' },
-  { parents: ['reptyro', 'foxcicle'], childId: 'reptyro-cryst' },
-  { parents: ['hangyu', 'swee'], childId: 'hangyu-cryst' },
-  { parents: ['mossanda', 'petallia'], childId: 'lyleen' },
-  { parents: ['vanwyrm', 'anubis'], childId: 'faleris' },
-  { parents: ['mossanda', 'rayhound'], childId: 'grizzbolt' },
-  { parents: ['grizzbolt', 'relaxaurus'], childId: 'orserk' },
-  { parents: ['kitsun', 'astegon'], childId: 'shadowbeak' },
-];
-
 export function checkUniqueBreedingCombos(parentAId: string, parentBId: string): Pal | null {
   const match = UNIQUE_BREEDING_COMBO_MAP.find(
-    (combo) => combo.parents.includes(parentAId) && combo.parents.includes(parentBId),
+    (combo) => [parentAId, parentBId].sort().join() === [...combo.parents].sort().join(),
   );
   if (!match) return null;
 

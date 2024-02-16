@@ -45,3 +45,36 @@ export const NAVIGATION = [
   { name: 'Breeding', href: '/breeding', icon: HeartIcon, description: 'Pal breeding calculator' },
   { name: 'Map', href: '/map', icon: MapIcon, description: 'Interactive map with all fast travel locations and more' },
 ] as const;
+
+export const UNIQUE_BREEDING_COMBO_MAP = [
+  { parents: ['relaxaurus', 'sparkit'], childId: 'relaxaurus-lux' },
+  { parents: ['incineram', 'maraith'], childId: 'incineram-noct' },
+  { parents: ['mau', 'pengullet'], childId: 'mau-cryst' },
+  { parents: ['vanwyrm', 'foxcicle'], childId: 'vanwyrm-cryst' },
+  { parents: ['eikthyrdeer', 'hangyu'], childId: 'eikthyrdeer-terra' },
+  { parents: ['elphidran', 'surfent'], childId: 'elphidran-aqua' },
+  { parents: ['pyrin', 'katress'], childId: 'pyrin-noct' },
+  { parents: ['mammorest', 'wumpo'], childId: 'mammorest-cryst' },
+  { parents: ['mossanda', 'grizzbolt'], childId: 'mossanda-lux' },
+  { parents: ['dinossom', 'rayhound'], childId: 'dinossom-lux' },
+  { parents: ['jolthog', 'pengullet'], childId: 'jolthog-cryst' },
+  { parents: ['frostallion', 'helzephyr'], childId: 'frostallion-noct' },
+  { parents: ['kingpaca', 'reindrix'], childId: 'kingpaca-cryst' },
+  { parents: ['lyleen', 'menasting'], childId: 'lyleen-noct' },
+  { parents: ['leezpunk', 'flambelle'], childId: 'leezpunk-ignis' },
+  { parents: ['blazehowl', 'felbat'], childId: 'blazehowl-noct' },
+  { parents: ['robinquill', 'fuddler'], childId: 'robinquill-terra' },
+  { parents: ['broncherry', 'fuack'], childId: 'broncherry-aqua' },
+  { parents: ['surfent', 'dumud'], childId: 'surfent-terra' },
+  { parents: ['gobfin', 'rooby'], childId: 'gobfin-ignis' },
+  { parents: ['suzaku', 'jormuntide'], childId: 'suzaku-aqua' },
+  { parents: ['reptyro', 'foxcicle'], childId: 'reptyro-cryst' },
+  { parents: ['hangyu', 'swee'], childId: 'hangyu-cryst' },
+  { parents: ['mossanda', 'petallia'], childId: 'lyleen' },
+  { parents: ['vanwyrm', 'anubis'], childId: 'faleris' },
+  { parents: ['mossanda', 'rayhound'], childId: 'grizzbolt' },
+  { parents: ['grizzbolt', 'relaxaurus'], childId: 'orserk' },
+  { parents: ['kitsun', 'astegon'], childId: 'shadowbeak' },
+] as const;
+
+export const UNIQUE_BREEDING_CHILDREN = UNIQUE_BREEDING_COMBO_MAP.map(({ childId }) => childId);

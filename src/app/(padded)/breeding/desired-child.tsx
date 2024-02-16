@@ -17,8 +17,10 @@ export function DesiredChild() {
   useEffect(() => {
     if (parentAId) {
       const combos: Array<{ parentA: Pal; parentB: Pal; child: Pal }> = [];
-      for (const parentA of normalPals) {
-        for (const parentB of normalPals) {
+      for (let i = 0; i < normalPals.length; i++) {
+        const parentA = normalPals[i]!;
+        for (let j = i; j < normalPals.length; j++) {
+          const parentB = normalPals[j]!;
           const child = getBreedingResult(parentA.id, parentB.id);
           if (child.id === parentAId) {
             combos.push({ parentA, parentB, child });

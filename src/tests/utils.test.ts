@@ -1,127 +1,138 @@
-import { normalPals } from '@/data/parsed';
 import { getBreedingResult } from '@/lib/utils';
 import { describe, expect, it } from 'vitest';
 
 describe('getBreedingResult', () => {
+  it('Anubis + Anubis = Anubis', () => {
+    expect(getBreedingResult('anubis', 'anubis').id).toBe('anubis');
+  });
+
+  it('Anubis + Incineram = Anubis', () => {
+    expect(getBreedingResult('anubis', 'incineram').id).toBe('anubis');
+  });
+
   it('Anubis + Broncherry = Blazehowl', () => {
-    expect(getBreedingResult('anubis', 'broncherry')).toBe(normalPals.find((pal) => pal.id === 'blazehowl'));
+    expect(getBreedingResult('anubis', 'broncherry').id).toBe('blazehowl');
+  });
+
+  it('Incineram Noct + Incineram Noct = Incineram Noct', () => {
+    expect(getBreedingResult('incineram-noct', 'incineram-noct').id).toBe('incineram-noct');
   });
 
   it('Frostallion Noct + Lovander = Penking', () => {
-    expect(getBreedingResult('frostallion-noct', 'lovander')).toBe(normalPals.find((pal) => pal.id === 'penking'));
+    expect(getBreedingResult('frostallion-noct', 'lovander').id).toBe('penking');
   });
 });
 
 describe('getBreedingResult unique combinations', () => {
   it('Relaxaurus + Sparkit = Relaxaurus Lux', () => {
-    expect(getBreedingResult('relaxaurus', 'sparkit')).toBe(normalPals.find((pal) => pal.id === 'relaxaurus-lux'));
+    expect(getBreedingResult('relaxaurus', 'sparkit').id).toBe('relaxaurus-lux');
   });
 
   it('Incineram + Maraith = Incineram Noct', () => {
-    expect(getBreedingResult('incineram', 'maraith')).toBe(normalPals.find((pal) => pal.id === 'incineram-noct'));
+    expect(getBreedingResult('incineram', 'maraith').id).toBe('incineram-noct');
   });
 
   it('Mau + Pengullet = Mau Cryst', () => {
-    expect(getBreedingResult('mau', 'pengullet')).toBe(normalPals.find((pal) => pal.id === 'mau-cryst'));
+    expect(getBreedingResult('mau', 'pengullet').id).toBe('mau-cryst');
   });
 
   it('Vanwyrm + Foxcicle = Vanwyrm Cryst', () => {
-    expect(getBreedingResult('vanwyrm', 'foxcicle')).toBe(normalPals.find((pal) => pal.id === 'vanwyrm-cryst'));
+    expect(getBreedingResult('vanwyrm', 'foxcicle').id).toBe('vanwyrm-cryst');
   });
 
   it('Eikthyrdeer + Hangyu = Eikthyrdeer Terra', () => {
-    expect(getBreedingResult('eikthyrdeer', 'hangyu')).toBe(normalPals.find((pal) => pal.id === 'eikthyrdeer-terra'));
+    expect(getBreedingResult('eikthyrdeer', 'hangyu').id).toBe('eikthyrdeer-terra');
   });
 
   it('Elphidran + Surfent = Elphidran Aqua', () => {
-    expect(getBreedingResult('elphidran', 'surfent')).toBe(normalPals.find((pal) => pal.id === 'elphidran-aqua'));
+    expect(getBreedingResult('elphidran', 'surfent').id).toBe('elphidran-aqua');
   });
 
   it('Pyrin + Katress = Pyrin Noct', () => {
-    expect(getBreedingResult('pyrin', 'katress')).toBe(normalPals.find((pal) => pal.id === 'pyrin-noct'));
+    expect(getBreedingResult('pyrin', 'katress').id).toBe('pyrin-noct');
   });
 
   it('Mammorest + Wumpo = Mammorest Cryst', () => {
-    expect(getBreedingResult('mammorest', 'wumpo')).toBe(normalPals.find((pal) => pal.id === 'mammorest-cryst'));
+    expect(getBreedingResult('mammorest', 'wumpo').id).toBe('mammorest-cryst');
   });
 
   it('Mossanda + Grizzbolt = Mossanda Lux', () => {
-    expect(getBreedingResult('mossanda', 'grizzbolt')).toBe(normalPals.find((pal) => pal.id === 'mossanda-lux'));
+    expect(getBreedingResult('mossanda', 'grizzbolt').id).toBe('mossanda-lux');
   });
 
   it('Dinossom + Rayhound = Dinossom Lux', () => {
-    expect(getBreedingResult('dinossom', 'rayhound')).toBe(normalPals.find((pal) => pal.id === 'dinossom-lux'));
+    expect(getBreedingResult('dinossom', 'rayhound').id).toBe('dinossom-lux');
   });
 
   it('Jolthog + Pengullet = Jolthog Cryst', () => {
-    expect(getBreedingResult('jolthog', 'pengullet')).toBe(normalPals.find((pal) => pal.id === 'jolthog-cryst'));
+    expect(getBreedingResult('jolthog', 'pengullet').id).toBe('jolthog-cryst');
   });
 
   it('Frostallion + Helzephyr = Frostallion Noct', () => {
-    expect(getBreedingResult('frostallion', 'helzephyr')).toBe(normalPals.find((pal) => pal.id === 'frostallion-noct'));
+    expect(getBreedingResult('frostallion', 'helzephyr').id).toBe('frostallion-noct');
   });
 
   it('Kingpaca + Reindrix = Kingpaca Cryst', () => {
-    expect(getBreedingResult('kingpaca', 'reindrix')).toBe(normalPals.find((pal) => pal.id === 'kingpaca-cryst'));
+    expect(getBreedingResult('kingpaca', 'reindrix').id).toBe('kingpaca-cryst');
   });
 
   it('Lyleen + Menasting = Lyleen Noct', () => {
-    expect(getBreedingResult('lyleen', 'menasting')).toBe(normalPals.find((pal) => pal.id === 'lyleen-noct'));
+    expect(getBreedingResult('lyleen', 'menasting').id).toBe('lyleen-noct');
   });
 
   it('Leezpunk + Flambelle = Leezpunk Ignis', () => {
-    expect(getBreedingResult('leezpunk', 'flambelle')).toBe(normalPals.find((pal) => pal.id === 'leezpunk-ignis'));
+    expect(getBreedingResult('leezpunk', 'flambelle').id).toBe('leezpunk-ignis');
   });
 
   it('Blazehowl + Felbat = Blazehowl Noct', () => {
-    expect(getBreedingResult('blazehowl', 'felbat')).toBe(normalPals.find((pal) => pal.id === 'blazehowl-noct'));
+    expect(getBreedingResult('blazehowl', 'felbat').id).toBe('blazehowl-noct');
   });
 
   it('Robinquill + Fuddler = Robinquill Terra', () => {
-    expect(getBreedingResult('robinquill', 'fuddler')).toBe(normalPals.find((pal) => pal.id === 'robinquill-terra'));
+    expect(getBreedingResult('robinquill', 'fuddler').id).toBe('robinquill-terra');
   });
 
   it('Broncherry + Fuack = Broncherry Aqua', () => {
-    expect(getBreedingResult('broncherry', 'fuack')).toBe(normalPals.find((pal) => pal.id === 'broncherry-aqua'));
+    expect(getBreedingResult('broncherry', 'fuack').id).toBe('broncherry-aqua');
   });
 
   it('Surfent + Dumud = Surfent Terra', () => {
-    expect(getBreedingResult('surfent', 'dumud')).toBe(normalPals.find((pal) => pal.id === 'surfent-terra'));
+    expect(getBreedingResult('surfent', 'dumud').id).toBe('surfent-terra');
   });
 
   it('Gobfin + Rooby = Gobfin Ignis', () => {
-    expect(getBreedingResult('gobfin', 'rooby')).toBe(normalPals.find((pal) => pal.id === 'gobfin-ignis'));
+    expect(getBreedingResult('gobfin', 'rooby').id).toBe('gobfin-ignis');
   });
 
   it('Suzaku + Jormuntide = Suzaku Aqua', () => {
-    expect(getBreedingResult('suzaku', 'jormuntide')).toBe(normalPals.find((pal) => pal.id === 'suzaku-aqua'));
+    expect(getBreedingResult('suzaku', 'jormuntide').id).toBe('suzaku-aqua');
   });
 
   it('Reptyro + Foxcicle = Reptyro Cryst', () => {
-    expect(getBreedingResult('reptyro', 'foxcicle')).toBe(normalPals.find((pal) => pal.id === 'reptyro-cryst'));
+    expect(getBreedingResult('reptyro', 'foxcicle').id).toBe('reptyro-cryst');
   });
 
   it('Hangyu + Swee = Hangyu Cryst', () => {
-    expect(getBreedingResult('hangyu', 'swee')).toBe(normalPals.find((pal) => pal.id === 'hangyu-cryst'));
+    expect(getBreedingResult('hangyu', 'swee').id).toBe('hangyu-cryst');
   });
 
   it('Mossanda + Petallia = Lyleen', () => {
-    expect(getBreedingResult('mossanda', 'petallia')).toBe(normalPals.find((pal) => pal.id === 'lyleen'));
+    expect(getBreedingResult('mossanda', 'petallia').id).toBe('lyleen');
   });
 
   it('Vanwyrm + Anubis = Faleris', () => {
-    expect(getBreedingResult('vanwyrm', 'anubis')).toBe(normalPals.find((pal) => pal.id === 'faleris'));
+    expect(getBreedingResult('vanwyrm', 'anubis').id).toBe('faleris');
   });
 
   it('Mossanda + Rayhound = Grizzbolt', () => {
-    expect(getBreedingResult('mossanda', 'rayhound')).toBe(normalPals.find((pal) => pal.id === 'grizzbolt'));
+    expect(getBreedingResult('mossanda', 'rayhound').id).toBe('grizzbolt');
   });
 
   it('Grizzbolt + Relaxaurus = Orserk', () => {
-    expect(getBreedingResult('grizzbolt', 'relaxaurus')).toBe(normalPals.find((pal) => pal.id === 'orserk'));
+    expect(getBreedingResult('grizzbolt', 'relaxaurus').id).toBe('orserk');
   });
 
   it('Kitsun + Astegon = Shadowbeak', () => {
-    expect(getBreedingResult('kitsun', 'astegon')).toBe(normalPals.find((pal) => pal.id === 'shadowbeak'));
+    expect(getBreedingResult('kitsun', 'astegon').id).toBe('shadowbeak');
   });
 });

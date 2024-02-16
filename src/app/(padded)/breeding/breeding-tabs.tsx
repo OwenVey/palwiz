@@ -2,6 +2,7 @@
 
 import { DesiredChild } from '@/app/(padded)/breeding/desired-child';
 import { OneParent } from '@/app/(padded)/breeding/one-parent';
+import { ShortestPath } from '@/app/(padded)/breeding/shortest-path';
 import { TwoParents } from '@/app/(padded)/breeding/two-parents';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
@@ -17,17 +18,18 @@ export function BreedingTabs() {
         <TabsTrigger value="desired-child">Desired Child</TabsTrigger>
         <TabsTrigger value="shortest-path">Shortest Path</TabsTrigger>
       </TabsList>
-      <div className="mx-auto flex w-full max-w-xl flex-col items-center">
-        <TabsContent value="two-parents" asChild>
-          <TwoParents />
-        </TabsContent>
-        <TabsContent value="one-parent" asChild>
-          <OneParent />
-        </TabsContent>
-        <TabsContent value="desired-child" asChild>
-          <DesiredChild />
-        </TabsContent>
-      </div>
+      <TabsContent value="two-parents" className="mx-auto flex w-full max-w-xl flex-col items-center">
+        <TwoParents />
+      </TabsContent>
+      <TabsContent value="one-parent" className="mx-auto flex w-full max-w-xl flex-col items-center">
+        <OneParent />
+      </TabsContent>
+      <TabsContent value="desired-child" className="mx-auto flex w-full max-w-xl flex-col items-center">
+        <DesiredChild />
+      </TabsContent>
+      <TabsContent value="shortest-path" className="mx-auto flex w-full max-w-xl flex-col items-center">
+        <ShortestPath />
+      </TabsContent>
     </Tabs>
   );
 }
