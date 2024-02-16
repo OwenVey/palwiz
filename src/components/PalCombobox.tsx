@@ -16,10 +16,11 @@ import { type PopoverTriggerProps } from '@radix-ui/react-popover';
 
 interface PalComboboxProps extends PopoverTriggerProps {
   label?: string;
+  value: string;
+  setValue: (value: string) => void;
 }
-export function PalCombobox({ label, className, ...rest }: PalComboboxProps) {
+export function PalCombobox({ label, value, setValue, className, ...rest }: PalComboboxProps) {
   const [open, setOpen] = React.useState(false);
-  const [value, setValue] = React.useState('');
 
   return (
     <Popover open={open} onOpenChange={setOpen}>

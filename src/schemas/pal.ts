@@ -14,6 +14,7 @@ export const PalSchema = z.object({
   aiSightResponse: z.string(),
   battleBgm: z.string(),
   biologicalGrade: z.number(),
+  breedOrder: z.number().nullable(),
   captureRateCorrect: z.number(),
   combiRank: z.number(),
   craftSpeed: z.number(),
