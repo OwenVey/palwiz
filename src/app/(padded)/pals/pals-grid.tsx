@@ -231,8 +231,6 @@ export function PalsGrid() {
 }
 
 const Grid = memo(function Grid({ pals, sort }: { pals: Pal[]; sort: keyof Pal }) {
-  console.log('[PALS GRID]');
-
   if (pals.length === 0) return <div className="grid h-full place-items-center text-gray-11">No pals found</div>;
 
   return (

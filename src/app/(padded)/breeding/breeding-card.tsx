@@ -5,7 +5,7 @@ import Link, { type LinkProps } from 'next/link';
 
 interface BreedingCardProps extends Omit<LinkProps, 'href'> {
   pal: Pal;
-  className?: string
+  className?: string;
 }
 export function BreedingCard({ pal, className, ...rest }: BreedingCardProps) {
   return (

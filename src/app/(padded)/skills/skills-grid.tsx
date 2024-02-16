@@ -170,8 +170,6 @@ export function SkillsGrid() {
 }
 
 const Grid = memo(function Grid({ skills }: { skills: Skill[] }) {
-  console.log('[SKILLS GRID]');
-
   if (skills.length === 0) return <div className="grid h-full place-items-center text-gray-11">No skills found</div>;
 
   return (

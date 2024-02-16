@@ -17,14 +17,14 @@ export function BreedingTabs() {
         <TabsTrigger value="desired-child">Desired Child</TabsTrigger>
         <TabsTrigger value="shortest-path">Shortest Path</TabsTrigger>
       </TabsList>
-      <div className="flex justify-center">
-        <TabsContent value="two-parents">
+      <div className="mx-auto flex w-full max-w-xl flex-col items-center">
+        <TabsContent value="two-parents" asChild>
           <TwoParents />
         </TabsContent>
-        <TabsContent value="one-parent">
+        <TabsContent value="one-parent" asChild>
           <OneParent />
         </TabsContent>
-        <TabsContent value="desired-child">
+        <TabsContent value="desired-child" asChild>
           <DesiredChild />
         </TabsContent>
       </div>

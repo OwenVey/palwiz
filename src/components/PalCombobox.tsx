@@ -7,6 +7,7 @@ import { PalImage } from '@/components/PalImage';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem } from '@/components/ui/command';
+import { Label } from '@/components/ui/label';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { normalPals } from '@/data/parsed';
@@ -24,21 +25,19 @@ export function PalCombobox({ label, value, setValue, className, ...rest }: PalC
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
-      <PopoverTrigger asChild {...rest}>
-        <Button
-          variant="outline"
-          role="combobox"
-          aria-expanded={open}
-          className={cn(className, 'min-w-56 justify-between px-3')}
-        >
-          {value ? (
-            <SelectedPal pal={normalPals.find((pal) => pal.id === value)} />
-          ) : (
-            <span className="text-gray-10">Select pal...</span>
-          )}
-          <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
-        </Button>
-      </PopoverTrigger>
+      <div className={cn(className, 'flex flex-col gap-1.5')}>
+        {label && <Label>{label}</Label>}
+        <PopoverTrigger asChild {...rest}>
+          <Button variant="outline" role="combobox" aria-expanded={open} className="min-w-56 justify-between px-3">
+            {value ? (
+              <SelectedPal pal={normalPals.find((pal) => pal.id === value)} />
+            ) : (
+              <span className="text-gray-10">Select pal...</span>
+            )}
+            <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+          </Button>
+        </PopoverTrigger>
+      </div>
       <PopoverContent className="w-[var(--radix-popover-trigger-width)] p-0">
         <Command>
           <CommandInput placeholder="Search pals..." />

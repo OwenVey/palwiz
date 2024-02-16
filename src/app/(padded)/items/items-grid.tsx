@@ -224,8 +224,6 @@ export function ItemsGrid() {
 }
 
 const Grid = memo(function Grid({ items, sort }: { items: Item[]; sort: keyof Item }) {
-  console.log('[ITEMS GRID]');
-
   if (items.length === 0) return <div className="grid h-full place-items-center text-gray-11">No items found</div>;
 
   return (

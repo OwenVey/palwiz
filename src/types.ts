@@ -11,3 +11,5 @@ export type Drop = Pal['drops'][number];
 export type Item = z.infer<typeof ItemSchema>;
 export type Skill = z.infer<typeof SkillSchema>;
 export type ItemRecipe = z.infer<typeof ItemRecipeSchema>;
+
+export type BreedingCombo = { parentA: Pal; parentB: Pal; child: Pal };
