@@ -27,7 +27,7 @@ export function OneParent() {
 
   return (
     <>
-      <PalCombobox label="Parent" value={parentAId} setValue={setParentAId} />
+      <PalCombobox label="Parent" className="w-full sm:w-auto" value={parentAId} setValue={setParentAId} />
 
       {parentA && <BreedingComboList combos={combos} />}
     </>

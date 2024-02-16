@@ -25,10 +25,10 @@ export function PalCombobox({ label, value, setValue, className, ...rest }: PalC
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
-      <div className={cn(className, 'flex flex-col gap-1.5')}>
+      <div className={cn(className, 'flex min-w-56 flex-col gap-1.5')}>
         {label && <Label>{label}</Label>}
         <PopoverTrigger asChild {...rest}>
-          <Button variant="outline" role="combobox" aria-expanded={open} className="min-w-56 justify-between px-3">
+          <Button variant="outline" role="combobox" aria-expanded={open} className="w-full justify-between px-3">
             {value ? (
               <SelectedPal pal={normalPals.find((pal) => pal.id === value)} />
             ) : (

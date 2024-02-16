@@ -33,7 +33,7 @@ export function DesiredChild() {
 
   return (
     <>
-      <PalCombobox label="Desired Child" value={parentAId} setValue={setParentAId} />
+      <PalCombobox label="Desired Child" className="w-full sm:w-auto" value={parentAId} setValue={setParentAId} />
 
       {child && <BreedingComboList combos={combos} />}
     </>

@@ -14,34 +14,34 @@ export function BreedingTabs() {
   return (
     <Tabs value={tab} onValueChange={setTab} className="flex flex-col items-center">
       <TabsList className="mb-10 h-fit w-full flex-col sm:max-w-3xl sm:flex-row">
-        <TabsTrigger value="two-parents" className="w-full flex-1">
+        <TabsTrigger value="two-parents" className="w-full flex-1 justify-start sm:justify-center">
           <UsersIcon className="mr-2 size-4" />
           Two Parents
         </TabsTrigger>
-        <TabsTrigger value="one-parent" className="w-full flex-1">
+        <TabsTrigger value="one-parent" className="w-full flex-1 justify-start sm:justify-center">
           <UserIcon className="mr-2 size-4" />
           One Parent
         </TabsTrigger>
-        <TabsTrigger value="desired-child" className="w-full flex-1">
+        <TabsTrigger value="desired-child" className="w-full flex-1 justify-start sm:justify-center">
           <UserSearchIcon className="mr-2 size-4" />
           Desired Child
         </TabsTrigger>
-        <TabsTrigger value="shortest-path" className="w-full flex-1">
+        <TabsTrigger value="shortest-path" className="w-full flex-1 justify-start sm:justify-center">
           <RouteIcon className="mr-2 size-4" />
           Shortest Path
         </TabsTrigger>
       </TabsList>
 
-      <TabsContent value="two-parents" className="mx-auto flex w-full max-w-xl flex-col items-center">
+      <TabsContent value="two-parents" className="mx-auto flex w-full flex-col items-center sm:max-w-xl">
         <TwoParents />
       </TabsContent>
-      <TabsContent value="one-parent" className="mx-auto flex w-full max-w-xl flex-col items-center">
+      <TabsContent value="one-parent" className="mx-auto flex w-full flex-col items-center sm:max-w-xl">
         <OneParent />
       </TabsContent>
-      <TabsContent value="desired-child" className="mx-auto flex w-full max-w-xl flex-col items-center">
+      <TabsContent value="desired-child" className="mx-auto flex w-full flex-col items-center sm:max-w-xl">
         <DesiredChild />
       </TabsContent>
-      <TabsContent value="shortest-path" className="mx-auto flex w-full max-w-xl flex-col items-center">
+      <TabsContent value="shortest-path" className="mx-auto flex w-full flex-col items-center sm:max-w-xl">
         <ShortestPath />
       </TabsContent>
     </Tabs>
