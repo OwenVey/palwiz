@@ -3,6 +3,7 @@
 import { BreedingComboList } from '@/app/(padded)/breeding/breeding-combo-list';
 import { PalCombobox } from '@/components/PalCombobox';
 import { Button } from '@/components/ui/button';
+import { Card } from '@/components/ui/card';
 import { normalPals } from '@/data/parsed';
 import { getBreedingResult, getPalById, notEmpty } from '@/lib/utils';
 import { type BreedingCombo } from '@/types';
@@ -82,7 +83,7 @@ export function Breeding() {
 
   return (
     <div>
-      <div className="flex w-full flex-col flex-wrap items-center sm:w-auto sm:flex-row sm:items-end sm:gap-4">
+      <Card className="flex w-full flex-col flex-wrap items-center sm:w-auto sm:flex-row sm:items-end sm:gap-4">
         <PalCombobox label="Parent A" className="w-full sm:w-fit" value={parentAId} setValue={setParentAId} />
         <PlusIcon className="size-4 h-10 shrink-0 text-gray-10" />
         <PalCombobox
@@ -96,7 +97,7 @@ export function Breeding() {
         <Button variant="secondary" onClick={clear} className="mt-2 w-full sm:mt-0 sm:w-auto">
           Clear
         </Button>
-      </div>
+      </Card>
 
       {(parentAId || parentBId || childId) && <BreedingComboList combos={combos} />}
     </div>
