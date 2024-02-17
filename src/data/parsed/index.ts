@@ -1,11 +1,13 @@
 import { SAME_PARENT_CHILDREN, UNIQUE_BREEDING_CHILDREN } from '@/constants';
 import itemRecipesJson from '@/data/item-recipes.json';
 import itemsJson from '@/data/items.json';
+import palLocationsJson from '@/data/pal-locations.json';
 import palsJson from '@/data/pals.json';
 import skillsJson from '@/data/skills.json';
 import { ItemSchema } from '@/schemas/item';
 import { ItemRecipeSchema } from '@/schemas/item-recipe';
 import { PalSchema } from '@/schemas/pal';
+import { PalLocationSchema } from '@/schemas/pal-location';
 import { SkillSchema } from '@/schemas/skill';
 import { z } from 'zod';
 
@@ -22,3 +24,4 @@ export const breedOrderPals = normalPals
 export const items = z.array(ItemSchema).parse(itemsJson);
 export const skills = z.array(SkillSchema).parse(skillsJson);
 export const itemRecipes = z.array(ItemRecipeSchema).parse(itemRecipesJson);
+export const palLocations = z.array(PalLocationSchema).parse(palLocationsJson);

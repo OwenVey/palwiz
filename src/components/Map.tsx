@@ -1,21 +1,23 @@
 'use client';
 
 import { CollapsibleFilter } from '@/components/CollapsibleFilter';
-import { PalImage } from '@/components/PalImage';
+import { PalCombobox } from '@/components/PalCombobox';
 import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
 import { ScrollArea } from '@/components/ui/scroll-area';
+import { Switch } from '@/components/ui/switch';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import mapLocationsJson from '@/data/map-locations.json';
-import { normalPals } from '@/data/parsed';
+import { palLocations } from '@/data/parsed';
 import { cn, parseAsArrayOfStrings } from '@/lib/utils';
 import { CRS, Icon } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import { SearchIcon } from 'lucide-react';
+import { MoonIcon, SearchIcon, SunIcon } from 'lucide-react';
 import Image from 'next/image';
-import { useQueryState } from 'nuqs';
+import { parseAsBoolean, useQueryState } from 'nuqs';
 import { useState } from 'react';
-import { MapContainer, Marker, Popup, TileLayer, useMapEvents } from 'react-leaflet';
+import { Circle, MapContainer, Marker, Popup, TileLayer, useMapEvents } from 'react-leaflet';
 
 type LocationGroup = {
   name: string;
@@ -50,7 +52,7 @@ const GAME_BOUNDS = {
 
 // Converts large coordinates found in game files to Leaflet coordinates based on MAP_SIZE
 // Ex: { x: -363806.765646, y: 273023.873396 } --> [-194.90545098624835, 160.076374280366]
-function getLeafletCoords({ x, y }: { x: number; y: number }, mapSize = MAP_SIZE): [number, number] {
+function getLeafletCoords({ x, y }: { x: number; y: number; z?: number }, mapSize = MAP_SIZE): [number, number] {
   const scaleX = mapSize / (GAME_BOUNDS.x.max - GAME_BOUNDS.x.min);
   const scaleY = mapSize / (GAME_BOUNDS.y.max - GAME_BOUNDS.y.min);
 
@@ -73,8 +75,11 @@ const mapLocations = mapLocationsJson.filter((l) => l.enabled);
 
 export default function MyMap() {
   const [filters, setFilters] = useQueryState('filters', parseAsArrayOfStrings);
-  const [filterPal, setFilterPal] = useQueryState('pal', { defaultValue: '', clearOnDefault: true });
-
+  const [palFilter, setPalFilter] = useQueryState('pal', { defaultValue: '', clearOnDefault: true });
+  const [showNightLocations, setShowNightLocations] = useQueryState(
+    'night',
+    parseAsBoolean.withDefault(false).withOptions({ clearOnDefault: true }),
+  );
   return (
     <div>
       <Card className="fixed bottom-0 top-[65px] m-4 w-[425px] p-0">
@@ -82,7 +87,22 @@ export default function MyMap() {
           <div className="flex flex-col gap-5">
             <Input label="Search" icon={SearchIcon} placeholder="Search" />
 
-            {/* <PalCombobox /> */}
+            <div className="flex items-end gap-2">
+              <PalCombobox className="flex-1" label="Pal Locations" value={palFilter} setValue={setPalFilter} />
+              <div className="mr-px flex h-10 items-center gap-1.5">
+                <Label htmlFor="daytime-toggle">
+                  <SunIcon
+                    className={cn('size-5 transition-colors', showNightLocations ? 'text-gray-9' : 'text-gray-12')}
+                  />
+                </Label>
+                <Switch id="daytime-toggle" checked={showNightLocations} onCheckedChange={setShowNightLocations} />
+                <Label htmlFor="daytime-toggle">
+                  <MoonIcon
+                    className={cn('size-5 transition-colors', showNightLocations ? 'text-gray-12' : 'text-gray-9')}
+                  />
+                </Label>
+              </div>
+            </div>
 
             {Object.entries(LOCATION_GROUPS).map(([group, locations]) => (
               <CollapsibleFilter key={group} label={group} defaultOpen>
@@ -114,31 +134,6 @@ export default function MyMap() {
                 </ToggleGroup>
               </CollapsibleFilter>
             ))}
-
-            <CollapsibleFilter label="Pals">
-              <ToggleGroup
-                type="single"
-                className="md:grid md:grid-cols-2 md:gap-1"
-                value={filterPal}
-                onValueChange={setFilterPal}
-              >
-                {normalPals.map((pal) => (
-                  <ToggleGroupItem key={pal.name} value={pal.name} className="h-fit gap-2 px-2 py-1">
-                    <PalImage
-                      className="size-[34px] rounded-full border border-gray-6 bg-gray-2"
-                      id={pal.id}
-                      width={34}
-                      height={34}
-                      alt={pal.name}
-                    />
-
-                    <div className="flex flex-1 items-center justify-between">
-                      <span>{pal.name}</span>
-                    </div>
-                  </ToggleGroupItem>
-                ))}
-              </ToggleGroup>
-            </CollapsibleFilter>
           </div>
         </ScrollArea>
       </Card>
@@ -157,6 +152,7 @@ export default function MyMap() {
             [-MAP_SIZE - BOUND_SIZE, MAP_SIZE + BOUND_SIZE],
           ]}
         >
+          {/* All location groups */}
           {Object.values(LOCATION_GROUPS).map((gorup) =>
             gorup.map((category) =>
               mapLocations
@@ -179,10 +175,20 @@ export default function MyMap() {
                 )),
             ),
           )}
+
+          {/* Pal Locations */}
+          {palFilter &&
+            palLocations
+              .find((p) => p.id === palFilter)
+              ?.locations[
+                showNightLocations ? 'night' : 'day'
+              ].map((location, index) => <Circle key={`${location.x},${location.y},${location.z}-${index}`} center={getLeafletCoords(location)} pathOptions={{ fillColor: showNightLocations ? '#5ecdff' : 'orange', color: showNightLocations ? '#3197c4' : '#bf800a', weight: 1, opacity: 0.2, fillOpacity: 0.5 }} radius={2} />)}
+
+          {/* Coordinate Overlay in bottom right corner */}
           <Coordinates />
 
+          {/* Map Tiles */}
           <TileLayer url="/images/map/tiles/{z}/{x}/{y}.webp" minZoom={1} maxZoom={6} />
-          {/* <ImageOverlay url="/images/map.png" bounds={bounds} /> */}
         </MapContainer>
       </div>
     </div>
