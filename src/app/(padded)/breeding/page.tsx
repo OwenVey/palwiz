@@ -1,5 +1,4 @@
-import { BreedingTabs } from '@/app/(padded)/breeding/breeding-tabs';
-
+import { Breeding } from '@/app/(padded)/breeding/breeding';
 import { type Metadata } from 'next';
 import { Suspense } from 'react';
 
@@ -10,7 +9,7 @@ export const metadata: Metadata = {
 export default function BreedingPage() {
   return (
     <Suspense>
-      <BreedingTabs />
+      <Breeding />
     </Suspense>
   );
 }
