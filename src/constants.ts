@@ -78,3 +78,4 @@ export const UNIQUE_BREEDING_COMBO_MAP = [
 ] as const;
 
 export const UNIQUE_BREEDING_CHILDREN = UNIQUE_BREEDING_COMBO_MAP.map(({ childId }) => childId);
+export const SAME_PARENT_CHILDREN = ['frostallion', 'jetragon', 'paladius', 'necromus', 'jormuntide-ignis'] as const;

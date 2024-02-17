@@ -1,7 +1,7 @@
 import { type BadgeProps } from '@/components/ui/badge';
 import { UNIQUE_BREEDING_COMBO_MAP, WORK_SUITABILITIES } from '@/constants';
 import { breedOrderPals, itemRecipes, items, normalPals, skills } from '@/data/parsed';
-import { type Pal } from '@/types';
+import { type BreedingCombo, type Pal } from '@/types';
 import { clsx, type ClassValue } from 'clsx';
 import { parseAsArrayOf, parseAsString } from 'nuqs';
 import { twMerge } from 'tailwind-merge';
@@ -38,19 +38,19 @@ export function notEmpty<TValue>(value: TValue | null | undefined): value is TVa
 }
 
 export function getPalById(id: string) {
-  return normalPals.find((pal) => pal.id === id);
+  return normalPals.find((pal) => pal.id === id) ?? null;
 }
 
 export function getItemById(id: string) {
-  return items.find((item) => item.id === id);
+  return items.find((item) => item.id === id) ?? null;
 }
 
 export function getSkillById(id: string) {
-  return skills.find((skill) => skill.id === id);
+  return skills.find((skill) => skill.id === id) ?? null;
 }
 
 export function getItemRecipeById(id: string) {
-  return itemRecipes.find((itemRecipe) => itemRecipe.id === id);
+  return itemRecipes.find((itemRecipe) => itemRecipe.id === id) ?? null;
 }
 
 export function getBadgeVariantForRate(rate: number): BadgeProps['variant'] {
@@ -73,15 +73,17 @@ export const parseAsArrayOfStrings = parseAsArrayOf(parseAsString)
   .withDefault([])
   .withOptions({ clearOnDefault: true });
 
-export function getBreedingResult(parentAId: string, parentBId: string): Pal {
-  if (parentAId === parentBId) return normalPals.find((pal) => pal.id === parentAId)!;
+export function getBreedingResult(parentAId: string, parentBId: string): Pal | null {
+  if (!parentAId || !parentAId) return null;
+  if (parentAId === parentBId) return getPalById(parentAId);
 
   const uniqueMatch = checkUniqueBreedingCombos(parentAId, parentBId);
-
   if (uniqueMatch) return uniqueMatch;
 
-  const parentA = normalPals.find((pal) => pal.id === parentAId)!;
-  const parentB = normalPals.find((pal) => pal.id === parentBId)!;
+  const parentA = getPalById(parentAId);
+  const parentB = getPalById(parentBId);
+
+  if (!parentA || !parentB) return null;
 
   const averageCombiRank = Math.floor((parentA.combiRank + parentB.combiRank + 1) / 2);
 
@@ -100,9 +102,92 @@ export function checkUniqueBreedingCombos(parentAId: string, parentBId: string):
   );
   if (!match) return null;
 
-  const childPal = normalPals.find((pal) => pal.id === match.childId);
+  const childPal = getPalById(match.childId);
 
   if (!childPal) return null;
 
   return childPal;
+}
+
+export class Queue<T> {
+  private elements: T[];
+
+  constructor() {
+    this.elements = [];
+  }
+
+  enqueue(element: T): void {
+    this.elements.push(element);
+  }
+
+  dequeue(): T | undefined {
+    return this.elements.shift();
+  }
+
+  isEmpty(): boolean {
+    return this.elements.length === 0;
+  }
+}
+
+const graph = new Map<string, string[]>();
+for (const parentA of normalPals) {
+  for (const parentB of normalPals) {
+    const child = getBreedingResult(parentA.id, parentB.id)!;
+    if (!graph.has(parentA.id)) {
+      graph.set(parentA.id, []);
+    }
+    graph.get(parentA.id)!.push(child.id);
+  }
+}
+
+export function getShortestBreedingPath(sourcePalId: string, destinationPalId: string): BreedingCombo[] | null {
+  const queue = new Queue<string>();
+  const visited = new Set<string>();
+  const distance = new Map<string, number>();
+  const predecessor = new Map<string, string>();
+  const breedingCombos: BreedingCombo[] = [];
+
+  queue.enqueue(sourcePalId);
+  visited.add(sourcePalId);
+  distance.set(sourcePalId, 0);
+  predecessor.set(sourcePalId, '');
+
+  while (!queue.isEmpty()) {
+    const currentPalId = queue.dequeue()!;
+
+    if (currentPalId === destinationPalId) {
+      // Reconstruct the shortest path from source to destination
+      let current = destinationPalId;
+      while (current !== '') {
+        const pred = predecessor.get(current)!;
+        if (pred !== '') {
+          const parentA = getPalById(pred);
+          const parentB = getPalById(current);
+          const child = getPalById(currentPalId);
+          if (parentA && parentB && child) {
+            breedingCombos.unshift({ parentA, parentB, child });
+          } else {
+            // If any of the pals are not found, return null
+            return null;
+          }
+        }
+        current = pred;
+      }
+      return breedingCombos;
+    }
+
+    const neighbors = graph.get(currentPalId);
+    if (neighbors) {
+      for (const neighborPalId of neighbors) {
+        if (!visited.has(neighborPalId)) {
+          queue.enqueue(neighborPalId);
+          visited.add(neighborPalId);
+          distance.set(neighborPalId, distance.get(currentPalId)! + 1);
+          predecessor.set(neighborPalId, currentPalId);
+        }
+      }
+    }
+  }
+
+  return null; // Destination pal is unreachable
 }

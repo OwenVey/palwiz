@@ -4,26 +4,21 @@ import { Separator } from '@/components/ui/separator';
 import { type BreedingCombo } from '@/types';
 import { EqualIcon, PlusIcon, SearchIcon } from 'lucide-react';
 import { useQueryState } from 'nuqs';
-import { memo, useEffect, useState } from 'react';
+import { memo } from 'react';
 import { FixedSizeList } from 'react-window';
 
 const GUTTER_SIZE = 8;
 
 export const BreedingComboList = memo(function BreedingComboList({ combos }: { combos: BreedingCombo[] }) {
   const [search, setSearch] = useQueryState('search', { defaultValue: '', clearOnDefault: true });
-  const [filteredCombos, setFilteredCombos] = useState(combos);
 
-  useEffect(() => {
-    setFilteredCombos(
-      search
-        ? combos.filter(
-            ({ parentA, parentB }) =>
-              parentA.name.toLowerCase().includes(search.toLowerCase()) ||
-              parentB.name.toLowerCase().includes(search.toLowerCase()),
-          )
-        : combos,
-    );
-  }, [combos, search]);
+  const filteredCombos = search
+    ? combos.filter(
+        ({ parentA, parentB }) =>
+          parentA.name.toLowerCase().includes(search.toLowerCase()) ||
+          parentB.name.toLowerCase().includes(search.toLowerCase()),
+      )
+    : combos;
 
   return (
     <div className="flex w-full flex-col items-center">

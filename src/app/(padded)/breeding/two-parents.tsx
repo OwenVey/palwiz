@@ -3,19 +3,14 @@
 import { BreedingCard } from '@/app/(padded)/breeding/breeding-card';
 import { PalCombobox } from '@/components/PalCombobox';
 import { getBreedingResult } from '@/lib/utils';
-import { type Pal } from '@/types';
 import { PlusIcon } from 'lucide-react';
 import { useQueryState } from 'nuqs';
-import { useEffect, useState } from 'react';
 
 export function TwoParents() {
   const [parentA, setParentA] = useQueryState('parentA', { defaultValue: '', clearOnDefault: true });
   const [parentB, setParentB] = useQueryState('parentB', { defaultValue: '', clearOnDefault: true });
-  const [child, setChild] = useState<Pal | null>(null);
 
-  useEffect(() => {
-    if (parentA && parentB) setChild(getBreedingResult(parentA, parentB));
-  }, [parentA, parentB]);
+  const child = getBreedingResult(parentA, parentB);
 
   return (
     <>

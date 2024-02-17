@@ -1,4 +1,4 @@
-import { UNIQUE_BREEDING_CHILDREN } from '@/constants';
+import { SAME_PARENT_CHILDREN, UNIQUE_BREEDING_CHILDREN } from '@/constants';
 import itemRecipesJson from '@/data/item-recipes.json';
 import itemsJson from '@/data/items.json';
 import palsJson from '@/data/pals.json';
@@ -16,7 +16,8 @@ export const normalPals = allPals
   .filter(({ internalName }) => internalName !== 'PlantSlime_Flower');
 export const breedOrderPals = [...normalPals]
   .sort((a, b) => (a.breedOrder ?? 0) - (b.breedOrder ?? 0))
-  .filter((pal) => !UNIQUE_BREEDING_CHILDREN.includes(pal.id));
+  .filter((pal) => !UNIQUE_BREEDING_CHILDREN.includes(pal.id))
+  .filter((pal) => !SAME_PARENT_CHILDREN.includes(pal.id));
 export const items = z.array(ItemSchema).parse(itemsJson);
 export const skills = z.array(SkillSchema).parse(skillsJson);
 export const itemRecipes = z.array(ItemRecipeSchema).parse(itemRecipesJson);

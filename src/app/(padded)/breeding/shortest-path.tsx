@@ -1,12 +1,16 @@
 'use client';
 
 import { PalCombobox } from '@/components/PalCombobox';
+import { getShortestBreedingPath } from '@/lib/utils';
 import { EqualIcon, HelpCircleIcon, PlusIcon } from 'lucide-react';
 import { useQueryState } from 'nuqs';
 
 export function ShortestPath() {
   const [parentA, setParentA] = useQueryState('parentA', { defaultValue: '', clearOnDefault: true });
   const [child, setChild] = useQueryState('child', { defaultValue: '', clearOnDefault: true });
+
+  const shortestBreedingPath = getShortestBreedingPath(parentA, child);
+  console.log(shortestBreedingPath);
 
   return (
     <>
