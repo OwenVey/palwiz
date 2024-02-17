@@ -92,13 +92,13 @@ export default function MyMap() {
               <div className="mr-px flex h-10 items-center gap-1.5">
                 <Label htmlFor="daytime-toggle">
                   <SunIcon
-                    className={cn('size-5 transition-colors', showNightLocations ? 'text-gray-9' : 'text-gray-12')}
+                    className={cn('size-5 transition-colors', showNightLocations ? 'text-gray-9' : 'text-amber-9')}
                   />
                 </Label>
                 <Switch id="daytime-toggle" checked={showNightLocations} onCheckedChange={setShowNightLocations} />
                 <Label htmlFor="daytime-toggle">
                   <MoonIcon
-                    className={cn('size-5 transition-colors', showNightLocations ? 'text-gray-12' : 'text-gray-9')}
+                    className={cn('size-5 transition-colors', showNightLocations ? 'text-iris-9' : 'text-gray-9')}
                   />
                 </Label>
               </div>
