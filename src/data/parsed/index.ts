@@ -14,10 +14,11 @@ export const normalPals = allPals
   .filter(({ isBoss }) => !isBoss)
   .filter(({ zukanIndex }) => zukanIndex > 0)
   .filter(({ internalName }) => internalName !== 'PlantSlime_Flower');
-export const breedOrderPals = [...normalPals]
-  .sort((a, b) => (a.breedOrder ?? 0) - (b.breedOrder ?? 0))
+export const breedOrderPals = normalPals
   .filter((pal) => !UNIQUE_BREEDING_CHILDREN.includes(pal.id))
-  .filter((pal) => !SAME_PARENT_CHILDREN.includes(pal.id));
+  .filter((pal) => !SAME_PARENT_CHILDREN.includes(pal.id))
+  .sort((a, b) => (a.breedOrder ?? 0) - (b.breedOrder ?? 0));
+
 export const items = z.array(ItemSchema).parse(itemsJson);
 export const skills = z.array(SkillSchema).parse(skillsJson);
 export const itemRecipes = z.array(ItemRecipeSchema).parse(itemRecipesJson);

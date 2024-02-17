@@ -13,18 +13,18 @@ export function DesiredChild() {
   const child = getPalById(parentAId);
 
   const calculateCombos = (parentId: string) => {
-    const newCombos: BreedingCombo[] = [];
+    const combos: BreedingCombo[] = [];
     for (let i = 0; i < normalPals.length; i++) {
       const parentA = normalPals[i]!;
       for (let j = i; j < normalPals.length; j++) {
         const parentB = normalPals[j]!;
         const child = getBreedingResult(parentA.id, parentB.id)!;
         if (child.id === parentId) {
-          newCombos.push({ parentA, parentB, child });
+          combos.push({ parentA, parentB, child });
         }
       }
     }
-    return newCombos;
+    return combos;
   };
 
   const combos = parentAId ? calculateCombos(parentAId) : [];
