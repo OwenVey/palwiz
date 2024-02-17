@@ -143,11 +143,11 @@ const List = memo(function List({ combos }: { combos: BreedingCombo[] }) {
   return (
     <div className="mx-auto space-y-2 md:max-w-xl">
       {combos.map(({ parentA, parentB, child }) => (
-        <Card key={`${parentA.id}+${parentB.id}=${child.id}`} className="flex items-center justify-between p-2">
+        <Card key={`${parentA.id}+${parentB.id}=${child.id}`} className="flex items-stretch justify-between p-2">
           <PalCard pal={parentA} className="flex-1" />
-          <PlusIcon className="mx-4 size-4 shrink-0 text-gray-11" />
+          <PlusIcon className="mx-4 h-auto w-4 shrink-0 text-gray-11" />
           <PalCard pal={parentB} className="flex-1" />
-          <EqualIcon className="mx-4 size-4 shrink-0 text-gray-11" />
+          <EqualIcon className="mx-4 h-auto w-4 shrink-0 text-gray-11" />
           <PalCard pal={child} className="flex-1" />
         </Card>
       ))}
@@ -162,8 +162,8 @@ interface PalCardProps extends Omit<LinkProps, 'href'> {
 export function PalCard({ pal, className, ...rest }: PalCardProps) {
   return (
     <Link {...rest} href={`/pals/${pal.id}`} className={cn(className, '')}>
-      <Card className="flex flex-col items-center justify-center gap-2 rounded-lg bg-gray-3 p-2" hoverEffect>
-        <PalImage id={pal.id} className="size-14 rounded-full border border-gray-6 bg-gray-1" />
+      <Card className="flex h-full flex-col items-center justify-center gap-2 rounded-lg bg-gray-3 p-2" hoverEffect>
+        <PalImage id={pal.id} className="size-12 rounded-full border border-gray-6 bg-gray-1" />
         <div className="text-center text-sm text-gray-12">{pal.name}</div>
       </Card>
     </Link>
