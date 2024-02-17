@@ -109,7 +109,7 @@ export function Breeding() {
                 label={`${filteredCombos.length} Combinations`}
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                placeholder="Search combinations..."
+                placeholder="Search combinations"
                 icon={SearchIcon}
               />
               <Button asChild variant="outline" className="w-full">

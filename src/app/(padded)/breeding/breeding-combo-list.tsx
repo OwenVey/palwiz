@@ -27,7 +27,7 @@ export const BreedingComboList = memo(function BreedingComboList({ combos }: { c
         <Input
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          placeholder="Search combinations..."
+          placeholder="Search combinations"
           icon={SearchIcon}
         />
         <div className="text-sm text-gray-11">{filteredCombos.length} results</div>

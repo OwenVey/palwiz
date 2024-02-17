@@ -32,7 +32,7 @@ export function PalCombobox({ label, value, setValue, className, ...rest }: PalC
         <div className="relative">
           <PopoverTrigger asChild {...rest}>
             <Button variant="outline" role="combobox" aria-expanded={open} className="w-full justify-between px-3">
-              {value ? <SelectedPal pal={getPalById(value)} /> : <span className="text-gray-10">Select pal...</span>}
+              {value ? <SelectedPal pal={getPalById(value)} /> : <span className="text-gray-10">Select pal</span>}
               <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 text-gray-10" />
             </Button>
           </PopoverTrigger>
@@ -49,7 +49,7 @@ export function PalCombobox({ label, value, setValue, className, ...rest }: PalC
       </div>
       <PopoverContent className="w-[var(--radix-popover-trigger-width)] p-0">
         <Command>
-          <CommandInput placeholder="Search pals..." />
+          <CommandInput placeholder="Search pals" />
           <CommandEmpty>No pals found</CommandEmpty>
           <CommandGroup className="px-0">
             <ScrollArea className="flex max-h-72 flex-col px-1">
