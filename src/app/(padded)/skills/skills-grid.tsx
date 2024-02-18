@@ -154,7 +154,7 @@ export function SkillsGrid() {
           </ToggleGroup>
         </CollapsibleFilter>
 
-        <Button asChild variant="outline" className="w-full">
+        <Button asChild variant="secondary" className="w-full">
           <Link href="/skills">
             <FilterXIcon className="mr-2 size-4" />
             Clear Filters

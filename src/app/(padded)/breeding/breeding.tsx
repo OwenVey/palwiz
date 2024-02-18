@@ -112,7 +112,7 @@ export function Breeding() {
                 placeholder="Search combinations"
                 icon={SearchIcon}
               />
-              <Button asChild variant="outline" className="w-full">
+              <Button asChild variant="secondary" className="w-full">
                 <Link href="/breeding">
                   <RotateCcwIcon className="mr-1 size-4" />
                   Reset

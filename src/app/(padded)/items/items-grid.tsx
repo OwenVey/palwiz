@@ -208,7 +208,7 @@ export function ItemsGrid() {
           </ToggleGroup>
         </CollapsibleFilter>
 
-        <Button asChild variant="outline" className="w-full">
+        <Button asChild variant="secondary" className="w-full">
           <Link href="/items">
             <FilterXIcon className="mr-2 size-4" />
             Clear Filters

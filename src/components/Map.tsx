@@ -4,7 +4,6 @@ import { CollapsibleFilter } from '@/components/CollapsibleFilter';
 import { PalCombobox } from '@/components/PalCombobox';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Switch } from '@/components/ui/switch';
@@ -16,16 +15,7 @@ import { useToggle } from '@uidotdev/usehooks';
 import { capitalCase } from 'change-case';
 import { CRS, Icon } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import {
-  ChevronLeftIcon,
-  MaximizeIcon,
-  MinimizeIcon,
-  MinusIcon,
-  MoonIcon,
-  PlusIcon,
-  SearchIcon,
-  SunIcon,
-} from 'lucide-react';
+import { ChevronLeftIcon, MaximizeIcon, MinimizeIcon, MinusIcon, MoonIcon, PlusIcon, SunIcon } from 'lucide-react';
 import Image from 'next/image';
 import { parseAsBoolean, useQueryState } from 'nuqs';
 import { useEffect, useState } from 'react';
@@ -113,8 +103,6 @@ export default function MyMap() {
         </button>
         <ScrollArea className="h-full w-full p-4">
           <div className="flex flex-col gap-5">
-            <Input label="Search" icon={SearchIcon} placeholder="Search" />
-
             <div className="flex flex-wrap items-end gap-2">
               <PalCombobox className="flex-1" label="Pal Locations" value={palFilter} setValue={setPalFilter} />
               <div className="mr-px flex h-10 items-center gap-1.5">

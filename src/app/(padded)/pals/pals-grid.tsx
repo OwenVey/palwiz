@@ -214,7 +214,7 @@ export function PalsGrid() {
         <div className="w-full">
           <div className="float-right mb-2 text-nowrap text-sm text-gray-11">{filteredPals.length} results</div>
 
-          <Button asChild variant="outline" className="w-full">
+          <Button asChild variant="secondary" className="w-full">
             <Link href="/pals">
               <FilterXIcon className="mr-2 size-4" />
               Clear Filters
