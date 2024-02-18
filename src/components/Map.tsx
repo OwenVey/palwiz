@@ -11,10 +11,11 @@ import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import mapLocationsJson from '@/data/map-locations.json';
 import { palLocations } from '@/data/parsed';
 import { cn, parseAsArrayOfStrings } from '@/lib/utils';
+import { useToggle } from '@uidotdev/usehooks';
 import { capitalCase } from 'change-case';
 import { CRS, Icon } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import { MoonIcon, SearchIcon, SunIcon } from 'lucide-react';
+import { ChevronLeftIcon, MoonIcon, SearchIcon, SunIcon } from 'lucide-react';
 import Image from 'next/image';
 import { parseAsBoolean, useQueryState } from 'nuqs';
 import { useState } from 'react';
@@ -84,9 +85,22 @@ export default function MyMap() {
     'night',
     parseAsBoolean.withDefault(false).withOptions({ clearOnDefault: true }),
   );
+
+  const [hideSidebar, toggleHideSidebar] = useToggle(false);
   return (
     <div>
-      <Card className="fixed bottom-0 top-[65px] m-4 w-[425px] p-0">
+      <Card
+        className={cn(
+          'fixed bottom-0 top-[65px] m-4 w-[425px] p-0 transition-transform',
+          hideSidebar && '-translate-x-[441px]',
+        )}
+      >
+        <button
+          onClick={() => toggleHideSidebar(undefined)}
+          className="absolute -right-6 top-8 grid h-16 w-6 place-items-center rounded-r-md border border-l-0 border-gray-4 bg-gray-2 text-gray-11 transition-colors hover:bg-gray-3 hover:text-gray-12 active:bg-gray-4"
+        >
+          <ChevronLeftIcon className={cn('size-5 transition-transform', hideSidebar && 'rotate-180')} />
+        </button>
         <ScrollArea className="h-full w-full p-4">
           <div className="flex flex-col gap-5">
             <Input label="Search" icon={SearchIcon} placeholder="Search" />
