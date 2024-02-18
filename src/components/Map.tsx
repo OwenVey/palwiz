@@ -11,6 +11,7 @@ import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import mapLocationsJson from '@/data/map-locations.json';
 import { palLocations } from '@/data/parsed';
 import { cn, parseAsArrayOfStrings } from '@/lib/utils';
+import { capitalCase } from 'change-case';
 import { CRS, Icon } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { MoonIcon, SearchIcon, SunIcon } from 'lucide-react';
@@ -19,11 +20,15 @@ import { parseAsBoolean, useQueryState } from 'nuqs';
 import { useState } from 'react';
 import { Circle, MapContainer, Marker, Popup, TileLayer, useMapEvents } from 'react-leaflet';
 
+const mapLocations = mapLocationsJson.filter((l) => l.enabled);
+const BOSS_PALS = palLocations.filter((pal) => pal.isBoss);
+
 type LocationGroup = {
   name: string;
   icon: string;
   iconSize: number;
   iconClass?: string;
+  count?: number;
 };
 const LOCATION_GROUPS: Record<string, LocationGroup[]> = {
   locations: [
@@ -34,6 +39,7 @@ const LOCATION_GROUPS: Record<string, LocationGroup[]> = {
     { name: 'Dungeon', icon: '/images/map/icons/sealed-dungeon.png', iconSize: 30 },
     { name: 'Statue of Power', icon: '/images/map/icons/star.png', iconSize: 40, iconClass: 'scale-125' },
     { name: 'NPC', icon: '/images/map/icons/man.svg', iconSize: 30 },
+    { name: 'Boss Pals', icon: '/images/pals/jetragon.webp', iconSize: 30, count: BOSS_PALS.length },
   ],
   collectibles: [
     { name: 'Lifmunk Effigy', icon: '/images/items/relic.webp', iconSize: 20 },
@@ -70,8 +76,6 @@ function getInGameCoords([x, y]: [number, number]) {
   const newY = Math.round((x + MAP_SIZE / 2) * scale);
   return `(${newX}, ${newY})`;
 }
-
-const mapLocations = mapLocationsJson.filter((l) => l.enabled);
 
 export default function MyMap() {
   const [filters, setFilters] = useQueryState('filters', parseAsArrayOfStrings);
@@ -126,7 +130,7 @@ export default function MyMap() {
                       <div className="flex flex-1 items-center justify-between">
                         <span>{category.name}</span>
                         <span className="text-xs text-gray-11">
-                          {mapLocations.find((l) => l.name === category.name)?.locations.length}
+                          {category.count ?? mapLocations.find((l) => l.name === category.name)?.locations.length}
                         </span>
                       </div>
                     </ToggleGroupItem>
@@ -184,6 +188,25 @@ export default function MyMap() {
                 showNightLocations ? 'night' : 'day'
               ].map((location, index) => <Circle key={`${location.x},${location.y},${location.z}-${index}`} center={getLeafletCoords(location)} pathOptions={{ fillColor: showNightLocations ? '#5ecdff' : 'orange', color: showNightLocations ? '#3197c4' : '#bf800a', weight: 1, opacity: 0.2, fillOpacity: 0.5 }} radius={2} />)}
 
+          {/* Boss Pals */}
+          {filters.includes('Boss Pals') &&
+            BOSS_PALS.map((boss) => (
+              <Marker
+                key={boss.id}
+                position={getLeafletCoords(boss.locations.day[0]!)}
+                icon={
+                  new Icon({
+                    iconUrl: `/images/pals/${boss.id}.webp`,
+                    iconSize: [35, 35],
+                    className: 'rounded-full bg-black border border-white',
+                  })
+                }
+              >
+                <Popup>
+                  {capitalCase(boss.id)}: {getInGameCoords(getLeafletCoords(boss.locations.day[0]!))}
+                </Popup>
+              </Marker>
+            ))}
           {/* Coordinate Overlay in bottom right corner */}
           <Coordinates />
 
