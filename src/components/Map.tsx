@@ -2,6 +2,7 @@
 
 import { CollapsibleFilter } from '@/components/CollapsibleFilter';
 import { PalCombobox } from '@/components/PalCombobox';
+import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -15,11 +16,20 @@ import { useToggle } from '@uidotdev/usehooks';
 import { capitalCase } from 'change-case';
 import { CRS, Icon } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import { ChevronLeftIcon, MoonIcon, SearchIcon, SunIcon } from 'lucide-react';
+import {
+  ChevronLeftIcon,
+  MaximizeIcon,
+  MinimizeIcon,
+  MinusIcon,
+  MoonIcon,
+  PlusIcon,
+  SearchIcon,
+  SunIcon,
+} from 'lucide-react';
 import Image from 'next/image';
 import { parseAsBoolean, useQueryState } from 'nuqs';
-import { useState } from 'react';
-import { Circle, MapContainer, Marker, Popup, TileLayer, useMapEvents } from 'react-leaflet';
+import { useEffect, useState } from 'react';
+import { Circle, MapContainer, Marker, Popup, TileLayer, useMapEvent, useMapEvents } from 'react-leaflet';
 
 const mapLocations = mapLocationsJson.filter((l) => l.enabled);
 const BOSS_PALS = palLocations.filter((pal) => pal.isBoss);
@@ -91,7 +101,7 @@ export default function MyMap() {
     <div>
       <Card
         className={cn(
-          'fixed left-4 right-8 top-[81px] p-0 transition-transform sm:w-[425px]',
+          'fixed left-4 right-6 top-[81px] p-0 transition-transform sm:w-[425px]',
           hideSidebar && 'left-0 -translate-x-full',
         )}
       >
@@ -171,6 +181,17 @@ export default function MyMap() {
             [-MAP_SIZE - BOUND_SIZE, MAP_SIZE + BOUND_SIZE],
           ]}
         >
+          {/* Top Right corner */}
+          <div className="leaflet-top leaflet-right !pointer-events-auto m-4 flex flex-col gap-2">
+            <FullscreenButton />
+            <ZoomControls />
+          </div>
+
+          {/* Bottom Right corner */}
+          <div className="leaflet-bottom leaflet-right !pointer-events-auto m-4 flex flex-col gap-2">
+            <Coordinates />
+          </div>
+
           {/* All location groups */}
           {Object.values(LOCATION_GROUPS).map((gorup) =>
             gorup.map((category) =>
@@ -222,8 +243,6 @@ export default function MyMap() {
                 </Popup>
               </Marker>
             ))}
-          {/* Coordinate Overlay in bottom right corner */}
-          <Coordinates />
 
           {/* Map Tiles */}
           <TileLayer url="/images/map/tiles/{z}/{x}/{y}.webp" minZoom={1} maxZoom={6} />
@@ -233,21 +252,62 @@ export default function MyMap() {
   );
 }
 
+function FullscreenButton() {
+  const [isFullScreen, setIsFullScreen] = useState(false);
+
+  useEffect(() => {
+    document.onfullscreenchange = () => {
+      setIsFullScreen(!!document.fullscreenElement);
+    };
+  }, []);
+
+  const toggleFullScreen = () => {
+    const element = document.documentElement;
+    if (isFullScreen) {
+      if (document.exitFullscreen) void document.exitFullscreen();
+      else if (document.mozCancelFullScreen) void document.mozCancelFullScreen();
+      else if (document.webkitExitFullscreen) void document.webkitExitFullscreen();
+      else if (document.msExitFullscreen) void document.msExitFullscreen();
+    } else {
+      if (element.requestFullscreen) void element.requestFullscreen();
+      else if (element.mozRequestFullScreen) void element.mozRequestFullScreen();
+      else if (element.webkitRequestFullscreen) void element.webkitRequestFullscreen();
+      else if (element.msRequestFullscreen) void element.msRequestFullscreen();
+    }
+  };
+
+  return (
+    <Button onClick={toggleFullScreen} size="icon" variant="outline">
+      {isFullScreen ? <MinimizeIcon className="size-5" /> : <MaximizeIcon className="size-5" />}
+    </Button>
+  );
+}
+
 function Coordinates() {
   const [cursorPosition, setCursorPosition] = useState<string | null>(null);
 
-  useMapEvents({
-    mousemove(e) {
-      const { lat, lng } = e.latlng;
-      setCursorPosition(getInGameCoords([lat, lng]));
-    },
+  useMapEvent('mousemove', (e) => {
+    const { lat, lng } = e.latlng;
+    setCursorPosition(getInGameCoords([lat, lng]));
   });
 
   if (!cursorPosition) return null;
 
+  return <div className="rounded-lg border border-gray-5 bg-gray-1 p-2 font-mono text-gray-12">{cursorPosition}</div>;
+}
+
+function ZoomControls() {
+  const map = useMapEvents({});
+
   return (
-    <div className="leaflet-bottom leaflet-right m-2 rounded-lg bg-black/25 p-2 font-mono text-white backdrop-blur">
-      {cursorPosition}
+    <div className="flex flex-col">
+      <Button size="icon" variant="outline" onClick={() => map.zoomIn()} className="rounded-b-none">
+        <PlusIcon className="size-5" />
+      </Button>
+
+      <Button size="icon" variant="outline" onClick={() => map.zoomOut()} className="rounded-t-none">
+        <MinusIcon className="size-5" />
+      </Button>
     </div>
   );
 }
