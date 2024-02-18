@@ -91,8 +91,8 @@ export default function MyMap() {
     <div>
       <Card
         className={cn(
-          'fixed bottom-0 top-[65px] m-4 w-[425px] p-0 transition-transform',
-          hideSidebar && '-translate-x-[441px]',
+          'fixed left-4 right-8 top-[81px] p-0 transition-transform sm:w-[425px]',
+          hideSidebar && 'left-0 -translate-x-full',
         )}
       >
         <button
@@ -105,7 +105,7 @@ export default function MyMap() {
           <div className="flex flex-col gap-5">
             <Input label="Search" icon={SearchIcon} placeholder="Search" />
 
-            <div className="flex items-end gap-2">
+            <div className="flex flex-wrap items-end gap-2">
               <PalCombobox className="flex-1" label="Pal Locations" value={palFilter} setValue={setPalFilter} />
               <div className="mr-px flex h-10 items-center gap-1.5">
                 <Label htmlFor="daytime-toggle">
@@ -123,10 +123,10 @@ export default function MyMap() {
             </div>
 
             {Object.entries(LOCATION_GROUPS).map(([group, locations]) => (
-              <CollapsibleFilter key={group} label={group} defaultOpen>
+              <CollapsibleFilter className="@container" key={group} label={group} defaultOpen>
                 <ToggleGroup
                   type="multiple"
-                  className="md:grid md:grid-cols-2 md:gap-1"
+                  className="grid grid-cols-1 gap-1 @sm:grid-cols-2"
                   value={filters}
                   onValueChange={(v) => setFilters(v.length > 0 ? v : null)}
                 >
@@ -142,8 +142,8 @@ export default function MyMap() {
                         />
                       </div>
                       <div className="flex flex-1 items-center justify-between">
-                        <span>{category.name}</span>
-                        <span className="text-xs text-gray-11">
+                        <span className="line-clamp-1 text-left">{category.name}</span>
+                        <span className="ml-2 text-xs text-gray-11 sm:ml-0">
                           {category.count ?? mapLocations.find((l) => l.name === category.name)?.locations.length}
                         </span>
                       </div>
@@ -165,6 +165,7 @@ export default function MyMap() {
           zoomDelta={1}
           className="h-full !bg-[#102536]"
           zoomControl={false}
+          attributionControl={false}
           maxBounds={[
             [BOUND_SIZE, -BOUND_SIZE],
             [-MAP_SIZE - BOUND_SIZE, MAP_SIZE + BOUND_SIZE],
