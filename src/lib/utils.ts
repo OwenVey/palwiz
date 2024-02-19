@@ -1,6 +1,7 @@
 import { type BadgeProps } from '@/components/ui/badge';
 import { BREED_ORDER_PALS, NORMAL_PALS, UNIQUE_BREEDING_COMBO_MAP, WORK_SUITABILITIES } from '@/constants';
-import { activeSkills, itemRecipes, items } from '@/data/parsed';
+import { activeSkills, itemRecipes } from '@/data/parsed';
+import { ITEMS } from '@/data/parsed/items';
 import { type BreedingCombo, type Pal } from '@/types';
 import { clsx, type ClassValue } from 'clsx';
 import { parseAsArrayOf, parseAsString, useQueryState } from 'nuqs';
@@ -42,7 +43,7 @@ export function getPalById(id: string) {
 }
 
 export function getItemById(id: string) {
-  return items.find((item) => item.id === id) ?? null;
+  return ITEMS.find((item) => item.id === id) ?? null;
 }
 
 export function getSkillById(id: string) {

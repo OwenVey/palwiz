@@ -8,7 +8,7 @@ import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger } from '@/components/ui/select';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
-import { items } from '@/data/parsed';
+import { ITEMS } from '@/data/parsed/items';
 import { cn, parseAsArrayOfStrings, sortArrayByPropertyInDirection, useQueryString } from '@/lib/utils';
 import { type Item } from '@/types';
 import { useDebounce } from '@uidotdev/usehooks';
@@ -71,7 +71,7 @@ function getItemRarityClass(rarity: number) {
   }
 }
 
-const ALL_CATEGORIES = [...new Set(items.map((item) => item.typeA))].sort();
+const ALL_CATEGORIES = [...new Set(ITEMS.map((item) => item.typeA))].sort();
 
 export function ItemsGrid() {
   const [search, setSearch] = useQueryString('search');
@@ -92,7 +92,7 @@ export function ItemsGrid() {
 
   const filteredItems = useMemo(
     () =>
-      sortArrayByPropertyInDirection(items, sort, sortDirection)
+      sortArrayByPropertyInDirection(ITEMS, sort, sortDirection)
         .filter(({ name }) => (debouncedSearch ? name.toLowerCase().includes(debouncedSearch.toLowerCase()) : true))
         .filter((item) => (categories.length > 0 ? categories.includes(item.typeA) : true))
         .filter((item) => {

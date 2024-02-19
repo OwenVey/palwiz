@@ -3,7 +3,8 @@ import { PalImage } from '@/components/PalImage';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tooltip } from '@/components/ui/tooltip';
-import { allPals, items } from '@/data/parsed';
+import { allPals } from '@/data/parsed';
+import { ITEMS } from '@/data/parsed/items';
 import { cn, getBadgeVariantForRate, getItemById, getItemRecipeById, notEmpty } from '@/lib/utils';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -16,7 +17,7 @@ export function generateMetadata({ params }: { params: { id: string } }) {
   };
 }
 export function generateStaticParams() {
-  return items.map(({ id }) => ({ id }));
+  return ITEMS.map(({ id }) => ({ id }));
 }
 
 export default function ItemPage({ params }: { params: { id: string } }) {
