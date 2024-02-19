@@ -1,6 +1,6 @@
 import { type BadgeProps } from '@/components/ui/badge';
-import { UNIQUE_BREEDING_COMBO_MAP, WORK_SUITABILITIES } from '@/constants';
-import { activeSkills, breedOrderPals, itemRecipes, items, normalPals } from '@/data/parsed';
+import { BREED_ORDER_PALS, NORMAL_PALS, UNIQUE_BREEDING_COMBO_MAP, WORK_SUITABILITIES } from '@/constants';
+import { activeSkills, itemRecipes, items } from '@/data/parsed';
 import { type BreedingCombo, type Pal } from '@/types';
 import { clsx, type ClassValue } from 'clsx';
 import { parseAsArrayOf, parseAsString, useQueryState } from 'nuqs';
@@ -38,7 +38,7 @@ export function notEmpty<TValue>(value: TValue | null | undefined): value is TVa
 }
 
 export function getPalById(id: string) {
-  return normalPals.find((pal) => pal.id === id) ?? null;
+  return NORMAL_PALS.find((pal) => pal.id === id) ?? null;
 }
 
 export function getItemById(id: string) {
@@ -91,7 +91,7 @@ export function getBreedingResult(parentAId: string, parentBId: string): Pal | n
 
   const averageCombiRank = Math.floor((parentA.combiRank + parentB.combiRank + 1) / 2);
 
-  const child = breedOrderPals.reduce((closestPal, pal) => {
+  const child = BREED_ORDER_PALS.reduce((closestPal, pal) => {
     const currentDiff = Math.abs(pal.combiRank - averageCombiRank);
     const closestDiff = Math.abs(closestPal.combiRank - averageCombiRank);
     return currentDiff < closestDiff ? pal : closestPal;
@@ -134,8 +134,8 @@ export class Queue<T> {
 }
 
 const graph = new Map<string, string[]>();
-for (const parentA of normalPals) {
-  for (const parentB of normalPals) {
+for (const parentA of NORMAL_PALS) {
+  for (const parentB of NORMAL_PALS) {
     const child = getBreedingResult(parentA.id, parentB.id)!;
     if (!graph.has(parentA.id)) {
       graph.set(parentA.id, []);

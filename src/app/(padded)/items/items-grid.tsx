@@ -108,7 +108,7 @@ export function ItemsGrid() {
 
   return (
     <div className="flex flex-col gap-4 md:flex-row">
-      <Card className="flex h-fit flex-col gap-5 md:sticky md:top-[81px] md:w-72">
+      <Card className="z-10 flex h-fit flex-col gap-5 md:sticky md:top-[81px] md:w-72">
         <Input
           className="w-full"
           label="Search"

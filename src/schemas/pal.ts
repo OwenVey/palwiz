@@ -48,11 +48,13 @@ export const PalSchema = z.object({
   organization: z.string(),
   overrideNameTextId: z.string(),
   overridePartnerSkillTextId: z.string(),
-  partnerSkill: z.object({
-    name: z.string().nullable(),
-    description: z.string().nullable(),
-  }),
-  partnerSkillIcon: z.number().nullable(),
+  partnerSkill: z
+    .object({
+      name: z.string(),
+      description: z.string(),
+      group: z.string(),
+    })
+    .nullable(),
   passiveSkill1: z.string(),
   passiveSkill2: z.string(),
   passiveSkill3: z.string(),

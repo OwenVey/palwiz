@@ -2,7 +2,7 @@ import { ItemImage } from '@/components/ItemImage';
 import { PalImage } from '@/components/PalImage';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
+import { Tooltip } from '@/components/ui/tooltip';
 import { allPals, items } from '@/data/parsed';
 import { cn, getBadgeVariantForRate, getItemById, getItemRecipeById, notEmpty } from '@/lib/utils';
 import Image from 'next/image';
@@ -99,25 +99,22 @@ export default function ItemPage({ params }: { params: { id: string } }) {
 
             <div className="grid grid-cols-1 gap-2 @xs:grid-cols-2 @lg:grid-cols-3 @2xl:grid-cols-4">
               {materials.map((material) => (
-                <Tooltip key={material.id}>
-                  <TooltipTrigger asChild>
-                    <Link href={`/items/${material.item.id}`}>
-                      <Card
-                        className="relative flex h-full flex-col items-center border-gray-5 bg-gray-3 p-2"
-                        hoverEffect
-                      >
-                        <Badge className="absolute left-1 top-1" variant="primary">
-                          {material.count}
-                        </Badge>
+                <Tooltip key={material.id} content={material.item.description} className="max-w-64">
+                  <Link href={`/items/${material.item.id}`}>
+                    <Card
+                      className="relative flex h-full flex-col items-center border-gray-5 bg-gray-3 p-2"
+                      hoverEffect
+                    >
+                      <Badge className="absolute left-1 top-1" variant="primary">
+                        {material.count}
+                      </Badge>
 
-                        <div className="w-fit rounded-full border border-gray-5 bg-gray-4 p-2">
-                          {material.item.imageName && <ItemImage id={material.item.imageName} className="size-14" />}
-                        </div>
-                        <div className="mt-2 text-center font-medium text-gray-12">{material.item.name}</div>
-                      </Card>
-                    </Link>
-                  </TooltipTrigger>
-                  <TooltipContent className="max-w-64">{material.item.description}</TooltipContent>
+                      <div className="w-fit rounded-full border border-gray-5 bg-gray-4 p-2">
+                        {material.item.imageName && <ItemImage id={material.item.imageName} className="size-14" />}
+                      </div>
+                      <div className="mt-2 text-center font-medium text-gray-12">{material.item.name}</div>
+                    </Card>
+                  </Link>
                 </Tooltip>
               ))}
             </div>

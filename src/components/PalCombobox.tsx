@@ -10,12 +10,12 @@ import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem } from '
 import { Label } from '@/components/ui/label';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { ScrollArea } from '@/components/ui/scroll-area';
-import { normalPals } from '@/data/parsed';
+import { NORMAL_PALS } from '@/constants';
 import { cn, getPalById } from '@/lib/utils';
 import { type Pal } from '@/types';
 import { type PopoverTriggerProps } from '@radix-ui/react-popover';
 
-const sortedPals = [...normalPals].sort((a, b) => a.name.localeCompare(b.name));
+const sortedPals = [...NORMAL_PALS].sort((a, b) => a.name.localeCompare(b.name));
 
 interface PalComboboxProps extends PopoverTriggerProps {
   label?: string;

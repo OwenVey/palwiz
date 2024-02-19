@@ -12,9 +12,9 @@ import { MultiSelect } from '@/components/ui/multi-select';
 import { Select, SelectContent, SelectItem, SelectTrigger } from '@/components/ui/select';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
-import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
-import { PAL_ELEMENTS } from '@/constants';
-import { activeSkills, normalPals, passiveSkills } from '@/data/parsed';
+import { Tooltip } from '@/components/ui/tooltip';
+import { NORMAL_PALS, PAL_ELEMENTS, PARTNER_SKILL_CATEGORIES } from '@/constants';
+import { activeSkills, passiveSkills } from '@/data/parsed';
 import { cn, notEmpty, parseAsArrayOfStrings, sortArrayByPropertyInDirection, useQueryString } from '@/lib/utils';
 import { type ActiveSkill, type PassiveSkill } from '@/types';
 import { useDebounce } from '@uidotdev/usehooks';
@@ -55,15 +55,11 @@ const PASSIVE_SKILL_TYPES = [
   ...new Set(passiveSkills.flatMap(({ effects }) => effects.map(({ type }) => type))),
 ].sort();
 
-const PARTNER_SKILLS = normalPals
-  .map((pal) => ({
-    name: pal.partnerSkill.name!,
-    description: pal.partnerSkill.description!,
-    icon: pal.partnerSkillIcon!,
-  }))
-  .filter((s) => s.name !== null && s.description !== null && s.icon !== null)
+const PARTNER_SKILLS = NORMAL_PALS.map(({ partnerSkill }) => partnerSkill)
+  .filter(notEmpty)
   .filter((obj, index, self) => index === self.findIndex((t) => t.name === obj.name))
-  .map((s) => ({ ...s, pals: normalPals.filter((pal) => pal.partnerSkill.name === s.name) }));
+  .map((s) => ({ ...s, pals: NORMAL_PALS.filter((pal) => pal.partnerSkill?.name === s.name) }));
+
 type PartnerSkill = (typeof PARTNER_SKILLS)[number];
 const skillTypes = ['active', 'passive', 'partner'] as const;
 // type SkillType = (typeof skillTypes)[number];
@@ -125,9 +121,7 @@ export function SkillsGrid() {
     () =>
       sortArrayByPropertyInDirection(PARTNER_SKILLS, sort as keyof PartnerSkill, sortDirection)
         .filter(({ name }) => (debouncedSearch ? name.toLowerCase().includes(debouncedSearch.toLowerCase()) : true))
-        .filter((skill) =>
-          partnerSkillCategories.length ? partnerSkillCategories.includes(skill.icon.toString()) : true,
-        ),
+        .filter((skill) => (partnerSkillCategories.length ? partnerSkillCategories.includes(skill.group) : true)),
     [debouncedSearch, partnerSkillCategories, sort, sortDirection],
   );
 
@@ -137,7 +131,7 @@ export function SkillsGrid() {
       value={type}
       onValueChange={(v) => router.replace(`/skills/?type=${v}${search && `&search=${search}`}`)}
     >
-      <Card className="flex h-fit flex-col gap-5 md:sticky md:top-[81px] md:w-72">
+      <Card className="z-10 flex h-fit flex-col gap-5 md:sticky md:top-[81px] md:w-72">
         <TabsList className="w-full">
           <TabsTrigger value="active" className="flex-1">
             Active
@@ -268,14 +262,14 @@ export function SkillsGrid() {
               value={partnerSkillCategories}
               onValueChange={(v) => setPartnerSkillCategories(v.length > 0 ? v : null)}
             >
-              {[...new Set(normalPals.map((p) => p.partnerSkillIcon).filter(notEmpty))].map((partnerSkillIcon) => (
-                <ToggleGroupItem
-                  key={partnerSkillIcon}
-                  value={partnerSkillIcon.toString()}
-                  className="w-10 p-0 md:w-auto"
-                >
-                  <PartnerSkillImage id={partnerSkillIcon.toString()} />
-                </ToggleGroupItem>
+              {PARTNER_SKILL_CATEGORIES.map((category) => (
+                <Tooltip key={category} content={category}>
+                  <span className="flex">
+                    <ToggleGroupItem value={category} className="w-10 p-0 md:w-auto">
+                      <PartnerSkillImage name={category} />
+                    </ToggleGroupItem>
+                  </span>
+                </Tooltip>
               ))}
             </ToggleGroup>
           </CollapsibleFilter>
@@ -356,13 +350,12 @@ const PassiveSkills = memo(function PassiveSkills({ skills }: { skills: PassiveS
           )}
         >
           {skill.effects.map((e) => e.target).includes('Trainer') && (
-            <Tooltip>
-              <TooltipTrigger className="absolute right-2 top-2 font-sans">
+            <Tooltip content="Applies to player">
+              <button className="absolute right-2 top-2 p-1 font-sans">
                 <Badge className="p-1">
                   <UserRoundIcon className="size-4 text-gray-11" />
                 </Badge>
-              </TooltipTrigger>
-              <TooltipContent>Applies to player</TooltipContent>
+              </button>
             </Tooltip>
           )}
 
@@ -408,32 +401,29 @@ const PartnerSkills = memo(function PartnerSkills({ skills }: { skills: PartnerS
 
   return (
     <div className="grid grid-cols-1 gap-4 @2xl:grid-cols-2">
-      {skills.map((skill) => (
-        <Card key={skill.name} className={cn('relative flex h-full flex-col gap-2')}>
+      {skills.map((partnerSkill) => (
+        <Card key={partnerSkill.name} className={cn('relative flex h-full flex-col gap-2')}>
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <PartnerSkillImage id={skill.icon.toString()} />
-              <div className="text-gray-12">{skill.name}</div>
+              <PartnerSkillImage name={partnerSkill.group} />
+              <div className="text-gray-12">{partnerSkill.name}</div>
             </div>
 
             <div className="flex gap-1">
-              {skill.pals.map((pal) => (
-                <Tooltip key={pal.id}>
-                  <TooltipTrigger>
-                    <Link href={`/pals/${pal.id}`} className="group">
-                      <PalImage
-                        id={pal.id}
-                        className="size-10 rounded-full border border-gray-7 bg-gray-1 group-hover:border-primary-9 group-hover:bg-gray-2"
-                      />
-                    </Link>
-                  </TooltipTrigger>
-                  <TooltipContent>{pal.name}</TooltipContent>
+              {partnerSkill.pals.map((pal) => (
+                <Tooltip key={pal.id} content={pal.name}>
+                  <Link href={`/pals/${pal.id}`} className="group">
+                    <PalImage
+                      id={pal.id}
+                      className="size-10 rounded-full border border-gray-7 bg-gray-1 group-hover:border-primary-9 group-hover:bg-gray-2"
+                    />
+                  </Link>
                 </Tooltip>
               ))}
             </div>
           </div>
 
-          <p className="text-sm text-gray-11">{skill.description}</p>
+          <p className="text-sm text-gray-11">{partnerSkill.description}</p>
         </Card>
       ))}
     </div>

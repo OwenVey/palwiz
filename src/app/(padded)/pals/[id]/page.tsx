@@ -4,7 +4,7 @@ import { PalStatsSidebar } from '@/app/(padded)/pals/[id]/PalStatsSidebar';
 import { PalWorkSuitabilitiesCard } from '@/app/(padded)/pals/[id]/PalWorkSuitabilitiesCard';
 import { PartnerSkillImage } from '@/components/PartnerSkillImage';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
-import { normalPals } from '@/data/parsed';
+import { NORMAL_PALS } from '@/constants';
 import { getPalById } from '@/lib/utils';
 import { notFound } from 'next/navigation';
 
@@ -15,7 +15,7 @@ export function generateMetadata({ params }: { params: { id: string } }) {
   };
 }
 export function generateStaticParams() {
-  return normalPals.map(({ id }) => ({ id }));
+  return NORMAL_PALS.map(({ id }) => ({ id }));
 }
 
 export default function PalPage({ params }: { params: { id: string } }) {
@@ -40,12 +40,12 @@ export default function PalPage({ params }: { params: { id: string } }) {
             <CardHeader>
               <CardTitle>Partner Skill</CardTitle>
             </CardHeader>
-            {pal.partnerSkill.name !== null ? (
+            {pal.partnerSkill ? (
               <div>
                 <div className="flex justify-between">
                   <div className="flex gap-4">
-                    {pal.partnerSkillIcon !== null && (
-                      <PartnerSkillImage id={pal.partnerSkillIcon.toString()} className="size-8 scale-[2]" />
+                    {pal.partnerSkill.group !== null && (
+                      <PartnerSkillImage name={pal.partnerSkill.group} className="size-8 scale-[2]" />
                     )}
                     <div className="font-medium text-gray-12">{pal.partnerSkill.name}</div>
                   </div>

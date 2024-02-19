@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Separator } from '@/components/ui/separator';
-import { normalPals } from '@/data/parsed';
+import { NORMAL_PALS } from '@/constants';
 import { cn, getBreedingResult, getPalById, notEmpty, useQueryString } from '@/lib/utils';
 import { type BreedingCombo, type Pal } from '@/types';
 import { useDebounce } from '@uidotdev/usehooks';
@@ -31,9 +31,8 @@ function getCombos(parentAId: string, parentBId: string, childId: string): Breed
 
   // calculate all combos for a specific child
   if (childId) {
-    let combos = normalPals.flatMap((parentA, i) =>
-      normalPals
-        .slice(i)
+    let combos = NORMAL_PALS.flatMap((parentA, i) =>
+      NORMAL_PALS.slice(i)
         .map((parentB) => {
           const child = getBreedingResult(parentA.id, parentB.id);
           return child && child.id === childId ? { parentA, parentB, child } : null;
@@ -59,7 +58,7 @@ function getCombos(parentAId: string, parentBId: string, childId: string): Breed
   // calculate all combos for single parent
   if ((parentAId && !parentBId) || (parentBId && !parentAId)) {
     const parentPal = getPalById(parentAId || parentBId)!;
-    return normalPals.map((otherParent) => ({
+    return NORMAL_PALS.map((otherParent) => ({
       parentA: parentAId ? parentPal : otherParent,
       parentB: parentBId ? parentPal : otherParent,
       child: getBreedingResult(parentPal.id, otherParent.id)!,
@@ -89,7 +88,7 @@ export function Breeding() {
 
   return (
     <div className="flex flex-col gap-4 md:flex-row">
-      <Card className="h-fit p-0 md:sticky md:top-[81px] md:w-72">
+      <Card className="z-10 h-fit p-0 md:sticky md:top-[81px] md:w-72">
         <div className="flex w-full flex-col items-center gap-4 p-4">
           <PalCombobox label="Parent A" className="w-full" value={parentAId} setValue={setParentAId} />
           <PlusIcon className="size-4 text-gray-10" />

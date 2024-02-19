@@ -7,8 +7,6 @@ import { cn } from '@/lib/utils';
 
 const TooltipProvider = TooltipPrimitive.Provider;
 
-const Tooltip = TooltipPrimitive.Root;
-
 const TooltipTrigger = TooltipPrimitive.Trigger;
 
 const TooltipContent = React.forwardRef<
@@ -26,5 +24,20 @@ const TooltipContent = React.forwardRef<
   />
 ));
 TooltipContent.displayName = TooltipPrimitive.Content.displayName;
+
+interface TooltipProps extends TooltipPrimitive.TooltipContentProps {
+  content: string;
+  open?: TooltipPrimitive.TooltipProps['open'];
+  defaultOpen?: TooltipPrimitive.TooltipProps['defaultOpen'];
+  onOpenChange?: TooltipPrimitive.TooltipProps['onOpenChange'];
+}
+function Tooltip({ children, content, open, defaultOpen, onOpenChange, ...props }: TooltipProps) {
+  return (
+    <TooltipPrimitive.Root open={open} defaultOpen={defaultOpen} onOpenChange={onOpenChange}>
+      <TooltipTrigger asChild>{children}</TooltipTrigger>
+      <TooltipContent {...props}>{content}</TooltipContent>
+    </TooltipPrimitive.Root>
+  );
+}
 
 export { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger };

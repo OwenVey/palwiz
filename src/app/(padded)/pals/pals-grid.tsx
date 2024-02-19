@@ -11,15 +11,8 @@ import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger } from '@/components/ui/select';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
-import { PAL_ELEMENTS, WORK_SUITABILITIES } from '@/constants';
-import { normalPals } from '@/data/parsed';
-import {
-  isWithinRange,
-  notEmpty,
-  parseAsArrayOfStrings,
-  sortArrayByPropertyInDirection,
-  useQueryString,
-} from '@/lib/utils';
+import { NORMAL_PALS, PAL_ELEMENTS, PARTNER_SKILL_CATEGORIES, WORK_SUITABILITIES } from '@/constants';
+import { isWithinRange, parseAsArrayOfStrings, sortArrayByPropertyInDirection, useQueryString } from '@/lib/utils';
 import { type Pal, type WorkSuitability } from '@/types';
 import { useDebounce } from '@uidotdev/usehooks';
 import {
@@ -80,14 +73,14 @@ export function PalsGrid() {
 
   const filteredPals = useMemo(() => {
     return sortArrayByPropertyInDirection(
-      normalPals.filter((pal) => {
+      NORMAL_PALS.filter((pal) => {
         if (pal.zukanIndex <= 0 || pal.isBoss) return false;
         if (debouncedSearch && !pal.name.toLowerCase().includes(debouncedSearch.toLowerCase())) return false;
         if (rarity && !isCorrectRarity(rarity ?? 'all', pal.rarity)) return false;
         if (elements.length && ![pal.elementType1, pal.elementType2].some((e) => e && elements.includes(e)))
           return false;
         if (work && pal.workSuitabilities[work] <= 0) return false;
-        if (partnerSkills.length && pal.partnerSkillIcon && !partnerSkills.includes(pal.partnerSkillIcon.toString()))
+        if (partnerSkills.length && pal.partnerSkill?.group && !partnerSkills.includes(pal.partnerSkill.group))
           return false;
         return true;
       }),
@@ -107,7 +100,7 @@ export function PalsGrid() {
 
   return (
     <div className="flex flex-col gap-4 md:flex-row">
-      <Card className="flex h-fit flex-col gap-5 md:sticky md:top-[81px] md:w-72">
+      <Card className="z-10 flex h-fit flex-col gap-5 md:sticky md:top-[81px] md:w-72">
         <Input
           className="w-full"
           label="Search"
@@ -205,13 +198,9 @@ export function PalsGrid() {
             value={partnerSkills}
             onValueChange={(v) => setPartnerSkills(v.length > 0 ? v : null)}
           >
-            {[...new Set(normalPals.map((p) => p.partnerSkillIcon).filter(notEmpty))].map((partnerSkillIcon) => (
-              <ToggleGroupItem
-                key={partnerSkillIcon}
-                value={partnerSkillIcon.toString()}
-                className="w-10 p-0 md:w-auto"
-              >
-                <PartnerSkillImage id={partnerSkillIcon.toString()} />
+            {PARTNER_SKILL_CATEGORIES.map((category) => (
+              <ToggleGroupItem key={category} value={category.toString()} className="w-10 p-0 md:w-auto">
+                <PartnerSkillImage name={category.toString()} />
               </ToggleGroupItem>
             ))}
           </ToggleGroup>

@@ -8,7 +8,7 @@ import { ItemImage } from '@/components/ItemImage';
 import { Badge } from '@/components/ui/badge';
 import { Label } from '@/components/ui/label';
 import { Switch } from '@/components/ui/switch';
-import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
+import { Tooltip } from '@/components/ui/tooltip';
 import { allPals } from '@/data/parsed';
 import { cn, getBadgeVariantForRate, getItemById } from '@/lib/utils';
 import { type Pal } from '@/types';
@@ -43,23 +43,20 @@ export function ItemDropsCard({ pal, className, ...rest }: ItemDropsCardProps) {
       </CardHeader>
       <div className="grid grid-cols-1 gap-2 @xs:grid-cols-2 @lg:grid-cols-3 @2xl:grid-cols-4">
         {dropsToShow.map((drop) => (
-          <Tooltip key={drop.id}>
-            <TooltipTrigger asChild>
-              <Link href={`/items/${drop.item.id}`}>
-                <Card className="relative flex h-full flex-col items-center border-gray-5 bg-gray-3 p-2" hoverEffect>
-                  <div className="absolute top-0 flex w-full justify-between p-1">
-                    <Badge variant="iris">{drop.min === drop.max ? drop.min : `${drop.min}-${drop.max}`}</Badge>
-                    <Badge variant={getBadgeVariantForRate(drop.rate)}>{drop.rate}%</Badge>
-                  </div>
+          <Tooltip key={drop.id} content={drop.item.description} className="max-w-64">
+            <Link href={`/items/${drop.item.id}`}>
+              <Card className="relative flex h-full flex-col items-center border-gray-5 bg-gray-3 p-2" hoverEffect>
+                <div className="absolute top-0 flex w-full justify-between p-1">
+                  <Badge variant="iris">{drop.min === drop.max ? drop.min : `${drop.min}-${drop.max}`}</Badge>
+                  <Badge variant={getBadgeVariantForRate(drop.rate)}>{drop.rate}%</Badge>
+                </div>
 
-                  <div className="w-fit rounded-full border border-gray-5 bg-gray-4 p-2">
-                    {drop.item.imageName && <ItemImage id={drop.item.imageName} className="size-14" />}
-                  </div>
-                  <div className="mt-2 text-center font-medium text-gray-12">{drop.item.name}</div>
-                </Card>
-              </Link>
-            </TooltipTrigger>
-            <TooltipContent className="max-w-64">{drop.item.description}</TooltipContent>
+                <div className="w-fit rounded-full border border-gray-5 bg-gray-4 p-2">
+                  {drop.item.imageName && <ItemImage id={drop.item.imageName} className="size-14" />}
+                </div>
+                <div className="mt-2 text-center font-medium text-gray-12">{drop.item.name}</div>
+              </Card>
+            </Link>
           </Tooltip>
         ))}
       </div>

@@ -85,11 +85,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_SnowBoss",
     "overridePartnerSkillTextId": "PARTNERSKILL_lackGriffon",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -200,11 +196,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_GrassBoss",
     "overridePartnerSkillTextId": "PARTNERSKILL_lecPanda",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -331,11 +323,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_DessertBoss",
     "overridePartnerSkillTextId": "PARTNERSKILL_orus",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -446,11 +434,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_ForestBoss",
     "overridePartnerSkillTextId": "PARTNERSKILL_ilyQueen",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -569,11 +553,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_VolcanoBoss",
     "overridePartnerSkillTextId": "PARTNERSKILL_hunderDragonMan",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -664,9 +644,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "This Pal is under investigation.",
+      "group": "Gunner",
       "name": "Under investigation."
     },
-    "partnerSkillIcon": 3,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -757,9 +737,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "This Pal is under investigation.",
+      "group": "Increased Drops",
       "name": "Under investigation."
     },
-    "partnerSkillIcon": 14,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -901,11 +881,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_Alpaca",
     "overridePartnerSkillTextId": "PARTNERSKILL_Alpaca",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -1047,11 +1023,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_AmaterasuWolf",
     "overridePartnerSkillTextId": "PARTNERSKILL_AmaterasuWolf",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -1162,11 +1134,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_Anubis",
     "overridePartnerSkillTextId": "PARTNERSKILL_Anubis",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "ElementBoost_Earth_2_PAL",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -1273,11 +1241,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_BadCatgirl",
     "overridePartnerSkillTextId": "PARTNERSKILL_BadCatgirl",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -1419,11 +1383,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_Baphomet",
     "overridePartnerSkillTextId": "PARTNERSKILL_Baphomet",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -1565,11 +1525,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_Baphomet_Dark",
     "overridePartnerSkillTextId": "PARTNERSKILL_Baphomet_Dark",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -1705,11 +1661,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_Bastet",
     "overridePartnerSkillTextId": "PARTNERSKILL_Bastet",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -1851,11 +1803,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_Bastet_Ice",
     "overridePartnerSkillTextId": "PARTNERSKILL_Bastet_Ice",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -1956,11 +1904,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_BeardedDragon",
     "overridePartnerSkillTextId": "PARTNERSKILL_BeardedDragon",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -2102,11 +2046,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_BerryGoat",
     "overridePartnerSkillTextId": "PARTNERSKILL_BerryGoat",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -2248,11 +2188,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_BirdDragon",
     "overridePartnerSkillTextId": "PARTNERSKILL_BirdDragon",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -2394,11 +2330,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_BirdDragon_Ice",
     "overridePartnerSkillTextId": "PARTNERSKILL_BirdDragon_Ice",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -2540,11 +2472,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_BlackCentaur",
     "overridePartnerSkillTextId": "PARTNERSKILL_BlackCentaur",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "Legend",
     "passiveSkill2": "ElementBoost_Dark_2_PAL",
     "passiveSkill3": "None",
@@ -2651,11 +2579,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_BlackFurDragon",
     "overridePartnerSkillTextId": "PARTNERSKILL_BlackFurDragon",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -2797,11 +2721,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_BlackGriffon",
     "overridePartnerSkillTextId": "PARTNERSKILL_BlackGriffon",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -2943,11 +2863,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_BlackMetalDragon",
     "overridePartnerSkillTextId": "PARTNERSKILL_BlackMetalDragon",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "Deffence_up1",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -3054,11 +2970,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_BlueberryFairy",
     "overridePartnerSkillTextId": "PARTNERSKILL_BlueberryFairy",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -3194,11 +3106,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_BlueDragon",
     "overridePartnerSkillTextId": "PARTNERSKILL_BlueDragon",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -3340,11 +3248,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_BluePlatypus",
     "overridePartnerSkillTextId": "PARTNERSKILL_BluePlatypus",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -3486,11 +3390,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_Boar",
     "overridePartnerSkillTextId": "PARTNERSKILL_Boar",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -3597,11 +3497,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_BrownRabbit",
     "overridePartnerSkillTextId": "PARTNERSKILL_BrownRabbit",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -3743,11 +3639,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_CaptainPenguin",
     "overridePartnerSkillTextId": "PARTNERSKILL_CaptainPenguin",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -3889,11 +3781,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_Carbunclo",
     "overridePartnerSkillTextId": "PARTNERSKILL_Carbunclo",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -4035,11 +3923,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_CatBat",
     "overridePartnerSkillTextId": "PARTNERSKILL_CatBat",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -4181,11 +4065,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_CatMage",
     "overridePartnerSkillTextId": "PARTNERSKILL_CatMage",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -4327,11 +4207,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_CatVampire",
     "overridePartnerSkillTextId": "PARTNERSKILL_CatVampire",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -4473,11 +4349,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_ChickenPal",
     "overridePartnerSkillTextId": "PARTNERSKILL_ChickenPal",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -4619,11 +4491,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_ColorfulBird",
     "overridePartnerSkillTextId": "PARTNERSKILL_ColorfulBird",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -4765,11 +4633,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_CowPal",
     "overridePartnerSkillTextId": "PARTNERSKILL_CowPal",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -4911,11 +4775,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_CuteButterfly",
     "overridePartnerSkillTextId": "PARTNERSKILL_CuteButterfly",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -5057,11 +4917,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_CuteFox",
     "overridePartnerSkillTextId": "PARTNERSKILL_CuteFox",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -5197,11 +5053,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_CuteMole",
     "overridePartnerSkillTextId": "PARTNERSKILL_CuteMole",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -5343,11 +5195,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_DarkCrow",
     "overridePartnerSkillTextId": "PARTNERSKILL_DarkCrow",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -5429,11 +5277,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_DarkMutant",
     "overridePartnerSkillTextId": "PARTNERSKILL_DarkMutant",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -5575,11 +5419,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_DarkScorpion",
     "overridePartnerSkillTextId": "PARTNERSKILL_DarkScorpion",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -5721,11 +5561,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_Deer",
     "overridePartnerSkillTextId": "PARTNERSKILL_Deer",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -5867,11 +5703,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_Deer_Ground",
     "overridePartnerSkillTextId": "PARTNERSKILL_Deer_Ground",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -6013,11 +5845,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_DreamDemon",
     "overridePartnerSkillTextId": "PARTNERSKILL_DreamDemon",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -6128,11 +5956,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_DrillGame",
     "overridePartnerSkillTextId": "PARTNERSKILL_DrillGame",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "Deffence_up1",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -6274,11 +6098,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_Eagle",
     "overridePartnerSkillTextId": "PARTNERSKILL_Eagle",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -6414,11 +6234,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_ElecCat",
     "overridePartnerSkillTextId": "PARTNERSKILL_ElecCat",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -6525,11 +6341,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_ElecLion",
     "overridePartnerSkillTextId": "PARTNERSKILL_ElecLion",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -6671,11 +6483,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_ElecPanda",
     "overridePartnerSkillTextId": "PARTNERSKILL_ElecPanda",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -6811,11 +6619,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_FairyDragon",
     "overridePartnerSkillTextId": "PARTNERSKILL_FairyDragon",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -6951,11 +6755,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_FairyDragon_Water",
     "overridePartnerSkillTextId": "PARTNERSKILL_FairyDragon_Water",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -7062,11 +6862,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_FeatherOstrich",
     "overridePartnerSkillTextId": "PARTNERSKILL_FeatherOstrich",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -7208,11 +7004,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_FengyunDeeper",
     "overridePartnerSkillTextId": "PARTNERSKILL_FengyunDeeper",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -7354,11 +7146,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_FireKirin",
     "overridePartnerSkillTextId": "PARTNERSKILL_FireKirin",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -7500,11 +7288,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_FireKirin_Dark",
     "overridePartnerSkillTextId": "PARTNERSKILL_FireKirin_Dark",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -7617,11 +7401,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_FlameBambi",
     "overridePartnerSkillTextId": "PARTNERSKILL_FlameBambi",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -7763,11 +7543,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_FlameBuffalo",
     "overridePartnerSkillTextId": "PARTNERSKILL_FlameBuffalo",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -7903,11 +7679,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_FlowerDinosaur",
     "overridePartnerSkillTextId": "PARTNERSKILL_FlowerDinosaur",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -8043,11 +7815,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_FlowerDinosaur_Electric",
     "overridePartnerSkillTextId": "PARTNERSKILL_FlowerDinosaur_Electric",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -8183,11 +7951,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_FlowerDoll",
     "overridePartnerSkillTextId": "PARTNERSKILL_FlowerDoll",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -8329,11 +8093,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_FlowerRabbit",
     "overridePartnerSkillTextId": "PARTNERSKILL_FlowerRabbit",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -8469,11 +8229,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_FlyingManta",
     "overridePartnerSkillTextId": "PARTNERSKILL_FlyingManta",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -8615,11 +8371,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_FoxMage",
     "overridePartnerSkillTextId": "PARTNERSKILL_FoxMage",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -8755,11 +8507,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_Ganesha",
     "overridePartnerSkillTextId": "PARTNERSKILL_Ganesha",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -8901,11 +8649,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_Garm",
     "overridePartnerSkillTextId": "PARTNERSKILL_Garm",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -9047,11 +8791,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_GhostBeast",
     "overridePartnerSkillTextId": "PARTNERSKILL_GhostBeast",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -9158,11 +8898,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_GoldenHorse",
     "overridePartnerSkillTextId": "PARTNERSKILL_GoldenHorse",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -9304,11 +9040,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_Gorilla",
     "overridePartnerSkillTextId": "PARTNERSKILL_Gorilla",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "PAL_rude",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -9390,11 +9122,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_GrassDragon",
     "overridePartnerSkillTextId": "PARTNERSKILL_GrassDragon",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -9536,11 +9264,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_GrassMammoth",
     "overridePartnerSkillTextId": "PARTNERSKILL_GrassMammoth",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -9682,11 +9406,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_GrassMammoth_Ice",
     "overridePartnerSkillTextId": "PARTNERSKILL_GrassMammoth_Ice",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -9828,11 +9548,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_GrassPanda",
     "overridePartnerSkillTextId": "PARTNERSKILL_GrassPanda",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -9974,11 +9690,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_GrassPanda_Electric",
     "overridePartnerSkillTextId": "PARTNERSKILL_GrassPanda_Electric",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -10120,11 +9832,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_GrassRabbitMan",
     "overridePartnerSkillTextId": "PARTNERSKILL_GrassRabbitMan",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -10231,11 +9939,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_GuardianDog",
     "overridePartnerSkillTextId": "PARTNERSKILL_GuardianDog",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -10377,11 +10081,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_HadesBird",
     "overridePartnerSkillTextId": "PARTNERSKILL_HadesBird",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -10517,11 +10217,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_HawkBird",
     "overridePartnerSkillTextId": "PARTNERSKILL_HawkBird",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -10657,11 +10353,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_Hedgehog",
     "overridePartnerSkillTextId": "PARTNERSKILL_Hedgehog",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -10797,11 +10489,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_Hedgehog_Ice",
     "overridePartnerSkillTextId": "PARTNERSKILL_Hedgehog_Ice",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -10937,11 +10625,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_HerculesBeetle",
     "overridePartnerSkillTextId": "PARTNERSKILL_HerculesBeetle",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "Deffence_up1",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -11077,11 +10761,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_Horus",
     "overridePartnerSkillTextId": "PARTNERSKILL_Horus",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -11223,11 +10903,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_IceDeer",
     "overridePartnerSkillTextId": "PARTNERSKILL_IceDeer",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -11340,11 +11016,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_IceFox",
     "overridePartnerSkillTextId": "PARTNERSKILL_IceFox",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -11486,11 +11158,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_IceHorse",
     "overridePartnerSkillTextId": "PARTNERSKILL_IceHorse",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "Legend",
     "passiveSkill2": "ElementBoost_Ice_2_PAL",
     "passiveSkill3": "None",
@@ -11632,11 +11300,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_IceHorse_Dark",
     "overridePartnerSkillTextId": "PARTNERSKILL_IceHorse_Dark",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "Legend",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -11778,11 +11442,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_JetDragon",
     "overridePartnerSkillTextId": "PARTNERSKILL_JetDragon",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "Legend",
     "passiveSkill2": "ElementBoost_Dragon_2_PAL",
     "passiveSkill3": "None",
@@ -11924,11 +11584,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_Kelpie",
     "overridePartnerSkillTextId": "PARTNERSKILL_Kelpie",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -12070,11 +11726,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_Kelpie_Fire",
     "overridePartnerSkillTextId": "PARTNERSKILL_Kelpie_Fire",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -12210,11 +11862,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_KingAlpaca",
     "overridePartnerSkillTextId": "PARTNERSKILL_KingAlpaca",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -12356,11 +12004,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_KingAlpaca_Ice",
     "overridePartnerSkillTextId": "PARTNERSKILL_KingAlpaca_Ice",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -12502,11 +12146,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_KingBahamut",
     "overridePartnerSkillTextId": "PARTNERSKILL_KingBahamut",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "ElementBoost_Fire_2_PAL",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -12648,11 +12288,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_Kirin",
     "overridePartnerSkillTextId": "PARTNERSKILL_Kirin",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -12794,11 +12430,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_Kitsunebi",
     "overridePartnerSkillTextId": "PARTNERSKILL_Kitsunebi",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -12911,11 +12543,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_LavaGirl",
     "overridePartnerSkillTextId": "PARTNERSKILL_LavaGirl",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -13028,11 +12656,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_LazyCatfish",
     "overridePartnerSkillTextId": "PARTNERSKILL_LazyCatfish",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -13174,11 +12798,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_LazyDragon",
     "overridePartnerSkillTextId": "PARTNERSKILL_LazyDragon",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "PAL_FullStomach_Up_1",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -13320,11 +12940,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_LazyDragon_Electric",
     "overridePartnerSkillTextId": "PARTNERSKILL_LazyDragon_Electric",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -13466,11 +13082,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_LilyQueen",
     "overridePartnerSkillTextId": "PARTNERSKILL_LilyQueen",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "ElementBoost_Leaf_2_PAL",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -13612,11 +13224,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_LilyQueen_Dark",
     "overridePartnerSkillTextId": "PARTNERSKILL_LilyQueen_Dark",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -13758,11 +13366,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_LittleBriarRose",
     "overridePartnerSkillTextId": "PARTNERSKILL_LittleBriarRose",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -13904,11 +13508,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_LizardMan",
     "overridePartnerSkillTextId": "PARTNERSKILL_LizardMan",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -14050,11 +13650,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_LizardMan_Fire",
     "overridePartnerSkillTextId": "PARTNERSKILL_LizardMan_Fire",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -14190,11 +13786,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_Manticore",
     "overridePartnerSkillTextId": "PARTNERSKILL_Manticore",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -14330,11 +13922,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_Manticore_Dark",
     "overridePartnerSkillTextId": "PARTNERSKILL_Manticore_Dark",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -14470,11 +14058,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_Monkey",
     "overridePartnerSkillTextId": "PARTNERSKILL_Monkey",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -14610,11 +14194,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_MopBaby",
     "overridePartnerSkillTextId": "PARTNERSKILL_MopBaby",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -14750,11 +14330,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_MopKing",
     "overridePartnerSkillTextId": "PARTNERSKILL_MopKing",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -14890,11 +14466,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_Mutant",
     "overridePartnerSkillTextId": "PARTNERSKILL_Mutant",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -15030,11 +14602,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_NaughtyCat",
     "overridePartnerSkillTextId": "PARTNERSKILL_NaughtyCat",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -15170,11 +14738,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_NegativeKoala",
     "overridePartnerSkillTextId": "PARTNERSKILL_NegativeKoala",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -15310,11 +14874,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_NegativeOctopus",
     "overridePartnerSkillTextId": "PARTNERSKILL_NegativeOctopus",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -15456,11 +15016,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_NightFox",
     "overridePartnerSkillTextId": "PARTNERSKILL_NightFox",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -15602,11 +15158,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_Penguin",
     "overridePartnerSkillTextId": "PARTNERSKILL_Penguin",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -15742,11 +15294,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_PInkCat",
     "overridePartnerSkillTextId": "PARTNERSKILL_PinkCat",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "PAL_ALLAttack_down1",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -15828,11 +15376,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_PinkKangaroo",
     "overridePartnerSkillTextId": "PARTNERSKILL_PinkKangaroo",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -15974,11 +15518,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_PinkLizard",
     "overridePartnerSkillTextId": "PARTNERSKILL_PinkLizard",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "ElementResist_Normal_1_PAL",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -16120,11 +15660,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_PinkRabbit",
     "overridePartnerSkillTextId": "PARTNERSKILL_PinkRabbit",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -16266,11 +15802,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_PlantSlime",
     "overridePartnerSkillTextId": "PARTNERSKILL_PlantSlime",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -16412,11 +15944,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_PlantSlime",
     "overridePartnerSkillTextId": "PARTNERSKILL_PlantSlime",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -16552,11 +16080,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_QueenBee",
     "overridePartnerSkillTextId": "PARTNERSKILL_QueenBee",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -16692,11 +16216,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_RaijinDaughter",
     "overridePartnerSkillTextId": "PARTNERSKILL_RaijinDaughter",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -16832,11 +16352,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_RedArmorBird",
     "overridePartnerSkillTextId": "PARTNERSKILL_RedArmorBird",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -16978,11 +16494,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_RobinHood",
     "overridePartnerSkillTextId": "PARTNERSKILL_RobinHood",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -17124,11 +16636,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_RobinHood_Ground",
     "overridePartnerSkillTextId": "PARTNERSKILL_RobinHood_Ground",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -17270,11 +16778,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_Ronin",
     "overridePartnerSkillTextId": "PARTNERSKILL_Ronin",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -17416,11 +16920,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_SaintCentaur",
     "overridePartnerSkillTextId": "PARTNERSKILL_SaintCentaur",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "Legend",
     "passiveSkill2": "ElementBoost_Normal_2_PAL",
     "passiveSkill3": "None",
@@ -17562,11 +17062,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_SakuraSaurus",
     "overridePartnerSkillTextId": "PARTNERSKILL_SakuraSaurus",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -17708,11 +17204,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_SakuraSaurus_Water",
     "overridePartnerSkillTextId": "PARTNERSKILL_SakuraSaurus_Water",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -17819,11 +17311,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_ScorpionMan",
     "overridePartnerSkillTextId": "PARTNERSKILL_ScorpionMan",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -17959,11 +17447,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_Serpent",
     "overridePartnerSkillTextId": "PARTNERSKILL_Serpent",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -18099,11 +17583,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_Serpent_Ground",
     "overridePartnerSkillTextId": "PARTNERSKILL_Serpent_Ground",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -18239,11 +17719,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_SharkKid",
     "overridePartnerSkillTextId": "PARTNERSKILL_SharkKid",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -18379,11 +17855,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_SharkKid_Fire",
     "overridePartnerSkillTextId": "PARTNERSKILL_SharkKid_Fire",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -18525,11 +17997,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_SheepBall",
     "overridePartnerSkillTextId": "PARTNERSKILL_SheepBall",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -18636,11 +18104,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_SifuDog",
     "overridePartnerSkillTextId": "PARTNERSKILL_SifuDog",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -18776,11 +18240,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_SkyDragon",
     "overridePartnerSkillTextId": "PARTNERSKILL_SkyDragon",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -18916,11 +18376,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_SoldierBee",
     "overridePartnerSkillTextId": "PARTNERSKILL_SoldierBee",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -19056,11 +18512,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_Suzaku",
     "overridePartnerSkillTextId": "PARTNERSKILL_Suzaku",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -19196,11 +18648,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_Suzaku_Water",
     "overridePartnerSkillTextId": "PARTNERSKILL_Suzaku_Water",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -19342,11 +18790,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_SweetsSheep",
     "overridePartnerSkillTextId": "PARTNERSKILL_SweetsSheep",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -19453,11 +18897,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_TentacleTurtle",
     "overridePartnerSkillTextId": "PARTNERSKILL_TentacleTurtle",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -19593,11 +19033,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_ThunderBird",
     "overridePartnerSkillTextId": "PARTNERSKILL_ThunderBird",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -19733,11 +19169,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_ThunderDog",
     "overridePartnerSkillTextId": "PARTNERSKILL_ThunderDog",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -19873,11 +19305,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_ThunderDragonMan",
     "overridePartnerSkillTextId": "PARTNERSKILL_ThunderDragonMan",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "ElementBoost_Thunder_2_PAL",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -20013,11 +19441,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_Umihebi",
     "overridePartnerSkillTextId": "PARTNERSKILL_Umihebi",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "ElementBoost_Aqua_2_PAL",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -20159,11 +19583,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_Umihebi_Fire",
     "overridePartnerSkillTextId": "PARTNERSKILL_Umihebi_Fire",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -20305,11 +19725,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_VioletFairy",
     "overridePartnerSkillTextId": "PARTNERSKILL_VioletFairy",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -20445,11 +19861,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_VolcanicMonster",
     "overridePartnerSkillTextId": "PARTNERSKILL_VolcanicMonster",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -20585,11 +19997,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_VolcanicMonster_Ice",
     "overridePartnerSkillTextId": "PARTNERSKILL_VolcanicMonster_Ice",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -20671,11 +20079,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_WaterLizard",
     "overridePartnerSkillTextId": "PARTNERSKILL_WaterLizard",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -20811,11 +20215,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_WeaselDragon",
     "overridePartnerSkillTextId": "PARTNERSKILL_WeaselDragon",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -20951,11 +20351,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_Werewolf",
     "overridePartnerSkillTextId": "PARTNERSKILL_Werewolf",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -21097,11 +20493,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_WhiteMoth",
     "overridePartnerSkillTextId": "PARTNERSKILL_WhiteMoth",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -21237,11 +20629,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_WhiteTiger",
     "overridePartnerSkillTextId": "PARTNERSKILL_WhiteTiger",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -21377,11 +20765,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_WindChimes",
     "overridePartnerSkillTextId": "PARTNERSKILL_WindChimes",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -21523,11 +20907,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_WindChimes_Ice",
     "overridePartnerSkillTextId": "PARTNERSKILL_WindChimes_Ice",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -21634,11 +21014,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_WingGolem",
     "overridePartnerSkillTextId": "PARTNERSKILL_WingGolem",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -21780,11 +21156,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_WizardOwl",
     "overridePartnerSkillTextId": "PARTNERSKILL_WizardOwl",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -21891,11 +21263,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_WoolFox",
     "overridePartnerSkillTextId": "PARTNERSKILL_WoolFox",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -22037,11 +21405,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_Yeti",
     "overridePartnerSkillTextId": "PARTNERSKILL_Yeti",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -22183,11 +21547,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_Yeti_Grass",
     "overridePartnerSkillTextId": "PARTNERSKILL_Yeti_Grass",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -22278,9 +21638,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "This Pal is under investigation.",
+      "group": "Activated Buff",
       "name": "Under investigation."
     },
-    "partnerSkillIcon": 6,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -22371,9 +21731,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "This Pal is under investigation.",
+      "group": "Activated Skill",
       "name": "Ride"
     },
-    "partnerSkillIcon": 1,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -22464,9 +21824,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "This Pal is under investigation.",
+      "group": "Ground Mount",
       "name": "Under investigation."
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -22557,9 +21917,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "This Pal is under investigation.",
+      "group": "Ground Mount",
       "name": "Under investigation."
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -22641,11 +22001,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "None",
     "overridePartnerSkillTextId": "None",
-    "partnerSkill": {
-      "description": null,
-      "name": "Tentative text"
-    },
-    "partnerSkillIcon": 1,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -22736,9 +22092,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "This Pal is under investigation.",
+      "group": "Activated Skill",
       "name": "Under investigation."
     },
-    "partnerSkillIcon": 1,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -22829,9 +22185,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "This Pal is under investigation.",
+      "group": "Activated Skill",
       "name": "Under investigation."
     },
-    "partnerSkillIcon": 1,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -22922,9 +22278,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "This Pal is under investigation.",
+      "group": "Shield",
       "name": "Under investigation."
     },
-    "partnerSkillIcon": 5,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -23015,9 +22371,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "This Pal is under investigation.",
+      "group": "Ground Mount",
       "name": "Under investigation."
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -23101,9 +22457,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "This Pal is under investigation.",
+      "group": "Activated Skill",
       "name": "Tentative text"
     },
-    "partnerSkillIcon": 1,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -23185,11 +22541,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "None",
     "overridePartnerSkillTextId": "None",
-    "partnerSkill": {
-      "description": null,
-      "name": "Tentative text"
-    },
-    "partnerSkillIcon": 1,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -23280,9 +22632,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "This Pal is under investigation.",
+      "group": "Activated Skill",
       "name": "Ride"
     },
-    "partnerSkillIcon": 1,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -23364,11 +22716,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "None",
     "overridePartnerSkillTextId": "None",
-    "partnerSkill": {
-      "description": null,
-      "name": "Tentative text"
-    },
-    "partnerSkillIcon": 1,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -23459,9 +22807,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "This Pal is under investigation.",
+      "group": "Ground Mount",
       "name": "The Black Winged Shooter"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -23545,9 +22893,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "This Pal is under investigation.",
+      "group": "Activated Skill",
       "name": "Teleki Explosion"
     },
-    "partnerSkillIcon": 1,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -23673,9 +23021,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "When activated, equips to the player and becomes a shield. Sometimes drops Wool when assigned to Ranch.",
+      "group": "Shield",
       "name": "Fluffy Shield"
     },
-    "partnerSkillIcon": 5,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -23795,9 +23143,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "While in team, Cattiva helps carry supplies, increasing the player's max carrying capacity.",
+      "group": "Team Boost",
       "name": "Cat Helper"
     },
-    "partnerSkillIcon": 10,
     "passiveSkill1": "PAL_ALLAttack_down1",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -23923,9 +23271,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Sometimes lays an Egg when assigned to Ranch.",
+      "group": "Ranch Production",
       "name": "Egg Layer"
     },
-    "partnerSkillIcon": 15,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -24051,9 +23399,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "When activated, leaps onto the player's head and uses a submachine gun to follows up player attacks.",
+      "group": "Gunner",
       "name": "Lifmunk Recoil"
     },
-    "partnerSkillIcon": 3,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -24179,9 +23527,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "When activated, equips to the player and transforms into a flamethrower.",
+      "group": "Hand Weapon",
       "name": "Huggy Fire"
     },
-    "partnerSkillIcon": 2,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -24307,9 +23655,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "When activated, Fuack body surfs towards an enemy and slams into them.",
+      "group": "Activated Skill",
       "name": "Surfing Slam"
     },
-    "partnerSkillIcon": 1,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -24429,9 +23777,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "While in team, increases attack power of Electric Pals.",
+      "group": "Electric Team Buff",
       "name": "Static Electricity"
     },
-    "partnerSkillIcon": 93,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -24551,9 +23899,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "When activated, Tanzee will mercilessly fire an assault rifle at nearby enemies.",
+      "group": "Gunner",
       "name": "Cheery Rifle"
     },
-    "partnerSkillIcon": 3,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -24679,9 +24027,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "While in team, increases attack power of Fire Pals.",
+      "group": "Fire Team Buff",
       "name": "Tiny Spark"
     },
-    "partnerSkillIcon": 91,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -24807,9 +24155,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "When activated, the player equips a Rocket Launcher and fires Pengullet as ammunition. Pengullet explodes on contact and is incapacitated.",
+      "group": "Hand Weapon",
       "name": "Pengullet Cannon"
     },
-    "partnerSkillIcon": 2,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -24935,9 +24283,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "While fighting together, Fire Pals drop more items when defeated.",
+      "group": "Increased Drops",
       "name": "Brave Sailor"
     },
-    "partnerSkillIcon": 14,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -25057,9 +24405,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "When activated, equips Jolthog to the player's hand. When thrown at an enemy, causes an electrical explosion upon impact.",
+      "group": "Hand Weapon",
       "name": "Jolt Bomb"
     },
-    "partnerSkillIcon": 2,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -25179,9 +24527,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "When activated, equips Jolthog Cryst to the player's hand. When thrown at an enemy, causes an icy explosion upon impact.",
+      "group": "Hand Weapon",
       "name": "Cold Bomb"
     },
-    "partnerSkillIcon": 2,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -25307,9 +24655,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "While in team, improves efficiency of cutting trees.",
+      "group": "Team Boost",
       "name": "Logging Assistance"
     },
-    "partnerSkillIcon": 10,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -25439,11 +24787,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "PAL_NAME_PlantSlime",
     "overridePartnerSkillTextId": "PARTNERSKILL_PlantSlime",
-    "partnerSkill": {
-      "description": null,
-      "name": null
-    },
-    "partnerSkillIcon": null,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -25569,9 +24913,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Sometimes digs up items from the ground when assigned to Ranch.",
+      "group": "Ranch Production",
       "name": "Dig Here!"
     },
-    "partnerSkillIcon": 15,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -25697,9 +25041,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "While in team, increases attack power of Dark Pals.",
+      "group": "Dark Team Buff",
       "name": "Dark Knowledge"
     },
-    "partnerSkillIcon": 95,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -25819,9 +25163,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "When activated, spouts mysterious water that soothes wounds and restores the player's Health.",
+      "group": "Healing",
       "name": "Soothing Shower"
     },
-    "partnerSkillIcon": 4,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -25941,9 +25285,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "When activated, Depresso drinks a massive amount of energy drinks, causing its movement speed to increase.",
+      "group": "Activated Buff",
       "name": "Caffeine Inoculation"
     },
-    "partnerSkillIcon": 6,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -26063,9 +25407,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "While in team, increases attack power of Neutral Pals. Sometimes drops Wool when assigned to Ranch.",
+      "group": "Neutral Team Buff",
       "name": "Fluffy Wool"
     },
-    "partnerSkillIcon": 90,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -26191,9 +25535,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "While in team, appears near the player. Follows up player attacks with magic bullets.",
+      "group": "Passive Pal",
       "name": "Dream Chaser"
     },
-    "partnerSkillIcon": 11,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -26325,9 +25669,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. Increases efficiency of destroying boulders while mounted.",
+      "group": "Ground Mount",
       "name": "Hard Head"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -26453,9 +25797,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "When fighting together, applies Dark damage to the player's attacks.",
+      "group": "Dark Attacks",
       "name": "Kuudere"
     },
-    "partnerSkillIcon": 85,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -26575,9 +25919,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "When activated, generates subtle vibrations to detect nearby ore.",
+      "group": "Detection",
       "name": "Ore Detector"
     },
-    "partnerSkillIcon": 7,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -26697,9 +26041,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "While in team, can be summoned and used instead of a glider. Can float for long periods of time while gliding.",
+      "group": "Glider",
       "name": "Fried Squid"
     },
-    "partnerSkillIcon": 8,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -26819,9 +26163,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Sometimes digs up Gold Coin when assigned to Ranch.",
+      "group": "Ranch Production",
       "name": "Gold Digger"
     },
-    "partnerSkillIcon": 15,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -26947,9 +26291,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Sometimes digs up Gold Coin when assigned to Ranch.",
+      "group": "Ranch Production",
       "name": "Gold Digger"
     },
-    "partnerSkillIcon": 15,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -27069,9 +26413,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "While in team, can be summoned and used instead of a glider. Allows you to move quickly for long periods of time while gliding with this Pal.",
+      "group": "Glider",
       "name": "Zephyr Glider"
     },
-    "partnerSkillIcon": 8,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -27203,9 +26547,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. Moves slightly faster than most mounts.",
+      "group": "Ground Mount",
       "name": "Direhowl Rider"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -27331,9 +26675,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "When activated, equips to the player and transforms into an egg launcher.",
+      "group": "Hand Weapon",
       "name": "Eggbomb Launcher"
     },
-    "partnerSkillIcon": 2,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -27459,9 +26803,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "While in team, appears near the player. Automatically picks up nearby items.",
+      "group": "Passive Pal",
       "name": "Helper Bunny"
     },
-    "partnerSkillIcon": 11,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -27587,9 +26931,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Sometimes produces Milk when assigned to Ranch.",
+      "group": "Ranch Production",
       "name": "Milk Maker"
     },
-    "partnerSkillIcon": 15,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -27715,9 +27059,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "While in team, increases attack power of Grass Pals.",
+      "group": "Grass Team Buff",
       "name": "Princess Gaze"
     },
-    "partnerSkillIcon": 94,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -27837,9 +27181,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "When activated, attacks targeted enemy with a powerful Aqua Gun. While in team, increases player's attack power.",
+      "group": "Activated Skill",
       "name": "Angry Shark"
     },
-    "partnerSkillIcon": 1,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -27959,9 +27303,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "When activated, attacks targeted enemy with a powerful Spirit Fire. While in team, increases player's attack power.",
+      "group": "Activated Skill",
       "name": "Angry Shark"
     },
-    "partnerSkillIcon": 1,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -28079,11 +27423,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "None",
     "overridePartnerSkillTextId": "None",
-    "partnerSkill": {
-      "description": null,
-      "name": "Flying Trapeze"
-    },
-    "partnerSkillIcon": 8,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -28207,11 +27547,7 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "None",
     "overridePartnerSkillTextId": "None",
-    "partnerSkill": {
-      "description": null,
-      "name": "Winter Trapeze"
-    },
-    "partnerSkillIcon": 8,
+    "partnerSkill": null,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -28343,9 +27679,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. Can rapidly fire a grenade launcher while mounted.",
+      "group": "Ground Mount",
       "name": "Grenadier Panda"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -28477,9 +27813,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. Can rapidly fire a grenade launcher while mounted.",
+      "group": "Ground Mount",
       "name": "Grenadier Panda"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -28605,9 +27941,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Sometimes drops Cotton Candy when assigned to Ranch.",
+      "group": "Increased Drops",
       "name": "Candy Pop"
     },
-    "partnerSkillIcon": 14,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -28739,9 +28075,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Sometimes drops Red Berries from its back when assigned to Ranch.",
+      "group": "Ranch Production",
       "name": "Berry Picker"
     },
-    "partnerSkillIcon": 15,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -28867,9 +28203,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. Sometimes drops Wool when assigned to Ranch.",
+      "group": "Ground Mount",
       "name": "Pacapaca Wool"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -29001,9 +28337,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. Can perform a double jump while mounted. Increases efficiency of cutting trees.",
+      "group": "Ground Mount",
       "name": "Guardian of the Forest"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -29135,9 +28471,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. Can perform a double jump while mounted. Increases efficiency of cutting trees.",
+      "group": "Ground Mount",
       "name": "Guardian of the Golden Forest"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -29257,9 +28593,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden as an flying mount.",
+      "group": "Flying Mount",
       "name": "Travel Companion"
     },
-    "partnerSkillIcon": 18,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -29385,9 +28721,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "While in team, increases attack power of Neutral Pals. While at a base, increases work efficiency if working at Weapon Workbench.",
+      "group": "Hybrid Boost",
       "name": "Skilled Fingers"
     },
-    "partnerSkillIcon": 16,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -29513,9 +28849,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "When activated, attacks targeted enemy with a powerful Hellfire Claw.",
+      "group": "Activated Skill",
       "name": "Flameclaw Hunter"
     },
-    "partnerSkillIcon": 1,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -29641,9 +28977,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "When activated, attacks targeted enemy with a powerful Hellfire Claw.",
+      "group": "Activated Skill",
       "name": "Darkclaw Hunter"
     },
-    "partnerSkillIcon": 1,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -29775,9 +29111,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "When activated, attacks targeted enemy with Poison Fog.",
+      "group": "Activated Skill",
       "name": "Mysterious Scales"
     },
-    "partnerSkillIcon": 1,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -29903,9 +29239,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. Keeps the rider warm in cold environments.",
+      "group": "Ground Mount",
       "name": "Warm Body"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -30002,9 +29338,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "While in team, increases attack power of Ground Pals.",
+      "group": "Ground Team Buff",
       "name": "Soil Improver"
     },
-    "partnerSkillIcon": 97,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -30136,9 +29472,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "When activated, attacks targeted enemy with a powerful Phantom Peck.",
+      "group": "Activated Skill",
       "name": "Telepeck"
     },
-    "partnerSkillIcon": 1,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -30264,9 +29600,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "When activated, utilizes its sixth sense to detect nearby dungeons.",
+      "group": "Detection",
       "name": "Sixth Sense"
     },
-    "partnerSkillIcon": 7,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -30392,9 +29728,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "When activated, utilizes its sixth sense to detect nearby dungeons.",
+      "group": "Detection",
       "name": "Sixth Sense"
     },
-    "partnerSkillIcon": 7,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -30514,9 +29850,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "When activated, attacks targeted enemy with a powerful Jumping Claw.",
+      "group": "Activated Skill",
       "name": "Claws Glistening in the Dark"
     },
-    "partnerSkillIcon": 1,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -30642,9 +29978,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "While in team, can be summoned and used instead of a glider. Allows you to fire a gun while gliding with this Pal.",
+      "group": "Glider",
       "name": "Galeclaw Rider"
     },
-    "partnerSkillIcon": 8,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -30770,9 +30106,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "While fighting together, allows you to deal more damage to weak points.",
+      "group": "Team Boost",
       "name": "Hawk Eye"
     },
-    "partnerSkillIcon": 10,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -30898,9 +30234,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "While fighting together, allows you to deal more damage to weak points.",
+      "group": "Team Boost",
       "name": "Hawk Eye"
     },
-    "partnerSkillIcon": 10,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -31026,9 +30362,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "When activated, unleashes a primal fury that increases Gorirat's attack power.",
+      "group": "Activated Buff",
       "name": "Full-power Gorilla Mode"
     },
-    "partnerSkillIcon": 6,
     "passiveSkill1": "PAL_rude",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -31148,9 +30484,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Sometimes drops Honey when assigned to Ranch. While in team, Elizabee's stats will be increased.",
+      "group": "Ranch Production",
       "name": "Worker Bee"
     },
-    "partnerSkillIcon": 15,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -31276,9 +30612,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "While fighting together, stats will increase the more Beegarde are in your team.",
+      "group": "Team Boost",
       "name": "Queen Bee Command"
     },
-    "partnerSkillIcon": 10,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -31398,9 +30734,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. Enhances Neutral attacks while mounted.",
+      "group": "Ground Mount",
       "name": "Plump Body"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -31520,9 +30856,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "While in team, Sweepa's stats will be increased.",
+      "group": "Team Boost",
       "name": "Fluffy"
     },
-    "partnerSkillIcon": 10,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -31642,9 +30978,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. While fighting together, stats will increase the more Swee are in your team.",
+      "group": "Ground Mount",
       "name": "King of Fluff"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -31764,9 +31100,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. Applies Dragon damage to the player's attacks while mounted.",
+      "group": "Ground Mount",
       "name": "Wriggling Weasel"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -31898,9 +31234,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. Applies Electric damage to the player's attacks while mounted.",
+      "group": "Ground Mount",
       "name": "Swift Deity"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -32026,9 +31362,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "While in team, increases attack power of Ice Pals.",
+      "group": "Ice Team Buff",
       "name": "Aurora Guide"
     },
-    "partnerSkillIcon": 98,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -32154,9 +31490,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. Applies Fire damage to the player's attacks while mounted.",
+      "group": "Ground Mount",
       "name": "Red Hare"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -32282,9 +31618,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. Applies Dark damage to the player's attacks while mounted.",
+      "group": "Ground Mount",
       "name": "Black Hare"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -32422,9 +31758,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. Keeps the rider cool in hot environments.",
+      "group": "Ground Mount",
       "name": "Cool Body"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -32544,9 +31880,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. Can double jump while mounted.",
+      "group": "Ground Mount",
       "name": "Jumping Force"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -32672,9 +32008,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. Unaffected by the cold or heat while riding this Pal.",
+      "group": "Ground Mount",
       "name": "Clear Mind"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -32794,9 +32130,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "While in team, appears near the player. Follows up player attacks with lightning bolts.",
+      "group": "Passive Pal",
       "name": "Lady of Lightning"
     },
-    "partnerSkillIcon": 11,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -32916,9 +32252,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "While in team, Lunaris manipulates gravity, increasing the player's max carrying capacity.",
+      "group": "Team Boost",
       "name": "Antigravity"
     },
-    "partnerSkillIcon": 10,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -33038,9 +32374,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. Enhances Grass attacks while mounted.",
+      "group": "Ground Mount",
       "name": "Fragrant Dragon"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -33160,9 +32496,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. Enhances Electric attacks while mounted.",
+      "group": "Ground Mount",
       "name": "Thunder Dragon"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -33282,9 +32618,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden to travel on water. While mounted, prevents stamina depletion while moving over water.",
+      "group": "Ground Mount",
       "name": "Swift Swimmer"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -33404,9 +32740,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden.",
+      "group": "Ground Mount",
       "name": "Sand Swimmer"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -33532,9 +32868,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. Applies Dark damage to the player's attacks while mounted.",
+      "group": "Ground Mount",
       "name": "Messenger of Death"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -33647,9 +32983,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "When activated, performs Shell Spin, follows the player while spinning, and mines ores efficiently.",
+      "group": "Activated Skill",
       "name": "Drill Crusher"
     },
-    "partnerSkillIcon": 1,
     "passiveSkill1": "Deffence_up1",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -33775,9 +33111,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "When activated, uses ultrasonic waves to detect the location of nearby Pals.",
+      "group": "Detection",
       "name": "Ultrasonic Sensor"
     },
-    "partnerSkillIcon": 7,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -33921,9 +33257,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "While fighting together, grants the player and Lovander the life steal effect which absorbs some of the received damage and restores Health.",
+      "group": "Team Boost",
       "name": "Heart Drain"
     },
-    "partnerSkillIcon": 10,
     "passiveSkill1": "ElementResist_Normal_1_PAL",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -34049,9 +33385,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Sometimes produces Flame Organ when assigned to Ranch.",
+      "group": "Ranch Production",
       "name": "Magma Tears"
     },
-    "partnerSkillIcon": 15,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -34183,9 +33519,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden as an flying mount. Increases damage player deals to enemy weak points while mounted.",
+      "group": "Flying Mount",
       "name": "Aerial Marauder"
     },
-    "partnerSkillIcon": 18,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -34317,9 +33653,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden as an flying mount. Increases damage player deals to enemy weak points while mounted.",
+      "group": "Flying Mount",
       "name": "Aerial Marauder"
     },
-    "partnerSkillIcon": 18,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -34445,9 +33781,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "When activated, attacks targeted enemy with a powerful Iaigiri.",
+      "group": "Activated Skill",
       "name": "Brandish Blade"
     },
-    "partnerSkillIcon": 1,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -34567,9 +33903,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden as an flying mount. Applies Electric damage to the player's attacks while mounted.",
+      "group": "Flying Mount",
       "name": "Thunderous"
     },
-    "partnerSkillIcon": 18,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -34689,9 +34025,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden as an flying mount. Applies Fire damage to the player's attacks while mounted.",
+      "group": "Flying Mount",
       "name": "Flame Wing"
     },
-    "partnerSkillIcon": 18,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -34823,9 +34159,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "While fighting together, Neutral Pals drop more items when defeated.",
+      "group": "Increased Drops",
       "name": "Grimoire Collector"
     },
-    "partnerSkillIcon": 14,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -34951,9 +34287,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "When fighting together, applies Fire damage to the player's attacks.",
+      "group": "Fire Attacks",
       "name": "Lord Fox"
     },
-    "partnerSkillIcon": 81,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -35079,9 +34415,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "When fighting together, increases player's movement speed and applies Grass damage to the player's attacks.",
+      "group": "Grass Attacks",
       "name": "Grassland Speedster"
     },
-    "partnerSkillIcon": 84,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -35207,9 +34543,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "While fighting together, Ground Pals drop more items when defeated.",
+      "group": "Increased Drops",
       "name": "Purification of Gaia"
     },
-    "partnerSkillIcon": 14,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -35335,9 +34671,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "When activated, attacks targeted enemy with a powerful Blizzard Spike. Sometimes produces High Quality Cloth when assigned to Ranch.",
+      "group": "Activated Skill",
       "name": "Silk Maker"
     },
-    "partnerSkillIcon": 1,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -35457,9 +34793,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden as an flying mount. While fighting together, Dark Pals drop more items when defeated.",
+      "group": "Ground Mount",
       "name": "Amicable Holy Dragon"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -35579,9 +34915,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden as an flying mount. While fighting together, Fire Pals drop more items when defeated.",
+      "group": "Ground Mount",
       "name": "Amicable Water Dragon"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -35707,9 +35043,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "While in team, increases attack power of Water Pals.",
+      "group": "Water Team Buff",
       "name": "Aqua Spout"
     },
-    "partnerSkillIcon": 92,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -35835,9 +35171,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "While in team, increases attack power of Fire Pals.",
+      "group": "Fire Team Buff",
       "name": "Lava Spout"
     },
-    "partnerSkillIcon": 91,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -35957,9 +35293,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden to travel on water. Applies Water damage to the player's attacks while mounted.",
+      "group": "Ground Mount",
       "name": "Waterwing Dance"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -36079,9 +35415,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "While fighting together, Dragon Pals drop more items when defeated.",
+      "group": "Increased Drops",
       "name": "Dragon Hunter"
     },
-    "partnerSkillIcon": 14,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -36201,9 +35537,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. While fighting together, Grass Pals drop more items when defeated.",
+      "group": "Ground Mount",
       "name": "Hellflame Lion"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -36323,9 +35659,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. While fighting together, Neutral Pals drop more items when defeated.",
+      "group": "Ground Mount",
       "name": "Darkflame Lion"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -36451,9 +35787,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. Can rapidly fire a missile launcher while mounted.",
+      "group": "Ground Mount",
       "name": "Hungry Missile"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "PAL_FullStomach_Up_1",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -36585,9 +35921,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. Can rapidly fire a missile launcher while mounted.",
+      "group": "Ground Mount",
       "name": "Missile Party"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -36713,9 +36049,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. While in team, Broncherry helps carry supplies, increasing the player's max carrying capacity.",
+      "group": "Ground Mount",
       "name": "Overaffectionate"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -36841,9 +36177,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. While in team, Broncherry Aqua helps carry supplies, increasing the player's max carrying capacity.",
+      "group": "Ground Mount",
       "name": "Overaffectionate"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -36963,9 +36299,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "When activated, uses medicinal flowers to restore the player's Health.",
+      "group": "Healing",
       "name": "Blessing of the Flower Spirit"
     },
-    "partnerSkillIcon": 4,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -37085,9 +36421,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. Improves efficiency of mining ores while mounted.",
+      "group": "Ground Mount",
       "name": "Ore-loving Beast"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -37207,9 +36543,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. Improves efficiency of mining ores while mounted.",
+      "group": "Ground Mount",
       "name": "Ice-loving Beast"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -37329,9 +36665,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. While in team, Kingpaca helps carry supplies, increasing the player's max carrying capacity.",
+      "group": "Ground Mount",
       "name": "King of Muscles"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -37457,9 +36793,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. While in team, Kingpaca Cryst helps carry supplies, increasing the player's max carrying capacity.",
+      "group": "Ground Mount",
       "name": "King of Muscles"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -37591,9 +36927,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. Improves efficiency of cutting trees and mining ores while mounted.",
+      "group": "Ground Mount",
       "name": "Gaia Crusher"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -37725,9 +37061,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. Improves efficiency of cutting trees and mining ores while mounted.",
+      "group": "Ground Mount",
       "name": "Ice Crusher"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -37853,9 +37189,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. While in team, Wumpo helps carry supplies, increasing the player's max carrying capacity.",
+      "group": "Ground Mount",
       "name": "Guardian of the Snowy Mountain"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -37987,9 +37323,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. While in team, Wumpo Botan helps carry supplies, increasing the player's max carrying capacity.",
+      "group": "Ground Mount",
       "name": "Guardian of the Grassy Fields"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -38109,9 +37445,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "When fighting together, increases player's defense and applies Fire damage to the player's attacks.",
+      "group": "Team Boost",
       "name": "Hard Armor"
     },
-    "partnerSkillIcon": 10,
     "passiveSkill1": "Deffence_up1",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -38237,9 +37573,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. Can double jump while mounted.",
+      "group": "Ground Mount",
       "name": "Wind and Clouds"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -38365,9 +37701,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "While fighting together, grants the player and Felbat the life steal effect which absorbs some of the received damage and restores Health.",
+      "group": "Team Boost",
       "name": "Life Steal"
     },
-    "partnerSkillIcon": 10,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -38487,9 +37823,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden as an flying mount. Enhances Dragon attacks while mounted.",
+      "group": "Ground Mount",
       "name": "Sky Dragon's Affection"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -38615,9 +37951,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. Enhances Fire attacks while mounted.",
+      "group": "Ground Mount",
       "name": "Magma Kaiser"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "ElementBoost_Fire_2_PAL",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -38743,9 +38079,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden as an flying mount. Applies Dark damage to the player's attacks while mounted.",
+      "group": "Flying Mount",
       "name": "Wings of Death"
     },
-    "partnerSkillIcon": 18,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -38871,9 +38207,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden as an flying mount. Increases damage dealt to ore while mounted.",
+      "group": "Ground Mount",
       "name": "Black Anklyosaur"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "Deffence_up1",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -38999,9 +38335,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "When fighting together, increases the player's defense and Electric Pals drop more items when defeated.",
+      "group": "Increased Drops",
       "name": "Steel Scorpion"
     },
-    "partnerSkillIcon": 14,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -39133,9 +38469,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "When fighting together, applies Ground damage to the player's attacks. Sometimes dodges attacks with a high speed sidestep while in battle.",
+      "group": "Ground Attacks",
       "name": "Guardian of the Desert"
     },
-    "partnerSkillIcon": 87,
     "passiveSkill1": "ElementBoost_Earth_2_PAL",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -39255,9 +38591,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden to travel on water. While mounted, prevents stamina depletion while moving over water.",
+      "group": "Ground Mount",
       "name": "Stormbringer Sea Dragon"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "ElementBoost_Aqua_2_PAL",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -39383,9 +38719,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. Enhances Fire attacks while mounted.",
+      "group": "Ground Mount",
       "name": "Stormbringer Lava Dragon"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -39505,9 +38841,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden as an flying mount. Enhances Fire attacks while mounted.",
+      "group": "Flying Mount",
       "name": "Wings of Flame"
     },
-    "partnerSkillIcon": 18,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -39627,9 +38963,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden as an flying mount. Enhances Water attacks while mounted.",
+      "group": "Flying Mount",
       "name": "Wings of Water"
     },
-    "partnerSkillIcon": 18,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -39755,9 +39091,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. Can rapidly fire a minigun while mounted.",
+      "group": "Ground Mount",
       "name": "Yellow Tank"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -39889,9 +39225,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "When activated, the queen's soothing graces greatly restore the player's Health.",
+      "group": "Healing",
       "name": "Harvest Goddess"
     },
-    "partnerSkillIcon": 4,
     "passiveSkill1": "ElementBoost_Leaf_2_PAL",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -40023,9 +39359,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "When activated, the queen's soothing graces greatly restore the player's Health.",
+      "group": "Healing",
       "name": "Goddess of the Tranquil Light"
     },
-    "partnerSkillIcon": 4,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -40145,9 +39481,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden as an flying mount. While fighting together, Ice Pals drop more items when defeated.",
+      "group": "Flying Mount",
       "name": "Scorching Predator"
     },
-    "partnerSkillIcon": 18,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -40267,9 +39603,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "While fighting together, Water Pals drop more items when defeated.",
+      "group": "Increased Drops",
       "name": "Ferocious Thunder Dragon"
     },
-    "partnerSkillIcon": 14,
     "passiveSkill1": "ElementBoost_Thunder_2_PAL",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -40401,9 +39737,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden as an flying mount. Enhances Dark attacks while mounted.",
+      "group": "Ground Mount",
       "name": "Modified DNA"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -40529,9 +39865,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. Can triple jump while mounted.",
+      "group": "Ground Mount",
       "name": "Holy Knight of the Firmament"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "Legend",
     "passiveSkill2": "ElementBoost_Normal_2_PAL",
     "passiveSkill3": "None",
@@ -40657,9 +39993,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden. Can double jump while mounted.",
+      "group": "Ground Mount",
       "name": "Dark Knight of the Abyss"
     },
-    "partnerSkillIcon": 17,
     "passiveSkill1": "Legend",
     "passiveSkill2": "ElementBoost_Dark_2_PAL",
     "passiveSkill3": "None",
@@ -40785,9 +40121,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden as an flying mount. Changes the player's attack type to Ice and enhances Ice attacks while mounted.",
+      "group": "Flying Mount",
       "name": "Ice Steed"
     },
-    "partnerSkillIcon": 18,
     "passiveSkill1": "Legend",
     "passiveSkill2": "ElementBoost_Ice_2_PAL",
     "passiveSkill3": "None",
@@ -40913,9 +40249,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden as an flying mount. Changes the player's attack type to Dark and enhances Dark attacks while mounted.",
+      "group": "Flying Mount",
       "name": "Black Steed"
     },
-    "partnerSkillIcon": 18,
     "passiveSkill1": "Legend",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -41053,9 +40389,9 @@
     "overridePartnerSkillTextId": "None",
     "partnerSkill": {
       "description": "Can be ridden as an flying mount. Can rapidly fire a missile launcher while mounted.",
+      "group": "Flying Mount",
       "name": "Aerial Missile"
     },
-    "partnerSkillIcon": 18,
     "passiveSkill1": "Legend",
     "passiveSkill2": "ElementBoost_Dragon_2_PAL",
     "passiveSkill3": "None",
