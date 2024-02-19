@@ -9,8 +9,9 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 import { Switch } from '@/components/ui/switch';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import mapLocationsJson from '@/data/map-locations.json';
-import { palLocations } from '@/data/parsed';
+import palLocationsJson from '@/data/pal-locations.json';
 import { cn, parseAsArrayOfStrings, useQueryString } from '@/lib/utils';
+import { PalLocationSchema } from '@/schemas/pal-location';
 import { useToggle } from '@uidotdev/usehooks';
 import { capitalCase } from 'change-case';
 import { CRS, Icon } from 'leaflet';
@@ -20,9 +21,11 @@ import Image from 'next/image';
 import { parseAsBoolean, useQueryState } from 'nuqs';
 import { useEffect, useState } from 'react';
 import { Circle, MapContainer, Marker, Popup, TileLayer, useMapEvent, useMapEvents } from 'react-leaflet';
+import { z } from 'zod';
 
-const mapLocations = mapLocationsJson.filter((l) => l.enabled);
-const BOSS_PALS = palLocations.filter((pal) => pal.isBoss);
+const MAP_LOCATIONS = mapLocationsJson.filter((l) => l.enabled);
+const PAL_LOCATIONS = z.array(PalLocationSchema).parse(palLocationsJson);
+const BOSS_PALS = PAL_LOCATIONS.filter((pal) => pal.isBoss);
 
 type LocationGroup = {
   name: string;
@@ -142,7 +145,7 @@ export default function MyMap() {
                       <div className="flex flex-1 items-center justify-between">
                         <span className="line-clamp-1 text-left">{category.name}</span>
                         <span className="ml-2 text-xs text-gray-11 sm:ml-0">
-                          {category.count ?? mapLocations.find((l) => l.name === category.name)?.locations.length}
+                          {category.count ?? MAP_LOCATIONS.find((l) => l.name === category.name)?.locations.length}
                         </span>
                       </div>
                     </ToggleGroupItem>
@@ -183,9 +186,8 @@ export default function MyMap() {
           {/* All location groups */}
           {Object.values(LOCATION_GROUPS).map((gorup) =>
             gorup.map((category) =>
-              mapLocations
-                .find((m) => m.name === category.name && filters.includes(category.name))
-                ?.locations.map((location) => (
+              MAP_LOCATIONS.find((m) => m.name === category.name && filters.includes(category.name))?.locations.map(
+                (location) => (
                   <Marker
                     key={location.x}
                     position={getLeafletCoords(location)}
@@ -200,17 +202,29 @@ export default function MyMap() {
                       {category.name}: {getInGameCoords(getLeafletCoords(location))}
                     </Popup>
                   </Marker>
-                )),
+                ),
+              ),
             ),
           )}
 
           {/* Pal Locations */}
           {palFilter &&
-            palLocations
-              .find((p) => p.id === palFilter)
-              ?.locations[
-                showNightLocations ? 'night' : 'day'
-              ].map((location, index) => <Circle key={`${location.x},${location.y},${location.z}-${index}`} center={getLeafletCoords(location)} pathOptions={{ fillColor: showNightLocations ? '#5ecdff' : 'orange', color: showNightLocations ? '#3197c4' : '#bf800a', weight: 1, opacity: 0.2, fillOpacity: 0.5 }} radius={2} />)}
+            PAL_LOCATIONS.find((p) => p.id === palFilter)?.locations[showNightLocations ? 'night' : 'day'].map(
+              (location, index) => (
+                <Circle
+                  key={`${location.x},${location.y},${location.z}-${index}`}
+                  center={getLeafletCoords(location)}
+                  pathOptions={{
+                    fillColor: showNightLocations ? '#5ecdff' : 'orange',
+                    color: showNightLocations ? '#3197c4' : '#bf800a',
+                    weight: 1,
+                    opacity: 0.2,
+                    fillOpacity: 0.5,
+                  }}
+                  radius={2}
+                />
+              ),
+            )}
 
           {/* Boss Pals */}
           {filters.includes('Boss Pals') &&
