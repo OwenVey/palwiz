@@ -58,7 +58,7 @@ const skillTypes = ['active', 'passive', 'partner'] as const;
 export function SkillsGrid() {
   const router = useRouter();
 
-  const [type, setType] = useQueryState(
+  const [type] = useQueryState(
     'type',
     parseAsStringLiteral(skillTypes).withDefault('active').withOptions({ clearOnDefault: true }),
   );
