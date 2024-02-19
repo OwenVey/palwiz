@@ -38,13 +38,9 @@ export default function SkillPage({ params }: { params: { id: string } }) {
   return (
     <div className="flex flex-col gap-4 md:flex-row">
       <Card className="h-fit md:sticky md:top-[81px] md:w-72">
-        <div className="absolute right-0 flex flex-col gap-2 pr-[inherit]">
+        <div className="flex items-center justify-center gap-2">
           <ElementImage element={skill.element} className="size-8" />
-        </div>
-
-        <div className="mt-2 text-center">
           <h1 className="text-2xl font-semibold text-gray-12">{skill.name}</h1>
-          {/* <p className="capitalize text-gray-11">{item.typeA}</p> */}
         </div>
 
         <dl className="mt-4">
