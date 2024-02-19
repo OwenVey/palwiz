@@ -6,6 +6,7 @@ import { PartnerSkillImage } from '@/components/PartnerSkillImage';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { normalPals } from '@/data/parsed';
 import { getPalById } from '@/lib/utils';
+import { notFound } from 'next/navigation';
 
 export function generateMetadata({ params }: { params: { id: string } }) {
   const pal = getPalById(params.id);
@@ -20,9 +21,7 @@ export function generateStaticParams() {
 export default function PalPage({ params }: { params: { id: string } }) {
   const pal = getPalById(params.id);
 
-  if (!pal) {
-    return <div>No pal found with id: {params.id}</div>;
-  }
+  if (!pal) notFound();
 
   return (
     <div className="flex flex-col gap-4 md:flex-row">

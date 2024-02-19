@@ -7,6 +7,7 @@ import { allPals, items } from '@/data/parsed';
 import { cn, getBadgeVariantForRate, getItemById, getItemRecipeById, notEmpty } from '@/lib/utils';
 import Image from 'next/image';
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
 
 export function generateMetadata({ params }: { params: { id: string } }) {
   const item = getItemById(params.id);
@@ -21,9 +22,7 @@ export function generateStaticParams() {
 export default function ItemPage({ params }: { params: { id: string } }) {
   const item = getItemById(params.id);
 
-  if (!item) {
-    return <div>Could not find item with id: {params.id}</div>;
-  }
+  if (!item) notFound();
 
   const recipe = getItemRecipeById(item.id);
   const materials = recipe?.materials.map((m) => ({ ...m, item: getItemById(m.id)! })).filter(notEmpty) ?? [];

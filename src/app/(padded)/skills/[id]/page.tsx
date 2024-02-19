@@ -5,6 +5,7 @@ import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { activeSkills, normalPals } from '@/data/parsed';
 import { cn, getSkillById } from '@/lib/utils';
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
 
 export function generateMetadata({ params }: { params: { id: string } }) {
   const skill = getSkillById(params.id);
@@ -19,9 +20,7 @@ export function generateStaticParams() {
 export default function SkillPage({ params }: { params: { id: string } }) {
   const skill = getSkillById(params.id);
 
-  if (!skill) {
-    return <div>Could not find skill with id: {params.id}</div>;
-  }
+  if (!skill) notFound();
 
   const palsWithSkill = normalPals
     .filter((pal) => pal.activeSkills.some(({ id }) => id === skill.id))
