@@ -6,12 +6,15 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
+import { MultiSelect } from '@/components/ui/multi-select';
 import { Select, SelectContent, SelectItem, SelectTrigger } from '@/components/ui/select';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
+import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
 import { PAL_ELEMENTS } from '@/constants';
-import { skills } from '@/data/parsed';
-import { parseAsArrayOfStrings, sortArrayByPropertyInDirection } from '@/lib/utils';
-import { type Skill } from '@/types';
+import { activeSkills, passiveSkills } from '@/data/parsed';
+import { cn, parseAsArrayOfStrings, sortArrayByPropertyInDirection, useQueryString } from '@/lib/utils';
+import { type ActiveSkill, type PassiveSkill } from '@/types';
 import { useDebounce } from '@uidotdev/usehooks';
 import { capitalCase } from 'change-case';
 import {
@@ -20,42 +23,70 @@ import {
   ArrowUpDownIcon,
   FilterXIcon,
   SearchIcon,
+  UserRoundIcon,
 } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
-import { parseAsString, parseAsStringLiteral, useQueryState } from 'nuqs';
+import { useRouter } from 'next/navigation';
+import { parseAsStringLiteral, useQueryState } from 'nuqs';
 import { memo, useMemo } from 'react';
 
-const SKILL_SORTS = [
-  { label: 'Power', value: 'power' },
-  { label: 'Name', value: 'name' },
-  { label: 'Cooldown Time', value: 'cooldownTime' },
-  { label: 'Min Range', value: 'minRange' },
-  { label: 'Max Range', value: 'maxRange' },
-] satisfies Array<{ label: string; value: keyof Skill }>;
+const SORTS = {
+  active: [
+    { label: 'Power', value: 'power' },
+    { label: 'Name', value: 'name' },
+    { label: 'Cooldown Time', value: 'cooldownTime' },
+    { label: 'Min Range', value: 'minRange' },
+    { label: 'Max Range', value: 'maxRange' },
+  ] satisfies Array<{ label: string; value: keyof ActiveSkill }>,
+  passive: [
+    { label: 'Name', value: 'name' },
+    { label: 'Rank', value: 'rank' },
+  ] satisfies Array<{ label: string; value: keyof PassiveSkill }>,
+  partner: [],
+} as const;
 
-const ALL_EFFECTS = [...new Set(skills.flatMap((skill) => skill.effects.map((effect) => effect.name)))];
+const ACTIVE_SKILL_EFFECTS = [
+  ...new Set(activeSkills.flatMap(({ effects }) => effects.map(({ name }) => name))),
+].sort();
+const PASSIVE_SKILL_TYPES = [
+  ...new Set(passiveSkills.flatMap(({ effects }) => effects.map(({ type }) => type))),
+].sort();
+const skillTypes = ['active', 'passive', 'partner'] as const;
+// type SkillType = (typeof skillTypes)[number];
 
 export function SkillsGrid() {
-  const [search, setSearch] = useQueryState('search', { defaultValue: '', clearOnDefault: true });
-  const [sort, setSort] = useQueryState(
-    'sort',
-    parseAsStringLiteral(SKILL_SORTS.map((s) => s.value))
-      .withDefault('name')
-      .withOptions({ clearOnDefault: true }),
+  const router = useRouter();
+
+  const [type, setType] = useQueryState(
+    'type',
+    parseAsStringLiteral(skillTypes).withDefault('active').withOptions({ clearOnDefault: true }),
   );
+  const [search, setSearch] = useQueryString('search');
+  const debouncedSearch = useDebounce(search, 100);
+  const [sort, setSort] = useQueryState('sort', {
+    defaultValue: type === 'active' ? 'name' : type === 'passive' ? 'rank' : 'name',
+    clearOnDefault: true,
+  });
   const [sortDirection, setSortDirection] = useQueryState(
     'sortDirection',
-    parseAsStringLiteral(['asc', 'desc']).withDefault('asc').withOptions({ clearOnDefault: true }),
+    parseAsStringLiteral(['asc', 'desc'])
+      .withDefault(type === 'active' ? 'asc' : type === 'passive' ? 'desc' : 'asc')
+      .withOptions({ clearOnDefault: true }),
   );
+
+  // Active skill filters
   const [elements, setElements] = useQueryState('elements', parseAsArrayOfStrings);
-  const [category, setCategory] = useQueryState('category', parseAsString);
+  const [category, setCategory] = useQueryString('category');
   const [effects, setEffects] = useQueryState('effects', parseAsArrayOfStrings);
 
-  const debouncedSearch = useDebounce(search, 100);
+  // Passive skill filter
+  const [types, setTypes] = useQueryState('types', parseAsArrayOfStrings);
+  const [rank, setRank] = useQueryString('rank');
 
-  const filteredSkills = useMemo(
+  const filteredActiveSkills = useMemo(
     () =>
-      sortArrayByPropertyInDirection(skills, sort, sortDirection)
+      sortArrayByPropertyInDirection(activeSkills, sort as keyof ActiveSkill, sortDirection)
         .filter(({ name }) => (debouncedSearch ? name.toLowerCase().includes(debouncedSearch.toLowerCase()) : true))
         .filter((skill) => (elements.length > 0 ? elements.includes(skill.element) : true))
         .filter((skill) => (category ? skill.category.toLowerCase() === category : true))
@@ -65,9 +96,34 @@ export function SkillsGrid() {
     [category, debouncedSearch, effects, elements, sort, sortDirection],
   );
 
+  const filteredPassiveSkills = useMemo(
+    () =>
+      sortArrayByPropertyInDirection(passiveSkills, sort as keyof PassiveSkill, sortDirection)
+        .filter(({ name }) => (debouncedSearch ? name.toLowerCase().includes(debouncedSearch.toLowerCase()) : true))
+        .filter((skill) => (types.length > 0 ? types.some((type) => skill.effects.some((e) => e.type === type)) : true))
+        .filter((skill) => (rank ? (rank === 'positive' ? skill.rank > 0 : skill.rank < 0) : true)),
+    [debouncedSearch, rank, sort, sortDirection, types],
+  );
+
   return (
-    <div className="flex flex-col gap-4 md:flex-row">
+    <Tabs
+      className="flex flex-col gap-4 md:flex-row"
+      value={type}
+      onValueChange={(v) => router.replace(`/skills/?type=${v}${search && `&search=${search}`}`)}
+    >
       <Card className="flex h-fit flex-col gap-5 md:sticky md:top-[81px] md:w-72">
+        <TabsList className="w-full">
+          <TabsTrigger value="active" className="flex-1">
+            Active
+          </TabsTrigger>
+          <TabsTrigger value="passive" className="flex-1">
+            Passive
+          </TabsTrigger>
+          <TabsTrigger value="partner" className="flex-1">
+            Partner
+          </TabsTrigger>
+        </TabsList>
+
         <Input
           className="w-full"
           label="Search"
@@ -78,11 +134,11 @@ export function SkillsGrid() {
         />
 
         <div className="flex flex-col items-end gap-2">
-          <Select value={sort ?? ''} onValueChange={(v) => setSort(v as (typeof SKILL_SORTS)[number]['value'])}>
+          <Select value={sort} onValueChange={setSort}>
             <SelectTrigger label="Sort" icon={ArrowUpDownIcon} placeholder="Sort by" />
 
             <SelectContent>
-              {SKILL_SORTS.map(({ label, value }) => (
+              {SORTS[type].map(({ label, value }) => (
                 <SelectItem key={value} value={value}>
                   {label}
                 </SelectItem>
@@ -107,55 +163,77 @@ export function SkillsGrid() {
           </ToggleGroup>
         </div>
 
-        <CollapsibleFilter label="Elements" defaultOpen>
-          <ToggleGroup
-            type="multiple"
-            className="md:grid md:grid-cols-6 md:gap-1"
-            value={elements}
-            onValueChange={(e) => setElements(e.length > 0 ? e : null)}
-          >
-            {PAL_ELEMENTS.map((element) => (
-              <ToggleGroupItem key={element} value={element} className="w-10 p-0 md:w-auto">
-                <ElementImage element={element} />
-              </ToggleGroupItem>
-            ))}
-          </ToggleGroup>
-        </CollapsibleFilter>
+        <TabsContent value="active" className="space-y-5">
+          <CollapsibleFilter label="Elements">
+            <ToggleGroup
+              type="multiple"
+              className="md:grid md:grid-cols-6 md:gap-1"
+              value={elements}
+              onValueChange={(e) => setElements(e.length > 0 ? e : null)}
+            >
+              {PAL_ELEMENTS.map((element) => (
+                <ToggleGroupItem key={element} value={element} className="w-10 p-0 md:w-auto">
+                  <ElementImage element={element} />
+                </ToggleGroupItem>
+              ))}
+            </ToggleGroup>
+          </CollapsibleFilter>
 
-        <CollapsibleFilter label="Category" defaultOpen>
-          <ToggleGroup
-            type="single"
-            className="flex w-full"
-            size="sm"
-            value={category ?? ''}
-            onValueChange={(v) => setCategory(v ? v : null)}
-          >
-            <ToggleGroupItem value="melee" className="flex-1">
-              Melee
-            </ToggleGroupItem>
-            <ToggleGroupItem value="shot" className="flex-1">
-              Shot
-            </ToggleGroupItem>
-          </ToggleGroup>
-        </CollapsibleFilter>
-
-        <CollapsibleFilter label="Effect" defaultOpen>
-          <ToggleGroup
-            type="multiple"
-            className="md:grid md:grid-cols-2 md:gap-1"
-            value={effects}
-            onValueChange={(v) => setEffects(v.length > 0 ? v : null)}
-          >
-            {ALL_EFFECTS.map((effect) => (
-              <ToggleGroupItem key={effect} value={effect} size="sm">
-                {capitalCase(effect)}
+          <CollapsibleFilter label="Category">
+            <ToggleGroup type="single" className="flex w-full" size="sm" value={category} onValueChange={setCategory}>
+              <ToggleGroupItem value="melee" className="flex-1">
+                Melee
               </ToggleGroupItem>
-            ))}
-          </ToggleGroup>
-        </CollapsibleFilter>
+              <ToggleGroupItem value="shot" className="flex-1">
+                Shot
+              </ToggleGroupItem>
+            </ToggleGroup>
+          </CollapsibleFilter>
+
+          <CollapsibleFilter label="Effect">
+            <ToggleGroup
+              type="multiple"
+              className="md:grid md:grid-cols-2 md:gap-1"
+              value={effects}
+              onValueChange={(v) => setEffects(v.length > 0 ? v : null)}
+            >
+              {ACTIVE_SKILL_EFFECTS.map((effect) => (
+                <ToggleGroupItem key={effect} value={effect} size="sm">
+                  {capitalCase(effect)}
+                </ToggleGroupItem>
+              ))}
+            </ToggleGroup>
+          </CollapsibleFilter>
+        </TabsContent>
+
+        <TabsContent value="passive" className="space-y-5">
+          <MultiSelect
+            label="Types"
+            placeholder="Select type(s)"
+            emptyIndicator="No types found"
+            value={types.map((type) => ({ label: capitalCase(type), value: type }))}
+            onChange={(options) => setTypes(options.length ? options.map(({ value }) => value) : null)}
+            options={PASSIVE_SKILL_TYPES.map((type) => ({ label: capitalCase(type), value: type }))}
+          />
+
+          <CollapsibleFilter label="Rank">
+            <ToggleGroup type="single" className="flex w-full" size="sm" value={rank} onValueChange={setRank}>
+              <ToggleGroupItem value="negative" variant="red" className="flex-1">
+                Negative
+              </ToggleGroupItem>
+              <ToggleGroupItem value="positive" variant="yellow" className="flex-1">
+                Positive
+              </ToggleGroupItem>
+            </ToggleGroup>
+          </CollapsibleFilter>
+        </TabsContent>
+
+        <TabsContent value="partner" className="space-y-5">
+          Partner Filters
+        </TabsContent>
 
         <Button asChild variant="secondary" className="w-full">
-          <Link href="/skills">
+          <Link href={{ pathname: '/skills', query: { type } }}>
             <FilterXIcon className="mr-2 size-4" />
             Clear Filters
           </Link>
@@ -163,14 +241,20 @@ export function SkillsGrid() {
       </Card>
 
       <div className="flex-1 @container">
-        <Grid skills={filteredSkills} />
+        <TabsContent value="active">
+          <ActiveSkills skills={filteredActiveSkills} />
+        </TabsContent>
+
+        <TabsContent value="passive">
+          <PassiveSkills skills={filteredPassiveSkills} />
+        </TabsContent>
       </div>
-    </div>
+    </Tabs>
   );
 }
 
-const Grid = memo(function Grid({ skills }: { skills: Skill[] }) {
-  if (skills.length === 0) return <div className="grid h-full place-items-center text-gray-11">No skills found</div>;
+const ActiveSkills = memo(function ActiveSkills({ skills }: { skills: ActiveSkill[] }) {
+  if (skills.length === 0) return <div className="mt-28 flex justify-center text-gray-11">No active skills found</div>;
 
   return (
     <div className="grid grid-cols-1 gap-4 @2xl:grid-cols-2">
@@ -181,7 +265,7 @@ const Grid = memo(function Grid({ skills }: { skills: Skill[] }) {
 
             <div className="flex items-center gap-2">
               <ElementImage element={skill.element} />
-              <div>{skill.name}</div>
+              <div className="text-gray-12">{skill.name}</div>
             </div>
 
             <div className="flex gap-2">
@@ -199,6 +283,68 @@ const Grid = memo(function Grid({ skills }: { skills: Skill[] }) {
             <p className="text-sm text-gray-11">{skill.description}</p>
           </Card>
         </Link>
+      ))}
+    </div>
+  );
+});
+
+const PassiveSkills = memo(function PassiveSkills({ skills }: { skills: PassiveSkill[] }) {
+  if (skills.length === 0) return <div className="mt-28 flex justify-center text-gray-11">No passive skills found</div>;
+
+  return (
+    <div className="grid grid-cols-1 gap-4 @2xl:grid-cols-2">
+      {skills.map((skill) => (
+        <Card
+          key={skill.internalId}
+          className={cn(
+            'relative flex h-full flex-col gap-2',
+            skill.rank < 0 && 'border-red-4 bg-red-2',
+            skill.rank > 1 && 'border-yellow-4 bg-yellow-2',
+          )}
+        >
+          {skill.effects.map((e) => e.target).includes('Trainer') && (
+            <Tooltip>
+              <TooltipTrigger className="absolute right-2 top-2 font-sans">
+                <Badge className="p-1">
+                  <UserRoundIcon className="size-4 text-gray-11" />
+                </Badge>
+              </TooltipTrigger>
+              <TooltipContent>Applies to player</TooltipContent>
+            </Tooltip>
+          )}
+
+          <div className="flex items-center gap-2">
+            <Image
+              src={`/images/passive-ranks/${skill.rank}.webp`}
+              className="scale-75"
+              height={24}
+              width={24}
+              alt={`rank ${skill.rank}`}
+              unoptimized
+            />
+            <div className={cn('text-gray-12', skill.rank < 0 && 'text-red-12', skill.rank > 1 && 'text-yellow-12')}>
+              {skill.name}
+            </div>
+          </div>
+
+          <div className="flex gap-2">
+            {skill.effects.map((effect) => (
+              <Badge
+                key={effect.type}
+                className="font-sans font-normal"
+                variant={effect.value < 0 || skill.rank < 0 ? 'red' : 'green'}
+              >
+                {capitalCase(effect.type)}:&nbsp;
+                <span className="font-mono font-bold">
+                  {effect.value > 0 && '+'}
+                  {effect.value}%
+                </span>
+              </Badge>
+            ))}
+          </div>
+
+          {/* {skill.description && <p className="text-sm text-gray-11">{skill.description}</p>} */}
+        </Card>
       ))}
     </div>
   );

@@ -6,6 +6,7 @@ import { SearchIcon } from 'lucide-react';
 import * as React from 'react';
 
 import { Dialog, DialogContent } from '@/components/ui/dialog';
+import { ScrollArea } from '@/components/ui/scroll-area';
 import { cn } from '@/lib/utils';
 
 const Command = React.forwardRef<
@@ -56,12 +57,10 @@ CommandInput.displayName = CommandPrimitive.Input.displayName;
 const CommandList = React.forwardRef<
   React.ElementRef<typeof CommandPrimitive.List>,
   React.ComponentPropsWithoutRef<typeof CommandPrimitive.List>
->(({ className, ...props }, ref) => (
-  <CommandPrimitive.List
-    ref={ref}
-    className={cn('max-h-[300px] overflow-y-auto overflow-x-hidden', className)}
-    {...props}
-  />
+>(({ children, ...props }, ref) => (
+  <CommandPrimitive.List ref={ref} {...props}>
+    <ScrollArea className="flex max-h-72 flex-col">{children}</ScrollArea>
+  </CommandPrimitive.List>
 ));
 
 CommandList.displayName = CommandPrimitive.List.displayName;
@@ -69,7 +68,7 @@ CommandList.displayName = CommandPrimitive.List.displayName;
 const CommandEmpty = React.forwardRef<
   React.ElementRef<typeof CommandPrimitive.Empty>,
   React.ComponentPropsWithoutRef<typeof CommandPrimitive.Empty>
->((props, ref) => <CommandPrimitive.Empty ref={ref} className="py-6 text-center text-sm" {...props} />);
+>((props, ref) => <CommandPrimitive.Empty ref={ref} className="py-6 text-center text-sm text-gray-11" {...props} />);
 
 CommandEmpty.displayName = CommandPrimitive.Empty.displayName;
 

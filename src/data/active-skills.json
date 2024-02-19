@@ -1468,7 +1468,7 @@
   {
     "category": "Melee",
     "cooldownTime": 11,
-    "description": "Warsect 's exclusive skill. Skewers enemies with its four sturdy horns.",
+    "description": "Warsect's exclusive skill. Skewers enemies with its four sturdy horns.",
     "effects": [],
     "element": "ground",
     "id": "giga-horn",
@@ -1785,7 +1785,7 @@
   {
     "category": "Melee",
     "cooldownTime": 7,
-    "description": "WereWolf's exclusive skill. Leaps forward and attacks twice with vicious claws imbued with dark energy.",
+    "description": "Loupmoon's exclusive skill. Leaps forward and attacks twice with vicious claws imbued with dark energy.",
     "effects": [
       {
         "name": "Darkness",

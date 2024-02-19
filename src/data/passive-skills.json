@@ -1,0 +1,1630 @@
+[
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "MaxHP",
+        "value": 5
+      }
+    ],
+    "internalId": "HP_ACC_up1",
+    "name": "Health Up Lv. 1",
+    "rank": 1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "MaxHP",
+        "value": 10
+      }
+    ],
+    "internalId": "HP_ACC_up2",
+    "name": "Health Up Lv. 2",
+    "rank": 2
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "MaxHP",
+        "value": 15
+      }
+    ],
+    "internalId": "HP_ACC_up3",
+    "name": "Health Up Lv. 3",
+    "rank": 3
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ShotAttack",
+        "value": 5
+      }
+    ],
+    "internalId": "Attack_ACC_up1",
+    "name": "Attack Up Lv. 1",
+    "rank": 1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ShotAttack",
+        "value": 10
+      }
+    ],
+    "internalId": "Attack_ACC_up2",
+    "name": "Attack Up Lv. 2",
+    "rank": 2
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ShotAttack",
+        "value": 15
+      }
+    ],
+    "internalId": "Attack_ACC_up3",
+    "name": "Attack Up Lv. 3",
+    "rank": 3
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "Defense",
+        "value": 10
+      }
+    ],
+    "internalId": "defense_ACC_up1",
+    "name": "Defense Up Lv. 1",
+    "rank": 1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "Defense",
+        "value": 20
+      }
+    ],
+    "internalId": "defense_ACC_up2",
+    "name": "Defense Up Lv. 2",
+    "rank": 2
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "Defense",
+        "value": 30
+      }
+    ],
+    "internalId": "defense_ACC_up3",
+    "name": "Defense Up Lv. 3",
+    "rank": 3
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "CraftSpeed",
+        "value": 10
+      }
+    ],
+    "internalId": "WorkSpeed_ACC_up1",
+    "name": "Speedy Worker Lv. 1",
+    "rank": 1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "CraftSpeed",
+        "value": 15
+      }
+    ],
+    "internalId": "WorkSpeed_ACC_up2",
+    "name": "Speedy Worker Lv. 2",
+    "rank": 2
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "CraftSpeed",
+        "value": 20
+      }
+    ],
+    "internalId": "WorkSpeed_ACC_up3",
+    "name": "Speedy Worker Lv. 3",
+    "rank": 3
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "CraftSpeed",
+        "value": 50
+      }
+    ],
+    "internalId": "CraftSpeed_up2",
+    "name": "Artisan",
+    "rank": 3
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "CraftSpeed",
+        "value": 20
+      }
+    ],
+    "internalId": "CraftSpeed_up1",
+    "name": "Serious",
+    "rank": 2
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "CraftSpeed",
+        "value": -10
+      }
+    ],
+    "internalId": "CraftSpeed_down1",
+    "name": "Clumsy",
+    "rank": -1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "CraftSpeed",
+        "value": -30
+      }
+    ],
+    "internalId": "CraftSpeed_down2",
+    "name": "Slacker",
+    "rank": -3
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "Defense",
+        "value": 20
+      }
+    ],
+    "internalId": "Deffence_up2",
+    "name": "Burly Body",
+    "rank": 3
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "Defense",
+        "value": 10
+      }
+    ],
+    "internalId": "Deffence_up1",
+    "name": "Hard Skin",
+    "rank": 1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "Defense",
+        "value": -10
+      }
+    ],
+    "internalId": "Deffence_down1",
+    "name": "Downtrodden",
+    "rank": -1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "Defense",
+        "value": -20
+      }
+    ],
+    "internalId": "Deffence_down2",
+    "name": "Brittle",
+    "rank": -3
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ShotAttack",
+        "value": 30
+      },
+      {
+        "target": "Self",
+        "type": "CraftSpeed",
+        "value": -50
+      }
+    ],
+    "internalId": "Noukin",
+    "name": "Musclehead",
+    "rank": 2
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "CollectItem",
+        "value": 0
+      }
+    ],
+    "internalId": "CollectItem_Egg",
+    "name": "Egg Layer",
+    "rank": 1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "CollectItem",
+        "value": 0
+      }
+    ],
+    "internalId": "CollectItem_Milk",
+    "name": "Milk Maker",
+    "rank": 1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "CollectItem",
+        "value": 0
+      }
+    ],
+    "internalId": "CollectItem_Berries",
+    "name": "Berry Picker",
+    "rank": 1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "CollectItem",
+        "value": 0
+      }
+    ],
+    "internalId": "CollectItem_Sweets",
+    "name": "Confectioner",
+    "rank": 1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "CollectItem",
+        "value": 0
+      }
+    ],
+    "internalId": "CollectItem_Money",
+    "name": "Gold Digger",
+    "rank": 1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "CollectItem",
+        "value": 0
+      }
+    ],
+    "internalId": "CollectItem_Wool_Alpaca",
+    "name": "Wool Maker",
+    "rank": 1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "CollectItem",
+        "value": 0
+      }
+    ],
+    "internalId": "CollectItem_Wool_SheepBall",
+    "name": "Wool Maker",
+    "rank": 1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "CollectItem",
+        "value": 0
+      }
+    ],
+    "internalId": "CollectItem_Wool_WhiteMoth",
+    "name": "Silk Spinner",
+    "rank": 1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "TemperatureResist_Heat",
+        "value": 1
+      }
+    ],
+    "internalId": "TemperatureResist_Heat1",
+    "name": "Heat Resistant Lv. 1",
+    "rank": 1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "TemperatureResist_Heat",
+        "value": 2
+      }
+    ],
+    "internalId": "TemperatureResist_Heat2",
+    "name": "Heat Resistant Lv. 2",
+    "rank": 2
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "TemperatureResist_Heat",
+        "value": 3
+      }
+    ],
+    "internalId": "TemperatureResist_Heat3",
+    "name": "Heat Resistant Lv. 3",
+    "rank": 3
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "TemperatureResist_Cold",
+        "value": 1
+      }
+    ],
+    "internalId": "TemperatureResist_Cold1",
+    "name": "Cold Resistant Lv. 1",
+    "rank": 1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "TemperatureResist_Cold",
+        "value": 2
+      }
+    ],
+    "internalId": "TemperatureResist_Cold2",
+    "name": "Cold Resistant Lv. 2",
+    "rank": 2
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "TemperatureResist_Cold",
+        "value": 3
+      }
+    ],
+    "internalId": "TemperatureResist_Cold3",
+    "name": "Cold Resistant Lv. 3",
+    "rank": 3
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "CraftSpeed",
+        "value": 15
+      },
+      {
+        "target": "Self",
+        "type": "ShotAttack",
+        "value": 15
+      }
+    ],
+    "internalId": "Rare",
+    "name": "Lucky",
+    "rank": 3
+  },
+  {
+    "description": "Attack +20% Defense +20% Movement Speed increases 15%",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ShotAttack",
+        "value": 20
+      },
+      {
+        "target": "Self",
+        "type": "Defense",
+        "value": 20
+      },
+      {
+        "target": "Self",
+        "type": "MoveSpeed",
+        "value": 15
+      }
+    ],
+    "internalId": "Legend",
+    "name": "Legend",
+    "rank": 3
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Trainer",
+        "type": "MaxInventoryWeight",
+        "value": 50
+      }
+    ],
+    "internalId": "MaxInventoryWeight_up",
+    "name": "Max Carrying Capacity Lv. 1",
+    "rank": 3
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Trainer",
+        "type": "MaxInventoryWeight",
+        "value": 150
+      }
+    ],
+    "internalId": "MaxInventoryWeight_up2",
+    "name": "Max Carrying Capacity Lv. 2",
+    "rank": -1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Trainer",
+        "type": "MaxInventoryWeight",
+        "value": 200
+      }
+    ],
+    "internalId": "MaxInventoryWeight_up3",
+    "name": "Max Carrying Capacity Lv. 3",
+    "rank": -1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ShotAttack",
+        "value": 20
+      }
+    ],
+    "internalId": "PAL_ALLAttack_up2",
+    "name": "Ferocious",
+    "rank": 3
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ShotAttack",
+        "value": 10
+      }
+    ],
+    "internalId": "PAL_ALLAttack_up1",
+    "name": "Brave",
+    "rank": 1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ShotAttack",
+        "value": -10
+      }
+    ],
+    "internalId": "PAL_ALLAttack_down1",
+    "name": "Coward",
+    "rank": -1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ShotAttack",
+        "value": -20
+      }
+    ],
+    "internalId": "PAL_ALLAttack_down2",
+    "name": "Pacifist",
+    "rank": -3
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ShotAttack",
+        "value": 15
+      },
+      {
+        "target": "Self",
+        "type": "CraftSpeed",
+        "value": -10
+      }
+    ],
+    "internalId": "PAL_rude",
+    "name": "Hooligan",
+    "rank": 1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "CraftSpeed",
+        "value": 10
+      },
+      {
+        "target": "Self",
+        "type": "Defense",
+        "value": -10
+      }
+    ],
+    "internalId": "PAL_conceited",
+    "name": "Conceited",
+    "rank": 1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "CraftSpeed",
+        "value": -10
+      },
+      {
+        "target": "Self",
+        "type": "Defense",
+        "value": -10
+      }
+    ],
+    "internalId": "PAL_SpiritualInst",
+    "name": "Mentally unstable",
+    "rank": -1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ShotAttack",
+        "value": 15
+      },
+      {
+        "target": "Self",
+        "type": "Defense",
+        "value": -15
+      }
+    ],
+    "internalId": "PAL_sadist",
+    "name": "Sadist",
+    "rank": 1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "Defense",
+        "value": 15
+      },
+      {
+        "target": "Self",
+        "type": "ShotAttack",
+        "value": -15
+      }
+    ],
+    "internalId": "PAL_masochist",
+    "name": "Masochist",
+    "rank": 1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "CraftSpeed",
+        "value": 30
+      },
+      {
+        "target": "Self",
+        "type": "ShotAttack",
+        "value": -30
+      }
+    ],
+    "internalId": "PAL_CorporateSlave",
+    "name": "Work Slave",
+    "rank": 1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ShotAttack",
+        "value": 10
+      },
+      {
+        "target": "Self",
+        "type": "Defense",
+        "value": -10
+      }
+    ],
+    "internalId": "PAL_oraora",
+    "name": "Aggressive",
+    "rank": 1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementResist_Normal",
+        "value": 15
+      }
+    ],
+    "internalId": "ElementResist_Normal_1",
+    "name": "Neutral Damage Reduction Lv. 1",
+    "rank": 1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementResist_Fire",
+        "value": 15
+      }
+    ],
+    "internalId": "ElementResist_Fire_1",
+    "name": "Fire Damage Reduction Lv. 1",
+    "rank": 1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementResist_Water",
+        "value": 15
+      }
+    ],
+    "internalId": "ElementResist_Aqua_1",
+    "name": "Water Damage Reduction Lv. 1",
+    "rank": 1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementResist_Electricity",
+        "value": 15
+      }
+    ],
+    "internalId": "ElementResist_Thunder_1",
+    "name": "Electric Damage Reduction Lv. 1",
+    "rank": 1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementResist_Leaf",
+        "value": 15
+      }
+    ],
+    "internalId": "ElementResist_Leaf_1",
+    "name": "Grass Damage Reduction Lv. 1",
+    "rank": 1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementResist_Ice",
+        "value": 15
+      }
+    ],
+    "internalId": "ElementResist_Ice_1",
+    "name": "Ice Damage Reduction Lv. 1",
+    "rank": 1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementResist_Earth",
+        "value": 15
+      }
+    ],
+    "internalId": "ElementResist_Earth_1",
+    "name": "Earth Damage Reduction Lv. 1",
+    "rank": 1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementResist_Dark",
+        "value": 15
+      }
+    ],
+    "internalId": "ElementResist_Dark_1",
+    "name": "Dark Damage Reduction Lv. 1",
+    "rank": 1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementResist_Dragon",
+        "value": 15
+      }
+    ],
+    "internalId": "ElementResist_Dragon_1",
+    "name": "Dragon Damage Reduction Lv. 1",
+    "rank": 1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementResist_Normal",
+        "value": 25
+      }
+    ],
+    "internalId": "ElementResist_Normal_2",
+    "name": "Neutral Damage Reduction Lv. 2",
+    "rank": 2
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementResist_Fire",
+        "value": 25
+      }
+    ],
+    "internalId": "ElementResist_Fire_2",
+    "name": "Fire Damage Reduction Lv. 2",
+    "rank": 2
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementResist_Water",
+        "value": 25
+      }
+    ],
+    "internalId": "ElementResist_Aqua_2",
+    "name": "Water Damage Reduction Lv. 2",
+    "rank": 2
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementResist_Electricity",
+        "value": 25
+      }
+    ],
+    "internalId": "ElementResist_Thunder_2",
+    "name": "Electric Damage Reduction Lv. 2",
+    "rank": 2
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementResist_Leaf",
+        "value": 25
+      }
+    ],
+    "internalId": "ElementResist_Leaf_2",
+    "name": "Grass Damage Reduction Lv. 2",
+    "rank": 2
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementResist_Ice",
+        "value": 25
+      }
+    ],
+    "internalId": "ElementResist_Ice_2",
+    "name": "Ice Damage Reduction Lv. 2",
+    "rank": 2
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementResist_Earth",
+        "value": 25
+      }
+    ],
+    "internalId": "ElementResist_Earth_2",
+    "name": "Earth Damage Reduction Lv. 2",
+    "rank": 2
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementResist_Dark",
+        "value": 25
+      }
+    ],
+    "internalId": "ElementResist_Dark_2",
+    "name": "Dark Damage Reduction Lv. 2",
+    "rank": 2
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementResist_Dragon",
+        "value": 25
+      }
+    ],
+    "internalId": "ElementResist_Dragon_2",
+    "name": "Dragon Damage Reduction Lv. 2",
+    "rank": 2
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementResist_Normal",
+        "value": 35
+      }
+    ],
+    "internalId": "ElementResist_Normal_3",
+    "name": "Neutral Damage Reduction Lv. 3",
+    "rank": 3
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementResist_Fire",
+        "value": 35
+      }
+    ],
+    "internalId": "ElementResist_Fire_3",
+    "name": "Fire Damage Reduction Lv. 3",
+    "rank": 3
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementResist_Water",
+        "value": 35
+      }
+    ],
+    "internalId": "ElementResist_Aqua_3",
+    "name": "Water Damage Reduction Lv. 3",
+    "rank": 3
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementResist_Electricity",
+        "value": 35
+      }
+    ],
+    "internalId": "ElementResist_Thunder_3",
+    "name": "Electric Damage Reduction Lv. 3",
+    "rank": 3
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementResist_Leaf",
+        "value": 35
+      }
+    ],
+    "internalId": "ElementResist_Leaf_3",
+    "name": "Grass Damage Reduction Lv. 3",
+    "rank": 3
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementResist_Ice",
+        "value": 35
+      }
+    ],
+    "internalId": "ElementResist_Ice_3",
+    "name": "Ice Damage Reduction Lv. 3",
+    "rank": 3
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementResist_Earth",
+        "value": 35
+      }
+    ],
+    "internalId": "ElementResist_Earth_3",
+    "name": "Earth Damage Reduction Lv. 3",
+    "rank": 3
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementResist_Dark",
+        "value": 35
+      }
+    ],
+    "internalId": "ElementResist_Dark_3",
+    "name": "Dark Damage Reduction Lv. 3",
+    "rank": 3
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementResist_Dragon",
+        "value": 35
+      }
+    ],
+    "internalId": "ElementResist_Dragon_3",
+    "name": "Dragon Damage Reduction Lv. 3",
+    "rank": 3
+  },
+  {
+    "description": "10% increase to Player Attack.",
+    "effects": [
+      {
+        "target": "Trainer",
+        "type": "ShotAttack",
+        "value": 10
+      }
+    ],
+    "internalId": "TrainerATK_UP_1",
+    "name": "Vanguard",
+    "rank": 3
+  },
+  {
+    "description": "10% increase to Player Defense.",
+    "effects": [
+      {
+        "target": "Trainer",
+        "type": "Defense",
+        "value": 10
+      }
+    ],
+    "internalId": "TrainerDEF_UP_1",
+    "name": "Stronghold Strategist",
+    "rank": 3
+  },
+  {
+    "description": "25% increase to Player Work Speed.",
+    "effects": [
+      {
+        "target": "Trainer",
+        "type": "CraftSpeed",
+        "value": 25
+      }
+    ],
+    "internalId": "TrainerWorkSpeed_UP_1",
+    "name": "Motivational Leader",
+    "rank": 3
+  },
+  {
+    "description": "25% increase to Player Mining Efficiency.",
+    "effects": [
+      {
+        "target": "Trainer",
+        "type": "Mining",
+        "value": 25
+      }
+    ],
+    "internalId": "TrainerMining_up1",
+    "name": "Mine Foreman",
+    "rank": 3
+  },
+  {
+    "description": "25% increase to Player Logging Efficiency.",
+    "effects": [
+      {
+        "target": "Trainer",
+        "type": "Logging",
+        "value": 25
+      }
+    ],
+    "internalId": "TrainerLogging_up1",
+    "name": "Logging Foreman",
+    "rank": 3
+  },
+  {
+    "description": "10% decrease to incoming Neutral damage.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementResist_Normal",
+        "value": 10
+      }
+    ],
+    "internalId": "ElementResist_Normal_1_PAL",
+    "name": "Abnormal",
+    "rank": 1
+  },
+  {
+    "description": "10% decrease to incoming Fire damage.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementResist_Fire",
+        "value": 10
+      }
+    ],
+    "internalId": "ElementResist_Fire_1_PAL",
+    "name": "Suntan Lover",
+    "rank": 1
+  },
+  {
+    "description": "10% decrease to incoming Water damage.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementResist_Water",
+        "value": 10
+      }
+    ],
+    "internalId": "ElementResist_Aqua_1_PAL",
+    "name": "Waterproof",
+    "rank": 1
+  },
+  {
+    "description": "10% decrease to incoming Lightning damage.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementResist_Electricity",
+        "value": 10
+      }
+    ],
+    "internalId": "ElementResist_Thunder_1_PAL",
+    "name": "Insulated Body",
+    "rank": 1
+  },
+  {
+    "description": "10% decrease to incoming Grass damage.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementResist_Leaf",
+        "value": 10
+      }
+    ],
+    "internalId": "ElementResist_Leaf_1_PAL",
+    "name": "Botanical Barrier",
+    "rank": 1
+  },
+  {
+    "description": "10% decrease to incoming Ice damage.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementResist_Ice",
+        "value": 10
+      }
+    ],
+    "internalId": "ElementResist_Ice_1_PAL",
+    "name": "Heated Body",
+    "rank": 1
+  },
+  {
+    "description": "10% decrease to incoming Earth damage.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementResist_Earth",
+        "value": 10
+      }
+    ],
+    "internalId": "ElementResist_Earth_1_PAL",
+    "name": "Earthquake Resistant",
+    "rank": 1
+  },
+  {
+    "description": "10% decrease to incoming Dark damage.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementResist_Dark",
+        "value": 10
+      }
+    ],
+    "internalId": "ElementResist_Dark_1_PAL",
+    "name": "Cheery",
+    "rank": 1
+  },
+  {
+    "description": "10% decrease to incoming Dragon damage.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementResist_Dragon",
+        "value": 10
+      }
+    ],
+    "internalId": "ElementResist_Dragon_1_PAL",
+    "name": "Dragonkiller",
+    "rank": 1
+  },
+  {
+    "description": "10% increase to Neutral attack damage.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementBoost_Normal",
+        "value": 10
+      }
+    ],
+    "internalId": "ElementBoost_Normal_1_PAL",
+    "name": "Zen Mind",
+    "rank": 1
+  },
+  {
+    "description": "10% increase to Fire attack damage.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementBoost_Fire",
+        "value": 10
+      }
+    ],
+    "internalId": "ElementBoost_Fire_1_PAL",
+    "name": "Pyromaniac",
+    "rank": 1
+  },
+  {
+    "description": "10% increase to Water attack damage.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementBoost_Water",
+        "value": 10
+      }
+    ],
+    "internalId": "ElementBoost_Aqua_1_PAL",
+    "name": "Hydromaniac",
+    "rank": 1
+  },
+  {
+    "description": "10% increase to Lightning attack damage.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementBoost_Electricity",
+        "value": 10
+      }
+    ],
+    "internalId": "ElementBoost_Thunder_1_PAL",
+    "name": "Capacitor",
+    "rank": 1
+  },
+  {
+    "description": "10% increase to Grass attack damage.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementBoost_Leaf",
+        "value": 10
+      }
+    ],
+    "internalId": "ElementBoost_Leaf_1_PAL",
+    "name": "Fragrant Foliage",
+    "rank": 1
+  },
+  {
+    "description": "10% increase to Ice attack damage.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementBoost_Ice",
+        "value": 10
+      }
+    ],
+    "internalId": "ElementBoost_Ice_1_PAL",
+    "name": "Coldblooded",
+    "rank": 1
+  },
+  {
+    "description": "10% increase to Earth attack damage.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementBoost_Earth",
+        "value": 10
+      }
+    ],
+    "internalId": "ElementBoost_Earth_1_PAL",
+    "name": "Power of Gaia",
+    "rank": 1
+  },
+  {
+    "description": "10% increase to Dark attack damage.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementBoost_Dark",
+        "value": 10
+      }
+    ],
+    "internalId": "ElementBoost_Dark_1_PAL",
+    "name": "Veil of Darkness",
+    "rank": 1
+  },
+  {
+    "description": "10% increase to Dragon attack damage.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementBoost_Dragon",
+        "value": 10
+      }
+    ],
+    "internalId": "ElementBoost_Dragon_1_PAL",
+    "name": "Blood of the Dragon",
+    "rank": 1
+  },
+  {
+    "description": "Satiety drops <NumRed_13>+10%</> faster.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "FullStomatch_Decrease",
+        "value": 10
+      }
+    ],
+    "internalId": "PAL_FullStomach_Up_1",
+    "name": "Glutton",
+    "rank": -1
+  },
+  {
+    "description": "Satiety drops <NumRed_13>+15%</> faster.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "FullStomatch_Decrease",
+        "value": 15
+      }
+    ],
+    "internalId": "PAL_FullStomach_Up_2",
+    "name": "Bottomless Stomach",
+    "rank": -2
+  },
+  {
+    "description": "Satiety drops <NumBlue_13>+10%</> slower.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "FullStomatch_Decrease",
+        "value": -10
+      }
+    ],
+    "internalId": "PAL_FullStomach_Down_1",
+    "name": "Dainty Eater",
+    "rank": 1
+  },
+  {
+    "description": "Decrease in Hunger is less likely by <NumBlue_13>+15%</>",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "FullStomatch_Decrease",
+        "value": -15
+      }
+    ],
+    "internalId": "PAL_FullStomach_Down_2",
+    "name": "Diet Lover",
+    "rank": 3
+  },
+  {
+    "description": "SAN drops <NumRed_13>+10%</> faster.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "Sanity_Decrease",
+        "value": 10
+      }
+    ],
+    "internalId": "PAL_Sanity_Up_1",
+    "name": "Unstable",
+    "rank": -1
+  },
+  {
+    "description": "SAN drops <NumRed_13>+15%</> faster.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "Sanity_Decrease",
+        "value": 15
+      }
+    ],
+    "internalId": "PAL_Sanity_Up_2",
+    "name": "Destructive",
+    "rank": -2
+  },
+  {
+    "description": "SAN drops <NumBlue_13>+10%</> slower.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "Sanity_Decrease",
+        "value": -10
+      }
+    ],
+    "internalId": "PAL_Sanity_Down_1",
+    "name": "Positive Thinker",
+    "rank": 1
+  },
+  {
+    "description": "SAN drops <NumBlue_13>+15%</> slower.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "Sanity_Decrease",
+        "value": -15
+      }
+    ],
+    "internalId": "PAL_Sanity_Down_2",
+    "name": "Workaholic",
+    "rank": 3
+  },
+  {
+    "description": "20% increase to Neutral attack damage.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementBoost_Normal",
+        "value": 20
+      }
+    ],
+    "internalId": "ElementBoost_Normal_2_PAL",
+    "name": "Celestial Emperor",
+    "rank": 3
+  },
+  {
+    "description": "20% increase to Fire attack damage.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementBoost_Fire",
+        "value": 20
+      }
+    ],
+    "internalId": "ElementBoost_Fire_2_PAL",
+    "name": "Flame Emperor",
+    "rank": 3
+  },
+  {
+    "description": "20% increase to Water attack damage.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementBoost_Water",
+        "value": 20
+      }
+    ],
+    "internalId": "ElementBoost_Aqua_2_PAL",
+    "name": "Lord of the Sea",
+    "rank": 3
+  },
+  {
+    "description": "20% increase to Lightning attack damage.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementBoost_Electricity",
+        "value": 20
+      }
+    ],
+    "internalId": "ElementBoost_Thunder_2_PAL",
+    "name": "Lord of Lightning",
+    "rank": 3
+  },
+  {
+    "description": "20% increase to Grass attack damage.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementBoost_Leaf",
+        "value": 20
+      }
+    ],
+    "internalId": "ElementBoost_Leaf_2_PAL",
+    "name": "Spirit Emperor",
+    "rank": 3
+  },
+  {
+    "description": "20% increase to Ice attack damage.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementBoost_Ice",
+        "value": 20
+      }
+    ],
+    "internalId": "ElementBoost_Ice_2_PAL",
+    "name": "Ice Emperor",
+    "rank": 3
+  },
+  {
+    "description": "20% increase to Earth attack damage.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementBoost_Earth",
+        "value": 20
+      }
+    ],
+    "internalId": "ElementBoost_Earth_2_PAL",
+    "name": "Earth Emperor",
+    "rank": 3
+  },
+  {
+    "description": "20% increase to Dark attack damage.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementBoost_Dark",
+        "value": 20
+      }
+    ],
+    "internalId": "ElementBoost_Dark_2_PAL",
+    "name": "Lord of the Underworld",
+    "rank": 3
+  },
+  {
+    "description": "20% increase to Dragon attack damage.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementBoost_Dragon",
+        "value": 20
+      }
+    ],
+    "internalId": "ElementBoost_Dragon_2_PAL",
+    "name": "Divine Dragon",
+    "rank": 3
+  },
+  {
+    "description": "10% increase to movement speed.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "MoveSpeed",
+        "value": 10
+      }
+    ],
+    "internalId": "MoveSpeed_up_1",
+    "name": "Nimble",
+    "rank": 1
+  },
+  {
+    "description": "20% increase to movement speed.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "MoveSpeed",
+        "value": 20
+      }
+    ],
+    "internalId": "MoveSpeed_up_2",
+    "name": "Runner",
+    "rank": 2
+  },
+  {
+    "description": "30% increase to movement speed.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "MoveSpeed",
+        "value": 30
+      }
+    ],
+    "internalId": "MoveSpeed_up_3",
+    "name": "Swift",
+    "rank": 3
+  }
+]

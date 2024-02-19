@@ -7,17 +7,14 @@ import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Separator } from '@/components/ui/separator';
 import { normalPals } from '@/data/parsed';
-import { cn, getBreedingResult, getPalById, notEmpty } from '@/lib/utils';
+import { cn, getBreedingResult, getPalById, notEmpty, useQueryString } from '@/lib/utils';
 import { type BreedingCombo, type Pal } from '@/types';
 import { useDebounce } from '@uidotdev/usehooks';
 import { EqualIcon, PlusIcon, RotateCcwIcon, SearchIcon } from 'lucide-react';
 import Link, { type LinkProps } from 'next/link';
-import { useQueryState } from 'nuqs';
 import { memo, useMemo } from 'react';
 
 function getCombos(parentAId: string, parentBId: string, childId: string): BreedingCombo[] {
-  console.log('get combos', { parentAId, parentBId, childId });
-
   // calculate child of both parents
   if (parentAId && parentBId) {
     const child = getBreedingResult(parentAId, parentBId)!;
@@ -73,10 +70,10 @@ function getCombos(parentAId: string, parentBId: string, childId: string): Breed
 }
 
 export function Breeding() {
-  const [parentAId, setParentAId] = useQueryState('parentA', { defaultValue: '', clearOnDefault: true });
-  const [parentBId, setParentBId] = useQueryState('parentB', { defaultValue: '', clearOnDefault: true });
-  const [childId, setChildId] = useQueryState('child', { defaultValue: '', clearOnDefault: true });
-  const [search, setSearch] = useQueryState('search', { defaultValue: '', clearOnDefault: true });
+  const [parentAId, setParentAId] = useQueryString('parentA');
+  const [parentBId, setParentBId] = useQueryString('parentB');
+  const [childId, setChildId] = useQueryString('child');
+  const [search, setSearch] = useQueryString('search');
   const debouncedSearch = useDebounce(search, 100);
 
   const isAnyInputSet = parentAId !== '' || parentBId !== '' || childId !== '';

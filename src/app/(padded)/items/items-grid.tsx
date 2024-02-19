@@ -9,7 +9,7 @@ import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger } from '@/components/ui/select';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import { items } from '@/data/parsed';
-import { cn, parseAsArrayOfStrings, sortArrayByPropertyInDirection } from '@/lib/utils';
+import { cn, parseAsArrayOfStrings, sortArrayByPropertyInDirection, useQueryString } from '@/lib/utils';
 import { type Item } from '@/types';
 import { useDebounce } from '@uidotdev/usehooks';
 import { capitalCase } from 'change-case';
@@ -74,7 +74,7 @@ function getItemRarityClass(rarity: number) {
 const ALL_CATEGORIES = [...new Set(items.map((item) => item.typeA))].sort();
 
 export function ItemsGrid() {
-  const [search, setSearch] = useQueryState('search', { defaultValue: '', clearOnDefault: true });
+  const [search, setSearch] = useQueryString('search');
   const [sort, setSort] = useQueryState(
     'sort',
     parseAsStringLiteral(ITEM_SORTS.map((s) => s.value))
@@ -148,7 +148,7 @@ export function ItemsGrid() {
           </ToggleGroup>
         </div>
 
-        <CollapsibleFilter label="Category" defaultOpen>
+        <CollapsibleFilter label="Category">
           <ToggleGroup
             type="multiple"
             className="md:grid md:grid-cols-2 md:gap-1"
@@ -163,46 +163,26 @@ export function ItemsGrid() {
           </ToggleGroup>
         </CollapsibleFilter>
 
-        <CollapsibleFilter label="Rarity" defaultOpen>
+        <CollapsibleFilter label="Rarity">
           <ToggleGroup
             type="multiple"
             className="md:grid md:grid-cols-2 md:gap-1"
             value={rarities}
             onValueChange={(v) => setRarities(v.length > 0 ? v : null)}
           >
-            <ToggleGroupItem
-              value="common"
-              size="sm"
-              className="border border-gray-6 bg-gray-3 hover:border-gray-7 hover:bg-gray-4 data-[state=on]:border-gray-9 data-[state=on]:bg-gray-4"
-            >
+            <ToggleGroupItem value="common" size="sm" variant="gray">
               Common
             </ToggleGroupItem>
-            <ToggleGroupItem
-              value="uncommon"
-              size="sm"
-              className="border border-green-6 bg-green-3 hover:border-green-7 hover:bg-green-4 data-[state=on]:border-green-9 data-[state=on]:bg-green-4"
-            >
+            <ToggleGroupItem value="uncommon" size="sm" variant="green">
               Uncommon
             </ToggleGroupItem>
-            <ToggleGroupItem
-              value="rare"
-              size="sm"
-              className="border border-blue-6 bg-blue-3 hover:border-blue-7 hover:bg-blue-4 data-[state=on]:border-blue-9 data-[state=on]:bg-blue-4"
-            >
+            <ToggleGroupItem value="rare" size="sm" variant="blue">
               Rare
             </ToggleGroupItem>
-            <ToggleGroupItem
-              value="epic"
-              size="sm"
-              className="border border-purple-6 bg-purple-3 hover:border-purple-7 hover:bg-purple-4 data-[state=on]:border-purple-9 data-[state=on]:bg-purple-4"
-            >
+            <ToggleGroupItem value="epic" size="sm" variant="purple">
               Epic
             </ToggleGroupItem>
-            <ToggleGroupItem
-              value="legendary"
-              size="sm"
-              className="border border-yellow-6 bg-yellow-3 hover:border-yellow-7 hover:bg-yellow-4 data-[state=on]:border-yellow-9 data-[state=on]:bg-yellow-4"
-            >
+            <ToggleGroupItem value="legendary" size="sm" variant="yellow">
               Legendary
             </ToggleGroupItem>
           </ToggleGroup>

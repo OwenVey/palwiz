@@ -1,9 +1,9 @@
 import { type BadgeProps } from '@/components/ui/badge';
 import { UNIQUE_BREEDING_COMBO_MAP, WORK_SUITABILITIES } from '@/constants';
-import { breedOrderPals, itemRecipes, items, normalPals, skills } from '@/data/parsed';
+import { activeSkills, breedOrderPals, itemRecipes, items, normalPals } from '@/data/parsed';
 import { type BreedingCombo, type Pal } from '@/types';
 import { clsx, type ClassValue } from 'clsx';
-import { parseAsArrayOf, parseAsString } from 'nuqs';
+import { parseAsArrayOf, parseAsString, useQueryState } from 'nuqs';
 import { twMerge } from 'tailwind-merge';
 
 export function cn(...inputs: ClassValue[]) {
@@ -46,7 +46,7 @@ export function getItemById(id: string) {
 }
 
 export function getSkillById(id: string) {
-  return skills.find((skill) => skill.id === id) ?? null;
+  return activeSkills.find((skill) => skill.id === id) ?? null;
 }
 
 export function getItemRecipeById(id: string) {
@@ -72,6 +72,10 @@ export function getBadgeVariantForRate(rate: number): BadgeProps['variant'] {
 export const parseAsArrayOfStrings = parseAsArrayOf(parseAsString)
   .withDefault([])
   .withOptions({ clearOnDefault: true });
+
+export function useQueryString(param: string) {
+  return useQueryState(param, { defaultValue: '', clearOnDefault: true });
+}
 
 export function getBreedingResult(parentAId: string, parentBId: string): Pal | null {
   if (!parentAId || !parentAId) return null;

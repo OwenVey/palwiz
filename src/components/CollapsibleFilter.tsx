@@ -9,7 +9,7 @@ interface CollapsibleFilterProps extends CollapsibleProps {
 }
 export function CollapsibleFilter({ label, className, children, ...rest }: CollapsibleFilterProps) {
   return (
-    <Collapsible className={cn('space-y-1', className)} {...rest}>
+    <Collapsible className={cn('space-y-1', className)} defaultOpen={true} {...rest}>
       <div className="flex items-center justify-between">
         <Label className="capitalize">{label}</Label>
         <CollapsibleTrigger className="group grid size-6 place-items-center rounded-md text-gray-11 transition-colors hover:bg-gray-4 hover:text-gray-12 active:bg-gray-5">

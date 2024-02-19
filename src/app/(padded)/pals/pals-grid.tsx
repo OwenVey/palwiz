@@ -13,7 +13,13 @@ import { Select, SelectContent, SelectItem, SelectTrigger } from '@/components/u
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import { PAL_ELEMENTS, WORK_SUITABILITIES } from '@/constants';
 import { normalPals } from '@/data/parsed';
-import { isWithinRange, notEmpty, parseAsArrayOfStrings, sortArrayByPropertyInDirection } from '@/lib/utils';
+import {
+  isWithinRange,
+  notEmpty,
+  parseAsArrayOfStrings,
+  sortArrayByPropertyInDirection,
+  useQueryString,
+} from '@/lib/utils';
 import { type Pal, type WorkSuitability } from '@/types';
 import { useDebounce } from '@uidotdev/usehooks';
 import {
@@ -51,7 +57,7 @@ export const PAL_SORTS = [
 ] satisfies Array<{ label: string; value: keyof Pal }>;
 
 export function PalsGrid() {
-  const [search, setSearch] = useQueryState('search', { defaultValue: '', clearOnDefault: true });
+  const [search, setSearch] = useQueryString('search');
   const [sort, setSort] = useQueryState(
     'sort',
     parseAsStringLiteral(PAL_SORTS.map((s) => s.value))
@@ -62,7 +68,7 @@ export function PalsGrid() {
     'sortDirection',
     parseAsStringLiteral(['asc', 'desc']).withDefault('asc').withOptions({ clearOnDefault: true }),
   );
-  const [rarity, setRarity] = useQueryState('rarity', { defaultValue: '', clearOnDefault: true });
+  const [rarity, setRarity] = useQueryString('rarity');
   const [work, setWork] = useQueryState(
     'work',
     parseAsStringLiteral(WORK_SUITABILITIES.map(({ id }) => id)).withOptions({ clearOnDefault: true }),
@@ -162,7 +168,7 @@ export function PalsGrid() {
           </SelectContent>
         </Select>
 
-        <CollapsibleFilter label="Work Suitability" defaultOpen>
+        <CollapsibleFilter label="Work Suitability">
           <ToggleGroup
             type="single"
             className="md:grid md:grid-cols-6 md:gap-1"
@@ -177,7 +183,7 @@ export function PalsGrid() {
           </ToggleGroup>
         </CollapsibleFilter>
 
-        <CollapsibleFilter label="Elements" defaultOpen>
+        <CollapsibleFilter label="Elements">
           <ToggleGroup
             type="multiple"
             className="md:grid md:grid-cols-6 md:gap-1"
@@ -192,7 +198,7 @@ export function PalsGrid() {
           </ToggleGroup>
         </CollapsibleFilter>
 
-        <CollapsibleFilter label="Partner Skills" defaultOpen>
+        <CollapsibleFilter label="Partner Skills">
           <ToggleGroup
             type="multiple"
             className="md:grid md:grid-cols-6 md:gap-1"

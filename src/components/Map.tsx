@@ -10,7 +10,7 @@ import { Switch } from '@/components/ui/switch';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import mapLocationsJson from '@/data/map-locations.json';
 import { palLocations } from '@/data/parsed';
-import { cn, parseAsArrayOfStrings } from '@/lib/utils';
+import { cn, parseAsArrayOfStrings, useQueryString } from '@/lib/utils';
 import { useToggle } from '@uidotdev/usehooks';
 import { capitalCase } from 'change-case';
 import { CRS, Icon } from 'leaflet';
@@ -80,7 +80,7 @@ function getInGameCoords([x, y]: [number, number]) {
 
 export default function MyMap() {
   const [filters, setFilters] = useQueryState('filters', parseAsArrayOfStrings);
-  const [palFilter, setPalFilter] = useQueryState('pal', { defaultValue: '', clearOnDefault: true });
+  const [palFilter, setPalFilter] = useQueryString('pal');
   const [showNightLocations, setShowNightLocations] = useQueryState(
     'night',
     parseAsBoolean.withDefault(false).withOptions({ clearOnDefault: true }),
@@ -121,7 +121,7 @@ export default function MyMap() {
             </div>
 
             {Object.entries(LOCATION_GROUPS).map(([group, locations]) => (
-              <CollapsibleFilter className="@container" key={group} label={group} defaultOpen>
+              <CollapsibleFilter className="@container" key={group} label={group}>
                 <ToggleGroup
                   type="multiple"
                   className="grid grid-cols-1 gap-1 @sm:grid-cols-2"

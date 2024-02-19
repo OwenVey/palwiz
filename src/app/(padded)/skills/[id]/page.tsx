@@ -2,7 +2,7 @@ import { ElementImage } from '@/components/ElementImage';
 import { PalImage } from '@/components/PalImage';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
-import { normalPals, skills } from '@/data/parsed';
+import { activeSkills, normalPals } from '@/data/parsed';
 import { cn, getSkillById } from '@/lib/utils';
 import Link from 'next/link';
 
@@ -13,7 +13,7 @@ export function generateMetadata({ params }: { params: { id: string } }) {
   };
 }
 export function generateStaticParams() {
-  return skills.map(({ id }) => ({ id }));
+  return activeSkills.map(({ id }) => ({ id }));
 }
 
 export default function SkillPage({ params }: { params: { id: string } }) {
