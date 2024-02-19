@@ -4,8 +4,7 @@ import { PalStatsSidebar } from '@/app/(padded)/pals/[id]/PalStatsSidebar';
 import { PalWorkSuitabilitiesCard } from '@/app/(padded)/pals/[id]/PalWorkSuitabilitiesCard';
 import { PartnerSkillImage } from '@/components/PartnerSkillImage';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
-import { NORMAL_PALS } from '@/constants';
-import { getPalById } from '@/lib/utils';
+import { NORMAL_PALS, getPalById } from '@/data/parsed/pals';
 import { notFound } from 'next/navigation';
 
 export function generateMetadata({ params }: { params: { id: string } }) {

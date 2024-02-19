@@ -1,5 +1,3 @@
-import { allPals } from '@/data/parsed';
-import { notEmpty } from '@/lib/utils';
 import { CatIcon, HeartIcon, MapIcon, PencilRulerIcon, ZapIcon } from 'lucide-react';
 
 export const WORK_SUITABILITIES = [
@@ -81,16 +79,3 @@ export const UNIQUE_BREEDING_COMBO_MAP = [
 
 export const UNIQUE_BREEDING_CHILDREN = UNIQUE_BREEDING_COMBO_MAP.map(({ childId }) => childId);
 export const SAME_PARENT_CHILDREN = ['frostallion', 'jetragon', 'paladius', 'necromus', 'jormuntide-ignis'] as const;
-
-export const NORMAL_PALS = allPals
-  .filter(({ isBoss }) => !isBoss)
-  .filter(({ zukanIndex }) => zukanIndex > 0)
-  .filter(({ internalName }) => internalName !== 'PlantSlime_Flower');
-
-export const BREED_ORDER_PALS = NORMAL_PALS.filter((pal) => !UNIQUE_BREEDING_CHILDREN.includes(pal.id))
-  .filter((pal) => !SAME_PARENT_CHILDREN.includes(pal.id))
-  .sort((a, b) => (a.breedOrder ?? 0) - (b.breedOrder ?? 0));
-
-export const PARTNER_SKILL_CATEGORIES = [
-  ...new Set(NORMAL_PALS.map(({ partnerSkill }) => partnerSkill?.group).filter(notEmpty)),
-].sort();

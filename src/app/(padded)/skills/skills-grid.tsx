@@ -13,8 +13,10 @@ import { Select, SelectContent, SelectItem, SelectTrigger } from '@/components/u
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import { Tooltip } from '@/components/ui/tooltip';
-import { NORMAL_PALS, PAL_ELEMENTS, PARTNER_SKILL_CATEGORIES } from '@/constants';
-import { activeSkills, passiveSkills } from '@/data/parsed';
+import { PAL_ELEMENTS } from '@/constants';
+import { ACTIVE_SKILLS } from '@/data/parsed/active-skills';
+import { NORMAL_PALS, PARTNER_SKILL_CATEGORIES } from '@/data/parsed/pals';
+import { PASSIVE_SKILLS } from '@/data/parsed/passive-skills';
 import { cn, notEmpty, parseAsArrayOfStrings, sortArrayByPropertyInDirection, useQueryString } from '@/lib/utils';
 import { type ActiveSkill, type PassiveSkill } from '@/types';
 import { useDebounce } from '@uidotdev/usehooks';
@@ -49,10 +51,10 @@ const SORTS = {
 } as const;
 
 const ACTIVE_SKILL_EFFECTS = [
-  ...new Set(activeSkills.flatMap(({ effects }) => effects.map(({ name }) => name))),
+  ...new Set(ACTIVE_SKILLS.flatMap(({ effects }) => effects.map(({ name }) => name))),
 ].sort();
 const PASSIVE_SKILL_TYPES = [
-  ...new Set(passiveSkills.flatMap(({ effects }) => effects.map(({ type }) => type))),
+  ...new Set(PASSIVE_SKILLS.flatMap(({ effects }) => effects.map(({ type }) => type))),
 ].sort();
 
 const PARTNER_SKILLS = NORMAL_PALS.map(({ partnerSkill }) => partnerSkill)
@@ -98,7 +100,7 @@ export function SkillsGrid() {
 
   const filteredActiveSkills = useMemo(
     () =>
-      sortArrayByPropertyInDirection(activeSkills, sort as keyof ActiveSkill, sortDirection)
+      sortArrayByPropertyInDirection(ACTIVE_SKILLS, sort as keyof ActiveSkill, sortDirection)
         .filter(({ name }) => (debouncedSearch ? name.toLowerCase().includes(debouncedSearch.toLowerCase()) : true))
         .filter((skill) => (elements.length > 0 ? elements.includes(skill.element) : true))
         .filter((skill) => (activeSkillCategory ? skill.category.toLowerCase() === activeSkillCategory : true))
@@ -110,7 +112,7 @@ export function SkillsGrid() {
 
   const filteredPassiveSkills = useMemo(
     () =>
-      sortArrayByPropertyInDirection(passiveSkills, sort as keyof PassiveSkill, sortDirection)
+      sortArrayByPropertyInDirection(PASSIVE_SKILLS, sort as keyof PassiveSkill, sortDirection)
         .filter(({ name }) => (debouncedSearch ? name.toLowerCase().includes(debouncedSearch.toLowerCase()) : true))
         .filter((skill) => (types.length > 0 ? types.some((type) => skill.effects.some((e) => e.type === type)) : true))
         .filter((skill) => (rank ? (rank === 'positive' ? skill.rank > 0 : skill.rank < 0) : true)),

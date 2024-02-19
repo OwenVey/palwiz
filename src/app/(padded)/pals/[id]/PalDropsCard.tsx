@@ -9,8 +9,9 @@ import { Badge } from '@/components/ui/badge';
 import { Label } from '@/components/ui/label';
 import { Switch } from '@/components/ui/switch';
 import { Tooltip } from '@/components/ui/tooltip';
-import { allPals } from '@/data/parsed';
-import { cn, getBadgeVariantForRate, getItemById } from '@/lib/utils';
+import { getItemById } from '@/data/parsed/items';
+import { ALL_PALS } from '@/data/parsed/pals';
+import { cn, getBadgeVariantForRate } from '@/lib/utils';
 import { type Pal } from '@/types';
 import Link from 'next/link';
 
@@ -23,9 +24,10 @@ export function ItemDropsCard({ pal, className, ...rest }: ItemDropsCardProps) {
 
   const normalDrops = pal.drops.map((drop) => ({ ...drop, item: getItemById(drop.id)! }));
   const bossDrops =
-    allPals
-      .find(({ isBoss, name }) => isBoss && name === pal.name)
-      ?.drops.map((drop) => ({ ...drop, item: getItemById(drop.id)! })) ?? [];
+    ALL_PALS.find(({ isBoss, name }) => isBoss && name === pal.name)?.drops.map((drop) => ({
+      ...drop,
+      item: getItemById(drop.id)!,
+    })) ?? [];
 
   const dropsToShow = showAlphaDrops ? bossDrops : normalDrops;
 

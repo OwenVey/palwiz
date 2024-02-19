@@ -3,9 +3,10 @@ import { PalImage } from '@/components/PalImage';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tooltip } from '@/components/ui/tooltip';
-import { allPals } from '@/data/parsed';
-import { ITEMS } from '@/data/parsed/items';
-import { cn, getBadgeVariantForRate, getItemById, getItemRecipeById, notEmpty } from '@/lib/utils';
+import { getItemRecipeById } from '@/data/parsed/item-recipes';
+import { ITEMS, getItemById } from '@/data/parsed/items';
+import { ALL_PALS } from '@/data/parsed/pals';
+import { cn, getBadgeVariantForRate, notEmpty } from '@/lib/utils';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -28,15 +29,15 @@ export default function ItemPage({ params }: { params: { id: string } }) {
   const recipe = getItemRecipeById(item.id);
   const materials = recipe?.materials.map((m) => ({ ...m, item: getItemById(m.id)! })).filter(notEmpty) ?? [];
 
-  const droppedByPals = allPals
-    .filter((pal) => pal.drops.some((drop) => drop.id === item.id))
-    .map(({ id, name, isBoss, internalName, drops }) => ({
+  const droppedByPals = ALL_PALS.filter((pal) => pal.drops.some((drop) => drop.id === item.id)).map(
+    ({ id, name, isBoss, internalName, drops }) => ({
       name,
       isBoss,
       internalName,
       ...drops.find((drop) => drop.id === item.id)!,
       id,
-    }));
+    }),
+  );
 
   const stats = [
     { label: 'Corruption Factor', value: item.corruptionFactor },
