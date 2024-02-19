@@ -2,6 +2,8 @@
 
 import { CollapsibleFilter } from '@/components/CollapsibleFilter';
 import { ElementImage } from '@/components/ElementImage';
+import { PalImage } from '@/components/PalImage';
+import { PartnerSkillImage } from '@/components/PartnerSkillImage';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
@@ -12,8 +14,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
 import { PAL_ELEMENTS } from '@/constants';
-import { activeSkills, passiveSkills } from '@/data/parsed';
-import { cn, parseAsArrayOfStrings, sortArrayByPropertyInDirection, useQueryString } from '@/lib/utils';
+import { activeSkills, normalPals, passiveSkills } from '@/data/parsed';
+import { cn, notEmpty, parseAsArrayOfStrings, sortArrayByPropertyInDirection, useQueryString } from '@/lib/utils';
 import { type ActiveSkill, type PassiveSkill } from '@/types';
 import { useDebounce } from '@uidotdev/usehooks';
 import { capitalCase } from 'change-case';
@@ -43,7 +45,7 @@ const SORTS = {
     { label: 'Name', value: 'name' },
     { label: 'Rank', value: 'rank' },
   ] satisfies Array<{ label: string; value: keyof PassiveSkill }>,
-  partner: [],
+  partner: [{ label: 'Name', value: 'name' }],
 } as const;
 
 const ACTIVE_SKILL_EFFECTS = [
@@ -52,6 +54,17 @@ const ACTIVE_SKILL_EFFECTS = [
 const PASSIVE_SKILL_TYPES = [
   ...new Set(passiveSkills.flatMap(({ effects }) => effects.map(({ type }) => type))),
 ].sort();
+
+const PARTNER_SKILLS = normalPals
+  .map((pal) => ({
+    name: pal.partnerSkill.name!,
+    description: pal.partnerSkill.description!,
+    icon: pal.partnerSkillIcon!,
+  }))
+  .filter((s) => s.name !== null && s.description !== null && s.icon !== null)
+  .filter((obj, index, self) => index === self.findIndex((t) => t.name === obj.name))
+  .map((s) => ({ ...s, pals: normalPals.filter((pal) => pal.partnerSkill.name === s.name) }));
+type PartnerSkill = (typeof PARTNER_SKILLS)[number];
 const skillTypes = ['active', 'passive', 'partner'] as const;
 // type SkillType = (typeof skillTypes)[number];
 
@@ -65,35 +78,38 @@ export function SkillsGrid() {
   const [search, setSearch] = useQueryString('search');
   const debouncedSearch = useDebounce(search, 100);
   const [sort, setSort] = useQueryState('sort', {
-    defaultValue: type === 'active' ? 'name' : type === 'passive' ? 'rank' : 'name',
+    defaultValue: type === 'active' ? 'name' : type === 'passive' ? 'rank' : type === 'partner' ? 'name' : 'name',
     clearOnDefault: true,
   });
   const [sortDirection, setSortDirection] = useQueryState(
     'sortDirection',
     parseAsStringLiteral(['asc', 'desc'])
-      .withDefault(type === 'active' ? 'asc' : type === 'passive' ? 'desc' : 'asc')
+      .withDefault(type === 'active' ? 'asc' : type === 'passive' ? 'desc' : type === 'partner' ? 'asc' : 'asc')
       .withOptions({ clearOnDefault: true }),
   );
 
   // Active skill filters
   const [elements, setElements] = useQueryState('elements', parseAsArrayOfStrings);
-  const [category, setCategory] = useQueryString('category');
+  const [activeSkillCategory, setActiveSkillCategory] = useQueryString('category');
   const [effects, setEffects] = useQueryState('effects', parseAsArrayOfStrings);
 
-  // Passive skill filter
+  // Passive skill filters
   const [types, setTypes] = useQueryState('types', parseAsArrayOfStrings);
   const [rank, setRank] = useQueryString('rank');
+
+  // Partner skill filters
+  const [partnerSkillCategories, setPartnerSkillCategories] = useQueryState('categories', parseAsArrayOfStrings);
 
   const filteredActiveSkills = useMemo(
     () =>
       sortArrayByPropertyInDirection(activeSkills, sort as keyof ActiveSkill, sortDirection)
         .filter(({ name }) => (debouncedSearch ? name.toLowerCase().includes(debouncedSearch.toLowerCase()) : true))
         .filter((skill) => (elements.length > 0 ? elements.includes(skill.element) : true))
-        .filter((skill) => (category ? skill.category.toLowerCase() === category : true))
+        .filter((skill) => (activeSkillCategory ? skill.category.toLowerCase() === activeSkillCategory : true))
         .filter((skill) =>
           effects.length > 0 ? effects.some((effect) => skill.effects.some(({ name }) => name === effect)) : true,
         ),
-    [category, debouncedSearch, effects, elements, sort, sortDirection],
+    [activeSkillCategory, debouncedSearch, effects, elements, sort, sortDirection],
   );
 
   const filteredPassiveSkills = useMemo(
@@ -103,6 +119,16 @@ export function SkillsGrid() {
         .filter((skill) => (types.length > 0 ? types.some((type) => skill.effects.some((e) => e.type === type)) : true))
         .filter((skill) => (rank ? (rank === 'positive' ? skill.rank > 0 : skill.rank < 0) : true)),
     [debouncedSearch, rank, sort, sortDirection, types],
+  );
+
+  const filteredPartnerSkills = useMemo(
+    () =>
+      sortArrayByPropertyInDirection(PARTNER_SKILLS, sort as keyof PartnerSkill, sortDirection)
+        .filter(({ name }) => (debouncedSearch ? name.toLowerCase().includes(debouncedSearch.toLowerCase()) : true))
+        .filter((skill) =>
+          partnerSkillCategories.length ? partnerSkillCategories.includes(skill.icon.toString()) : true,
+        ),
+    [debouncedSearch, partnerSkillCategories, sort, sortDirection],
   );
 
   return (
@@ -180,7 +206,13 @@ export function SkillsGrid() {
           </CollapsibleFilter>
 
           <CollapsibleFilter label="Category">
-            <ToggleGroup type="single" className="flex w-full" size="sm" value={category} onValueChange={setCategory}>
+            <ToggleGroup
+              type="single"
+              className="flex w-full"
+              size="sm"
+              value={activeSkillCategory}
+              onValueChange={setActiveSkillCategory}
+            >
               <ToggleGroupItem value="melee" className="flex-1">
                 Melee
               </ToggleGroupItem>
@@ -190,7 +222,7 @@ export function SkillsGrid() {
             </ToggleGroup>
           </CollapsibleFilter>
 
-          <CollapsibleFilter label="Effect">
+          <CollapsibleFilter label="Effects">
             <ToggleGroup
               type="multiple"
               className="md:grid md:grid-cols-2 md:gap-1"
@@ -229,7 +261,24 @@ export function SkillsGrid() {
         </TabsContent>
 
         <TabsContent value="partner" className="space-y-5">
-          Partner Filters
+          <CollapsibleFilter label="Categories">
+            <ToggleGroup
+              type="multiple"
+              className="md:grid md:grid-cols-6 md:gap-1"
+              value={partnerSkillCategories}
+              onValueChange={(v) => setPartnerSkillCategories(v.length > 0 ? v : null)}
+            >
+              {[...new Set(normalPals.map((p) => p.partnerSkillIcon).filter(notEmpty))].map((partnerSkillIcon) => (
+                <ToggleGroupItem
+                  key={partnerSkillIcon}
+                  value={partnerSkillIcon.toString()}
+                  className="w-10 p-0 md:w-auto"
+                >
+                  <PartnerSkillImage id={partnerSkillIcon.toString()} />
+                </ToggleGroupItem>
+              ))}
+            </ToggleGroup>
+          </CollapsibleFilter>
         </TabsContent>
 
         <Button asChild variant="secondary" className="w-full">
@@ -247,6 +296,10 @@ export function SkillsGrid() {
 
         <TabsContent value="passive">
           <PassiveSkills skills={filteredPassiveSkills} />
+        </TabsContent>
+
+        <TabsContent value="partner">
+          <PartnerSkills skills={filteredPartnerSkills} />
         </TabsContent>
       </div>
     </Tabs>
@@ -344,6 +397,43 @@ const PassiveSkills = memo(function PassiveSkills({ skills }: { skills: PassiveS
           </div>
 
           {/* {skill.description && <p className="text-sm text-gray-11">{skill.description}</p>} */}
+        </Card>
+      ))}
+    </div>
+  );
+});
+
+const PartnerSkills = memo(function PartnerSkills({ skills }: { skills: PartnerSkill[] }) {
+  if (skills.length === 0) return <div className="mt-28 flex justify-center text-gray-11">No passive skills found</div>;
+
+  return (
+    <div className="grid grid-cols-1 gap-4 @2xl:grid-cols-2">
+      {skills.map((skill) => (
+        <Card key={skill.name} className={cn('relative flex h-full flex-col gap-2')}>
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <PartnerSkillImage id={skill.icon.toString()} />
+              <div className="text-gray-12">{skill.name}</div>
+            </div>
+
+            <div className="flex gap-1">
+              {skill.pals.map((pal) => (
+                <Tooltip key={pal.id}>
+                  <TooltipTrigger>
+                    <Link href={`/pals/${pal.id}`} className="group">
+                      <PalImage
+                        id={pal.id}
+                        className="size-10 rounded-full border border-gray-7 bg-gray-1 group-hover:border-primary-9 group-hover:bg-gray-2"
+                      />
+                    </Link>
+                  </TooltipTrigger>
+                  <TooltipContent>{pal.name}</TooltipContent>
+                </Tooltip>
+              ))}
+            </div>
+          </div>
+
+          <p className="text-sm text-gray-11">{skill.description}</p>
         </Card>
       ))}
     </div>

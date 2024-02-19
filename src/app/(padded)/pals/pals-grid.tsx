@@ -198,7 +198,7 @@ export function PalsGrid() {
           </ToggleGroup>
         </CollapsibleFilter>
 
-        <CollapsibleFilter label="Partner Skills">
+        <CollapsibleFilter label="Partner Skill Category">
           <ToggleGroup
             type="multiple"
             className="md:grid md:grid-cols-6 md:gap-1"
