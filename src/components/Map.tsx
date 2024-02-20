@@ -21,7 +21,7 @@ import { parseAsBoolean, useQueryState } from 'nuqs';
 import { useEffect, useState } from 'react';
 import { Circle, MapContainer, Marker, Popup, TileLayer, useMapEvent, useMapEvents } from 'react-leaflet';
 
-const BOSS_PAL_LOCATIONS = PAL_LOCATIONS.filter((pal) => pal.isBoss);
+const BOSS_PAL_LOCATIONS = PAL_LOCATIONS.filter(({ isBoss }) => isBoss);
 
 type LocationGroup = {
   name: string;

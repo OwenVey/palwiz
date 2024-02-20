@@ -1,0 +1,824 @@
+[
+  {
+    "id": "lamball",
+    "name": "Lamball",
+    "zukanIndex": 1,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "cattiva",
+    "name": "Cattiva",
+    "zukanIndex": 2,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "chikipi",
+    "name": "Chikipi",
+    "zukanIndex": 3,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "lifmunk",
+    "name": "Lifmunk",
+    "zukanIndex": 4,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "foxparks",
+    "name": "Foxparks",
+    "zukanIndex": 5,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "fuack",
+    "name": "Fuack",
+    "zukanIndex": 6,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "sparkit",
+    "name": "Sparkit",
+    "zukanIndex": 7,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "tanzee",
+    "name": "Tanzee",
+    "zukanIndex": 8,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "rooby",
+    "name": "Rooby",
+    "zukanIndex": 9,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "pengullet",
+    "name": "Pengullet",
+    "zukanIndex": 10,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "penking",
+    "name": "Penking",
+    "zukanIndex": 11,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "jolthog",
+    "name": "Jolthog",
+    "zukanIndex": 12,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "jolthog-cryst",
+    "name": "Jolthog Cryst",
+    "zukanIndex": 12,
+    "zukanIndexSuffix": "B"
+  },
+  {
+    "id": "gumoss",
+    "name": "Gumoss",
+    "zukanIndex": 13,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "vixy",
+    "name": "Vixy",
+    "zukanIndex": 14,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "hoocrates",
+    "name": "Hoocrates",
+    "zukanIndex": 15,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "teafant",
+    "name": "Teafant",
+    "zukanIndex": 16,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "depresso",
+    "name": "Depresso",
+    "zukanIndex": 17,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "cremis",
+    "name": "Cremis",
+    "zukanIndex": 18,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "daedream",
+    "name": "Daedream",
+    "zukanIndex": 19,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "rushoar",
+    "name": "Rushoar",
+    "zukanIndex": 20,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "nox",
+    "name": "Nox",
+    "zukanIndex": 21,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "fuddler",
+    "name": "Fuddler",
+    "zukanIndex": 22,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "killamari",
+    "name": "Killamari",
+    "zukanIndex": 23,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "mau",
+    "name": "Mau",
+    "zukanIndex": 24,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "mau-cryst",
+    "name": "Mau Cryst",
+    "zukanIndex": 24,
+    "zukanIndexSuffix": "B"
+  },
+  {
+    "id": "celaray",
+    "name": "Celaray",
+    "zukanIndex": 25,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "direhowl",
+    "name": "Direhowl",
+    "zukanIndex": 26,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "tocotoco",
+    "name": "Tocotoco",
+    "zukanIndex": 27,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "flopie",
+    "name": "Flopie",
+    "zukanIndex": 28,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "mozzarina",
+    "name": "Mozzarina",
+    "zukanIndex": 29,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "bristla",
+    "name": "Bristla",
+    "zukanIndex": 30,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "gobfin",
+    "name": "Gobfin",
+    "zukanIndex": 31,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "gobfin-ignis",
+    "name": "Gobfin Ignis",
+    "zukanIndex": 31,
+    "zukanIndexSuffix": "B"
+  },
+  {
+    "id": "hangyu",
+    "name": "Hangyu",
+    "zukanIndex": 32,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "hangyu-cryst",
+    "name": "Hangyu Cryst",
+    "zukanIndex": 32,
+    "zukanIndexSuffix": "B"
+  },
+  {
+    "id": "mossanda",
+    "name": "Mossanda",
+    "zukanIndex": 33,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "mossanda-lux",
+    "name": "Mossanda Lux",
+    "zukanIndex": 33,
+    "zukanIndexSuffix": "B"
+  },
+  {
+    "id": "woolipop",
+    "name": "Woolipop",
+    "zukanIndex": 34,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "caprity",
+    "name": "Caprity",
+    "zukanIndex": 35,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "melpaca",
+    "name": "Melpaca",
+    "zukanIndex": 36,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "eikthyrdeer",
+    "name": "Eikthyrdeer",
+    "zukanIndex": 37,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "eikthyrdeer-terra",
+    "name": "Eikthyrdeer Terra",
+    "zukanIndex": 37,
+    "zukanIndexSuffix": "B"
+  },
+  {
+    "id": "nitewing",
+    "name": "Nitewing",
+    "zukanIndex": 38,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "ribbuny",
+    "name": "Ribbuny",
+    "zukanIndex": 39,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "incineram",
+    "name": "Incineram",
+    "zukanIndex": 40,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "incineram-noct",
+    "name": "Incineram Noct",
+    "zukanIndex": 40,
+    "zukanIndexSuffix": "B"
+  },
+  {
+    "id": "cinnamoth",
+    "name": "Cinnamoth",
+    "zukanIndex": 41,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "arsox",
+    "name": "Arsox",
+    "zukanIndex": 42,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "dumud",
+    "name": "Dumud",
+    "zukanIndex": 43,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "cawgnito",
+    "name": "Cawgnito",
+    "zukanIndex": 44,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "leezpunk",
+    "name": "Leezpunk",
+    "zukanIndex": 45,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "leezpunk-ignis",
+    "name": "Leezpunk Ignis",
+    "zukanIndex": 45,
+    "zukanIndexSuffix": "B"
+  },
+  {
+    "id": "loupmoon",
+    "name": "Loupmoon",
+    "zukanIndex": 46,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "galeclaw",
+    "name": "Galeclaw",
+    "zukanIndex": 47,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "robinquill",
+    "name": "Robinquill",
+    "zukanIndex": 48,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "robinquill-terra",
+    "name": "Robinquill Terra",
+    "zukanIndex": 48,
+    "zukanIndexSuffix": "B"
+  },
+  {
+    "id": "gorirat",
+    "name": "Gorirat",
+    "zukanIndex": 49,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "beegarde",
+    "name": "Beegarde",
+    "zukanIndex": 50,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "elizabee",
+    "name": "Elizabee",
+    "zukanIndex": 51,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "grintale",
+    "name": "Grintale",
+    "zukanIndex": 52,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "swee",
+    "name": "Swee",
+    "zukanIndex": 53,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "sweepa",
+    "name": "Sweepa",
+    "zukanIndex": 54,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "chillet",
+    "name": "Chillet",
+    "zukanIndex": 55,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "univolt",
+    "name": "Univolt",
+    "zukanIndex": 56,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "foxcicle",
+    "name": "Foxcicle",
+    "zukanIndex": 57,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "pyrin",
+    "name": "Pyrin",
+    "zukanIndex": 58,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "pyrin-noct",
+    "name": "Pyrin Noct",
+    "zukanIndex": 58,
+    "zukanIndexSuffix": "B"
+  },
+  {
+    "id": "reindrix",
+    "name": "Reindrix",
+    "zukanIndex": 59,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "rayhound",
+    "name": "Rayhound",
+    "zukanIndex": 60,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "kitsun",
+    "name": "Kitsun",
+    "zukanIndex": 61,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "dazzi",
+    "name": "Dazzi",
+    "zukanIndex": 62,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "lunaris",
+    "name": "Lunaris",
+    "zukanIndex": 63,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "dinossom",
+    "name": "Dinossom",
+    "zukanIndex": 64,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "dinossom-lux",
+    "name": "Dinossom Lux",
+    "zukanIndex": 64,
+    "zukanIndexSuffix": "B"
+  },
+  {
+    "id": "surfent",
+    "name": "Surfent",
+    "zukanIndex": 65,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "surfent-terra",
+    "name": "Surfent Terra",
+    "zukanIndex": 65,
+    "zukanIndexSuffix": "B"
+  },
+  {
+    "id": "maraith",
+    "name": "Maraith",
+    "zukanIndex": 66,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "digtoise",
+    "name": "Digtoise",
+    "zukanIndex": 67,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "tombat",
+    "name": "Tombat",
+    "zukanIndex": 68,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "lovander",
+    "name": "Lovander",
+    "zukanIndex": 69,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "flambelle",
+    "name": "Flambelle",
+    "zukanIndex": 70,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "vanwyrm",
+    "name": "Vanwyrm",
+    "zukanIndex": 71,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "vanwyrm-cryst",
+    "name": "Vanwyrm Cryst",
+    "zukanIndex": 71,
+    "zukanIndexSuffix": "B"
+  },
+  {
+    "id": "bushi",
+    "name": "Bushi",
+    "zukanIndex": 72,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "beakon",
+    "name": "Beakon",
+    "zukanIndex": 73,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "ragnahawk",
+    "name": "Ragnahawk",
+    "zukanIndex": 74,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "katress",
+    "name": "Katress",
+    "zukanIndex": 75,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "wixen",
+    "name": "Wixen",
+    "zukanIndex": 76,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "verdash",
+    "name": "Verdash",
+    "zukanIndex": 77,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "vaelet",
+    "name": "Vaelet",
+    "zukanIndex": 78,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "sibelyx",
+    "name": "Sibelyx",
+    "zukanIndex": 79,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "elphidran",
+    "name": "Elphidran",
+    "zukanIndex": 80,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "elphidran-aqua",
+    "name": "Elphidran Aqua",
+    "zukanIndex": 80,
+    "zukanIndexSuffix": "B"
+  },
+  {
+    "id": "kelpsea",
+    "name": "Kelpsea",
+    "zukanIndex": 81,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "kelpsea-ignis",
+    "name": "Kelpsea Ignis",
+    "zukanIndex": 81,
+    "zukanIndexSuffix": "B"
+  },
+  {
+    "id": "azurobe",
+    "name": "Azurobe",
+    "zukanIndex": 82,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "cryolinx",
+    "name": "Cryolinx",
+    "zukanIndex": 83,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "blazehowl",
+    "name": "Blazehowl",
+    "zukanIndex": 84,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "blazehowl-noct",
+    "name": "Blazehowl Noct",
+    "zukanIndex": 84,
+    "zukanIndexSuffix": "B"
+  },
+  {
+    "id": "relaxaurus",
+    "name": "Relaxaurus",
+    "zukanIndex": 85,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "relaxaurus-lux",
+    "name": "Relaxaurus Lux",
+    "zukanIndex": 85,
+    "zukanIndexSuffix": "B"
+  },
+  {
+    "id": "broncherry",
+    "name": "Broncherry",
+    "zukanIndex": 86,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "broncherry-aqua",
+    "name": "Broncherry Aqua",
+    "zukanIndex": 86,
+    "zukanIndexSuffix": "B"
+  },
+  {
+    "id": "petallia",
+    "name": "Petallia",
+    "zukanIndex": 87,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "reptyro",
+    "name": "Reptyro",
+    "zukanIndex": 88,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "reptyro-cryst",
+    "name": "Reptyro Cryst",
+    "zukanIndex": 88,
+    "zukanIndexSuffix": "B"
+  },
+  {
+    "id": "kingpaca",
+    "name": "Kingpaca",
+    "zukanIndex": 89,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "kingpaca-cryst",
+    "name": "Kingpaca Cryst",
+    "zukanIndex": 89,
+    "zukanIndexSuffix": "B"
+  },
+  {
+    "id": "mammorest",
+    "name": "Mammorest",
+    "zukanIndex": 90,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "mammorest-cryst",
+    "name": "Mammorest Cryst",
+    "zukanIndex": 90,
+    "zukanIndexSuffix": "B"
+  },
+  {
+    "id": "wumpo",
+    "name": "Wumpo",
+    "zukanIndex": 91,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "wumpo-botan",
+    "name": "Wumpo Botan",
+    "zukanIndex": 91,
+    "zukanIndexSuffix": "B"
+  },
+  {
+    "id": "warsect",
+    "name": "Warsect",
+    "zukanIndex": 92,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "fenglope",
+    "name": "Fenglope",
+    "zukanIndex": 93,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "felbat",
+    "name": "Felbat",
+    "zukanIndex": 94,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "quivern",
+    "name": "Quivern",
+    "zukanIndex": 95,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "blazamut",
+    "name": "Blazamut",
+    "zukanIndex": 96,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "helzephyr",
+    "name": "Helzephyr",
+    "zukanIndex": 97,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "astegon",
+    "name": "Astegon",
+    "zukanIndex": 98,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "menasting",
+    "name": "Menasting",
+    "zukanIndex": 99,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "anubis",
+    "name": "Anubis",
+    "zukanIndex": 100,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "jormuntide",
+    "name": "Jormuntide",
+    "zukanIndex": 101,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "jormuntide-ignis",
+    "name": "Jormuntide Ignis",
+    "zukanIndex": 101,
+    "zukanIndexSuffix": "B"
+  },
+  {
+    "id": "suzaku",
+    "name": "Suzaku",
+    "zukanIndex": 102,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "suzaku-aqua",
+    "name": "Suzaku Aqua",
+    "zukanIndex": 102,
+    "zukanIndexSuffix": "B"
+  },
+  {
+    "id": "grizzbolt",
+    "name": "Grizzbolt",
+    "zukanIndex": 103,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "lyleen",
+    "name": "Lyleen",
+    "zukanIndex": 104,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "lyleen-noct",
+    "name": "Lyleen Noct",
+    "zukanIndex": 104,
+    "zukanIndexSuffix": "B"
+  },
+  {
+    "id": "faleris",
+    "name": "Faleris",
+    "zukanIndex": 105,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "orserk",
+    "name": "Orserk",
+    "zukanIndex": 106,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "shadowbeak",
+    "name": "Shadowbeak",
+    "zukanIndex": 107,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "paladius",
+    "name": "Paladius",
+    "zukanIndex": 108,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "necromus",
+    "name": "Necromus",
+    "zukanIndex": 109,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "frostallion",
+    "name": "Frostallion",
+    "zukanIndex": 110,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "frostallion-noct",
+    "name": "Frostallion Noct",
+    "zukanIndex": 110,
+    "zukanIndexSuffix": "B"
+  },
+  {
+    "id": "jetragon",
+    "name": "Jetragon",
+    "zukanIndex": 111,
+    "zukanIndexSuffix": ""
+  }
+]

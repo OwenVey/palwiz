@@ -6,14 +6,57 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Separator } from '@/components/ui/separator';
+import { SAME_PARENT_CHILDREN, UNIQUE_BREEDING_CHILDREN, UNIQUE_BREEDING_COMBO_MAP } from '@/constants';
 import NORMAL_PALS from '@/data/normal-pals.json';
-import { getBreedingResult, getPalById } from '@/lib/pal-utils';
+import { getPalById } from '@/lib/pal-utils';
 import { cn, notEmpty, useQueryString } from '@/lib/utils';
-import { type BreedingCombo, type Pal } from '@/types';
+import { type Pal } from '@/types';
 import { useDebounce } from '@uidotdev/usehooks';
 import { EqualIcon, PlusIcon, RotateCcwIcon, SearchIcon } from 'lucide-react';
 import Link, { type LinkProps } from 'next/link';
 import { memo, useMemo } from 'react';
+
+type BreedingCombo = { parentA: Pal; parentB: Pal; child: Pal };
+
+const BREED_ORDER_PALS = NORMAL_PALS.filter((pal) => !UNIQUE_BREEDING_CHILDREN.includes(pal.id))
+  .filter((pal) => !SAME_PARENT_CHILDREN.includes(pal.id))
+  .sort((a, b) => (a.breedOrder ?? 0) - (b.breedOrder ?? 0));
+
+function checkUniqueBreedingCombos(parentAId: string, parentBId: string) {
+  const match = UNIQUE_BREEDING_COMBO_MAP.find(
+    (combo) => [parentAId, parentBId].sort().join() === [...combo.parents].sort().join(),
+  );
+  if (!match) return null;
+
+  const childPal = getPalById(match.childId);
+  if (!childPal) return null;
+
+  return childPal;
+}
+
+export function getBreedingResult(parentAId: string, parentBId: string) {
+  if (!parentAId || !parentAId) return null;
+  if (parentAId === parentBId) return getPalById(parentAId);
+
+  const uniqueMatch = checkUniqueBreedingCombos(parentAId, parentBId);
+  if (uniqueMatch) return uniqueMatch;
+
+  const parentA = getPalById(parentAId);
+  if (!parentA) return null;
+
+  const parentB = getPalById(parentBId);
+  if (!parentB) return null;
+
+  const averageCombiRank = Math.floor((parentA.combiRank + parentB.combiRank + 1) / 2);
+
+  const child = BREED_ORDER_PALS.reduce((closestPal, pal) => {
+    const currentDiff = Math.abs(pal.combiRank - averageCombiRank);
+    const closestDiff = Math.abs(closestPal.combiRank - averageCombiRank);
+    return currentDiff < closestDiff ? pal : closestPal;
+  });
+
+  return child;
+}
 
 function getCombos(parentAId: string, parentBId: string, childId: string): BreedingCombo[] {
   // calculate child of both parents

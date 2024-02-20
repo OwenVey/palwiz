@@ -1,4 +1,4 @@
-import { getBreedingResult } from '@/lib/pal-utils';
+import { getBreedingResult } from '@/app/(padded)/breeding/breeding';
 import { describe, expect, it } from 'vitest';
 
 describe('getBreedingResult', () => {

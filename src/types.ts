@@ -9,7 +9,6 @@ import type PASSIVE_SKILLS from '@/data/passive-skills.json';
 export type Pal = (typeof NORMAL_PALS)[number];
 export type WorkSuitability = keyof Pal['workSuitabilities'];
 export type Drop = Pal['drops'][number];
-export type BreedingCombo = { parentA: Pal; parentB: Pal; child: Pal };
 
 export type Item = (typeof ITEMS)[number];
 export type ItemRecipe = (typeof ITEM_RECIPES)[number];
