@@ -27423,7 +27423,11 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "None",
     "overridePartnerSkillTextId": "None",
-    "partnerSkill": null,
+    "partnerSkill": {
+      "description": "While in team, can be summoned and used instead of a glider. Carries the player up high while gliding.",
+      "group": "Glider",
+      "name": "Flying Trapeze"
+    },
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
@@ -27547,7 +27551,11 @@
     "organization": "EPalOrganizationType::None",
     "overrideNameTextId": "None",
     "overridePartnerSkillTextId": "None",
-    "partnerSkill": null,
+    "partnerSkill": {
+      "description": "While in team, can be summoned and used instead of a glider. Carries the player up high while gliding.",
+      "group": "Glider",
+      "name": "Winter Trapeze"
+    },
     "passiveSkill1": "None",
     "passiveSkill2": "None",
     "passiveSkill3": "None",
