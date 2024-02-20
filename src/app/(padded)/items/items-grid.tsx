@@ -190,12 +190,15 @@ export function ItemsGrid() {
           </ToggleGroup>
         </CollapsibleFilter>
 
-        <Button asChild variant="secondary" className="w-full">
-          <Link href="/items">
-            <FilterXIcon className="mr-2 size-4" />
-            Clear Filters
-          </Link>
-        </Button>
+        <div className="flex flex-col items-end gap-2">
+          <div className="text-nowrap text-sm text-gray-11">{filteredItems.length} results</div>
+          <Button asChild variant="secondary" className="w-full">
+            <Link href="/items">
+              <FilterXIcon className="mr-2 size-4" />
+              Clear Filters
+            </Link>
+          </Button>
+        </div>
       </Card>
 
       <div className="flex-1 @container">

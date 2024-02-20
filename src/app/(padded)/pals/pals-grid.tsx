@@ -209,8 +209,8 @@ export function PalsGrid() {
           </ToggleGroup>
         </CollapsibleFilter>
 
-        <div className="w-full">
-          <div className="float-right mb-2 text-nowrap text-sm text-gray-11">{filteredPals.length} results</div>
+        <div className="flex flex-col items-end gap-2">
+          <div className="text-nowrap text-sm text-gray-11">{filteredPals.length} results</div>
 
           <Button asChild variant="secondary" className="w-full">
             <Link href="/pals">
