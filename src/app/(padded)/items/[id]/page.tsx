@@ -3,16 +3,17 @@ import { PalImage } from '@/components/PalImage';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tooltip } from '@/components/ui/tooltip';
-import { getItemRecipeById } from '@/data/parsed/item-recipes';
-import { ITEMS, getItemById } from '@/data/parsed/items';
-import { ALL_PALS } from '@/data/parsed/pals';
+import ALPHA_PALS from '@/data/alpha-pals.json';
+import ITEM_RECIPES from '@/data/item-recipes.json';
+import ITEMS from '@/data/items.json';
+import NORMAL_PALS from '@/data/normal-pals.json';
 import { cn, getBadgeVariantForRate, notEmpty } from '@/lib/utils';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
 export function generateMetadata({ params }: { params: { id: string } }) {
-  const item = getItemById(params.id);
+  const item = ITEMS.find(({ id }) => id === params.id);
   return {
     title: item ? item.name : 'Not Found',
   };
@@ -22,22 +23,23 @@ export function generateStaticParams() {
 }
 
 export default function ItemPage({ params }: { params: { id: string } }) {
-  const item = getItemById(params.id);
+  const item = ITEMS.find(({ id }) => id === params.id);
 
   if (!item) notFound();
 
-  const recipe = getItemRecipeById(item.id);
-  const materials = recipe?.materials.map((m) => ({ ...m, item: getItemById(m.id)! })).filter(notEmpty) ?? [];
+  const recipe = ITEM_RECIPES.find((itemRecipe) => itemRecipe.id === params.id);
+  const materials =
+    recipe?.materials.map((m) => ({ ...m, item: ITEMS.find(({ id }) => id === m.id)! })).filter(notEmpty) ?? [];
 
-  const droppedByPals = ALL_PALS.filter((pal) => pal.drops.some((drop) => drop.id === item.id)).map(
-    ({ id, name, isBoss, internalName, drops }) => ({
+  const droppedByPals = [...NORMAL_PALS, ...ALPHA_PALS]
+    .filter((pal) => pal.drops.some((drop) => drop.id === item.id))
+    .map(({ id, name, isBoss, internalName, drops }) => ({
       name,
       isBoss,
       internalName,
       ...drops.find((drop) => drop.id === item.id)!,
       id,
-    }),
-  );
+    }));
 
   const stats = [
     { label: 'Corruption Factor', value: item.corruptionFactor },

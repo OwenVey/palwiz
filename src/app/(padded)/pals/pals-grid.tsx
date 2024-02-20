@@ -12,7 +12,8 @@ import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger } from '@/components/ui/select';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import { PAL_ELEMENTS, WORK_SUITABILITIES } from '@/constants';
-import { NORMAL_PALS, PARTNER_SKILL_CATEGORIES } from '@/data/parsed/pals';
+import NORMAL_PALS from '@/data/normal-pals.json';
+import { PARTNER_SKILL_CATEGORIES } from '@/lib/pal-utils';
 import { isWithinRange, parseAsArrayOfStrings, sortArrayByPropertyInDirection, useQueryString } from '@/lib/utils';
 import { type Pal, type WorkSuitability } from '@/types';
 import { useDebounce } from '@uidotdev/usehooks';
@@ -75,7 +76,6 @@ export function PalsGrid() {
   const filteredPals = useMemo(() => {
     return sortArrayByPropertyInDirection(
       NORMAL_PALS.filter((pal) => {
-        if (pal.zukanIndex <= 0 || pal.isBoss) return false;
         if (debouncedSearch && !pal.name.toLowerCase().includes(debouncedSearch.toLowerCase())) return false;
         if (rarity && !isCorrectRarity(rarity ?? 'all', pal.rarity)) return false;
         if (elements.length && ![pal.elementType1, pal.elementType2].some((e) => e && elements.includes(e)))

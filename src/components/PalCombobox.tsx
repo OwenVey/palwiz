@@ -10,7 +10,8 @@ import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem } from '
 import { Label } from '@/components/ui/label';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { ScrollArea } from '@/components/ui/scroll-area';
-import { NORMAL_PALS, getPalById } from '@/data/parsed/pals';
+import NORMAL_PALS from '@/data/normal-pals.json';
+import { getPalById } from '@/lib/pal-utils';
 import { cn } from '@/lib/utils';
 import { type Pal } from '@/types';
 import { type PopoverTriggerProps } from '@radix-ui/react-popover';

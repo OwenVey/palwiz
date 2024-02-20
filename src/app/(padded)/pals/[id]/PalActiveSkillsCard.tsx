@@ -1,7 +1,7 @@
 import { ElementImage } from '@/components/ElementImage';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
-import { getActiveSkillById } from '@/data/parsed/active-skills';
+import ACTIVE_SKILLS from '@/data/active-skills.json';
 import { type Pal } from '@/types';
 import Link from 'next/link';
 
@@ -10,7 +10,10 @@ interface PalActiveSkillsCardProps extends React.HTMLAttributes<HTMLDivElement> 
 }
 
 export function PalActiveSkillsCard({ pal, ...rest }: PalActiveSkillsCardProps) {
-  const activeSkills = pal.activeSkills.map((skill) => ({ ...skill, ...getActiveSkillById(skill.id)! }));
+  const activeSkills = pal.activeSkills.map((skill) => ({
+    ...skill,
+    ...ACTIVE_SKILLS.find(({ id }) => id === skill.id)!,
+  }));
   return (
     <Card {...rest}>
       <CardHeader>

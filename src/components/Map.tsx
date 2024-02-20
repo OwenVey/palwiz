@@ -8,10 +8,9 @@ import { Label } from '@/components/ui/label';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Switch } from '@/components/ui/switch';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
-import mapLocationsJson from '@/data/map-locations.json';
-import palLocationsJson from '@/data/pal-locations.json';
+import MAP_LOCATIONS from '@/data/map-locations.json';
+import PAL_LOCATIONS from '@/data/pal-locations.json';
 import { cn, parseAsArrayOfStrings, useQueryString } from '@/lib/utils';
-import { PalLocationSchema } from '@/schemas/pal-location';
 import { useToggle } from '@uidotdev/usehooks';
 import { capitalCase } from 'change-case';
 import { CRS, Icon } from 'leaflet';
@@ -21,11 +20,8 @@ import Image from 'next/image';
 import { parseAsBoolean, useQueryState } from 'nuqs';
 import { useEffect, useState } from 'react';
 import { Circle, MapContainer, Marker, Popup, TileLayer, useMapEvent, useMapEvents } from 'react-leaflet';
-import { z } from 'zod';
 
-const MAP_LOCATIONS = mapLocationsJson.filter((l) => l.enabled);
-const PAL_LOCATIONS = z.array(PalLocationSchema).parse(palLocationsJson);
-const BOSS_PALS = PAL_LOCATIONS.filter((pal) => pal.isBoss);
+const BOSS_PAL_LOCATIONS = PAL_LOCATIONS.filter((pal) => pal.isBoss);
 
 type LocationGroup = {
   name: string;
@@ -43,7 +39,7 @@ const LOCATION_GROUPS: Record<string, LocationGroup[]> = {
     { name: 'Dungeon', icon: '/images/map/icons/sealed-dungeon.png', iconSize: 30 },
     { name: 'Statue of Power', icon: '/images/map/icons/star.png', iconSize: 40, iconClass: 'scale-125' },
     { name: 'NPC', icon: '/images/map/icons/man.svg', iconSize: 30 },
-    { name: 'Boss Pals', icon: '/images/pals/jetragon.webp', iconSize: 30, count: BOSS_PALS.length },
+    { name: 'Boss Pals', icon: '/images/pals/jetragon.webp', iconSize: 30, count: BOSS_PAL_LOCATIONS.length },
   ],
   collectibles: [
     { name: 'Lifmunk Effigy', icon: '/images/items/relic.webp', iconSize: 20 },
@@ -228,7 +224,7 @@ export default function MyMap() {
 
           {/* Boss Pals */}
           {filters.includes('Boss Pals') &&
-            BOSS_PALS.map((boss) => (
+            BOSS_PAL_LOCATIONS.map((boss) => (
               <Marker
                 key={boss.id}
                 position={getLeafletCoords(boss.locations.day[0]!)}

@@ -2,14 +2,14 @@ import { ElementImage } from '@/components/ElementImage';
 import { PalImage } from '@/components/PalImage';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
-import { ACTIVE_SKILLS, getActiveSkillById } from '@/data/parsed/active-skills';
-import { NORMAL_PALS } from '@/data/parsed/pals';
+import ACTIVE_SKILLS from '@/data/active-skills.json';
+import NORMAL_PALS from '@/data/normal-pals.json';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
 export function generateMetadata({ params }: { params: { id: string } }) {
-  const skill = getActiveSkillById(params.id);
+  const skill = ACTIVE_SKILLS.find(({ id }) => id === params.id);
   return {
     title: skill ? skill.name : 'Not Found',
   };
@@ -19,7 +19,7 @@ export function generateStaticParams() {
 }
 
 export default function SkillPage({ params }: { params: { id: string } }) {
-  const skill = getActiveSkillById(params.id);
+  const skill = ACTIVE_SKILLS.find(({ id }) => id === params.id);
 
   if (!skill) notFound();
 

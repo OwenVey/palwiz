@@ -9,8 +9,8 @@ import { Badge } from '@/components/ui/badge';
 import { Label } from '@/components/ui/label';
 import { Switch } from '@/components/ui/switch';
 import { Tooltip } from '@/components/ui/tooltip';
-import { getItemById } from '@/data/parsed/items';
-import { ALL_PALS } from '@/data/parsed/pals';
+import ALPHA_PALS from '@/data/alpha-pals.json';
+import ITEMS from '@/data/items.json';
 import { cn, getBadgeVariantForRate } from '@/lib/utils';
 import { type Pal } from '@/types';
 import Link from 'next/link';
@@ -22,11 +22,11 @@ interface ItemDropsCardProps extends React.HTMLAttributes<HTMLDivElement> {
 export function ItemDropsCard({ pal, className, ...rest }: ItemDropsCardProps) {
   const [showAlphaDrops, setShowAlphaDrops] = useState(false);
 
-  const normalDrops = pal.drops.map((drop) => ({ ...drop, item: getItemById(drop.id)! }));
+  const normalDrops = pal.drops.map((drop) => ({ ...drop, item: ITEMS.find(({ id }) => id === drop.id)! }));
   const bossDrops =
-    ALL_PALS.find(({ isBoss, name }) => isBoss && name === pal.name)?.drops.map((drop) => ({
+    ALPHA_PALS.find(({ name }) => name === pal.name)?.drops.map((drop) => ({
       ...drop,
-      item: getItemById(drop.id)!,
+      item: ITEMS.find(({ id }) => id === drop.id)!,
     })) ?? [];
 
   const dropsToShow = showAlphaDrops ? bossDrops : normalDrops;
