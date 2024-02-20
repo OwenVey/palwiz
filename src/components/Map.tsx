@@ -89,10 +89,10 @@ export default function MyMap() {
 
   const [hideSidebar, toggleHideSidebar] = useToggle(false);
   return (
-    <div>
+    <>
       <Card
         className={cn(
-          'fixed left-4 right-6 top-[81px] p-0 transition-transform sm:w-[425px]',
+          'fixed left-4 right-6 top-[81px] z-[401] p-0 transition-transform sm:w-[425px]',
           hideSidebar && 'left-0 -translate-x-full',
         )}
       >
@@ -155,100 +155,98 @@ export default function MyMap() {
         </ScrollArea>
       </Card>
 
-      <div className="absolute left-0 top-0 z-[-1] h-dvh w-dvw">
-        <MapContainer
-          crs={CRS.Simple}
-          center={[-128, 128]}
-          zoom={2}
-          zoomSnap={1}
-          zoomDelta={1}
-          className="h-full !bg-[#102536]"
-          zoomControl={false}
-          attributionControl={false}
-          maxBounds={[
-            [BOUND_SIZE, -BOUND_SIZE],
-            [-MAP_SIZE - BOUND_SIZE, MAP_SIZE + BOUND_SIZE],
-          ]}
-        >
-          {/* Top Right corner */}
-          <div className="leaflet-top leaflet-right !pointer-events-auto m-4 flex flex-col gap-2">
-            <FullscreenButton />
-            <ZoomControls />
-          </div>
+      <MapContainer
+        crs={CRS.Simple}
+        center={[-128, 128]}
+        zoom={2}
+        zoomSnap={1}
+        zoomDelta={1}
+        className="h-full !bg-[#102536]"
+        zoomControl={false}
+        attributionControl={false}
+        maxBounds={[
+          [BOUND_SIZE, -BOUND_SIZE],
+          [-MAP_SIZE - BOUND_SIZE, MAP_SIZE + BOUND_SIZE],
+        ]}
+      >
+        {/* Top Right corner */}
+        <div className="leaflet-top leaflet-right !pointer-events-auto m-4 flex flex-col gap-2">
+          <FullscreenButton />
+          <ZoomControls />
+        </div>
 
-          {/* Bottom Right corner */}
-          <div className="leaflet-bottom leaflet-right !pointer-events-auto m-4 flex flex-col gap-2">
-            <Coordinates />
-          </div>
+        {/* Bottom Right corner */}
+        <div className="leaflet-bottom leaflet-right !pointer-events-auto m-4 flex flex-col gap-2">
+          <Coordinates />
+        </div>
 
-          {/* All location groups */}
-          {Object.values(LOCATION_GROUPS).map((gorup) =>
-            gorup.map((category) =>
-              MAP_LOCATIONS.find((m) => m.name === category.name && filters.includes(category.name))?.locations.map(
-                (location) => (
-                  <Marker
-                    key={location.x}
-                    position={getLeafletCoords(location)}
-                    icon={
-                      new Icon({
-                        iconUrl: category.icon,
-                        iconSize: [category.iconSize, category.iconSize],
-                      })
-                    }
-                  >
-                    <Popup>
-                      {category.name}: {getInGameCoords(getLeafletCoords(location))}
-                    </Popup>
-                  </Marker>
-                ),
+        {/* All location groups */}
+        {Object.values(LOCATION_GROUPS).map((gorup) =>
+          gorup.map((category) =>
+            MAP_LOCATIONS.find((m) => m.name === category.name && filters.includes(category.name))?.locations.map(
+              (location) => (
+                <Marker
+                  key={location.x}
+                  position={getLeafletCoords(location)}
+                  icon={
+                    new Icon({
+                      iconUrl: category.icon,
+                      iconSize: [category.iconSize, category.iconSize],
+                    })
+                  }
+                >
+                  <Popup>
+                    {category.name}: {getInGameCoords(getLeafletCoords(location))}
+                  </Popup>
+                </Marker>
               ),
+            ),
+          ),
+        )}
+
+        {/* Pal Locations */}
+        {palFilter &&
+          PAL_LOCATIONS.find((p) => p.id === palFilter)?.locations[showNightLocations ? 'night' : 'day'].map(
+            (location, index) => (
+              <Circle
+                key={`${location.x},${location.y},${location.z}-${index}`}
+                center={getLeafletCoords(location)}
+                pathOptions={{
+                  fillColor: showNightLocations ? '#5ecdff' : 'orange',
+                  color: showNightLocations ? '#3197c4' : '#bf800a',
+                  weight: 1,
+                  opacity: 0.2,
+                  fillOpacity: 0.5,
+                }}
+                radius={2}
+              />
             ),
           )}
 
-          {/* Pal Locations */}
-          {palFilter &&
-            PAL_LOCATIONS.find((p) => p.id === palFilter)?.locations[showNightLocations ? 'night' : 'day'].map(
-              (location, index) => (
-                <Circle
-                  key={`${location.x},${location.y},${location.z}-${index}`}
-                  center={getLeafletCoords(location)}
-                  pathOptions={{
-                    fillColor: showNightLocations ? '#5ecdff' : 'orange',
-                    color: showNightLocations ? '#3197c4' : '#bf800a',
-                    weight: 1,
-                    opacity: 0.2,
-                    fillOpacity: 0.5,
-                  }}
-                  radius={2}
-                />
-              ),
-            )}
+        {/* Boss Pals */}
+        {filters.includes('Boss Pals') &&
+          BOSS_PAL_LOCATIONS.map((boss) => (
+            <Marker
+              key={boss.id}
+              position={getLeafletCoords(boss.locations.day[0]!)}
+              icon={
+                new Icon({
+                  iconUrl: `/images/pals/${boss.id}.webp`,
+                  iconSize: [35, 35],
+                  className: 'rounded-full bg-black border border-white',
+                })
+              }
+            >
+              <Popup>
+                {capitalCase(boss.id)}: {getInGameCoords(getLeafletCoords(boss.locations.day[0]!))}
+              </Popup>
+            </Marker>
+          ))}
 
-          {/* Boss Pals */}
-          {filters.includes('Boss Pals') &&
-            BOSS_PAL_LOCATIONS.map((boss) => (
-              <Marker
-                key={boss.id}
-                position={getLeafletCoords(boss.locations.day[0]!)}
-                icon={
-                  new Icon({
-                    iconUrl: `/images/pals/${boss.id}.webp`,
-                    iconSize: [35, 35],
-                    className: 'rounded-full bg-black border border-white',
-                  })
-                }
-              >
-                <Popup>
-                  {capitalCase(boss.id)}: {getInGameCoords(getLeafletCoords(boss.locations.day[0]!))}
-                </Popup>
-              </Marker>
-            ))}
-
-          {/* Map Tiles */}
-          <TileLayer url="/images/map/tiles/{z}/{x}/{y}.webp" minZoom={1} maxZoom={6} />
-        </MapContainer>
-      </div>
-    </div>
+        {/* Map Tiles */}
+        <TileLayer url="/images/map/tiles/{z}/{x}/{y}.webp" minZoom={1} maxZoom={6} />
+      </MapContainer>
+    </>
   );
 }
 

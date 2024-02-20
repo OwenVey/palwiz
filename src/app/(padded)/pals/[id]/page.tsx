@@ -25,7 +25,7 @@ export default function PalPage({ params }: { params: { id: string } }) {
 
   return (
     <div className="flex flex-col gap-4 md:flex-row">
-      <PalStatsSidebar className="h-fit md:sticky md:top-[81px] md:w-72" pal={pal} />
+      <PalStatsSidebar pal={pal} />
 
       <div className="flex flex-1 grid-cols-1 flex-col gap-4 md:grid md:grid-cols-2">
         <div className="grid gap-4">

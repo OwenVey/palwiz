@@ -4,6 +4,7 @@ import { CollapsibleFilter } from '@/components/CollapsibleFilter';
 import { ElementImage } from '@/components/ElementImage';
 import { PalImage } from '@/components/PalImage';
 import { PartnerSkillImage } from '@/components/PartnerSkillImage';
+import { StickySidebar } from '@/components/StickySidebar';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
@@ -136,167 +137,169 @@ export function SkillsGrid() {
       value={type}
       onValueChange={(v) => router.replace(`/skills/?type=${v}${search && `&search=${search}`}`)}
     >
-      <Card className="z-10 flex h-fit flex-col gap-5 md:sticky md:top-[81px] md:w-72">
-        <TabsList className="w-full">
-          <TabsTrigger value="active" className="flex-1">
-            Active
-          </TabsTrigger>
-          <TabsTrigger value="passive" className="flex-1">
-            Passive
-          </TabsTrigger>
-          <TabsTrigger value="partner" className="flex-1">
-            Partner
-          </TabsTrigger>
-        </TabsList>
+      <StickySidebar>
+        <div className="space-y-5">
+          <TabsList className="w-full">
+            <TabsTrigger value="active" className="flex-1">
+              Active
+            </TabsTrigger>
+            <TabsTrigger value="passive" className="flex-1">
+              Passive
+            </TabsTrigger>
+            <TabsTrigger value="partner" className="flex-1">
+              Partner
+            </TabsTrigger>
+          </TabsList>
 
-        <Input
-          className="w-full"
-          label="Search"
-          placeholder="Search skills"
-          icon={SearchIcon}
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
+          <Input
+            className="w-full"
+            label="Search"
+            placeholder="Search skills"
+            icon={SearchIcon}
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
 
-        <div className="flex flex-col items-end gap-2">
-          <Select value={sort} onValueChange={setSort}>
-            <SelectTrigger label="Sort" icon={ArrowUpDownIcon} placeholder="Sort by" />
+          <div className="flex flex-col items-end gap-2">
+            <Select value={sort} onValueChange={setSort}>
+              <SelectTrigger label="Sort" icon={ArrowUpDownIcon} placeholder="Sort by" />
 
-            <SelectContent>
-              {SORTS[type].map(({ label, value }) => (
-                <SelectItem key={value} value={value}>
-                  {label}
-                </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
-          <ToggleGroup
-            type="single"
-            className="flex w-full"
-            size="sm"
-            value={sortDirection}
-            onValueChange={(value: 'asc' | 'desc') => value && setSortDirection(value)}
-          >
-            <ToggleGroupItem value="asc" className="flex-1">
-              <ArrowDownNarrowWideIcon className="mr-1 size-4" />
-              Asc
-            </ToggleGroupItem>
-            <ToggleGroupItem value="desc" className="flex-1">
-              <ArrowDownWideNarrowIcon className="mr-1 size-4" />
-              Desc
-            </ToggleGroupItem>
-          </ToggleGroup>
-        </div>
-
-        <TabsContent value="active" className="space-y-5">
-          <CollapsibleFilter label="Elements">
-            <ToggleGroup
-              type="multiple"
-              className="md:grid md:grid-cols-6 md:gap-1"
-              value={elements}
-              onValueChange={(e) => setElements(e.length > 0 ? e : null)}
-            >
-              {PAL_ELEMENTS.map((element) => (
-                <ToggleGroupItem key={element} value={element} className="w-10 p-0 md:w-auto">
-                  <ElementImage element={element} />
-                </ToggleGroupItem>
-              ))}
-            </ToggleGroup>
-          </CollapsibleFilter>
-
-          <CollapsibleFilter label="Category">
+              <SelectContent>
+                {SORTS[type].map(({ label, value }) => (
+                  <SelectItem key={value} value={value}>
+                    {label}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
             <ToggleGroup
               type="single"
               className="flex w-full"
               size="sm"
-              value={activeSkillCategory}
-              onValueChange={setActiveSkillCategory}
+              value={sortDirection}
+              onValueChange={(value: 'asc' | 'desc') => value && setSortDirection(value)}
             >
-              <ToggleGroupItem value="melee" className="flex-1">
-                Melee
+              <ToggleGroupItem value="asc" className="flex-1">
+                <ArrowDownNarrowWideIcon className="mr-1 size-4" />
+                Asc
               </ToggleGroupItem>
-              <ToggleGroupItem value="shot" className="flex-1">
-                Shot
-              </ToggleGroupItem>
-            </ToggleGroup>
-          </CollapsibleFilter>
-
-          <CollapsibleFilter label="Effects">
-            <ToggleGroup
-              type="multiple"
-              className="md:grid md:grid-cols-2 md:gap-1"
-              value={effects}
-              onValueChange={(v) => setEffects(v.length > 0 ? v : null)}
-            >
-              {ACTIVE_SKILL_EFFECTS.map((effect) => (
-                <ToggleGroupItem key={effect} value={effect} size="sm">
-                  {capitalCase(effect)}
-                </ToggleGroupItem>
-              ))}
-            </ToggleGroup>
-          </CollapsibleFilter>
-        </TabsContent>
-
-        <TabsContent value="passive" className="space-y-5">
-          <MultiSelect
-            label="Types"
-            placeholder="Select type(s)"
-            emptyIndicator="No types found"
-            value={types.map((type) => ({ label: capitalCase(type), value: type }))}
-            onChange={(options) => setTypes(options.length ? options.map(({ value }) => value) : null)}
-            options={PASSIVE_SKILL_TYPES.map((type) => ({ label: capitalCase(type), value: type }))}
-          />
-
-          <CollapsibleFilter label="Rank">
-            <ToggleGroup type="single" className="flex w-full" size="sm" value={rank} onValueChange={setRank}>
-              <ToggleGroupItem value="negative" variant="red" className="flex-1">
-                Negative
-              </ToggleGroupItem>
-              <ToggleGroupItem value="positive" variant="yellow" className="flex-1">
-                Positive
+              <ToggleGroupItem value="desc" className="flex-1">
+                <ArrowDownWideNarrowIcon className="mr-1 size-4" />
+                Desc
               </ToggleGroupItem>
             </ToggleGroup>
-          </CollapsibleFilter>
-        </TabsContent>
-
-        <TabsContent value="partner" className="space-y-5">
-          <CollapsibleFilter label="Categories">
-            <ToggleGroup
-              type="multiple"
-              className="md:grid md:grid-cols-6 md:gap-1"
-              value={partnerSkillCategories}
-              onValueChange={(v) => setPartnerSkillCategories(v.length > 0 ? v : null)}
-            >
-              {PARTNER_SKILL_CATEGORIES.map((category) => (
-                <Tooltip key={category} content={category}>
-                  <span className="flex">
-                    <ToggleGroupItem value={category} className="w-10 p-0 md:w-auto">
-                      <PartnerSkillImage name={category} />
-                    </ToggleGroupItem>
-                  </span>
-                </Tooltip>
-              ))}
-            </ToggleGroup>
-          </CollapsibleFilter>
-        </TabsContent>
-
-        <div className="flex flex-col items-end gap-2">
-          <div className="text-nowrap text-sm text-gray-11">
-            {type === 'active'
-              ? filteredActiveSkills.length
-              : type === 'passive'
-                ? filteredPassiveSkills.length
-                : filteredPartnerSkills.length}{' '}
-            results
           </div>
-          <Button asChild variant="secondary" className="w-full">
-            <Link href={{ pathname: '/skills', query: { type } }}>
-              <FilterXIcon className="mr-2 size-4" />
-              Clear Filters
-            </Link>
-          </Button>
+
+          <TabsContent value="active" className="space-y-5">
+            <CollapsibleFilter label="Elements">
+              <ToggleGroup
+                type="multiple"
+                className="md:grid md:grid-cols-6 md:gap-1"
+                value={elements}
+                onValueChange={(e) => setElements(e.length > 0 ? e : null)}
+              >
+                {PAL_ELEMENTS.map((element) => (
+                  <ToggleGroupItem key={element} value={element} className="w-10 p-0 md:w-auto">
+                    <ElementImage element={element} />
+                  </ToggleGroupItem>
+                ))}
+              </ToggleGroup>
+            </CollapsibleFilter>
+
+            <CollapsibleFilter label="Category">
+              <ToggleGroup
+                type="single"
+                className="flex w-full"
+                size="sm"
+                value={activeSkillCategory}
+                onValueChange={setActiveSkillCategory}
+              >
+                <ToggleGroupItem value="melee" className="flex-1">
+                  Melee
+                </ToggleGroupItem>
+                <ToggleGroupItem value="shot" className="flex-1">
+                  Shot
+                </ToggleGroupItem>
+              </ToggleGroup>
+            </CollapsibleFilter>
+
+            <CollapsibleFilter label="Effects">
+              <ToggleGroup
+                type="multiple"
+                className="md:grid md:grid-cols-2 md:gap-1"
+                value={effects}
+                onValueChange={(v) => setEffects(v.length > 0 ? v : null)}
+              >
+                {ACTIVE_SKILL_EFFECTS.map((effect) => (
+                  <ToggleGroupItem key={effect} value={effect} size="sm">
+                    {capitalCase(effect)}
+                  </ToggleGroupItem>
+                ))}
+              </ToggleGroup>
+            </CollapsibleFilter>
+          </TabsContent>
+
+          <TabsContent value="passive" className="space-y-5">
+            <MultiSelect
+              label="Types"
+              placeholder="Select type(s)"
+              emptyIndicator="No types found"
+              value={types.map((type) => ({ label: capitalCase(type), value: type }))}
+              onChange={(options) => setTypes(options.length ? options.map(({ value }) => value) : null)}
+              options={PASSIVE_SKILL_TYPES.map((type) => ({ label: capitalCase(type), value: type }))}
+            />
+
+            <CollapsibleFilter label="Rank">
+              <ToggleGroup type="single" className="flex w-full" size="sm" value={rank} onValueChange={setRank}>
+                <ToggleGroupItem value="negative" variant="red" className="flex-1">
+                  Negative
+                </ToggleGroupItem>
+                <ToggleGroupItem value="positive" variant="yellow" className="flex-1">
+                  Positive
+                </ToggleGroupItem>
+              </ToggleGroup>
+            </CollapsibleFilter>
+          </TabsContent>
+
+          <TabsContent value="partner" className="space-y-5">
+            <CollapsibleFilter label="Categories">
+              <ToggleGroup
+                type="multiple"
+                className="md:grid md:grid-cols-6 md:gap-1"
+                value={partnerSkillCategories}
+                onValueChange={(v) => setPartnerSkillCategories(v.length > 0 ? v : null)}
+              >
+                {PARTNER_SKILL_CATEGORIES.map((category) => (
+                  <Tooltip key={category} content={category}>
+                    <span className="flex">
+                      <ToggleGroupItem value={category} className="w-10 p-0 md:w-auto">
+                        <PartnerSkillImage name={category} />
+                      </ToggleGroupItem>
+                    </span>
+                  </Tooltip>
+                ))}
+              </ToggleGroup>
+            </CollapsibleFilter>
+          </TabsContent>
+
+          <div className="flex flex-col items-end gap-2">
+            <div className="text-nowrap text-sm text-gray-11">
+              {type === 'active'
+                ? filteredActiveSkills.length
+                : type === 'passive'
+                  ? filteredPassiveSkills.length
+                  : filteredPartnerSkills.length}{' '}
+              results
+            </div>
+            <Button asChild variant="secondary" className="w-full">
+              <Link href={{ pathname: '/skills', query: { type } }}>
+                <FilterXIcon className="mr-2 size-4" />
+                Clear Filters
+              </Link>
+            </Button>
+          </div>
         </div>
-      </Card>
+      </StickySidebar>
 
       <div className="flex-1 @container">
         <TabsContent value="active">

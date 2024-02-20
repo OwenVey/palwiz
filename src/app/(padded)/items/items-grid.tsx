@@ -2,6 +2,7 @@
 
 import { CollapsibleFilter } from '@/components/CollapsibleFilter';
 import { ItemImage } from '@/components/ItemImage';
+import { StickySidebar } from '@/components/StickySidebar';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
@@ -110,96 +111,98 @@ export function ItemsGrid() {
 
   return (
     <div className="flex flex-col gap-4 md:flex-row">
-      <Card className="z-10 flex h-fit flex-col gap-5 md:sticky md:top-[81px] md:w-72">
-        <Input
-          className="w-full"
-          label="Search"
-          placeholder="Search items"
-          icon={SearchIcon}
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
+      <StickySidebar>
+        <div className="space-y-5">
+          <Input
+            className="w-full"
+            label="Search"
+            placeholder="Search items"
+            icon={SearchIcon}
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
 
-        <div className="flex flex-col items-end gap-2">
-          <Select value={sort} onValueChange={(v) => setSort(v as (typeof ITEM_SORTS)[number]['value'])}>
-            <SelectTrigger label="Sort" icon={ArrowUpDownIcon} placeholder="Sort by" />
+          <div className="flex flex-col items-end gap-2">
+            <Select value={sort} onValueChange={(v) => setSort(v as (typeof ITEM_SORTS)[number]['value'])}>
+              <SelectTrigger label="Sort" icon={ArrowUpDownIcon} placeholder="Sort by" />
 
-            <SelectContent>
-              {ITEM_SORTS.map(({ label, value }) => (
-                <SelectItem key={value} value={value}>
-                  {label}
-                </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
-          <ToggleGroup
-            type="single"
-            className="flex w-full"
-            size="sm"
-            value={sortDirection}
-            onValueChange={(value: 'asc' | 'desc') => value && setSortDirection(value)}
-          >
-            <ToggleGroupItem value="asc" className="flex-1">
-              <ArrowDownNarrowWideIcon className="mr-1 size-4" />
-              Asc
-            </ToggleGroupItem>
-            <ToggleGroupItem value="desc" className="flex-1">
-              <ArrowDownWideNarrowIcon className="mr-1 size-4" />
-              Desc
-            </ToggleGroupItem>
-          </ToggleGroup>
-        </div>
-
-        <CollapsibleFilter label="Category">
-          <ToggleGroup
-            type="multiple"
-            className="md:grid md:grid-cols-2 md:gap-1"
-            value={categories}
-            onValueChange={(v) => setCategories(v.length > 0 ? v : null)}
-          >
-            {ALL_CATEGORIES.map((category) => (
-              <ToggleGroupItem key={category} value={category} size="sm">
-                {capitalCase(category)}
+              <SelectContent>
+                {ITEM_SORTS.map(({ label, value }) => (
+                  <SelectItem key={value} value={value}>
+                    {label}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+            <ToggleGroup
+              type="single"
+              className="flex w-full"
+              size="sm"
+              value={sortDirection}
+              onValueChange={(value: 'asc' | 'desc') => value && setSortDirection(value)}
+            >
+              <ToggleGroupItem value="asc" className="flex-1">
+                <ArrowDownNarrowWideIcon className="mr-1 size-4" />
+                Asc
               </ToggleGroupItem>
-            ))}
-          </ToggleGroup>
-        </CollapsibleFilter>
+              <ToggleGroupItem value="desc" className="flex-1">
+                <ArrowDownWideNarrowIcon className="mr-1 size-4" />
+                Desc
+              </ToggleGroupItem>
+            </ToggleGroup>
+          </div>
 
-        <CollapsibleFilter label="Rarity">
-          <ToggleGroup
-            type="multiple"
-            className="md:grid md:grid-cols-2 md:gap-1"
-            value={rarities}
-            onValueChange={(v) => setRarities(v.length > 0 ? v : null)}
-          >
-            <ToggleGroupItem value="common" size="sm" variant="gray">
-              Common
-            </ToggleGroupItem>
-            <ToggleGroupItem value="uncommon" size="sm" variant="green">
-              Uncommon
-            </ToggleGroupItem>
-            <ToggleGroupItem value="rare" size="sm" variant="blue">
-              Rare
-            </ToggleGroupItem>
-            <ToggleGroupItem value="epic" size="sm" variant="purple">
-              Epic
-            </ToggleGroupItem>
-            <ToggleGroupItem value="legendary" size="sm" variant="yellow">
-              Legendary
-            </ToggleGroupItem>
-          </ToggleGroup>
-        </CollapsibleFilter>
+          <CollapsibleFilter label="Category">
+            <ToggleGroup
+              type="multiple"
+              className="md:grid md:grid-cols-2 md:gap-1"
+              value={categories}
+              onValueChange={(v) => setCategories(v.length > 0 ? v : null)}
+            >
+              {ALL_CATEGORIES.map((category) => (
+                <ToggleGroupItem key={category} value={category} size="sm">
+                  {capitalCase(category)}
+                </ToggleGroupItem>
+              ))}
+            </ToggleGroup>
+          </CollapsibleFilter>
 
-        <div className="flex flex-col items-end gap-2">
-          <div className="text-nowrap text-sm text-gray-11">{filteredItems.length} results</div>
-          <Button asChild variant="secondary" className="w-full">
-            <Link href="/items">
-              <FilterXIcon className="mr-2 size-4" />
-              Clear Filters
-            </Link>
-          </Button>
+          <CollapsibleFilter label="Rarity">
+            <ToggleGroup
+              type="multiple"
+              className="md:grid md:grid-cols-2 md:gap-1"
+              value={rarities}
+              onValueChange={(v) => setRarities(v.length > 0 ? v : null)}
+            >
+              <ToggleGroupItem value="common" size="sm" variant="gray">
+                Common
+              </ToggleGroupItem>
+              <ToggleGroupItem value="uncommon" size="sm" variant="green">
+                Uncommon
+              </ToggleGroupItem>
+              <ToggleGroupItem value="rare" size="sm" variant="blue">
+                Rare
+              </ToggleGroupItem>
+              <ToggleGroupItem value="epic" size="sm" variant="purple">
+                Epic
+              </ToggleGroupItem>
+              <ToggleGroupItem value="legendary" size="sm" variant="yellow">
+                Legendary
+              </ToggleGroupItem>
+            </ToggleGroup>
+          </CollapsibleFilter>
+
+          <div className="flex flex-col items-end gap-2">
+            <div className="text-nowrap text-sm text-gray-11">{filteredItems.length} results</div>
+            <Button asChild variant="secondary" className="w-full">
+              <Link href="/items">
+                <FilterXIcon className="mr-2 size-4" />
+                Clear Filters
+              </Link>
+            </Button>
+          </div>
         </div>
-      </Card>
+      </StickySidebar>
 
       <div className="flex-1 @container">
         <Grid items={filteredItems} sort={sort} />

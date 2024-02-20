@@ -2,6 +2,7 @@
 
 import { PalCombobox } from '@/components/PalCombobox';
 import { PalImage } from '@/components/PalImage';
+import { StickySidebar } from '@/components/StickySidebar';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -133,8 +134,8 @@ export function Breeding() {
 
   return (
     <div className="flex flex-col gap-4 md:flex-row">
-      <Card className="z-10 h-fit p-0 md:sticky md:top-[81px] md:w-72">
-        <div className="flex w-full flex-col items-center gap-4 p-4">
+      <StickySidebar>
+        <div className="flex w-full flex-col items-center gap-4">
           <PalCombobox label="Parent A" className="w-full" value={parentAId} setValue={setParentAId} />
           <PlusIcon className="size-4 text-gray-10" />
           <PalCombobox label="Parent B" className="-mt-5 w-full" value={parentBId} setValue={setParentBId} />
@@ -145,7 +146,7 @@ export function Breeding() {
         {isAnyInputSet && (
           <>
             <Separator className="my-2" />
-            <div className="flex w-full flex-col gap-2 p-4">
+            <div className="flex w-full flex-col gap-2">
               <Input
                 label={`${filteredCombos.length} Combinations`}
                 value={search}
@@ -162,7 +163,7 @@ export function Breeding() {
             </div>
           </>
         )}
-      </Card>
+      </StickySidebar>
 
       <div className="flex-1 @container">
         {isAnyInputSet ? (

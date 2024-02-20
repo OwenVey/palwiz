@@ -1,7 +1,7 @@
 import { ElementImage } from '@/components/ElementImage';
 import { PalImage } from '@/components/PalImage';
+import { StickySidebar } from '@/components/StickySidebar';
 import { Badge } from '@/components/ui/badge';
-import { Card } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
 import { type Pal } from '@/types';
 
@@ -81,7 +81,7 @@ export function PalStatsSidebar({ pal, ...rest }: PalStatsSidebarProps) {
     },
   ];
   return (
-    <Card {...rest}>
+    <StickySidebar {...rest}>
       <div className="relative flex flex-col">
         <Badge className="absolute items-baseline text-sm tracking-wider">
           <span className="text-gray-8">#{'000'.slice(pal.zukanIndex.toString().length)}</span>
@@ -114,6 +114,6 @@ export function PalStatsSidebar({ pal, ...rest }: PalStatsSidebarProps) {
           ))}
         </dl>
       </div>
-    </Card>
+    </StickySidebar>
   );
 }

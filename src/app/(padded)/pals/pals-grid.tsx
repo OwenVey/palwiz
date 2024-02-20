@@ -4,6 +4,7 @@ import { CollapsibleFilter } from '@/components/CollapsibleFilter';
 import { ElementImage } from '@/components/ElementImage';
 import { PalImage } from '@/components/PalImage';
 import { PartnerSkillImage } from '@/components/PartnerSkillImage';
+import { StickySidebar } from '@/components/StickySidebar';
 import { WorkTypeImage } from '@/components/WorkTypeImage';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -11,6 +12,7 @@ import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger } from '@/components/ui/select';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
+import { Tooltip } from '@/components/ui/tooltip';
 import { PAL_ELEMENTS, WORK_SUITABILITIES } from '@/constants';
 import NORMAL_PALS from '@/data/normal-pals.json';
 import { useQueryString } from '@/hooks/useQueryString';
@@ -103,123 +105,127 @@ export function PalsGrid() {
 
   return (
     <div className="flex flex-col gap-4 md:flex-row">
-      <Card className="z-10 flex h-fit flex-col gap-5 md:sticky md:top-[81px] md:w-72">
-        <Input
-          className="w-full"
-          label="Search"
-          placeholder="Search pals"
-          icon={SearchIcon}
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
+      <StickySidebar>
+        <div className="space-y-5">
+          <Input
+            className="w-full"
+            label="Search"
+            placeholder="Search pals"
+            icon={SearchIcon}
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
 
-        <div className="flex flex-col items-end gap-2">
-          <Select value={sort ?? ''} onValueChange={(v) => setSort(v as (typeof PAL_SORTS)[number]['value'])}>
-            <SelectTrigger label="Sort" icon={ArrowUpDownIcon} placeholder="Sort by" />
+          <div className="flex flex-col items-end gap-2">
+            <Select value={sort ?? ''} onValueChange={(v) => setSort(v as (typeof PAL_SORTS)[number]['value'])}>
+              <SelectTrigger label="Sort" icon={ArrowUpDownIcon} placeholder="Sort by" />
+
+              <SelectContent>
+                {PAL_SORTS.map(({ label, value }) => (
+                  <SelectItem key={value} value={value}>
+                    {label}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+
+            <ToggleGroup
+              type="single"
+              className="flex w-full"
+              size="sm"
+              value={sortDirection}
+              onValueChange={(value: 'asc' | 'desc') => value && setSortDirection(value)}
+            >
+              <ToggleGroupItem value="asc" className="flex-1">
+                <ArrowDownNarrowWideIcon className="mr-1 size-4" />
+                Asc
+              </ToggleGroupItem>
+              <ToggleGroupItem value="desc" className="flex-1">
+                <ArrowDownWideNarrowIcon className="mr-1 size-4" />
+                Desc
+              </ToggleGroupItem>
+            </ToggleGroup>
+          </div>
+
+          <Select value={rarity} onValueChange={(v) => setRarity(v === 'all' ? '' : v)}>
+            <SelectTrigger label="Rarity" icon={GemIcon} placeholder="Select rarity" />
 
             <SelectContent>
-              {PAL_SORTS.map(({ label, value }) => (
-                <SelectItem key={value} value={value}>
-                  {label}
-                </SelectItem>
-              ))}
+              <SelectItem value="all">All</SelectItem>
+              <SelectItem value="common" className="text-gray-10 focus:text-gray-10">
+                Common
+              </SelectItem>
+              <SelectItem value="rare" className="text-blue-9 focus:bg-blue-3 focus:text-blue-10">
+                Rare
+              </SelectItem>
+              <SelectItem value="epic" className="text-purple-10 focus:bg-purple-3 focus:text-purple-10">
+                Epic
+              </SelectItem>
+              <SelectItem value="legendary" className="text-orange-10 focus:bg-orange-3 focus:text-orange-10">
+                Legendary
+              </SelectItem>
             </SelectContent>
           </Select>
 
-          <ToggleGroup
-            type="single"
-            className="flex w-full"
-            size="sm"
-            value={sortDirection}
-            onValueChange={(value: 'asc' | 'desc') => value && setSortDirection(value)}
-          >
-            <ToggleGroupItem value="asc" className="flex-1">
-              <ArrowDownNarrowWideIcon className="mr-1 size-4" />
-              Asc
-            </ToggleGroupItem>
-            <ToggleGroupItem value="desc" className="flex-1">
-              <ArrowDownWideNarrowIcon className="mr-1 size-4" />
-              Desc
-            </ToggleGroupItem>
-          </ToggleGroup>
+          <CollapsibleFilter label="Work Suitability">
+            <ToggleGroup
+              type="single"
+              className="md:grid md:grid-cols-6 md:gap-1"
+              value={work ?? ''}
+              onValueChange={(v) => setWork(v === '' ? null : (v as WorkSuitability))}
+            >
+              {WORK_SUITABILITIES.map((work) => (
+                <ToggleGroupItem key={work.id} value={work.id} className="w-10 p-0 md:w-auto">
+                  <WorkTypeImage id={work.id} className="size-7" />
+                </ToggleGroupItem>
+              ))}
+            </ToggleGroup>
+          </CollapsibleFilter>
+
+          <CollapsibleFilter label="Elements">
+            <ToggleGroup
+              type="multiple"
+              className="md:grid md:grid-cols-6 md:gap-1"
+              value={elements}
+              onValueChange={(v) => setElements(v.length > 0 ? v : null)}
+            >
+              {PAL_ELEMENTS.map((element) => (
+                <ToggleGroupItem key={element} value={element} className="w-10 p-0 md:w-auto">
+                  <ElementImage element={element} />
+                </ToggleGroupItem>
+              ))}
+            </ToggleGroup>
+          </CollapsibleFilter>
+
+          <CollapsibleFilter label="Partner Skill Category">
+            <ToggleGroup
+              type="multiple"
+              className="md:grid md:grid-cols-6 md:gap-1"
+              value={partnerSkills}
+              onValueChange={(v) => setPartnerSkills(v.length > 0 ? v : null)}
+            >
+              {PARTNER_SKILL_CATEGORIES.map((category) => (
+                <Tooltip key={category} content={category}>
+                  <ToggleGroupItem value={category.toString()} className="w-10 p-0 md:w-auto">
+                    <PartnerSkillImage name={category.toString()} />
+                  </ToggleGroupItem>
+                </Tooltip>
+              ))}
+            </ToggleGroup>
+          </CollapsibleFilter>
+
+          <div className="flex flex-col items-end gap-2">
+            <div className="text-nowrap text-sm text-gray-11">{filteredPals.length} results</div>
+
+            <Button asChild variant="secondary" className="w-full">
+              <Link href="/pals">
+                <FilterXIcon className="mr-2 size-4" />
+                Clear Filters
+              </Link>
+            </Button>
+          </div>
         </div>
-
-        <Select value={rarity} onValueChange={(v) => setRarity(v === 'all' ? '' : v)}>
-          <SelectTrigger label="Rarity" icon={GemIcon} placeholder="Select rarity" />
-
-          <SelectContent>
-            <SelectItem value="all">All</SelectItem>
-            <SelectItem value="common" className="text-gray-10 focus:text-gray-10">
-              Common
-            </SelectItem>
-            <SelectItem value="rare" className="text-blue-9 focus:bg-blue-3 focus:text-blue-10">
-              Rare
-            </SelectItem>
-            <SelectItem value="epic" className="text-purple-10 focus:bg-purple-3 focus:text-purple-10">
-              Epic
-            </SelectItem>
-            <SelectItem value="legendary" className="text-orange-10 focus:bg-orange-3 focus:text-orange-10">
-              Legendary
-            </SelectItem>
-          </SelectContent>
-        </Select>
-
-        <CollapsibleFilter label="Work Suitability">
-          <ToggleGroup
-            type="single"
-            className="md:grid md:grid-cols-6 md:gap-1"
-            value={work ?? ''}
-            onValueChange={(v) => setWork(v === '' ? null : (v as WorkSuitability))}
-          >
-            {WORK_SUITABILITIES.map((work) => (
-              <ToggleGroupItem key={work.id} value={work.id} className="w-10 p-0 md:w-auto">
-                <WorkTypeImage id={work.id} className="size-7" />
-              </ToggleGroupItem>
-            ))}
-          </ToggleGroup>
-        </CollapsibleFilter>
-
-        <CollapsibleFilter label="Elements">
-          <ToggleGroup
-            type="multiple"
-            className="md:grid md:grid-cols-6 md:gap-1"
-            value={elements}
-            onValueChange={(v) => setElements(v.length > 0 ? v : null)}
-          >
-            {PAL_ELEMENTS.map((element) => (
-              <ToggleGroupItem key={element} value={element} className="w-10 p-0 md:w-auto">
-                <ElementImage element={element} />
-              </ToggleGroupItem>
-            ))}
-          </ToggleGroup>
-        </CollapsibleFilter>
-
-        <CollapsibleFilter label="Partner Skill Category">
-          <ToggleGroup
-            type="multiple"
-            className="md:grid md:grid-cols-6 md:gap-1"
-            value={partnerSkills}
-            onValueChange={(v) => setPartnerSkills(v.length > 0 ? v : null)}
-          >
-            {PARTNER_SKILL_CATEGORIES.map((category) => (
-              <ToggleGroupItem key={category} value={category.toString()} className="w-10 p-0 md:w-auto">
-                <PartnerSkillImage name={category.toString()} />
-              </ToggleGroupItem>
-            ))}
-          </ToggleGroup>
-        </CollapsibleFilter>
-
-        <div className="flex flex-col items-end gap-2">
-          <div className="text-nowrap text-sm text-gray-11">{filteredPals.length} results</div>
-
-          <Button asChild variant="secondary" className="w-full">
-            <Link href="/pals">
-              <FilterXIcon className="mr-2 size-4" />
-              Clear Filters
-            </Link>
-          </Button>
-        </div>
-      </Card>
+      </StickySidebar>
 
       <div className="flex-1 @container">
         <Grid pals={filteredPals} sort={sort} />

@@ -1,5 +1,6 @@
 import { ElementImage } from '@/components/ElementImage';
 import { PalImage } from '@/components/PalImage';
+import { StickySidebar } from '@/components/StickySidebar';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import ACTIVE_SKILLS from '@/data/active-skills.json';
@@ -37,7 +38,7 @@ export default function SkillPage({ params }: { params: { id: string } }) {
 
   return (
     <div className="flex flex-col gap-4 md:flex-row">
-      <Card className="h-fit md:sticky md:top-[81px] md:w-72">
+      <StickySidebar>
         <div className="flex items-center justify-center gap-2">
           <ElementImage element={skill.element} className="size-8" />
           <h1 className="text-2xl font-semibold text-gray-12">{skill.name}</h1>
@@ -94,7 +95,7 @@ export default function SkillPage({ params }: { params: { id: string } }) {
             </dl>
           </div>
         )}
-      </Card>
+      </StickySidebar>
 
       <div className="flex flex-1 flex-col gap-4">
         <Card>

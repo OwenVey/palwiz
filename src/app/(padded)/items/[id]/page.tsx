@@ -1,5 +1,6 @@
 import { ItemImage } from '@/components/ItemImage';
 import { PalImage } from '@/components/PalImage';
+import { StickySidebar } from '@/components/StickySidebar';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tooltip } from '@/components/ui/tooltip';
@@ -63,11 +64,11 @@ export default function ItemPage({ params }: { params: { id: string } }) {
 
   return (
     <div className="flex flex-col gap-4 md:flex-row">
-      <Card className="h-fit md:sticky md:top-[81px] md:w-72">
+      <StickySidebar>
         <ItemImage id={item.imageName} className="mx-auto mt-2 size-36 rounded-full border border-gray-6 bg-gray-1" />
 
         <div className="mt-2 text-center">
-          <h1 className="text-2xl font-semibold text-gray-12">{item.name}</h1>
+          <h1 className="break-all text-2xl font-semibold text-gray-12">{item.name}</h1>
           <p className="capitalize text-gray-11">{item.typeA}</p>
         </div>
 
@@ -82,7 +83,7 @@ export default function ItemPage({ params }: { params: { id: string } }) {
             </div>
           ))}
         </dl>
-      </Card>
+      </StickySidebar>
 
       <div className="flex flex-1 flex-col gap-4">
         <Card>

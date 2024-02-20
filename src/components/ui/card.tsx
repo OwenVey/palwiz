@@ -2,11 +2,10 @@ import * as React from 'react';
 
 import { cn } from '@/lib/utils';
 
-interface CustomCardProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
   hoverEffect?: boolean;
 }
-
-const Card = React.forwardRef<HTMLDivElement, CustomCardProps>(({ className, hoverEffect = false, ...props }, ref) => (
+const Card = React.forwardRef<HTMLDivElement, CardProps>(({ className, hoverEffect = false, ...props }, ref) => (
   <div
     ref={ref}
     className={cn(
