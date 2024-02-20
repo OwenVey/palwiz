@@ -17,8 +17,10 @@ import { PAL_ELEMENTS } from '@/constants';
 import ACTIVE_SKILLS from '@/data/active-skills.json';
 import NORMAL_PALS from '@/data/normal-pals.json';
 import PASSIVE_SKILLS from '@/data/passive-skills.json';
+import { useQueryString } from '@/hooks/useQueryString';
+import { useQueryStringArray } from '@/hooks/useQueryStringArray';
 import { PARTNER_SKILL_CATEGORIES } from '@/lib/pal-utils';
-import { cn, notEmpty, parseAsArrayOfStrings, sortArrayByPropertyInDirection, useQueryString } from '@/lib/utils';
+import { cn, notEmpty, sortArrayByPropertyInDirection } from '@/lib/utils';
 import { type ActiveSkill, type PassiveSkill } from '@/types';
 import { useDebounce } from '@uidotdev/usehooks';
 import { capitalCase } from 'change-case';
@@ -88,16 +90,16 @@ export function SkillsGrid() {
   );
 
   // Active skill filters
-  const [elements, setElements] = useQueryState('elements', parseAsArrayOfStrings);
+  const [elements, setElements] = useQueryStringArray('elements');
   const [activeSkillCategory, setActiveSkillCategory] = useQueryString('category');
-  const [effects, setEffects] = useQueryState('effects', parseAsArrayOfStrings);
+  const [effects, setEffects] = useQueryStringArray('effects');
 
   // Passive skill filters
-  const [types, setTypes] = useQueryState('types', parseAsArrayOfStrings);
+  const [types, setTypes] = useQueryStringArray('types');
   const [rank, setRank] = useQueryString('rank');
 
   // Partner skill filters
-  const [partnerSkillCategories, setPartnerSkillCategories] = useQueryState('categories', parseAsArrayOfStrings);
+  const [partnerSkillCategories, setPartnerSkillCategories] = useQueryStringArray('categories');
 
   const filteredActiveSkills = useMemo(
     () =>

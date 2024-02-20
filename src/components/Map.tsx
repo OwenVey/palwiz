@@ -10,7 +10,9 @@ import { Switch } from '@/components/ui/switch';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import MAP_LOCATIONS from '@/data/map-locations.json';
 import PAL_LOCATIONS from '@/data/pal-locations.json';
-import { cn, parseAsArrayOfStrings, useQueryString } from '@/lib/utils';
+import { useQueryString } from '@/hooks/useQueryString';
+import { useQueryStringArray } from '@/hooks/useQueryStringArray';
+import { cn } from '@/lib/utils';
 import { useToggle } from '@uidotdev/usehooks';
 import { capitalCase } from 'change-case';
 import { CRS, Icon } from 'leaflet';
@@ -78,7 +80,7 @@ function getInGameCoords([x, y]: [number, number]) {
 }
 
 export default function MyMap() {
-  const [filters, setFilters] = useQueryState('filters', parseAsArrayOfStrings);
+  const [filters, setFilters] = useQueryStringArray('filters');
   const [palFilter, setPalFilter] = useQueryString('pal');
   const [showNightLocations, setShowNightLocations] = useQueryState(
     'night',

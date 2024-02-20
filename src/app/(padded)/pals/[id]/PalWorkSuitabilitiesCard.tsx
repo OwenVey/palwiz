@@ -1,10 +1,14 @@
 import { WorkTypeImage } from '@/components/WorkTypeImage';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
-import { getWorkLabel } from '@/lib/utils';
+import { WORK_SUITABILITIES } from '@/constants';
 import { type Pal } from '@/types';
 
 interface PalWorkSuitabilitiesCardProps extends React.HTMLAttributes<HTMLDivElement> {
   workSuitabilities: Pal['workSuitabilities'];
+}
+
+function getWorkLabel(workId: string) {
+  return WORK_SUITABILITIES.find(({ id }) => id === workId)?.label ?? 'Invalid Work Suitability';
 }
 
 export function PalWorkSuitabilitiesCard({ workSuitabilities, ...rest }: PalWorkSuitabilitiesCardProps) {

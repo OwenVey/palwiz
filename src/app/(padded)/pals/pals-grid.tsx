@@ -13,8 +13,10 @@ import { Select, SelectContent, SelectItem, SelectTrigger } from '@/components/u
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import { PAL_ELEMENTS, WORK_SUITABILITIES } from '@/constants';
 import NORMAL_PALS from '@/data/normal-pals.json';
+import { useQueryString } from '@/hooks/useQueryString';
+import { useQueryStringArray } from '@/hooks/useQueryStringArray';
 import { PARTNER_SKILL_CATEGORIES } from '@/lib/pal-utils';
-import { isWithinRange, parseAsArrayOfStrings, sortArrayByPropertyInDirection, useQueryString } from '@/lib/utils';
+import { isWithinRange, sortArrayByPropertyInDirection } from '@/lib/utils';
 import { type Pal, type WorkSuitability } from '@/types';
 import { useDebounce } from '@uidotdev/usehooks';
 import {
@@ -68,8 +70,8 @@ export function PalsGrid() {
     'work',
     parseAsStringLiteral(WORK_SUITABILITIES.map(({ id }) => id)).withOptions({ clearOnDefault: true }),
   );
-  const [elements, setElements] = useQueryState('elements', parseAsArrayOfStrings);
-  const [partnerSkills, setPartnerSkills] = useQueryState('partnerSkill', parseAsArrayOfStrings);
+  const [elements, setElements] = useQueryStringArray('elements');
+  const [partnerSkills, setPartnerSkills] = useQueryStringArray('partnerSkill');
 
   const debouncedSearch = useDebounce(search, 100);
 

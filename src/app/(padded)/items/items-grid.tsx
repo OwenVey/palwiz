@@ -9,7 +9,9 @@ import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger } from '@/components/ui/select';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import ITEMS from '@/data/items.json';
-import { cn, parseAsArrayOfStrings, sortArrayByPropertyInDirection, useQueryString } from '@/lib/utils';
+import { useQueryString } from '@/hooks/useQueryString';
+import { useQueryStringArray } from '@/hooks/useQueryStringArray';
+import { cn, sortArrayByPropertyInDirection } from '@/lib/utils';
 import { type Item } from '@/types';
 import { useDebounce } from '@uidotdev/usehooks';
 import { capitalCase } from 'change-case';
@@ -85,8 +87,8 @@ export function ItemsGrid() {
     'sortDirection',
     parseAsStringLiteral(['asc', 'desc']).withDefault('asc').withOptions({ clearOnDefault: true }),
   );
-  const [categories, setCategories] = useQueryState('categories', parseAsArrayOfStrings);
-  const [rarities, setRarities] = useQueryState('rarity', parseAsArrayOfStrings);
+  const [categories, setCategories] = useQueryStringArray('categories');
+  const [rarities, setRarities] = useQueryStringArray('rarity');
 
   const debouncedSearch = useDebounce(search, 100);
 

@@ -1,7 +1,5 @@
 import { type BadgeProps } from '@/components/ui/badge';
-import { WORK_SUITABILITIES } from '@/constants';
 import { clsx, type ClassValue } from 'clsx';
-import { parseAsArrayOf, parseAsString, useQueryState } from 'nuqs';
 import { twMerge } from 'tailwind-merge';
 
 export function cn(...inputs: ClassValue[]) {
@@ -10,10 +8,6 @@ export function cn(...inputs: ClassValue[]) {
 
 export function isWithinRange(num: number, min: number, max: number) {
   return num >= min && num <= max;
-}
-
-export function getWorkLabel(workId: string) {
-  return WORK_SUITABILITIES.find(({ id }) => id === workId)?.label ?? 'Invalid Work Suitability';
 }
 
 export function sortArrayByPropertyInDirection<T>(items: T[], sort: keyof T, sortDirection: 'asc' | 'desc'): T[] {
@@ -49,12 +43,4 @@ export function getBadgeVariantForRate(rate: number): BadgeProps['variant'] {
   } else {
     return 'default';
   }
-}
-
-export const parseAsArrayOfStrings = parseAsArrayOf(parseAsString)
-  .withDefault([])
-  .withOptions({ clearOnDefault: true });
-
-export function useQueryString(param: string) {
-  return useQueryState(param, { defaultValue: '', clearOnDefault: true });
 }
