@@ -90,83 +90,13 @@ export default function MyMap() {
   const [hideSidebar, toggleHideSidebar] = useToggle(false);
   return (
     <div className="relative h-full">
-      <Card
-        className={cn(
-          'absolute left-4 right-4 top-4 z-[1001] flex max-h-[50vh] flex-col p-0 transition-transform sm:max-h-[calc(100vh-65px-32px)] sm:w-[425px]',
-          hideSidebar && 'top-0 -translate-y-full sm:left-0 sm:top-4 sm:-translate-x-full sm:translate-y-0',
-        )}
-      >
-        <button
-          onClick={() => toggleHideSidebar(undefined)}
-          className="absolute -bottom-6 right-1/2 grid h-6 w-16 translate-x-1/2 place-items-center rounded-b-md border border-t-0 border-gray-4 bg-gray-2 text-gray-11 transition-colors hover:bg-gray-3 hover:text-gray-12 active:bg-gray-4 sm:-right-6 sm:top-8 sm:h-16 sm:w-6 sm:translate-x-0 sm:rounded-none sm:rounded-r-md sm:border-l-0"
-        >
-          <ChevronLeftIcon
-            className={cn(
-              'size-5 rotate-90 transition-transform sm:rotate-0',
-              hideSidebar && 'rotate-[270deg] sm:rotate-180',
-            )}
-          />
-        </button>
-        <ScrollArea className="flex h-full w-full flex-col px-4" type="auto">
-          <div className="flex flex-col gap-5 py-4">
-            <div className="flex flex-wrap items-end gap-2">
-              <PalCombobox className="flex-1" label="Pal Locations" value={palFilter} setValue={setPalFilter} />
-              <div className="mr-px flex h-10 items-center gap-1.5">
-                <Label htmlFor="daytime-toggle">
-                  <SunIcon
-                    className={cn('size-5 transition-colors', showNightLocations ? 'text-gray-9' : 'text-amber-9')}
-                  />
-                </Label>
-                <Switch id="daytime-toggle" checked={showNightLocations} onCheckedChange={setShowNightLocations} />
-                <Label htmlFor="daytime-toggle">
-                  <MoonIcon
-                    className={cn('size-5 transition-colors', showNightLocations ? 'text-iris-9' : 'text-gray-9')}
-                  />
-                </Label>
-              </div>
-            </div>
-
-            {Object.entries(LOCATION_GROUPS).map(([group, locations]) => (
-              <CollapsibleFilter className="@container" key={group} label={group}>
-                <ToggleGroup
-                  type="multiple"
-                  className="grid grid-cols-1 gap-1 @sm:grid-cols-2"
-                  value={filters}
-                  onValueChange={(v) => setFilters(v.length > 0 ? v : null)}
-                >
-                  {locations.map((category) => (
-                    <ToggleGroupItem key={category.name} value={category.name} className="h-fit gap-2 px-2 py-1">
-                      <div className="rounded-full border border-gray-6 bg-gray-2 p-1">
-                        <Image
-                          className={cn('size-6', category.iconClass)}
-                          src={category.icon}
-                          width={24}
-                          height={24}
-                          alt={category.name}
-                        />
-                      </div>
-                      <div className="flex flex-1 items-center justify-between">
-                        <span className="line-clamp-1 text-left">{category.name}</span>
-                        <span className="ml-2 text-xs text-gray-11 sm:ml-0">
-                          {category.count ?? MAP_LOCATIONS.find((l) => l.name === category.name)?.locations.length}
-                        </span>
-                      </div>
-                    </ToggleGroupItem>
-                  ))}
-                </ToggleGroup>
-              </CollapsibleFilter>
-            ))}
-          </div>
-        </ScrollArea>
-      </Card>
-
       <MapContainer
         crs={CRS.Simple}
         center={[-128, 128]}
         zoom={2}
         zoomSnap={1}
         zoomDelta={1}
-        className="h-full !bg-[#102536]"
+        className="isolate h-full !bg-[#102536]"
         zoomControl={false}
         attributionControl={false}
         maxBounds={[
@@ -251,6 +181,76 @@ export default function MyMap() {
         {/* Map Tiles */}
         <TileLayer url="/images/map/tiles/{z}/{x}/{y}.webp" minZoom={1} maxZoom={6} />
       </MapContainer>
+
+      <Card
+        className={cn(
+          'absolute left-4 right-4 top-4 flex max-h-[50vh] flex-col p-0 transition-transform sm:max-h-[calc(100vh-65px-32px)] sm:w-[425px]',
+          hideSidebar && 'top-0 -translate-y-full sm:left-0 sm:top-4 sm:-translate-x-full sm:translate-y-0',
+        )}
+      >
+        <button
+          onClick={() => toggleHideSidebar(undefined)}
+          className="absolute -bottom-6 right-1/2 grid h-6 w-16 translate-x-1/2 place-items-center rounded-b-md border border-t-0 border-gray-4 bg-gray-2 text-gray-11 transition-colors hover:bg-gray-3 hover:text-gray-12 active:bg-gray-4 sm:-right-6 sm:top-8 sm:h-16 sm:w-6 sm:translate-x-0 sm:rounded-none sm:rounded-r-md sm:border-l-0"
+        >
+          <ChevronLeftIcon
+            className={cn(
+              'size-5 rotate-90 transition-transform sm:rotate-0',
+              hideSidebar && 'rotate-[270deg] sm:rotate-180',
+            )}
+          />
+        </button>
+        <ScrollArea className="flex h-full w-full flex-col px-4" type="auto">
+          <div className="flex flex-col gap-5 py-4">
+            <div className="flex flex-wrap items-end gap-2">
+              <PalCombobox className="flex-1" label="Pal Locations" value={palFilter} setValue={setPalFilter} />
+              <div className="mr-px flex h-10 items-center gap-1.5">
+                <Label htmlFor="daytime-toggle">
+                  <SunIcon
+                    className={cn('size-5 transition-colors', showNightLocations ? 'text-gray-9' : 'text-amber-9')}
+                  />
+                </Label>
+                <Switch id="daytime-toggle" checked={showNightLocations} onCheckedChange={setShowNightLocations} />
+                <Label htmlFor="daytime-toggle">
+                  <MoonIcon
+                    className={cn('size-5 transition-colors', showNightLocations ? 'text-iris-9' : 'text-gray-9')}
+                  />
+                </Label>
+              </div>
+            </div>
+
+            {Object.entries(LOCATION_GROUPS).map(([group, locations]) => (
+              <CollapsibleFilter className="@container" key={group} label={group}>
+                <ToggleGroup
+                  type="multiple"
+                  className="grid grid-cols-1 gap-1 @sm:grid-cols-2"
+                  value={filters}
+                  onValueChange={(v) => setFilters(v.length > 0 ? v : null)}
+                >
+                  {locations.map((category) => (
+                    <ToggleGroupItem key={category.name} value={category.name} className="h-fit gap-2 px-2 py-1">
+                      <div className="rounded-full border border-gray-6 bg-gray-2 p-1">
+                        <Image
+                          className={cn('size-6', category.iconClass)}
+                          src={category.icon}
+                          width={24}
+                          height={24}
+                          alt={category.name}
+                        />
+                      </div>
+                      <div className="flex flex-1 items-center justify-between">
+                        <span className="line-clamp-1 text-left">{category.name}</span>
+                        <span className="ml-2 text-xs text-gray-11 sm:ml-0">
+                          {category.count ?? MAP_LOCATIONS.find((l) => l.name === category.name)?.locations.length}
+                        </span>
+                      </div>
+                    </ToggleGroupItem>
+                  ))}
+                </ToggleGroup>
+              </CollapsibleFilter>
+            ))}
+          </div>
+        </ScrollArea>
+      </Card>
     </div>
   );
 }
