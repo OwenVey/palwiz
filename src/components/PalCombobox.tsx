@@ -40,12 +40,14 @@ export function PalCombobox({ label, value, setValue, className, ...rest }: PalC
           </PopoverTrigger>
 
           {value && (
-            <button
+            <Button
               onClick={() => setValue('')}
-              className="absolute right-8 top-2 rounded-full p-1 text-gray-10 transition-colors hover:bg-gray-4 hover:text-gray-12 active:bg-gray-5"
+              className="absolute right-8 top-2 size-6 rounded-full p-1 text-gray-10 hover:text-gray-12"
+              variant="ghost"
+              size="icon"
             >
               <XIcon className="size-4" />
-            </button>
+            </Button>
           )}
         </div>
       </div>
