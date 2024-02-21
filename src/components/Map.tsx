@@ -257,10 +257,17 @@ export default function MyMap() {
 
 function FullscreenButton() {
   const [isFullScreen, setIsFullScreen] = useState(false);
+  const [isSupported, setIsSupported] = useState(document.fullscreenEnabled);
 
   useEffect(() => {
+    if (!document.fullscreenEnabled) {
+      setIsSupported(false);
+    }
     document.onfullscreenchange = () => {
       setIsFullScreen(!!document.fullscreenElement);
+    };
+    return () => {
+      document.onfullscreenchange = null;
     };
   }, []);
 
@@ -278,6 +285,8 @@ function FullscreenButton() {
       else if (element.msRequestFullscreen) void element.msRequestFullscreen();
     }
   };
+
+  if (!isSupported) return null;
 
   return (
     <Button onClick={toggleFullScreen} size="icon" variant="outline">
