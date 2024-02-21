@@ -145,7 +145,7 @@ export function Breeding() {
 
         {isAnyInputSet && (
           <>
-            <Separator className="my-2" />
+            <Separator className="my-6" />
             <div className="flex w-full flex-col gap-2">
               <Input
                 label={`${filteredCombos.length} Combinations`}

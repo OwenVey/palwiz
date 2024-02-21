@@ -2,9 +2,12 @@ import { ElementImage } from '@/components/ElementImage';
 import { PalImage } from '@/components/PalImage';
 import { StickySidebar } from '@/components/StickySidebar';
 import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 import { Tooltip } from '@/components/ui/tooltip';
 import { cn } from '@/lib/utils';
 import { type Pal } from '@/types';
+import { HeartIcon, MapPinnedIcon } from 'lucide-react';
+import Link from 'next/link';
 
 interface PalStatsSidebarProps extends React.HTMLAttributes<HTMLDivElement> {
   pal: Pal;
@@ -103,6 +106,22 @@ export function PalStatsSidebar({ pal, ...rest }: PalStatsSidebarProps) {
         <div className="mt-2 text-center">
           <h1 className="text-2xl font-semibold text-gray-12">{pal.name}</h1>
           <p className="text-gray-11">{pal.title}</p>
+        </div>
+
+        <div className="mt-4 space-y-1">
+          <Button className="w-full" size="sm" variant="secondary" asChild>
+            <Link href={{ pathname: '/map', query: { pal: pal.id } }}>
+              <MapPinnedIcon className="mr-2 size-4" />
+              View Map Locations
+            </Link>
+          </Button>
+
+          <Button className="w-full" size="sm" variant="secondary" asChild>
+            <Link href={{ pathname: '/breeding', query: { child: pal.id } }}>
+              <HeartIcon className="mr-2 size-4" />
+              View Breed Combinations
+            </Link>
+          </Button>
         </div>
 
         <dl className="mt-4">
