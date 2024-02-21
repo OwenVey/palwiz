@@ -14,6 +14,19 @@ export function isWithinRange(num: number, min: number, max: number) {
   return num >= min && num <= max;
 }
 
+type PluralCategory = 'zero' | 'one' | 'two' | 'few' | 'many' | 'other';
+// Define a type for the forms object that requires at least 'other', but can include any combination of plural categories
+type PluralForms = {
+  [K in PluralCategory]?: string;
+} & {
+  other: string; // Make 'other' mandatory
+};
+export function pluralize(forms: PluralForms, count: number, locale?: string): string {
+  const pluralRules = new Intl.PluralRules(locale, { type: 'cardinal' });
+  const pluralCategory = pluralRules.select(count);
+  return forms[pluralCategory as PluralCategory] ?? forms.other;
+}
+
 export function sortArrayByPropertyInDirection<T>(items: T[], sort: keyof T, sortDirection: 'asc' | 'desc'): T[] {
   return items.sort(function (item1, item2) {
     if (!sort) return 0;
