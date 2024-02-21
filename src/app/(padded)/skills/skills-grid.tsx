@@ -326,7 +326,7 @@ const ActiveSkills = memo(function ActiveSkills({ skills }: { skills: ActiveSkil
   if (skills.length === 0) return <div className="mt-28 flex justify-center text-gray-11">No active skills found</div>;
 
   return (
-    <div className="grid grid-cols-1 gap-4 @2xl:grid-cols-2">
+    <div className="grid auto-rows-fr grid-cols-1 gap-4 @2xl:grid-cols-2">
       {skills.map((skill) => (
         <Link key={skill.id} href={`/skills/${skill.id}`}>
           <Card className="relative flex h-full flex-col gap-2" hoverEffect>
@@ -349,7 +349,7 @@ const ActiveSkills = memo(function ActiveSkills({ skills }: { skills: ActiveSkil
               </Badge>
             </div>
 
-            <p className="text-sm text-gray-11">{skill.description}</p>
+            <p className="line-clamp-2 text-sm text-gray-11">{skill.description}</p>
           </Card>
         </Link>
       ))}
@@ -361,7 +361,7 @@ const PassiveSkills = memo(function PassiveSkills({ skills }: { skills: PassiveS
   if (skills.length === 0) return <div className="mt-28 flex justify-center text-gray-11">No passive skills found</div>;
 
   return (
-    <div className="grid grid-cols-1 gap-4 @2xl:grid-cols-2">
+    <div className="grid auto-rows-fr grid-cols-1 gap-4 @2xl:grid-cols-2">
       {skills.map((skill) => (
         <Card
           key={skill.internalId}
@@ -422,7 +422,7 @@ const PartnerSkills = memo(function PartnerSkills({ skills }: { skills: PartnerS
   if (skills.length === 0) return <div className="mt-28 flex justify-center text-gray-11">No passive skills found</div>;
 
   return (
-    <div className="grid grid-cols-1 gap-4 @2xl:grid-cols-2">
+    <div className="grid auto-rows-fr grid-cols-1 gap-4 @2xl:grid-cols-2">
       {skills.map((partnerSkill) => (
         <Card key={partnerSkill.name} className={cn('relative flex h-full flex-col gap-2')}>
           <div className="flex items-center justify-between">
@@ -445,7 +445,7 @@ const PartnerSkills = memo(function PartnerSkills({ skills }: { skills: PartnerS
             </div>
           </div>
 
-          <p className="text-sm text-gray-11">{partnerSkill.description}</p>
+          <p className="line-clamp-2 text-sm text-gray-11">{partnerSkill.description}</p>
         </Card>
       ))}
     </div>

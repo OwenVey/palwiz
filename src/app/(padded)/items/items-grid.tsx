@@ -215,7 +215,7 @@ const Grid = memo(function Grid({ items, sort }: { items: Item[]; sort: keyof It
   if (items.length === 0) return <div className="grid h-full place-items-center text-gray-11">No items found</div>;
 
   return (
-    <div className="grid grid-cols-2 gap-4 @2xl:grid-cols-3 @5xl:grid-cols-4">
+    <div className="grid auto-rows-fr grid-cols-2 gap-4 @2xl:grid-cols-3 @5xl:grid-cols-4">
       {items.map((item) => (
         <Link key={item.internalId} href={`/items/${item.id}`}>
           <Card className={cn('relative flex h-full flex-col', getItemRarityClass(item.rarity))} hoverEffect>
