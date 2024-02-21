@@ -89,21 +89,26 @@ export default function MyMap() {
 
   const [hideSidebar, toggleHideSidebar] = useToggle(false);
   return (
-    <>
+    <div className="relative h-full">
       <Card
         className={cn(
-          'fixed left-4 right-6 top-[81px] z-[401] p-0 transition-transform sm:w-[425px]',
-          hideSidebar && 'left-0 -translate-x-full',
+          'absolute left-4 right-4 top-4 z-[1001] flex h-fit max-h-[75vh] flex-col p-0 transition-transform sm:max-h-[calc(100vh-65px-32px)] sm:w-[425px]',
+          hideSidebar && 'top-0 -translate-y-full sm:left-0 sm:top-4 sm:-translate-x-full sm:translate-y-0',
         )}
       >
         <button
           onClick={() => toggleHideSidebar(undefined)}
-          className="absolute -right-6 top-8 grid h-16 w-6 place-items-center rounded-r-md border border-l-0 border-gray-4 bg-gray-2 text-gray-11 transition-colors hover:bg-gray-3 hover:text-gray-12 active:bg-gray-4"
+          className="absolute -bottom-6 right-1/2 grid h-6 w-16 translate-x-1/2 place-items-center rounded-b-md border border-t-0 border-gray-4 bg-gray-2 text-gray-11 transition-colors hover:bg-gray-3 hover:text-gray-12 active:bg-gray-4 sm:-right-6 sm:top-8 sm:h-16 sm:w-6 sm:translate-x-0 sm:rounded-none sm:rounded-r-md sm:border-l-0"
         >
-          <ChevronLeftIcon className={cn('size-5 transition-transform', hideSidebar && 'rotate-180')} />
+          <ChevronLeftIcon
+            className={cn(
+              'size-5 rotate-90 transition-transform sm:rotate-0',
+              hideSidebar && 'rotate-[270deg] sm:rotate-180',
+            )}
+          />
         </button>
-        <ScrollArea className="h-full w-full p-4">
-          <div className="flex flex-col gap-5">
+        <ScrollArea className="flex h-full w-full flex-col px-4" type="auto">
+          <div className="flex flex-col gap-5 py-4">
             <div className="flex flex-wrap items-end gap-2">
               <PalCombobox className="flex-1" label="Pal Locations" value={palFilter} setValue={setPalFilter} />
               <div className="mr-px flex h-10 items-center gap-1.5">
@@ -246,7 +251,7 @@ export default function MyMap() {
         {/* Map Tiles */}
         <TileLayer url="/images/map/tiles/{z}/{x}/{y}.webp" minZoom={1} maxZoom={6} />
       </MapContainer>
-    </>
+    </div>
   );
 }
 
