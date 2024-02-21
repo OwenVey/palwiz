@@ -7,6 +7,7 @@ import { Tooltip } from '@/components/ui/tooltip';
 import ACTIVE_SKILLS from '@/data/active-skills.json';
 import NORMAL_PALS from '@/data/normal-pals.json';
 import { cn } from '@/lib/utils';
+import { capitalCase } from 'change-case';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
@@ -31,7 +32,7 @@ export default function SkillPage({ params }: { params: { id: string } }) {
 
   const stats = [
     { label: 'Power', value: skill.power },
-    { label: 'Cooldown Time', value: skill.cooldownTime },
+    { label: 'Cooldown Time', value: `${skill.cooldownTime} sec` },
     { label: 'Min Range', value: skill.minRange },
     { label: 'Max Range', value: skill.maxRange },
     { label: 'Category', value: skill.category },
@@ -71,7 +72,7 @@ export default function SkillPage({ params }: { params: { id: string } }) {
                     index % 2 === 0 && 'bg-gray-3',
                   )}
                 >
-                  <dt className="font-medium text-gray-12">{effect.name}</dt>
+                  <dt className="font-medium text-gray-12">{capitalCase(effect.name)}</dt>
                   <dd className="font-mono text-gray-11">{effect.value}</dd>
                 </div>
               ))}
