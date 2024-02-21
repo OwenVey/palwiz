@@ -3,6 +3,7 @@ import { PalImage } from '@/components/PalImage';
 import { StickySidebar } from '@/components/StickySidebar';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
+import { Tooltip } from '@/components/ui/tooltip';
 import ACTIVE_SKILLS from '@/data/active-skills.json';
 import NORMAL_PALS from '@/data/normal-pals.json';
 import { cn } from '@/lib/utils';
@@ -40,7 +41,9 @@ export default function SkillPage({ params }: { params: { id: string } }) {
     <div className="flex flex-col gap-4 md:flex-row">
       <StickySidebar>
         <div className="flex items-center justify-center gap-2">
-          <ElementImage element={skill.element} className="size-8" />
+          <Tooltip content={skill.element} className="capitalize">
+            <ElementImage element={skill.element} className="size-8" />
+          </Tooltip>
           <h1 className="text-2xl font-semibold text-gray-12">{skill.name}</h1>
         </div>
 

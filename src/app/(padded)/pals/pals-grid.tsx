@@ -175,9 +175,13 @@ export function PalsGrid() {
               onValueChange={(v) => setWork(v === '' ? null : (v as WorkSuitability))}
             >
               {WORK_SUITABILITIES.map((work) => (
-                <ToggleGroupItem key={work.id} value={work.id} className="w-10 p-0 md:w-auto">
-                  <WorkTypeImage id={work.id} className="size-7" />
-                </ToggleGroupItem>
+                <Tooltip key={work.id} content={work.label}>
+                  <span className="flex w-10 md:w-auto">
+                    <ToggleGroupItem value={work.id} className="w-full p-0">
+                      <WorkTypeImage id={work.id} className="size-7" />
+                    </ToggleGroupItem>
+                  </span>
+                </Tooltip>
               ))}
             </ToggleGroup>
           </CollapsibleFilter>
@@ -190,9 +194,13 @@ export function PalsGrid() {
               onValueChange={(v) => setElements(v.length > 0 ? v : null)}
             >
               {PAL_ELEMENTS.map((element) => (
-                <ToggleGroupItem key={element} value={element} className="w-10 p-0 md:w-auto">
-                  <ElementImage element={element} />
-                </ToggleGroupItem>
+                <Tooltip key={element} content={element} className="capitalize">
+                  <span className="flex w-10 md:w-auto">
+                    <ToggleGroupItem value={element} className="w-full p-0">
+                      <ElementImage element={element} />
+                    </ToggleGroupItem>
+                  </span>
+                </Tooltip>
               ))}
             </ToggleGroup>
           </CollapsibleFilter>
@@ -206,9 +214,11 @@ export function PalsGrid() {
             >
               {PARTNER_SKILL_CATEGORIES.map((category) => (
                 <Tooltip key={category} content={category}>
-                  <ToggleGroupItem value={category.toString()} className="w-10 p-0 md:w-auto">
-                    <PartnerSkillImage name={category.toString()} />
-                  </ToggleGroupItem>
+                  <span className="flex w-10 md:w-auto">
+                    <ToggleGroupItem value={category} className="w-full p-0">
+                      <PartnerSkillImage name={category} />
+                    </ToggleGroupItem>
+                  </span>
                 </Tooltip>
               ))}
             </ToggleGroup>

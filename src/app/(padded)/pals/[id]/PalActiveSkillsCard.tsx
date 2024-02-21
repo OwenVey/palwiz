@@ -1,6 +1,7 @@
 import { ElementImage } from '@/components/ElementImage';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
+import { Tooltip } from '@/components/ui/tooltip';
 import ACTIVE_SKILLS from '@/data/active-skills.json';
 import { type Pal } from '@/types';
 import Link from 'next/link';
@@ -25,7 +26,9 @@ export function PalActiveSkillsCard({ pal, ...rest }: PalActiveSkillsCardProps) 
             <Card className="relative border-gray-5 bg-gray-3" hoverEffect>
               <div className="flex justify-between">
                 <div className="flex gap-4">
-                  <ElementImage className="size-8" element={skill.element} />
+                  <Tooltip content={skill.element} className="capitalize">
+                    <ElementImage className="size-8" element={skill.element} />
+                  </Tooltip>
                   <div className="font-medium text-gray-12">{skill.name}</div>
                 </div>
 

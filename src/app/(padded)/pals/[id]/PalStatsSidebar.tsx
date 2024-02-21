@@ -2,6 +2,7 @@ import { ElementImage } from '@/components/ElementImage';
 import { PalImage } from '@/components/PalImage';
 import { StickySidebar } from '@/components/StickySidebar';
 import { Badge } from '@/components/ui/badge';
+import { Tooltip } from '@/components/ui/tooltip';
 import { cn } from '@/lib/utils';
 import { type Pal } from '@/types';
 
@@ -91,7 +92,9 @@ export function PalStatsSidebar({ pal, ...rest }: PalStatsSidebarProps) {
 
         <div className="absolute right-0 flex flex-col gap-2 pr-[inherit]">
           {[pal.elementType1, pal.elementType2].filter(Boolean).map((element) => (
-            <ElementImage key={element} element={element} className="size-8" />
+            <Tooltip key={element} content={element} className="capitalize">
+              <ElementImage element={element} className="size-8" />
+            </Tooltip>
           ))}
         </div>
 

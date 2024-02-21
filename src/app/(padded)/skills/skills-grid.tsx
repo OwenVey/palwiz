@@ -199,9 +199,13 @@ export function SkillsGrid() {
                 onValueChange={(e) => setElements(e.length > 0 ? e : null)}
               >
                 {PAL_ELEMENTS.map((element) => (
-                  <ToggleGroupItem key={element} value={element} className="w-10 p-0 md:w-auto">
-                    <ElementImage element={element} />
-                  </ToggleGroupItem>
+                  <Tooltip key={element} content={element} className="capitalize">
+                    <span className="flex w-10 md:w-auto">
+                      <ToggleGroupItem value={element} className="w-full p-0">
+                        <ElementImage element={element} />
+                      </ToggleGroupItem>
+                    </span>
+                  </Tooltip>
                 ))}
               </ToggleGroup>
             </CollapsibleFilter>
@@ -271,8 +275,8 @@ export function SkillsGrid() {
               >
                 {PARTNER_SKILL_CATEGORIES.map((category) => (
                   <Tooltip key={category} content={category}>
-                    <span className="flex">
-                      <ToggleGroupItem value={category} className="w-10 p-0 md:w-auto">
+                    <span className="flex w-10 md:w-auto">
+                      <ToggleGroupItem value={category} className="w-full p-0">
                         <PartnerSkillImage name={category} />
                       </ToggleGroupItem>
                     </span>
