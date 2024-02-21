@@ -4,9 +4,10 @@ import { StickySidebar } from '@/components/StickySidebar';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Tooltip } from '@/components/ui/tooltip';
-import { cn } from '@/lib/utils';
+import { cn, range } from '@/lib/utils';
 import { type Pal } from '@/types';
 import { HeartIcon, MapPinnedIcon } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 
 interface PalStatsSidebarProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -15,6 +16,17 @@ interface PalStatsSidebarProps extends React.HTMLAttributes<HTMLDivElement> {
 
 export function PalStatsSidebar({ pal, ...rest }: PalStatsSidebarProps) {
   const stats = [
+    {
+      label: 'Food',
+      value: pal.foodAmount,
+      element: (
+        <div className="flex">
+          {range(pal.foodAmount).map((i) => (
+            <Image key={i} src="/images/food.png" height={18} width={18} alt="food" unoptimized />
+          ))}
+        </div>
+      ),
+    },
     {
       label: 'Size',
       value: pal.size,
@@ -76,12 +88,8 @@ export function PalStatsSidebar({ pal, ...rest }: PalStatsSidebarProps) {
       value: pal.rideSprintSpeed,
     },
     {
-      label: 'Food Amount',
-      value: pal.foodAmount,
-    },
-    {
       label: 'Male Probability',
-      value: pal.maleProbability,
+      value: `${pal.maleProbability}%`,
     },
   ];
   return (
@@ -131,7 +139,7 @@ export function PalStatsSidebar({ pal, ...rest }: PalStatsSidebarProps) {
               className={cn('flex items-center justify-between rounded-lg p-3 text-sm', index % 2 === 0 && 'bg-gray-3')}
             >
               <dt className="font-medium text-gray-12">{stat.label}</dt>
-              <dd className="font-mono text-gray-11">{stat.value.toLocaleString()}</dd>
+              <dd className="font-mono text-gray-11">{stat.element ?? stat.value.toLocaleString()}</dd>
             </div>
           ))}
         </dl>

@@ -6,6 +6,10 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
+export function range(n: number) {
+  return Array.from({ length: n }, (_, i) => i);
+}
+
 export function isWithinRange(num: number, min: number, max: number) {
   return num >= min && num <= max;
 }
