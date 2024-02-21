@@ -260,9 +260,8 @@ function FullscreenButton() {
   const [isSupported, setIsSupported] = useState(document.fullscreenEnabled);
 
   useEffect(() => {
-    if (!document.fullscreenEnabled) {
-      setIsSupported(false);
-    }
+    if (!document.fullscreenEnabled) setIsSupported(false);
+
     document.onfullscreenchange = () => {
       setIsFullScreen(!!document.fullscreenElement);
     };
