@@ -92,7 +92,7 @@ export default function MyMap() {
     <div className="relative h-full">
       <Card
         className={cn(
-          'absolute left-4 right-4 top-4 z-[1001] flex h-fit max-h-[75vh] flex-col p-0 transition-transform sm:max-h-[calc(100vh-65px-32px)] sm:w-[425px]',
+          'absolute left-4 right-4 top-4 z-[1001] flex max-h-[50vh] flex-col p-0 transition-transform sm:max-h-[calc(100vh-65px-32px)] sm:w-[425px]',
           hideSidebar && 'top-0 -translate-y-full sm:left-0 sm:top-4 sm:-translate-x-full sm:translate-y-0',
         )}
       >
