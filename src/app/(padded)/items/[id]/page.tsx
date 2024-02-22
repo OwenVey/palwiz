@@ -1,16 +1,13 @@
+import { DroppedByPalsCard } from '@/app/(padded)/items/[id]/dropped-by-pals-card';
 import { CraftingMaterialsCard } from '@/components/CraftingMaterialsCard';
 import { ItemImage } from '@/components/images/ItemImage';
-import { PalImage } from '@/components/images/PalImage';
 import { StickySidebar } from '@/components/StickySidebar';
-import { Badge } from '@/components/ui/badge';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import ALPHA_PALS from '@/data/alpha-pals.json';
 import ITEM_RECIPES from '@/data/item-recipes.json';
 import ITEMS from '@/data/items.json';
 import NORMAL_PALS from '@/data/normal-pals.json';
-import { cn, getBadgeVariantForRate } from '@/lib/utils';
-import Image from 'next/image';
-import Link from 'next/link';
+import { cn } from '@/lib/utils';
 import { notFound } from 'next/navigation';
 
 export function generateMetadata({ params }: { params: { id: string } }) {
@@ -104,50 +101,7 @@ export default function ItemPage({ params }: { params: { id: string } }) {
           />
         )}
 
-        {droppedByPals.length > 0 && (
-          <Card className="@container">
-            <CardHeader>
-              <CardTitle>Dropped By</CardTitle>
-            </CardHeader>
-
-            <div className="grid grid-cols-1 gap-2 @xs:grid-cols-2 @lg:grid-cols-3 @2xl:grid-cols-4">
-              {droppedByPals.map((pal) => (
-                <Link key={pal.internalName} href={`/pals/${pal.id}`}>
-                  <Card className="relative flex h-full flex-col items-center border-gray-5 bg-gray-3 p-2" hoverEffect>
-                    <Badge variant="iris" className="absolute left-1 top-1">
-                      {pal.min === pal.max ? pal.min : `${pal.min}-${pal.max}`}
-                    </Badge>
-                    <Badge variant={getBadgeVariantForRate(pal.rate)} className="absolute right-1 top-1">
-                      {pal.rate}%
-                    </Badge>
-
-                    <PalImage
-                      name={pal.id}
-                      alt={pal.name}
-                      width={74}
-                      height={74}
-                      className="rounded-full border border-gray-6 bg-gray-4"
-                    />
-
-                    <div className="relative mt-2">
-                      {pal.isBoss && (
-                        <Image
-                          className="absolute -left-7 size-6"
-                          src="/images/alpha.png"
-                          alt="alpha"
-                          height={24}
-                          width={24}
-                          unoptimized
-                        />
-                      )}
-                      <div className="text-center font-medium text-gray-12">{pal.name}</div>{' '}
-                    </div>
-                  </Card>
-                </Link>
-              ))}
-            </div>
-          </Card>
-        )}
+        {droppedByPals.length > 0 && <DroppedByPalsCard droppedByPals={droppedByPals} />}
       </div>
     </div>
   );
