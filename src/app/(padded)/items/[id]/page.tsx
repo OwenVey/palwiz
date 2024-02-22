@@ -59,7 +59,7 @@ export default function ItemPage({ params }: { params: { id: string } }) {
 
   return (
     <div className="flex flex-col gap-4 md:flex-row">
-      <StickySidebar>
+      <StickySidebar className="max-h-none">
         <div className="mx-auto w-fit rounded-full border border-gray-6 bg-gray-1 p-4">
           <ItemImage name={item.imageName} alt={item.name} width={110} height={110} />
         </div>

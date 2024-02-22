@@ -40,7 +40,7 @@ export default function SkillPage({ params }: { params: { id: string } }) {
 
   return (
     <div className="flex flex-col gap-4 md:flex-row">
-      <StickySidebar>
+      <StickySidebar className="max-h-none">
         <div className="flex items-center justify-center gap-2">
           <Tooltip content={skill.element} className="capitalize">
             <ElementImage name={skill.element} alt={skill.element} width={32} height={32} />

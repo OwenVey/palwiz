@@ -14,7 +14,7 @@ interface PalStatsSidebarProps extends React.HTMLAttributes<HTMLDivElement> {
   pal: Pal;
 }
 
-export function PalStatsSidebar({ pal, ...rest }: PalStatsSidebarProps) {
+export function PalStatsSidebar({ pal, className, ...rest }: PalStatsSidebarProps) {
   const stats = [
     {
       label: 'Food',
@@ -93,7 +93,7 @@ export function PalStatsSidebar({ pal, ...rest }: PalStatsSidebarProps) {
     },
   ];
   return (
-    <StickySidebar {...rest}>
+    <StickySidebar {...rest} className={cn(className, 'max-h-none')}>
       <div className="flex justify-between">
         <Badge className="h-fit items-baseline text-sm tracking-wider">
           <span className="text-gray-8">#{'000'.slice(pal.zukanIndex.toString().length)}</span>

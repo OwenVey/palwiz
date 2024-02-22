@@ -4,6 +4,7 @@ import { StructureImage } from '@/components/images/StructureImage';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import STRUCTURES from '@/data/structures.json';
 import { cn } from '@/lib/utils';
+import { capitalCase } from 'change-case';
 import { notFound } from 'next/navigation';
 
 export function generateMetadata({ params }: { params: { id: string } }) {
@@ -30,13 +31,13 @@ export default function StructurePage({ params }: { params: { id: string } }) {
     { label: 'HP', value: structure.hp },
     { label: 'Material Type', value: structure.materialType },
     { label: 'Material Sub Type', value: structure.materialSubType },
-    { label: 'Category', value: structure.typeA },
-    { label: 'Subcategory', value: structure.typeB },
+    { label: 'Category', value: capitalCase(structure.typeA) },
+    { label: 'Subcategory', value: capitalCase(structure.typeB) },
   ];
 
   return (
     <div className="flex flex-col gap-4 md:flex-row">
-      <StickySidebar>
+      <StickySidebar className="max-h-none">
         <div className="mx-auto w-fit rounded-full border border-gray-6 bg-gray-1 p-4">
           <StructureImage name={structure.imageName} alt={structure.name} width={110} height={110} />
         </div>
