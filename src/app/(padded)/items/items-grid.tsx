@@ -214,7 +214,7 @@ const Grid = memo(function Grid({ items, sort }: { items: Item[]; sort: (typeof 
             )}
 
             <div className="rounded-full border border-gray-4 bg-gray-3 p-1">
-              <ItemImage width={60} height={60} id={item.imageName} />
+              <ItemImage id={item.imageName} alt={item.name} width={60} height={60} />
             </div>
 
             <div className="mt-2 flex flex-1 items-center">

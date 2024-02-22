@@ -15,14 +15,17 @@
     "materials": [
       {
         "count": 3,
+        "id": "wheat-seeds",
         "internalId": "WheatSeeds"
       },
       {
         "count": 35,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 35,
+        "id": "stone",
         "internalId": "stone"
       }
     ],
@@ -47,18 +50,22 @@
     "materials": [
       {
         "count": 3,
+        "id": "tomato-seeds",
         "internalId": "TomatoSeeds"
       },
       {
         "count": 70,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 50,
+        "id": "stone",
         "internalId": "stone"
       },
       {
         "count": 5,
+        "id": "pal-fluids",
         "internalId": "PalFluid"
       }
     ],
@@ -83,18 +90,22 @@
     "materials": [
       {
         "count": 3,
+        "id": "lettuce-seeds",
         "internalId": "LettuceSeeds"
       },
       {
         "count": 100,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 70,
+        "id": "stone",
         "internalId": "stone"
       },
       {
         "count": 10,
+        "id": "pal-fluids",
         "internalId": "PalFluid"
       }
     ],
@@ -119,14 +130,17 @@
     "materials": [
       {
         "count": 3,
+        "id": "berry-seeds",
         "internalId": "BerrySeeds"
       },
       {
         "count": 20,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 20,
+        "id": "stone",
         "internalId": "stone"
       }
     ],
@@ -151,6 +165,7 @@
     "materials": [
       {
         "count": 20,
+        "id": "wood",
         "internalId": "Wood"
       }
     ],
@@ -175,6 +190,7 @@
     "materials": [
       {
         "count": 2,
+        "id": "wood",
         "internalId": "Wood"
       }
     ],
@@ -199,6 +215,7 @@
     "materials": [
       {
         "count": 2,
+        "id": "wood",
         "internalId": "Wood"
       }
     ],
@@ -223,6 +240,7 @@
     "materials": [
       {
         "count": 2,
+        "id": "wood",
         "internalId": "Wood"
       }
     ],
@@ -247,6 +265,7 @@
     "materials": [
       {
         "count": 2,
+        "id": "wood",
         "internalId": "Wood"
       }
     ],
@@ -271,6 +290,7 @@
     "materials": [
       {
         "count": 2,
+        "id": "wood",
         "internalId": "Wood"
       }
     ],
@@ -295,6 +315,7 @@
     "materials": [
       {
         "count": 2,
+        "id": "wood",
         "internalId": "Wood"
       }
     ],
@@ -319,6 +340,7 @@
     "materials": [
       {
         "count": 2,
+        "id": "wood",
         "internalId": "Wood"
       }
     ],
@@ -343,6 +365,7 @@
     "materials": [
       {
         "count": 2,
+        "id": "wood",
         "internalId": "Wood"
       }
     ],
@@ -367,6 +390,7 @@
     "materials": [
       {
         "count": 10,
+        "id": "wood",
         "internalId": "Wood"
       }
     ],
@@ -391,6 +415,7 @@
     "materials": [
       {
         "count": 10,
+        "id": "wood",
         "internalId": "Wood"
       }
     ],
@@ -415,6 +440,7 @@
     "materials": [
       {
         "count": 3,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -439,6 +465,7 @@
     "materials": [
       {
         "count": 3,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -463,6 +490,7 @@
     "materials": [
       {
         "count": 3,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -487,6 +515,7 @@
     "materials": [
       {
         "count": 3,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -511,6 +540,7 @@
     "materials": [
       {
         "count": 3,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -535,6 +565,7 @@
     "materials": [
       {
         "count": 3,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -559,6 +590,7 @@
     "materials": [
       {
         "count": 3,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -583,6 +615,7 @@
     "materials": [
       {
         "count": 3,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -607,10 +640,12 @@
     "materials": [
       {
         "count": 10,
+        "id": "stone",
         "internalId": "Stone"
       },
       {
         "count": 1,
+        "id": "cement",
         "internalId": "cement"
       }
     ],
@@ -635,10 +670,12 @@
     "materials": [
       {
         "count": 10,
+        "id": "stone",
         "internalId": "Stone"
       },
       {
         "count": 1,
+        "id": "cement",
         "internalId": "cement"
       }
     ],
@@ -663,10 +700,12 @@
     "materials": [
       {
         "count": 1,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 2,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -691,10 +730,12 @@
     "materials": [
       {
         "count": 1,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 2,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -719,10 +760,12 @@
     "materials": [
       {
         "count": 1,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 2,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -747,10 +790,12 @@
     "materials": [
       {
         "count": 1,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 2,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -775,10 +820,12 @@
     "materials": [
       {
         "count": 1,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 2,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -803,10 +850,12 @@
     "materials": [
       {
         "count": 1,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 2,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -831,10 +880,12 @@
     "materials": [
       {
         "count": 1,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 2,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -859,10 +910,12 @@
     "materials": [
       {
         "count": 1,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 2,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -887,10 +940,12 @@
     "materials": [
       {
         "count": 10,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 1,
+        "id": "cement",
         "internalId": "cement"
       }
     ],
@@ -915,10 +970,12 @@
     "materials": [
       {
         "count": 10,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 1,
+        "id": "cement",
         "internalId": "cement"
       }
     ],
@@ -943,18 +1000,22 @@
     "materials": [
       {
         "count": 30,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 30,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 15,
+        "id": "stone",
         "internalId": "Stone"
       },
       {
         "count": 5,
+        "id": "nail",
         "internalId": "MachineParts"
       }
     ],
@@ -979,14 +1040,17 @@
     "materials": [
       {
         "count": 30,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 10,
+        "id": "nail",
         "internalId": "MachineParts"
       },
       {
         "count": 15,
+        "id": "cement",
         "internalId": "Cement"
       }
     ],
@@ -1011,14 +1075,17 @@
     "materials": [
       {
         "count": 30,
+        "id": "refined-ingot",
         "internalId": "IronIngot"
       },
       {
         "count": 20,
+        "id": "nail",
         "internalId": "MachineParts"
       },
       {
         "count": 30,
+        "id": "cement",
         "internalId": "Cement"
       }
     ],
@@ -1043,18 +1110,22 @@
     "materials": [
       {
         "count": 100,
+        "id": "refined-ingot",
         "internalId": "IronIngot"
       },
       {
         "count": 20,
+        "id": "circuit-board",
         "internalId": "MachineParts2"
       },
       {
         "count": 20,
+        "id": "nail",
         "internalId": "MachineParts"
       },
       {
         "count": 50,
+        "id": "cement",
         "internalId": "Cement"
       }
     ],
@@ -1079,10 +1150,12 @@
     "materials": [
       {
         "count": 10,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 10,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -1107,10 +1180,12 @@
     "materials": [
       {
         "count": 50,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 20,
+        "id": "electric-organ",
         "internalId": "ElectricOrgan"
       }
     ],
@@ -1135,10 +1210,12 @@
     "materials": [
       {
         "count": 5,
+        "id": "paldium-fragment",
         "internalId": "Pal_crystal_S"
       },
       {
         "count": 10,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -1163,10 +1240,12 @@
     "materials": [
       {
         "count": 15,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 5,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -1191,10 +1270,12 @@
     "materials": [
       {
         "count": 15,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 30,
+        "id": "wood",
         "internalId": "Wood"
       }
     ],
@@ -1219,14 +1300,17 @@
     "materials": [
       {
         "count": 20,
+        "id": "refined-ingot",
         "internalId": "IronIngot"
       },
       {
         "count": 50,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 20,
+        "id": "nail",
         "internalId": "MachineParts"
       }
     ],
@@ -1251,10 +1335,12 @@
     "materials": [
       {
         "count": 10,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 1,
+        "id": "wool",
         "internalId": "Wool"
       }
     ],
@@ -1279,14 +1365,17 @@
     "materials": [
       {
         "count": 20,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 5,
+        "id": "fiber",
         "internalId": "Fiber"
       },
       {
         "count": 1,
+        "id": "wool",
         "internalId": "Wool"
       }
     ],
@@ -1311,18 +1400,22 @@
     "materials": [
       {
         "count": 10,
+        "id": "cloth",
         "internalId": "Cloth"
       },
       {
         "count": 50,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 10,
+        "id": "nail",
         "internalId": "MachineParts"
       },
       {
         "count": 20,
+        "id": "fiber",
         "internalId": "Fiber"
       }
     ],
@@ -1347,6 +1440,7 @@
     "materials": [
       {
         "count": 1,
+        "id": "wood",
         "internalId": "Wood"
       }
     ],
@@ -1371,6 +1465,7 @@
     "materials": [
       {
         "count": 1,
+        "id": "wood",
         "internalId": "Wood"
       }
     ],
@@ -1395,10 +1490,12 @@
     "materials": [
       {
         "count": 20,
+        "id": "stone",
         "internalId": "Stone"
       },
       {
         "count": 10,
+        "id": "paldium-fragment",
         "internalId": "Pal_crystal_S"
       }
     ],
@@ -1423,14 +1520,17 @@
     "materials": [
       {
         "count": 20,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 10,
+        "id": "charcoal",
         "internalId": "Charcoal"
       },
       {
         "count": 5,
+        "id": "flame-organ",
         "internalId": "FireOrgan"
       }
     ],
@@ -1455,18 +1555,22 @@
     "materials": [
       {
         "count": 30,
+        "id": "refined-ingot",
         "internalId": "IronIngot"
       },
       {
         "count": 10,
+        "id": "circuit-board",
         "internalId": "MachineParts2"
       },
       {
         "count": 30,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 10,
+        "id": "flame-organ",
         "internalId": "FireOrgan"
       }
     ],
@@ -1491,14 +1595,17 @@
     "materials": [
       {
         "count": 20,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 20,
+        "id": "stone",
         "internalId": "Stone"
       },
       {
         "count": 5,
+        "id": "ice-organ",
         "internalId": "IceOrgan"
       }
     ],
@@ -1523,18 +1630,22 @@
     "materials": [
       {
         "count": 30,
+        "id": "refined-ingot",
         "internalId": "IronIngot"
       },
       {
         "count": 10,
+        "id": "circuit-board",
         "internalId": "MachineParts2"
       },
       {
         "count": 30,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 10,
+        "id": "ice-organ",
         "internalId": "IceOrgan"
       }
     ],
@@ -1559,10 +1670,12 @@
     "materials": [
       {
         "count": 5,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 2,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -1587,10 +1700,12 @@
     "materials": [
       {
         "count": 5,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 2,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -1615,18 +1730,22 @@
     "materials": [
       {
         "count": 10,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 3,
+        "id": "electric-organ",
         "internalId": "ElectricOrgan"
       },
       {
         "count": 3,
+        "id": "nail",
         "internalId": "MachineParts"
       },
       {
         "count": 20,
+        "id": "wood",
         "internalId": "Wood"
       }
     ],
@@ -1651,14 +1770,17 @@
     "materials": [
       {
         "count": 20,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 3,
+        "id": "electric-organ",
         "internalId": "ElectricOrgan"
       },
       {
         "count": 3,
+        "id": "nail",
         "internalId": "MachineParts"
       }
     ],
@@ -1683,14 +1805,17 @@
     "materials": [
       {
         "count": 50,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 5,
+        "id": "circuit-board",
         "internalId": "MachineParts2"
       },
       {
         "count": 5,
+        "id": "nail",
         "internalId": "MachineParts"
       }
     ],
@@ -1715,14 +1840,17 @@
     "materials": [
       {
         "count": 50,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 5,
+        "id": "circuit-board",
         "internalId": "MachineParts2"
       },
       {
         "count": 5,
+        "id": "nail",
         "internalId": "MachineParts"
       }
     ],
@@ -1747,6 +1875,7 @@
     "materials": [
       {
         "count": 5,
+        "id": "ingot",
         "internalId": "CopperIngot"
       }
     ],
@@ -1771,6 +1900,7 @@
     "materials": [
       {
         "count": 20,
+        "id": "ingot",
         "internalId": "CopperIngot"
       }
     ],
@@ -1795,10 +1925,12 @@
     "materials": [
       {
         "count": 10,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 5,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -1823,10 +1955,12 @@
     "materials": [
       {
         "count": 5,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 2,
+        "id": "electric-organ",
         "internalId": "ElectricOrgan"
       }
     ],
@@ -1851,10 +1985,12 @@
     "materials": [
       {
         "count": 5,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 2,
+        "id": "ice-organ",
         "internalId": "IceOrgan"
       }
     ],
@@ -1879,10 +2015,12 @@
     "materials": [
       {
         "count": 5,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 2,
+        "id": "flame-organ",
         "internalId": "FireOrgan"
       }
     ],
@@ -1907,10 +2045,12 @@
     "materials": [
       {
         "count": 10,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 5,
+        "id": "fiber",
         "internalId": "Fiber"
       }
     ],
@@ -1935,18 +2075,22 @@
     "materials": [
       {
         "count": 10,
+        "id": "cloth",
         "internalId": "Cloth"
       },
       {
         "count": 30,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 5,
+        "id": "nail",
         "internalId": "MachineParts"
       },
       {
         "count": 10,
+        "id": "fiber",
         "internalId": "Fiber"
       }
     ],
@@ -1971,18 +2115,22 @@
     "materials": [
       {
         "count": 10,
+        "id": "high-quality-cloth",
         "internalId": "Cloth2"
       },
       {
         "count": 60,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 20,
+        "id": "nail",
         "internalId": "MachineParts"
       },
       {
         "count": 30,
+        "id": "fiber",
         "internalId": "Fiber"
       }
     ],
@@ -2007,14 +2155,17 @@
     "materials": [
       {
         "count": 1,
+        "id": "paldium-fragment",
         "internalId": "Pal_crystal_S"
       },
       {
         "count": 8,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 3,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -2039,14 +2190,17 @@
     "materials": [
       {
         "count": 10,
+        "id": "paldium-fragment",
         "internalId": "Pal_crystal_S"
       },
       {
         "count": 10,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 20,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -2071,14 +2225,17 @@
     "materials": [
       {
         "count": 20,
+        "id": "paldium-fragment",
         "internalId": "Pal_crystal_S"
       },
       {
         "count": 20,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 5,
+        "id": "ancient-civilization-parts",
         "internalId": "PalCrystal_Ex"
       }
     ],
@@ -2103,14 +2260,17 @@
     "materials": [
       {
         "count": 10,
+        "id": "paldium-fragment",
         "internalId": "Pal_crystal_S"
       },
       {
         "count": 30,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 10,
+        "id": "nail",
         "internalId": "MachineParts"
       }
     ],
@@ -2135,18 +2295,22 @@
     "materials": [
       {
         "count": 30,
+        "id": "paldium-fragment",
         "internalId": "Pal_crystal_S"
       },
       {
         "count": 50,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 100,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 20,
+        "id": "nail",
         "internalId": "MachineParts"
       }
     ],
@@ -2171,18 +2335,22 @@
     "materials": [
       {
         "count": 100,
+        "id": "refined-ingot",
         "internalId": "IronIngot"
       },
       {
         "count": 10,
+        "id": "circuit-board",
         "internalId": "MachineParts2"
       },
       {
         "count": 30,
+        "id": "nail",
         "internalId": "MachineParts"
       },
       {
         "count": 50,
+        "id": "paldium-fragment",
         "internalId": "Pal_crystal_S"
       }
     ],
@@ -2207,6 +2375,7 @@
     "materials": [
       {
         "count": 1,
+        "id": "ingot",
         "internalId": "CopperIngot"
       }
     ],
@@ -2231,10 +2400,12 @@
     "materials": [
       {
         "count": 1,
+        "id": "refined-ingot",
         "internalId": "IronIngot"
       },
       {
         "count": 5,
+        "id": "ingot",
         "internalId": "CopperIngot"
       }
     ],
@@ -2259,10 +2430,12 @@
     "materials": [
       {
         "count": 1,
+        "id": "pal-metal-ingot",
         "internalId": "StealIngot"
       },
       {
         "count": 5,
+        "id": "refined-ingot",
         "internalId": "IronIngot"
       }
     ],
@@ -2287,18 +2460,22 @@
     "materials": [
       {
         "count": 10,
+        "id": "paldium-fragment",
         "internalId": "Pal_crystal_S"
       },
       {
         "count": 5,
+        "id": "cloth",
         "internalId": "Cloth"
       },
       {
         "count": 30,
+        "id": "stone",
         "internalId": "Stone"
       },
       {
         "count": 2,
+        "id": "ancient-civilization-parts",
         "internalId": "PalCrystal_Ex"
       }
     ],
@@ -2323,18 +2500,22 @@
     "materials": [
       {
         "count": 30,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 15,
+        "id": "stone",
         "internalId": "Stone"
       },
       {
         "count": 10,
+        "id": "paldium-fragment",
         "internalId": "Pal_crystal_S"
       },
       {
         "count": 10,
+        "id": "pal-fluids",
         "internalId": "PalFluid"
       }
     ],
@@ -2359,18 +2540,22 @@
     "materials": [
       {
         "count": 100,
+        "id": "stone",
         "internalId": "Stone"
       },
       {
         "count": 100,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 30,
+        "id": "paldium-fragment",
         "internalId": "Pal_crystal_S"
       },
       {
         "count": 20,
+        "id": "cement",
         "internalId": "Cement"
       }
     ],
@@ -2395,14 +2580,17 @@
     "materials": [
       {
         "count": 20,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 50,
+        "id": "stone",
         "internalId": "Stone"
       },
       {
         "count": 3,
+        "id": "flame-organ",
         "internalId": "FireOrgan"
       }
     ],
@@ -2427,14 +2615,17 @@
     "materials": [
       {
         "count": 100,
+        "id": "stone",
         "internalId": "Stone"
       },
       {
         "count": 30,
+        "id": "cement",
         "internalId": "Cement"
       },
       {
         "count": 15,
+        "id": "flame-organ",
         "internalId": "FireOrgan"
       }
     ],
@@ -2459,18 +2650,22 @@
     "materials": [
       {
         "count": 50,
+        "id": "refined-ingot",
         "internalId": "IronIngot"
       },
       {
         "count": 10,
+        "id": "circuit-board",
         "internalId": "MachineParts2"
       },
       {
         "count": 20,
+        "id": "polymer",
         "internalId": "Polymer"
       },
       {
         "count": 20,
+        "id": "carbon-fiber",
         "internalId": "CarbonFiber"
       }
     ],
@@ -2495,6 +2690,7 @@
     "materials": [
       {
         "count": 10,
+        "id": "wood",
         "internalId": "Wood"
       }
     ],
@@ -2519,14 +2715,17 @@
     "materials": [
       {
         "count": 20,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 15,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 3,
+        "id": "flame-organ",
         "internalId": "FireOrgan"
       }
     ],
@@ -2551,18 +2750,22 @@
     "materials": [
       {
         "count": 30,
+        "id": "refined-ingot",
         "internalId": "IronIngot"
       },
       {
         "count": 5,
+        "id": "circuit-board",
         "internalId": "MachineParts2"
       },
       {
         "count": 20,
+        "id": "charcoal",
         "internalId": "Charcoal"
       },
       {
         "count": 5,
+        "id": "flame-organ",
         "internalId": "FireOrgan"
       }
     ],
@@ -2587,14 +2790,17 @@
     "materials": [
       {
         "count": 15,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 50,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 10,
+        "id": "nail",
         "internalId": "MachineParts"
       }
     ],
@@ -2619,18 +2825,22 @@
     "materials": [
       {
         "count": 100,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 50,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 20,
+        "id": "nail",
         "internalId": "MachineParts"
       },
       {
         "count": 10,
+        "id": "cement",
         "internalId": "Cement"
       }
     ],
@@ -2655,14 +2865,17 @@
     "materials": [
       {
         "count": 100,
+        "id": "refined-ingot",
         "internalId": "IronIngot"
       },
       {
         "count": 10,
+        "id": "circuit-board",
         "internalId": "MachineParts2"
       },
       {
         "count": 30,
+        "id": "nail",
         "internalId": "MachineParts"
       }
     ],
@@ -2687,14 +2900,17 @@
     "materials": [
       {
         "count": 30,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 5,
+        "id": "nail",
         "internalId": "MachineParts"
       },
       {
         "count": 10,
+        "id": "paldium-fragment",
         "internalId": "Pal_crystal_S"
       }
     ],
@@ -2719,14 +2935,17 @@
     "materials": [
       {
         "count": 40,
+        "id": "refined-ingot",
         "internalId": "IronIngot"
       },
       {
         "count": 10,
+        "id": "circuit-board",
         "internalId": "MachineParts2"
       },
       {
         "count": 20,
+        "id": "carbon-fiber",
         "internalId": "CarbonFiber"
       }
     ],
@@ -2751,14 +2970,17 @@
     "materials": [
       {
         "count": 50,
+        "id": "stone",
         "internalId": "Stone"
       },
       {
         "count": 20,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 10,
+        "id": "paldium-fragment",
         "internalId": "Pal_crystal_S"
       }
     ],
@@ -2783,14 +3005,17 @@
     "materials": [
       {
         "count": 15,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 50,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 10,
+        "id": "nail",
         "internalId": "MachineParts"
       }
     ],
@@ -2815,18 +3040,22 @@
     "materials": [
       {
         "count": 100,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 50,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 20,
+        "id": "nail",
         "internalId": "MachineParts"
       },
       {
         "count": 10,
+        "id": "high-quality-pal-oil",
         "internalId": "PalOil"
       }
     ],
@@ -2851,14 +3080,17 @@
     "materials": [
       {
         "count": 100,
+        "id": "refined-ingot",
         "internalId": "IronIngot"
       },
       {
         "count": 10,
+        "id": "circuit-board",
         "internalId": "MachineParts2"
       },
       {
         "count": 30,
+        "id": "nail",
         "internalId": "MachineParts"
       }
     ],
@@ -2883,10 +3115,12 @@
     "materials": [
       {
         "count": 10,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 10,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -2911,10 +3145,12 @@
     "materials": [
       {
         "count": 10,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 20,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -2939,6 +3175,7 @@
     "materials": [
       {
         "count": 2,
+        "id": "wood",
         "internalId": "Wood"
       }
     ],
@@ -2963,14 +3200,17 @@
     "materials": [
       {
         "count": 50,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 20,
+        "id": "stone",
         "internalId": "Stone"
       },
       {
         "count": 10,
+        "id": "paldium-fragment",
         "internalId": "Pal_crystal_S"
       }
     ],
@@ -2995,14 +3235,17 @@
     "materials": [
       {
         "count": 10,
+        "id": "paldium-fragment",
         "internalId": "Pal_crystal_S"
       },
       {
         "count": 30,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 2,
+        "id": "cloth",
         "internalId": "Cloth"
       }
     ],
@@ -3027,14 +3270,17 @@
     "materials": [
       {
         "count": 50,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 20,
+        "id": "stone",
         "internalId": "Stone"
       },
       {
         "count": 10,
+        "id": "paldium-fragment",
         "internalId": "Pal_crystal_S"
       }
     ],
@@ -3059,10 +3305,12 @@
     "materials": [
       {
         "count": 50,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 40,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -3087,14 +3335,17 @@
     "materials": [
       {
         "count": 100,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 20,
+        "id": "stone",
         "internalId": "Stone"
       },
       {
         "count": 50,
+        "id": "fiber",
         "internalId": "Fiber"
       }
     ],
@@ -3119,10 +3370,12 @@
     "materials": [
       {
         "count": 10,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 10,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -3147,14 +3400,17 @@
     "materials": [
       {
         "count": 40,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 100,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 15,
+        "id": "nail",
         "internalId": "MachineParts"
       }
     ],
@@ -3179,10 +3435,12 @@
     "materials": [
       {
         "count": 100,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 10,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -3207,14 +3465,17 @@
     "materials": [
       {
         "count": 50,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 100,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 20,
+        "id": "flame-organ",
         "internalId": "FireOrgan"
       }
     ],
@@ -3239,14 +3500,17 @@
     "materials": [
       {
         "count": 100,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 200,
+        "id": "stone",
         "internalId": "Stone"
       },
       {
         "count": 20,
+        "id": "pal-fluids",
         "internalId": "PalFluid"
       }
     ],
@@ -3271,18 +3535,22 @@
     "materials": [
       {
         "count": 50,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 100,
+        "id": "stone",
         "internalId": "Stone"
       },
       {
         "count": 40,
+        "id": "cement",
         "internalId": "Cement"
       },
       {
         "count": 20,
+        "id": "beautiful-flower",
         "internalId": "Poppy"
       }
     ],
@@ -3307,14 +3575,17 @@
     "materials": [
       {
         "count": 300,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 100,
+        "id": "stone",
         "internalId": "Stone"
       },
       {
         "count": 100,
+        "id": "fiber",
         "internalId": "Fiber"
       }
     ],
@@ -3339,14 +3610,17 @@
     "materials": [
       {
         "count": 150,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 40,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 30,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -3371,14 +3645,17 @@
     "materials": [
       {
         "count": 50,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 50,
+        "id": "stone",
         "internalId": "Stone"
       },
       {
         "count": 50,
+        "id": "ingot",
         "internalId": "CopperIngot"
       }
     ],
@@ -3403,18 +3680,22 @@
     "materials": [
       {
         "count": 50,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 50,
+        "id": "stone",
         "internalId": "Stone"
       },
       {
         "count": 15,
+        "id": "pal-fluids",
         "internalId": "PalFluid"
       },
       {
         "count": 15,
+        "id": "high-quality-pal-oil",
         "internalId": "PalOil"
       }
     ],
@@ -3439,14 +3720,17 @@
     "materials": [
       {
         "count": 50,
+        "id": "ice-organ",
         "internalId": "IceOrgan"
       },
       {
         "count": 50,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 20,
+        "id": "cloth",
         "internalId": "Cloth"
       }
     ],
@@ -3471,14 +3755,17 @@
     "materials": [
       {
         "count": 100,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 30,
+        "id": "electric-organ",
         "internalId": "ElectricOrgan"
       },
       {
         "count": 20,
+        "id": "circuit-board",
         "internalId": "MachineParts2"
       }
     ],
@@ -3503,10 +3790,12 @@
     "materials": [
       {
         "count": 30,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 10,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -3531,14 +3820,17 @@
     "materials": [
       {
         "count": 20,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 20,
+        "id": "stone",
         "internalId": "Stone"
       },
       {
         "count": 5,
+        "id": "ice-organ",
         "internalId": "IceOrgan"
       }
     ],
@@ -3563,18 +3855,22 @@
     "materials": [
       {
         "count": 50,
+        "id": "refined-ingot",
         "internalId": "IronIngot"
       },
       {
         "count": 20,
+        "id": "polymer",
         "internalId": "Polymer"
       },
       {
         "count": 15,
+        "id": "ice-organ",
         "internalId": "IceOrgan"
       },
       {
         "count": 5,
+        "id": "circuit-board",
         "internalId": "MachineParts2"
       }
     ],
@@ -3599,6 +3895,7 @@
     "materials": [
       {
         "count": 10,
+        "id": "wood",
         "internalId": "Wood"
       }
     ],
@@ -3623,14 +3920,17 @@
     "materials": [
       {
         "count": 50,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 20,
+        "id": "stone",
         "internalId": "Stone"
       },
       {
         "count": 30,
+        "id": "fiber",
         "internalId": "Fiber"
       }
     ],
@@ -3655,14 +3955,17 @@
     "materials": [
       {
         "count": 20,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 5,
+        "id": "fiber",
         "internalId": "Fiber"
       },
       {
         "count": 5,
+        "id": "paldium-fragment",
         "internalId": "Pal_crystal_S"
       }
     ],
@@ -3687,10 +3990,12 @@
     "materials": [
       {
         "count": 5,
+        "id": "paldium-fragment",
         "internalId": "Pal_crystal_S"
       },
       {
         "count": 20,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -3715,10 +4020,12 @@
     "materials": [
       {
         "count": 30,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 5,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -3743,10 +4050,12 @@
     "materials": [
       {
         "count": 30,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 5,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -3771,10 +4080,12 @@
     "materials": [
       {
         "count": 40,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 2,
+        "id": "nail",
         "internalId": "MachineParts"
       }
     ],
@@ -3799,10 +4110,12 @@
     "materials": [
       {
         "count": 70,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 10,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -3827,10 +4140,12 @@
     "materials": [
       {
         "count": 20,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 5,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -3855,10 +4170,12 @@
     "materials": [
       {
         "count": 40,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 2,
+        "id": "nail",
         "internalId": "MachineParts"
       }
     ],
@@ -3883,10 +4200,12 @@
     "materials": [
       {
         "count": 70,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 5,
+        "id": "nail",
         "internalId": "MachineParts"
       }
     ],
@@ -3911,10 +4230,12 @@
     "materials": [
       {
         "count": 30,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 10,
+        "id": "ingot",
         "internalId": "CopperIngot"
       }
     ],
@@ -3939,10 +4260,12 @@
     "materials": [
       {
         "count": 15,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 3,
+        "id": "ingot",
         "internalId": "CopperIngot"
       }
     ],
@@ -3967,10 +4290,12 @@
     "materials": [
       {
         "count": 15,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 10,
+        "id": "ingot",
         "internalId": "CopperIngot"
       }
     ],
@@ -3995,10 +4320,12 @@
     "materials": [
       {
         "count": 30,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 10,
+        "id": "fiber",
         "internalId": "Fiber"
       }
     ],
@@ -4023,10 +4350,12 @@
     "materials": [
       {
         "count": 40,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 10,
+        "id": "fiber",
         "internalId": "Fiber"
       }
     ],
@@ -4051,14 +4380,17 @@
     "materials": [
       {
         "count": 40,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 10,
+        "id": "fiber",
         "internalId": "Fiber"
       },
       {
         "count": 3,
+        "id": "ingot",
         "internalId": "CopperIngot"
       }
     ],
@@ -4083,14 +4415,17 @@
     "materials": [
       {
         "count": 20,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 5,
+        "id": "stone",
         "internalId": "Stone"
       },
       {
         "count": 3,
+        "id": "red-berries",
         "internalId": "Berries"
       }
     ],
@@ -4115,10 +4450,12 @@
     "materials": [
       {
         "count": 20,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 1,
+        "id": "nail",
         "internalId": "MachineParts"
       }
     ],
@@ -4143,10 +4480,12 @@
     "materials": [
       {
         "count": 20,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 2,
+        "id": "nail",
         "internalId": "MachineParts"
       }
     ],
@@ -4171,10 +4510,12 @@
     "materials": [
       {
         "count": 30,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 3,
+        "id": "nail",
         "internalId": "MachineParts"
       }
     ],
@@ -4199,10 +4540,12 @@
     "materials": [
       {
         "count": 30,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 3,
+        "id": "nail",
         "internalId": "MachineParts"
       }
     ],
@@ -4227,6 +4570,7 @@
     "materials": [
       {
         "count": 100,
+        "id": "ingot",
         "internalId": "CopperIngot"
       }
     ],
@@ -4251,10 +4595,12 @@
     "materials": [
       {
         "count": 10,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 20,
+        "id": "wood",
         "internalId": "Wood"
       }
     ],
@@ -4279,14 +4625,17 @@
     "materials": [
       {
         "count": 10,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 15,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 2,
+        "id": "cloth",
         "internalId": "Cloth"
       }
     ],
@@ -4311,10 +4660,12 @@
     "materials": [
       {
         "count": 20,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 5,
+        "id": "red-berries",
         "internalId": "Berries"
       }
     ],
@@ -4339,10 +4690,12 @@
     "materials": [
       {
         "count": 20,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 5,
+        "id": "red-berries",
         "internalId": "Berries"
       }
     ],
@@ -4367,6 +4720,7 @@
     "materials": [
       {
         "count": 10,
+        "id": "wood",
         "internalId": "Wood"
       }
     ],
@@ -4391,6 +4745,7 @@
     "materials": [
       {
         "count": 5,
+        "id": "wood",
         "internalId": "Wood"
       }
     ],
@@ -4415,6 +4770,7 @@
     "materials": [
       {
         "count": 8,
+        "id": "wood",
         "internalId": "Wood"
       }
     ],
@@ -4439,6 +4795,7 @@
     "materials": [
       {
         "count": 10,
+        "id": "wood",
         "internalId": "Wood"
       }
     ],
@@ -4463,10 +4820,12 @@
     "materials": [
       {
         "count": 5,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 5,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -4491,10 +4850,12 @@
     "materials": [
       {
         "count": 30,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 5,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -4519,10 +4880,12 @@
     "materials": [
       {
         "count": 10,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 5,
+        "id": "fiber",
         "internalId": "Fiber"
       }
     ],
@@ -4547,10 +4910,12 @@
     "materials": [
       {
         "count": 10,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 5,
+        "id": "fiber",
         "internalId": "Fiber"
       }
     ],
@@ -4575,10 +4940,12 @@
     "materials": [
       {
         "count": 10,
+        "id": "stone",
         "internalId": "Stone"
       },
       {
         "count": 5,
+        "id": "fiber",
         "internalId": "Fiber"
       }
     ],
@@ -4603,10 +4970,12 @@
     "materials": [
       {
         "count": 5,
+        "id": "stone",
         "internalId": "Stone"
       },
       {
         "count": 5,
+        "id": "fiber",
         "internalId": "Fiber"
       }
     ],
@@ -4631,6 +5000,7 @@
     "materials": [
       {
         "count": 10,
+        "id": "fiber",
         "internalId": "Fiber"
       }
     ],
@@ -4655,6 +5025,7 @@
     "materials": [
       {
         "count": 5,
+        "id": "fiber",
         "internalId": "Fiber"
       }
     ],
@@ -4679,6 +5050,7 @@
     "materials": [
       {
         "count": 5,
+        "id": "fiber",
         "internalId": "Fiber"
       }
     ],
@@ -4703,10 +5075,12 @@
     "materials": [
       {
         "count": 3,
+        "id": "cloth",
         "internalId": "Cloth"
       },
       {
         "count": 1,
+        "id": "venom-gland",
         "internalId": "Venom"
       }
     ],
@@ -4731,10 +5105,12 @@
     "materials": [
       {
         "count": 2,
+        "id": "cloth",
         "internalId": "Cloth"
       },
       {
         "count": 1,
+        "id": "flame-organ",
         "internalId": "FireOrgan"
       }
     ],
@@ -4759,10 +5135,12 @@
     "materials": [
       {
         "count": 2,
+        "id": "cloth",
         "internalId": "Cloth"
       },
       {
         "count": 1,
+        "id": "high-quality-pal-oil",
         "internalId": "PalOil"
       }
     ],
@@ -4787,10 +5165,12 @@
     "materials": [
       {
         "count": 1,
+        "id": "cloth",
         "internalId": "Cloth"
       },
       {
         "count": 1,
+        "id": "flame-organ",
         "internalId": "FireOrgan"
       }
     ],
@@ -4815,6 +5195,7 @@
     "materials": [
       {
         "count": 10,
+        "id": "wood",
         "internalId": "Wood"
       }
     ],
@@ -4839,10 +5220,12 @@
     "materials": [
       {
         "count": 10,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 1,
+        "id": "venom-gland",
         "internalId": "Venom"
       }
     ],
@@ -4867,6 +5250,7 @@
     "materials": [
       {
         "count": 5,
+        "id": "wood",
         "internalId": "Wood"
       }
     ],
@@ -4891,14 +5275,17 @@
     "materials": [
       {
         "count": 25,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 5,
+        "id": "fiber",
         "internalId": "Fiber"
       },
       {
         "count": 5,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -4923,14 +5310,17 @@
     "materials": [
       {
         "count": 15,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 5,
+        "id": "fiber",
         "internalId": "Fiber"
       },
       {
         "count": 2,
+        "id": "stone",
         "internalId": "Stone"
       }
     ],
@@ -4955,18 +5345,22 @@
     "materials": [
       {
         "count": 15,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 5,
+        "id": "fiber",
         "internalId": "Fiber"
       },
       {
         "count": 5,
+        "id": "stone",
         "internalId": "Stone"
       },
       {
         "count": 1,
+        "id": "paldium-fragment",
         "internalId": "Pal_crystal_S"
       }
     ],
@@ -4991,14 +5385,17 @@
     "materials": [
       {
         "count": 10,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 2,
+        "id": "cloth",
         "internalId": "Cloth"
       },
       {
         "count": 1,
+        "id": "flame-organ",
         "internalId": "FireOrgan"
       }
     ],
@@ -5023,14 +5420,17 @@
     "materials": [
       {
         "count": 20,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 3,
+        "id": "cloth",
         "internalId": "Cloth"
       },
       {
         "count": 2,
+        "id": "flame-organ",
         "internalId": "FireOrgan"
       }
     ],
@@ -5055,14 +5455,17 @@
     "materials": [
       {
         "count": 8,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 1,
+        "id": "cloth",
         "internalId": "Cloth"
       },
       {
         "count": 1,
+        "id": "flame-organ",
         "internalId": "FireOrgan"
       }
     ],
@@ -5087,14 +5490,17 @@
     "materials": [
       {
         "count": 1,
+        "id": "cloth",
         "internalId": "Cloth"
       },
       {
         "count": 20,
+        "id": "stone",
         "internalId": "Stone"
       },
       {
         "count": 1,
+        "id": "ingot",
         "internalId": "CopperIngot"
       }
     ],
@@ -5119,6 +5525,7 @@
     "materials": [
       {
         "count": 10,
+        "id": "fiber",
         "internalId": "Fiber"
       }
     ],
@@ -5143,6 +5550,7 @@
     "materials": [
       {
         "count": 20,
+        "id": "wood",
         "internalId": "Wood"
       }
     ],
@@ -5167,10 +5575,12 @@
     "materials": [
       {
         "count": 1,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 2,
+        "id": "cloth",
         "internalId": "Cloth"
       }
     ],
@@ -5195,14 +5605,17 @@
     "materials": [
       {
         "count": 10,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 10,
+        "id": "stone",
         "internalId": "Stone"
       },
       {
         "count": 2,
+        "id": "paldium-fragment",
         "internalId": "Pal_crystal_S"
       }
     ],
@@ -5227,14 +5640,17 @@
     "materials": [
       {
         "count": 10,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 8,
+        "id": "stone",
         "internalId": "Stone"
       },
       {
         "count": 1,
+        "id": "paldium-fragment",
         "internalId": "Pal_crystal_S"
       }
     ],
@@ -5259,14 +5675,17 @@
     "materials": [
       {
         "count": 10,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 10,
+        "id": "stone",
         "internalId": "Stone"
       },
       {
         "count": 2,
+        "id": "paldium-fragment",
         "internalId": "Pal_crystal_S"
       }
     ],
@@ -5291,14 +5710,17 @@
     "materials": [
       {
         "count": 100,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 20,
+        "id": "fiber",
         "internalId": "Fiber"
       },
       {
         "count": 5,
+        "id": "ingot",
         "internalId": "CopperIngot"
       }
     ],
@@ -5323,14 +5745,17 @@
     "materials": [
       {
         "count": 100,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 20,
+        "id": "fiber",
         "internalId": "Fiber"
       },
       {
         "count": 5,
+        "id": "ingot",
         "internalId": "CopperIngot"
       }
     ],
@@ -5355,18 +5780,22 @@
     "materials": [
       {
         "count": 30,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 10,
+        "id": "stone",
         "internalId": "Stone"
       },
       {
         "count": 2,
+        "id": "paldium-fragment",
         "internalId": "Pal_crystal_S"
       },
       {
         "count": 1,
+        "id": "cloth",
         "internalId": "Cloth"
       }
     ],
@@ -5391,14 +5820,17 @@
     "materials": [
       {
         "count": 5,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 20,
+        "id": "stone",
         "internalId": "Stone"
       },
       {
         "count": 2,
+        "id": "ingot",
         "internalId": "CopperIngot"
       }
     ],
@@ -5423,10 +5855,12 @@
     "materials": [
       {
         "count": 1,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 3,
+        "id": "fiber",
         "internalId": "Fiber"
       }
     ],
@@ -5451,14 +5885,17 @@
     "materials": [
       {
         "count": 10,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 3,
+        "id": "cloth",
         "internalId": "Cloth"
       },
       {
         "count": 1,
+        "id": "ingot",
         "internalId": "CopperIngot"
       }
     ],
@@ -5483,10 +5920,12 @@
     "materials": [
       {
         "count": 50,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 1,
+        "id": "ingot",
         "internalId": "CopperIngot"
       }
     ],
@@ -5511,10 +5950,12 @@
     "materials": [
       {
         "count": 20,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 5,
+        "id": "charcoal",
         "internalId": "Charcoal"
       }
     ],
@@ -5539,10 +5980,12 @@
     "materials": [
       {
         "count": 5,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 3,
+        "id": "paldium-fragment",
         "internalId": "Pal_crystal_S"
       }
     ],
@@ -5567,10 +6010,12 @@
     "materials": [
       {
         "count": 30,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 5,
+        "id": "ingot",
         "internalId": "CopperIngot"
       }
     ],
@@ -5595,6 +6040,7 @@
     "materials": [
       {
         "count": 3,
+        "id": "ingot",
         "internalId": "CopperIngot"
       }
     ],
@@ -5619,6 +6065,7 @@
     "materials": [
       {
         "count": 3,
+        "id": "ingot",
         "internalId": "CopperIngot"
       }
     ],
@@ -5643,6 +6090,7 @@
     "materials": [
       {
         "count": 5,
+        "id": "ingot",
         "internalId": "CopperIngot"
       }
     ],
@@ -5667,10 +6115,12 @@
     "materials": [
       {
         "count": 20,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 15,
+        "id": "ingot",
         "internalId": "CopperIngot"
       }
     ],
@@ -5695,10 +6145,12 @@
     "materials": [
       {
         "count": 10,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 2,
+        "id": "ingot",
         "internalId": "CopperIngot"
       }
     ],
@@ -5723,14 +6175,17 @@
     "materials": [
       {
         "count": 20,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 5,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 2,
+        "id": "red-berries",
         "internalId": "Berries"
       }
     ],
@@ -5755,10 +6210,12 @@
     "materials": [
       {
         "count": 20,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 2,
+        "id": "ingot",
         "internalId": "CopperIngot"
       }
     ],
@@ -5783,10 +6240,12 @@
     "materials": [
       {
         "count": 20,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 10,
+        "id": "ingot",
         "internalId": "CopperIngot"
       }
     ],
@@ -5811,14 +6270,17 @@
     "materials": [
       {
         "count": 5,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 5,
+        "id": "stone",
         "internalId": "Stone"
       },
       {
         "count": 5,
+        "id": "fiber",
         "internalId": "Fiber"
       }
     ],
@@ -5843,6 +6305,7 @@
     "materials": [
       {
         "count": 5,
+        "id": "cement",
         "internalId": "Cement"
       }
     ],
@@ -5867,10 +6330,12 @@
     "materials": [
       {
         "count": 2,
+        "id": "high-quality-pal-oil",
         "internalId": "PalOil"
       },
       {
         "count": 2,
+        "id": "pal-fluids",
         "internalId": "PalFluid"
       }
     ],
@@ -5895,10 +6360,12 @@
     "materials": [
       {
         "count": 10,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 1,
+        "id": "flame-organ",
         "internalId": "FireOrgan"
       }
     ],
@@ -5923,10 +6390,12 @@
     "materials": [
       {
         "count": 10,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 1,
+        "id": "pal-fluids",
         "internalId": "PalFluid"
       }
     ],
@@ -5951,10 +6420,12 @@
     "materials": [
       {
         "count": 10,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 1,
+        "id": "venom-gland",
         "internalId": "Venom"
       }
     ],
@@ -5979,10 +6450,12 @@
     "materials": [
       {
         "count": 2,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 1,
+        "id": "leather",
         "internalId": "Leather"
       }
     ],
@@ -6007,14 +6480,17 @@
     "materials": [
       {
         "count": 10,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 2,
+        "id": "leather",
         "internalId": "Leather"
       },
       {
         "count": 1,
+        "id": "cloth",
         "internalId": "Cloth"
       }
     ],
@@ -6039,10 +6515,12 @@
     "materials": [
       {
         "count": 20,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 3,
+        "id": "leather",
         "internalId": "Leather"
       }
     ],
@@ -6067,10 +6545,12 @@
     "materials": [
       {
         "count": 2,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 2,
+        "id": "leather",
         "internalId": "Leather"
       }
     ],
@@ -6095,10 +6575,12 @@
     "materials": [
       {
         "count": 20,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 20,
+        "id": "fiber",
         "internalId": "Fiber"
       }
     ],
@@ -6123,10 +6605,12 @@
     "materials": [
       {
         "count": 30,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 5,
+        "id": "cloth",
         "internalId": "Cloth"
       }
     ],
@@ -6151,10 +6635,12 @@
     "materials": [
       {
         "count": 30,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 2,
+        "id": "ice-organ",
         "internalId": "IceOrgan"
       }
     ],
@@ -6179,10 +6665,12 @@
     "materials": [
       {
         "count": 20,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 1,
+        "id": "circuit-board",
         "internalId": "MachineParts2"
       }
     ],
@@ -6207,10 +6695,12 @@
     "materials": [
       {
         "count": 1,
+        "id": "polymer",
         "internalId": "Polymer"
       },
       {
         "count": 1,
+        "id": "electric-organ",
         "internalId": "ElectricOrgan"
       }
     ],
@@ -6235,10 +6725,12 @@
     "materials": [
       {
         "count": 1,
+        "id": "polymer",
         "internalId": "Polymer"
       },
       {
         "count": 1,
+        "id": "electric-organ",
         "internalId": "ElectricOrgan"
       }
     ],
@@ -6263,6 +6755,7 @@
     "materials": [
       {
         "count": 1,
+        "id": "polymer",
         "internalId": "Polymer"
       }
     ],
@@ -6287,6 +6780,7 @@
     "materials": [
       {
         "count": 2,
+        "id": "polymer",
         "internalId": "Polymer"
       }
     ],
@@ -6311,6 +6805,7 @@
     "materials": [
       {
         "count": 1,
+        "id": "polymer",
         "internalId": "Polymer"
       }
     ],
@@ -6335,10 +6830,12 @@
     "materials": [
       {
         "count": 20,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 2,
+        "id": "electric-organ",
         "internalId": "ElectricOrgan"
       }
     ],
@@ -6363,6 +6860,7 @@
     "materials": [
       {
         "count": 5,
+        "id": "ingot",
         "internalId": "CopperIngot"
       }
     ],
@@ -6387,6 +6885,7 @@
     "materials": [
       {
         "count": 5,
+        "id": "ingot",
         "internalId": "CopperIngot"
       }
     ],
@@ -6411,6 +6910,7 @@
     "materials": [
       {
         "count": 5,
+        "id": "ingot",
         "internalId": "CopperIngot"
       }
     ],
@@ -6435,6 +6935,7 @@
     "materials": [
       {
         "count": 5,
+        "id": "ingot",
         "internalId": "CopperIngot"
       }
     ],
@@ -6459,6 +6960,7 @@
     "materials": [
       {
         "count": 5,
+        "id": "ingot",
         "internalId": "CopperIngot"
       }
     ],
@@ -6483,10 +6985,12 @@
     "materials": [
       {
         "count": 3,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 1,
+        "id": "polymer",
         "internalId": "Polymer"
       }
     ],
@@ -6511,10 +7015,12 @@
     "materials": [
       {
         "count": 5,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 1,
+        "id": "flame-organ",
         "internalId": "FireOrgan"
       }
     ],
@@ -6539,6 +7045,7 @@
     "materials": [
       {
         "count": 5,
+        "id": "ingot",
         "internalId": "CopperIngot"
       }
     ],
@@ -6563,6 +7070,7 @@
     "materials": [
       {
         "count": 5,
+        "id": "ingot",
         "internalId": "CopperIngot"
       }
     ],
@@ -6587,6 +7095,7 @@
     "materials": [
       {
         "count": 1,
+        "id": "wood",
         "internalId": "Wood"
       }
     ],
@@ -6611,14 +7120,17 @@
     "materials": [
       {
         "count": 30,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 15,
+        "id": "stone",
         "internalId": "Stone"
       },
       {
         "count": 5,
+        "id": "charcoal",
         "internalId": "Charcoal"
       }
     ],
@@ -6643,14 +7155,17 @@
     "materials": [
       {
         "count": 15,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 30,
+        "id": "stone",
         "internalId": "Stone"
       },
       {
         "count": 5,
+        "id": "charcoal",
         "internalId": "Charcoal"
       }
     ],
@@ -6675,14 +7190,17 @@
     "materials": [
       {
         "count": 20,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 3,
+        "id": "electric-organ",
         "internalId": "ElectricOrgan"
       },
       {
         "count": 3,
+        "id": "nail",
         "internalId": "MachineParts"
       }
     ],
@@ -6707,14 +7225,17 @@
     "materials": [
       {
         "count": 20,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 3,
+        "id": "electric-organ",
         "internalId": "ElectricOrgan"
       },
       {
         "count": 3,
+        "id": "nail",
         "internalId": "MachineParts"
       }
     ],
@@ -6739,14 +7260,17 @@
     "materials": [
       {
         "count": 20,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 3,
+        "id": "electric-organ",
         "internalId": "ElectricOrgan"
       },
       {
         "count": 3,
+        "id": "nail",
         "internalId": "MachineParts"
       }
     ],
@@ -6771,14 +7295,17 @@
     "materials": [
       {
         "count": 20,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 3,
+        "id": "electric-organ",
         "internalId": "ElectricOrgan"
       },
       {
         "count": 3,
+        "id": "nail",
         "internalId": "MachineParts"
       }
     ],
@@ -6803,14 +7330,17 @@
     "materials": [
       {
         "count": 30,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 3,
+        "id": "electric-organ",
         "internalId": "ElectricOrgan"
       },
       {
         "count": 3,
+        "id": "nail",
         "internalId": "MachineParts"
       }
     ],
@@ -6835,14 +7365,17 @@
     "materials": [
       {
         "count": 30,
+        "id": "wood",
         "internalId": "Wood"
       },
       {
         "count": 3,
+        "id": "electric-organ",
         "internalId": "ElectricOrgan"
       },
       {
         "count": 3,
+        "id": "nail",
         "internalId": "MachineParts"
       }
     ],
@@ -6867,14 +7400,17 @@
     "materials": [
       {
         "count": 20,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 3,
+        "id": "electric-organ",
         "internalId": "ElectricOrgan"
       },
       {
         "count": 3,
+        "id": "nail",
         "internalId": "MachineParts"
       }
     ],
@@ -6899,14 +7435,17 @@
     "materials": [
       {
         "count": 10,
+        "id": "ingot",
         "internalId": "CopperIngot"
       },
       {
         "count": 2,
+        "id": "electric-organ",
         "internalId": "ElectricOrgan"
       },
       {
         "count": 2,
+        "id": "nail",
         "internalId": "MachineParts"
       }
     ],

@@ -1,18 +1,18 @@
 import { cn } from '@/lib/utils';
 import Image, { type ImageProps } from 'next/image';
 
-type ItemImageProps = Omit<ImageProps, 'src' | 'alt'> & {
+type StructureImageProps = Omit<ImageProps, 'src' | 'alt'> & {
   id: string;
   width: number;
   height: number;
   alt: string;
 };
 
-export function ItemImage({ id, alt, className, width, height, ...rest }: ItemImageProps) {
+export function StructureImage({ id, alt, className, width, height, ...rest }: StructureImageProps) {
   return (
     <Image
       className={cn(className)}
-      src={`/images/items/${id}.webp`}
+      src={`/images/structures/${id}.webp`}
       alt={alt}
       width={width}
       height={height}

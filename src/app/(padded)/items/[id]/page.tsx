@@ -1,14 +1,14 @@
+import { CraftingMaterialsCard } from '@/components/CraftingMaterialsCard';
 import { ItemImage } from '@/components/ItemImage';
 import { PalImage } from '@/components/PalImage';
 import { StickySidebar } from '@/components/StickySidebar';
 import { Badge } from '@/components/ui/badge';
-import { Card, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Tooltip } from '@/components/ui/tooltip';
+import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import ALPHA_PALS from '@/data/alpha-pals.json';
 import ITEM_RECIPES from '@/data/item-recipes.json';
 import ITEMS from '@/data/items.json';
 import NORMAL_PALS from '@/data/normal-pals.json';
-import { cn, getBadgeVariantForRate, notEmpty } from '@/lib/utils';
+import { cn, getBadgeVariantForRate } from '@/lib/utils';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -29,8 +29,6 @@ export default function ItemPage({ params }: { params: { id: string } }) {
   if (!item) notFound();
 
   const recipe = ITEM_RECIPES.find((itemRecipe) => itemRecipe.id === params.id);
-  const materials =
-    recipe?.materials.map((m) => ({ ...m, item: ITEMS.find(({ id }) => id === m.id)! })).filter(notEmpty) ?? [];
 
   const droppedByPals = [...NORMAL_PALS, ...ALPHA_PALS]
     .filter((pal) => pal.drops.some((drop) => drop.id === item.id))
@@ -65,12 +63,9 @@ export default function ItemPage({ params }: { params: { id: string } }) {
   return (
     <div className="flex flex-col gap-4 md:flex-row">
       <StickySidebar>
-        <ItemImage
-          id={item.imageName}
-          width={144}
-          height={144}
-          className="mx-auto mt-2 rounded-full border border-gray-6 bg-gray-1"
-        />
+        <div className="mx-auto w-fit rounded-full border border-gray-6 bg-gray-1 p-4">
+          <ItemImage id={item.imageName} alt={item.name} width={110} height={110} />
+        </div>
 
         <div className="mt-2 text-center">
           <h1 className="break-all text-2xl font-semibold text-gray-12">{item.name}</h1>
@@ -99,36 +94,14 @@ export default function ItemPage({ params }: { params: { id: string } }) {
         </Card>
 
         {recipe && (
-          <Card className="@container">
-            <CardHeader>
-              <CardTitle>Recipe</CardTitle>
-              <CardDescription>
+          <CraftingMaterialsCard
+            description={
+              <>
                 Items needed to craft <span className="font-bold text-gray-12">{recipe.productCount}</span> {item.name}
-              </CardDescription>
-            </CardHeader>
-
-            <div className="grid grid-cols-1 gap-2 @xs:grid-cols-2 @lg:grid-cols-3 @2xl:grid-cols-4">
-              {materials.map((material) => (
-                <Tooltip key={material.id} content={material.item.description} className="max-w-64">
-                  <Link href={`/items/${material.item.id}`}>
-                    <Card
-                      className="relative flex h-full flex-col items-center border-gray-5 bg-gray-3 p-2"
-                      hoverEffect
-                    >
-                      <Badge className="absolute left-1 top-1" variant="primary">
-                        {material.count}
-                      </Badge>
-
-                      <div className="w-fit rounded-full border border-gray-5 bg-gray-4 p-2">
-                        {material.item.imageName && <ItemImage width={56} height={56} id={material.item.imageName} />}
-                      </div>
-                      <div className="mt-2 text-center font-medium text-gray-12">{material.item.name}</div>
-                    </Card>
-                  </Link>
-                </Tooltip>
-              ))}
-            </div>
-          </Card>
+              </>
+            }
+            materials={recipe.materials}
+          />
         )}
 
         {droppedByPals.length > 0 && (
@@ -158,6 +131,7 @@ export default function ItemPage({ params }: { params: { id: string } }) {
                           alt="alpha"
                           height={24}
                           width={24}
+                          unoptimized
                         />
                       )}
                       <div className="text-center font-medium text-gray-12">{pal.name}</div>{' '}

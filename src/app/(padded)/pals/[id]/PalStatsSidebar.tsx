@@ -94,56 +94,54 @@ export function PalStatsSidebar({ pal, ...rest }: PalStatsSidebarProps) {
   ];
   return (
     <StickySidebar {...rest}>
-      <div className="relative flex flex-col">
-        <Badge className="absolute items-baseline text-sm tracking-wider">
-          <span className="text-gray-8">#{'000'.slice(pal.zukanIndex.toString().length)}</span>
-          <span>{pal.zukanIndex}</span>
-          <span className="text-xs">{pal.zukanIndexSuffix}</span>
-        </Badge>
+      <Badge className="absolute left-2 top-2 items-baseline text-sm tracking-wider">
+        <span className="text-gray-8">#{'000'.slice(pal.zukanIndex.toString().length)}</span>
+        <span>{pal.zukanIndex}</span>
+        <span className="text-xs">{pal.zukanIndexSuffix}</span>
+      </Badge>
 
-        <div className="absolute right-0 flex flex-col gap-2 pr-[inherit]">
-          {[pal.elementType1, pal.elementType2].filter(Boolean).map((element) => (
-            <Tooltip key={element} content={element} className="capitalize">
-              <ElementImage element={element} className="size-8" />
-            </Tooltip>
-          ))}
-        </div>
-
-        <PalImage id={pal.id} className="mx-auto mt-2 size-36 rounded-full border border-gray-6 bg-gray-1" />
-
-        <div className="mt-2 text-center">
-          <h1 className="text-2xl font-semibold text-gray-12">{pal.name}</h1>
-          <p className="text-gray-11">{pal.title}</p>
-        </div>
-
-        <div className="mt-4 space-y-1">
-          <Button className="w-full" size="sm" variant="secondary" asChild>
-            <Link href={{ pathname: '/map', query: { pal: pal.id } }}>
-              <MapPinnedIcon className="mr-2 size-4" />
-              View Map Locations
-            </Link>
-          </Button>
-
-          <Button className="w-full" size="sm" variant="secondary" asChild>
-            <Link href={{ pathname: '/breeding', query: { child: pal.id } }}>
-              <HeartIcon className="mr-2 size-4" />
-              View Breed Combinations
-            </Link>
-          </Button>
-        </div>
-
-        <dl className="mt-4">
-          {stats.map((stat, index) => (
-            <div
-              key={stat.label}
-              className={cn('flex items-center justify-between rounded-lg p-3 text-sm', index % 2 === 0 && 'bg-gray-3')}
-            >
-              <dt className="font-medium text-gray-12">{stat.label}</dt>
-              <dd className="font-mono text-gray-11">{stat.element ?? stat.value.toLocaleString()}</dd>
-            </div>
-          ))}
-        </dl>
+      <div className="absolute right-2 top-2 flex flex-col gap-2">
+        {[pal.elementType1, pal.elementType2].filter(Boolean).map((element) => (
+          <Tooltip key={element} content={element} className="capitalize">
+            <ElementImage element={element} className="size-8" />
+          </Tooltip>
+        ))}
       </div>
+
+      <PalImage id={pal.id} className="mx-auto size-36 rounded-full border border-gray-6 bg-gray-1" />
+
+      <div className="mt-2 text-center">
+        <h1 className="text-2xl font-semibold text-gray-12">{pal.name}</h1>
+        <p className="text-gray-11">{pal.title}</p>
+      </div>
+
+      <div className="mt-4 space-y-1">
+        <Button className="w-full" size="sm" variant="secondary" asChild>
+          <Link href={{ pathname: '/map', query: { pal: pal.id } }}>
+            <MapPinnedIcon className="mr-2 size-4" />
+            View Map Locations
+          </Link>
+        </Button>
+
+        <Button className="w-full" size="sm" variant="secondary" asChild>
+          <Link href={{ pathname: '/breeding', query: { child: pal.id } }}>
+            <HeartIcon className="mr-2 size-4" />
+            View Breed Combinations
+          </Link>
+        </Button>
+      </div>
+
+      <dl className="mt-4">
+        {stats.map((stat, index) => (
+          <div
+            key={stat.label}
+            className={cn('flex items-center justify-between rounded-lg p-3 text-sm', index % 2 === 0 && 'bg-gray-3')}
+          >
+            <dt className="font-medium text-gray-12">{stat.label}</dt>
+            <dd className="font-mono text-gray-11">{stat.element ?? stat.value.toLocaleString()}</dd>
+          </div>
+        ))}
+      </dl>
     </StickySidebar>
   );
 }

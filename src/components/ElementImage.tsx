@@ -14,6 +14,7 @@ export function ElementImage({ element, className, ...rest }: ElementImageProps)
       height={24}
       width={24}
       quality={100}
+      unoptimized
       {...rest}
     />
   );

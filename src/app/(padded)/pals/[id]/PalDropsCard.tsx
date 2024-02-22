@@ -54,7 +54,9 @@ export function ItemDropsCard({ pal, className, ...rest }: ItemDropsCardProps) {
                 </div>
 
                 <div className="w-fit rounded-full border border-gray-5 bg-gray-4 p-2">
-                  {drop.item.imageName && <ItemImage id={drop.item.imageName} width={56} height={56} />}
+                  {drop.item.imageName && (
+                    <ItemImage id={drop.item.imageName} alt={drop.item.name} width={56} height={56} />
+                  )}
                 </div>
                 <div className="mt-2 text-center font-medium text-gray-12">{drop.item.name}</div>
               </Card>
