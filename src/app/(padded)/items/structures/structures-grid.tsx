@@ -26,7 +26,7 @@ import Link from 'next/link';
 import { parseAsStringLiteral, useQueryState } from 'nuqs';
 import { memo, useMemo } from 'react';
 
-const ITEM_SORTS = [
+const SORTS = [
   { label: 'Build Work', value: 'buildWork' },
   { label: 'Consume Energy Speed', value: 'consumeEnergySpeed' },
   { label: 'Defense', value: 'defense' },
@@ -43,7 +43,7 @@ export function StructuresGrid() {
   const [search, setSearch] = useQueryString('search');
   const [sort, setSort] = useQueryState(
     'sort',
-    parseAsStringLiteral(ITEM_SORTS.map((s) => s.value))
+    parseAsStringLiteral(SORTS.map((s) => s.value))
       .withDefault('name')
       .withOptions({ clearOnDefault: true }),
   );
@@ -89,11 +89,11 @@ export function StructuresGrid() {
           />
 
           <div className="flex flex-col items-end gap-2">
-            <Select value={sort} onValueChange={(v) => setSort(v as (typeof ITEM_SORTS)[number]['value'])}>
+            <Select value={sort} onValueChange={(v) => setSort(v as (typeof SORTS)[number]['value'])}>
               <SelectTrigger label="Sort" icon={ArrowUpDownIcon} placeholder="Sort by" />
 
               <SelectContent>
-                {ITEM_SORTS.map(({ label, value }) => (
+                {SORTS.map(({ label, value }) => (
                   <SelectItem key={value} value={value}>
                     {label}
                   </SelectItem>
@@ -166,7 +166,7 @@ const Grid = memo(function Grid({
   sort,
 }: {
   structures: Structure[];
-  sort: (typeof ITEM_SORTS)[number]['value'];
+  sort: (typeof SORTS)[number]['value'];
 }) {
   if (structures.length === 0)
     return <div className="grid h-full place-items-center text-gray-11">No structures found</div>;
