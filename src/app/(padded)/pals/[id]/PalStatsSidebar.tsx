@@ -94,18 +94,20 @@ export function PalStatsSidebar({ pal, ...rest }: PalStatsSidebarProps) {
   ];
   return (
     <StickySidebar {...rest}>
-      <Badge className="absolute left-2 top-2 items-baseline text-sm tracking-wider">
-        <span className="text-gray-8">#{'000'.slice(pal.zukanIndex.toString().length)}</span>
-        <span>{pal.zukanIndex}</span>
-        <span className="text-xs">{pal.zukanIndexSuffix}</span>
-      </Badge>
+      <div className="flex justify-between">
+        <Badge className="h-fit items-baseline text-sm tracking-wider">
+          <span className="text-gray-8">#{'000'.slice(pal.zukanIndex.toString().length)}</span>
+          <span>{pal.zukanIndex}</span>
+          <span className="text-xs">{pal.zukanIndexSuffix}</span>
+        </Badge>
 
-      <div className="absolute right-2 top-2 flex flex-col gap-2">
-        {[pal.elementType1, pal.elementType2].filter(Boolean).map((element) => (
-          <Tooltip key={element} content={element} className="capitalize">
-            <ElementImage name={element} alt={element} width={32} height={32} />
-          </Tooltip>
-        ))}
+        <div className="flex flex-col gap-2">
+          {[pal.elementType1, pal.elementType2].filter(Boolean).map((element) => (
+            <Tooltip key={element} content={element} className="capitalize">
+              <ElementImage name={element} alt={element} width={32} height={32} />
+            </Tooltip>
+          ))}
+        </div>
       </div>
 
       <PalImage
@@ -113,7 +115,7 @@ export function PalStatsSidebar({ pal, ...rest }: PalStatsSidebarProps) {
         alt={pal.name}
         width={144}
         height={144}
-        className="mx-auto rounded-full border border-gray-6 bg-gray-1"
+        className="mx-auto -mt-8 rounded-full border border-gray-6 bg-gray-1"
       />
 
       <div className="mt-2 text-center">
