@@ -1,4 +1,4 @@
-import { ItemImage } from '@/components/ItemImage';
+import { ItemImage } from '@/components/images/ItemImage';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardDescription, CardHeader, CardTitle, type CardProps } from '@/components/ui/card';
 import { Tooltip } from '@/components/ui/tooltip';
@@ -33,7 +33,7 @@ export function CraftingMaterialsCard({ title = 'Crafting Materials', descriptio
 
                 <div className="w-fit rounded-full border border-gray-5 bg-gray-4 p-2">
                   {material.item.imageName && (
-                    <ItemImage id={material.item.imageName} alt={material.item.imageName} width={56} height={56} />
+                    <ItemImage name={material.item.imageName} alt={material.item.imageName} width={56} height={56} />
                   )}
                 </div>
                 <div className="mt-2 text-center font-medium text-gray-12">{material.item.name}</div>

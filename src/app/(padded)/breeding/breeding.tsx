@@ -1,8 +1,8 @@
 'use client';
 
 import { PalCombobox } from '@/components/PalCombobox';
-import { PalImage } from '@/components/PalImage';
 import { StickySidebar } from '@/components/StickySidebar';
+import { PalImage } from '@/components/images/PalImage';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -208,7 +208,13 @@ export function PalCard({ pal, className, ...rest }: PalCardProps) {
         className="flex h-full flex-col items-center justify-center gap-2 rounded-lg border-transparent p-2"
         hoverEffect
       >
-        <PalImage id={pal.id} className="size-12 rounded-full border border-gray-6 bg-gray-1" />
+        <PalImage
+          name={pal.id}
+          alt={pal.name}
+          width={48}
+          height={48}
+          className="rounded-full border border-gray-6 bg-gray-1"
+        />
         <div className="text-center text-sm text-gray-12">{pal.name}</div>
       </Card>
     </Link>

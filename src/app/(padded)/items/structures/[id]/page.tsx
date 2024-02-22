@@ -1,6 +1,6 @@
 import { CraftingMaterialsCard } from '@/components/CraftingMaterialsCard';
 import { StickySidebar } from '@/components/StickySidebar';
-import { StructureImage } from '@/components/StructureImage';
+import { StructureImage } from '@/components/images/StructureImage';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import STRUCTURES from '@/data/structures.json';
 import { cn } from '@/lib/utils';
@@ -38,7 +38,7 @@ export default function StructurePage({ params }: { params: { id: string } }) {
     <div className="flex flex-col gap-4 md:flex-row">
       <StickySidebar>
         <div className="mx-auto w-fit rounded-full border border-gray-6 bg-gray-1 p-4">
-          <StructureImage id={structure.imageName} alt={structure.name} width={110} height={110} />
+          <StructureImage name={structure.imageName} alt={structure.name} width={110} height={110} />
         </div>
 
         <div className="mt-2 text-center">

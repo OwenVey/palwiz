@@ -1,6 +1,6 @@
 import { CraftingMaterialsCard } from '@/components/CraftingMaterialsCard';
-import { ItemImage } from '@/components/ItemImage';
-import { PalImage } from '@/components/PalImage';
+import { ItemImage } from '@/components/images/ItemImage';
+import { PalImage } from '@/components/images/PalImage';
 import { StickySidebar } from '@/components/StickySidebar';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
@@ -64,7 +64,7 @@ export default function ItemPage({ params }: { params: { id: string } }) {
     <div className="flex flex-col gap-4 md:flex-row">
       <StickySidebar>
         <div className="mx-auto w-fit rounded-full border border-gray-6 bg-gray-1 p-4">
-          <ItemImage id={item.imageName} alt={item.name} width={110} height={110} />
+          <ItemImage name={item.imageName} alt={item.name} width={110} height={110} />
         </div>
 
         <div className="mt-2 text-center">
@@ -121,7 +121,13 @@ export default function ItemPage({ params }: { params: { id: string } }) {
                       {pal.rate}%
                     </Badge>
 
-                    <PalImage id={pal.id} className="size-[74px] rounded-full border border-gray-6 bg-gray-4" />
+                    <PalImage
+                      name={pal.id}
+                      alt={pal.name}
+                      width={74}
+                      height={74}
+                      className="rounded-full border border-gray-6 bg-gray-4"
+                    />
 
                     <div className="relative mt-2">
                       {pal.isBoss && (

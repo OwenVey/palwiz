@@ -1,8 +1,8 @@
 'use client';
 
 import { CollapsibleFilter } from '@/components/CollapsibleFilter';
-import { PalImage } from '@/components/PalImage';
-import { PartnerSkillImage } from '@/components/PartnerSkillImage';
+import { PalImage } from '@/components/images/PalImage';
+import { PartnerSkillImage } from '@/components/images/PartnerSkillImage';
 import { StickySidebar } from '@/components/StickySidebar';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
@@ -82,7 +82,13 @@ export function PartnerSkillsGrid() {
                 <Tooltip key={category} content={category}>
                   <span className="flex w-10 md:w-auto">
                     <ToggleGroupItem value={category} className="w-full p-0">
-                      <PartnerSkillImage name={category} />
+                      <PartnerSkillImage
+                        name={category}
+                        alt={category}
+                        width={40}
+                        height={40}
+                        className="size-10 object-cover"
+                      />
                     </ToggleGroupItem>
                   </span>
                 </Tooltip>
@@ -118,7 +124,7 @@ const Grid = memo(function Grid({ skills }: { skills: PartnerSkill[] }) {
         <Card key={partnerSkill.name} className={cn('relative flex h-full flex-col gap-2')}>
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <PartnerSkillImage name={partnerSkill.group} />
+              <PartnerSkillImage name={partnerSkill.group} alt={partnerSkill.group} width={40} height={40} />
               <div className="text-gray-12">{partnerSkill.name}</div>
             </div>
 
@@ -127,8 +133,11 @@ const Grid = memo(function Grid({ skills }: { skills: PartnerSkill[] }) {
                 <Tooltip key={pal.id} content={pal.name}>
                   <Link href={`/pals/${pal.id}`} className="group">
                     <PalImage
-                      id={pal.id}
-                      className="size-10 rounded-full border border-gray-7 bg-gray-1 group-hover:border-primary-9 group-hover:bg-gray-2"
+                      name={pal.id}
+                      alt={pal.name}
+                      width={40}
+                      height={40}
+                      className="rounded-full border border-gray-7 bg-gray-1 group-hover:border-primary-9 group-hover:bg-gray-2"
                     />
                   </Link>
                 </Tooltip>

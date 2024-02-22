@@ -1,6 +1,6 @@
 'use client';
 
-import { PalImage } from '@/components/PalImage';
+import { PalImage } from '@/components/images/PalImage';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem } from '@/components/ui/command';
@@ -67,7 +67,7 @@ export function PalCombobox({ label, value, setValue, className, ...rest }: PalC
                     setOpen(false);
                   }}
                 >
-                  <PalImage id={pal.id} className="mr-2 size-6 rounded-full" />
+                  <PalImage name={pal.id} alt={pal.name} width={24} height={24} className="mr-2 rounded-full" />
                   {pal.name}
                   <Badge variant="gray" className="ml-auto text-2xs">
                     #{pal.zukanIndex}
@@ -87,7 +87,7 @@ function SelectedPal({ pal }: { pal?: { id: string; name: string } }) {
   if (!pal) return;
   return (
     <div className="flex items-center">
-      <PalImage id={pal.id} className="mr-2 size-6 rounded-full" />
+      <PalImage name={pal.id} alt={pal.name} width={24} height={24} className="mr-2 rounded-full" />
       <span className="text-gray-12">{pal.name}</span>
     </div>
   );

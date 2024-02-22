@@ -1,5 +1,5 @@
-import { ElementImage } from '@/components/ElementImage';
-import { PalImage } from '@/components/PalImage';
+import { ElementImage } from '@/components/images/ElementImage';
+import { PalImage } from '@/components/images/PalImage';
 import { StickySidebar } from '@/components/StickySidebar';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -103,12 +103,18 @@ export function PalStatsSidebar({ pal, ...rest }: PalStatsSidebarProps) {
       <div className="absolute right-2 top-2 flex flex-col gap-2">
         {[pal.elementType1, pal.elementType2].filter(Boolean).map((element) => (
           <Tooltip key={element} content={element} className="capitalize">
-            <ElementImage element={element} className="size-8" />
+            <ElementImage name={element} alt={element} width={32} height={32} />
           </Tooltip>
         ))}
       </div>
 
-      <PalImage id={pal.id} className="mx-auto size-36 rounded-full border border-gray-6 bg-gray-1" />
+      <PalImage
+        name={pal.id}
+        alt={pal.name}
+        width={144}
+        height={144}
+        className="mx-auto rounded-full border border-gray-6 bg-gray-1"
+      />
 
       <div className="mt-2 text-center">
         <h1 className="text-2xl font-semibold text-gray-12">{pal.name}</h1>

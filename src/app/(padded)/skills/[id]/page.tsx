@@ -1,5 +1,5 @@
-import { ElementImage } from '@/components/ElementImage';
-import { PalImage } from '@/components/PalImage';
+import { ElementImage } from '@/components/images/ElementImage';
+import { PalImage } from '@/components/images/PalImage';
 import { StickySidebar } from '@/components/StickySidebar';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
@@ -43,7 +43,7 @@ export default function SkillPage({ params }: { params: { id: string } }) {
       <StickySidebar>
         <div className="flex items-center justify-center gap-2">
           <Tooltip content={skill.element} className="capitalize">
-            <ElementImage element={skill.element} className="size-8" />
+            <ElementImage name={skill.element} alt={skill.element} width={32} height={32} />
           </Tooltip>
           <h1 className="text-2xl font-semibold text-gray-12">{skill.name}</h1>
         </div>
@@ -122,8 +122,14 @@ export default function SkillPage({ params }: { params: { id: string } }) {
                     <Badge className="absolute right-1 top-1 tracking-normal">
                       Lv {pal.activeSkills.find(({ id }) => id === skill.id)!.level}
                     </Badge>
-                    <PalImage id={pal.id} className="size-[74px] rounded-full border border-gray-6 bg-gray-4" />
-                    <div className="mt-2 text-center font-medium text-gray-12">{pal.name}</div>{' '}
+                    <PalImage
+                      name={pal.id}
+                      alt={pal.id}
+                      width={74}
+                      height={74}
+                      className="rounded-full border border-gray-6 bg-gray-4"
+                    />
+                    <div className="mt-2 text-center font-medium text-gray-12">{pal.name}</div>
                   </Card>
                 </Link>
               ))}

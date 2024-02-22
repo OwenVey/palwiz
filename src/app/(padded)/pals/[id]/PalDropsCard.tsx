@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 
-import { ItemImage } from '@/components/ItemImage';
+import { ItemImage } from '@/components/images/ItemImage';
 import { Badge } from '@/components/ui/badge';
 import { Label } from '@/components/ui/label';
 import { Switch } from '@/components/ui/switch';
@@ -55,7 +55,7 @@ export function ItemDropsCard({ pal, className, ...rest }: ItemDropsCardProps) {
 
                 <div className="w-fit rounded-full border border-gray-5 bg-gray-4 p-2">
                   {drop.item.imageName && (
-                    <ItemImage id={drop.item.imageName} alt={drop.item.name} width={56} height={56} />
+                    <ItemImage name={drop.item.imageName} alt={drop.item.name} width={56} height={56} />
                   )}
                 </div>
                 <div className="mt-2 text-center font-medium text-gray-12">{drop.item.name}</div>

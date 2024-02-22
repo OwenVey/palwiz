@@ -6,6 +6,7 @@ import type NORMAL_PALS from '@/data/normal-pals.json';
 import type PAL_LOCATIONS from '@/data/pal-locations.json';
 import type PASSIVE_SKILLS from '@/data/passive-skills.json';
 import type STRUCTURES from '@/data/structures.json';
+import { type ImageProps } from 'next/image';
 
 export type Pal = (typeof NORMAL_PALS)[number];
 export type WorkSuitability = keyof Pal['workSuitabilities'];
@@ -20,6 +21,13 @@ export type PassiveSkill = (typeof PASSIVE_SKILLS)[number];
 
 export type PalLocation = (typeof PAL_LOCATIONS)[number];
 export type MapLocation = (typeof MAP_LOCATIONS)[number];
+
+export type CustomImageProps = Omit<ImageProps, 'src' | 'alt'> & {
+  name: string;
+  width: number;
+  height: number;
+  alt: string;
+};
 
 declare global {
   interface Document {

@@ -1,5 +1,5 @@
 'use client';
-import { LogoImage } from '@/components/LogoImage';
+import { LogoImage } from '@/components/images/LogoImage';
 import { ThemeSelector } from '@/components/ThemeSelector';
 import { Button } from '@/components/ui/button';
 import { NAVIGATION } from '@/constants';

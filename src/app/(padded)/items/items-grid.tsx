@@ -1,7 +1,7 @@
 'use client';
 
 import { CollapsibleFilter } from '@/components/CollapsibleFilter';
-import { ItemImage } from '@/components/ItemImage';
+import { ItemImage } from '@/components/images/ItemImage';
 import { StickySidebar } from '@/components/StickySidebar';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -214,7 +214,7 @@ const Grid = memo(function Grid({ items, sort }: { items: Item[]; sort: (typeof 
             )}
 
             <div className="rounded-full border border-gray-4 bg-gray-3 p-1">
-              <ItemImage id={item.imageName} alt={item.name} width={60} height={60} />
+              <ItemImage name={item.imageName} alt={item.name} width={60} height={60} />
             </div>
 
             <div className="mt-2 flex flex-1 items-center">

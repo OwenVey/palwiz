@@ -1,11 +1,11 @@
 'use client';
 
 import { CollapsibleFilter } from '@/components/CollapsibleFilter';
-import { ElementImage } from '@/components/ElementImage';
-import { PalImage } from '@/components/PalImage';
-import { PartnerSkillImage } from '@/components/PartnerSkillImage';
 import { StickySidebar } from '@/components/StickySidebar';
-import { WorkTypeImage } from '@/components/WorkTypeImage';
+import { ElementImage } from '@/components/images/ElementImage';
+import { PalImage } from '@/components/images/PalImage';
+import { PartnerSkillImage } from '@/components/images/PartnerSkillImage';
+import { WorkTypeImage } from '@/components/images/WorkTypeImage';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
@@ -134,7 +134,7 @@ export function PalsGrid() {
                 <Tooltip key={work.id} content={work.label}>
                   <span className="flex w-10 md:w-auto">
                     <ToggleGroupItem value={work.id} className="w-full p-0">
-                      <WorkTypeImage id={work.id} className="size-7" />
+                      <WorkTypeImage name={work.id} alt={work.id} width={32} height={32} />
                     </ToggleGroupItem>
                   </span>
                 </Tooltip>
@@ -153,7 +153,7 @@ export function PalsGrid() {
                 <Tooltip key={element} content={element} className="capitalize">
                   <span className="flex w-10 md:w-auto">
                     <ToggleGroupItem value={element} className="w-full p-0">
-                      <ElementImage element={element} />
+                      <ElementImage name={element} alt={element} width={24} height={24} />
                     </ToggleGroupItem>
                   </span>
                 </Tooltip>
@@ -172,7 +172,13 @@ export function PalsGrid() {
                 <Tooltip key={category} content={category}>
                   <span className="flex w-10 md:w-auto">
                     <ToggleGroupItem value={category} className="w-full p-0">
-                      <PartnerSkillImage name={category} />
+                      <PartnerSkillImage
+                        name={category}
+                        alt={category}
+                        width={40}
+                        height={40}
+                        className="size-10 object-cover"
+                      />
                     </ToggleGroupItem>
                   </span>
                 </Tooltip>
@@ -223,7 +229,7 @@ const Grid = memo(function Grid({ pals, sort }: { pals: Pal[]; sort: keyof Pal }
 
                 <div className="mt-2 flex flex-col gap-1">
                   {[pal.elementType1, pal.elementType2].filter(Boolean).map((element) => (
-                    <ElementImage key={element} element={element} />
+                    <ElementImage key={element} name={element} alt={element} width={24} height={24} />
                   ))}
                 </div>
               </div>
@@ -234,7 +240,7 @@ const Grid = memo(function Grid({ pals, sort }: { pals: Pal[]; sort: keyof Pal }
                   .sort(([, value1], [, value2]) => value2 - value1)
                   .map(([work, value]) => (
                     <div key={work} className="flex items-center">
-                      <WorkTypeImage id={work} />
+                      <WorkTypeImage name={work} alt={work} width={24} height={24} />
                       <span className="text-xs font-semibold text-gray-11">{value}</span>
                     </div>
                   ))}
@@ -242,7 +248,13 @@ const Grid = memo(function Grid({ pals, sort }: { pals: Pal[]; sort: keyof Pal }
             </div>
 
             <div className="flex flex-col items-center gap-3 py-2">
-              <PalImage id={pal.id} className="rounded-full border border-gray-6 bg-gray-1" />
+              <PalImage
+                name={pal.id}
+                alt={pal.name}
+                width={112}
+                height={112}
+                className="rounded-full border border-gray-6 bg-gray-1"
+              />
               <div className="font-medium">{pal.name}</div>
             </div>
           </Card>

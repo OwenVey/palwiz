@@ -1,4 +1,4 @@
-import { LogoImage } from '@/components/LogoImage';
+import { LogoImage } from '@/components/images/LogoImage';
 import { Card } from '@/components/ui/card';
 import { NAVIGATION } from '@/constants';
 import { cn } from '@/lib/utils';

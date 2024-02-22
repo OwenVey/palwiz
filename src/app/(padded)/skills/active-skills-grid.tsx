@@ -1,7 +1,7 @@
 'use client';
 
 import { CollapsibleFilter } from '@/components/CollapsibleFilter';
-import { ElementImage } from '@/components/ElementImage';
+import { ElementImage } from '@/components/images/ElementImage';
 import { StickySidebar } from '@/components/StickySidebar';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -92,7 +92,7 @@ export function ActiveSkillsGrid() {
                 <Tooltip key={element} content={element} className="capitalize">
                   <span className="flex w-10 md:w-auto">
                     <ToggleGroupItem value={element} className="w-full p-0">
-                      <ElementImage element={element} />
+                      <ElementImage name={element} alt={element} width={24} height={24} />
                     </ToggleGroupItem>
                   </span>
                 </Tooltip>
@@ -162,7 +162,7 @@ const Grid = memo(function Grid({ skills }: { skills: ActiveSkill[] }) {
             <Badge className="absolute right-2 top-2 font-sans">{skill.category}</Badge>
 
             <div className="flex items-center gap-2">
-              <ElementImage element={skill.element} />
+              <ElementImage name={skill.element} alt={skill.element} width={24} height={24} />
               <div className="text-gray-12">{skill.name}</div>
             </div>
 

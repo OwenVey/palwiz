@@ -1,4 +1,4 @@
-import { ElementImage } from '@/components/ElementImage';
+import { ElementImage } from '@/components/images/ElementImage';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tooltip } from '@/components/ui/tooltip';
@@ -27,7 +27,7 @@ export function PalActiveSkillsCard({ pal, ...rest }: PalActiveSkillsCardProps) 
               <div className="flex justify-between">
                 <div className="flex gap-4">
                   <Tooltip content={skill.element} className="capitalize">
-                    <ElementImage className="size-8" element={skill.element} />
+                    <ElementImage name={skill.element} alt={skill.element} width={32} height={32} />
                   </Tooltip>
                   <div className="font-medium text-gray-12">{skill.name}</div>
                 </div>

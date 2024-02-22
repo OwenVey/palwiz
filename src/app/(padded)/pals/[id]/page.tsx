@@ -2,7 +2,7 @@ import { PalActiveSkillsCard } from '@/app/(padded)/pals/[id]/PalActiveSkillsCar
 import { ItemDropsCard } from '@/app/(padded)/pals/[id]/PalDropsCard';
 import { PalStatsSidebar } from '@/app/(padded)/pals/[id]/PalStatsSidebar';
 import { PalWorkSuitabilitiesCard } from '@/app/(padded)/pals/[id]/PalWorkSuitabilitiesCard';
-import { PartnerSkillImage } from '@/components/PartnerSkillImage';
+import { PartnerSkillImage } from '@/components/images/PartnerSkillImage';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import NORMAL_PALS from '@/data/normal-pals.json';
 import { getPalById } from '@/lib/pal-utils';
@@ -45,7 +45,13 @@ export default function PalPage({ params }: { params: { id: string } }) {
                 <div className="flex justify-between">
                   <div className="flex gap-4">
                     {pal.partnerSkill.group !== null && (
-                      <PartnerSkillImage name={pal.partnerSkill.group} className="size-8 scale-[2]" />
+                      <PartnerSkillImage
+                        name={pal.partnerSkill.group}
+                        alt={pal.partnerSkill.group}
+                        width={64}
+                        height={64}
+                        className="size-8 scale-[2]"
+                      />
                     )}
                     <div className="font-medium text-gray-12">{pal.partnerSkill.name}</div>
                   </div>

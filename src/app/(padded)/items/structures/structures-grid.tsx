@@ -1,7 +1,7 @@
 'use client';
 
 import { StickySidebar } from '@/components/StickySidebar';
-import { StructureImage } from '@/components/StructureImage';
+import { StructureImage } from '@/components/images/StructureImage';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
@@ -144,7 +144,7 @@ const Grid = memo(function Grid({
             )}
 
             <div className="rounded-full border border-gray-4 bg-gray-3 p-1">
-              <StructureImage id={structure.imageName} alt={structure.name} width={60} height={60} />
+              <StructureImage name={structure.imageName} alt={structure.name} width={60} height={60} />
             </div>
 
             <div className="mt-2 flex flex-1 items-center">
