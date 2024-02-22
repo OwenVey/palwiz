@@ -29,6 +29,7 @@ import { parseAsStringLiteral, useQueryState } from 'nuqs';
 import { memo, useMemo } from 'react';
 
 const SORTS = [
+  { label: 'Category', value: 'typeA' },
   { label: 'Corruption Factor', value: 'corruptionFactor' },
   { label: 'Durability', value: 'durability' },
   { label: 'HP', value: 'hpValue' },
@@ -45,6 +46,7 @@ const SORTS = [
   { label: 'Restore Health', value: 'restoreHealth' },
   { label: 'Restore Sanity', value: 'restoreSanity' },
   { label: 'Restore Satiety', value: 'restoreSatiety' },
+  { label: 'Subcategory', value: 'typeB' },
   { label: 'Shield Value', value: 'shieldValue' },
   { label: 'Weight', value: 'weight' },
 ] satisfies Array<{ label: string; value: keyof Item }>;
@@ -75,7 +77,8 @@ function getItemRarityClass(rarity: number) {
   }
 }
 
-const ALL_CATEGORIES = [...new Set(ITEMS.map((item) => item.typeA))].sort();
+const CATEGORIES = [...new Set(ITEMS.map(({ typeA }) => typeA))].sort();
+const SUBCATEGORIES = [...new Set(ITEMS.map(({ typeB }) => typeB))].sort();
 
 export function ItemsGrid() {
   const [search, setSearch] = useQueryString('search');
@@ -89,7 +92,8 @@ export function ItemsGrid() {
     'sortDirection',
     parseAsStringLiteral(['asc', 'desc']).withDefault('asc').withOptions({ clearOnDefault: true }),
   );
-  const [categories, setCategories] = useQueryStringArray('categories');
+  const [category, setCategory] = useQueryString('category');
+  const [subcategory, setSubcategory] = useQueryString('subcategory');
   const [rarities, setRarities] = useQueryStringArray('rarity');
 
   const debouncedSearch = useDebounce(search, 100);
@@ -98,7 +102,8 @@ export function ItemsGrid() {
     () =>
       sortArrayByPropertyInDirection(ITEMS, sort, sortDirection)
         .filter(({ name }) => (debouncedSearch ? name.toLowerCase().includes(debouncedSearch.toLowerCase()) : true))
-        .filter((item) => (categories.length > 0 ? categories.includes(item.typeA) : true))
+        .filter(({ typeA }) => (category ? typeA === category : true))
+        .filter(({ typeB }) => (subcategory ? typeB === subcategory : true))
         .filter((item) => {
           const rarityKey = item.rarity as RarityKey;
           if (rarityKey in RARITY_MAP) {
@@ -107,7 +112,7 @@ export function ItemsGrid() {
             return false;
           }
         }),
-    [categories, debouncedSearch, rarities, sort, sortDirection],
+    [category, debouncedSearch, rarities, sort, sortDirection, subcategory],
   );
 
   return (
@@ -162,20 +167,29 @@ export function ItemsGrid() {
             </ToggleGroup>
           </div>
 
-          <CollapsibleFilter label="Category">
-            <ToggleGroup
-              type="multiple"
-              className="md:grid md:grid-cols-2 md:gap-1"
-              value={categories}
-              onValueChange={(v) => setCategories(v.length > 0 ? v : null)}
-            >
-              {ALL_CATEGORIES.map((category) => (
-                <ToggleGroupItem key={category} value={category} size="sm">
-                  {capitalCase(category)}
-                </ToggleGroupItem>
+          <Select value={category} onValueChange={setCategory}>
+            <SelectTrigger label="Category" placeholder="Select category" />
+
+            <SelectContent>
+              {CATEGORIES.map((cat) => (
+                <SelectItem key={cat} value={cat}>
+                  {capitalCase(cat)}
+                </SelectItem>
               ))}
-            </ToggleGroup>
-          </CollapsibleFilter>
+            </SelectContent>
+          </Select>
+
+          <Select value={subcategory} onValueChange={setSubcategory}>
+            <SelectTrigger label="Subcategory" placeholder="Select subcategory" />
+
+            <SelectContent>
+              {SUBCATEGORIES.map((cat) => (
+                <SelectItem key={cat} value={cat}>
+                  {capitalCase(cat)}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
 
           <CollapsibleFilter label="Rarity">
             <ToggleGroup
@@ -234,7 +248,11 @@ const Grid = memo(function Grid({ items, sort }: { items: Item[]; sort: (typeof 
           >
             {sort !== 'name' && (
               <Badge variant="primary" className="absolute -right-1 -top-1">
-                {item[sort].toLocaleString()}
+                {typeof item[sort] === 'number'
+                  ? item[sort].toLocaleString()
+                  : typeof item[sort] === 'string'
+                    ? capitalCase(item[sort] as string)
+                    : item[sort]}
               </Badge>
             )}
 

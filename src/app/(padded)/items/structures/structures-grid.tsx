@@ -28,12 +28,14 @@ import { memo, useMemo } from 'react';
 
 const SORTS = [
   { label: 'Build Work', value: 'buildWork' },
+  { label: 'Category', value: 'typeA' },
   { label: 'Consume Energy Speed', value: 'consumeEnergySpeed' },
   { label: 'Defense', value: 'defense' },
   { label: 'Deterioration Damage', value: 'deteriorationDamage' },
   { label: 'Extinguish Burn Work', value: 'extinguishBurnWorkAmount' },
   { label: 'HP', value: 'hp' },
   { label: 'Name', value: 'name' },
+  { label: 'Subcategory', value: 'typeB' },
 ] satisfies Array<{ label: string; value: keyof Structure }>;
 
 const CATEGORIES = [...new Set(STRUCTURES.map(({ typeA }) => typeA))].sort();
@@ -178,7 +180,11 @@ const Grid = memo(function Grid({
           <Card className="relative flex h-full flex-col items-center" hoverEffect>
             {sort !== 'name' && (
               <Badge variant="primary" className="absolute -right-1 -top-1">
-                {structure[sort].toLocaleString()}
+                {typeof structure[sort] === 'number'
+                  ? structure[sort].toLocaleString()
+                  : typeof structure[sort] === 'string'
+                    ? capitalCase(structure[sort] as string)
+                    : structure[sort]}
               </Badge>
             )}
 
