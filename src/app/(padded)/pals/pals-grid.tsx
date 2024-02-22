@@ -15,25 +15,19 @@ import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import { Tooltip } from '@/components/ui/tooltip';
 import { PAL_ELEMENTS, WORK_SUITABILITIES } from '@/constants';
 import NORMAL_PALS from '@/data/normal-pals.json';
+import { useQuerySort } from '@/hooks/useQuerySort';
 import { useQueryString } from '@/hooks/useQueryString';
 import { useQueryStringArray } from '@/hooks/useQueryStringArray';
 import { PARTNER_SKILL_CATEGORIES } from '@/lib/pal-utils';
 import { isWithinRange, sortArrayByPropertyInDirection } from '@/lib/utils';
 import { type Pal, type WorkSuitability } from '@/types';
 import { useDebounce } from '@uidotdev/usehooks';
-import {
-  ArrowDownNarrowWideIcon,
-  ArrowDownWideNarrowIcon,
-  ArrowUpDownIcon,
-  FilterXIcon,
-  GemIcon,
-  SearchIcon,
-} from 'lucide-react';
+import { FilterXIcon, GemIcon, SearchIcon } from 'lucide-react';
 import Link from 'next/link';
 import { parseAsStringLiteral, useQueryState } from 'nuqs';
 import { memo, useMemo } from 'react';
 
-export const PAL_SORTS = [
+export const SORTS = [
   { label: 'Capture Rate', value: 'captureRateCorrect' },
   { label: 'Defense', value: 'defense' },
   { label: 'Food Amount', value: 'foodAmount' },
@@ -57,16 +51,7 @@ export const PAL_SORTS = [
 
 export function PalsGrid() {
   const [search, setSearch] = useQueryString('search');
-  const [sort, setSort] = useQueryState(
-    'sort',
-    parseAsStringLiteral(PAL_SORTS.map((s) => s.value))
-      .withDefault('zukanIndex')
-      .withOptions({ clearOnDefault: true }),
-  );
-  const [sortDirection, setSortDirection] = useQueryState(
-    'sortDirection',
-    parseAsStringLiteral(['asc', 'desc']).withDefault('asc').withOptions({ clearOnDefault: true }),
-  );
+  const [{ sort, sortDirection }, , SortFilter] = useQuerySort(SORTS, 'zukanIndex');
   const [rarity, setRarity] = useQueryString('rarity');
   const [work, setWork] = useQueryState(
     'work',
@@ -116,36 +101,7 @@ export function PalsGrid() {
             onChange={(e) => setSearch(e.target.value)}
           />
 
-          <div className="flex flex-col items-end gap-2">
-            <Select value={sort ?? ''} onValueChange={(v) => setSort(v as (typeof PAL_SORTS)[number]['value'])}>
-              <SelectTrigger label="Sort" icon={ArrowUpDownIcon} placeholder="Sort by" />
-
-              <SelectContent>
-                {PAL_SORTS.map(({ label, value }) => (
-                  <SelectItem key={value} value={value}>
-                    {label}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
-
-            <ToggleGroup
-              type="single"
-              className="flex w-full"
-              size="sm"
-              value={sortDirection}
-              onValueChange={(value: 'asc' | 'desc') => value && setSortDirection(value)}
-            >
-              <ToggleGroupItem value="asc" className="flex-1">
-                <ArrowDownNarrowWideIcon className="mr-1 size-4" />
-                Asc
-              </ToggleGroupItem>
-              <ToggleGroupItem value="desc" className="flex-1">
-                <ArrowDownWideNarrowIcon className="mr-1 size-4" />
-                Desc
-              </ToggleGroupItem>
-            </ToggleGroup>
-          </div>
+          <SortFilter />
 
           <Select value={rarity} onValueChange={(v) => setRarity(v === 'all' ? '' : v)}>
             <SelectTrigger label="Rarity" icon={GemIcon} placeholder="Select rarity" />

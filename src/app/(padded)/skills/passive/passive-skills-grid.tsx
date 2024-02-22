@@ -8,27 +8,19 @@ import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { LinkTab, LinkTabs } from '@/components/ui/link-tabs';
 import { MultiSelect } from '@/components/ui/multi-select';
-import { Select, SelectContent, SelectItem, SelectTrigger } from '@/components/ui/select';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import { Tooltip } from '@/components/ui/tooltip';
 import PASSIVE_SKILLS from '@/data/passive-skills.json';
+import { useQuerySort } from '@/hooks/useQuerySort';
 import { useQueryString } from '@/hooks/useQueryString';
 import { useQueryStringArray } from '@/hooks/useQueryStringArray';
 import { cn, sortArrayByPropertyInDirection } from '@/lib/utils';
 import { type PassiveSkill } from '@/types';
 import { useDebounce } from '@uidotdev/usehooks';
 import { capitalCase } from 'change-case';
-import {
-  ArrowDownNarrowWideIcon,
-  ArrowDownWideNarrowIcon,
-  ArrowUpDownIcon,
-  FilterXIcon,
-  SearchIcon,
-  UserRoundIcon,
-} from 'lucide-react';
+import { FilterXIcon, SearchIcon, UserRoundIcon } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { parseAsStringLiteral, useQueryState } from 'nuqs';
 import { memo, useMemo } from 'react';
 
 const SORTS = [
@@ -41,17 +33,7 @@ const EFFECT_TYPES = [...new Set(PASSIVE_SKILLS.flatMap(({ effects }) => effects
 export function PassiveSkillsGrid() {
   const [search, setSearch] = useQueryString('search');
   const debouncedSearch = useDebounce(search, 100);
-  const [sort, setSort] = useQueryState(
-    'sort',
-    parseAsStringLiteral(SORTS.map((s) => s.value))
-      .withDefault('name')
-      .withOptions({ clearOnDefault: true }),
-  );
-  const [sortDirection, setSortDirection] = useQueryState(
-    'sortDirection',
-    parseAsStringLiteral(['asc', 'desc']).withDefault('asc').withOptions({ clearOnDefault: true }),
-  );
-
+  const [{ sort, sortDirection }, , SortFilter] = useQuerySort(SORTS, 'name');
   const [types, setTypes] = useQueryStringArray('types');
   const [rank, setRank] = useQueryString('rank');
 
@@ -89,35 +71,7 @@ export function PassiveSkillsGrid() {
             onChange={(e) => setSearch(e.target.value)}
           />
 
-          <div className="flex flex-col items-end gap-2">
-            <Select value={sort} onValueChange={(v) => setSort(v as (typeof SORTS)[number]['value'])}>
-              <SelectTrigger label="Sort" icon={ArrowUpDownIcon} placeholder="Sort by" />
-
-              <SelectContent>
-                {SORTS.map(({ label, value }) => (
-                  <SelectItem key={value} value={value}>
-                    {label}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
-            <ToggleGroup
-              type="single"
-              className="flex w-full"
-              size="sm"
-              value={sortDirection}
-              onValueChange={(value: 'asc' | 'desc') => value && setSortDirection(value)}
-            >
-              <ToggleGroupItem value="asc" className="flex-1">
-                <ArrowDownNarrowWideIcon className="mr-1 size-4" />
-                Asc
-              </ToggleGroupItem>
-              <ToggleGroupItem value="desc" className="flex-1">
-                <ArrowDownWideNarrowIcon className="mr-1 size-4" />
-                Desc
-              </ToggleGroupItem>
-            </ToggleGroup>
-          </div>
+          <SortFilter />
 
           <MultiSelect
             label="Types"

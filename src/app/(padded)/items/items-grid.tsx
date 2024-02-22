@@ -11,21 +11,15 @@ import { LinkTab, LinkTabs } from '@/components/ui/link-tabs';
 import { Select, SelectContent, SelectItem, SelectTrigger } from '@/components/ui/select';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import ITEMS from '@/data/items.json';
+import { useQuerySort } from '@/hooks/useQuerySort';
 import { useQueryString } from '@/hooks/useQueryString';
 import { useQueryStringArray } from '@/hooks/useQueryStringArray';
 import { cn, sortArrayByPropertyInDirection } from '@/lib/utils';
 import { type Item } from '@/types';
 import { useDebounce } from '@uidotdev/usehooks';
 import { capitalCase } from 'change-case';
-import {
-  ArrowDownNarrowWideIcon,
-  ArrowDownWideNarrowIcon,
-  ArrowUpDownIcon,
-  FilterXIcon,
-  SearchIcon,
-} from 'lucide-react';
+import { FilterXIcon, SearchIcon } from 'lucide-react';
 import Link from 'next/link';
-import { parseAsStringLiteral, useQueryState } from 'nuqs';
 import { memo, useMemo } from 'react';
 
 const SORTS = [
@@ -82,16 +76,7 @@ const SUBCATEGORIES = [...new Set(ITEMS.map(({ typeB }) => typeB))].sort();
 
 export function ItemsGrid() {
   const [search, setSearch] = useQueryString('search');
-  const [sort, setSort] = useQueryState(
-    'sort',
-    parseAsStringLiteral(SORTS.map((s) => s.value))
-      .withDefault('name')
-      .withOptions({ clearOnDefault: true }),
-  );
-  const [sortDirection, setSortDirection] = useQueryState(
-    'sortDirection',
-    parseAsStringLiteral(['asc', 'desc']).withDefault('asc').withOptions({ clearOnDefault: true }),
-  );
+  const [{ sort, sortDirection }, , SortFilter] = useQuerySort(SORTS, 'name');
   const [category, setCategory] = useQueryString('category');
   const [subcategory, setSubcategory] = useQueryString('subcategory');
   const [rarities, setRarities] = useQueryStringArray('rarity');
@@ -137,35 +122,7 @@ export function ItemsGrid() {
             onChange={(e) => setSearch(e.target.value)}
           />
 
-          <div className="flex flex-col items-end gap-2">
-            <Select value={sort} onValueChange={(v) => setSort(v as (typeof SORTS)[number]['value'])}>
-              <SelectTrigger label="Sort" icon={ArrowUpDownIcon} placeholder="Sort by" />
-
-              <SelectContent>
-                {SORTS.map(({ label, value }) => (
-                  <SelectItem key={value} value={value}>
-                    {label}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
-            <ToggleGroup
-              type="single"
-              className="flex w-full"
-              size="sm"
-              value={sortDirection}
-              onValueChange={(value: 'asc' | 'desc') => value && setSortDirection(value)}
-            >
-              <ToggleGroupItem value="asc" className="flex-1">
-                <ArrowDownNarrowWideIcon className="mr-1 size-4" />
-                Asc
-              </ToggleGroupItem>
-              <ToggleGroupItem value="desc" className="flex-1">
-                <ArrowDownWideNarrowIcon className="mr-1 size-4" />
-                Desc
-              </ToggleGroupItem>
-            </ToggleGroup>
-          </div>
+          <SortFilter />
 
           <Select value={category} onValueChange={setCategory}>
             <SelectTrigger label="Category" placeholder="Select category" />

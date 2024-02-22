@@ -8,24 +8,17 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { LinkTab, LinkTabs } from '@/components/ui/link-tabs';
-import { Select, SelectContent, SelectItem, SelectTrigger } from '@/components/ui/select';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import { Tooltip } from '@/components/ui/tooltip';
 import NORMAL_PALS from '@/data/normal-pals.json';
+import { useQuerySort } from '@/hooks/useQuerySort';
 import { useQueryString } from '@/hooks/useQueryString';
 import { useQueryStringArray } from '@/hooks/useQueryStringArray';
 import { PARTNER_SKILL_CATEGORIES } from '@/lib/pal-utils';
 import { cn, notEmpty, sortArrayByPropertyInDirection } from '@/lib/utils';
 import { useDebounce } from '@uidotdev/usehooks';
-import {
-  ArrowDownNarrowWideIcon,
-  ArrowDownWideNarrowIcon,
-  ArrowUpDownIcon,
-  FilterXIcon,
-  SearchIcon,
-} from 'lucide-react';
+import { FilterXIcon, SearchIcon } from 'lucide-react';
 import Link from 'next/link';
-import { parseAsStringLiteral, useQueryState } from 'nuqs';
 import { memo, useMemo } from 'react';
 
 const SORTS = [{ label: 'Name', value: 'name' }] satisfies Array<{ label: string; value: keyof PartnerSkill }>;
@@ -40,17 +33,7 @@ type PartnerSkill = (typeof PARTNER_SKILLS)[number];
 export function PartnerSkillsGrid() {
   const [search, setSearch] = useQueryString('search');
   const debouncedSearch = useDebounce(search, 100);
-  const [sort, setSort] = useQueryState(
-    'sort',
-    parseAsStringLiteral(SORTS.map((s) => s.value))
-      .withDefault('name')
-      .withOptions({ clearOnDefault: true }),
-  );
-  const [sortDirection, setSortDirection] = useQueryState(
-    'sortDirection',
-    parseAsStringLiteral(['asc', 'desc']).withDefault('asc').withOptions({ clearOnDefault: true }),
-  );
-
+  const [{ sort, sortDirection }, , SortFilter] = useQuerySort(SORTS, 'name');
   const [categories, setCategories] = useQueryStringArray('categories');
 
   const filteredSkills = useMemo(
@@ -86,35 +69,7 @@ export function PartnerSkillsGrid() {
             onChange={(e) => setSearch(e.target.value)}
           />
 
-          <div className="flex flex-col items-end gap-2">
-            <Select value={sort} onValueChange={(v) => setSort(v as (typeof SORTS)[number]['value'])}>
-              <SelectTrigger label="Sort" icon={ArrowUpDownIcon} placeholder="Sort by" />
-
-              <SelectContent>
-                {SORTS.map(({ label, value }) => (
-                  <SelectItem key={value} value={value}>
-                    {label}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
-            <ToggleGroup
-              type="single"
-              className="flex w-full"
-              size="sm"
-              value={sortDirection}
-              onValueChange={(value: 'asc' | 'desc') => value && setSortDirection(value)}
-            >
-              <ToggleGroupItem value="asc" className="flex-1">
-                <ArrowDownNarrowWideIcon className="mr-1 size-4" />
-                Asc
-              </ToggleGroupItem>
-              <ToggleGroupItem value="desc" className="flex-1">
-                <ArrowDownWideNarrowIcon className="mr-1 size-4" />
-                Desc
-              </ToggleGroupItem>
-            </ToggleGroup>
-          </div>
+          <SortFilter />
 
           <CollapsibleFilter label="Categories">
             <ToggleGroup
