@@ -29,11 +29,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full" suppressHydrationWarning>
-      <body className={cn(inter.variable, GeistMono.variable, 'flex h-full flex-col bg-gray-1 font-sans antialiased')}>
+    <html lang="en" suppressHydrationWarning>
+      <body className={cn(inter.variable, GeistMono.variable, 'bg-gray-1 font-sans antialiased')}>
         <Providers>
           <Navbar />
-          <main className="flex-1 overflow-auto">{children}</main>
+          <main>{children}</main>
           <Analytics />
           <SpeedInsights />
         </Providers>

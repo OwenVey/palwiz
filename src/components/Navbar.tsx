@@ -19,7 +19,7 @@ export function Navbar() {
   return (
     <Accordion.Root type="single" collapsible asChild>
       <Accordion.Item value="nav" asChild>
-        <nav className="z-20 border-b border-gray-6 bg-gray-2">
+        <nav className="sticky top-0 z-20 border-b border-gray-6 bg-gray-2">
           <div className="mx-auto max-w-7xl px-2 sm:px-4">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">

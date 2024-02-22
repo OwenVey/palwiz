@@ -89,14 +89,14 @@ export default function MyMap() {
 
   const [hideSidebar, toggleHideSidebar] = useToggle(false);
   return (
-    <div className="relative h-full">
+    <div className="relative">
       <MapContainer
         crs={CRS.Simple}
         center={[-128, 128]}
         zoom={2}
         zoomSnap={1}
         zoomDelta={1}
-        className="isolate h-full !bg-[#102536]"
+        className="isolate h-[calc(100vh-65px)] !bg-[#102536]"
         zoomControl={false}
         attributionControl={false}
         maxBounds={[
