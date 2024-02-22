@@ -182,9 +182,20 @@ const Grid = memo(function Grid({
               </Badge>
             )}
 
-            <Image src={`/images/structures/${structure.imageName}.webp`} height={60} width={60} alt={structure.name} />
+            <div className="rounded-full border border-gray-4 bg-gray-3 p-1">
+              <Image
+                src={`/images/structures/${structure.imageName}.webp`}
+                height={60}
+                width={60}
+                alt={structure.name}
+              />
+            </div>
 
-            <div className="mt-2 flex flex-1 items-center text-center text-sm text-gray-12">{structure.name}</div>
+            <div className="mt-2 flex flex-1 items-center">
+              <div className="line-clamp-2 text-balance text-center text-sm text-gray-12 [overflow-wrap:anywhere]">
+                {structure.name}
+              </div>
+            </div>
           </Card>
         </Link>
       ))}

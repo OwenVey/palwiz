@@ -225,28 +225,27 @@ const Grid = memo(function Grid({ items, sort }: { items: Item[]; sort: keyof It
   if (items.length === 0) return <div className="grid h-full place-items-center text-gray-11">No items found</div>;
 
   return (
-    <div className="grid auto-rows-fr grid-cols-2 gap-4 @2xl:grid-cols-3 @5xl:grid-cols-4">
+    <div className="grid auto-rows-fr grid-cols-2 gap-4 @md:grid-cols-3 @xl:grid-cols-4 @[44rem]:grid-cols-5">
       {items.map((item) => (
         <Link key={item.internalId} href={`/items/${item.id}`}>
-          <Card className={cn('relative flex h-full flex-col', getItemRarityClass(item.rarity))} hoverEffect>
+          <Card
+            className={cn('relative flex h-full flex-col items-center', getItemRarityClass(item.rarity))}
+            hoverEffect
+          >
             {sort !== 'name' && (
               <Badge variant="primary" className="absolute -right-1 -top-1">
                 {item[sort].toLocaleString()}
               </Badge>
             )}
-            <div className="flex items-center gap-2">
-              <div className="shrink-0 rounded-full border border-gray-4 bg-gray-3 p-1">
-                <ItemImage className="size-10" id={item.imageName} />
-              </div>
 
-              <div className="">
-                <div className="line-clamp-1 text-sm text-gray-12">{capitalCase(item.name)}</div>
-                <div className="text-sm text-gray-11">{capitalCase(item.typeA)}</div>
-              </div>
+            <div className="rounded-full border border-gray-4 bg-gray-3 p-1">
+              <ItemImage width={60} height={60} id={item.imageName} />
             </div>
 
-            <div className="mt-2">
-              <p className="line-clamp-2 text-sm text-gray-11">{item.description}</p>
+            <div className="mt-2 flex flex-1 items-center">
+              <div className="line-clamp-2 text-balance text-center text-sm text-gray-12 [overflow-wrap:anywhere]">
+                {item.name}
+              </div>
             </div>
           </Card>
         </Link>

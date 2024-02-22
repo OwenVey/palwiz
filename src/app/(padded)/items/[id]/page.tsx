@@ -65,7 +65,12 @@ export default function ItemPage({ params }: { params: { id: string } }) {
   return (
     <div className="flex flex-col gap-4 md:flex-row">
       <StickySidebar>
-        <ItemImage id={item.imageName} className="mx-auto mt-2 size-36 rounded-full border border-gray-6 bg-gray-1" />
+        <ItemImage
+          id={item.imageName}
+          width={144}
+          height={144}
+          className="mx-auto mt-2 rounded-full border border-gray-6 bg-gray-1"
+        />
 
         <div className="mt-2 text-center">
           <h1 className="break-all text-2xl font-semibold text-gray-12">{item.name}</h1>
@@ -115,7 +120,7 @@ export default function ItemPage({ params }: { params: { id: string } }) {
                       </Badge>
 
                       <div className="w-fit rounded-full border border-gray-5 bg-gray-4 p-2">
-                        {material.item.imageName && <ItemImage id={material.item.imageName} className="size-14" />}
+                        {material.item.imageName && <ItemImage width={56} height={56} id={material.item.imageName} />}
                       </div>
                       <div className="mt-2 text-center font-medium text-gray-12">{material.item.name}</div>
                     </Card>
