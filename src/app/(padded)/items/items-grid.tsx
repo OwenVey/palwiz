@@ -7,6 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
+import { LinkTab, LinkTabs } from '@/components/ui/link-tabs';
 import { Select, SelectContent, SelectItem, SelectTrigger } from '@/components/ui/select';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import ITEMS from '@/data/items.json';
@@ -113,6 +114,15 @@ export function ItemsGrid() {
     <div className="flex flex-col gap-4 md:flex-row">
       <StickySidebar>
         <div className="space-y-5">
+          <LinkTabs className="w-full">
+            <LinkTab className="flex-1" href="/items">
+              Items
+            </LinkTab>
+            <LinkTab className="flex-1" href="/items/structures">
+              Structures
+            </LinkTab>
+          </LinkTabs>
+
           <Input
             className="w-full"
             label="Search"

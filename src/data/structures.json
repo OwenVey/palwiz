@@ -1,0 +1,6918 @@
+[
+  {
+    "buildWork": 8000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "A farm that can grow Wheat. It requires an average amount of time to harvest. Requires a few Pals to plant seeds, water, and harvest crops.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "wheat-plantation",
+    "imageName": "FarmBlockV2_Berries",
+    "internalId": "FarmBlockV2_wheet",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 3,
+        "internalId": "WheatSeeds"
+      },
+      {
+        "count": 35,
+        "internalId": "Wood"
+      },
+      {
+        "count": 35,
+        "internalId": "stone"
+      }
+    ],
+    "name": "Wheat Plantation",
+    "requiredEnergyType": null,
+    "typeA": "Food",
+    "typeB": "Food_Basic"
+  },
+  {
+    "buildWork": 20000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "A farm that can grow Tomato. They take time to harvest, but increase the variety of meals you can prepare. Requires a few Pals to plant seeds, water, and harvest the crops.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "tomato-plantation",
+    "imageName": "FarmBlockV2_Berries",
+    "internalId": "FarmBlockV2_tomato",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 3,
+        "internalId": "TomatoSeeds"
+      },
+      {
+        "count": 70,
+        "internalId": "Wood"
+      },
+      {
+        "count": 50,
+        "internalId": "stone"
+      },
+      {
+        "count": 5,
+        "internalId": "PalFluid"
+      }
+    ],
+    "name": "Tomato Plantation",
+    "requiredEnergyType": null,
+    "typeA": "Food",
+    "typeB": "Food_Basic"
+  },
+  {
+    "buildWork": 40000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "A farm that can grow Lettuce. It takes time to harvest, but increases the variety of meals you can prepare. Requires a few Pals to plant seeds, water, and harvest the crops.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "lettuce-plantation",
+    "imageName": "FarmBlockV2_Berries",
+    "internalId": "FarmBlockV2_Lettuce",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 3,
+        "internalId": "LettuceSeeds"
+      },
+      {
+        "count": 100,
+        "internalId": "Wood"
+      },
+      {
+        "count": 70,
+        "internalId": "stone"
+      },
+      {
+        "count": 10,
+        "internalId": "PalFluid"
+      }
+    ],
+    "name": "Lettuce Plantation",
+    "requiredEnergyType": null,
+    "typeA": "Food",
+    "typeB": "Food_Basic"
+  },
+  {
+    "buildWork": 3000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "A farm that can grow Red Berries. Harvest time is quick, but eating them doesn't provide much sustenance. Requires a few Pals to plant seeds, water, and harvest the crops.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "berry-plantation",
+    "imageName": "FarmBlockV2_Berries",
+    "internalId": "FarmBlockV2_Berries",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 3,
+        "internalId": "BerrySeeds"
+      },
+      {
+        "count": 20,
+        "internalId": "Wood"
+      },
+      {
+        "count": 20,
+        "internalId": "stone"
+      }
+    ],
+    "name": "Berry Plantation",
+    "requiredEnergyType": null,
+    "typeA": "Food",
+    "typeB": "Food_Basic"
+  },
+  {
+    "buildWork": 1000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "A box for storing Pal food. Pals can feed from it when hungry. Make sure to keep it well-stocked to keep your Pals happy.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "feed-box",
+    "imageName": "PalFoodBox",
+    "internalId": "PalFoodBox",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 20,
+        "internalId": "Wood"
+      }
+    ],
+    "name": "Feed Box",
+    "requiredEnergyType": null,
+    "typeA": "Food",
+    "typeB": "Food_Basic"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "A foundation for building walls or facilities on. Made from wood, it breaks easily.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 500,
+    "id": "wooden-foundation",
+    "imageName": "Wood_Foundation",
+    "internalId": "Wooden_foundation",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 2,
+        "internalId": "Wood"
+      }
+    ],
+    "name": "Wooden Foundation",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Found_Basic"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Walls built on foundations for keeping out intruders. Made from wood, it breaks easily.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 500,
+    "id": "wooden-wall",
+    "imageName": "Wood_Wall_V2",
+    "internalId": "Wooden_wall",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 2,
+        "internalId": "Wood"
+      }
+    ],
+    "name": "Wooden Wall",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Found_Basic"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Wall built on a foundation for keeping out intruders. Includes a window. Made from wood, it breaks easily.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 500,
+    "id": "wooden-wall-and-window",
+    "imageName": "Wood_WindowWall",
+    "internalId": "Wood_WindowWall",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 2,
+        "internalId": "Wood"
+      }
+    ],
+    "name": "Wooden Wall and Window",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Found_Basic"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Triangular wall built on a foundation for keeping out intruders. Made from wood, it breaks easily.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 500,
+    "id": "wooden-triangular-wall",
+    "imageName": "Wood_TriangleWall",
+    "internalId": "Wood_TriangleWall",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 2,
+        "internalId": "Wood"
+      }
+    ],
+    "name": "Wooden Triangular Wall",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Found_Basic"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "A roof built on top of walls to keep out the rain and wind. Made from wood, it breaks easily.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 500,
+    "id": "wooden-roof",
+    "imageName": "Wood_Roof",
+    "internalId": "Wooden_roof",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 2,
+        "internalId": "Wood"
+      }
+    ],
+    "name": "Wooden Roof",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Found_Basic"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Slanted roof built on top of walls to keep out the rain and wind. Made from wood, it breaks easily.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 500,
+    "id": "wooden-slanted-roof",
+    "imageName": "Wood_SlantedRoof",
+    "internalId": "Wood_SlantedRoof",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 2,
+        "internalId": "Wood"
+      }
+    ],
+    "name": "Wooden Slanted Roof",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Found_Basic"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Stairs placed below a foundation or roof for climbing up. Made from wood, it breaks easily.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 500,
+    "id": "wooden-stairs",
+    "imageName": "Wood_Stair",
+    "internalId": "Wooden_stair",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 2,
+        "internalId": "Wood"
+      }
+    ],
+    "name": "Wooden Stairs",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Found_Basic"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Door built on a foundation. Becomes an entrance. Made from wood, it breaks easily.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 500,
+    "id": "wooden-door",
+    "imageName": "Wood_DoorWall",
+    "internalId": "Wooden_DoorWall",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 2,
+        "internalId": "Wood"
+      }
+    ],
+    "name": "Wooden Door",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Found_Basic"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 5,
+    "description": "Massive defensive wall to prevent enemy intrusions. Made from wood, it breaks easily.",
+    "deteriorationDamage": 0,
+    "extinguishBurnWorkAmount": 2000,
+    "hp": 5000,
+    "id": "wooden-defensive-wall",
+    "imageName": "DefenseWall_Wood",
+    "internalId": "DefenseWall_Wood",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "Wood"
+      }
+    ],
+    "name": "Wooden Defensive Wall",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Infra_Defense"
+  },
+  {
+    "buildWork": 2000,
+    "consumeEnergySpeed": 0,
+    "defense": 5,
+    "description": "Gate large enough for big Pals to pass through. Made from wood, it breaks easily.",
+    "deteriorationDamage": 0.2,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 5000,
+    "id": "wooden-gate",
+    "imageName": "Wood_Gate",
+    "internalId": "Wood_Gate",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "Wood"
+      }
+    ],
+    "name": "Wooden Gate",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Other"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 3,
+    "description": "A foundation for building walls or facilities on. Made from stone, it is reasonably sturdy.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 1000,
+    "id": "stone-foundation",
+    "imageName": "Stone_Foundation",
+    "internalId": "Stone_foundation",
+    "materialSubType": "Stone",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 3,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Stone Foundation",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Found_Basic"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 3,
+    "description": "Walls built on foundations for keeping out intruders. Made from stone, it is reasonably sturdy.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 1000,
+    "id": "stone-wall",
+    "imageName": "Stone_Wall_V2",
+    "internalId": "Stone_wall",
+    "materialSubType": "Stone",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 3,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Stone Wall",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Found_Basic"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 3,
+    "description": "Wall built on a foundation for keeping out intruders. Includes a window. Made from stone, it is reasonably sturdy.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 1000,
+    "id": "stone-wall-and-window",
+    "imageName": "Stone_WindowWall",
+    "internalId": "Stone_WindowWall",
+    "materialSubType": "Stone",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 3,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Stone Wall and Window",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Found_Basic"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 3,
+    "description": "Triangular wall built on a foundation for keeping out intruders. Made from stone, it is reasonably sturdy.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 1000,
+    "id": "stone-triangular-wall",
+    "imageName": "Stone_TriangleWall",
+    "internalId": "Stone_TriangleWall",
+    "materialSubType": "Stone",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 3,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Stone Triangular Wall",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Found_Basic"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 3,
+    "description": "Slanted roof built on top of walls to keep out the rain and wind. Made from stone, it is reasonably sturdy.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 1000,
+    "id": "stone-slanted-roof",
+    "imageName": "Stone_SlantedRoof",
+    "internalId": "Stone_SlantedRoof",
+    "materialSubType": "Stone",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 3,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Stone Slanted Roof",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Found_Basic"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 3,
+    "description": "A roof built on top of walls to keep out the rain and wind. Made from stone, it is reasonably sturdy.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 1000,
+    "id": "stone-roof",
+    "imageName": "Stone_Roof",
+    "internalId": "Stone_roof",
+    "materialSubType": "Stone",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 3,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Stone Roof",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Found_Basic"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 3,
+    "description": "Stairs placed below a foundation or roof for climbing up. Made from stone, it is reasonably sturdy.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 1000,
+    "id": "stone-stairs",
+    "imageName": "Stone_Stair",
+    "internalId": "Stone_stair",
+    "materialSubType": "Stone",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 3,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Stone Stairs",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Found_Basic"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 3,
+    "description": "Door built on a foundation. Becomes an entrance. Made from stone, it is reasonably sturdy.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 1000,
+    "id": "stone-door",
+    "imageName": "Stone_DoorWall",
+    "internalId": "Stone_DoorWall",
+    "materialSubType": "Stone",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 3,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Stone Door",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Found_Basic"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 5,
+    "description": "Massive defensive wall to prevent enemy intrusions. Made from stone, it is reasonably sturdy.",
+    "deteriorationDamage": 0.4,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 20000,
+    "id": "defensive-wall",
+    "imageName": "DefenseWall",
+    "internalId": "DefenseWall",
+    "materialSubType": "Stone",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "Stone"
+      },
+      {
+        "count": 1,
+        "internalId": "cement"
+      }
+    ],
+    "name": "Defensive Wall",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Infra_Defense"
+  },
+  {
+    "buildWork": 5000,
+    "consumeEnergySpeed": 0,
+    "defense": 5,
+    "description": "Gate large enough for big Pals to pass through. Made from stone, it is reasonably sturdy.",
+    "deteriorationDamage": 0.4,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 20000,
+    "id": "stone-gate",
+    "imageName": "Stone_Gate",
+    "internalId": "Stone_Gate",
+    "materialSubType": "Stone",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "Stone"
+      },
+      {
+        "count": 1,
+        "internalId": "cement"
+      }
+    ],
+    "name": "Stone Gate",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Other"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 4,
+    "description": "A foundation for building walls or facilities on. Made from metal, it is extremely durable.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "metal-foundation",
+    "imageName": "Metal_Foundation",
+    "internalId": "Metal_foundation",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 1,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 2,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Metal Foundation",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Found_Basic"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 4,
+    "description": "Walls built on foundations for keeping out intruders. Made from metal, it is extremely durable.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "metal-wall",
+    "imageName": "Metal_Wall_V2",
+    "internalId": "Metal_wall",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 1,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 2,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Metal Wall",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Found_Basic"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 4,
+    "description": "Wall built on a foundation for keeping out intruders. Includes a window. Made from metal, it is extremely durable.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "metal-wall-and-window",
+    "imageName": "Metal_WindowWall",
+    "internalId": "Metal_WindowWall",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 1,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 2,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Metal Wall and Window",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Found_Basic"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 4,
+    "description": "Triangular wall built on a foundation for keeping out intruders. Made from metal, it is extremely durable.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "metal-triangular-wall",
+    "imageName": "Metal_TriangleWall",
+    "internalId": "Metal_TriangleWall",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 1,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 2,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Metal Triangular Wall",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Found_Basic"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 4,
+    "description": "A roof built on top of walls to keep out the rain and wind. Made from metal, it is extremely durable.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "metal-roof",
+    "imageName": "Metal_Roof",
+    "internalId": "Metal_roof",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 1,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 2,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Metal Roof",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Found_Basic"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 4,
+    "description": "Slanted roof built on top of walls to keep out the rain and wind. Made from metal, it is extremely durable.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "metal-slanted-roof",
+    "imageName": "Metal_SlantedRoof",
+    "internalId": "Metal_SlantedRoof",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 1,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 2,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Metal Slanted Roof",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Found_Basic"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 4,
+    "description": "Stairs placed below a foundation or roof for climbing up. Made from metal, it is extremely durable.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "metal-stairs",
+    "imageName": "Metal_Stair",
+    "internalId": "Metal_stair",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 1,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 2,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Metal Stairs",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Found_Basic"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 4,
+    "description": "Door built on a foundation. Becomes an entrance. Made from metal, it is extremely durable.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "metal-door",
+    "imageName": "Metal_DoorWall",
+    "internalId": "Metal_DoorWall",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 1,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 2,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Metal Door",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Found_Basic"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 5,
+    "description": "Massive defensive wall to prevent enemy intrusions. Made from metal, it is extremely durable.",
+    "deteriorationDamage": 0,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 50000,
+    "id": "metal-defensive-wall",
+    "imageName": "DefenseWall_Metal",
+    "internalId": "DefenseWall_Metal",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 1,
+        "internalId": "cement"
+      }
+    ],
+    "name": "Metal Defensive Wall",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Infra_Defense"
+  },
+  {
+    "buildWork": 15000,
+    "consumeEnergySpeed": 0,
+    "defense": 5,
+    "description": "Gate large enough for big Pals to pass through. Made from metal, it is extremely durable.",
+    "deteriorationDamage": 0.5,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 50000,
+    "id": "iron-gate",
+    "imageName": "Metal_Gate",
+    "internalId": "Metal_Gate",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 1,
+        "internalId": "cement"
+      }
+    ],
+    "name": "Iron Gate",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Other"
+  },
+  {
+    "buildWork": 10000,
+    "consumeEnergySpeed": 0,
+    "defense": 3,
+    "description": "Deploy a Pal to operate this defensive installation. Requires Arrow to use. Place ammo in the chest, and the deployed Pal will automatically load the weapon.",
+    "deteriorationDamage": 0.4,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 10000,
+    "id": "mounted-crossbow",
+    "imageName": "efenseBulletLauncher_BowGun",
+    "internalId": "DefenseBowGun",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 30,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 30,
+        "internalId": "Wood"
+      },
+      {
+        "count": 15,
+        "internalId": "Stone"
+      },
+      {
+        "count": 5,
+        "internalId": "MachineParts"
+      }
+    ],
+    "name": "Mounted Crossbow",
+    "requiredEnergyType": null,
+    "typeA": "Defense",
+    "typeB": "Infra_Defense"
+  },
+  {
+    "buildWork": 50000,
+    "consumeEnergySpeed": 0,
+    "defense": 3,
+    "description": "Deploy a Pal to operate this defensive installation. Requires Rifle Ammo to use. Place ammo in the chest, and the deployed Pal will automatically load the weapon.",
+    "deteriorationDamage": 0.2,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 10000,
+    "id": "mounted-machine-gun",
+    "imageName": "DefenseMachinegun",
+    "internalId": "DefenseMachinegun",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 30,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 10,
+        "internalId": "MachineParts"
+      },
+      {
+        "count": 15,
+        "internalId": "Cement"
+      }
+    ],
+    "name": "Mounted Machine Gun",
+    "requiredEnergyType": null,
+    "typeA": "Defense",
+    "typeB": "Infra_Defense"
+  },
+  {
+    "buildWork": 100000,
+    "consumeEnergySpeed": 100,
+    "defense": 1,
+    "description": "A defensive installation for protecting a base from enemies. It fires high-powered ammunition. Deploy a Pal to it to prepare for battle.",
+    "deteriorationDamage": 0,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 10000,
+    "id": "mounted-gatling-gun",
+    "imageName": "DefenseGatlingGun",
+    "internalId": "DefenseGatlingGun",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 30,
+        "internalId": "IronIngot"
+      },
+      {
+        "count": 20,
+        "internalId": "MachineParts"
+      },
+      {
+        "count": 30,
+        "internalId": "Cement"
+      }
+    ],
+    "name": "Mounted Gatling Gun",
+    "requiredEnergyType": "Electric",
+    "typeA": "Defense",
+    "typeB": "Infra_Defense"
+  },
+  {
+    "buildWork": 150000,
+    "consumeEnergySpeed": 1000,
+    "defense": 3,
+    "description": "Deploy a Pal to operate this defensive installation. Requires Rocket Ammo to use. Place ammo in the chest, and the deployed Pal will automatically load the weapon.",
+    "deteriorationDamage": 0.1,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 10000,
+    "id": "mounted-missile-launcher",
+    "imageName": "efenseBulletLauncher_Missile",
+    "internalId": "DefenseMissile",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 100,
+        "internalId": "IronIngot"
+      },
+      {
+        "count": 20,
+        "internalId": "MachineParts2"
+      },
+      {
+        "count": 20,
+        "internalId": "MachineParts"
+      },
+      {
+        "count": 50,
+        "internalId": "Cement"
+      }
+    ],
+    "name": "Mounted Missile Launcher",
+    "requiredEnergyType": "Electric",
+    "typeA": "Defense",
+    "typeB": "Infra_Defense"
+  },
+  {
+    "buildWork": 3000,
+    "consumeEnergySpeed": 0,
+    "defense": 1,
+    "description": "Defensive installation to protect a base from enemies. Place a Pal and it will ignore other work to stay on lookout and prepare for combat.",
+    "deteriorationDamage": 0.4,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 10000,
+    "id": "sandbag",
+    "imageName": "DefenseWait",
+    "internalId": "DefenseWait",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "Wood"
+      },
+      {
+        "count": 10,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Sandbag",
+    "requiredEnergyType": null,
+    "typeA": "Defense",
+    "typeB": "Infra_Defense"
+  },
+  {
+    "buildWork": 50000,
+    "consumeEnergySpeed": 0,
+    "defense": 4,
+    "description": "A Lightning Pal-powered electric generator. Electric equipment won't run without this.",
+    "deteriorationDamage": 0.1,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 10000,
+    "id": "power-generator",
+    "imageName": "EnergyGenerator_Electric",
+    "internalId": "ElectricGenerator",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 50,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 20,
+        "internalId": "ElectricOrgan"
+      }
+    ],
+    "name": "Power Generator",
+    "requiredEnergyType": null,
+    "typeA": "Infrastructure",
+    "typeB": "Infra_GeneratePower"
+  },
+  {
+    "buildWork": 1000,
+    "consumeEnergySpeed": 0,
+    "defense": 1,
+    "description": "A stone monument in the shape of a Chikipi. Allows fast travel to the location where it is placed.",
+    "deteriorationDamage": 0,
+    "extinguishBurnWorkAmount": 0,
+    "hp": -1,
+    "id": "great-eagle-statue",
+    "imageName": "FastTravelPoint",
+    "internalId": "FastTravelPoint",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 5,
+        "internalId": "Pal_crystal_S"
+      },
+      {
+        "count": 10,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Great Eagle Statue",
+    "requiredEnergyType": null,
+    "typeA": "Infrastructure",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 1000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Stores items. Made from wood, it breaks easily. It's probably not the best thing to store valuables in.",
+    "deteriorationDamage": 0.16,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 4000,
+    "id": "wooden-chest",
+    "imageName": "ItemChest",
+    "internalId": "ItemChest",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 15,
+        "internalId": "Wood"
+      },
+      {
+        "count": 5,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Wooden Chest",
+    "requiredEnergyType": null,
+    "typeA": "Storage",
+    "typeB": "Infra_Storage"
+  },
+  {
+    "buildWork": 8000,
+    "consumeEnergySpeed": 0,
+    "defense": 3,
+    "description": "Stores items. Reinforced with metal, it is somewhat durable. The increased size allows for the storage of more things.",
+    "deteriorationDamage": 0.12,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 6000,
+    "id": "metal-chest",
+    "imageName": "ItemChest_02",
+    "internalId": "ItemChest_02",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 15,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 30,
+        "internalId": "Wood"
+      }
+    ],
+    "name": "Metal Chest",
+    "requiredEnergyType": null,
+    "typeA": "Storage",
+    "typeB": "Infra_Storage"
+  },
+  {
+    "buildWork": 50000,
+    "consumeEnergySpeed": 0,
+    "defense": 4,
+    "description": "Stores items. Made of iron, it is extremely durable. It is useful as a large, secure storage box.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 8000,
+    "id": "refined-metal-chest",
+    "imageName": "ItemChest_03",
+    "internalId": "ItemChest_03",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 20,
+        "internalId": "IronIngot"
+      },
+      {
+        "count": 50,
+        "internalId": "Wood"
+      },
+      {
+        "count": 20,
+        "internalId": "MachineParts"
+      }
+    ],
+    "name": "Refined Metal Chest",
+    "requiredEnergyType": null,
+    "typeA": "Storage",
+    "typeB": "Infra_Storage"
+  },
+  {
+    "buildWork": 1000,
+    "consumeEnergySpeed": 0,
+    "defense": 1,
+    "description": "en Text",
+    "deteriorationDamage": 0,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 1000,
+    "id": "human-bed",
+    "imageName": "PlayerBed",
+    "internalId": "PlayerBed",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "Wood"
+      },
+      {
+        "count": 1,
+        "internalId": "Wool"
+      }
+    ],
+    "name": "Human Bed",
+    "requiredEnergyType": null,
+    "typeA": "Infrastructure",
+    "typeB": "Infra_Medical"
+  },
+  {
+    "buildWork": 2000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "A shoddy bed for humans. Use it when injured or to sleep at night. You won't be able to sleep soundly without a roof over your head.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "shoddy-bed",
+    "imageName": "PlayerBed_02",
+    "internalId": "PlayerBed_02",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 20,
+        "internalId": "Wood"
+      },
+      {
+        "count": 5,
+        "internalId": "Fiber"
+      },
+      {
+        "count": 1,
+        "internalId": "Wool"
+      }
+    ],
+    "name": "Shoddy Bed",
+    "requiredEnergyType": null,
+    "typeA": "Infrastructure",
+    "typeB": "Infra_Medical"
+  },
+  {
+    "buildWork": 20000,
+    "consumeEnergySpeed": 0,
+    "defense": 3,
+    "description": "A fluffy bed for humans. Use it when injured or to sleep at night. You won't be able to sleep soundly without a roof over your head.",
+    "deteriorationDamage": 0.1,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 5000,
+    "id": "fine-bed",
+    "imageName": "PlayerBed_03",
+    "internalId": "PlayerBed_03",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "Cloth"
+      },
+      {
+        "count": 50,
+        "internalId": "Wood"
+      },
+      {
+        "count": 10,
+        "internalId": "MachineParts"
+      },
+      {
+        "count": 20,
+        "internalId": "Fiber"
+      }
+    ],
+    "name": "Fine Bed",
+    "requiredEnergyType": null,
+    "typeA": "Infrastructure",
+    "typeB": "Infra_Medical"
+  },
+  {
+    "buildWork": 1000,
+    "consumeEnergySpeed": 0,
+    "defense": 3,
+    "description": "en Text",
+    "deteriorationDamage": 0,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 10000,
+    "id": "shipping-box",
+    "imageName": "ShippingItemBox",
+    "internalId": "ShippingItemBox",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 1,
+        "internalId": "Wood"
+      }
+    ],
+    "name": "Shipping Box",
+    "requiredEnergyType": null,
+    "typeA": "Infrastructure",
+    "typeB": "Infra_Trade"
+  },
+  {
+    "buildWork": 1000,
+    "consumeEnergySpeed": 0,
+    "defense": 3,
+    "description": "en Text",
+    "deteriorationDamage": 0,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 10000,
+    "id": "weapon-chest",
+    "imageName": "WeaponChest",
+    "internalId": "WeaponChest",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 1,
+        "internalId": "Wood"
+      }
+    ],
+    "name": "Weapon Chest",
+    "requiredEnergyType": null,
+    "typeA": "Infrastructure",
+    "typeB": "Infra_Storage"
+  },
+  {
+    "buildWork": 5000,
+    "consumeEnergySpeed": 0,
+    "defense": 3,
+    "description": "Stone statue spoken of in legends on Palpagos Island. Offer up Lifmunk Effigy to receive strange powers.",
+    "deteriorationDamage": 0.04,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "statue-of-power",
+    "imageName": "BuildableGoddessStatue",
+    "internalId": "BuildableGoddessStatue",
+    "materialSubType": "Stone",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 20,
+        "internalId": "Stone"
+      },
+      {
+        "count": 10,
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "name": "Statue of Power",
+    "requiredEnergyType": null,
+    "typeA": "Pal",
+    "typeB": "Other"
+  },
+  {
+    "buildWork": 10000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "A device that blows warm air, raising the temperature of a base. It doesn't provide much warmth, but helps one to endure somewhat cold environments. Requires a Fire Pal to light a flame.",
+    "deteriorationDamage": 0.06,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "heater",
+    "imageName": "HeaterMedieval",
+    "internalId": "Heater",
+    "materialSubType": "Stone",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 20,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 10,
+        "internalId": "Charcoal"
+      },
+      {
+        "count": 5,
+        "internalId": "FireOrgan"
+      }
+    ],
+    "name": "Heater",
+    "requiredEnergyType": null,
+    "typeA": "Infrastructure",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 100000,
+    "consumeEnergySpeed": 100,
+    "defense": 2,
+    "description": "A device that blows warm air, raising the temperature of a base. Using electricity, it can really heat things up. Requires a Fire Pal to light a flame.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "electric-heater",
+    "imageName": "HeaterElectric",
+    "internalId": "ElectricHeater",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 30,
+        "internalId": "IronIngot"
+      },
+      {
+        "count": 10,
+        "internalId": "MachineParts2"
+      },
+      {
+        "count": 30,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 10,
+        "internalId": "FireOrgan"
+      }
+    ],
+    "name": "Electric Heater",
+    "requiredEnergyType": "Electric",
+    "typeA": "Infrastructure",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 10000,
+    "consumeEnergySpeed": 0,
+    "defense": 3,
+    "description": "A device that blows cool air, lowering the temperature of a base. It doesn't provide much relief from the heat, but helps one to endure somewhat hot environments. Requires an Ice Pal for cooling.",
+    "deteriorationDamage": 0.15,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 5000,
+    "id": "cooler",
+    "imageName": "CoolerMedieval",
+    "internalId": "Cooler",
+    "materialSubType": "Stone",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 20,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 20,
+        "internalId": "Stone"
+      },
+      {
+        "count": 5,
+        "internalId": "IceOrgan"
+      }
+    ],
+    "name": "Cooler",
+    "requiredEnergyType": null,
+    "typeA": "Infrastructure",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 100000,
+    "consumeEnergySpeed": 100,
+    "defense": 3,
+    "description": "A device that blows cool air, lowering the temperature of a base. Using electricity, it can really lower the temperature. Requires an Ice Pal for cooling.",
+    "deteriorationDamage": 0.05,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 5000,
+    "id": "electric-cooler",
+    "imageName": "CoolerElectric",
+    "internalId": "ElectricCooler",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 30,
+        "internalId": "IronIngot"
+      },
+      {
+        "count": 10,
+        "internalId": "MachineParts2"
+      },
+      {
+        "count": 30,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 10,
+        "internalId": "IceOrgan"
+      }
+    ],
+    "name": "Electric Cooler",
+    "requiredEnergyType": "Electric",
+    "typeA": "Infrastructure",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 1000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "A light source that provides illumination to a base even at night. Requires a Fire Pal to light a flame.",
+    "deteriorationDamage": 0.04,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 1000,
+    "id": "mounted-torch",
+    "imageName": "TorchStand",
+    "internalId": "Torch",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 5,
+        "internalId": "Wood"
+      },
+      {
+        "count": 2,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Mounted Torch",
+    "requiredEnergyType": null,
+    "typeA": "Light",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 1000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "A light source that provides illumination to a base even at night. It can be placed on walls. Requires a Fire Pal to light a flame.",
+    "deteriorationDamage": 0.04,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 1000,
+    "id": "wall-torch",
+    "imageName": "TorchHang",
+    "internalId": "WallTorch",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 5,
+        "internalId": "Wood"
+      },
+      {
+        "count": 2,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Wall Torch",
+    "requiredEnergyType": null,
+    "typeA": "Light",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 7000,
+    "consumeEnergySpeed": 10,
+    "defense": 2,
+    "description": "A light source that provides illumination to a base even at night. Requires electricity, but lights up a larger area.",
+    "deteriorationDamage": 0.04,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "lamp",
+    "imageName": "LampStand",
+    "internalId": "Lamp",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 3,
+        "internalId": "ElectricOrgan"
+      },
+      {
+        "count": 3,
+        "internalId": "MachineParts"
+      },
+      {
+        "count": 20,
+        "internalId": "Wood"
+      }
+    ],
+    "name": "Lamp",
+    "requiredEnergyType": "Electric",
+    "typeA": "Light",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 7000,
+    "consumeEnergySpeed": 10,
+    "defense": 2,
+    "description": "A light source that provides illumination to a base even at night. It can be placed on a ceiling. Requires electricity, but lights up a larger area.",
+    "deteriorationDamage": 0.04,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "ceiling-lamp",
+    "imageName": "LampTop",
+    "internalId": "CeilingLamp",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 20,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 3,
+        "internalId": "ElectricOrgan"
+      },
+      {
+        "count": 3,
+        "internalId": "MachineParts"
+      }
+    ],
+    "name": "Ceiling Lamp",
+    "requiredEnergyType": "Electric",
+    "typeA": "Light",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 30000,
+    "consumeEnergySpeed": 20,
+    "defense": 3,
+    "description": "A light source that provides illumination to a base even at night. Requires a significant amount of electricity, but lights up an even larger area.",
+    "deteriorationDamage": 0.04,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 4000,
+    "id": "large-mounted-lamp",
+    "imageName": "LampStandLarge",
+    "internalId": "LargeLamp",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 50,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 5,
+        "internalId": "MachineParts2"
+      },
+      {
+        "count": 5,
+        "internalId": "MachineParts"
+      }
+    ],
+    "name": "Large Mounted Lamp",
+    "requiredEnergyType": "Electric",
+    "typeA": "Light",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 30000,
+    "consumeEnergySpeed": 20,
+    "defense": 3,
+    "description": "A light source that provides illumination to a base even at night. It can be placed on a ceiling. Requires a significant amount of electricity, but lights up an even larger area.",
+    "deteriorationDamage": 0.04,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 4000,
+    "id": "large-ceiling-lamp",
+    "imageName": "LampTopLarge",
+    "internalId": "LargeCeilingLamp",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 50,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 5,
+        "internalId": "MachineParts2"
+      },
+      {
+        "count": 5,
+        "internalId": "MachineParts"
+      }
+    ],
+    "name": "Large Ceiling Lamp",
+    "requiredEnergyType": "Electric",
+    "typeA": "Light",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 1,
+    "description": "Trap that immobilizes Pals who step on it. The capture rate with the sphere increases when a Pal is trapped. Only effective on small Pals.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 500,
+    "id": "bear-trap-small",
+    "imageName": "Trap_LegHold",
+    "internalId": "Trap_LegHold",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 5,
+        "internalId": "CopperIngot"
+      }
+    ],
+    "name": "Bear Trap (Small)",
+    "requiredEnergyType": null,
+    "typeA": "Defense",
+    "typeB": "Infra_Defense"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 1,
+    "description": "A bear trap to immobilize large Pals. The capture rate with the sphere increases when a Pal is trapped. Only effective on large Pals, small Pals will not be caught.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 500,
+    "id": "bear-trap-large",
+    "imageName": "Trap_LegHold_Big",
+    "internalId": "Trap_LegHold_Big",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 20,
+        "internalId": "CopperIngot"
+      }
+    ],
+    "name": "Bear Trap (Large)",
+    "requiredEnergyType": null,
+    "typeA": "Defense",
+    "typeB": "Infra_Defense"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 1,
+    "description": "Trap that catches Pals passing through it. Pals caught in the trap are easier to catch with Spheres. Only effective on small Pals.",
+    "deteriorationDamage": 0.2,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 5000,
+    "id": "hanging-trap",
+    "imageName": "Trap_Noose",
+    "internalId": "Trap_Noose",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "Wood"
+      },
+      {
+        "count": 5,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Hanging Trap",
+    "requiredEnergyType": null,
+    "typeA": "Defense",
+    "typeB": "Infra_Defense"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 1,
+    "description": "Trap that electrocutes the Pal that steps on it. The electrocuted Pal has a higher capture rate with the sphere.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 500,
+    "id": "electric-mine",
+    "imageName": "Trap_MineElecShock",
+    "internalId": "Trap_MineElecShock",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 5,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 2,
+        "internalId": "ElectricOrgan"
+      }
+    ],
+    "name": "Electric Mine",
+    "requiredEnergyType": null,
+    "typeA": "Defense",
+    "typeB": "Infra_Defense"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 1,
+    "description": "Trap that freezes the Pal that steps on it. The frozen Pal has a higher capture rate with the sphere.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 500,
+    "id": "ice-mine",
+    "imageName": "Trap_MineFreeze",
+    "internalId": "Trap_MineFreeze",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 5,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 2,
+        "internalId": "IceOrgan"
+      }
+    ],
+    "name": "Ice Mine",
+    "requiredEnergyType": null,
+    "typeA": "Defense",
+    "typeB": "Infra_Defense"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 1,
+    "description": "Trap that explodes when a Pal steps on it. It deals damage to a wide area.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 500,
+    "id": "mine",
+    "imageName": "Trap_MineAttack",
+    "internalId": "Trap_MineAttack",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 5,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 2,
+        "internalId": "FireOrgan"
+      }
+    ],
+    "name": "Mine",
+    "requiredEnergyType": null,
+    "typeA": "Defense",
+    "typeB": "Infra_Defense"
+  },
+  {
+    "buildWork": 2000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "A straw bed for Pals. Pals can rest on it when injured, or to sleep at night. It isn't soft, but it's better than nothing.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "straw-pal-bed",
+    "imageName": "MedicalPalBed_02",
+    "internalId": "MedicalPalBed_02",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "Wood"
+      },
+      {
+        "count": 5,
+        "internalId": "Fiber"
+      }
+    ],
+    "name": "Straw Pal Bed",
+    "requiredEnergyType": null,
+    "typeA": "Infrastructure",
+    "typeB": "Other"
+  },
+  {
+    "buildWork": 10000,
+    "consumeEnergySpeed": 0,
+    "defense": 3,
+    "description": "A fluffy bed that Pals can get a good rest on. Pals can rest on it when injured, or to sleep at night. Pals love sleeping on fluffy beds like this.",
+    "deteriorationDamage": 0.1,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 5000,
+    "id": "fluffy-pal-bed",
+    "imageName": "MedicalPalBed_03",
+    "internalId": "MedicalPalBed_03",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "Cloth"
+      },
+      {
+        "count": 30,
+        "internalId": "Wood"
+      },
+      {
+        "count": 5,
+        "internalId": "MachineParts"
+      },
+      {
+        "count": 10,
+        "internalId": "Fiber"
+      }
+    ],
+    "name": "Fluffy Pal Bed",
+    "requiredEnergyType": null,
+    "typeA": "Infrastructure",
+    "typeB": "Other"
+  },
+  {
+    "buildWork": 50000,
+    "consumeEnergySpeed": 0,
+    "defense": 3,
+    "description": "Fluffy bed to give Pals a good rest. Pals can rest when injured or sleep at night. Even large Pals can sleep soundly on a bed like this.",
+    "deteriorationDamage": 0.05,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 5000,
+    "id": "large-pal-bed",
+    "imageName": "MedicalPalBed_04",
+    "internalId": "MedicalPalBed_04",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "Cloth2"
+      },
+      {
+        "count": 60,
+        "internalId": "Wood"
+      },
+      {
+        "count": 20,
+        "internalId": "MachineParts"
+      },
+      {
+        "count": 30,
+        "internalId": "Fiber"
+      }
+    ],
+    "name": "Large Pal Bed",
+    "requiredEnergyType": null,
+    "typeA": "Infrastructure",
+    "typeB": "Other"
+  },
+  {
+    "buildWork": 1000,
+    "consumeEnergySpeed": 0,
+    "defense": 4,
+    "description": "Facility for storing captured Pals. Pals inside gradually recover Health. Area around this facility becomes a base.",
+    "deteriorationDamage": 0,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 20000,
+    "id": "palbox",
+    "imageName": "PalBoxV2",
+    "internalId": "PalBoxV2",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 1,
+        "internalId": "Pal_crystal_S"
+      },
+      {
+        "count": 8,
+        "internalId": "Wood"
+      },
+      {
+        "count": 3,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Palbox",
+    "requiredEnergyType": null,
+    "typeA": "Pal",
+    "typeB": "Other"
+  },
+  {
+    "buildWork": 5000,
+    "consumeEnergySpeed": 0,
+    "defense": 4,
+    "description": "Container for observing captured Pals. Pals inside cannot participate in battle or production, but they do not become hungry.",
+    "deteriorationDamage": 0,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 20000,
+    "id": "viewing-cage",
+    "imageName": "DisplayCharacter",
+    "internalId": "DisplayCharacter",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "Pal_crystal_S"
+      },
+      {
+        "count": 10,
+        "internalId": "Wood"
+      },
+      {
+        "count": 20,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Viewing Cage",
+    "requiredEnergyType": null,
+    "typeA": "Pal",
+    "typeB": "Other"
+  },
+  {
+    "buildWork": 30000,
+    "consumeEnergySpeed": 0,
+    "defense": 3,
+    "description": "A chamber for increasing a Pal's rank. Pals can surpass their physical limitations if given a concentrated extract taken from a Pal of the same type.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 8000,
+    "id": "pal-essence-condenser",
+    "imageName": "CharacterRankUp",
+    "internalId": "CharacterRankUp",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 20,
+        "internalId": "Pal_crystal_S"
+      },
+      {
+        "count": 20,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 5,
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "name": "Pal Essence Condenser",
+    "requiredEnergyType": null,
+    "typeA": "Pal",
+    "typeB": "Pal_Modify"
+  },
+  {
+    "buildWork": 5000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "An Assembly Line for producing spheres used for capturing Pals. A small workspace keeps the production speed slow. Requires Pals that can work with their hands.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "sphere-workbench",
+    "imageName": "SphereFactory_Black_01",
+    "internalId": "SphereFactory_Black_01",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "Pal_crystal_S"
+      },
+      {
+        "count": 30,
+        "internalId": "Wood"
+      },
+      {
+        "count": 10,
+        "internalId": "MachineParts"
+      }
+    ],
+    "name": "Sphere Workbench",
+    "requiredEnergyType": null,
+    "typeA": "Pal",
+    "typeB": "Pal_Capture"
+  },
+  {
+    "buildWork": 30000,
+    "consumeEnergySpeed": 200,
+    "defense": 3,
+    "description": "An Assembly Line for producing spheres used for capturing Pals. By splitting Pals into groups, production speeds have somewhat increased. Requires Pals that can work with their hands.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 4000,
+    "id": "sphere-assembly-line",
+    "imageName": "SphereFactory_Black_02",
+    "internalId": "SphereFactory_Black_02",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 30,
+        "internalId": "Pal_crystal_S"
+      },
+      {
+        "count": 50,
+        "internalId": "Wood"
+      },
+      {
+        "count": 100,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 20,
+        "internalId": "MachineParts"
+      }
+    ],
+    "name": "Sphere Assembly Line",
+    "requiredEnergyType": "Electric",
+    "typeA": "Pal",
+    "typeB": "Pal_Capture"
+  },
+  {
+    "buildWork": 120000,
+    "consumeEnergySpeed": 300,
+    "defense": 4,
+    "description": "An Assembly Line for producing spheres used for capturing Pals. Through clever management, production speeds have greatly increased. Requires Pals that can work with their hands.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 8000,
+    "id": "sphere-assembly-line-ii",
+    "imageName": "SphereFactory_Black_03",
+    "internalId": "SphereFactory_Black_03",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 100,
+        "internalId": "IronIngot"
+      },
+      {
+        "count": 10,
+        "internalId": "MachineParts2"
+      },
+      {
+        "count": 30,
+        "internalId": "MachineParts"
+      },
+      {
+        "count": 50,
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "name": "Sphere Assembly Line II",
+    "requiredEnergyType": "Electric",
+    "typeA": "Pal",
+    "typeB": "Pal_Capture"
+  },
+  {
+    "buildWork": 1000,
+    "consumeEnergySpeed": 3,
+    "defense": 3,
+    "description": "en Text",
+    "deteriorationDamage": 0,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 10000,
+    "id": "superior-sphere-factory",
+    "imageName": "SphereFactory_White_01",
+    "internalId": "SphereFactory_White_01",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 1,
+        "internalId": "CopperIngot"
+      }
+    ],
+    "name": "Superior Sphere Factory Ⅰ",
+    "requiredEnergyType": "Electric",
+    "typeA": "Pal",
+    "typeB": "Pal_Capture"
+  },
+  {
+    "buildWork": 1000,
+    "consumeEnergySpeed": 6,
+    "defense": 3,
+    "description": "en Text",
+    "deteriorationDamage": 0,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 10000,
+    "id": "superior-sphere-factory",
+    "imageName": "SphereFactory_White_02",
+    "internalId": "SphereFactory_White_02",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 1,
+        "internalId": "IronIngot"
+      },
+      {
+        "count": 5,
+        "internalId": "CopperIngot"
+      }
+    ],
+    "name": "Superior Sphere Factory Ⅱ",
+    "requiredEnergyType": "Electric",
+    "typeA": "Pal",
+    "typeB": "Pal_Capture"
+  },
+  {
+    "buildWork": 1000,
+    "consumeEnergySpeed": 8,
+    "defense": 3,
+    "description": "en Text",
+    "deteriorationDamage": 0,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 10000,
+    "id": "superior-sphere-factory",
+    "imageName": "SphereFactory_White_03",
+    "internalId": "SphereFactory_White_03",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 1,
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 5,
+        "internalId": "IronIngot"
+      }
+    ],
+    "name": "Superior Sphere Factory Ⅲ",
+    "requiredEnergyType": "Electric",
+    "typeA": "Pal",
+    "typeB": "Pal_Capture"
+  },
+  {
+    "buildWork": 5000,
+    "consumeEnergySpeed": 0,
+    "defense": 3,
+    "description": "Used for incubating a Pal Egg. If a Pal Egg is left in it, it will automatically hatch after some time has passed.",
+    "deteriorationDamage": 0.04,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "egg-incubator",
+    "imageName": "HatchingPalEgg",
+    "internalId": "HatchingPalEgg",
+    "materialSubType": "Stone",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "Pal_crystal_S"
+      },
+      {
+        "count": 5,
+        "internalId": "Cloth"
+      },
+      {
+        "count": 30,
+        "internalId": "Stone"
+      },
+      {
+        "count": 2,
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "name": "Egg Incubator",
+    "requiredEnergyType": null,
+    "typeA": "Pal",
+    "typeB": "Pal_Breed"
+  },
+  {
+    "buildWork": 8000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Facility where Pals on base can rest. Restores SAN after a long day of hard work.",
+    "deteriorationDamage": 0.06,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 3000,
+    "id": "hot-spring",
+    "imageName": "Spa",
+    "internalId": "Spa",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 30,
+        "internalId": "Wood"
+      },
+      {
+        "count": 15,
+        "internalId": "Stone"
+      },
+      {
+        "count": 10,
+        "internalId": "Pal_crystal_S"
+      },
+      {
+        "count": 10,
+        "internalId": "PalFluid"
+      }
+    ],
+    "name": "Hot Spring",
+    "requiredEnergyType": null,
+    "typeA": "Infrastructure",
+    "typeB": "Other"
+  },
+  {
+    "buildWork": 50000,
+    "consumeEnergySpeed": 0,
+    "defense": 4,
+    "description": "Facility where Pals on base can rest. Now comfier and restores more SAN.",
+    "deteriorationDamage": 0.05,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 5000,
+    "id": "high-quality-hot-spring",
+    "imageName": "Spa_2",
+    "internalId": "Spa2",
+    "materialSubType": "Stone",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 100,
+        "internalId": "Stone"
+      },
+      {
+        "count": 100,
+        "internalId": "Wood"
+      },
+      {
+        "count": 30,
+        "internalId": "Pal_crystal_S"
+      },
+      {
+        "count": 20,
+        "internalId": "Cement"
+      }
+    ],
+    "name": "High Quality Hot Spring",
+    "requiredEnergyType": null,
+    "typeA": "Infrastructure",
+    "typeB": "Other"
+  },
+  {
+    "buildWork": 5000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Allows refinement of Ingot. The quality leaves much to desire, and processing is slow. Requires a Fire Pal to light a flame.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "primitive-furnace",
+    "imageName": "BlastFurnace",
+    "internalId": "BlastFurnace",
+    "materialSubType": "Stone",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 20,
+        "internalId": "Wood"
+      },
+      {
+        "count": 50,
+        "internalId": "Stone"
+      },
+      {
+        "count": 3,
+        "internalId": "FireOrgan"
+      }
+    ],
+    "name": "Primitive Furnace",
+    "requiredEnergyType": null,
+    "typeA": "Product",
+    "typeB": "Prod_Furnace"
+  },
+  {
+    "buildWork": 30000,
+    "consumeEnergySpeed": 0,
+    "defense": 3,
+    "description": "Allows refinement of Refined Ingot. The quality has improved, but the processing speed is still unsatisfactory. Requires a Fire Pal to light a flame.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 4000,
+    "id": "improved-furnace",
+    "imageName": "BlastFurnace_2",
+    "internalId": "BlastFurnace2",
+    "materialSubType": "Stone",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 100,
+        "internalId": "Stone"
+      },
+      {
+        "count": 30,
+        "internalId": "Cement"
+      },
+      {
+        "count": 15,
+        "internalId": "FireOrgan"
+      }
+    ],
+    "name": "Improved Furnace",
+    "requiredEnergyType": null,
+    "typeA": "Product",
+    "typeB": "Prod_Furnace"
+  },
+  {
+    "buildWork": 100000,
+    "consumeEnergySpeed": 300,
+    "defense": 4,
+    "description": "Allows refinement of Pal Metal Ingot. It requires electricity to use, but is quicker to process. Requires a Fire Pal to light a flame.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 8000,
+    "id": "electric-furnace",
+    "imageName": "BlastFurnace3",
+    "internalId": "BlastFurnace3",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 50,
+        "internalId": "IronIngot"
+      },
+      {
+        "count": 10,
+        "internalId": "MachineParts2"
+      },
+      {
+        "count": 20,
+        "internalId": "Polymer"
+      },
+      {
+        "count": 20,
+        "internalId": "CarbonFiber"
+      }
+    ],
+    "name": "Electric Furnace",
+    "requiredEnergyType": "Electric",
+    "typeA": "Product",
+    "typeB": "Prod_Furnace"
+  },
+  {
+    "buildWork": 1000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Needed for cooking food. It can only be used to grill simple ingredients. Requires a Fire Pal to light a flame.",
+    "deteriorationDamage": 0.04,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 1000,
+    "id": "campfire",
+    "imageName": "CampFire",
+    "internalId": "CampFire",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "Wood"
+      }
+    ],
+    "name": "Campfire",
+    "requiredEnergyType": null,
+    "typeA": "Food",
+    "typeB": "Prod_Craft"
+  },
+  {
+    "buildWork": 10000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Needed for cooking food. Use of a cooking pot allows for a wider variety of meal preparation. Requires a Fire Pal to light a flame.",
+    "deteriorationDamage": 0.04,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "cooking-pot",
+    "imageName": "CookingStove",
+    "internalId": "CookingStove",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 20,
+        "internalId": "Wood"
+      },
+      {
+        "count": 15,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 3,
+        "internalId": "FireOrgan"
+      }
+    ],
+    "name": "Cooking Pot",
+    "requiredEnergyType": null,
+    "typeA": "Food",
+    "typeB": "Prod_Craft"
+  },
+  {
+    "buildWork": 70000,
+    "consumeEnergySpeed": 50,
+    "defense": 3,
+    "description": "Needed for cooking food. It requires electricity to run, but allows a large amount of meals to be prepared rapidly. Requires a Fire Pal to light a flame.",
+    "deteriorationDamage": 0.05,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 5000,
+    "id": "electric-kitchen",
+    "imageName": "ElectricKitchen",
+    "internalId": "ElectricKitchen",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 30,
+        "internalId": "IronIngot"
+      },
+      {
+        "count": 5,
+        "internalId": "MachineParts2"
+      },
+      {
+        "count": 20,
+        "internalId": "Charcoal"
+      },
+      {
+        "count": 5,
+        "internalId": "FireOrgan"
+      }
+    ],
+    "name": "Electric Kitchen",
+    "requiredEnergyType": "Electric",
+    "typeA": "Food",
+    "typeB": "Prod_Craft"
+  },
+  {
+    "buildWork": 3000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "A High Quality Workbench for producing items and gear. A small workspace limits production speeds. Requires Pals that can work with their hands.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "high-quality-workbench",
+    "imageName": "Factory_Hard_01",
+    "internalId": "Factory_Hard_01",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 15,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 50,
+        "internalId": "Wood"
+      },
+      {
+        "count": 10,
+        "internalId": "MachineParts"
+      }
+    ],
+    "name": "High Quality Workbench",
+    "requiredEnergyType": null,
+    "typeA": "Product",
+    "typeB": "Prod_Craft"
+  },
+  {
+    "buildWork": 10000,
+    "consumeEnergySpeed": 200,
+    "defense": 3,
+    "description": "A High Quality Workbench for producing items and gear. By splitting Pals into groups, production speeds have somewhat increased. Requires Pals that can work with their hands.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 4000,
+    "id": "production-assembly-line",
+    "imageName": "Factory_Hard_02",
+    "internalId": "Factory_Hard_02",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 100,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 50,
+        "internalId": "Wood"
+      },
+      {
+        "count": 20,
+        "internalId": "MachineParts"
+      },
+      {
+        "count": 10,
+        "internalId": "Cement"
+      }
+    ],
+    "name": "Production Assembly Line",
+    "requiredEnergyType": "Electric",
+    "typeA": "Product",
+    "typeB": "Prod_Craft"
+  },
+  {
+    "buildWork": 50000,
+    "consumeEnergySpeed": 300,
+    "defense": 4,
+    "description": "A High Quality Workbench for producing items and gear. Through clever management, production speeds have greatly increased. Requires Pals that can work with their hands.",
+    "deteriorationDamage": 0.06,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 6000,
+    "id": "production-assembly-line-ii",
+    "imageName": "Factory_Hard_03",
+    "internalId": "Factory_Hard_03",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 100,
+        "internalId": "IronIngot"
+      },
+      {
+        "count": 10,
+        "internalId": "MachineParts2"
+      },
+      {
+        "count": 30,
+        "internalId": "MachineParts"
+      }
+    ],
+    "name": "Production Assembly Line II",
+    "requiredEnergyType": "Electric",
+    "typeA": "Product",
+    "typeB": "Prod_Craft"
+  },
+  {
+    "buildWork": 3000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "A facility for making Pal medicine. It can only produce simple medicines. Leave its operation to a Pal that can make medicine.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "medieval-medicine-workbench",
+    "imageName": "MedicineFacility_01",
+    "internalId": "MedicineFacility_01",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 30,
+        "internalId": "Wood"
+      },
+      {
+        "count": 5,
+        "internalId": "MachineParts"
+      },
+      {
+        "count": 10,
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "name": "Medieval Medicine Workbench",
+    "requiredEnergyType": null,
+    "typeA": "Product",
+    "typeB": "Prod_Medicine"
+  },
+  {
+    "buildWork": 50000,
+    "consumeEnergySpeed": 50,
+    "defense": 3,
+    "description": "A facility for making Pal medicine. It requires electricity, but can produce high quality medicine. Leave its operation to a Pal that can make medicine.",
+    "deteriorationDamage": 0.1,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 10000,
+    "id": "electric-medicine-workbench",
+    "imageName": "MedicineFacility_02",
+    "internalId": "MedicineFacility_02",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 40,
+        "internalId": "IronIngot"
+      },
+      {
+        "count": 10,
+        "internalId": "MachineParts2"
+      },
+      {
+        "count": 20,
+        "internalId": "CarbonFiber"
+      }
+    ],
+    "name": "Electric Medicine Workbench",
+    "requiredEnergyType": "Electric",
+    "typeA": "Product",
+    "typeB": "Prod_Medicine"
+  },
+  {
+    "buildWork": 10000,
+    "consumeEnergySpeed": 0,
+    "defense": 4,
+    "description": "A facility for producing Stone. Mining Stone is hard work that requires much physical endurance. Leave it to Pals skilled at mining.",
+    "deteriorationDamage": 0,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 10000,
+    "id": "stone-pit",
+    "imageName": "StonePit",
+    "internalId": "StonePit",
+    "materialSubType": "Stone",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 50,
+        "internalId": "Stone"
+      },
+      {
+        "count": 20,
+        "internalId": "Wood"
+      },
+      {
+        "count": 10,
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "name": "Stone Pit",
+    "requiredEnergyType": null,
+    "typeA": "Product",
+    "typeB": "Prod_Resource"
+  },
+  {
+    "buildWork": 5000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "An Assembly Line for producing weapons and ammunition. A small workspace prevents the production of high quality weapons. Requires Pals that can work with their hands.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "weapon-workbench",
+    "imageName": "WeaponFactory_Dirty_01",
+    "internalId": "WeaponFactory_Dirty_01",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 15,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 50,
+        "internalId": "Wood"
+      },
+      {
+        "count": 10,
+        "internalId": "MachineParts"
+      }
+    ],
+    "name": "Weapon Workbench",
+    "requiredEnergyType": null,
+    "typeA": "Product",
+    "typeB": "Prod_Craft"
+  },
+  {
+    "buildWork": 30000,
+    "consumeEnergySpeed": 200,
+    "defense": 3,
+    "description": "An Assembly Line for producing weapons and ammunition. Dividing up work has allowed for the production of somewhat decent armaments. Requires Pals that can work with their hands.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 4000,
+    "id": "weapon-assembly-line",
+    "imageName": "WeaponFactory_Dirty_02",
+    "internalId": "WeaponFactory_Dirty_02",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 100,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 50,
+        "internalId": "Wood"
+      },
+      {
+        "count": 20,
+        "internalId": "MachineParts"
+      },
+      {
+        "count": 10,
+        "internalId": "PalOil"
+      }
+    ],
+    "name": "Weapon Assembly Line",
+    "requiredEnergyType": "Electric",
+    "typeA": "Product",
+    "typeB": "Prod_Craft"
+  },
+  {
+    "buildWork": 120000,
+    "consumeEnergySpeed": 300,
+    "defense": 4,
+    "description": "An Assembly Line for producing weapons and ammunition. Cleverly dividing up work has allowed for production of top-class weapons. Requires Pals that can work with their hands.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 8000,
+    "id": "weapon-assembly-line-ii",
+    "imageName": "WeaponFactory_Dirty_03",
+    "internalId": "WeaponFactory_Dirty_03",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 100,
+        "internalId": "IronIngot"
+      },
+      {
+        "count": 10,
+        "internalId": "MachineParts2"
+      },
+      {
+        "count": 30,
+        "internalId": "MachineParts"
+      }
+    ],
+    "name": "Weapon Assembly Line II",
+    "requiredEnergyType": "Electric",
+    "typeA": "Product",
+    "typeB": "Prod_Craft"
+  },
+  {
+    "buildWork": 1000,
+    "consumeEnergySpeed": 0,
+    "defense": 1,
+    "description": "en Text",
+    "deteriorationDamage": 0,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 10000,
+    "id": "weapon-factory",
+    "imageName": "WeaponFactry",
+    "internalId": "WeaponFactry",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "Wood"
+      },
+      {
+        "count": 10,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Weapon Factory",
+    "requiredEnergyType": null,
+    "typeA": "Product",
+    "typeB": "Prod_Craft"
+  },
+  {
+    "buildWork": 1000,
+    "consumeEnergySpeed": 0,
+    "defense": 1,
+    "description": "en Text",
+    "deteriorationDamage": 0,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 10000,
+    "id": "water-well",
+    "imageName": "Well",
+    "internalId": "Well",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "Wood"
+      },
+      {
+        "count": 20,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Water Well",
+    "requiredEnergyType": null,
+    "typeA": "Product",
+    "typeB": "Prod_Resource"
+  },
+  {
+    "buildWork": 500,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "A Primitive Workbench for producing simple items. Requires a Pal that can work with their hands.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 1000,
+    "id": "primitive-workbench",
+    "imageName": "WorkBench",
+    "internalId": "WorkBench",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 2,
+        "internalId": "Wood"
+      }
+    ],
+    "name": "Primitive Workbench",
+    "requiredEnergyType": null,
+    "typeA": "Product",
+    "typeB": "Prod_Craft"
+  },
+  {
+    "buildWork": 10000,
+    "consumeEnergySpeed": 0,
+    "defense": 4,
+    "description": "A facility for producing Wood. Cutting wood is hard work that requires much physical endurance. Leave it to Pals skilled in logging.",
+    "deteriorationDamage": 0.2,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 10000,
+    "id": "logging-site",
+    "imageName": "StationDeforest2",
+    "internalId": "StationDeforest2",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 50,
+        "internalId": "Wood"
+      },
+      {
+        "count": 20,
+        "internalId": "Stone"
+      },
+      {
+        "count": 10,
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "name": "Logging Site",
+    "requiredEnergyType": null,
+    "typeA": "Product",
+    "typeB": "Prod_Resource"
+  },
+  {
+    "buildWork": 5000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "A Primitive Workbench for producing Pal tools. Make a saddle to ride Pals, or make a gun for Pals to use.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 1000,
+    "id": "pal-gear-workbench",
+    "imageName": "WorkBench_SkillUnlock",
+    "internalId": "WorkBench_SkillUnlock",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "Pal_crystal_S"
+      },
+      {
+        "count": 30,
+        "internalId": "Wood"
+      },
+      {
+        "count": 2,
+        "internalId": "Cloth"
+      }
+    ],
+    "name": "Pal Gear Workbench",
+    "requiredEnergyType": null,
+    "typeA": "Product",
+    "typeB": "Prod_Craft"
+  },
+  {
+    "buildWork": 8000,
+    "consumeEnergySpeed": 0,
+    "defense": 3,
+    "description": "Facility for breaking down Stone and Wood to exchange them for other materials. Requires Pal with the Watering trait to spin the water turbine.",
+    "deteriorationDamage": 0.12,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 4000,
+    "id": "crusher",
+    "imageName": "Crusher",
+    "internalId": "Crusher",
+    "materialSubType": "Stone",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 50,
+        "internalId": "Wood"
+      },
+      {
+        "count": 20,
+        "internalId": "Stone"
+      },
+      {
+        "count": 10,
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "name": "Crusher",
+    "requiredEnergyType": null,
+    "typeA": "Product",
+    "typeB": "Prod_Craft"
+  },
+  {
+    "buildWork": 8000,
+    "consumeEnergySpeed": 0,
+    "defense": 3,
+    "description": "Facility for milling Wheat to produce Flour. Requires Pal with the Watering trait to spin the water turbine.",
+    "deteriorationDamage": 0.12,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 4000,
+    "id": "mill",
+    "imageName": "FlourMill",
+    "internalId": "FlourMill",
+    "materialSubType": "Stone",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 50,
+        "internalId": "Wood"
+      },
+      {
+        "count": 40,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Mill",
+    "requiredEnergyType": null,
+    "typeA": "Product",
+    "typeB": "Prod_Craft"
+  },
+  {
+    "buildWork": 15000,
+    "consumeEnergySpeed": 0,
+    "defense": 3,
+    "description": "Assign one male and one female Pal to produce eggs. Placing Cake in the facility is required for production.",
+    "deteriorationDamage": 0.15,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 5000,
+    "id": "breeding-farm",
+    "imageName": "BreedFarm",
+    "internalId": "BreedFarm",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 100,
+        "internalId": "Wood"
+      },
+      {
+        "count": 20,
+        "internalId": "Stone"
+      },
+      {
+        "count": 50,
+        "internalId": "Fiber"
+      }
+    ],
+    "name": "Breeding Farm",
+    "requiredEnergyType": null,
+    "typeA": "Pal",
+    "typeB": "Pal_Breed"
+  },
+  {
+    "buildWork": 3000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Workbench for repairing broken tools. Materials are needed to make repairs.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "repair-bench",
+    "imageName": "RepairBench",
+    "internalId": "RepairBench",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "Wood"
+      },
+      {
+        "count": 10,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Repair Bench",
+    "requiredEnergyType": null,
+    "typeA": "Product",
+    "typeB": "Prod_Craft"
+  },
+  {
+    "buildWork": 12000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Place in base to improve handiwork speed. Placing more than one has no additional effect.",
+    "deteriorationDamage": 0.06,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "large-toolbox",
+    "imageName": "ToolBoxV1",
+    "internalId": "ToolBoxV1",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 40,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 100,
+        "internalId": "Wood"
+      },
+      {
+        "count": 15,
+        "internalId": "MachineParts"
+      }
+    ],
+    "name": "Large Toolbox",
+    "requiredEnergyType": null,
+    "typeA": "Other",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 12000,
+    "consumeEnergySpeed": 0,
+    "defense": 1,
+    "description": "Toolbox V2",
+    "deteriorationDamage": 0,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 500,
+    "id": "tool-box",
+    "imageName": "ToolBoxV2",
+    "internalId": "ToolBoxV2",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 100,
+        "internalId": "Wood"
+      },
+      {
+        "count": 10,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "ToolBox",
+    "requiredEnergyType": null,
+    "typeA": "Other",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 16000,
+    "consumeEnergySpeed": 0,
+    "defense": 3,
+    "description": "Place in base to improve fire-making speed. Placing more than one has no additional effect.",
+    "deteriorationDamage": 0.15,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 5000,
+    "id": "flame-cauldron",
+    "imageName": "OlympicCauldron",
+    "internalId": "OlympicCauldron",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 50,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 100,
+        "internalId": "Wood"
+      },
+      {
+        "count": 20,
+        "internalId": "FireOrgan"
+      }
+    ],
+    "name": "Flame Cauldron",
+    "requiredEnergyType": null,
+    "typeA": "Other",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 20000,
+    "consumeEnergySpeed": 0,
+    "defense": 3,
+    "description": "Place in base to improve watering speed. Placing more than one has no additional effect.",
+    "deteriorationDamage": 0.15,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 5000,
+    "id": "water-fountain",
+    "imageName": "Fountain",
+    "internalId": "Fountain",
+    "materialSubType": "Stone",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 100,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 200,
+        "internalId": "Stone"
+      },
+      {
+        "count": 20,
+        "internalId": "PalFluid"
+      }
+    ],
+    "name": "Water Fountain",
+    "requiredEnergyType": null,
+    "typeA": "Other",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 32000,
+    "consumeEnergySpeed": 0,
+    "defense": 3,
+    "description": "Place in base to improve gathering speed. Placing more than one has no additional effect.",
+    "deteriorationDamage": 0.15,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 5000,
+    "id": "flower-bed",
+    "imageName": "FlowerBed",
+    "internalId": "FlowerBed",
+    "materialSubType": "Stone",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 50,
+        "internalId": "Wood"
+      },
+      {
+        "count": 100,
+        "internalId": "Stone"
+      },
+      {
+        "count": 40,
+        "internalId": "Cement"
+      },
+      {
+        "count": 20,
+        "internalId": "Poppy"
+      }
+    ],
+    "name": "Flower Bed",
+    "requiredEnergyType": null,
+    "typeA": "Other",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 40000,
+    "consumeEnergySpeed": 0,
+    "defense": 3,
+    "description": "Place in base to improve planting speed. Placing more than one has no additional effect.",
+    "deteriorationDamage": 0.15,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 5000,
+    "id": "silo",
+    "imageName": "Silo",
+    "internalId": "Silo",
+    "materialSubType": "Stone",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 300,
+        "internalId": "Wood"
+      },
+      {
+        "count": 100,
+        "internalId": "Stone"
+      },
+      {
+        "count": 100,
+        "internalId": "Fiber"
+      }
+    ],
+    "name": "Silo",
+    "requiredEnergyType": null,
+    "typeA": "Other",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 32000,
+    "consumeEnergySpeed": 0,
+    "defense": 3,
+    "description": "Place in base to improve logging speed. Placing more than one has no additional effect.",
+    "deteriorationDamage": 0.15,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 5000,
+    "id": "stump-and-axe",
+    "imageName": "Stump",
+    "internalId": "Stump",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 150,
+        "internalId": "Wood"
+      },
+      {
+        "count": 40,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 30,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Stump and Axe",
+    "requiredEnergyType": null,
+    "typeA": "Other",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 48000,
+    "consumeEnergySpeed": 0,
+    "defense": 3,
+    "description": "Place in base to improve mining speed. Placing more than one has no additional effect.",
+    "deteriorationDamage": 0.15,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 5000,
+    "id": "pickaxe-and-helmet",
+    "imageName": "MiningTool",
+    "internalId": "MiningTool",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 50,
+        "internalId": "Wood"
+      },
+      {
+        "count": 50,
+        "internalId": "Stone"
+      },
+      {
+        "count": 50,
+        "internalId": "CopperIngot"
+      }
+    ],
+    "name": "Pickaxe and Helmet",
+    "requiredEnergyType": null,
+    "typeA": "Other",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 60000,
+    "consumeEnergySpeed": 0,
+    "defense": 3,
+    "description": "Place in base to improve medicine manufacturing speed. Placing more than one has no additional effect.",
+    "deteriorationDamage": 0.15,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 5000,
+    "id": "witch-cauldron",
+    "imageName": "Cauldron",
+    "internalId": "Cauldron",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 50,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 50,
+        "internalId": "Stone"
+      },
+      {
+        "count": 15,
+        "internalId": "PalFluid"
+      },
+      {
+        "count": 15,
+        "internalId": "PalOil"
+      }
+    ],
+    "name": "Witch Cauldron",
+    "requiredEnergyType": null,
+    "typeA": "Other",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 40000,
+    "consumeEnergySpeed": 0,
+    "defense": 3,
+    "description": "Place in base to improve cooling speed. Placing more than one has no additional effect.",
+    "deteriorationDamage": 0.15,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 5000,
+    "id": "snowman",
+    "imageName": "Snowman",
+    "internalId": "Snowman",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 50,
+        "internalId": "IceOrgan"
+      },
+      {
+        "count": 50,
+        "internalId": "Wood"
+      },
+      {
+        "count": 20,
+        "internalId": "Cloth"
+      }
+    ],
+    "name": "Snowman",
+    "requiredEnergyType": null,
+    "typeA": "Other",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 60000,
+    "consumeEnergySpeed": 0,
+    "defense": 3,
+    "description": "Place in base to improve electricity generating speed. Placing more than one has no additional effect.",
+    "deteriorationDamage": 0.15,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 5000,
+    "id": "electric-pylon",
+    "imageName": "TransmissionTower",
+    "internalId": "TransmissionTower",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 100,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 30,
+        "internalId": "ElectricOrgan"
+      },
+      {
+        "count": 20,
+        "internalId": "MachineParts2"
+      }
+    ],
+    "name": "Electric Pylon",
+    "requiredEnergyType": null,
+    "typeA": "Other",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 2000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "You can command your Pals to work on various things inside a base. Try not to overwork them!",
+    "deteriorationDamage": 0.12,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 4000,
+    "id": "monitoring-stand",
+    "imageName": "BaseCampWorkHard",
+    "internalId": "BaseCampWorkHard",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 30,
+        "internalId": "Wood"
+      },
+      {
+        "count": 10,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Monitoring Stand",
+    "requiredEnergyType": null,
+    "typeA": "Pal",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 5000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Small food vault. Assign an Ice Pal to help prevent food stored inside from spoiling.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "cooler-box",
+    "imageName": "CoolerBox",
+    "internalId": "CoolerBox",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 20,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 20,
+        "internalId": "Stone"
+      },
+      {
+        "count": 5,
+        "internalId": "IceOrgan"
+      }
+    ],
+    "name": "Cooler Box",
+    "requiredEnergyType": null,
+    "typeA": "Storage",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 50000,
+    "consumeEnergySpeed": 50,
+    "defense": 3,
+    "description": "Large food vault. Assign an Ice Pal to help prevent food stored inside from spoiling.",
+    "deteriorationDamage": 0.1,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 5000,
+    "id": "refrigerator",
+    "imageName": "Refrigerator",
+    "internalId": "Refrigerator",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 50,
+        "internalId": "IronIngot"
+      },
+      {
+        "count": 20,
+        "internalId": "Polymer"
+      },
+      {
+        "count": 15,
+        "internalId": "IceOrgan"
+      },
+      {
+        "count": 5,
+        "internalId": "MachineParts2"
+      }
+    ],
+    "name": "Refrigerator",
+    "requiredEnergyType": "Electric",
+    "typeA": "Storage",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 1000,
+    "consumeEnergySpeed": 0,
+    "defense": 1,
+    "description": "Can be written on. Use for memos or to communicate with others.",
+    "deteriorationDamage": 0.04,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 1000,
+    "id": "sign",
+    "imageName": "Signboard",
+    "internalId": "Signboard",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "Wood"
+      }
+    ],
+    "name": "Sign",
+    "requiredEnergyType": null,
+    "typeA": "Other",
+    "typeB": "Other"
+  },
+  {
+    "buildWork": 15000,
+    "consumeEnergySpeed": 0,
+    "defense": 3,
+    "description": "Farm for raising sheep and fowl-like Pals. Assign a Pal with the appropriate Partner Skill to a farm to produce items.",
+    "deteriorationDamage": 0.2,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 5000,
+    "id": "ranch",
+    "imageName": "MonsterFarm",
+    "internalId": "MonsterFarm",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 50,
+        "internalId": "Wood"
+      },
+      {
+        "count": 20,
+        "internalId": "Stone"
+      },
+      {
+        "count": 30,
+        "internalId": "Fiber"
+      }
+    ],
+    "name": "Ranch",
+    "requiredEnergyType": null,
+    "typeA": "Pal",
+    "typeB": "Pal_Breed"
+  },
+  {
+    "buildWork": 2000,
+    "consumeEnergySpeed": 0,
+    "defense": 100,
+    "description": "Training dummy shaped like a Pengullet. Can only be placed in wide open areas.",
+    "deteriorationDamage": 0,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 50000,
+    "id": "training-dummy",
+    "imageName": "DamagedScarecrow",
+    "internalId": "DamagedScarecrow",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 20,
+        "internalId": "Wood"
+      },
+      {
+        "count": 5,
+        "internalId": "Fiber"
+      },
+      {
+        "count": 5,
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "name": "Training Dummy",
+    "requiredEnergyType": null,
+    "typeA": "Other",
+    "typeB": "Other"
+  },
+  {
+    "buildWork": 3000,
+    "consumeEnergySpeed": 0,
+    "defense": 1,
+    "description": "Bell that sets the alert status for Pals on base. Change Pal behavior to either attack invading enemies, or focus entirely on work whenever you like.",
+    "deteriorationDamage": 0.04,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 1000,
+    "id": "alarm-bell",
+    "imageName": "BaseCampBattleDirector",
+    "internalId": "BaseCampBattleDirector",
+    "materialSubType": "Stone",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 5,
+        "internalId": "Pal_crystal_S"
+      },
+      {
+        "count": 20,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Alarm Bell",
+    "requiredEnergyType": null,
+    "typeA": "Defense",
+    "typeB": "Other"
+  },
+  {
+    "buildWork": 2000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Wooden barrel for storing items.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "wooden-barrel",
+    "imageName": "Barrel_Wood",
+    "internalId": "Barrel_Wood",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 30,
+        "internalId": "Wood"
+      },
+      {
+        "count": 5,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Wooden Barrel",
+    "requiredEnergyType": null,
+    "typeA": "Storage",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 2000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Wooden box for storing items.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "wooden-box",
+    "imageName": "Box_Wood",
+    "internalId": "Box_Wood",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 30,
+        "internalId": "Wood"
+      },
+      {
+        "count": 5,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Wooden Box",
+    "requiredEnergyType": null,
+    "typeA": "Storage",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 5000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Wooden shelf for storing items.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "wooden-shelf",
+    "imageName": "Shelf_Wood",
+    "internalId": "Shelf_Wood",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 40,
+        "internalId": "Wood"
+      },
+      {
+        "count": 2,
+        "internalId": "MachineParts"
+      }
+    ],
+    "name": "Wooden Shelf",
+    "requiredEnergyType": null,
+    "typeA": "Storage",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 5000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Wooden barrel shelf for storing items.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "wooden-barrel-shelf",
+    "imageName": "Shelf_Cask_Wood",
+    "internalId": "Shelf_Cask_Wood",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 70,
+        "internalId": "Wood"
+      },
+      {
+        "count": 10,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Wooden Barrel Shelf",
+    "requiredEnergyType": null,
+    "typeA": "Storage",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 2000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Wooden shelf for storing items. Can be placed on a wall.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "wooden-wall-shelf",
+    "imageName": "Shelf_Hang01_Wood",
+    "internalId": "Shelf_Hang01_Wood",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 20,
+        "internalId": "Wood"
+      },
+      {
+        "count": 5,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Wooden Wall Shelf",
+    "requiredEnergyType": null,
+    "typeA": "Storage",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 5000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Antique bookshelf for storing items.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "antique-bookshelf",
+    "imageName": "Shelf01_Stone",
+    "internalId": "Shelf01_Stone",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 40,
+        "internalId": "Wood"
+      },
+      {
+        "count": 2,
+        "internalId": "MachineParts"
+      }
+    ],
+    "name": "Antique Bookshelf",
+    "requiredEnergyType": null,
+    "typeA": "Storage",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 10000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Antique wardrobe for storing items.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "antique-wardrobe",
+    "imageName": "Shelf02_Stone",
+    "internalId": "Shelf02_Stone",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 70,
+        "internalId": "Wood"
+      },
+      {
+        "count": 5,
+        "internalId": "MachineParts"
+      }
+    ],
+    "name": "Antique Wardrobe",
+    "requiredEnergyType": null,
+    "typeA": "Storage",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 5000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Antique chest for storing items. Adorned with a photo of a Pal.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "antique-chest",
+    "imageName": "Shelf03_Stone",
+    "internalId": "Shelf03_Stone",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 30,
+        "internalId": "Wood"
+      },
+      {
+        "count": 10,
+        "internalId": "CopperIngot"
+      }
+    ],
+    "name": "Antique Chest",
+    "requiredEnergyType": null,
+    "typeA": "Storage",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 2500,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Antique side chest for storing items. Adorned with a photo of a Pal.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "antique-side-chest",
+    "imageName": "Shelf04_Stone",
+    "internalId": "Shelf04_Stone",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 15,
+        "internalId": "Wood"
+      },
+      {
+        "count": 3,
+        "internalId": "CopperIngot"
+      }
+    ],
+    "name": "Antique Side Chest",
+    "requiredEnergyType": null,
+    "typeA": "Storage",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 4000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Iron wall shelf for storing items. Can be placed on a wall.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "iron-wall-shelf",
+    "imageName": "Shelf01_Wall_Iron",
+    "internalId": "Shelf01_Wall_Iron",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 15,
+        "internalId": "Wood"
+      },
+      {
+        "count": 10,
+        "internalId": "CopperIngot"
+      }
+    ],
+    "name": "Iron Wall Shelf",
+    "requiredEnergyType": null,
+    "typeA": "Storage",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 5000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Antique cabinet for storing items.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "antique-cabinet",
+    "imageName": "Shelf05_Stone",
+    "internalId": "Shelf05_Stone",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 30,
+        "internalId": "Wood"
+      },
+      {
+        "count": 10,
+        "internalId": "Fiber"
+      }
+    ],
+    "name": "Antique Cabinet",
+    "requiredEnergyType": null,
+    "typeA": "Storage",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 7000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Antique long cabinet for storing items. Adorned with a photo of a Pal.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "antique-long-cabinet",
+    "imageName": "Shelf06_Stone",
+    "internalId": "Shelf06_Stone",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 40,
+        "internalId": "Wood"
+      },
+      {
+        "count": 10,
+        "internalId": "Fiber"
+      }
+    ],
+    "name": "Antique Long Cabinet",
+    "requiredEnergyType": null,
+    "typeA": "Storage",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 8000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Large antique cabinet for storing items.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "large-antique-cabinet",
+    "imageName": "Shelf07_Stone",
+    "internalId": "Shelf07_Stone",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 40,
+        "internalId": "Wood"
+      },
+      {
+        "count": 10,
+        "internalId": "Fiber"
+      },
+      {
+        "count": 3,
+        "internalId": "CopperIngot"
+      }
+    ],
+    "name": "Large Antique Cabinet",
+    "requiredEnergyType": null,
+    "typeA": "Storage",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 2000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Antique cabinet for storing items. Can be placed on walls.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "antique-wall-cabinet",
+    "imageName": "Shelf01_Wall_Stone",
+    "internalId": "Shelf01_Wall_Stone",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 20,
+        "internalId": "Wood"
+      },
+      {
+        "count": 5,
+        "internalId": "Stone"
+      },
+      {
+        "count": 3,
+        "internalId": "Berries"
+      }
+    ],
+    "name": "Antique Wall Cabinet",
+    "requiredEnergyType": null,
+    "typeA": "Storage",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 8000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Iron shelf for storing items.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "iron-shelf",
+    "imageName": "Shelf01_Iron",
+    "internalId": "Shelf01_Iron",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 20,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 1,
+        "internalId": "MachineParts"
+      }
+    ],
+    "name": "Iron Shelf",
+    "requiredEnergyType": null,
+    "typeA": "Storage",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 8000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Long iron shelf for storing items.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "long-iron-shelf",
+    "imageName": "Shelf02_Iron",
+    "internalId": "Shelf02_Iron",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 20,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 2,
+        "internalId": "MachineParts"
+      }
+    ],
+    "name": "Long Iron Shelf",
+    "requiredEnergyType": null,
+    "typeA": "Storage",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 12000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Orange locker for storing items. Decorated with Pal stickers.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "orange-locker",
+    "imageName": "Shelf03_Iron",
+    "internalId": "Shelf03_Iron",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 30,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 3,
+        "internalId": "MachineParts"
+      }
+    ],
+    "name": "Orange Locker",
+    "requiredEnergyType": null,
+    "typeA": "Storage",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 12000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Locker for storing items. Decorated with Pal stickers.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "locker",
+    "imageName": "Shelf04_Iron",
+    "internalId": "Shelf04_Iron",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 30,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 3,
+        "internalId": "MachineParts"
+      }
+    ],
+    "name": "Locker",
+    "requiredEnergyType": null,
+    "typeA": "Storage",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 50000,
+    "consumeEnergySpeed": 0,
+    "defense": 4,
+    "description": "Large container for storing items. Imitates the designs left behind by an ancient and prosperous civilization.",
+    "deteriorationDamage": 0.4,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 10000,
+    "id": "large-container",
+    "imageName": "Container01_Iron",
+    "internalId": "Container01_Iron",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 100,
+        "internalId": "CopperIngot"
+      }
+    ],
+    "name": "Large Container",
+    "requiredEnergyType": null,
+    "typeA": "Storage",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 2000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Small container for storing items.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "small-container",
+    "imageName": "Box01_Iron",
+    "internalId": "Box01_Iron",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 20,
+        "internalId": "Wood"
+      }
+    ],
+    "name": "Small Container",
+    "requiredEnergyType": null,
+    "typeA": "Storage",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 2000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Cloth covered container for storing items.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "cloth-covered-container",
+    "imageName": "Box02_Iron",
+    "internalId": "Box02_Iron",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 15,
+        "internalId": "Wood"
+      },
+      {
+        "count": 2,
+        "internalId": "Cloth"
+      }
+    ],
+    "name": "Cloth Covered Container",
+    "requiredEnergyType": null,
+    "typeA": "Storage",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 3000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative square table.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "square-table",
+    "imageName": "TableSquare_Wood",
+    "internalId": "TableSquare_Wood",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 20,
+        "internalId": "Wood"
+      },
+      {
+        "count": 5,
+        "internalId": "Berries"
+      }
+    ],
+    "name": "Square Table",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 3000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative round table.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "round-table",
+    "imageName": "TableCircular_Wood",
+    "internalId": "TableCircular_Wood",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 20,
+        "internalId": "Wood"
+      },
+      {
+        "count": 5,
+        "internalId": "Berries"
+      }
+    ],
+    "name": "Round Table",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 1000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative wooden bench.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "wooden-bench",
+    "imageName": "Bench_Wood",
+    "internalId": "Bench_Wood",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "Wood"
+      }
+    ],
+    "name": "Wooden Bench",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 1000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative wooden stool.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "wooden-stool",
+    "imageName": "Stool_Wood",
+    "internalId": "Stool_Wood",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 5,
+        "internalId": "Wood"
+      }
+    ],
+    "name": "Wooden Stool",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 1000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative bar stool.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "wooden-bar-stool",
+    "imageName": "Stool_High_Wood",
+    "internalId": "Stool_High_Wood",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 8,
+        "internalId": "Wood"
+      }
+    ],
+    "name": "Wooden Bar Stool",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 1000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative wooden chair.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "wooden-chair",
+    "imageName": "Chair01_Wood",
+    "internalId": "Chair01_Wood",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "Wood"
+      }
+    ],
+    "name": "Wooden Chair",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 2000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative wooden shelf. Can be placed on a wall.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "wooden-decorative-wall-shelf",
+    "imageName": "Shelf_Hang02_Wood",
+    "internalId": "Shelf_Hang02_Wood",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 5,
+        "internalId": "Wood"
+      },
+      {
+        "count": 5,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Wooden Decorative Wall Shelf",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 10000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative wooden counter.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "wooden-counter",
+    "imageName": "Counter_Wood",
+    "internalId": "Counter_Wood",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 30,
+        "internalId": "Wood"
+      },
+      {
+        "count": 5,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Wooden Counter",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 2000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative houseplant.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "houseplant",
+    "imageName": "Plant01_Plant",
+    "internalId": "Plant01_Plant",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "Wood"
+      },
+      {
+        "count": 5,
+        "internalId": "Fiber"
+      }
+    ],
+    "name": "Houseplant",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 2000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative houseplant and chair.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "houseplant-and-chair",
+    "imageName": "Plant02_Plant",
+    "internalId": "Plant02_Plant",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "Wood"
+      },
+      {
+        "count": 5,
+        "internalId": "Fiber"
+      }
+    ],
+    "name": "Houseplant and Chair",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 2000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative tabletop houseplant.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "tabletop-houseplant",
+    "imageName": "Plant03_Plant",
+    "internalId": "Plant03_Plant",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "Stone"
+      },
+      {
+        "count": 5,
+        "internalId": "Fiber"
+      }
+    ],
+    "name": "Tabletop Houseplant",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 1000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative potted houseplant.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "potted-houseplant",
+    "imageName": "Plant04_Plant",
+    "internalId": "Plant04_Plant",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 5,
+        "internalId": "Stone"
+      },
+      {
+        "count": 5,
+        "internalId": "Fiber"
+      }
+    ],
+    "name": "Potted Houseplant",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative large ivy. Can be placed on a wall.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "big-wall-ivy",
+    "imageName": "Ivy01",
+    "internalId": "Ivy01",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "Fiber"
+      }
+    ],
+    "name": "Big Wall Ivy",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative small ivy. Can be placed on a wall.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "small-wall-ivy",
+    "imageName": "Ivy02",
+    "internalId": "Ivy02",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 5,
+        "internalId": "Fiber"
+      }
+    ],
+    "name": "Small Wall Ivy",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative horizontal ivy. Can be placed on a wall.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "horizontal-wall-ivy",
+    "imageName": "Ivy03",
+    "internalId": "Ivy03",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 5,
+        "internalId": "Fiber"
+      }
+    ],
+    "name": "Horizontal Wall Ivy",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 2000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative antique carpet.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "antique-carpet",
+    "imageName": "Rug01_Stone",
+    "internalId": "Rug01_Stone",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 3,
+        "internalId": "Cloth"
+      },
+      {
+        "count": 1,
+        "internalId": "Venom"
+      }
+    ],
+    "name": "Antique Carpet",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 1500,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative antique red carpet.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "antique-red-carpet",
+    "imageName": "Rug02_Stone",
+    "internalId": "Rug02_Stone",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 2,
+        "internalId": "Cloth"
+      },
+      {
+        "count": 1,
+        "internalId": "FireOrgan"
+      }
+    ],
+    "name": "Antique Red Carpet",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 1500,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative antique green carpet.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "antique-green-carpet",
+    "imageName": "Rug03_Stone",
+    "internalId": "Rug03_Stone",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 2,
+        "internalId": "Cloth"
+      },
+      {
+        "count": 1,
+        "internalId": "PalOil"
+      }
+    ],
+    "name": "Antique Green Carpet",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 1000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative antique long carpet.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "antique-long-carpet",
+    "imageName": "Rug04_Stone",
+    "internalId": "Rug04_Stone",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 1,
+        "internalId": "Cloth"
+      },
+      {
+        "count": 1,
+        "internalId": "FireOrgan"
+      }
+    ],
+    "name": "Antique Long Carpet",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 2000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative antique wooden chair.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "antique-wooden-chair",
+    "imageName": "Chair01_Stone",
+    "internalId": "Chair01_Stone",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "Wood"
+      }
+    ],
+    "name": "Antique Wooden Chair",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 2000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative antique green wooden chair.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "antique-green-wooden-chair",
+    "imageName": "Chair02_Stone",
+    "internalId": "Chair02_Stone",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "Wood"
+      },
+      {
+        "count": 1,
+        "internalId": "Venom"
+      }
+    ],
+    "name": "Antique Green Wooden Chair",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 1000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative antique stool.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "antique-stool",
+    "imageName": "Stool01_Stone",
+    "internalId": "Stool01_Stone",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 5,
+        "internalId": "Wood"
+      }
+    ],
+    "name": "Antique Stool",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 5000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative antique desk.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "antique-desk",
+    "imageName": "Desk01_Stone",
+    "internalId": "Desk01_Stone",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 25,
+        "internalId": "Wood"
+      },
+      {
+        "count": 5,
+        "internalId": "Fiber"
+      },
+      {
+        "count": 5,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Antique Desk",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 3000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative antique round table.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "antique-round-table",
+    "imageName": "TableCircular01_Stone",
+    "internalId": "TableCircular01_Stone",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 15,
+        "internalId": "Wood"
+      },
+      {
+        "count": 5,
+        "internalId": "Fiber"
+      },
+      {
+        "count": 2,
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Antique Round Table",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 2500,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative antique dresser.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "antique-dresser",
+    "imageName": "TableDresser01_Stone",
+    "internalId": "TableDresser01_Stone",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 15,
+        "internalId": "Wood"
+      },
+      {
+        "count": 5,
+        "internalId": "Fiber"
+      },
+      {
+        "count": 5,
+        "internalId": "Stone"
+      },
+      {
+        "count": 1,
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "name": "Antique Dresser",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 2500,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative antique armchair.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "antique-armchair",
+    "imageName": "Sofa01_Stone",
+    "internalId": "Sofa01_Stone",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "Wood"
+      },
+      {
+        "count": 2,
+        "internalId": "Cloth"
+      },
+      {
+        "count": 1,
+        "internalId": "FireOrgan"
+      }
+    ],
+    "name": "Antique Armchair",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 5000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative antique couch.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "antique-couch",
+    "imageName": "Sofa02_Stone",
+    "internalId": "Sofa02_Stone",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 20,
+        "internalId": "Wood"
+      },
+      {
+        "count": 3,
+        "internalId": "Cloth"
+      },
+      {
+        "count": 2,
+        "internalId": "FireOrgan"
+      }
+    ],
+    "name": "Antique Couch",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 1500,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative antique ottoman.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "antique-ottoman",
+    "imageName": "Sofa03_Stone",
+    "internalId": "Sofa03_Stone",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 8,
+        "internalId": "Wood"
+      },
+      {
+        "count": 1,
+        "internalId": "Cloth"
+      },
+      {
+        "count": 1,
+        "internalId": "FireOrgan"
+      }
+    ],
+    "name": "Antique Ottoman",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 4000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative antique bathtub.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "antique-bathtub",
+    "imageName": "BathTub_Stone",
+    "internalId": "BathTub_Stone",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 1,
+        "internalId": "Cloth"
+      },
+      {
+        "count": 20,
+        "internalId": "Stone"
+      },
+      {
+        "count": 1,
+        "internalId": "CopperIngot"
+      }
+    ],
+    "name": "Antique Bathtub",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 1500,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative antique braided basket.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "antique-braided-basket",
+    "imageName": "Box01_Stone",
+    "internalId": "Box01_Stone",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "Fiber"
+      }
+    ],
+    "name": "Antique Braided Basket",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 2000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative antique partition.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "antique-partition",
+    "imageName": "Partition_Stone",
+    "internalId": "Partition_Stone",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 20,
+        "internalId": "Wood"
+      }
+    ],
+    "name": "Antique Partition",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 2000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative antique towel rack.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "antique-towel-rack",
+    "imageName": "TowlRack01_Stone",
+    "internalId": "TowlRack01_Stone",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 1,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 2,
+        "internalId": "Cloth"
+      }
+    ],
+    "name": "Antique Towel Rack",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 3000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative antique oval mirror.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "antique-oval-mirror",
+    "imageName": "Mirror01_Stone",
+    "internalId": "Mirror01_Stone",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "Wood"
+      },
+      {
+        "count": 10,
+        "internalId": "Stone"
+      },
+      {
+        "count": 2,
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "name": "Antique Oval Mirror",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 2000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative antique mirror.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "antique-mirror",
+    "imageName": "Mirror02_Stone",
+    "internalId": "Mirror02_Stone",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "Wood"
+      },
+      {
+        "count": 8,
+        "internalId": "Stone"
+      },
+      {
+        "count": 1,
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "name": "Antique Mirror",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 3000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative antique wall mirror. Can be placed on walls.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "antique-wall-mirror",
+    "imageName": "Mirror01_Wall_Stone",
+    "internalId": "Mirror01_Wall_Stone",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "Wood"
+      },
+      {
+        "count": 10,
+        "internalId": "Stone"
+      },
+      {
+        "count": 2,
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "name": "Antique Wall Mirror",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 10000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative grand piano. Cannot be played.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "grand-piano",
+    "imageName": "Piano01_Stone",
+    "internalId": "Piano01_Stone",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 100,
+        "internalId": "Wood"
+      },
+      {
+        "count": 20,
+        "internalId": "Fiber"
+      },
+      {
+        "count": 5,
+        "internalId": "CopperIngot"
+      }
+    ],
+    "name": "Grand Piano",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 10000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative upright piano. Cannot be played.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "upright-piano",
+    "imageName": "Piano02_Stone",
+    "internalId": "Piano02_Stone",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 100,
+        "internalId": "Wood"
+      },
+      {
+        "count": 20,
+        "internalId": "Fiber"
+      },
+      {
+        "count": 5,
+        "internalId": "CopperIngot"
+      }
+    ],
+    "name": "Upright Piano",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 5000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative antique washstand.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "antique-washstand",
+    "imageName": "TableSink01_Stone",
+    "internalId": "TableSink01_Stone",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 30,
+        "internalId": "Wood"
+      },
+      {
+        "count": 10,
+        "internalId": "Stone"
+      },
+      {
+        "count": 2,
+        "internalId": "Pal_crystal_S"
+      },
+      {
+        "count": 1,
+        "internalId": "Cloth"
+      }
+    ],
+    "name": "Antique Washstand",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 3000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative antique toilet. Cannot be used for its original purpose.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "antique-toilet",
+    "imageName": "Toilet01_Stone",
+    "internalId": "Toilet01_Stone",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 5,
+        "internalId": "Wood"
+      },
+      {
+        "count": 20,
+        "internalId": "Stone"
+      },
+      {
+        "count": 2,
+        "internalId": "CopperIngot"
+      }
+    ],
+    "name": "Antique Toilet",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 500,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative antique toilet paper holder.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "antique-toilet-paper-holder",
+    "imageName": "ToiletHolder01_Stone",
+    "internalId": "ToiletHolder01_Stone",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 1,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 3,
+        "internalId": "Fiber"
+      }
+    ],
+    "name": "Antique Toilet Paper Holder",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 2000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative antique curtain. Can be placed on walls.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "antique-curtain",
+    "imageName": "Curtain01_Wall_Stone",
+    "internalId": "Curtain01_Wall_Stone",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "Wood"
+      },
+      {
+        "count": 3,
+        "internalId": "Cloth"
+      },
+      {
+        "count": 1,
+        "internalId": "CopperIngot"
+      }
+    ],
+    "name": "Antique Curtain",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 5000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative antique globe.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "antique-globe",
+    "imageName": "Globe01_Stone",
+    "internalId": "Globe01_Stone",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 50,
+        "internalId": "Wood"
+      },
+      {
+        "count": 1,
+        "internalId": "CopperIngot"
+      }
+    ],
+    "name": "Antique Globe",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 8000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative antique stove.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "antique-stove",
+    "imageName": "Stove01_Stone",
+    "internalId": "Stove01_Stone",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 20,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 5,
+        "internalId": "Charcoal"
+      }
+    ],
+    "name": "Antique Stove",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 2000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative wall clock. Broken, it doesn't tell time.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "wall-clock",
+    "imageName": "Clock01_Wall_Iron",
+    "internalId": "Clock01_Wall_Iron",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 5,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 3,
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "name": "Wall Clock",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 4000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative antique grandfather clock. Broken, it doesn't tell time.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "antique-grandfather-clock",
+    "imageName": "Clock01_Stone",
+    "internalId": "Clock01_Stone",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 30,
+        "internalId": "Wood"
+      },
+      {
+        "count": 5,
+        "internalId": "CopperIngot"
+      }
+    ],
+    "name": "Antique Grandfather Clock",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 2000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative wooden chair.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "iron-chair",
+    "imageName": "Chair02_Iron",
+    "internalId": "Chair02_Iron",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 3,
+        "internalId": "CopperIngot"
+      }
+    ],
+    "name": "Iron Chair",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 2000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative iron stool.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "iron-stool",
+    "imageName": "Stool01_Iron",
+    "internalId": "Stool01_Iron",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 3,
+        "internalId": "CopperIngot"
+      }
+    ],
+    "name": "Iron Stool",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 4000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative round iron table.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "round-iron-table",
+    "imageName": "TableCircular01_Iron",
+    "internalId": "TableCircular01_Iron",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 5,
+        "internalId": "CopperIngot"
+      }
+    ],
+    "name": "Round Iron Table",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 8000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative iron desk.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "iron-desk",
+    "imageName": "Desk01_Iron",
+    "internalId": "Desk01_Iron",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 20,
+        "internalId": "Wood"
+      },
+      {
+        "count": 15,
+        "internalId": "CopperIngot"
+      }
+    ],
+    "name": "Iron Desk",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 1500,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative ironwood side table.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "ironwood-side-table",
+    "imageName": "TableSide01_Iron",
+    "internalId": "TableSide01_Iron",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "Wood"
+      },
+      {
+        "count": 2,
+        "internalId": "CopperIngot"
+      }
+    ],
+    "name": "Ironwood Side Table",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 5000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative ironwood table.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "ironwood-table",
+    "imageName": "TableSquare01_Iron",
+    "internalId": "TableSquare01_Iron",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 20,
+        "internalId": "Wood"
+      },
+      {
+        "count": 5,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 2,
+        "internalId": "Berries"
+      }
+    ],
+    "name": "Ironwood Table",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 3000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative ironwood low table.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "ironwood-low-table",
+    "imageName": "TableSquare02_Iron",
+    "internalId": "TableSquare02_Iron",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 20,
+        "internalId": "Wood"
+      },
+      {
+        "count": 2,
+        "internalId": "CopperIngot"
+      }
+    ],
+    "name": "Ironwood Low Table",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 6000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative cable reel.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "cable-reel",
+    "imageName": "CableCoil01_Iron",
+    "internalId": "CableCoil01_Iron",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 20,
+        "internalId": "Wood"
+      },
+      {
+        "count": 10,
+        "internalId": "CopperIngot"
+      }
+    ],
+    "name": "Cable Reel",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 2000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative garbage bag.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "garbage-bag",
+    "imageName": "GarbageBag_Iron",
+    "internalId": "GarbageBag_Iron",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 5,
+        "internalId": "Wood"
+      },
+      {
+        "count": 5,
+        "internalId": "Stone"
+      },
+      {
+        "count": 5,
+        "internalId": "Fiber"
+      }
+    ],
+    "name": "Garbage Bag",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 2000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative earthen pipe.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "earthen-pipe",
+    "imageName": "PipeClay01_Iron",
+    "internalId": "PipeClay01_Iron",
+    "materialSubType": "Stone",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 5,
+        "internalId": "Cement"
+      }
+    ],
+    "name": "Earthen Pipe",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 2000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative tire.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "tire",
+    "imageName": "Tire01_Iron",
+    "internalId": "Tire01_Iron",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 2,
+        "internalId": "PalOil"
+      },
+      {
+        "count": 2,
+        "internalId": "PalFluid"
+      }
+    ],
+    "name": "Tire",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 3000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative red metal barrel.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "red-metal-barrel",
+    "imageName": "Barrel01_Iron",
+    "internalId": "Barrel01_Iron",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 1,
+        "internalId": "FireOrgan"
+      }
+    ],
+    "name": "Red Metal Barrel",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 3000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative blue metal barrel.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "blue-metal-barrel",
+    "imageName": "Barrel02_Iron",
+    "internalId": "Barrel02_Iron",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 1,
+        "internalId": "PalFluid"
+      }
+    ],
+    "name": "Blue Metal Barrel",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 3000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative green metal barrel.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "green-metal-barrel",
+    "imageName": "Barrel03_Iron",
+    "internalId": "Barrel03_Iron",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 1,
+        "internalId": "Venom"
+      }
+    ],
+    "name": "Green Metal Barrel",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 1000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative leather chair.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "leather-chair",
+    "imageName": "Chair01_Iron",
+    "internalId": "Chair01_Iron",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 2,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 1,
+        "internalId": "Leather"
+      }
+    ],
+    "name": "Leather Chair",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 2000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative leather armchair.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "leather-armchair",
+    "imageName": "Sofa01_Iron",
+    "internalId": "Sofa01_Iron",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "Wood"
+      },
+      {
+        "count": 2,
+        "internalId": "Leather"
+      },
+      {
+        "count": 1,
+        "internalId": "Cloth"
+      }
+    ],
+    "name": "Leather Armchair",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 4000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative leather couch.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "leather-couch",
+    "imageName": "Sofa02_Iron",
+    "internalId": "Sofa02_Iron",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 20,
+        "internalId": "Wood"
+      },
+      {
+        "count": 3,
+        "internalId": "Leather"
+      }
+    ],
+    "name": "Leather Couch",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 1000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Cute decorative chair.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "frog-chair",
+    "imageName": "Chair01_Pal",
+    "internalId": "Chair01_Pal",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 2,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 2,
+        "internalId": "Leather"
+      }
+    ],
+    "name": "Frog Chair",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 10000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative soccer goal. Kicking a Lamball into it will get you no points.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "soccer-goal",
+    "imageName": "GoalSoccer_Iron",
+    "internalId": "GoalSoccer_Iron",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 20,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 20,
+        "internalId": "Fiber"
+      }
+    ],
+    "name": "Soccer Goal",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 12000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative claw crane. Broken, it can't be played.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "claw-crane",
+    "imageName": "MachineGame01_Iron",
+    "internalId": "MachineGame01_Iron",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 30,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 5,
+        "internalId": "Cloth"
+      }
+    ],
+    "name": "Claw Crane",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 10000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative cola vending machine. Cannot be used to buy items.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "cola-vending-machine",
+    "imageName": "MachineVending01_Iron",
+    "internalId": "MachineVending01_Iron",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 30,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 2,
+        "internalId": "IceOrgan"
+      }
+    ],
+    "name": "Cola Vending Machine",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 5000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative old TV. Left behind by an ancient civilization, now it only shows images of Pengullet.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "old-tv",
+    "imageName": "Television01_Iron",
+    "internalId": "Television01_Iron",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 20,
+        "internalId": "Wood"
+      },
+      {
+        "count": 1,
+        "internalId": "MachineParts2"
+      }
+    ],
+    "name": "Old TV",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 1000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative emergency exit sign. Can be placed on ceilings.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "emergency-exit-ceiling-sign",
+    "imageName": "SignExit_Ceiling_Iron",
+    "internalId": "SignExit_Ceiling_Iron",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 1,
+        "internalId": "Polymer"
+      },
+      {
+        "count": 1,
+        "internalId": "ElectricOrgan"
+      }
+    ],
+    "name": "Emergency Exit Ceiling Sign",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 1000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative emergency exit sign. Can be placed on walls.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "emergency-exit-wall-sign",
+    "imageName": "SignExit_Wall_Iron",
+    "internalId": "SignExit_Wall_Iron",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 1,
+        "internalId": "Polymer"
+      },
+      {
+        "count": 1,
+        "internalId": "ElectricOrgan"
+      }
+    ],
+    "name": "Emergency Exit Wall Sign",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 2000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative traffic cone.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "traffic-cone",
+    "imageName": "TrafficCone01_Iron",
+    "internalId": "TrafficCone01_Iron",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 1,
+        "internalId": "Polymer"
+      }
+    ],
+    "name": "Traffic Cone",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 3000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative fat traffic cone.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "fat-traffic-cone",
+    "imageName": "TrafficCone02_Iron",
+    "internalId": "TrafficCone02_Iron",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 2,
+        "internalId": "Polymer"
+      }
+    ],
+    "name": "Fat Traffic Cone",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 1000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative skinny traffic cone.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "skinny-traffic-cone",
+    "imageName": "TrafficCone03_Iron",
+    "internalId": "TrafficCone03_Iron",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 1,
+        "internalId": "Polymer"
+      }
+    ],
+    "name": "Skinny Traffic Cone",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 6000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative traffic light.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "traffic-light",
+    "imageName": "TrafficLight01_Iron",
+    "internalId": "TrafficLight01_Iron",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 20,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 2,
+        "internalId": "ElectricOrgan"
+      }
+    ],
+    "name": "Traffic Light",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 2000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative No Pals Beyond sign. Used in ancient times, it now serves no real purpose.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "no-pals-beyond-sign",
+    "imageName": "TrafficSign01_Iron",
+    "internalId": "TrafficSign01_Iron",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 5,
+        "internalId": "CopperIngot"
+      }
+    ],
+    "name": "No Pals Beyond Sign",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 2000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative Stop sign. Used in ancient times, it now serves no real purpose.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "stop-sign",
+    "imageName": "TrafficSign02_Iron",
+    "internalId": "TrafficSign02_Iron",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 5,
+        "internalId": "CopperIngot"
+      }
+    ],
+    "name": "Stop Sign",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 2000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative Beware of Eikthyrdeer sign. In ancient times, collisions between Eikthyrdeer and other Pals were frequent.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "beware-of-eikthyrdeer-sign",
+    "imageName": "TrafficSign03_Iron",
+    "internalId": "TrafficSign03_Iron",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 5,
+        "internalId": "CopperIngot"
+      }
+    ],
+    "name": "Beware of Eikthyrdeer Sign",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 2000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative Beware of Mammorest sign. In ancient times, those who angered a Mammorest were often killed.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "beware-of-mammorest-sign",
+    "imageName": "TrafficSign04_Iron",
+    "internalId": "TrafficSign04_Iron",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 5,
+        "internalId": "CopperIngot"
+      }
+    ],
+    "name": "Beware of Mammorest Sign",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 2000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative barricade.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "barricade",
+    "imageName": "TrafficBarricade01_Iron",
+    "internalId": "TrafficBarricade01_Iron",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 5,
+        "internalId": "CopperIngot"
+      }
+    ],
+    "name": "Barricade",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 2000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative orange barricade.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "orange-barricade",
+    "imageName": "TrafficBarricade02_Iron",
+    "internalId": "TrafficBarricade02_Iron",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 3,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 1,
+        "internalId": "Polymer"
+      }
+    ],
+    "name": "Orange Barricade",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 3000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative red barricade.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "red-iron-barricade",
+    "imageName": "TrafficBarricade03_Iron",
+    "internalId": "TrafficBarricade03_Iron",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 5,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 1,
+        "internalId": "FireOrgan"
+      }
+    ],
+    "name": "Red Iron Barricade",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 3000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative white barricade.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "white-iron-barricade",
+    "imageName": "TrafficBarricade04_Iron",
+    "internalId": "TrafficBarricade04_Iron",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 5,
+        "internalId": "CopperIngot"
+      }
+    ],
+    "name": "White Iron Barricade",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 3000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Decorative iron fence.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "iron-fence",
+    "imageName": "TrafficBarricade05_Iron",
+    "internalId": "TrafficBarricade05_Iron",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 5,
+        "internalId": "CopperIngot"
+      }
+    ],
+    "name": "Iron Fence",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 2000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "en Text",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "fur-rug",
+    "imageName": "Rug_Wood",
+    "internalId": "Rug_Wood",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 1,
+        "internalId": "Wood"
+      }
+    ],
+    "name": "Fur rug",
+    "requiredEnergyType": null,
+    "typeA": "Furniture",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 10000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Brick fireplace that provides illumination. Must be lit with fire from a Fire Pal.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "brick-fireplace",
+    "imageName": "Light_FirePlace01",
+    "internalId": "Light_FirePlace01",
+    "materialSubType": "Stone",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 30,
+        "internalId": "Wood"
+      },
+      {
+        "count": 15,
+        "internalId": "Stone"
+      },
+      {
+        "count": 5,
+        "internalId": "Charcoal"
+      }
+    ],
+    "name": "Brick Fireplace",
+    "requiredEnergyType": null,
+    "typeA": "Light",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 10000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Fireplace that provides illumination. Must be lit with fire from a Fire Pal.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "fireplace",
+    "imageName": "Light_FirePlace02",
+    "internalId": "Light_FirePlace02",
+    "materialSubType": "Stone",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 15,
+        "internalId": "Wood"
+      },
+      {
+        "count": 30,
+        "internalId": "Stone"
+      },
+      {
+        "count": 5,
+        "internalId": "Charcoal"
+      }
+    ],
+    "name": "Fireplace",
+    "requiredEnergyType": null,
+    "typeA": "Light",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 10000,
+    "consumeEnergySpeed": 10,
+    "defense": 2,
+    "description": "Simple street lamp that provides illumination. Requires electricity to light.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "simple-street-lamp",
+    "imageName": "Light_LightPole01",
+    "internalId": "Light_LightPole01",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 20,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 3,
+        "internalId": "ElectricOrgan"
+      },
+      {
+        "count": 3,
+        "internalId": "MachineParts"
+      }
+    ],
+    "name": "Simple Street Lamp",
+    "requiredEnergyType": "Electric",
+    "typeA": "Light",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 10000,
+    "consumeEnergySpeed": 10,
+    "defense": 2,
+    "description": "Double street lamp that provides illumination. Requires electricity to light.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "double-street-lamp",
+    "imageName": "Light_LightPole02",
+    "internalId": "Light_LightPole02",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 20,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 3,
+        "internalId": "ElectricOrgan"
+      },
+      {
+        "count": 3,
+        "internalId": "MachineParts"
+      }
+    ],
+    "name": "Double Street Lamp",
+    "requiredEnergyType": "Electric",
+    "typeA": "Light",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 10000,
+    "consumeEnergySpeed": 10,
+    "defense": 2,
+    "description": "Retro street lamp that provides illumination. Requires electricity to light.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "retro-street-lamp",
+    "imageName": "Light_LightPole03",
+    "internalId": "Light_LightPole03",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 20,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 3,
+        "internalId": "ElectricOrgan"
+      },
+      {
+        "count": 3,
+        "internalId": "MachineParts"
+      }
+    ],
+    "name": "Retro Street Lamp",
+    "requiredEnergyType": "Electric",
+    "typeA": "Light",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 10000,
+    "consumeEnergySpeed": 10,
+    "defense": 2,
+    "description": "Stylish street lamp that provides illumination. Requires electricity to light.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "stylish-street-lamp",
+    "imageName": "Light_LightPole04",
+    "internalId": "Light_LightPole04",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 20,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 3,
+        "internalId": "ElectricOrgan"
+      },
+      {
+        "count": 3,
+        "internalId": "MachineParts"
+      }
+    ],
+    "name": "Stylish Street Lamp",
+    "requiredEnergyType": "Electric",
+    "typeA": "Light",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 7000,
+    "consumeEnergySpeed": 10,
+    "defense": 2,
+    "description": "Antique brown floor lamp that provides illumination. Requires electricity to light.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "antique-brown-floor-lamp",
+    "imageName": "Light_FloorLamp01",
+    "internalId": "Light_FloorLamp01",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 30,
+        "internalId": "Wood"
+      },
+      {
+        "count": 3,
+        "internalId": "ElectricOrgan"
+      },
+      {
+        "count": 3,
+        "internalId": "MachineParts"
+      }
+    ],
+    "name": "Antique Brown Floor Lamp",
+    "requiredEnergyType": "Electric",
+    "typeA": "Light",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 7000,
+    "consumeEnergySpeed": 10,
+    "defense": 2,
+    "description": "Antique red floor lamp that provides illumination. Requires electricity to light.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "antique-red-floor-lamp",
+    "imageName": "Light_FloorLamp02",
+    "internalId": "Light_FloorLamp02",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 30,
+        "internalId": "Wood"
+      },
+      {
+        "count": 3,
+        "internalId": "ElectricOrgan"
+      },
+      {
+        "count": 3,
+        "internalId": "MachineParts"
+      }
+    ],
+    "name": "Antique Red Floor Lamp",
+    "requiredEnergyType": "Electric",
+    "typeA": "Light",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 10000,
+    "consumeEnergySpeed": 10,
+    "defense": 2,
+    "description": "Chandelier that provides illumination. Requires electricity to light.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "chandelier",
+    "imageName": "Light_CandleSticks_Top",
+    "internalId": "Light_CandleSticks_Top",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 20,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 3,
+        "internalId": "ElectricOrgan"
+      },
+      {
+        "count": 3,
+        "internalId": "MachineParts"
+      }
+    ],
+    "name": "Chandelier",
+    "requiredEnergyType": "Electric",
+    "typeA": "Light",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 7000,
+    "consumeEnergySpeed": 7,
+    "defense": 2,
+    "description": "Wall lamp that provides illumination. Requires electricity to light.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "wall-lamp",
+    "imageName": "Light_CandleSticks_Wall",
+    "internalId": "Light_CandleSticks_Wall",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 10,
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 2,
+        "internalId": "ElectricOrgan"
+      },
+      {
+        "count": 2,
+        "internalId": "MachineParts"
+      }
+    ],
+    "name": "Wall Lamp",
+    "requiredEnergyType": "Electric",
+    "typeA": "Light",
+    "typeB": "Infra_Environment"
+  }
+]
