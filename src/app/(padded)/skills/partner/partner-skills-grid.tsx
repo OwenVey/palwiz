@@ -138,7 +138,7 @@ export function PartnerSkillsGrid() {
           <div className="flex flex-col items-end gap-2">
             <div className="text-nowrap text-sm text-gray-11">{filteredSkills.length} results</div>
             <Button asChild variant="secondary" className="w-full">
-              <Link href="/skills">
+              <Link href="/skills/partner">
                 <FilterXIcon className="mr-2 size-4" />
                 Clear Filters
               </Link>
@@ -155,7 +155,7 @@ export function PartnerSkillsGrid() {
 }
 
 const Grid = memo(function Grid({ skills }: { skills: PartnerSkill[] }) {
-  if (skills.length === 0) return <div className="mt-28 flex justify-center text-gray-11">No passive skills found</div>;
+  if (skills.length === 0) return <div className="mt-28 flex justify-center text-gray-11">No partner skills found</div>;
 
   return (
     <div className="grid auto-rows-fr grid-cols-1 gap-4 @2xl:grid-cols-2">
