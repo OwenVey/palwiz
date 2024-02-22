@@ -1,4 +1,4 @@
-import { SkillsGrid } from '@/app/(padded)/skills/skills-grid';
+import { ActiveSkillsGrid } from '@/app/(padded)/skills/active-skills-grid';
 import { type Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -6,5 +6,5 @@ export const metadata: Metadata = {
 };
 
 export default function SkillsPage() {
-  return <SkillsGrid />;
+  return <ActiveSkillsGrid />;
 }
