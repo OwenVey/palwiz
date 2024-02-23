@@ -24,13 +24,13 @@ const config = {
       },
     ],
     '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
+    '@typescript-eslint/require-await': 'off',
     '@typescript-eslint/no-misused-promises': [
-      2,
+      'error',
       {
         checksVoidReturn: { attributes: false },
       },
     ],
-    '@typescript-eslint/no-empty-interface': 'off',
   },
 };
 

@@ -2,7 +2,7 @@ import { Card, type CardProps } from '@/components/ui/card';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { cn } from '@/lib/utils';
 
-interface StickySidebar extends Omit<CardProps, 'hoverEffect'> {}
+type StickySidebar = Omit<CardProps, 'hoverEffect'>;
 export function StickySidebar({ className, children }: StickySidebar) {
   return (
     <Card

@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils';
 import Link, { type LinkProps } from 'next/link';
 import { usePathname } from 'next/navigation';
 
-interface LinkTabsProps extends React.HTMLAttributes<HTMLDivElement> {}
+type LinkTabsProps = React.HTMLAttributes<HTMLDivElement>
 
 export function LinkTabs({ className, children, ...rest }: LinkTabsProps) {
   return (

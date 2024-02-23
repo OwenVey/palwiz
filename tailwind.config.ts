@@ -5,7 +5,7 @@ import { createPlugin } from 'windy-radix-palette';
 
 const colors = createPlugin();
 
-const config = {
+export default {
   future: {
     hoverOnlyWhenSupported: true,
   },
@@ -50,5 +50,3 @@ const config = {
   },
   plugins: [colors.plugin, require('tailwindcss-animate'), containerQueriesPlugin],
 } satisfies Config;
-
-export default config;
