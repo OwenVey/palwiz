@@ -120,6 +120,7 @@ export function ItemsGrid() {
             icon={SearchIcon}
             value={search}
             onChange={(e) => setSearch(e.target.value)}
+            autoFocus
           />
 
           <SortFilter />
@@ -229,5 +230,5 @@ const Grid = memo(
       </div>
     );
   },
-  (prev, next) => prev.items.length === next.items.length && prev.sort === next.sort,
+  (prev, next) => JSON.stringify(prev.items) === JSON.stringify(next.items) && prev.sort === next.sort,
 );
