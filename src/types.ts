@@ -29,6 +29,11 @@ export type CustomImageProps = Omit<ImageProps, 'src' | 'alt'> & {
   alt: string;
 };
 
+export type PageParams = {
+  params: { slug: string };
+  searchParams: Record<string, string | string[] | undefined>;
+};
+
 declare global {
   interface Document {
     mozCancelFullScreen?: () => Promise<void>;
