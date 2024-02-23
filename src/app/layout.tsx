@@ -29,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="overflow-y-scroll" suppressHydrationWarning>
+    <html lang="en" className="[scrollbar-gutter:stable]" suppressHydrationWarning>
       <body className={cn(inter.variable, GeistMono.variable, 'bg-gray-1 font-sans antialiased')}>
         <Providers>
           <Navbar />

@@ -192,39 +192,42 @@ export function ItemsGrid() {
   );
 }
 
-const Grid = memo(function Grid({ items, sort }: { items: Item[]; sort: (typeof SORTS)[number]['value'] }) {
-  if (items.length === 0) return <div className="grid h-full place-items-center text-gray-11">No items found</div>;
+const Grid = memo(
+  function Grid({ items, sort }: { items: Item[]; sort: (typeof SORTS)[number]['value'] }) {
+    if (items.length === 0) return <div className="grid h-full place-items-center text-gray-11">No items found</div>;
 
-  return (
-    <div className="grid auto-rows-fr grid-cols-2 gap-4 @md:grid-cols-3 @xl:grid-cols-4 @[44rem]:grid-cols-5">
-      {items.map((item) => (
-        <Link key={item.internalId} href={`/items/${item.id}`}>
-          <Card
-            className={cn('relative flex h-full flex-col items-center', getItemRarityClass(item.rarity))}
-            hoverEffect
-          >
-            {sort !== 'name' && (
-              <Badge variant="primary" className="absolute -right-1 -top-1">
-                {typeof item[sort] === 'number'
-                  ? item[sort].toLocaleString()
-                  : typeof item[sort] === 'string'
-                    ? capitalCase(item[sort] as string)
-                    : item[sort]}
-              </Badge>
-            )}
+    return (
+      <div className="grid auto-rows-fr grid-cols-2 gap-4 @md:grid-cols-3 @xl:grid-cols-4 @[44rem]:grid-cols-5">
+        {items.map((item) => (
+          <Link key={item.internalId} href={`/items/${item.id}`}>
+            <Card
+              className={cn('relative flex h-full flex-col items-center', getItemRarityClass(item.rarity))}
+              hoverEffect
+            >
+              {sort !== 'name' && (
+                <Badge variant="primary" className="absolute -right-1 -top-1">
+                  {typeof item[sort] === 'number'
+                    ? item[sort].toLocaleString()
+                    : typeof item[sort] === 'string'
+                      ? capitalCase(item[sort] as string)
+                      : item[sort]}
+                </Badge>
+              )}
 
-            <div className="rounded-full border border-gray-4 bg-gray-3 p-1">
-              <ItemImage name={item.imageName} alt={item.name} width={60} height={60} />
-            </div>
-
-            <div className="mt-2 flex flex-1 items-center">
-              <div className="line-clamp-2 text-balance text-center text-sm font-medium text-gray-12 [overflow-wrap:anywhere]">
-                {item.name}
+              <div className="rounded-full border border-gray-4 bg-gray-3 p-1">
+                <ItemImage name={item.imageName} alt={item.name} width={60} height={60} />
               </div>
-            </div>
-          </Card>
-        </Link>
-      ))}
-    </div>
-  );
-});
+
+              <div className="mt-2 flex flex-1 items-center">
+                <div className="line-clamp-2 text-balance text-center text-sm font-medium text-gray-12 [overflow-wrap:anywhere]">
+                  {item.name}
+                </div>
+              </div>
+            </Card>
+          </Link>
+        ))}
+      </div>
+    );
+  },
+  (prev, next) => prev.items.length === next.items.length && prev.sort === next.sort,
+);
