@@ -30,7 +30,7 @@ export function LoadingPageSkeleton({
 }: LoadingPageSkeletonProps) {
   return (
     <div className="flex animate-pulse flex-col gap-4 md:flex-row">
-      <Skeleton className="max-h-[50vh] w-full md:max-h-none md:w-72" style={{ height: sidebarHeight }} />
+      <Skeleton className="max-h-[50vh] w-full md:max-h-none md:w-[294px]" style={{ height: sidebarHeight }} />
       {children ? (
         children
       ) : (

@@ -85,9 +85,9 @@ export function PartnerSkillsGrid() {
                       <PartnerSkillImage
                         name={category}
                         alt={category}
-                        width={40}
-                        height={40}
-                        className="size-10 object-cover"
+                        width={38}
+                        height={38}
+                        className="scale-[1.15]"
                       />
                     </ToggleGroupItem>
                   </span>
@@ -124,7 +124,13 @@ const Grid = memo(function Grid({ skills }: { skills: PartnerSkill[] }) {
         <Card key={partnerSkill.name} className={cn('relative flex h-full flex-col gap-2')}>
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <PartnerSkillImage name={partnerSkill.group} alt={partnerSkill.group} width={40} height={40} />
+              <PartnerSkillImage
+                name={partnerSkill.group}
+                alt={partnerSkill.group}
+                width={40}
+                height={40}
+                className="scale-110"
+              />
               <div className="text-gray-12">{partnerSkill.name}</div>
             </div>
 

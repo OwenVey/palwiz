@@ -175,9 +175,9 @@ export function PalsGrid() {
                       <PartnerSkillImage
                         name={category}
                         alt={category}
-                        width={40}
-                        height={40}
-                        className="size-10 object-cover"
+                        width={38}
+                        height={38}
+                        className="scale-[1.15]"
                       />
                     </ToggleGroupItem>
                   </span>

@@ -48,9 +48,9 @@ export default function PalPage({ params }: { params: { id: string } }) {
                       <PartnerSkillImage
                         name={pal.partnerSkill.group}
                         alt={pal.partnerSkill.group}
-                        width={64}
-                        height={64}
-                        className="size-8 scale-[2]"
+                        width={32}
+                        height={32}
+                        className="scale-[2]"
                       />
                     )}
                     <div className="font-medium text-gray-12">{pal.partnerSkill.name}</div>
