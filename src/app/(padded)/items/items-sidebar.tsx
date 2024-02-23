@@ -23,11 +23,11 @@ export function ItemsSidebar({
   subcategories: string[];
   numResults: number;
 }) {
-  const [{ search, sort, sortDirection, category, subcategory, rarities }, setItemsQuery] =
+  const [{ search, sort, sortDirection, category, subcategory, rarities }, setQueryParams] =
     useQueryStates(itemsQueryParsers);
 
-  function updateQuery(values: Parameters<typeof setItemsQuery>[0]) {
-    void setItemsQuery(values, { clearOnDefault: true, shallow: false });
+  function updateQuery(values: Parameters<typeof setQueryParams>[0]) {
+    void setQueryParams(values, { clearOnDefault: true, shallow: false });
   }
 
   return (
