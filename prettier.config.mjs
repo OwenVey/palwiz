@@ -5,6 +5,7 @@ const config = {
   tabWidth: 2,
   plugins: ['prettier-plugin-organize-imports', 'prettier-plugin-tailwindcss'],
   printWidth: 120,
+  endOfLine: 'auto',
 };
 
 export default config;
