@@ -24,6 +24,16 @@ export const PAL_SORTS = [
   { label: 'Walk Speed', value: 'walkSpeed' },
 ] satisfies Array<{ label: string; value: keyof Pal }>;
 
+// const [search, setSearch] = useQueryString('search');
+// const [{ sort, sortDirection }, , SortFilter] = useQuerySort(SORTS, 'zukanIndex');
+// const [rarity, setRarity] = useQueryString('rarity');
+// const [work, setWork] = useQueryState(
+//   'work',
+//   parseAsStringLiteral(WORK_SUITABILITIES.map(({ id }) => id)).withOptions({ clearOnDefault: true }),
+// );
+// const [elements, setElements] = useQueryStringArray('elements');
+// const [partnerSkills, setPartnerSkills] = useQueryStringArray('partnerSkill');
+
 export const palsQueryParsers = {
   search: parseAsString.withDefault(''),
   sort: parseAsStringLiteral(PAL_SORTS.map(({ value }) => value)).withDefault('name'),
