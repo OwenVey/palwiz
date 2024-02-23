@@ -26,7 +26,7 @@ const SelectTrigger = React.forwardRef<React.ElementRef<typeof SelectPrimitive.T
         {label && <Label htmlFor={id}>{label}</Label>}
         <SelectPrimitive.Trigger
           ref={ref}
-          className="flex h-10 w-full items-center justify-between rounded-lg border border-gray-6 bg-gray-1 px-3 py-2 text-sm ring-offset-gray-1 transition-colors hover:border-gray-7 focus:border-primary-9 focus:outline-none focus:ring-2 focus:ring-primary-4 disabled:cursor-not-allowed disabled:opacity-50 data-[placeholder]:text-gray-10 [&>span]:line-clamp-1"
+          className="flex h-10 w-full items-center justify-between rounded-lg border border-gray-6 bg-gray-1 px-3 py-2 text-sm text-gray-12 ring-offset-gray-1 transition-colors hover:border-gray-7 focus:border-primary-9 focus:outline-none focus:ring-2 focus:ring-primary-4 disabled:cursor-not-allowed disabled:opacity-50 data-[placeholder]:text-gray-10 [&>span]:line-clamp-1"
           {...props}
         >
           <div className="flex items-center gap-2">

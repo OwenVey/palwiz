@@ -131,7 +131,7 @@ const Grid = memo(function Grid({ skills }: { skills: PartnerSkill[] }) {
                 height={40}
                 className="scale-110"
               />
-              <div className="text-gray-12">{partnerSkill.name}</div>
+              <div className="font-medium text-gray-12">{partnerSkill.name}</div>
             </div>
 
             <div className="flex gap-1">

@@ -218,7 +218,7 @@ const Grid = memo(function Grid({ items, sort }: { items: Item[]; sort: (typeof 
             </div>
 
             <div className="mt-2 flex flex-1 items-center">
-              <div className="line-clamp-2 text-balance text-center text-sm text-gray-12 [overflow-wrap:anywhere]">
+              <div className="line-clamp-2 text-balance text-center text-sm font-medium text-gray-12 [overflow-wrap:anywhere]">
                 {item.name}
               </div>
             </div>

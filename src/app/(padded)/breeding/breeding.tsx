@@ -215,7 +215,7 @@ export function PalCard({ pal, className, ...rest }: PalCardProps) {
           height={48}
           className="rounded-full border border-gray-6 bg-gray-1"
         />
-        <div className="text-center text-sm text-gray-12">{pal.name}</div>
+        <div className="text-center text-sm font-medium text-gray-12">{pal.name}</div>
       </Card>
     </Link>
   );

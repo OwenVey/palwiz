@@ -255,7 +255,7 @@ const Grid = memo(function Grid({ pals, sort }: { pals: Pal[]; sort: keyof Pal }
                 height={112}
                 className="rounded-full border border-gray-6 bg-gray-1"
               />
-              <div className="font-medium">{pal.name}</div>
+              <div className="font-medium text-gray-12">{pal.name}</div>
             </div>
           </Card>
         </Link>

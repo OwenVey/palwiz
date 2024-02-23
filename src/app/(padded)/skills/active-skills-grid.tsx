@@ -163,7 +163,7 @@ const Grid = memo(function Grid({ skills }: { skills: ActiveSkill[] }) {
 
             <div className="flex items-center gap-2">
               <ElementImage name={skill.element} alt={skill.element} width={24} height={24} />
-              <div className="text-gray-12">{skill.name}</div>
+              <div className="font-medium text-gray-12">{skill.name}</div>
             </div>
 
             <div className="flex gap-2">

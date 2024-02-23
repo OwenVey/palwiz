@@ -145,7 +145,13 @@ const Grid = memo(function Grid({ skills }: { skills: PassiveSkill[] }) {
               alt={`rank ${skill.rank}`}
               unoptimized
             />
-            <div className={cn('text-gray-12', skill.rank < 0 && 'text-red-12', skill.rank > 1 && 'text-yellow-12')}>
+            <div
+              className={cn(
+                'font-medium text-gray-12',
+                skill.rank < 0 && 'text-red-12',
+                skill.rank > 1 && 'text-yellow-12',
+              )}
+            >
               {skill.name}
             </div>
           </div>

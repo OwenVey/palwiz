@@ -62,7 +62,7 @@ export default function SkillPage({ params }: { params: { id: string } }) {
 
         {skill.effects.length > 0 && (
           <div className="mt-6">
-            <h3 className="font-semibold">Effects</h3>
+            <h3 className="font-medium text-gray-12">Effects</h3>
             <dl className="mt-1">
               {skill.effects.map((effect, index) => (
                 <div
@@ -82,7 +82,7 @@ export default function SkillPage({ params }: { params: { id: string } }) {
 
         {skill.specialAttackRates.length > 0 && (
           <div className="mt-6">
-            <h3 className="font-semibold">Special Attack Rates</h3>
+            <h3 className="font-medium text-gray-12">Special Attack Rates</h3>
             <dl className="mt-1">
               {skill.specialAttackRates.map((attackRate, index) => (
                 <div
