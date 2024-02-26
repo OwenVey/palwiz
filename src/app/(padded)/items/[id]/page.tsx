@@ -65,7 +65,7 @@ export default function ItemPage({ params }: { params: { id: string } }) {
         </div>
 
         <div className="mt-2 text-center">
-          <h1 className="break-all text-2xl font-semibold text-gray-12">{item.name}</h1>
+          <h1 className="text-balance text-2xl font-semibold text-gray-12">{item.name}</h1>
           <p className="capitalize text-gray-11">{item.typeA}</p>
         </div>
 
