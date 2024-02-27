@@ -9065,7 +9065,7 @@
   },
   {
     "energyAmount": 0,
-    "id": "water-broncherry-saddle",
+    "id": "broncherry-aqua-saddle",
     "internalId": "SkillUnlock_SakuraSaurus_Water",
     "materials": [
       {
@@ -9307,7 +9307,7 @@
   },
   {
     "energyAmount": 0,
-    "id": "ice-kingpaca-saddle",
+    "id": "kingpaca-cryst-saddle",
     "internalId": "SkillUnlock_KingAlpaca_Ice",
     "materials": [
       {
@@ -9374,7 +9374,7 @@
   },
   {
     "energyAmount": 0,
-    "id": "water-elphidran-saddle",
+    "id": "elphidran-aqua-saddle",
     "internalId": "SkillUnlock_FairyDragon_Water",
     "materials": [
       {
@@ -9581,7 +9581,7 @@
   },
   {
     "energyAmount": 0,
-    "id": "ice-reptyro-saddle",
+    "id": "reptyro-cryst-saddle",
     "internalId": "SkillUnlock_VolcanicMonster_Ice",
     "materials": [
       {
@@ -9648,7 +9648,7 @@
   },
   {
     "energyAmount": 0,
-    "id": "dark-pyrin-saddle",
+    "id": "pyrin-noct-saddle",
     "internalId": "SkillUnlock_FireKirin_Dark",
     "materials": [
       {
@@ -9967,7 +9967,7 @@
   },
   {
     "energyAmount": 0,
-    "id": "dark-kingferno-saddle",
+    "id": "blazehowl-noct-saddle",
     "internalId": "SkillUnlock_Manticore_Dark",
     "materials": [
       {
@@ -10281,7 +10281,7 @@
   },
   {
     "energyAmount": 0,
-    "id": "water-suzaku-saddle",
+    "id": "suzaku-aqua-saddle",
     "internalId": "SkillUnlock_Suzaku_Water",
     "materials": [
       {

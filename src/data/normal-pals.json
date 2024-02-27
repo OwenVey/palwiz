@@ -10874,7 +10874,7 @@
     "meleeAttack": 100,
     "name": "Warsect",
     "partnerSkill": {
-      "description": "When fighting together, increases player's defense and applies Fire damage to the player's attacks.",
+      "description": "When fighting together, increases player's defense and reduces damage received from Fire.",
       "group": "Team Boost",
       "name": "Hard Armor"
     },

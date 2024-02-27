@@ -1331,7 +1331,7 @@
   {
     "category": "Shot",
     "cooldownTime": 30,
-    "description": "Orserk's exclusive skill. Summons a blade of lightning while leaping into the air before throwing it at an enemy.",
+    "description": "Orserk's exclusive skill. Summons a spear of lightning while leaping into the air before throwing it at an enemy.",
     "effects": [
       {
         "name": "Electrical",
@@ -1437,7 +1437,7 @@
     "power": 65,
     "specialAttackRates": [
       {
-        "rate": 3.5,
+        "rate": 15,
         "type": "vsStone"
       }
     ]
