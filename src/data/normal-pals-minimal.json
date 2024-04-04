@@ -820,5 +820,17 @@
     "name": "Jetragon",
     "zukanIndex": 111,
     "zukanIndexSuffix": ""
+  },
+  {
+    "id": "bellanoir",
+    "name": "Bellanoir",
+    "zukanIndex": 112,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "bellanoir-libero",
+    "name": "Bellanoir Libero",
+    "zukanIndex": 112,
+    "zukanIndexSuffix": "B"
   }
 ]

@@ -379,7 +379,7 @@
     "consumeEnergySpeed": 0,
     "defense": 5,
     "description": "Massive defensive wall to prevent enemy intrusions. Made from wood, it breaks easily.",
-    "deteriorationDamage": 0,
+    "deteriorationDamage": 0.05,
     "extinguishBurnWorkAmount": 2000,
     "hp": 5000,
     "id": "wooden-defensive-wall",
@@ -629,7 +629,7 @@
     "consumeEnergySpeed": 0,
     "defense": 5,
     "description": "Massive defensive wall to prevent enemy intrusions. Made from stone, it is reasonably sturdy.",
-    "deteriorationDamage": 0.4,
+    "deteriorationDamage": 0.1,
     "extinguishBurnWorkAmount": 0,
     "hp": 20000,
     "id": "defensive-wall",
@@ -929,7 +929,7 @@
     "consumeEnergySpeed": 0,
     "defense": 5,
     "description": "Massive defensive wall to prevent enemy intrusions. Made from metal, it is extremely durable.",
-    "deteriorationDamage": 0,
+    "deteriorationDamage": 0.125,
     "extinguishBurnWorkAmount": 0,
     "hp": 50000,
     "id": "metal-defensive-wall",
@@ -2142,7 +2142,7 @@
   {
     "buildWork": 1000,
     "consumeEnergySpeed": 0,
-    "defense": 4,
+    "defense": 50,
     "description": "Facility for storing captured Pals. Pals inside gradually recover Health. Area around this facility becomes a base.",
     "deteriorationDamage": 0,
     "extinguishBurnWorkAmount": 0,
@@ -2481,6 +2481,46 @@
     ],
     "name": "Egg Incubator",
     "requiredEnergyType": null,
+    "typeA": "Pal",
+    "typeB": "Pal_Breed"
+  },
+  {
+    "buildWork": 5000,
+    "consumeEnergySpeed": 400,
+    "defense": 3,
+    "description": "Device for incubating Pal eggs. Requires electricity, but automatically keeps the inside of the incubator at appropriate temperatures.",
+    "deteriorationDamage": 0.04,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "electric-egg-incubator",
+    "imageName": "ElectricHatchingPalEgg",
+    "internalId": "ElectricHatchingPalEgg",
+    "materialSubType": "Stone",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 50,
+        "id": "refined-ingot",
+        "internalId": "IronIngot"
+      },
+      {
+        "count": 15,
+        "id": "circuit-board",
+        "internalId": "MachineParts2"
+      },
+      {
+        "count": 10,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      },
+      {
+        "count": 5,
+        "id": "ancient-civilization-core",
+        "internalId": "AncientParts2"
+      }
+    ],
+    "name": "Electric Egg Incubator",
+    "requiredEnergyType": "Electric",
     "typeA": "Pal",
     "typeB": "Pal_Breed"
   },
@@ -2985,6 +3025,76 @@
       }
     ],
     "name": "Stone Pit",
+    "requiredEnergyType": null,
+    "typeA": "Product",
+    "typeB": "Prod_Resource"
+  },
+  {
+    "buildWork": 10000,
+    "consumeEnergySpeed": 0,
+    "defense": 4,
+    "description": "Facility for producing Ore. Mining Ore is hard work that requires physical endurance. Leave it to Pals skilled at mining.",
+    "deteriorationDamage": 0,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 10000,
+    "id": "ore-mining-site",
+    "imageName": "CopperPit",
+    "internalId": "CopperPit",
+    "materialSubType": "Stone",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 50,
+        "id": "stone",
+        "internalId": "Stone"
+      },
+      {
+        "count": 25,
+        "id": "ingot",
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 20,
+        "id": "paldium-fragment",
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "name": "Ore Mining Site",
+    "requiredEnergyType": null,
+    "typeA": "Product",
+    "typeB": "Prod_Resource"
+  },
+  {
+    "buildWork": 10000,
+    "consumeEnergySpeed": 0,
+    "defense": 4,
+    "description": "Facility for producing large quantities of Ore. Mining Ore is hard work that requires physical endurance. Leave it to Pals skilled at mining.",
+    "deteriorationDamage": 0,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 10000,
+    "id": "ore-mining-site-ii",
+    "imageName": "CopperPit_2",
+    "internalId": "CopperPit_2",
+    "materialSubType": "Stone",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 100,
+        "id": "stone",
+        "internalId": "Stone"
+      },
+      {
+        "count": 50,
+        "id": "ingot",
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 40,
+        "id": "paldium-fragment",
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "name": "Ore Mining Site II",
     "requiredEnergyType": null,
     "typeA": "Product",
     "typeB": "Prod_Resource"
@@ -3778,7 +3888,7 @@
     "buildWork": 2000,
     "consumeEnergySpeed": 0,
     "defense": 2,
-    "description": "You can command your Pals to work on various things inside a base. Try not to overwork them!",
+    "description": "Command your Pals to work on various things inside a base. You can allow or prohibit individual kinds of work.",
     "deteriorationDamage": 0.12,
     "extinguishBurnWorkAmount": 1000,
     "hp": 4000,
@@ -5333,7 +5443,7 @@
     "buildWork": 2500,
     "consumeEnergySpeed": 0,
     "defense": 2,
-    "description": "Decorative antique dresser.",
+    "description": "Dresser useful for giving yourself a remake. Allows players to edit their appearance.",
     "deteriorationDamage": 0.08,
     "extinguishBurnWorkAmount": 0,
     "hp": 2000,
@@ -5344,24 +5454,24 @@
     "materialType": "None",
     "materials": [
       {
-        "count": 15,
+        "count": 100,
         "id": "wood",
         "internalId": "Wood"
       },
       {
-        "count": 5,
+        "count": 20,
         "id": "fiber",
         "internalId": "Fiber"
       },
       {
-        "count": 5,
+        "count": 30,
         "id": "stone",
         "internalId": "Stone"
       },
       {
-        "count": 1,
-        "id": "paldium-fragment",
-        "internalId": "Pal_crystal_S"
+        "count": 5,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
       }
     ],
     "name": "Antique Dresser",
@@ -7452,6 +7562,36 @@
     "name": "Wall Lamp",
     "requiredEnergyType": "Electric",
     "typeA": "Light",
+    "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 10000,
+    "consumeEnergySpeed": 0,
+    "defense": 4,
+    "description": "Offer a Slab depicting a Pal to summon a powerful Pal to your base. Adequate caution and battle readiness is paramount.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 10000,
+    "id": "summoning-altar",
+    "imageName": "Altar",
+    "internalId": "Altar",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 100,
+        "id": "stone",
+        "internalId": "Stone"
+      },
+      {
+        "count": 20,
+        "id": "paldium-fragment",
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "name": "Summoning Altar",
+    "requiredEnergyType": null,
+    "typeA": "Other",
     "typeB": "Infra_Environment"
   }
 ]

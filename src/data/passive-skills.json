@@ -179,7 +179,7 @@
     ],
     "internalId": "CraftSpeed_up1",
     "name": "Serious",
-    "rank": 2
+    "rank": 1
   },
   {
     "description": null,
@@ -464,6 +464,60 @@
     "effects": [
       {
         "target": "Self",
+        "type": "TemperatureResist_Cold",
+        "value": 1
+      },
+      {
+        "target": "Self",
+        "type": "TemperatureResist_Heat",
+        "value": 1
+      }
+    ],
+    "internalId": "TemperatureResist_Heat1Cold1",
+    "name": "Heat Resistant Lv. 1 / Cold Resistant Lv. 1",
+    "rank": 1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "TemperatureResist_Cold",
+        "value": 2
+      },
+      {
+        "target": "Self",
+        "type": "TemperatureResist_Heat",
+        "value": 2
+      }
+    ],
+    "internalId": "TemperatureResist_Heat2Cold2",
+    "name": "Heat Resistant Lv. 2 / Cold Resistant Lv. 2",
+    "rank": 2
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "TemperatureResist_Cold",
+        "value": 3
+      },
+      {
+        "target": "Self",
+        "type": "TemperatureResist_Heat",
+        "value": 3
+      }
+    ],
+    "internalId": "TemperatureResist_Heat3Cold3",
+    "name": "Heat Resistant Lv. 3 / Cold Resistant Lv. 3",
+    "rank": 3
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
         "type": "CraftSpeed",
         "value": 15
       },
@@ -498,6 +552,24 @@
     ],
     "internalId": "Legend",
     "name": "Legend",
+    "rank": 3
+  },
+  {
+    "description": "20% increase to Dark attack damage. {EffectValue1}% increase to Ice attack damage.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementBoost_Dark",
+        "value": 20
+      },
+      {
+        "target": "Self",
+        "type": "ElementBoost_Ice",
+        "value": 20
+      }
+    ],
+    "internalId": "Witch",
+    "name": "Siren of the Void",
     "rank": 3
   },
   {
@@ -1626,5 +1698,18 @@
     "internalId": "MoveSpeed_up_3",
     "name": "Swift",
     "rank": 3
+  },
+  {
+    "description": "Pacifist. Will not reduce the target's Health below 1.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "NonKilling",
+        "value": 0
+      }
+    ],
+    "internalId": "NonKilling",
+    "name": "Mercy Hit",
+    "rank": -1
   }
 ]

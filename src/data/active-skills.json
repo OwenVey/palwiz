@@ -1866,7 +1866,7 @@
     "element": "dark",
     "id": "psycho-gravity",
     "internalId": "Psychokinesis",
-    "maxRange": 300,
+    "maxRange": 1500,
     "minRange": 0,
     "name": "Psycho Gravity",
     "power": 110,
@@ -1932,10 +1932,198 @@
     "element": "dark",
     "id": "dark-whisp",
     "internalId": "DarkLegion",
-    "maxRange": 1000,
-    "minRange": 500,
+    "maxRange": 1500,
+    "minRange": 0,
     "name": "Dark Whisp",
     "power": 160,
     "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 4,
+    "description": "Causes the ground to shake before hurling a massive stone mass at its surroundings.",
+    "effects": [
+      {
+        "name": "Muddy",
+        "value": 100
+      }
+    ],
+    "element": "ground",
+    "id": "rockburst",
+    "internalId": "Tremor",
+    "maxRange": 1500,
+    "minRange": 300,
+    "name": "Rockburst",
+    "power": 60,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 30,
+    "description": "Creates numerous lumps of ice that are consecutively dropped on a foe's head.",
+    "effects": [
+      {
+        "name": "Freeze",
+        "value": 100
+      }
+    ],
+    "element": "ice",
+    "id": "diamond-rain",
+    "internalId": "DiamondFall",
+    "maxRange": 9999,
+    "minRange": 0,
+    "name": "Diamond Rain",
+    "power": 140,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 50,
+    "description": "Bellanoir Libero's exclusive skill. Disappears suddenly, then reappears while firing a barrage of beams. The beams spread like a beautiful flower in bloom.",
+    "effects": [],
+    "element": "dark",
+    "id": "nightmare-bloom",
+    "internalId": "Unique_NightLady_WarpBeam",
+    "maxRange": 9999,
+    "minRange": 0,
+    "name": "Nightmare Bloom",
+    "power": 160,
+    "specialAttackRates": [
+      {
+        "rate": 999,
+        "type": "vsWood_Raid"
+      },
+      {
+        "rate": 999,
+        "type": "vsStone_Raid"
+      }
+    ]
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 45,
+    "description": "Bellanoir Libero's exclusive skill. Dances gracefully while creating an extending ring of flames. Then, it fires mysterious flames that home in on enemies.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 100
+      }
+    ],
+    "element": "dark",
+    "id": "flame-waltz",
+    "internalId": "Unique_NightLady_FlameNightmare",
+    "maxRange": 3000,
+    "minRange": 0,
+    "name": "Flame Waltz",
+    "power": 130,
+    "specialAttackRates": [
+      {
+        "rate": 333,
+        "type": "vsWood_Raid"
+      },
+      {
+        "rate": 333,
+        "type": "vsStone_Raid"
+      }
+    ]
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 2,
+    "description": "Fires a high speed ball of dark energy that spreads forward in a radial shape.",
+    "effects": [
+      {
+        "name": "Darkness",
+        "value": 20
+      }
+    ],
+    "element": "dark",
+    "id": "umbral-surge",
+    "internalId": "DarkPulse",
+    "maxRange": 5000,
+    "minRange": 500,
+    "name": "Umbral Surge",
+    "power": 40,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 2,
+    "description": "Hurls an energy ball imbued with dark energy at an enemy.",
+    "effects": [
+      {
+        "name": "Darkness",
+        "value": 20
+      }
+    ],
+    "element": "dark",
+    "id": "dark-cannon",
+    "internalId": "DarkCanon",
+    "maxRange": 5000,
+    "minRange": 500,
+    "name": "Dark Cannon",
+    "power": 50,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 10,
+    "description": "Fires off dark energy that homes in on an enemy.",
+    "effects": [
+      {
+        "name": "Darkness",
+        "value": 103
+      }
+    ],
+    "element": "dark",
+    "id": "dark-arrow",
+    "internalId": "DarkArrow",
+    "maxRange": 5000,
+    "minRange": 500,
+    "name": "Dark Arrow",
+    "power": 65,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 55,
+    "description": "Generates several dark vortexes in the surrounding area.",
+    "effects": [
+      {
+        "name": "Darkness",
+        "value": 100
+      }
+    ],
+    "element": "dark",
+    "id": "apocalypse",
+    "internalId": "Apocalypse",
+    "maxRange": 9999,
+    "minRange": 100,
+    "name": "Apocalypse",
+    "power": 110,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 50,
+    "description": "Bellanoir's exclusive skill. Disappears suddenly, then reappears while firing a barrage of beams.",
+    "effects": [],
+    "element": "dark",
+    "id": "nightmare-ray",
+    "internalId": "Unique_NightLady_WarpBeam_Straight",
+    "maxRange": 9999,
+    "minRange": 0,
+    "name": "Nightmare Ray",
+    "power": 140,
+    "specialAttackRates": [
+      {
+        "rate": 999,
+        "type": "vsWood_Raid"
+      },
+      {
+        "rate": 999,
+        "type": "vsStone_Raid"
+      }
+    ]
   }
 ]

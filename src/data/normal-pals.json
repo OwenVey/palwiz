@@ -1679,12 +1679,12 @@
     "runSpeed": 300,
     "shotAttack": 70,
     "size": "Extra Small",
-    "slowWalkSpeed": 10,
+    "slowWalkSpeed": 20,
     "stamina": 100,
     "support": 100,
     "title": "Several Sleepless Nights Later",
     "transportSpeed": 100,
-    "walkSpeed": 10,
+    "walkSpeed": 20,
     "workSuitabilities": {
       "cooling": 0,
       "farming": 0,
@@ -4738,7 +4738,7 @@
     "meleeAttack": 100,
     "name": "Dumud",
     "partnerSkill": {
-      "description": "While in team, increases attack power of Ground Pals.",
+      "description": "While in team, increases attack power of Ground Pals. Sometimes drops High Quality Pal Oil when assigned to Ranch.",
       "group": "Ground Team Buff",
       "name": "Soil Improver"
     },
@@ -4756,7 +4756,7 @@
     "walkSpeed": 150,
     "workSuitabilities": {
       "cooling": 0,
-      "farming": 0,
+      "farming": 1,
       "gathering": 0,
       "generatingElectricity": 0,
       "handiwork": 0,
@@ -5141,7 +5141,7 @@
     "support": 100,
     "title": "Enraptured by Moonlight",
     "transportSpeed": 375,
-    "walkSpeed": 150,
+    "walkSpeed": 175,
     "workSuitabilities": {
       "cooling": 0,
       "farming": 0,
@@ -6834,6 +6834,12 @@
         "max": 1,
         "min": 1,
         "rate": 100
+      },
+      {
+        "id": "dazzi-cloud",
+        "max": 1,
+        "min": 1,
+        "rate": 100
       }
     ],
     "elementType1": "electric",
@@ -7303,7 +7309,7 @@
     "meleeAttack": 70,
     "name": "Surfent Terra",
     "partnerSkill": {
-      "description": "Can be ridden.",
+      "description": "Can be ridden. While in team, Surfent Terra helps carry supplies, decreasing the weight of ores in the player's inventory.",
       "group": "Ground Mount",
       "name": "Sand Swimmer"
     },
@@ -9061,7 +9067,7 @@
     "meleeAttack": 100,
     "name": "Kelpsea",
     "partnerSkill": {
-      "description": "While in team, increases attack power of Water Pals.",
+      "description": "While in team, increases attack power of Water Pals. Sometimes drops Pal Fluids when assigned to Ranch.",
       "group": "Water Team Buff",
       "name": "Aqua Spout"
     },
@@ -9079,7 +9085,7 @@
     "walkSpeed": 100,
     "workSuitabilities": {
       "cooling": 0,
-      "farming": 0,
+      "farming": 1,
       "gathering": 0,
       "generatingElectricity": 0,
       "handiwork": 0,
@@ -9158,7 +9164,7 @@
     "meleeAttack": 100,
     "name": "Kelpsea Ignis",
     "partnerSkill": {
-      "description": "While in team, increases attack power of Fire Pals.",
+      "description": "While in team, increases attack power of Fire Pals. Sometimes drops Flame Organ when assigned to Ranch.",
       "group": "Fire Team Buff",
       "name": "Lava Spout"
     },
@@ -9176,7 +9182,7 @@
     "walkSpeed": 100,
     "workSuitabilities": {
       "cooling": 0,
-      "farming": 0,
+      "farming": 1,
       "gathering": 0,
       "generatingElectricity": 0,
       "handiwork": 0,
@@ -13138,5 +13144,173 @@
     },
     "zukanIndex": 111,
     "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "dark-cannon",
+        "level": 1
+      },
+      {
+        "id": "umbral-surge",
+        "level": 7
+      },
+      {
+        "id": "dark-arrow",
+        "level": 15
+      },
+      {
+        "id": "spirit-flame",
+        "level": 22
+      },
+      {
+        "id": "nightmare-ball",
+        "level": 30
+      },
+      {
+        "id": "apocalypse",
+        "level": 40
+      },
+      {
+        "id": "nightmare-ray",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 1,
+    "combiRank": 1,
+    "craftSpeed": 100,
+    "defense": 100,
+    "description": "Without existing, she quietly gazed upon the world. One day, she was seized with a longing to be seen. With unbridled lust for vengeance against reality, thus was born the Eclipsed Siren.",
+    "drops": [],
+    "elementType1": "dark",
+    "elementType2": null,
+    "foodAmount": 4,
+    "hp": 120,
+    "id": "bellanoir",
+    "internalName": "NightLady",
+    "isBoss": false,
+    "maleProbability": 5,
+    "maxFullStomach": 300,
+    "meleeAttack": 100,
+    "name": "Bellanoir",
+    "partnerSkill": {
+      "description": "When activated, attacks targeted enemy with a powerful Nightmare Ray.",
+      "group": "Activated Skill",
+      "name": "Nightmare Iris"
+    },
+    "price": 10030,
+    "rarity": 20,
+    "rideSprintSpeed": 800,
+    "runSpeed": 600,
+    "shotAttack": 150,
+    "size": "Medium",
+    "slowWalkSpeed": 100,
+    "stamina": 100,
+    "support": 100,
+    "title": "Eclipsed Siren",
+    "transportSpeed": 400,
+    "walkSpeed": 150,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 0,
+      "generatingElectricity": 0,
+      "handiwork": 2,
+      "kindling": 0,
+      "lumbering": 0,
+      "medicineProduction": 4,
+      "mining": 0,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 2,
+      "watering": 0
+    },
+    "zukanIndex": 112,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "dark-cannon",
+        "level": 1
+      },
+      {
+        "id": "umbral-surge",
+        "level": 7
+      },
+      {
+        "id": "dark-arrow",
+        "level": 15
+      },
+      {
+        "id": "nightmare-ball",
+        "level": 22
+      },
+      {
+        "id": "apocalypse",
+        "level": 30
+      },
+      {
+        "id": "flame-waltz",
+        "level": 40
+      },
+      {
+        "id": "nightmare-bloom",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 1,
+    "combiRank": 1,
+    "craftSpeed": 100,
+    "defense": 100,
+    "description": "With her desires set loose, she was soon overwhelmed. She longed for a self to gaze upon herself. And the sisters who gazed, resenting reality, were driven into the abyss and, at last, closed their eyes.",
+    "drops": [],
+    "elementType1": "dark",
+    "elementType2": null,
+    "foodAmount": 4,
+    "hp": 120,
+    "id": "bellanoir-libero",
+    "internalName": "NightLady_Dark",
+    "isBoss": false,
+    "maleProbability": 5,
+    "maxFullStomach": 300,
+    "meleeAttack": 100,
+    "name": "Bellanoir Libero",
+    "partnerSkill": {
+      "description": "When activated, attacks targeted enemy with a powerful Nightmare Bloom.",
+      "group": "Activated Skill",
+      "name": "Nightmare Stare"
+    },
+    "price": 10030,
+    "rarity": 20,
+    "rideSprintSpeed": 800,
+    "runSpeed": 600,
+    "shotAttack": 150,
+    "size": "Medium",
+    "slowWalkSpeed": 100,
+    "stamina": 100,
+    "support": 100,
+    "title": "Twilight Siren",
+    "transportSpeed": 400,
+    "walkSpeed": 150,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 0,
+      "generatingElectricity": 0,
+      "handiwork": 2,
+      "kindling": 0,
+      "lumbering": 0,
+      "medicineProduction": 4,
+      "mining": 0,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 2,
+      "watering": 0
+    },
+    "zukanIndex": 112,
+    "zukanIndexSuffix": "B"
   }
 ]

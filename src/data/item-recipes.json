@@ -1079,6 +1079,130 @@
   },
   {
     "energyAmount": 0,
+    "id": "musket-2",
+    "internalId": "Musket_2",
+    "materials": [
+      {
+        "count": 50,
+        "id": "ingot",
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 10,
+        "id": "high-quality-pal-oil",
+        "internalId": "PalOil"
+      },
+      {
+        "count": 60,
+        "id": "wood",
+        "internalId": "Wood"
+      },
+      {
+        "count": 3,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_Musket_2",
+    "workAmount": 140000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "musket-3",
+    "internalId": "Musket_3",
+    "materials": [
+      {
+        "count": 75,
+        "id": "ingot",
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 15,
+        "id": "high-quality-pal-oil",
+        "internalId": "PalOil"
+      },
+      {
+        "count": 90,
+        "id": "wood",
+        "internalId": "Wood"
+      },
+      {
+        "count": 5,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_Musket_3",
+    "workAmount": 280000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "musket-4",
+    "internalId": "Musket_4",
+    "materials": [
+      {
+        "count": 112,
+        "id": "ingot",
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 22,
+        "id": "high-quality-pal-oil",
+        "internalId": "PalOil"
+      },
+      {
+        "count": 135,
+        "id": "wood",
+        "internalId": "Wood"
+      },
+      {
+        "count": 7,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_Musket_4",
+    "workAmount": 560000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "musket-5",
+    "internalId": "Musket_5",
+    "materials": [
+      {
+        "count": 168,
+        "id": "ingot",
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 33,
+        "id": "high-quality-pal-oil",
+        "internalId": "PalOil"
+      },
+      {
+        "count": 202,
+        "id": "wood",
+        "internalId": "Wood"
+      },
+      {
+        "count": 14,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_Musket_5",
+    "workAmount": 1120000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
     "id": "makeshift-handgun",
     "internalId": "MakeshiftHandgun",
     "materials": [
@@ -1251,6 +1375,110 @@
   },
   {
     "energyAmount": 0,
+    "id": "single-shot-rifle-2",
+    "internalId": "SingleShotRifle_2",
+    "materials": [
+      {
+        "count": 40,
+        "id": "refined-ingot",
+        "internalId": "IronIngot"
+      },
+      {
+        "count": 10,
+        "id": "polymer",
+        "internalId": "Polymer"
+      },
+      {
+        "count": 4,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_SingleShotRifle_2",
+    "workAmount": 280000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "single-shot-rifle-3",
+    "internalId": "SingleShotRifle_3",
+    "materials": [
+      {
+        "count": 60,
+        "id": "refined-ingot",
+        "internalId": "IronIngot"
+      },
+      {
+        "count": 15,
+        "id": "polymer",
+        "internalId": "Polymer"
+      },
+      {
+        "count": 8,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_SingleShotRifle_3",
+    "workAmount": 560000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "single-shot-rifle-4",
+    "internalId": "SingleShotRifle_4",
+    "materials": [
+      {
+        "count": 90,
+        "id": "refined-ingot",
+        "internalId": "IronIngot"
+      },
+      {
+        "count": 22,
+        "id": "polymer",
+        "internalId": "Polymer"
+      },
+      {
+        "count": 16,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_SingleShotRifle_4",
+    "workAmount": 1120000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "single-shot-rifle-5",
+    "internalId": "SingleShotRifle_5",
+    "materials": [
+      {
+        "count": 135,
+        "id": "refined-ingot",
+        "internalId": "IronIngot"
+      },
+      {
+        "count": 33,
+        "id": "polymer",
+        "internalId": "Polymer"
+      },
+      {
+        "count": 25,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_SingleShotRifle_5",
+    "workAmount": 2240000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
     "id": "double-barreled-shotgun",
     "internalId": "DoubleBarrelShotgun",
     "materials": [
@@ -1268,6 +1496,110 @@
     "productCount": 1,
     "unlockItemId": "None",
     "workAmount": 80000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "double-barrel-shotgun-2",
+    "internalId": "DoubleBarrelShotgun_2",
+    "materials": [
+      {
+        "count": 60,
+        "id": "refined-ingot",
+        "internalId": "IronIngot"
+      },
+      {
+        "count": 14,
+        "id": "polymer",
+        "internalId": "Polymer"
+      },
+      {
+        "count": 4,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_DoubleBarrelShotgun_2",
+    "workAmount": 320000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "double-barrel-shotgun-3",
+    "internalId": "DoubleBarrelShotgun_3",
+    "materials": [
+      {
+        "count": 90,
+        "id": "refined-ingot",
+        "internalId": "IronIngot"
+      },
+      {
+        "count": 21,
+        "id": "polymer",
+        "internalId": "Polymer"
+      },
+      {
+        "count": 8,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_DoubleBarrelShotgun_3",
+    "workAmount": 640000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "double-barrel-shotgun-4",
+    "internalId": "DoubleBarrelShotgun_4",
+    "materials": [
+      {
+        "count": 135,
+        "id": "refined-ingot",
+        "internalId": "IronIngot"
+      },
+      {
+        "count": 31,
+        "id": "polymer",
+        "internalId": "Polymer"
+      },
+      {
+        "count": 16,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_DoubleBarrelShotgun_4",
+    "workAmount": 1280000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "double-barrel-shotgun-5",
+    "internalId": "DoubleBarrelShotgun_5",
+    "materials": [
+      {
+        "count": 202,
+        "id": "refined-ingot",
+        "internalId": "IronIngot"
+      },
+      {
+        "count": 46,
+        "id": "polymer",
+        "internalId": "Polymer"
+      },
+      {
+        "count": 25,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_DoubleBarrelShotgun_5",
+    "workAmount": 2560000,
     "workableAttribute": 1
   },
   {
@@ -6838,6 +7170,63 @@
   },
   {
     "energyAmount": 0,
+    "id": "ring-of-mercy",
+    "internalId": "Accessory_Nonkilling",
+    "materials": [
+      {
+        "count": 30,
+        "id": "ingot",
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 20,
+        "id": "paldium-fragment",
+        "internalId": "Pal_crystal_S"
+      },
+      {
+        "count": 5,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 30000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "ability-glasses",
+    "internalId": "Accessory_TalentChecker",
+    "materials": [
+      {
+        "count": 30,
+        "id": "refined-ingot",
+        "internalId": "IronIngot"
+      },
+      {
+        "count": 20,
+        "id": "paldium-fragment",
+        "internalId": "Pal_crystal_S"
+      },
+      {
+        "count": 10,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      },
+      {
+        "count": 5,
+        "id": "ancient-civilization-core",
+        "internalId": "AncientParts2"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 100000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
     "id": "arrow",
     "internalId": "Arrow",
     "materials": [
@@ -7581,6 +7970,32 @@
   },
   {
     "energyAmount": 0,
+    "id": "homeward-thundercloud",
+    "internalId": "Homeward",
+    "materials": [
+      {
+        "count": 1,
+        "id": "dazzi-cloud",
+        "internalId": "PalItem_RaijinDaughter"
+      },
+      {
+        "count": 5,
+        "id": "electric-organ",
+        "internalId": "ElectricOrgan"
+      },
+      {
+        "count": 2,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 10000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
     "id": "repair-kit",
     "internalId": "RepairKit",
     "materials": [
@@ -7656,6 +8071,99 @@
     "productCount": 1,
     "unlockItemId": "None",
     "workAmount": 50000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "low-quality-recovery-meds",
+    "internalId": "Potion_Low",
+    "materials": [
+      {
+        "count": 3,
+        "id": "cavern-mushroom",
+        "internalId": "CaveMushroom"
+      },
+      {
+        "count": 5,
+        "id": "red-berries",
+        "internalId": "Berries"
+      },
+      {
+        "count": 2,
+        "id": "pal-fluids",
+        "internalId": "PalFluid"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 2500,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "recovery-meds",
+    "internalId": "Potion",
+    "materials": [
+      {
+        "count": 5,
+        "id": "cavern-mushroom",
+        "internalId": "CaveMushroom"
+      },
+      {
+        "count": 5,
+        "id": "red-berries",
+        "internalId": "Berries"
+      },
+      {
+        "count": 5,
+        "id": "pal-fluids",
+        "internalId": "PalFluid"
+      },
+      {
+        "count": 3,
+        "id": "cotton-candy",
+        "internalId": "Sweet"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 7500,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "high-quality-recovery-meds",
+    "internalId": "Potion_High",
+    "materials": [
+      {
+        "count": 10,
+        "id": "cavern-mushroom",
+        "internalId": "CaveMushroom"
+      },
+      {
+        "count": 20,
+        "id": "red-berries",
+        "internalId": "Berries"
+      },
+      {
+        "count": 5,
+        "id": "high-quality-pal-oil",
+        "internalId": "PalOil"
+      },
+      {
+        "count": 7,
+        "id": "cotton-candy",
+        "internalId": "Sweet"
+      },
+      {
+        "count": 5,
+        "id": "sulfur",
+        "internalId": "Sulfur"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 25000,
     "workableAttribute": 1
   },
   {
@@ -7885,70 +8393,6 @@
     "productCount": 1,
     "unlockItemId": "None",
     "workAmount": 1000,
-    "workableAttribute": 1
-  },
-  {
-    "energyAmount": 0,
-    "id": "berry-seeds",
-    "internalId": "BerrySeeds",
-    "materials": [
-      {
-        "count": 2,
-        "id": "red-berries",
-        "internalId": "Berries"
-      }
-    ],
-    "productCount": 1,
-    "unlockItemId": "None",
-    "workAmount": 500,
-    "workableAttribute": 1
-  },
-  {
-    "energyAmount": 0,
-    "id": "tomato-seeds",
-    "internalId": "TomatoSeeds",
-    "materials": [
-      {
-        "count": 2,
-        "id": "tomato",
-        "internalId": "Tomato"
-      }
-    ],
-    "productCount": 1,
-    "unlockItemId": "None",
-    "workAmount": 500,
-    "workableAttribute": 1
-  },
-  {
-    "energyAmount": 0,
-    "id": "lettuce-seeds",
-    "internalId": "LettuceSeeds",
-    "materials": [
-      {
-        "count": 2,
-        "id": "lettuce",
-        "internalId": "Lettuce"
-      }
-    ],
-    "productCount": 1,
-    "unlockItemId": "None",
-    "workAmount": 500,
-    "workableAttribute": 1
-  },
-  {
-    "energyAmount": 0,
-    "id": "wheat-seeds",
-    "internalId": "WheatSeeds",
-    "materials": [
-      {
-        "count": 2,
-        "id": "wheat",
-        "internalId": "Wheat"
-      }
-    ],
-    "productCount": 1,
-    "unlockItemId": "None",
-    "workAmount": 500,
     "workableAttribute": 1
   },
   {
@@ -11262,6 +11706,428 @@
     "productCount": 1,
     "unlockItemId": "None",
     "workAmount": 32000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "life-remedy",
+    "internalId": "Elixir_hp_01",
+    "materials": [
+      {
+        "count": 2,
+        "id": "life-lotus-s",
+        "internalId": "Lotus_hp_01"
+      },
+      {
+        "count": 3,
+        "id": "raw-kelpsea",
+        "internalId": "Meat_Kelpie"
+      },
+      {
+        "count": 2,
+        "id": "gumoss-leaf",
+        "internalId": "PalItem_PlantSlime"
+      },
+      {
+        "count": 2,
+        "id": "pal-fluids",
+        "internalId": "PalFluid"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 50000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "stamina-remedy",
+    "internalId": "Elixir_stamina_01",
+    "materials": [
+      {
+        "count": 2,
+        "id": "stamina-lotus-s",
+        "internalId": "Lotus_stamina_01"
+      },
+      {
+        "count": 3,
+        "id": "eikthyrdeer-venison",
+        "internalId": "Meat_Deer"
+      },
+      {
+        "count": 2,
+        "id": "honey",
+        "internalId": "Honey"
+      },
+      {
+        "count": 2,
+        "id": "pal-fluids",
+        "internalId": "PalFluid"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 50000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "power-remedy",
+    "internalId": "Elixir_attack_01",
+    "materials": [
+      {
+        "count": 2,
+        "id": "power-lotus-s",
+        "internalId": "Lotus_attack_01"
+      },
+      {
+        "count": 3,
+        "id": "rushoar-pork",
+        "internalId": "Meat_Boar"
+      },
+      {
+        "count": 2,
+        "id": "mozzarina-meat",
+        "internalId": "Meat_CowPal"
+      },
+      {
+        "count": 2,
+        "id": "pal-fluids",
+        "internalId": "PalFluid"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 50000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "speed-remedy",
+    "internalId": "Elixir_workspeed_01",
+    "materials": [
+      {
+        "count": 2,
+        "id": "speed-lotus-s",
+        "internalId": "Lotus_workspeed_01"
+      },
+      {
+        "count": 3,
+        "id": "ribbuny-ribbon",
+        "internalId": "PalItem_PinkRabbit"
+      },
+      {
+        "count": 2,
+        "id": "katress-hair",
+        "internalId": "PalItem_CatMage"
+      },
+      {
+        "count": 2,
+        "id": "pal-fluids",
+        "internalId": "PalFluid"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 50000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "carrying-remedy",
+    "internalId": "Elixir_weight_01",
+    "materials": [
+      {
+        "count": 2,
+        "id": "carrying-lotus-s",
+        "internalId": "Lotus_weight_01"
+      },
+      {
+        "count": 3,
+        "id": "swee-hair",
+        "internalId": "PalItem_MopBaby"
+      },
+      {
+        "count": 2,
+        "id": "cotton-candy",
+        "internalId": "Sweet"
+      },
+      {
+        "count": 2,
+        "id": "pal-fluids",
+        "internalId": "PalFluid"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 50000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "life-elixir",
+    "internalId": "Elixir_hp_02",
+    "materials": [
+      {
+        "count": 3,
+        "id": "life-lotus-s",
+        "internalId": "Lotus_hp_01"
+      },
+      {
+        "count": 3,
+        "id": "galeclaw-poultry",
+        "internalId": "Meat_Eagle"
+      },
+      {
+        "count": 2,
+        "id": "killamari-tentacle",
+        "internalId": "PalItem_NegativeOctopus"
+      },
+      {
+        "count": 2,
+        "id": "high-quality-pal-oil",
+        "internalId": "PalOil"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 100000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "stamina-elixir",
+    "internalId": "Elixir_stamina_02",
+    "materials": [
+      {
+        "count": 3,
+        "id": "stamina-lotus-s",
+        "internalId": "Lotus_stamina_01"
+      },
+      {
+        "count": 3,
+        "id": "reindrix-venison",
+        "internalId": "Meat_IceDeer"
+      },
+      {
+        "count": 2,
+        "id": "caprity-meat",
+        "internalId": "Meat_BerryGoat"
+      },
+      {
+        "count": 2,
+        "id": "high-quality-pal-oil",
+        "internalId": "PalOil"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 100000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "power-elixir",
+    "internalId": "Elixir_attack_02",
+    "materials": [
+      {
+        "count": 3,
+        "id": "power-lotus-s",
+        "internalId": "Lotus_attack_01"
+      },
+      {
+        "count": 3,
+        "id": "mammorest-meat",
+        "internalId": "Meat_GrassMammoth"
+      },
+      {
+        "count": 2,
+        "id": "broncherry-meat",
+        "internalId": "Meat_SakuraSaurus"
+      },
+      {
+        "count": 2,
+        "id": "high-quality-pal-oil",
+        "internalId": "PalOil"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 100000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "speed-elixir",
+    "internalId": "Elixir_workspeed_02",
+    "materials": [
+      {
+        "count": 3,
+        "id": "speed-lotus-s",
+        "internalId": "Lotus_workspeed_01"
+      },
+      {
+        "count": 3,
+        "id": "dazzi-cloud",
+        "internalId": "PalItem_RaijinDaughter"
+      },
+      {
+        "count": 2,
+        "id": "tocotoco-feather",
+        "internalId": "PalItem_ColorfulBird"
+      },
+      {
+        "count": 2,
+        "id": "high-quality-pal-oil",
+        "internalId": "PalOil"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 100000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "carrying-elixir",
+    "internalId": "Elixir_weight_02",
+    "materials": [
+      {
+        "count": 3,
+        "id": "carrying-lotus-s",
+        "internalId": "Lotus_weight_01"
+      },
+      {
+        "count": 3,
+        "id": "leezpunk-crest",
+        "internalId": "PalItem_LizardMan"
+      },
+      {
+        "count": 2,
+        "id": "raw-dumud",
+        "internalId": "Meat_LazyCatfish"
+      },
+      {
+        "count": 2,
+        "id": "high-quality-pal-oil",
+        "internalId": "PalOil"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 100000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "bellanoir-s-slab",
+    "internalId": "PalSummon_NightLady",
+    "materials": [
+      {
+        "count": 4,
+        "id": "bellanoir-s-slab-fragment",
+        "internalId": "PalSummon_NightLady_Parts"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "PalSummon_NightLady_Parts",
+    "workAmount": 10000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "bellanoir-libero-s-slab",
+    "internalId": "PalSummon_NightLady_Dark",
+    "materials": [
+      {
+        "count": 4,
+        "id": "bellanoir-libero-s-slab-fragment",
+        "internalId": "PalSummon_NightLady_Dark_Parts"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "PalSummon_NightLady_Dark_Parts",
+    "workAmount": 100000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "bellanoir-libero-ultra-slab",
+    "internalId": "PalSummon_NightLady_Dark_2",
+    "materials": [
+      {
+        "count": 4,
+        "id": "bellanoir-libero-ultra-slab-fragment",
+        "internalId": "PalSummon_NightLady_Dark_Parts_2"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "PalSummon_NightLady_Dark_Parts_2",
+    "workAmount": 500000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "pal-upgrade-stone2-1",
+    "internalId": "PalUpgradeStone2_1",
+    "materials": [
+      {
+        "count": 1,
+        "id": "medium-pal-soul",
+        "internalId": "PalUpgradeStone2"
+      }
+    ],
+    "productCount": 2,
+    "unlockItemId": "None",
+    "workAmount": 1000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "pal-upgrade-stone1-2",
+    "internalId": "PalUpgradeStone1_2",
+    "materials": [
+      {
+        "count": 2,
+        "id": "small-pal-soul",
+        "internalId": "PalUpgradeStone"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 1000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "pal-upgrade-stone3-2",
+    "internalId": "PalUpgradeStone3_2",
+    "materials": [
+      {
+        "count": 1,
+        "id": "large-pal-soul",
+        "internalId": "PalUpgradeStone3"
+      }
+    ],
+    "productCount": 2,
+    "unlockItemId": "None",
+    "workAmount": 1000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "pal-upgrade-stone2-3",
+    "internalId": "PalUpgradeStone2_3",
+    "materials": [
+      {
+        "count": 2,
+        "id": "medium-pal-soul",
+        "internalId": "PalUpgradeStone2"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 1000,
     "workableAttribute": 1
   }
 ]
