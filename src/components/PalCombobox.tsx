@@ -3,7 +3,7 @@
 import { PalImage } from '@/components/images/PalImage';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem } from '@/components/ui/command';
+import { Command, CommandEmpty, CommandInput, CommandItem, CommandList } from '@/components/ui/command';
 import { Label } from '@/components/ui/label';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { ScrollArea } from '@/components/ui/scroll-area';
@@ -55,7 +55,7 @@ export function PalCombobox({ label, value, setValue, className, ...rest }: PalC
         <Command>
           <CommandInput placeholder="Search pals" />
           <CommandEmpty>No pals found</CommandEmpty>
-          <CommandGroup className="px-0">
+          <CommandList>
             <ScrollArea className="flex max-h-72 flex-col px-1">
               {SORTED_PALS.map((pal) => (
                 <CommandItem
@@ -76,7 +76,7 @@ export function PalCombobox({ label, value, setValue, className, ...rest }: PalC
                 </CommandItem>
               ))}
             </ScrollArea>
-          </CommandGroup>
+          </CommandList>
         </Command>
       </PopoverContent>
     </Popover>
