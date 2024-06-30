@@ -2225,6 +2225,12 @@
         "max": 4,
         "min": 2,
         "rate": 100
+      },
+      {
+        "id": "killamari-tentacle",
+        "max": 1,
+        "min": 1,
+        "rate": 50
       }
     ],
     "elementType1": "dark",
@@ -4179,7 +4185,7 @@
     "meleeAttack": 100,
     "name": "Nitewing",
     "partnerSkill": {
-      "description": "Can be ridden as an flying mount.",
+      "description": "Can be ridden as a flying mount.",
       "group": "Flying Mount",
       "name": "Travel Companion"
     },
@@ -4262,6 +4268,12 @@
         "max": 1,
         "min": 1,
         "rate": 5
+      },
+      {
+        "id": "ribbuny-ribbon",
+        "max": 1,
+        "min": 1,
+        "rate": 50
       }
     ],
     "elementType1": "neutral",
@@ -4764,7 +4776,7 @@
       "lumbering": 0,
       "medicineProduction": 0,
       "mining": 2,
-      "oilExtraction": 1,
+      "oilExtraction": 0,
       "planting": 0,
       "transporting": 1,
       "watering": 1
@@ -4924,6 +4936,12 @@
         "max": 1,
         "min": 1,
         "rate": 1
+      },
+      {
+        "id": "leezpunk-crest",
+        "max": 1,
+        "min": 1,
+        "rate": 50
       }
     ],
     "elementType1": "dark",
@@ -5021,6 +5039,12 @@
         "max": 1,
         "min": 1,
         "rate": 2
+      },
+      {
+        "id": "leezpunk-crest",
+        "max": 1,
+        "min": 1,
+        "rate": 50
       }
     ],
     "elementType1": "fire",
@@ -5551,6 +5575,103 @@
   {
     "activeSkills": [
       {
+        "id": "power-shot",
+        "level": 1
+      },
+      {
+        "id": "sand-blast",
+        "level": 7
+      },
+      {
+        "id": "stone-blast",
+        "level": 15
+      },
+      {
+        "id": "stone-cannon",
+        "level": 22
+      },
+      {
+        "id": "ground-pound",
+        "level": 30
+      },
+      {
+        "id": "rockburst",
+        "level": 40
+      },
+      {
+        "id": "rock-lance",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 1,
+    "combiRank": 1030,
+    "craftSpeed": 100,
+    "defense": 90,
+    "description": "It communicates with its friends through rhythmic tapping on the ground. Stronger than Gorirat If every Gorirat Terra hit the ground at the same time, the island would sink in 1 second.",
+    "drops": [
+      {
+        "id": "ore",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "bone",
+        "max": 1,
+        "min": 1,
+        "rate": 100
+      }
+    ],
+    "elementType1": "ground",
+    "elementType2": null,
+    "foodAmount": 3,
+    "hp": 90,
+    "id": "gorirat-terra",
+    "internalName": "Gorilla_Ground",
+    "isBoss": false,
+    "maleProbability": 50,
+    "maxFullStomach": 225,
+    "meleeAttack": 110,
+    "name": "Gorirat Terra",
+    "partnerSkill": {
+      "description": "When activated, unleashes a primal fury that increases Gorirat Terra's attack power.",
+      "group": "Activated Buff",
+      "name": "Full-power Gorilla Mode"
+    },
+    "price": 4020,
+    "rarity": 5,
+    "rideSprintSpeed": 720,
+    "runSpeed": 550,
+    "shotAttack": 100,
+    "size": "Small",
+    "slowWalkSpeed": 66,
+    "stamina": 100,
+    "support": 100,
+    "title": "Up for a Brawl",
+    "transportSpeed": 250,
+    "walkSpeed": 100,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 0,
+      "generatingElectricity": 0,
+      "handiwork": 1,
+      "kindling": 0,
+      "lumbering": 0,
+      "medicineProduction": 0,
+      "mining": 2,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 3,
+      "watering": 0
+    },
+    "zukanIndex": 49,
+    "zukanIndexSuffix": "B"
+  },
+  {
+    "activeSkills": [
+      {
         "id": "air-cannon",
         "level": 1
       },
@@ -5870,6 +5991,12 @@
         "max": 1,
         "min": 1,
         "rate": 100
+      },
+      {
+        "id": "swee-hair",
+        "max": 1,
+        "min": 1,
+        "rate": 50
       }
     ],
     "elementType1": "ice",
@@ -6020,6 +6147,10 @@
         "level": 7
       },
       {
+        "id": "rocket-slam",
+        "level": 11
+      },
+      {
         "id": "dragon-burst",
         "level": 15
       },
@@ -6099,6 +6230,103 @@
     },
     "zukanIndex": 55,
     "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "ignis-blast",
+        "level": 1
+      },
+      {
+        "id": "dragon-burst",
+        "level": 7
+      },
+      {
+        "id": "flare-arrow",
+        "level": 15
+      },
+      {
+        "id": "ignis-breath",
+        "level": 22
+      },
+      {
+        "id": "rocket-slam",
+        "level": 30
+      },
+      {
+        "id": "flame-wall",
+        "level": 40
+      },
+      {
+        "id": "fire-ball",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 1,
+    "combiRank": 790,
+    "craftSpeed": 100,
+    "defense": 80,
+    "description": "When curled up it spins so fast that sparks fly. Sparks also fly when it feels excited. If you stroke it too much, sparks fly!",
+    "drops": [
+      {
+        "id": "leather",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "flame-organ",
+        "max": 2,
+        "min": 1,
+        "rate": 100
+      }
+    ],
+    "elementType1": "fire",
+    "elementType2": "dragon",
+    "foodAmount": 3,
+    "hp": 90,
+    "id": "chillet-ignis",
+    "internalName": "WeaselDragon_Fire",
+    "isBoss": false,
+    "maleProbability": 50,
+    "maxFullStomach": 225,
+    "meleeAttack": 100,
+    "name": "Chillet Ignis",
+    "partnerSkill": {
+      "description": "Can be ridden. Applies Fire damage to the player's attacks while mounted.",
+      "group": "Ground Mount",
+      "name": "Sparkling Weasel"
+    },
+    "price": 4450,
+    "rarity": 5,
+    "rideSprintSpeed": 800,
+    "runSpeed": 600,
+    "shotAttack": 85,
+    "size": "Medium",
+    "slowWalkSpeed": 100,
+    "stamina": 100,
+    "support": 100,
+    "title": "Cherry Blossom Dancer",
+    "transportSpeed": 390,
+    "walkSpeed": 180,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 1,
+      "generatingElectricity": 0,
+      "handiwork": 0,
+      "kindling": 2,
+      "lumbering": 0,
+      "medicineProduction": 0,
+      "mining": 0,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 0,
+      "watering": 0
+    },
+    "zukanIndex": 55,
+    "zukanIndexSuffix": "B"
   },
   {
     "activeSkills": [
@@ -7392,6 +7620,12 @@
         "max": 1,
         "min": 1,
         "rate": 15
+      },
+      {
+        "id": "crude-oil",
+        "max": 1,
+        "min": 1,
+        "rate": 50
       }
     ],
     "elementType1": "dark",
@@ -7915,7 +8149,7 @@
     "meleeAttack": 100,
     "name": "Vanwyrm",
     "partnerSkill": {
-      "description": "Can be ridden as an flying mount. Increases damage player deals to enemy weak points while mounted.",
+      "description": "Can be ridden as a flying mount. Increases damage player deals to enemy weak points while mounted.",
       "group": "Flying Mount",
       "name": "Aerial Marauder"
     },
@@ -8018,7 +8252,7 @@
     "meleeAttack": 100,
     "name": "Vanwyrm Cryst",
     "partnerSkill": {
-      "description": "Can be ridden as an flying mount. Increases damage player deals to enemy weak points while mounted.",
+      "description": "Can be ridden as a flying mount. Increases damage player deals to enemy weak points while mounted.",
       "group": "Flying Mount",
       "name": "Aerial Marauder"
     },
@@ -8152,6 +8386,109 @@
   {
     "activeSkills": [
       {
+        "id": "spirit-fire",
+        "level": 1
+      },
+      {
+        "id": "umbral-surge",
+        "level": 7
+      },
+      {
+        "id": "dark-cannon",
+        "level": 15
+      },
+      {
+        "id": "dark-arrow",
+        "level": 22
+      },
+      {
+        "id": "spirit-flame",
+        "level": 30
+      },
+      {
+        "id": "flame-wall",
+        "level": 40
+      },
+      {
+        "id": "apocalypse",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 1,
+    "combiRank": 650,
+    "craftSpeed": 100,
+    "defense": 80,
+    "description": "Its body becomes a blade upon death, to be taken up by the next generation. If the Bushi who inherits it has a weak heart, the voices of the dead will drive it mad. The madness turns it into Bushi Noct that endlessly wanders.",
+    "drops": [
+      {
+        "id": "flame-organ",
+        "max": 8,
+        "min": 4,
+        "rate": 100
+      },
+      {
+        "id": "ingot",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "medium-pal-soul",
+        "max": 2,
+        "min": 1,
+        "rate": 40
+      }
+    ],
+    "elementType1": "fire",
+    "elementType2": "dark",
+    "foodAmount": 4,
+    "hp": 80,
+    "id": "bushi-noct",
+    "internalName": "Ronin_Dark",
+    "isBoss": false,
+    "maleProbability": 50,
+    "maxFullStomach": 300,
+    "meleeAttack": 100,
+    "name": "Bushi Noct",
+    "partnerSkill": {
+      "description": "When activated, attacks targeted enemy with a powerful Iaigiri.",
+      "group": "Activated Skill",
+      "name": "Flash Blade"
+    },
+    "price": 4520,
+    "rarity": 7,
+    "rideSprintSpeed": 900,
+    "runSpeed": 600,
+    "shotAttack": 130,
+    "size": "Medium",
+    "slowWalkSpeed": 80,
+    "stamina": 100,
+    "support": 100,
+    "title": "Samurai of Darkness",
+    "transportSpeed": 320,
+    "walkSpeed": 160,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 1,
+      "generatingElectricity": 0,
+      "handiwork": 1,
+      "kindling": 2,
+      "lumbering": 3,
+      "medicineProduction": 0,
+      "mining": 0,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 2,
+      "watering": 0
+    },
+    "zukanIndex": 72,
+    "zukanIndexSuffix": "B"
+  },
+  {
+    "activeSkills": [
+      {
         "id": "air-cannon",
         "level": 1
       },
@@ -8206,7 +8543,7 @@
     "meleeAttack": 100,
     "name": "Beakon",
     "partnerSkill": {
-      "description": "Can be ridden as an flying mount. Applies Electric damage to the player's attacks while mounted.",
+      "description": "Can be ridden as a flying mount. Applies Electric damage to the player's attacks while mounted.",
       "group": "Flying Mount",
       "name": "Thunderous"
     },
@@ -8297,7 +8634,7 @@
     "meleeAttack": 100,
     "name": "Ragnahawk",
     "partnerSkill": {
-      "description": "Can be ridden as an flying mount. Applies Fire damage to the player's attacks while mounted.",
+      "description": "Can be ridden as a flying mount. Applies Fire damage to the player's attacks while mounted.",
       "group": "Flying Mount",
       "name": "Flame Wing"
     },
@@ -8441,6 +8778,109 @@
         "level": 1
       },
       {
+        "id": "dark-cannon",
+        "level": 7
+      },
+      {
+        "id": "flare-arrow",
+        "level": 15
+      },
+      {
+        "id": "flare-storm",
+        "level": 22
+      },
+      {
+        "id": "flame-wall",
+        "level": 30
+      },
+      {
+        "id": "flame-funnel",
+        "level": 40
+      },
+      {
+        "id": "fire-ball",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 1,
+    "combiRank": 690,
+    "craftSpeed": 100,
+    "defense": 90,
+    "description": "Due to its upbringing, it no longer cares about whether its food is raw enough. This Pal stopped worrying about those details, and just prefers its food to be as spicy as possible. Not on good terms with Wixen Noct.",
+    "drops": [
+      {
+        "id": "flame-organ",
+        "max": 2,
+        "min": 1,
+        "rate": 100
+      },
+      {
+        "id": "katress-hair",
+        "max": 1,
+        "min": 1,
+        "rate": 50
+      },
+      {
+        "id": "high-grade-technical-manual",
+        "max": 1,
+        "min": 1,
+        "rate": 1
+      }
+    ],
+    "elementType1": "dark",
+    "elementType2": "fire",
+    "foodAmount": 5,
+    "hp": 95,
+    "id": "katress-ignis",
+    "internalName": "CatMage_Fire",
+    "isBoss": false,
+    "maleProbability": 50,
+    "maxFullStomach": 350,
+    "meleeAttack": 100,
+    "name": "Katress Ignis",
+    "partnerSkill": {
+      "description": "While fighting together, Grass Pals drop more items when defeated.",
+      "group": "Increased Drops",
+      "name": "Botanical Atlas"
+    },
+    "price": 4120,
+    "rarity": 6,
+    "rideSprintSpeed": 620,
+    "runSpeed": 440,
+    "shotAttack": 105,
+    "size": "Medium",
+    "slowWalkSpeed": 70,
+    "stamina": 100,
+    "support": 100,
+    "title": "Fire Licked Feline",
+    "transportSpeed": 292,
+    "walkSpeed": 145,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 0,
+      "generatingElectricity": 0,
+      "handiwork": 2,
+      "kindling": 2,
+      "lumbering": 0,
+      "medicineProduction": 2,
+      "mining": 0,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 2,
+      "watering": 0
+    },
+    "zukanIndex": 75,
+    "zukanIndexSuffix": "B"
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "ignis-blast",
+        "level": 1
+      },
+      {
         "id": "spirit-fire",
         "level": 7
       },
@@ -8501,7 +8941,7 @@
       "group": "Fire Attacks",
       "name": "Lord Fox"
     },
-    "price": 1540,
+    "price": 3080,
     "rarity": 6,
     "rideSprintSpeed": 620,
     "runSpeed": 440,
@@ -8530,6 +8970,103 @@
     },
     "zukanIndex": 76,
     "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "umbral-surge",
+        "level": 1
+      },
+      {
+        "id": "dark-cannon",
+        "level": 7
+      },
+      {
+        "id": "dark-arrow",
+        "level": 15
+      },
+      {
+        "id": "flare-storm",
+        "level": 22
+      },
+      {
+        "id": "spirit-flame",
+        "level": 30
+      },
+      {
+        "id": "flame-wall",
+        "level": 40
+      },
+      {
+        "id": "apocalypse",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 1,
+    "combiRank": 1150,
+    "craftSpeed": 100,
+    "defense": 85,
+    "description": "Due to its upbringing, it no longer cares about whether its food is cooked enough. This Pal stopped worrying about those details, and just prefers its food to be as sweet as possible. Not on good terms with Katress Ignis.",
+    "drops": [
+      {
+        "id": "medium-pal-soul",
+        "max": 2,
+        "min": 1,
+        "rate": 100
+      },
+      {
+        "id": "high-grade-technical-manual",
+        "max": 1,
+        "min": 1,
+        "rate": 1
+      }
+    ],
+    "elementType1": "fire",
+    "elementType2": "dark",
+    "foodAmount": 5,
+    "hp": 90,
+    "id": "wixen-noct",
+    "internalName": "FoxMage_Dark",
+    "isBoss": false,
+    "maleProbability": 50,
+    "maxFullStomach": 350,
+    "meleeAttack": 50,
+    "name": "Wixen Noct",
+    "partnerSkill": {
+      "description": "When fighting together, applies Dark damage to the player's attacks.",
+      "group": "Dark Attacks",
+      "name": "Black Fox Lord"
+    },
+    "price": 4080,
+    "rarity": 6,
+    "rideSprintSpeed": 620,
+    "runSpeed": 440,
+    "shotAttack": 110,
+    "size": "Medium",
+    "slowWalkSpeed": 70,
+    "stamina": 100,
+    "support": 120,
+    "title": "Phantasmal Furball",
+    "transportSpeed": 292,
+    "walkSpeed": 145,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 0,
+      "generatingElectricity": 0,
+      "handiwork": 3,
+      "kindling": 2,
+      "lumbering": 0,
+      "medicineProduction": 0,
+      "mining": 0,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 2,
+      "watering": 0
+    },
+    "zukanIndex": 76,
+    "zukanIndexSuffix": "B"
   },
   {
     "activeSkills": [
@@ -8879,7 +9416,7 @@
     "meleeAttack": 80,
     "name": "Elphidran",
     "partnerSkill": {
-      "description": "Can be ridden as an flying mount. While fighting together, Dark Pals drop more items when defeated.",
+      "description": "Can be ridden as a flying mount. While fighting together, Dark Pals drop more items when defeated.",
       "group": "Ground Mount",
       "name": "Amicable Holy Dragon"
     },
@@ -8970,7 +9507,7 @@
     "meleeAttack": 80,
     "name": "Elphidran Aqua",
     "partnerSkill": {
-      "description": "Can be ridden as an flying mount. While fighting together, Fire Pals drop more items when defeated.",
+      "description": "Can be ridden as a flying mount. While fighting together, Fire Pals drop more items when defeated.",
       "group": "Ground Mount",
       "name": "Amicable Water Dragon"
     },
@@ -10915,6 +11452,64 @@
     "zukanIndexSuffix": ""
   },
   {
+    "activeSkills": [],
+    "breedOrder": null,
+    "captureRateCorrect": 1,
+    "combiRank": 350,
+    "craftSpeed": 100,
+    "defense": 120,
+    "description": "The ultra-hard armor surrounding its body is extremely strong and heat resistant. It doesn't flinch even if a Mammorest steps on it.",
+    "drops": [
+      {
+        "id": "coal",
+        "max": 10,
+        "min": 10,
+        "rate": 100
+      }
+    ],
+    "elementType1": "ground",
+    "elementType2": null,
+    "foodAmount": 6,
+    "hp": 120,
+    "id": "warsect-terra",
+    "internalName": "HerculesBeetle_Ground",
+    "isBoss": false,
+    "maleProbability": 85,
+    "maxFullStomach": 400,
+    "meleeAttack": 100,
+    "name": "Warsect  Terra",
+    "partnerSkill": null,
+    "price": 7830,
+    "rarity": 9,
+    "rideSprintSpeed": 600,
+    "runSpeed": 500,
+    "shotAttack": 105,
+    "size": "Large",
+    "slowWalkSpeed": 55,
+    "stamina": 100,
+    "support": 100,
+    "title": "Golden Armor Warrior",
+    "transportSpeed": 110,
+    "walkSpeed": 110,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 0,
+      "generatingElectricity": 0,
+      "handiwork": 1,
+      "kindling": 0,
+      "lumbering": 0,
+      "medicineProduction": 0,
+      "mining": 3,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 3,
+      "watering": 0
+    },
+    "zukanIndex": 92,
+    "zukanIndexSuffix": "B"
+  },
+  {
     "activeSkills": [
       {
         "id": "air-cannon",
@@ -11165,9 +11760,9 @@
     "meleeAttack": 100,
     "name": "Quivern",
     "partnerSkill": {
-      "description": "Can be ridden as an flying mount. Enhances Dragon attacks while mounted.",
+      "description": "Can be ridden as a flying mount. Enhances Dragon attacks while mounted.",
       "group": "Ground Mount",
-      "name": "Sky Dragon's Affection"
+      "name": "Sky Dragon Affection"
     },
     "price": 6830,
     "rarity": 7,
@@ -11202,6 +11797,109 @@
   {
     "activeSkills": [
       {
+        "id": "dragon-cannon",
+        "level": 1
+      },
+      {
+        "id": "wind-cutter",
+        "level": 7
+      },
+      {
+        "id": "seed-machine-gun",
+        "level": 15
+      },
+      {
+        "id": "draconic-breath",
+        "level": 22
+      },
+      {
+        "id": "grass-tornado",
+        "level": 30
+      },
+      {
+        "id": "comet-strike",
+        "level": 40
+      },
+      {
+        "id": "circle-vine",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 1,
+    "combiRank": 340,
+    "craftSpeed": 100,
+    "defense": 100,
+    "description": "When you hug Quivern Botan, if it smells like sunshine and meadows, tomorrow will be sunny. If it smells damp, tomorrow will be wet and miserable.",
+    "drops": [
+      {
+        "id": "high-quality-pal-oil",
+        "max": 3,
+        "min": 3,
+        "rate": 100
+      },
+      {
+        "id": "beautiful-flower",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "red-berries",
+        "max": 2,
+        "min": 1,
+        "rate": 60
+      }
+    ],
+    "elementType1": "dragon",
+    "elementType2": "grass",
+    "foodAmount": 4,
+    "hp": 105,
+    "id": "quivern-botan",
+    "internalName": "SkyDragon_Grass",
+    "isBoss": false,
+    "maleProbability": 50,
+    "maxFullStomach": 300,
+    "meleeAttack": 100,
+    "name": "Quivern Botan",
+    "partnerSkill": {
+      "description": "Can be ridden as a flying mount. Enhances Grass attacks while mounted.",
+      "group": "Flying Mount",
+      "name": "Grass Dragon Affection"
+    },
+    "price": 7830,
+    "rarity": 8,
+    "rideSprintSpeed": 950,
+    "runSpeed": 800,
+    "shotAttack": 105,
+    "size": "Large",
+    "slowWalkSpeed": 120,
+    "stamina": 220,
+    "support": 100,
+    "title": "Evergreen Flyer",
+    "transportSpeed": 470,
+    "walkSpeed": 240,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 2,
+      "generatingElectricity": 0,
+      "handiwork": 1,
+      "kindling": 0,
+      "lumbering": 0,
+      "medicineProduction": 0,
+      "mining": 2,
+      "oilExtraction": 0,
+      "planting": 2,
+      "transporting": 3,
+      "watering": 0
+    },
+    "zukanIndex": 95,
+    "zukanIndexSuffix": "B"
+  },
+  {
+    "activeSkills": [
+      {
         "id": "power-shot",
         "level": 1
       },
@@ -11220,6 +11918,10 @@
       {
         "id": "ignis-rage",
         "level": 30
+      },
+      {
+        "id": "brawn-impact",
+        "level": 35
       },
       {
         "id": "fire-ball",
@@ -11299,6 +12001,109 @@
   {
     "activeSkills": [
       {
+        "id": "dragon-burst",
+        "level": 1
+      },
+      {
+        "id": "ignis-breath",
+        "level": 7
+      },
+      {
+        "id": "flame-wall",
+        "level": 15
+      },
+      {
+        "id": "comet-strike",
+        "level": 22
+      },
+      {
+        "id": "beam-slicer",
+        "level": 30
+      },
+      {
+        "id": "brawn-impact",
+        "level": 40
+      },
+      {
+        "id": "magna-crush",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 1,
+    "combiRank": 9,
+    "craftSpeed": 100,
+    "defense": 125,
+    "description": "Long ago, it emerged from the depths of the earth. With relentless, raging flames showing no mercy, it burned the entire island until nothing remained. It was known as the Eternal Flame.",
+    "drops": [
+      {
+        "id": "coal",
+        "max": 10,
+        "min": 10,
+        "rate": 100
+      },
+      {
+        "id": "medium-pal-soul",
+        "max": 1,
+        "min": 1,
+        "rate": 5
+      },
+      {
+        "id": "precious-claw",
+        "max": 1,
+        "min": 1,
+        "rate": 30
+      }
+    ],
+    "elementType1": "dragon",
+    "elementType2": "fire",
+    "foodAmount": 9,
+    "hp": 105,
+    "id": "blazamut-ryu",
+    "internalName": "KingBahamut_Dragon",
+    "isBoss": false,
+    "maleProbability": 50,
+    "maxFullStomach": 600,
+    "meleeAttack": 150,
+    "name": "Blazamut Ryu",
+    "partnerSkill": {
+      "description": "Can be ridden. Enhances Dragon attacks while mounted.",
+      "group": "Ground Mount",
+      "name": "Dragon Kaiser"
+    },
+    "price": 10520,
+    "rarity": 10,
+    "rideSprintSpeed": 900,
+    "runSpeed": 700,
+    "shotAttack": 130,
+    "size": "Extra Large",
+    "slowWalkSpeed": 150,
+    "stamina": 100,
+    "support": 50,
+    "title": "Incarnation of the Eternal Flame",
+    "transportSpeed": 500,
+    "walkSpeed": 400,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 0,
+      "generatingElectricity": 0,
+      "handiwork": 0,
+      "kindling": 3,
+      "lumbering": 0,
+      "medicineProduction": 0,
+      "mining": 4,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 0,
+      "watering": 0
+    },
+    "zukanIndex": 96,
+    "zukanIndexSuffix": "B"
+  },
+  {
+    "activeSkills": [
+      {
         "id": "spirit-fire",
         "level": 1
       },
@@ -11359,7 +12164,7 @@
     "meleeAttack": 100,
     "name": "Helzephyr",
     "partnerSkill": {
-      "description": "Can be ridden as an flying mount. Applies Dark damage to the player's attacks while mounted.",
+      "description": "Can be ridden as a flying mount. Applies Dark damage to the player's attacks while mounted.",
       "group": "Flying Mount",
       "name": "Wings of Death"
     },
@@ -11392,6 +12197,103 @@
     },
     "zukanIndex": 97,
     "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "spark-blast",
+        "level": 1
+      },
+      {
+        "id": "shockwave",
+        "level": 7
+      },
+      {
+        "id": "dark-arrow",
+        "level": 15
+      },
+      {
+        "id": "nightmare-ball",
+        "level": 22
+      },
+      {
+        "id": "tri-spark",
+        "level": 30
+      },
+      {
+        "id": "thunder-rain",
+        "level": 40
+      },
+      {
+        "id": "thunderstorm",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 1,
+    "combiRank": 180,
+    "craftSpeed": 100,
+    "defense": 100,
+    "description": "It calls forth lightning from the depths of hell. While considered a subspecies of Helzephyr, there's a theory that suggests Helzephyr Lux, struck by lightning from hell, will transform into Helzephyr.",
+    "drops": [
+      {
+        "id": "electric-organ",
+        "max": 3,
+        "min": 1,
+        "rate": 100
+      },
+      {
+        "id": "medium-pal-soul",
+        "max": 1,
+        "min": 1,
+        "rate": 3
+      }
+    ],
+    "elementType1": "dark",
+    "elementType2": "electric",
+    "foodAmount": 8,
+    "hp": 105,
+    "id": "helzephyr-lux",
+    "internalName": "HadesBird_Electric",
+    "isBoss": false,
+    "maleProbability": 50,
+    "maxFullStomach": 525,
+    "meleeAttack": 100,
+    "name": "Helzephyr Lux",
+    "partnerSkill": {
+      "description": "Can be ridden as a flying mount. Applies Electric damage to the player's attacks while mounted.",
+      "group": "Flying Mount",
+      "name": "Wings of Thunder"
+    },
+    "price": 8840,
+    "rarity": 8,
+    "rideSprintSpeed": 1100,
+    "runSpeed": 700,
+    "shotAttack": 125,
+    "size": "Large",
+    "slowWalkSpeed": 100,
+    "stamina": 170,
+    "support": 100,
+    "title": "Wings of Thunder",
+    "transportSpeed": 450,
+    "walkSpeed": 100,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 0,
+      "generatingElectricity": 3,
+      "handiwork": 0,
+      "kindling": 0,
+      "lumbering": 0,
+      "medicineProduction": 0,
+      "mining": 0,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 3,
+      "watering": 0
+    },
+    "zukanIndex": 97,
+    "zukanIndexSuffix": "B"
   },
   {
     "activeSkills": [
@@ -11456,7 +12358,7 @@
     "meleeAttack": 100,
     "name": "Astegon",
     "partnerSkill": {
-      "description": "Can be ridden as an flying mount. Increases damage dealt to ore while mounted.",
+      "description": "Can be ridden as a flying mount. Increases the damage dealt to ores, and you can obtain more Ore while mounted.",
       "group": "Ground Mount",
       "name": "Black Anklyosaur"
     },
@@ -11511,6 +12413,10 @@
       {
         "id": "nightmare-ball",
         "level": 30
+      },
+      {
+        "id": "jumping-stinger",
+        "level": 35
       },
       {
         "id": "rock-lance",
@@ -11586,6 +12492,103 @@
     },
     "zukanIndex": 99,
     "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "sand-blast",
+        "level": 1
+      },
+      {
+        "id": "stone-blast",
+        "level": 7
+      },
+      {
+        "id": "stone-cannon",
+        "level": 15
+      },
+      {
+        "id": "sand-tornado",
+        "level": 22
+      },
+      {
+        "id": "jumping-stinger",
+        "level": 30
+      },
+      {
+        "id": "rock-lance",
+        "level": 40
+      },
+      {
+        "id": "rockburst",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 1,
+    "combiRank": 250,
+    "craftSpeed": 100,
+    "defense": 130,
+    "description": "The main body is an entity made of energy, with nothing inside. It stuffs earth and minerals into its outer shell, achieving overwhelming mass. Those who are struck by it can only let out hellish groans.",
+    "drops": [
+      {
+        "id": "crude-oil",
+        "max": 1,
+        "min": 1,
+        "rate": 50
+      },
+      {
+        "id": "flame-organ",
+        "max": 2,
+        "min": 1,
+        "rate": 100
+      }
+    ],
+    "elementType1": "ground",
+    "elementType2": null,
+    "foodAmount": 7,
+    "hp": 100,
+    "id": "menasting-terra",
+    "internalName": "DarkScorpion_Ground",
+    "isBoss": false,
+    "maleProbability": 50,
+    "maxFullStomach": 475,
+    "meleeAttack": 100,
+    "name": "Menasting Terra",
+    "partnerSkill": {
+      "description": "When fighting together, increases the player's defense and Electric Pals drop more items when defeated.",
+      "group": "Increased Drops",
+      "name": "Steel Scorpion"
+    },
+    "price": 8050,
+    "rarity": 10,
+    "rideSprintSpeed": 1200,
+    "runSpeed": 1000,
+    "shotAttack": 105,
+    "size": "Large",
+    "slowWalkSpeed": 100,
+    "stamina": 100,
+    "support": 100,
+    "title": "Gold-Piercing Spear",
+    "transportSpeed": 600,
+    "walkSpeed": 200,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 0,
+      "generatingElectricity": 0,
+      "handiwork": 0,
+      "kindling": 0,
+      "lumbering": 2,
+      "medicineProduction": 0,
+      "mining": 3,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 0,
+      "watering": 0
+    },
+    "zukanIndex": 99,
+    "zukanIndexSuffix": "B"
   },
   {
     "activeSkills": [
@@ -11935,7 +12938,7 @@
     "meleeAttack": 100,
     "name": "Suzaku",
     "partnerSkill": {
-      "description": "Can be ridden as an flying mount. Enhances Fire attacks while mounted.",
+      "description": "Can be ridden as a flying mount. Enhances Fire attacks while mounted.",
       "group": "Flying Mount",
       "name": "Wings of Flame"
     },
@@ -12026,7 +13029,7 @@
     "meleeAttack": 100,
     "name": "Suzaku Aqua",
     "partnerSkill": {
-      "description": "Can be ridden as an flying mount. Enhances Water attacks while mounted.",
+      "description": "Can be ridden as a flying mount. Enhances Water attacks while mounted.",
       "group": "Flying Mount",
       "name": "Wings of Water"
     },
@@ -12089,6 +13092,10 @@
       {
         "id": "lightning-bolt",
         "level": 50
+      },
+      {
+        "id": "heavy-thunder-tank",
+        "level": 55
       }
     ],
     "breedOrder": 13,
@@ -12186,6 +13193,10 @@
       {
         "id": "solar-blast",
         "level": 50
+      },
+      {
+        "id": "bountiful-protection",
+        "level": 55
       }
     ],
     "breedOrder": 92,
@@ -12392,6 +13403,10 @@
       {
         "id": "fire-ball",
         "level": 50
+      },
+      {
+        "id": "raging-flame-wave",
+        "level": 55
       }
     ],
     "breedOrder": 73,
@@ -12420,7 +13435,7 @@
     "meleeAttack": 100,
     "name": "Faleris",
     "partnerSkill": {
-      "description": "Can be ridden as an flying mount. While fighting together, Ice Pals drop more items when defeated.",
+      "description": "Can be ridden as a flying mount. While fighting together, Ice Pals drop more items when defeated.",
       "group": "Flying Mount",
       "name": "Scorching Predator"
     },
@@ -12483,6 +13498,10 @@
       {
         "id": "lightning-bolt",
         "level": 50
+      },
+      {
+        "id": "polykeraunos",
+        "level": 55
       }
     ],
     "breedOrder": 134,
@@ -12574,6 +13593,10 @@
       {
         "id": "dark-laser",
         "level": 50
+      },
+      {
+        "id": "divine-disaster-ii",
+        "level": 55
       }
     ],
     "breedOrder": 77,
@@ -12614,7 +13637,7 @@
     "meleeAttack": 130,
     "name": "Shadowbeak",
     "partnerSkill": {
-      "description": "Can be ridden as an flying mount. Enhances Dark attacks while mounted.",
+      "description": "Can be ridden as a flying mount. Enhances Dark attacks while mounted.",
       "group": "Ground Mount",
       "name": "Modified DNA"
     },
@@ -12905,7 +13928,7 @@
     "meleeAttack": 100,
     "name": "Frostallion",
     "partnerSkill": {
-      "description": "Can be ridden as an flying mount. Changes the player's attack type to Ice and enhances Ice attacks while mounted.",
+      "description": "Can be ridden as a flying mount. Changes the player's attack type to Ice and enhances Ice attacks while mounted.",
       "group": "Flying Mount",
       "name": "Ice Steed"
     },
@@ -13002,7 +14025,7 @@
     "meleeAttack": 100,
     "name": "Frostallion Noct",
     "partnerSkill": {
-      "description": "Can be ridden as an flying mount. Changes the player's attack type to Dark and enhances Dark attacks while mounted.",
+      "description": "Can be ridden as a flying mount. Changes the player's attack type to Dark and enhances Dark attacks while mounted.",
       "group": "Flying Mount",
       "name": "Black Steed"
     },
@@ -13111,7 +14134,7 @@
     "meleeAttack": 100,
     "name": "Jetragon",
     "partnerSkill": {
-      "description": "Can be ridden as an flying mount. Can rapidly fire a missile launcher while mounted.",
+      "description": "Can be ridden as a flying mount. Can rapidly fire a missile launcher while mounted.",
       "group": "Flying Mount",
       "name": "Aerial Missile"
     },
@@ -13312,5 +14335,1448 @@
     },
     "zukanIndex": 112,
     "zukanIndexSuffix": "B"
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "dark-cannon",
+        "level": 1
+      },
+      {
+        "id": "dark-arrow",
+        "level": 7
+      },
+      {
+        "id": "air-blade",
+        "level": 15
+      },
+      {
+        "id": "holy-burst",
+        "level": 22
+      },
+      {
+        "id": "seigetsu-blade",
+        "level": 30
+      },
+      {
+        "id": "star-mine",
+        "level": 40
+      },
+      {
+        "id": "moonlight-beam",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 1,
+    "combiRank": 345,
+    "craftSpeed": 100,
+    "defense": 110,
+    "description": "The object floating behind, resembling the moon, is said to gradually become more circular with each passing generation. No one knows what will happen when the moon is full.",
+    "drops": [
+      {
+        "id": "cloth",
+        "max": 2,
+        "min": 1,
+        "rate": 60
+      },
+      {
+        "id": "sapphire",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "precious-claw",
+        "max": 1,
+        "min": 1,
+        "rate": 30
+      }
+    ],
+    "elementType1": "dark",
+    "elementType2": "neutral",
+    "foodAmount": 2,
+    "hp": 130,
+    "id": "selyne",
+    "internalName": "MoonQueen",
+    "isBoss": false,
+    "maleProbability": 20,
+    "maxFullStomach": 150,
+    "meleeAttack": 100,
+    "name": "Selyne",
+    "partnerSkill": {
+      "description": "Can be ridden as a flying mount. Enhances Fire and Dark attacks while mounted.",
+      "group": "Flying Mount",
+      "name": "Celestial Darkness"
+    },
+    "price": 9500,
+    "rarity": 9,
+    "rideSprintSpeed": 550,
+    "runSpeed": 450,
+    "shotAttack": 115,
+    "size": "Large",
+    "slowWalkSpeed": 60,
+    "stamina": 300,
+    "support": 100,
+    "title": "Crescent of the Darkest Night",
+    "transportSpeed": 275,
+    "walkSpeed": 150,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 0,
+      "generatingElectricity": 0,
+      "handiwork": 3,
+      "kindling": 0,
+      "lumbering": 0,
+      "medicineProduction": 3,
+      "mining": 0,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 3,
+      "watering": 0
+    },
+    "zukanIndex": 113,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "aqua-gun",
+        "level": 1
+      },
+      {
+        "id": "bubble-blast",
+        "level": 7
+      },
+      {
+        "id": "acid-rain",
+        "level": 15
+      },
+      {
+        "id": "aqua-burst",
+        "level": 22
+      },
+      {
+        "id": "splash",
+        "level": 30
+      },
+      {
+        "id": "curtain-splash",
+        "level": 40
+      },
+      {
+        "id": "hydro-laser",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 1,
+    "combiRank": 795,
+    "craftSpeed": 100,
+    "defense": 85,
+    "description": "Those who disgrace the honor of the herd are forced to take their own life. By piercing their inflated vocal sac with a tree branch, they are blown away into the atmosphere and return to the afterlife.",
+    "drops": [
+      {
+        "id": "pal-fluids",
+        "max": 2,
+        "min": 1,
+        "rate": 100
+      },
+      {
+        "id": "cloth",
+        "max": 2,
+        "min": 1,
+        "rate": 25
+      }
+    ],
+    "elementType1": "water",
+    "elementType2": null,
+    "foodAmount": 2,
+    "hp": 80,
+    "id": "croajiro",
+    "internalName": "KendoFrog",
+    "isBoss": false,
+    "maleProbability": 50,
+    "maxFullStomach": 150,
+    "meleeAttack": 100,
+    "name": "Croajiro",
+    "partnerSkill": {
+      "description": "When activated, Croajiro swells its abdomen and channels its loyalty to build up energy. Climbing on top will propel the player high into the air.",
+      "group": "Passive Pal",
+      "name": "Leap Stance"
+    },
+    "price": 2040,
+    "rarity": 4,
+    "rideSprintSpeed": 450,
+    "runSpeed": 300,
+    "shotAttack": 100,
+    "size": "Extra Small",
+    "slowWalkSpeed": 33,
+    "stamina": 100,
+    "support": 100,
+    "title": "Harakiri Master",
+    "transportSpeed": 300,
+    "walkSpeed": 66,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 1,
+      "generatingElectricity": 0,
+      "handiwork": 1,
+      "kindling": 0,
+      "lumbering": 0,
+      "medicineProduction": 0,
+      "mining": 0,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 1,
+      "watering": 1
+    },
+    "zukanIndex": 114,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "wind-cutter",
+        "level": 1
+      },
+      {
+        "id": "seed-machine-gun",
+        "level": 7
+      },
+      {
+        "id": "multicutter",
+        "level": 15
+      },
+      {
+        "id": "grass-tornado",
+        "level": 22
+      },
+      {
+        "id": "holy-burst",
+        "level": 30
+      },
+      {
+        "id": "circle-vine",
+        "level": 40
+      },
+      {
+        "id": "solar-blast",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 1,
+    "combiRank": 905,
+    "craftSpeed": 100,
+    "defense": 80,
+    "description": "In early spring, pollen floats on the wind throughout the island. Flopie's hay fever is Lullu's fault.",
+    "drops": [
+      {
+        "id": "beautiful-flower",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "red-berries",
+        "max": 2,
+        "min": 1,
+        "rate": 60
+      }
+    ],
+    "elementType1": "grass",
+    "elementType2": null,
+    "foodAmount": 2,
+    "hp": 90,
+    "id": "lullu",
+    "internalName": "LeafPrincess",
+    "isBoss": false,
+    "maleProbability": 30,
+    "maxFullStomach": 150,
+    "meleeAttack": 100,
+    "name": "Lullu",
+    "partnerSkill": {
+      "description": "While at a base, Lullu fills the farm with good spirits, increasing the growth rate of the crops.",
+      "group": "Healing",
+      "name": "Floral Boost"
+    },
+    "price": 3420,
+    "rarity": 4,
+    "rideSprintSpeed": 800,
+    "runSpeed": 400,
+    "shotAttack": 90,
+    "size": "Small",
+    "slowWalkSpeed": 50,
+    "stamina": 100,
+    "support": 100,
+    "title": "Primal Source of Hay Fever",
+    "transportSpeed": 250,
+    "walkSpeed": 100,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 1,
+      "generatingElectricity": 0,
+      "handiwork": 2,
+      "kindling": 0,
+      "lumbering": 0,
+      "medicineProduction": 2,
+      "mining": 0,
+      "oilExtraction": 0,
+      "planting": 2,
+      "transporting": 0,
+      "watering": 0
+    },
+    "zukanIndex": 115,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "poison-blast",
+        "level": 1
+      },
+      {
+        "id": "seed-machine-gun",
+        "level": 7
+      },
+      {
+        "id": "grass-tornado",
+        "level": 15
+      },
+      {
+        "id": "seed-mine",
+        "level": 22
+      },
+      {
+        "id": "spine-vine",
+        "level": 30
+      },
+      {
+        "id": "circle-vine",
+        "level": 40
+      },
+      {
+        "id": "solar-blast",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 1,
+    "combiRank": 720,
+    "craftSpeed": 100,
+    "defense": 90,
+    "description": "Inhaling large amounts of its spores will put you into a trance. Sometimes, if Shroomer appears motionless, it's not because it's mimicking a mushroom, but rather because it's high off its own spores.",
+    "drops": [
+      {
+        "id": "mushroom",
+        "max": 2,
+        "min": 1,
+        "rate": 100
+      },
+      {
+        "id": "red-berries",
+        "max": 2,
+        "min": 1,
+        "rate": 60
+      }
+    ],
+    "elementType1": "grass",
+    "elementType2": null,
+    "foodAmount": 3,
+    "hp": 110,
+    "id": "shroomer",
+    "internalName": "MushroomDragon",
+    "isBoss": false,
+    "maleProbability": 55,
+    "maxFullStomach": 270,
+    "meleeAttack": 100,
+    "name": "Shroomer",
+    "partnerSkill": {
+      "description": "Can be ridden. While at a base, its mysterious spores slow the rate at which the SAN value of allies at the base decreases.",
+      "group": "Ground Mount",
+      "name": "Swooshy Spores"
+    },
+    "price": 3660,
+    "rarity": 4,
+    "rideSprintSpeed": 700,
+    "runSpeed": 400,
+    "shotAttack": 80,
+    "size": "Small",
+    "slowWalkSpeed": 50,
+    "stamina": 100,
+    "support": 100,
+    "title": "Creeping Mushroom",
+    "transportSpeed": -1,
+    "walkSpeed": 80,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 2,
+      "generatingElectricity": 0,
+      "handiwork": 1,
+      "kindling": 0,
+      "lumbering": 2,
+      "medicineProduction": 0,
+      "mining": 0,
+      "oilExtraction": 0,
+      "planting": 2,
+      "transporting": 0,
+      "watering": 0
+    },
+    "zukanIndex": 116,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "poison-blast",
+        "level": 1
+      },
+      {
+        "id": "shadow-burst",
+        "level": 7
+      },
+      {
+        "id": "grass-tornado",
+        "level": 15
+      },
+      {
+        "id": "seed-mine",
+        "level": 22
+      },
+      {
+        "id": "nightmare-ball",
+        "level": 30
+      },
+      {
+        "id": "circle-vine",
+        "level": 40
+      },
+      {
+        "id": "dark-laser",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 1,
+    "combiRank": 730,
+    "craftSpeed": 100,
+    "defense": 90,
+    "description": "The abundance of spores released by this Pal blocks out sunlight. Sometimes, if Shroomer Noct appears motionless, it's not because it's mimicking a mushroom, but rather because its own spores don't let it see anything.",
+    "drops": [
+      {
+        "id": "venom-gland",
+        "max": 8,
+        "min": 4,
+        "rate": 100
+      },
+      {
+        "id": "mysterious-mushroom",
+        "max": 2,
+        "min": 1,
+        "rate": 100
+      }
+    ],
+    "elementType1": "grass",
+    "elementType2": "dark",
+    "foodAmount": 3,
+    "hp": 110,
+    "id": "shroomer-noct",
+    "internalName": "MushroomDragon_Dark",
+    "isBoss": false,
+    "maleProbability": 50,
+    "maxFullStomach": 270,
+    "meleeAttack": 100,
+    "name": "Shroomer Noct",
+    "partnerSkill": {
+      "description": "Can be ridden. While at a base, its mysterious spores slow the rate at which the SAN value of allies at the base decreases.",
+      "group": "Ground Mount",
+      "name": "Swooshy Spores"
+    },
+    "price": 4240,
+    "rarity": 5,
+    "rideSprintSpeed": 700,
+    "runSpeed": 400,
+    "shotAttack": 85,
+    "size": "Small",
+    "slowWalkSpeed": 50,
+    "stamina": 100,
+    "support": 100,
+    "title": "Dangerous Mushroom",
+    "transportSpeed": -1,
+    "walkSpeed": 80,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 2,
+      "generatingElectricity": 0,
+      "handiwork": 1,
+      "kindling": 0,
+      "lumbering": 2,
+      "medicineProduction": 0,
+      "mining": 0,
+      "oilExtraction": 0,
+      "planting": 2,
+      "transporting": 0,
+      "watering": 0
+    },
+    "zukanIndex": 116,
+    "zukanIndexSuffix": "B"
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "power-shot",
+        "level": 1
+      },
+      {
+        "id": "sand-blast",
+        "level": 7
+      },
+      {
+        "id": "stone-blast",
+        "level": 15
+      },
+      {
+        "id": "power-bomb",
+        "level": 22
+      },
+      {
+        "id": "sand-tornado",
+        "level": 30
+      },
+      {
+        "id": "rockburst",
+        "level": 40
+      },
+      {
+        "id": "rock-lance",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 1,
+    "combiRank": 1125,
+    "craftSpeed": 100,
+    "defense": 90,
+    "description": "A decade ago, Kikit soccer was popular. However, it quickly fell out of favor due to fierce opposition from the Free Pal Alliance. Nevertheless, the Kikits themselves didn't mind because it helped shed their old carapace.",
+    "drops": [
+      {
+        "id": "leather",
+        "max": 2,
+        "min": 1,
+        "rate": 100
+      },
+      {
+        "id": "bone",
+        "max": 2,
+        "min": 1,
+        "rate": 60
+      },
+      {
+        "id": "crude-oil",
+        "max": 1,
+        "min": 1,
+        "rate": 50
+      }
+    ],
+    "elementType1": "ground",
+    "elementType2": null,
+    "foodAmount": 2,
+    "hp": 75,
+    "id": "kikit",
+    "internalName": "SmallArmadillo",
+    "isBoss": false,
+    "maleProbability": 50,
+    "maxFullStomach": 225,
+    "meleeAttack": 100,
+    "name": "Kikit",
+    "partnerSkill": {
+      "description": "While in team, Kikit helps carry supplies, decreasing the weight of crude oil in the player's inventory.",
+      "group": "Passive Pal",
+      "name": "Rollin' Full Oil"
+    },
+    "price": 2800,
+    "rarity": 4,
+    "rideSprintSpeed": 900,
+    "runSpeed": 800,
+    "shotAttack": 70,
+    "size": "Extra Small",
+    "slowWalkSpeed": 50,
+    "stamina": 100,
+    "support": 100,
+    "title": "Armored to the Teeth",
+    "transportSpeed": 300,
+    "walkSpeed": 100,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 0,
+      "generatingElectricity": 0,
+      "handiwork": 0,
+      "kindling": 0,
+      "lumbering": 0,
+      "medicineProduction": 0,
+      "mining": 1,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 0,
+      "watering": 0
+    },
+    "zukanIndex": 117,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "ignis-blast",
+        "level": 1
+      },
+      {
+        "id": "dark-ball",
+        "level": 7
+      },
+      {
+        "id": "spirit-fire",
+        "level": 15
+      },
+      {
+        "id": "spirit-flame",
+        "level": 22
+      },
+      {
+        "id": "nightmare-ball",
+        "level": 30
+      },
+      {
+        "id": "flame-funnel",
+        "level": 40
+      },
+      {
+        "id": "volcanic-rain",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 1,
+    "combiRank": 545,
+    "craftSpeed": 100,
+    "defense": 90,
+    "description": "It was once believed that as the world approached its end, the flame would weaken. Doomsayers would repeatedly rejoice when the flame began to weaken, but in the end, it turned out to be a prank by Sootseer. At least, for now.",
+    "drops": [
+      {
+        "id": "medium-pal-soul",
+        "max": 2,
+        "min": 1,
+        "rate": 100
+      },
+      {
+        "id": "bone",
+        "max": 2,
+        "min": 1,
+        "rate": 100
+      },
+      {
+        "id": "crude-oil",
+        "max": 1,
+        "min": 1,
+        "rate": 50
+      }
+    ],
+    "elementType1": "dark",
+    "elementType2": "fire",
+    "foodAmount": 7,
+    "hp": 105,
+    "id": "sootseer",
+    "internalName": "CandleGhost",
+    "isBoss": false,
+    "maleProbability": 50,
+    "maxFullStomach": 475,
+    "meleeAttack": 100,
+    "name": "Sootseer",
+    "partnerSkill": {
+      "description": "Sometimes digs up Bone when assigned to Ranch.",
+      "group": "Ranch Production",
+      "name": "Grave Robber"
+    },
+    "price": 4890,
+    "rarity": 7,
+    "rideSprintSpeed": 1000,
+    "runSpeed": 800,
+    "shotAttack": 125,
+    "size": "Medium",
+    "slowWalkSpeed": 100,
+    "stamina": 100,
+    "support": 100,
+    "title": "Flickering Flame",
+    "transportSpeed": 450,
+    "walkSpeed": 250,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 1,
+      "gathering": 1,
+      "generatingElectricity": 0,
+      "handiwork": 2,
+      "kindling": 3,
+      "lumbering": 0,
+      "medicineProduction": 0,
+      "mining": 2,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 0,
+      "watering": 0
+    },
+    "zukanIndex": 118,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "poison-blast",
+        "level": 1
+      },
+      {
+        "id": "dark-cannon",
+        "level": 7
+      },
+      {
+        "id": "stone-blast",
+        "level": 15
+      },
+      {
+        "id": "sand-tornado",
+        "level": 22
+      },
+      {
+        "id": "upper-smash",
+        "level": 30
+      },
+      {
+        "id": "rock-lance",
+        "level": 40
+      },
+      {
+        "id": "dark-laser",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 1,
+    "combiRank": 355,
+    "craftSpeed": 100,
+    "defense": 90,
+    "description": "It has about 5,000 types of poison. Some of them are deadly enough to cause instant death, but all of them are too weak to have any effect.",
+    "drops": [
+      {
+        "id": "venom-gland",
+        "max": 5,
+        "min": 4,
+        "rate": 100
+      }
+    ],
+    "elementType1": "dark",
+    "elementType2": "ground",
+    "foodAmount": 4,
+    "hp": 90,
+    "id": "prixter",
+    "internalName": "ScorpionMan",
+    "isBoss": false,
+    "maleProbability": 50,
+    "maxFullStomach": 300,
+    "meleeAttack": 100,
+    "name": "Prixter",
+    "partnerSkill": {
+      "description": "When activated, it can analyze airborne particles and find a dungeon's exit.",
+      "group": "Detection",
+      "name": "Scorpion Sonar"
+    },
+    "price": 3939,
+    "rarity": 5,
+    "rideSprintSpeed": -1,
+    "runSpeed": 720,
+    "shotAttack": 110,
+    "size": "Small",
+    "slowWalkSpeed": 90,
+    "stamina": 100,
+    "support": 100,
+    "title": "Bad Boy",
+    "transportSpeed": -1,
+    "walkSpeed": 180,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 1,
+      "generatingElectricity": 0,
+      "handiwork": 0,
+      "kindling": 0,
+      "lumbering": 3,
+      "medicineProduction": 1,
+      "mining": 0,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 0,
+      "watering": 0
+    },
+    "zukanIndex": 119,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "power-shot",
+        "level": 1
+      },
+      {
+        "id": "stone-blast",
+        "level": 7
+      },
+      {
+        "id": "stone-cannon",
+        "level": 15
+      },
+      {
+        "id": "rockburst",
+        "level": 22
+      },
+      {
+        "id": "rock-lance",
+        "level": 30
+      },
+      {
+        "id": "ground-cutter",
+        "level": 40
+      },
+      {
+        "id": "sand-twister",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 1,
+    "combiRank": 265,
+    "craftSpeed": 100,
+    "defense": 135,
+    "description": "Can be disassembled into 215 parts, and even if the parts are scattered, it will reassemble itself and start moving again. If parts from different individuals are mixed it will manfunction due to mistaken identity.",
+    "drops": [
+      {
+        "id": "ore",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      }
+    ],
+    "elementType1": "ground",
+    "elementType2": null,
+    "foodAmount": 9,
+    "hp": 105,
+    "id": "knocklem",
+    "internalName": "WingGolem",
+    "isBoss": false,
+    "maleProbability": 70,
+    "maxFullStomach": 600,
+    "meleeAttack": 100,
+    "name": "Knocklem",
+    "partnerSkill": {
+      "description": "When activated, a steel resolve increases Knocklem's attack and defense.",
+      "group": "Activated Buff",
+      "name": "Steel Guardian Mode"
+    },
+    "price": 10380,
+    "rarity": 9,
+    "rideSprintSpeed": 700,
+    "runSpeed": 550,
+    "shotAttack": 110,
+    "size": "Large",
+    "slowWalkSpeed": 100,
+    "stamina": 100,
+    "support": 100,
+    "title": "Suit of Armor",
+    "transportSpeed": 400,
+    "walkSpeed": 190,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 3,
+      "generatingElectricity": 0,
+      "handiwork": 0,
+      "kindling": 0,
+      "lumbering": 0,
+      "medicineProduction": 0,
+      "mining": 3,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 4,
+      "watering": 0
+    },
+    "zukanIndex": 120,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "sand-blast",
+        "level": 1
+      },
+      {
+        "id": "power-shot",
+        "level": 7
+      },
+      {
+        "id": "stone-blast",
+        "level": 15
+      },
+      {
+        "id": "power-bomb",
+        "level": 22
+      },
+      {
+        "id": "air-blade",
+        "level": 30
+      },
+      {
+        "id": "holy-burst",
+        "level": 40
+      },
+      {
+        "id": "pal-blast",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 1,
+    "combiRank": 945,
+    "craftSpeed": 100,
+    "defense": 85,
+    "description": "It has a strong sense of justice and despises evil. In the past they were faithful and loving companions to the islanders. Nowadays, Yakumos are hostile to humans wherever they spot them.",
+    "drops": [
+      {
+        "id": "leather",
+        "max": 2,
+        "min": 1,
+        "rate": 100
+      }
+    ],
+    "elementType1": "neutral",
+    "elementType2": null,
+    "foodAmount": 3,
+    "hp": 85,
+    "id": "yakumo",
+    "internalName": "GuardianDog",
+    "isBoss": false,
+    "maleProbability": 50,
+    "maxFullStomach": 270,
+    "meleeAttack": 80,
+    "name": "Yakumo",
+    "partnerSkill": {
+      "description": "Can be ridden. When fighting together, it becomes easier to encounter pals with the same passive skill as this Pal.",
+      "group": "Ground Mount",
+      "name": "Birds of a Feather"
+    },
+    "price": 3360,
+    "rarity": 4,
+    "rideSprintSpeed": 520,
+    "runSpeed": 370,
+    "shotAttack": 85,
+    "size": "Extra Small",
+    "slowWalkSpeed": 70,
+    "stamina": 100,
+    "support": 110,
+    "title": "Unwavering Loyalty",
+    "transportSpeed": 165,
+    "walkSpeed": 110,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 2,
+      "generatingElectricity": 0,
+      "handiwork": 0,
+      "kindling": 0,
+      "lumbering": 0,
+      "medicineProduction": 0,
+      "mining": 0,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 0,
+      "watering": 0
+    },
+    "zukanIndex": 121,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "air-cannon",
+        "level": 1
+      },
+      {
+        "id": "power-shot",
+        "level": 7
+      },
+      {
+        "id": "stone-cannon",
+        "level": 15
+      },
+      {
+        "id": "power-bomb",
+        "level": 22
+      },
+      {
+        "id": "air-blade",
+        "level": 30
+      },
+      {
+        "id": "wholehearted-stance",
+        "level": 40
+      },
+      {
+        "id": "pal-blast",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 1,
+    "combiRank": 665,
+    "craftSpeed": 100,
+    "defense": 100,
+    "description": "Striving for a state of selflessness, it meditates endlessly. After confronting its worldly desires, it eats a meal and reflects. It ate too much today.",
+    "drops": [
+      {
+        "id": "bone",
+        "max": 1,
+        "min": 1,
+        "rate": 100
+      }
+    ],
+    "elementType1": "neutral",
+    "elementType2": null,
+    "foodAmount": 4,
+    "hp": 90,
+    "id": "dogen",
+    "internalName": "SifuDog",
+    "isBoss": false,
+    "maleProbability": 50,
+    "maxFullStomach": 300,
+    "meleeAttack": 100,
+    "name": "Dogen",
+    "partnerSkill": {
+      "description": "When activated, moves to the closest base. Cannot be used within dungeons, etc.",
+      "group": "Detection",
+      "name": "Homeward Prayer"
+    },
+    "price": 4440,
+    "rarity": 6,
+    "rideSprintSpeed": 550,
+    "runSpeed": 300,
+    "shotAttack": 100,
+    "size": "Small",
+    "slowWalkSpeed": 45,
+    "stamina": 100,
+    "support": 100,
+    "title": "state of enlightenment",
+    "transportSpeed": 187,
+    "walkSpeed": 75,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 2,
+      "generatingElectricity": 0,
+      "handiwork": 3,
+      "kindling": 0,
+      "lumbering": 2,
+      "medicineProduction": 1,
+      "mining": 0,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 2,
+      "watering": 0
+    },
+    "zukanIndex": 122,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "sand-blast",
+        "level": 1
+      },
+      {
+        "id": "power-shot",
+        "level": 7
+      },
+      {
+        "id": "stone-blast",
+        "level": 15
+      },
+      {
+        "id": "stone-cannon",
+        "level": 22
+      },
+      {
+        "id": "earth-dash",
+        "level": 30
+      },
+      {
+        "id": "rockburst",
+        "level": 40
+      },
+      {
+        "id": "sand-twister",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 1,
+    "combiRank": 675,
+    "craftSpeed": 100,
+    "defense": 80,
+    "description": "Take one step forward and forget your doubts. Take two steps forward and forget your worries. Take three steps forward and forget your fears. Face any enemy.",
+    "drops": [
+      {
+        "id": "bone",
+        "max": 1,
+        "min": 1,
+        "rate": 100
+      }
+    ],
+    "elementType1": "ground",
+    "elementType2": null,
+    "foodAmount": 4,
+    "hp": 95,
+    "id": "dazemu",
+    "internalName": "FeatherOstrich",
+    "isBoss": false,
+    "maleProbability": 50,
+    "maxFullStomach": 300,
+    "meleeAttack": 100,
+    "name": "Dazemu",
+    "partnerSkill": {
+      "description": "Can be ridden. Runs faster over sand.",
+      "group": "Ground Mount",
+      "name": "Sand Sprint"
+    },
+    "price": 2610,
+    "rarity": 5,
+    "rideSprintSpeed": 1200,
+    "runSpeed": 900,
+    "shotAttack": 90,
+    "size": "Small",
+    "slowWalkSpeed": 80,
+    "stamina": 100,
+    "support": 100,
+    "title": "Brilliant Steps",
+    "transportSpeed": -1,
+    "walkSpeed": 160,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 2,
+      "generatingElectricity": 0,
+      "handiwork": 0,
+      "kindling": 0,
+      "lumbering": 0,
+      "medicineProduction": 0,
+      "mining": 0,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 0,
+      "watering": 0
+    },
+    "zukanIndex": 123,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "power-shot",
+        "level": 1
+      },
+      {
+        "id": "dark-cannon",
+        "level": 7
+      },
+      {
+        "id": "spirit-flame",
+        "level": 15
+      },
+      {
+        "id": "power-bomb",
+        "level": 22
+      },
+      {
+        "id": "air-blade",
+        "level": 30
+      },
+      {
+        "id": "holy-burst",
+        "level": 40
+      },
+      {
+        "id": "pal-blast",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 0.8,
+    "combiRank": 1200,
+    "craftSpeed": 100,
+    "defense": 130,
+    "description": "There was once a tradition of handing out an award to the person who met their end in the most foolish way. The first award was given for |being unaware of Mimog, opening the chest, and being bitten to death.|",
+    "drops": [
+      {
+        "id": "gold-coin",
+        "max": 2000,
+        "min": 1000,
+        "rate": 100
+      },
+      {
+        "id": "dog-coin",
+        "max": 21,
+        "min": 14,
+        "rate": 100
+      },
+      {
+        "id": "training-manual-xl",
+        "max": 1,
+        "min": 1,
+        "rate": 20
+      }
+    ],
+    "elementType1": "neutral",
+    "elementType2": null,
+    "foodAmount": 2,
+    "hp": 60,
+    "id": "mimog",
+    "internalName": "MimicDog",
+    "isBoss": false,
+    "maleProbability": 80,
+    "maxFullStomach": 150,
+    "meleeAttack": 100,
+    "name": "Mimog",
+    "partnerSkill": {
+      "description": "When near a treasure chest, Mimog can open the chest without using a key. The type of treasure chest that can be opened depends on the skill level.",
+      "group": "Passive Pal",
+      "name": "Master of Unlocking"
+    },
+    "price": 6150,
+    "rarity": 7,
+    "rideSprintSpeed": -1,
+    "runSpeed": 2000,
+    "shotAttack": 60,
+    "size": "Extra Small",
+    "slowWalkSpeed": 40,
+    "stamina": 100,
+    "support": 100,
+    "title": "Treasure Trove",
+    "transportSpeed": 160,
+    "walkSpeed": 80,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 1,
+      "generatingElectricity": 0,
+      "handiwork": 0,
+      "kindling": 0,
+      "lumbering": 0,
+      "medicineProduction": 0,
+      "mining": 0,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 0,
+      "watering": 0
+    },
+    "zukanIndex": 124,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "power-shot",
+        "level": 1
+      },
+      {
+        "id": "poison-blast",
+        "level": 7
+      },
+      {
+        "id": "umbral-surge",
+        "level": 15
+      },
+      {
+        "id": "dark-arrow",
+        "level": 22
+      },
+      {
+        "id": "nightmare-ball",
+        "level": 30
+      },
+      {
+        "id": "evil-slash",
+        "level": 40
+      },
+      {
+        "id": "dark-laser",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 1,
+    "combiRank": 465,
+    "craftSpeed": 100,
+    "defense": 85,
+    "description": "Can send information and convert it into energy by forgetting it. Regularly seems to be sending information to someone. - Respond. Target located. Proceed to immediate destruction.",
+    "drops": [
+      {
+        "id": "meteorite-fragment",
+        "max": 10,
+        "min": 3,
+        "rate": 100
+      }
+    ],
+    "elementType1": "dark",
+    "elementType2": null,
+    "foodAmount": 7,
+    "hp": 90,
+    "id": "xenovader",
+    "internalName": "DarkAlien",
+    "isBoss": false,
+    "maleProbability": 50,
+    "maxFullStomach": 475,
+    "meleeAttack": 100,
+    "name": "Xenovader",
+    "partnerSkill": {
+      "description": "While in the team, increases damage dealt to ores, and it's easier to obtain Meteorite Fragment.",
+      "group": "Increased Drops",
+      "name": "Meteor Mania"
+    },
+    "price": 6750,
+    "rarity": 7,
+    "rideSprintSpeed": 700,
+    "runSpeed": 550,
+    "shotAttack": 125,
+    "size": "Small",
+    "slowWalkSpeed": 125,
+    "stamina": 100,
+    "support": 100,
+    "title": "Interloper from Outer Space",
+    "transportSpeed": 400,
+    "walkSpeed": 245,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 0,
+      "generatingElectricity": 0,
+      "handiwork": 0,
+      "kindling": 0,
+      "lumbering": 2,
+      "medicineProduction": 0,
+      "mining": 0,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 2,
+      "watering": 0
+    },
+    "zukanIndex": 125,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "dragon-cannon",
+        "level": 1
+      },
+      {
+        "id": "dragon-burst",
+        "level": 7
+      },
+      {
+        "id": "air-blade",
+        "level": 15
+      },
+      {
+        "id": "draconic-breath",
+        "level": 22
+      },
+      {
+        "id": "icicle-line",
+        "level": 30
+      },
+      {
+        "id": "comet-strike",
+        "level": 40
+      },
+      {
+        "id": "beam-slicer",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 1,
+    "combiRank": 435,
+    "craftSpeed": 100,
+    "defense": 130,
+    "description": "Consumes information and turns it into energy. Regularly seems to be sending information to someone. - Hello? What was the message you just sent? I devoured it before checking.",
+    "drops": [
+      {
+        "id": "meteorite-fragment",
+        "max": 12,
+        "min": 5,
+        "rate": 100
+      },
+      {
+        "id": "high-quality-pal-oil",
+        "max": 5,
+        "min": 3,
+        "rate": 100
+      }
+    ],
+    "elementType1": "dragon",
+    "elementType2": null,
+    "foodAmount": 9,
+    "hp": 110,
+    "id": "xenogard",
+    "internalName": "WhiteAlienDragon",
+    "isBoss": false,
+    "maleProbability": 50,
+    "maxFullStomach": 600,
+    "meleeAttack": 100,
+    "name": "Xenogard",
+    "partnerSkill": {
+      "description": "Can be ridden. While in the team, it's easier to obtain Meteorite Fragment and Pure Quartz.",
+      "group": "Ground Mount",
+      "name": "Crater Enthusiast"
+    },
+    "price": 8810,
+    "rarity": 9,
+    "rideSprintSpeed": 1200,
+    "runSpeed": 790,
+    "shotAttack": 120,
+    "size": "Large",
+    "slowWalkSpeed": 115,
+    "stamina": 100,
+    "support": 100,
+    "title": "Planet-Devouring Dragon",
+    "transportSpeed": 500,
+    "walkSpeed": 230,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 0,
+      "generatingElectricity": 0,
+      "handiwork": 0,
+      "kindling": 0,
+      "lumbering": 0,
+      "medicineProduction": 0,
+      "mining": 3,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 0,
+      "watering": 0
+    },
+    "zukanIndex": 126,
+    "zukanIndexSuffix": ""
   }
 ]

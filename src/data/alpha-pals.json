@@ -71,7 +71,7 @@
     "elementType1": "neutral",
     "elementType2": null,
     "foodAmount": 2,
-    "hp": 70,
+    "hp": 84,
     "id": "lamball",
     "internalName": "BOSS_SheepBall",
     "isBoss": true,
@@ -80,7 +80,7 @@
     "meleeAttack": 70,
     "name": "Lamball",
     "partnerSkill": null,
-    "price": 1000,
+    "price": 2000,
     "rarity": 8,
     "rideSprintSpeed": 550,
     "runSpeed": 400,
@@ -176,7 +176,7 @@
     "elementType1": "neutral",
     "elementType2": null,
     "foodAmount": 2,
-    "hp": 70,
+    "hp": 84,
     "id": "cattiva",
     "internalName": "BOSS_PinkCat",
     "isBoss": true,
@@ -185,7 +185,7 @@
     "meleeAttack": 70,
     "name": "Cattiva",
     "partnerSkill": null,
-    "price": 1000,
+    "price": 2000,
     "rarity": 8,
     "rideSprintSpeed": 550,
     "runSpeed": 400,
@@ -287,7 +287,7 @@
     "elementType1": "neutral",
     "elementType2": null,
     "foodAmount": 1,
-    "hp": 60,
+    "hp": 72,
     "id": "chikipi",
     "internalName": "BOSS_ChickenPal",
     "isBoss": true,
@@ -296,7 +296,7 @@
     "meleeAttack": 70,
     "name": "Chikipi",
     "partnerSkill": null,
-    "price": 1000,
+    "price": 2000,
     "rarity": 8,
     "rideSprintSpeed": 550,
     "runSpeed": 375,
@@ -398,7 +398,7 @@
     "elementType1": "grass",
     "elementType2": null,
     "foodAmount": 1,
-    "hp": 75,
+    "hp": 90,
     "id": "lifmunk",
     "internalName": "BOSS_Carbunclo",
     "isBoss": true,
@@ -407,7 +407,7 @@
     "meleeAttack": 70,
     "name": "Lifmunk",
     "partnerSkill": null,
-    "price": 1010,
+    "price": 2020,
     "rarity": 8,
     "rideSprintSpeed": 550,
     "runSpeed": 400,
@@ -509,7 +509,7 @@
     "elementType1": "fire",
     "elementType2": null,
     "foodAmount": 2,
-    "hp": 65,
+    "hp": 78,
     "id": "foxparks",
     "internalName": "BOSS_Kitsunebi",
     "isBoss": true,
@@ -518,7 +518,7 @@
     "meleeAttack": 70,
     "name": "Foxparks",
     "partnerSkill": null,
-    "price": 2560,
+    "price": 2080,
     "rarity": 8,
     "rideSprintSpeed": 550,
     "runSpeed": 400,
@@ -620,7 +620,7 @@
     "elementType1": "water",
     "elementType2": null,
     "foodAmount": 2,
-    "hp": 60,
+    "hp": 72,
     "id": "fuack",
     "internalName": "BOSS_BluePlatypus",
     "isBoss": true,
@@ -629,7 +629,7 @@
     "meleeAttack": 80,
     "name": "Fuack",
     "partnerSkill": null,
-    "price": 1120,
+    "price": 2240,
     "rarity": 8,
     "rideSprintSpeed": 400,
     "runSpeed": 300,
@@ -725,7 +725,7 @@
     "elementType1": "electric",
     "elementType2": null,
     "foodAmount": 2,
-    "hp": 60,
+    "hp": 72,
     "id": "sparkit",
     "internalName": "BOSS_ElecCat",
     "isBoss": true,
@@ -734,7 +734,7 @@
     "meleeAttack": 60,
     "name": "Sparkit",
     "partnerSkill": null,
-    "price": 1030,
+    "price": 2060,
     "rarity": 8,
     "rideSprintSpeed": 500,
     "runSpeed": 350,
@@ -830,7 +830,7 @@
     "elementType1": "grass",
     "elementType2": null,
     "foodAmount": 2,
-    "hp": 80,
+    "hp": 96,
     "id": "tanzee",
     "internalName": "BOSS_Monkey",
     "isBoss": true,
@@ -839,7 +839,7 @@
     "meleeAttack": 100,
     "name": "Tanzee",
     "partnerSkill": null,
-    "price": 1280,
+    "price": 2560,
     "rarity": 8,
     "rideSprintSpeed": 400,
     "runSpeed": 300,
@@ -912,7 +912,7 @@
     "elementType1": "fire",
     "elementType2": null,
     "foodAmount": 3,
-    "hp": 75,
+    "hp": 90,
     "id": "rooby",
     "internalName": "BOSS_FlameBambi",
     "isBoss": true,
@@ -921,7 +921,7 @@
     "meleeAttack": 100,
     "name": "Rooby",
     "partnerSkill": null,
-    "price": 2950,
+    "price": 5900,
     "rarity": 8,
     "rideSprintSpeed": 550,
     "runSpeed": 400,
@@ -1023,7 +1023,7 @@
     "elementType1": "ice",
     "elementType2": "water",
     "foodAmount": 2,
-    "hp": 70,
+    "hp": 84,
     "id": "pengullet",
     "internalName": "BOSS_Penguin",
     "isBoss": true,
@@ -1032,7 +1032,7 @@
     "meleeAttack": 70,
     "name": "Pengullet",
     "partnerSkill": null,
-    "price": 1080,
+    "price": 2160,
     "rarity": 8,
     "rideSprintSpeed": 650,
     "runSpeed": 500,
@@ -1134,7 +1134,7 @@
     "elementType1": "water",
     "elementType2": "ice",
     "foodAmount": 8,
-    "hp": 95,
+    "hp": 114,
     "id": "penking",
     "internalName": "BOSS_CaptainPenguin",
     "isBoss": true,
@@ -1143,7 +1143,7 @@
     "meleeAttack": 70,
     "name": "Penking",
     "partnerSkill": null,
-    "price": 5410,
+    "price": 10820,
     "rarity": 8,
     "rideSprintSpeed": 600,
     "runSpeed": 450,
@@ -1239,7 +1239,7 @@
     "elementType1": "electric",
     "elementType2": null,
     "foodAmount": 2,
-    "hp": 70,
+    "hp": 84,
     "id": "jolthog",
     "internalName": "BOSS_Hedgehog",
     "isBoss": true,
@@ -1248,7 +1248,7 @@
     "meleeAttack": 70,
     "name": "Jolthog",
     "partnerSkill": null,
-    "price": 1060,
+    "price": 2120,
     "rarity": 8,
     "rideSprintSpeed": 550,
     "runSpeed": 400,
@@ -1344,7 +1344,7 @@
     "elementType1": "ice",
     "elementType2": null,
     "foodAmount": 2,
-    "hp": 70,
+    "hp": 84,
     "id": "jolthog-cryst",
     "internalName": "BOSS_Hedgehog_Ice",
     "isBoss": true,
@@ -1353,7 +1353,7 @@
     "meleeAttack": 70,
     "name": "Jolthog Cryst",
     "partnerSkill": null,
-    "price": 1070,
+    "price": 2140,
     "rarity": 8,
     "rideSprintSpeed": 550,
     "runSpeed": 400,
@@ -1455,7 +1455,7 @@
     "elementType1": "grass",
     "elementType2": "ground",
     "foodAmount": 1,
-    "hp": 70,
+    "hp": 84,
     "id": "gumoss",
     "internalName": "BOSS_PlantSlime",
     "isBoss": true,
@@ -1464,7 +1464,7 @@
     "meleeAttack": 100,
     "name": "Gumoss",
     "partnerSkill": null,
-    "price": 1310,
+    "price": 2620,
     "rarity": 8,
     "rideSprintSpeed": 400,
     "runSpeed": 300,
@@ -1566,7 +1566,7 @@
     "elementType1": "neutral",
     "elementType2": null,
     "foodAmount": 1,
-    "hp": 70,
+    "hp": 84,
     "id": "vixy",
     "internalName": "BOSS_CuteFox",
     "isBoss": true,
@@ -1575,7 +1575,7 @@
     "meleeAttack": 70,
     "name": "Vixy",
     "partnerSkill": null,
-    "price": 1000,
+    "price": 2000,
     "rarity": 8,
     "rideSprintSpeed": 450,
     "runSpeed": 350,
@@ -1677,7 +1677,7 @@
     "elementType1": "dark",
     "elementType2": null,
     "foodAmount": 3,
-    "hp": 70,
+    "hp": 84,
     "id": "hoocrates",
     "internalName": "BOSS_WizardOwl",
     "isBoss": true,
@@ -1686,7 +1686,7 @@
     "meleeAttack": 70,
     "name": "Hoocrates",
     "partnerSkill": null,
-    "price": 1050,
+    "price": 2100,
     "rarity": 8,
     "rideSprintSpeed": 550,
     "runSpeed": 380,
@@ -1782,7 +1782,7 @@
     "elementType1": "water",
     "elementType2": null,
     "foodAmount": 2,
-    "hp": 70,
+    "hp": 84,
     "id": "teafant",
     "internalName": "BOSS_Ganesha",
     "isBoss": true,
@@ -1791,7 +1791,7 @@
     "meleeAttack": 70,
     "name": "Teafant",
     "partnerSkill": null,
-    "price": 1000,
+    "price": 2000,
     "rarity": 8,
     "rideSprintSpeed": 400,
     "runSpeed": 300,
@@ -1887,7 +1887,7 @@
     "elementType1": "dark",
     "elementType2": null,
     "foodAmount": 2,
-    "hp": 70,
+    "hp": 84,
     "id": "depresso",
     "internalName": "BOSS_NegativeKoala",
     "isBoss": true,
@@ -1896,7 +1896,7 @@
     "meleeAttack": 70,
     "name": "Depresso",
     "partnerSkill": null,
-    "price": 1050,
+    "price": 2100,
     "rarity": 8,
     "rideSprintSpeed": 400,
     "runSpeed": 300,
@@ -1963,7 +1963,7 @@
     "elementType1": "neutral",
     "elementType2": null,
     "foodAmount": 2,
-    "hp": 70,
+    "hp": 84,
     "id": "cremis",
     "internalName": "BOSS_WoolFox",
     "isBoss": true,
@@ -1972,7 +1972,7 @@
     "meleeAttack": 100,
     "name": "Cremis",
     "partnerSkill": null,
-    "price": 1420,
+    "price": 2840,
     "rarity": 8,
     "rideSprintSpeed": 450,
     "runSpeed": 300,
@@ -2074,7 +2074,7 @@
     "elementType1": "dark",
     "elementType2": null,
     "foodAmount": 3,
-    "hp": 70,
+    "hp": 84,
     "id": "daedream",
     "internalName": "BOSS_DreamDemon",
     "isBoss": true,
@@ -2083,7 +2083,7 @@
     "meleeAttack": 100,
     "name": "Daedream",
     "partnerSkill": null,
-    "price": 1330,
+    "price": 2660,
     "rarity": 8,
     "rideSprintSpeed": 550,
     "runSpeed": 300,
@@ -2185,7 +2185,7 @@
     "elementType1": "ground",
     "elementType2": null,
     "foodAmount": 3,
-    "hp": 80,
+    "hp": 96,
     "id": "rushoar",
     "internalName": "BOSS_Boar",
     "isBoss": true,
@@ -2194,7 +2194,7 @@
     "meleeAttack": 100,
     "name": "Rushoar",
     "partnerSkill": null,
-    "price": 1610,
+    "price": 3360,
     "rarity": 8,
     "rideSprintSpeed": 800,
     "runSpeed": 450,
@@ -2296,7 +2296,7 @@
     "elementType1": "dark",
     "elementType2": null,
     "foodAmount": 2,
-    "hp": 75,
+    "hp": 90,
     "id": "nox",
     "internalName": "BOSS_NightFox",
     "isBoss": true,
@@ -2305,7 +2305,7 @@
     "meleeAttack": 70,
     "name": "Nox",
     "partnerSkill": null,
-    "price": 1480,
+    "price": 2960,
     "rarity": 8,
     "rideSprintSpeed": 500,
     "runSpeed": 300,
@@ -2401,7 +2401,7 @@
     "elementType1": "ground",
     "elementType2": null,
     "foodAmount": 2,
-    "hp": 65,
+    "hp": 78,
     "id": "fuddler",
     "internalName": "BOSS_CuteMole",
     "isBoss": true,
@@ -2410,7 +2410,7 @@
     "meleeAttack": 100,
     "name": "Fuddler",
     "partnerSkill": null,
-    "price": 1360,
+    "price": 2720,
     "rarity": 8,
     "rideSprintSpeed": 550,
     "runSpeed": 300,
@@ -2491,6 +2491,12 @@
         "rate": 100
       },
       {
+        "id": "killamari-tentacle",
+        "max": 1,
+        "min": 1,
+        "rate": 50
+      },
+      {
         "id": "precious-pelt",
         "max": 2,
         "min": 1,
@@ -2506,7 +2512,7 @@
     "elementType1": "dark",
     "elementType2": null,
     "foodAmount": 3,
-    "hp": 60,
+    "hp": 72,
     "id": "killamari",
     "internalName": "BOSS_NegativeOctopus",
     "isBoss": true,
@@ -2515,7 +2521,7 @@
     "meleeAttack": 100,
     "name": "Killamari",
     "partnerSkill": null,
-    "price": 1200,
+    "price": 2400,
     "rarity": 8,
     "rideSprintSpeed": 550,
     "runSpeed": 400,
@@ -2611,7 +2617,7 @@
     "elementType1": "dark",
     "elementType2": null,
     "foodAmount": 1,
-    "hp": 70,
+    "hp": 84,
     "id": "mau",
     "internalName": "BOSS_Bastet",
     "isBoss": true,
@@ -2620,7 +2626,7 @@
     "meleeAttack": 70,
     "name": "Mau",
     "partnerSkill": null,
-    "price": 1000,
+    "price": 2000,
     "rarity": 8,
     "rideSprintSpeed": 550,
     "runSpeed": 475,
@@ -2722,7 +2728,7 @@
     "elementType1": "ice",
     "elementType2": null,
     "foodAmount": 1,
-    "hp": 70,
+    "hp": 84,
     "id": "mau-cryst",
     "internalName": "BOSS_Bastet_Ice",
     "isBoss": true,
@@ -2731,7 +2737,7 @@
     "meleeAttack": 70,
     "name": "Mau Cryst",
     "partnerSkill": null,
-    "price": 1010,
+    "price": 2020,
     "rarity": 8,
     "rideSprintSpeed": 550,
     "runSpeed": 475,
@@ -2827,7 +2833,7 @@
     "elementType1": "water",
     "elementType2": null,
     "foodAmount": 3,
-    "hp": 80,
+    "hp": 96,
     "id": "celaray",
     "internalName": "BOSS_FlyingManta",
     "isBoss": true,
@@ -2836,7 +2842,7 @@
     "meleeAttack": 100,
     "name": "Celaray",
     "partnerSkill": null,
-    "price": 2860,
+    "price": 5720,
     "rarity": 8,
     "rideSprintSpeed": 700,
     "runSpeed": 550,
@@ -2938,7 +2944,7 @@
     "elementType1": "neutral",
     "elementType2": null,
     "foodAmount": 3,
-    "hp": 80,
+    "hp": 96,
     "id": "direhowl",
     "internalName": "BOSS_Garm",
     "isBoss": true,
@@ -2947,7 +2953,7 @@
     "meleeAttack": 110,
     "name": "Direhowl",
     "partnerSkill": null,
-    "price": 1920,
+    "price": 3840,
     "rarity": 8,
     "rideSprintSpeed": 1150,
     "runSpeed": 800,
@@ -3049,7 +3055,7 @@
     "elementType1": "neutral",
     "elementType2": null,
     "foodAmount": 2,
-    "hp": 60,
+    "hp": 72,
     "id": "tocotoco",
     "internalName": "BOSS_ColorfulBird",
     "isBoss": true,
@@ -3058,7 +3064,7 @@
     "meleeAttack": 80,
     "name": "Tocotoco",
     "partnerSkill": null,
-    "price": 1090,
+    "price": 2180,
     "rarity": 8,
     "rideSprintSpeed": 550,
     "runSpeed": 300,
@@ -3160,7 +3166,7 @@
     "elementType1": "grass",
     "elementType2": null,
     "foodAmount": 3,
-    "hp": 75,
+    "hp": 90,
     "id": "flopie",
     "internalName": "BOSS_FlowerRabbit",
     "isBoss": true,
@@ -3169,7 +3175,7 @@
     "meleeAttack": 100,
     "name": "Flopie",
     "partnerSkill": null,
-    "price": 1220,
+    "price": 2440,
     "rarity": 9,
     "rideSprintSpeed": 550,
     "runSpeed": 400,
@@ -3271,7 +3277,7 @@
     "elementType1": "neutral",
     "elementType2": null,
     "foodAmount": 3,
-    "hp": 90,
+    "hp": 108,
     "id": "mozzarina",
     "internalName": "BOSS_CowPal",
     "isBoss": true,
@@ -3280,7 +3286,7 @@
     "meleeAttack": 100,
     "name": "Mozzarina",
     "partnerSkill": null,
-    "price": 2620,
+    "price": 5240,
     "rarity": 8,
     "rideSprintSpeed": 700,
     "runSpeed": 580,
@@ -3382,7 +3388,7 @@
     "elementType1": "grass",
     "elementType2": null,
     "foodAmount": 5,
-    "hp": 80,
+    "hp": 96,
     "id": "bristla",
     "internalName": "BOSS_LittleBriarRose",
     "isBoss": true,
@@ -3391,7 +3397,7 @@
     "meleeAttack": 80,
     "name": "Bristla",
     "partnerSkill": null,
-    "price": 1140,
+    "price": 2280,
     "rarity": 8,
     "rideSprintSpeed": 550,
     "runSpeed": 400,
@@ -3487,7 +3493,7 @@
     "elementType1": "water",
     "elementType2": null,
     "foodAmount": 3,
-    "hp": 90,
+    "hp": 108,
     "id": "gobfin",
     "internalName": "BOSS_SharkKid",
     "isBoss": true,
@@ -3496,7 +3502,7 @@
     "meleeAttack": 90,
     "name": "Gobfin",
     "partnerSkill": null,
-    "price": 1840,
+    "price": 3680,
     "rarity": 8,
     "rideSprintSpeed": 500,
     "runSpeed": 400,
@@ -3592,7 +3598,7 @@
     "elementType1": "fire",
     "elementType2": null,
     "foodAmount": 3,
-    "hp": 90,
+    "hp": 108,
     "id": "gobfin-ignis",
     "internalName": "BOSS_SharkKid_Fire",
     "isBoss": true,
@@ -3601,7 +3607,7 @@
     "meleeAttack": 90,
     "name": "Gobfin Ignis",
     "partnerSkill": null,
-    "price": 1800,
+    "price": 3600,
     "rarity": 8,
     "rideSprintSpeed": 500,
     "runSpeed": 400,
@@ -3697,7 +3703,7 @@
     "elementType1": "ground",
     "elementType2": null,
     "foodAmount": 2,
-    "hp": 80,
+    "hp": 96,
     "id": "hangyu",
     "internalName": "BOSS_WindChimes",
     "isBoss": true,
@@ -3706,7 +3712,7 @@
     "meleeAttack": 70,
     "name": "Hangyu",
     "partnerSkill": null,
-    "price": 1020,
+    "price": 2040,
     "rarity": 8,
     "rideSprintSpeed": 550,
     "runSpeed": 400,
@@ -3808,7 +3814,7 @@
     "elementType1": "ice",
     "elementType2": null,
     "foodAmount": 2,
-    "hp": 80,
+    "hp": 96,
     "id": "hangyu-cryst",
     "internalName": "BOSS_WindChimes_Ice",
     "isBoss": true,
@@ -3817,7 +3823,7 @@
     "meleeAttack": 70,
     "name": "Hangyu Cryst",
     "partnerSkill": null,
-    "price": 1020,
+    "price": 2040,
     "rarity": 8,
     "rideSprintSpeed": 550,
     "runSpeed": 400,
@@ -3919,7 +3925,7 @@
     "elementType1": "grass",
     "elementType2": null,
     "foodAmount": 5,
-    "hp": 100,
+    "hp": 120,
     "id": "mossanda",
     "internalName": "BOSS_GrassPanda",
     "isBoss": true,
@@ -3928,7 +3934,7 @@
     "meleeAttack": 100,
     "name": "Mossanda",
     "partnerSkill": null,
-    "price": 6200,
+    "price": 12400,
     "rarity": 9,
     "rideSprintSpeed": 800,
     "runSpeed": 500,
@@ -4030,7 +4036,7 @@
     "elementType1": "electric",
     "elementType2": null,
     "foodAmount": 5,
-    "hp": 100,
+    "hp": 120,
     "id": "mossanda-lux",
     "internalName": "BOSS_GrassPanda_Electric",
     "isBoss": true,
@@ -4039,7 +4045,7 @@
     "meleeAttack": 100,
     "name": "Mossanda Lux",
     "partnerSkill": null,
-    "price": 6610,
+    "price": 13220,
     "rarity": 9,
     "rideSprintSpeed": 800,
     "runSpeed": 500,
@@ -4141,7 +4147,7 @@
     "elementType1": "neutral",
     "elementType2": null,
     "foodAmount": 2,
-    "hp": 70,
+    "hp": 84,
     "id": "woolipop",
     "internalName": "BOSS_SweetsSheep",
     "isBoss": true,
@@ -4150,7 +4156,7 @@
     "meleeAttack": 70,
     "name": "Woolipop",
     "partnerSkill": null,
-    "price": 1450,
+    "price": 2900,
     "rarity": 8,
     "rideSprintSpeed": 400,
     "runSpeed": 300,
@@ -4252,7 +4258,7 @@
     "elementType1": "grass",
     "elementType2": null,
     "foodAmount": 4,
-    "hp": 100,
+    "hp": 120,
     "id": "caprity",
     "internalName": "BOSS_BerryGoat",
     "isBoss": true,
@@ -4261,7 +4267,7 @@
     "meleeAttack": 70,
     "name": "Caprity",
     "partnerSkill": null,
-    "price": 2510,
+    "price": 5020,
     "rarity": 8,
     "rideSprintSpeed": 550,
     "runSpeed": 400,
@@ -4363,7 +4369,7 @@
     "elementType1": "neutral",
     "elementType2": null,
     "foodAmount": 3,
-    "hp": 90,
+    "hp": 108,
     "id": "melpaca",
     "internalName": "BOSS_Alpaca",
     "isBoss": true,
@@ -4372,7 +4378,7 @@
     "meleeAttack": 90,
     "name": "Melpaca",
     "partnerSkill": null,
-    "price": 3040,
+    "price": 5480,
     "rarity": 8,
     "rideSprintSpeed": 900,
     "runSpeed": 460,
@@ -4474,7 +4480,7 @@
     "elementType1": "neutral",
     "elementType2": null,
     "foodAmount": 5,
-    "hp": 95,
+    "hp": 114,
     "id": "eikthyrdeer",
     "internalName": "BOSS_Deer",
     "isBoss": true,
@@ -4483,7 +4489,7 @@
     "meleeAttack": 70,
     "name": "Eikthyrdeer",
     "partnerSkill": null,
-    "price": 2620,
+    "price": 5240,
     "rarity": 8,
     "rideSprintSpeed": 1000,
     "runSpeed": 700,
@@ -4585,7 +4591,7 @@
     "elementType1": "ground",
     "elementType2": null,
     "foodAmount": 5,
-    "hp": 95,
+    "hp": 114,
     "id": "eikthyrdeer-terra",
     "internalName": "BOSS_Deer_Ground",
     "isBoss": true,
@@ -4594,7 +4600,7 @@
     "meleeAttack": 70,
     "name": "Eikthyrdeer Terra",
     "partnerSkill": null,
-    "price": 2680,
+    "price": 5360,
     "rarity": 8,
     "rideSprintSpeed": 1000,
     "runSpeed": 700,
@@ -4690,7 +4696,7 @@
     "elementType1": "neutral",
     "elementType2": null,
     "foodAmount": 7,
-    "hp": 100,
+    "hp": 120,
     "id": "nitewing",
     "internalName": "BOSS_HawkBird",
     "isBoss": true,
@@ -4699,7 +4705,7 @@
     "meleeAttack": 100,
     "name": "Nitewing",
     "partnerSkill": null,
-    "price": 6300,
+    "price": 12600,
     "rarity": 8,
     "rideSprintSpeed": 850,
     "runSpeed": 600,
@@ -4801,7 +4807,7 @@
     "elementType1": "neutral",
     "elementType2": null,
     "foodAmount": 2,
-    "hp": 75,
+    "hp": 90,
     "id": "ribbuny",
     "internalName": "BOSS_PinkRabbit",
     "isBoss": true,
@@ -4810,7 +4816,7 @@
     "meleeAttack": 100,
     "name": "Ribbuny",
     "partnerSkill": null,
-    "price": 1160,
+    "price": 2320,
     "rarity": 8,
     "rideSprintSpeed": 350,
     "runSpeed": 245,
@@ -4912,7 +4918,7 @@
     "elementType1": "fire",
     "elementType2": "dark",
     "foodAmount": 4,
-    "hp": 95,
+    "hp": 114,
     "id": "incineram",
     "internalName": "BOSS_Baphomet",
     "isBoss": true,
@@ -4921,7 +4927,7 @@
     "meleeAttack": 150,
     "name": "Incineram",
     "partnerSkill": null,
-    "price": 4780,
+    "price": 9560,
     "rarity": 8,
     "rideSprintSpeed": 960,
     "runSpeed": 700,
@@ -5023,7 +5029,7 @@
     "elementType1": "dark",
     "elementType2": null,
     "foodAmount": 4,
-    "hp": 95,
+    "hp": 114,
     "id": "incineram-noct",
     "internalName": "BOSS_Baphomet_Dark",
     "isBoss": true,
@@ -5032,7 +5038,7 @@
     "meleeAttack": 150,
     "name": "Incineram Noct",
     "partnerSkill": null,
-    "price": 4870,
+    "price": 9740,
     "rarity": 9,
     "rideSprintSpeed": 960,
     "runSpeed": 700,
@@ -5134,7 +5140,7 @@
     "elementType1": "grass",
     "elementType2": null,
     "foodAmount": 3,
-    "hp": 70,
+    "hp": 84,
     "id": "cinnamoth",
     "internalName": "BOSS_CuteButterfly",
     "isBoss": true,
@@ -5143,7 +5149,7 @@
     "meleeAttack": 100,
     "name": "Cinnamoth",
     "partnerSkill": null,
-    "price": 5700,
+    "price": 11400,
     "rarity": 8,
     "rideSprintSpeed": 700,
     "runSpeed": 550,
@@ -5245,7 +5251,7 @@
     "elementType1": "fire",
     "elementType2": null,
     "foodAmount": 5,
-    "hp": 85,
+    "hp": 102,
     "id": "arsox",
     "internalName": "BOSS_FlameBuffalo",
     "isBoss": true,
@@ -5254,7 +5260,7 @@
     "meleeAttack": 100,
     "name": "Arsox",
     "partnerSkill": null,
-    "price": 3520,
+    "price": 7040,
     "rarity": 8,
     "rideSprintSpeed": 900,
     "runSpeed": 600,
@@ -5327,7 +5333,7 @@
     "elementType1": "ground",
     "elementType2": null,
     "foodAmount": 4,
-    "hp": 100,
+    "hp": 120,
     "id": "dumud",
     "internalName": "BOSS_LazyCatfish",
     "isBoss": true,
@@ -5336,7 +5342,7 @@
     "meleeAttack": 100,
     "name": "Dumud",
     "partnerSkill": null,
-    "price": 4690,
+    "price": 9380,
     "rarity": 8,
     "rideSprintSpeed": 600,
     "runSpeed": 450,
@@ -5438,7 +5444,7 @@
     "elementType1": "dark",
     "elementType2": null,
     "foodAmount": 5,
-    "hp": 75,
+    "hp": 90,
     "id": "cawgnito",
     "internalName": "BOSS_DarkCrow",
     "isBoss": true,
@@ -5447,7 +5453,7 @@
     "meleeAttack": 80,
     "name": "Cawgnito",
     "partnerSkill": null,
-    "price": 1840,
+    "price": 3680,
     "rarity": 8,
     "rideSprintSpeed": 1200,
     "runSpeed": 920,
@@ -5549,7 +5555,7 @@
     "elementType1": "dark",
     "elementType2": null,
     "foodAmount": 3,
-    "hp": 80,
+    "hp": 96,
     "id": "leezpunk",
     "internalName": "BOSS_LizardMan",
     "isBoss": true,
@@ -5558,7 +5564,7 @@
     "meleeAttack": 90,
     "name": "Leezpunk",
     "partnerSkill": null,
-    "price": 1720,
+    "price": 3440,
     "rarity": 8,
     "rideSprintSpeed": 800,
     "runSpeed": 600,
@@ -5660,7 +5666,7 @@
     "elementType1": "fire",
     "elementType2": null,
     "foodAmount": 3,
-    "hp": 80,
+    "hp": 96,
     "id": "leezpunk-ignis",
     "internalName": "BOSS_LizardMan_Fire",
     "isBoss": true,
@@ -5669,7 +5675,7 @@
     "meleeAttack": 90,
     "name": "Leezpunk Ignis",
     "partnerSkill": null,
-    "price": 1640,
+    "price": 3280,
     "rarity": 8,
     "rideSprintSpeed": 550,
     "runSpeed": 400,
@@ -5765,7 +5771,7 @@
     "elementType1": "dark",
     "elementType2": null,
     "foodAmount": 5,
-    "hp": 80,
+    "hp": 96,
     "id": "loupmoon",
     "internalName": "BOSS_Werewolf",
     "isBoss": true,
@@ -5774,7 +5780,7 @@
     "meleeAttack": 130,
     "name": "Loupmoon",
     "partnerSkill": null,
-    "price": 2400,
+    "price": 4800,
     "rarity": 8,
     "rideSprintSpeed": 800,
     "runSpeed": 600,
@@ -5876,7 +5882,7 @@
     "elementType1": "neutral",
     "elementType2": null,
     "foodAmount": 4,
-    "hp": 75,
+    "hp": 90,
     "id": "galeclaw",
     "internalName": "BOSS_Eagle",
     "isBoss": true,
@@ -5885,7 +5891,7 @@
     "meleeAttack": 120,
     "name": "Galeclaw",
     "partnerSkill": null,
-    "price": 2010,
+    "price": 4020,
     "rarity": 8,
     "rideSprintSpeed": 700,
     "runSpeed": 600,
@@ -5987,7 +5993,7 @@
     "elementType1": "grass",
     "elementType2": null,
     "foodAmount": 3,
-    "hp": 90,
+    "hp": 108,
     "id": "robinquill",
     "internalName": "BOSS_RobinHood",
     "isBoss": true,
@@ -5996,7 +6002,7 @@
     "meleeAttack": 100,
     "name": "Robinquill",
     "partnerSkill": null,
-    "price": 2050,
+    "price": 4100,
     "rarity": 8,
     "rideSprintSpeed": 750,
     "runSpeed": 600,
@@ -6098,7 +6104,7 @@
     "elementType1": "grass",
     "elementType2": "ground",
     "foodAmount": 3,
-    "hp": 90,
+    "hp": 108,
     "id": "robinquill-terra",
     "internalName": "BOSS_RobinHood_Ground",
     "isBoss": true,
@@ -6107,7 +6113,7 @@
     "meleeAttack": 100,
     "name": "Robinquill Terra",
     "partnerSkill": null,
-    "price": 2150,
+    "price": 4300,
     "rarity": 9,
     "rideSprintSpeed": 750,
     "runSpeed": 600,
@@ -6209,7 +6215,7 @@
     "elementType1": "neutral",
     "elementType2": null,
     "foodAmount": 3,
-    "hp": 90,
+    "hp": 108,
     "id": "gorirat",
     "internalName": "BOSS_Gorilla",
     "isBoss": true,
@@ -6218,7 +6224,7 @@
     "meleeAttack": 110,
     "name": "Gorirat",
     "partnerSkill": null,
-    "price": 2010,
+    "price": 4020,
     "rarity": 8,
     "rideSprintSpeed": 720,
     "runSpeed": 550,
@@ -6240,6 +6246,111 @@
       "lumbering": 2,
       "medicineProduction": 0,
       "mining": 0,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 3,
+      "watering": 0
+    },
+    "zukanIndex": -1,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "power-shot",
+        "level": 1
+      },
+      {
+        "id": "sand-blast",
+        "level": 7
+      },
+      {
+        "id": "stone-blast",
+        "level": 15
+      },
+      {
+        "id": "stone-cannon",
+        "level": 22
+      },
+      {
+        "id": "ground-pound",
+        "level": 30
+      },
+      {
+        "id": "rockburst",
+        "level": 40
+      },
+      {
+        "id": "rock-lance",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 0.7,
+    "combiRank": 1030,
+    "craftSpeed": 100,
+    "defense": 90,
+    "description": null,
+    "drops": [
+      {
+        "id": "ancient-civilization-parts",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "ore",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "bone",
+        "max": 1,
+        "min": 1,
+        "rate": 100
+      },
+      {
+        "id": "precious-claw",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      }
+    ],
+    "elementType1": "ground",
+    "elementType2": null,
+    "foodAmount": 3,
+    "hp": 108,
+    "id": "gorirat-terra",
+    "internalName": "BOSS_Gorilla_Ground",
+    "isBoss": true,
+    "maleProbability": 50,
+    "maxFullStomach": 225,
+    "meleeAttack": 110,
+    "name": "Gorirat Terra",
+    "partnerSkill": null,
+    "price": 8040,
+    "rarity": 8,
+    "rideSprintSpeed": 720,
+    "runSpeed": 550,
+    "shotAttack": 100,
+    "size": "Extra Large",
+    "slowWalkSpeed": 66,
+    "stamina": 100,
+    "support": 100,
+    "title": null,
+    "transportSpeed": 250,
+    "walkSpeed": 100,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 0,
+      "generatingElectricity": 0,
+      "handiwork": 1,
+      "kindling": 0,
+      "lumbering": 0,
+      "medicineProduction": 0,
+      "mining": 2,
       "oilExtraction": 0,
       "planting": 0,
       "transporting": 3,
@@ -6314,7 +6425,7 @@
     "elementType1": "grass",
     "elementType2": null,
     "foodAmount": 3,
-    "hp": 80,
+    "hp": 96,
     "id": "beegarde",
     "internalName": "BOSS_SoldierBee",
     "isBoss": true,
@@ -6323,7 +6434,7 @@
     "meleeAttack": 100,
     "name": "Beegarde",
     "partnerSkill": null,
-    "price": 1880,
+    "price": 3760,
     "rarity": 8,
     "rideSprintSpeed": 550,
     "runSpeed": 450,
@@ -6419,7 +6530,7 @@
     "elementType1": "grass",
     "elementType2": null,
     "foodAmount": 7,
-    "hp": 90,
+    "hp": 108,
     "id": "elizabee",
     "internalName": "BOSS_QueenBee",
     "isBoss": true,
@@ -6428,7 +6539,7 @@
     "meleeAttack": 100,
     "name": "Elizabee",
     "partnerSkill": null,
-    "price": 6830,
+    "price": 13660,
     "rarity": 10,
     "rideSprintSpeed": 550,
     "runSpeed": 450,
@@ -6524,7 +6635,7 @@
     "elementType1": "neutral",
     "elementType2": null,
     "foodAmount": 4,
-    "hp": 110,
+    "hp": 132,
     "id": "grintale",
     "internalName": "BOSS_NaughtyCat",
     "isBoss": true,
@@ -6533,7 +6644,7 @@
     "meleeAttack": 100,
     "name": "Grintale",
     "partnerSkill": null,
-    "price": 5510,
+    "price": 11020,
     "rarity": 8,
     "rideSprintSpeed": 900,
     "runSpeed": 600,
@@ -6614,6 +6725,12 @@
         "rate": 100
       },
       {
+        "id": "swee-hair",
+        "max": 1,
+        "min": 1,
+        "rate": 50
+      },
+      {
         "id": "precious-pelt",
         "max": 7,
         "min": 5,
@@ -6629,7 +6746,7 @@
     "elementType1": "ice",
     "elementType2": null,
     "foodAmount": 2,
-    "hp": 60,
+    "hp": 72,
     "id": "swee",
     "internalName": "BOSS_MopBaby",
     "isBoss": true,
@@ -6638,7 +6755,7 @@
     "meleeAttack": 100,
     "name": "Swee",
     "partnerSkill": null,
-    "price": 1110,
+    "price": 2360,
     "rarity": 8,
     "rideSprintSpeed": 400,
     "runSpeed": 250,
@@ -6734,7 +6851,7 @@
     "elementType1": "ice",
     "elementType2": null,
     "foodAmount": 3,
-    "hp": 100,
+    "hp": 120,
     "id": "sweepa",
     "internalName": "BOSS_MopKing",
     "isBoss": true,
@@ -6743,7 +6860,7 @@
     "meleeAttack": 100,
     "name": "Sweepa",
     "partnerSkill": null,
-    "price": 6000,
+    "price": 12800,
     "rarity": 9,
     "rideSprintSpeed": 600,
     "runSpeed": 300,
@@ -6782,6 +6899,10 @@
       {
         "id": "dragon-cannon",
         "level": 7
+      },
+      {
+        "id": "rocket-slam",
+        "level": 11
       },
       {
         "id": "dragon-burst",
@@ -6839,7 +6960,7 @@
     "elementType1": "ice",
     "elementType2": "dragon",
     "foodAmount": 3,
-    "hp": 90,
+    "hp": 108,
     "id": "chillet",
     "internalName": "BOSS_WeaselDragon",
     "isBoss": true,
@@ -6848,7 +6969,7 @@
     "meleeAttack": 100,
     "name": "Chillet",
     "partnerSkill": null,
-    "price": 3310,
+    "price": 6900,
     "rarity": 8,
     "rideSprintSpeed": 900,
     "runSpeed": 600,
@@ -6867,6 +6988,111 @@
       "generatingElectricity": 0,
       "handiwork": 0,
       "kindling": 0,
+      "lumbering": 0,
+      "medicineProduction": 0,
+      "mining": 0,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 0,
+      "watering": 0
+    },
+    "zukanIndex": -1,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "ignis-blast",
+        "level": 1
+      },
+      {
+        "id": "dragon-burst",
+        "level": 7
+      },
+      {
+        "id": "flare-arrow",
+        "level": 15
+      },
+      {
+        "id": "ignis-breath",
+        "level": 22
+      },
+      {
+        "id": "rocket-slam",
+        "level": 30
+      },
+      {
+        "id": "flame-wall",
+        "level": 40
+      },
+      {
+        "id": "fire-ball",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 0.7,
+    "combiRank": 790,
+    "craftSpeed": 100,
+    "defense": 80,
+    "description": null,
+    "drops": [
+      {
+        "id": "ancient-civilization-parts",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "leather",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "flame-organ",
+        "max": 2,
+        "min": 1,
+        "rate": 100
+      },
+      {
+        "id": "precious-pelt",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      }
+    ],
+    "elementType1": "fire",
+    "elementType2": "dragon",
+    "foodAmount": 3,
+    "hp": 108,
+    "id": "chillet-ignis",
+    "internalName": "BOSS_WeaselDragon_Fire",
+    "isBoss": true,
+    "maleProbability": 50,
+    "maxFullStomach": 225,
+    "meleeAttack": 100,
+    "name": "Chillet Ignis",
+    "partnerSkill": null,
+    "price": 8900,
+    "rarity": 8,
+    "rideSprintSpeed": 900,
+    "runSpeed": 600,
+    "shotAttack": 85,
+    "size": "Extra Large",
+    "slowWalkSpeed": 100,
+    "stamina": 100,
+    "support": 100,
+    "title": null,
+    "transportSpeed": 390,
+    "walkSpeed": 180,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 1,
+      "generatingElectricity": 0,
+      "handiwork": 0,
+      "kindling": 2,
       "lumbering": 0,
       "medicineProduction": 0,
       "mining": 0,
@@ -6950,7 +7176,7 @@
     "elementType1": "electric",
     "elementType2": null,
     "foodAmount": 5,
-    "hp": 80,
+    "hp": 96,
     "id": "univolt",
     "internalName": "BOSS_Kirin",
     "isBoss": true,
@@ -6959,7 +7185,7 @@
     "meleeAttack": 110,
     "name": "Univolt",
     "partnerSkill": null,
-    "price": 4280,
+    "price": 8560,
     "rarity": 9,
     "rideSprintSpeed": 1200,
     "runSpeed": 720,
@@ -7032,7 +7258,7 @@
     "elementType1": "ice",
     "elementType2": null,
     "foodAmount": 3,
-    "hp": 90,
+    "hp": 108,
     "id": "foxcicle",
     "internalName": "BOSS_IceFox",
     "isBoss": true,
@@ -7041,7 +7267,7 @@
     "meleeAttack": 100,
     "name": "Foxcicle",
     "partnerSkill": null,
-    "price": 3730,
+    "price": 7460,
     "rarity": 8,
     "rideSprintSpeed": 750,
     "runSpeed": 600,
@@ -7143,7 +7369,7 @@
     "elementType1": "fire",
     "elementType2": null,
     "foodAmount": 5,
-    "hp": 100,
+    "hp": 120,
     "id": "pyrin",
     "internalName": "BOSS_FireKirin",
     "isBoss": true,
@@ -7152,7 +7378,7 @@
     "meleeAttack": 110,
     "name": "Pyrin",
     "partnerSkill": null,
-    "price": 6720,
+    "price": 13440,
     "rarity": 9,
     "rideSprintSpeed": 1400,
     "runSpeed": 850,
@@ -7254,7 +7480,7 @@
     "elementType1": "fire",
     "elementType2": "dark",
     "foodAmount": 5,
-    "hp": 100,
+    "hp": 120,
     "id": "pyrin-noct",
     "internalName": "BOSS_FireKirin_Dark",
     "isBoss": true,
@@ -7263,7 +7489,7 @@
     "meleeAttack": 110,
     "name": "Pyrin Noct",
     "partnerSkill": null,
-    "price": 7270,
+    "price": 14540,
     "rarity": 9,
     "rideSprintSpeed": 1400,
     "runSpeed": 850,
@@ -7365,7 +7591,7 @@
     "elementType1": "ice",
     "elementType2": null,
     "foodAmount": 7,
-    "hp": 100,
+    "hp": 120,
     "id": "reindrix",
     "internalName": "BOSS_IceDeer",
     "isBoss": true,
@@ -7374,7 +7600,7 @@
     "meleeAttack": 80,
     "name": "Reindrix",
     "partnerSkill": null,
-    "price": 2800,
+    "price": 5600,
     "rarity": 8,
     "rideSprintSpeed": 800,
     "runSpeed": 550,
@@ -7470,7 +7696,7 @@
     "elementType1": "electric",
     "elementType2": null,
     "foodAmount": 5,
-    "hp": 90,
+    "hp": 108,
     "id": "rayhound",
     "internalName": "BOSS_ThunderDog",
     "isBoss": true,
@@ -7479,7 +7705,7 @@
     "meleeAttack": 100,
     "name": "Rayhound",
     "partnerSkill": null,
-    "price": 3880,
+    "price": 7760,
     "rarity": 9,
     "rideSprintSpeed": 1250,
     "runSpeed": 700,
@@ -7581,7 +7807,7 @@
     "elementType1": "fire",
     "elementType2": null,
     "foodAmount": 4,
-    "hp": 100,
+    "hp": 120,
     "id": "kitsun",
     "internalName": "BOSS_AmaterasuWolf",
     "isBoss": true,
@@ -7590,7 +7816,7 @@
     "meleeAttack": 70,
     "name": "Kitsun",
     "partnerSkill": null,
-    "price": 3170,
+    "price": 6340,
     "rarity": 9,
     "rideSprintSpeed": 1000,
     "runSpeed": 700,
@@ -7692,7 +7918,7 @@
     "elementType1": "electric",
     "elementType2": null,
     "foodAmount": 2,
-    "hp": 70,
+    "hp": 84,
     "id": "dazzi",
     "internalName": "BOSS_RaijinDaughter",
     "isBoss": true,
@@ -7701,7 +7927,7 @@
     "meleeAttack": 110,
     "name": "Dazzi",
     "partnerSkill": null,
-    "price": 1390,
+    "price": 2780,
     "rarity": 8,
     "rideSprintSpeed": 550,
     "runSpeed": 400,
@@ -7797,7 +8023,7 @@
     "elementType1": "neutral",
     "elementType2": null,
     "foodAmount": 2,
-    "hp": 90,
+    "hp": 108,
     "id": "lunaris",
     "internalName": "BOSS_Mutant",
     "isBoss": true,
@@ -7806,7 +8032,7 @@
     "meleeAttack": 80,
     "name": "Lunaris",
     "partnerSkill": null,
-    "price": 1760,
+    "price": 3520,
     "rarity": 9,
     "rideSprintSpeed": 650,
     "runSpeed": 500,
@@ -7902,7 +8128,7 @@
     "elementType1": "grass",
     "elementType2": "dragon",
     "foodAmount": 6,
-    "hp": 110,
+    "hp": 132,
     "id": "dinossom",
     "internalName": "BOSS_FlowerDinosaur",
     "isBoss": true,
@@ -7911,7 +8137,7 @@
     "meleeAttack": 90,
     "name": "Dinossom",
     "partnerSkill": null,
-    "price": 3240,
+    "price": 6480,
     "rarity": 8,
     "rideSprintSpeed": 800,
     "runSpeed": 550,
@@ -8007,7 +8233,7 @@
     "elementType1": "electric",
     "elementType2": "dragon",
     "foodAmount": 6,
-    "hp": 110,
+    "hp": 132,
     "id": "dinossom-lux",
     "internalName": "BOSS_FlowerDinosaur_Electric",
     "isBoss": true,
@@ -8016,7 +8242,7 @@
     "meleeAttack": 90,
     "name": "Dinossom Lux",
     "partnerSkill": null,
-    "price": 3380,
+    "price": 6760,
     "rarity": 8,
     "rideSprintSpeed": 800,
     "runSpeed": 550,
@@ -8112,7 +8338,7 @@
     "elementType1": "water",
     "elementType2": null,
     "foodAmount": 5,
-    "hp": 90,
+    "hp": 108,
     "id": "surfent",
     "internalName": "BOSS_Serpent",
     "isBoss": true,
@@ -8121,7 +8347,7 @@
     "meleeAttack": 70,
     "name": "Surfent",
     "partnerSkill": null,
-    "price": 5050,
+    "price": 10100,
     "rarity": 8,
     "rideSprintSpeed": 750,
     "runSpeed": 500,
@@ -8217,7 +8443,7 @@
     "elementType1": "ground",
     "elementType2": null,
     "foodAmount": 5,
-    "hp": 90,
+    "hp": 108,
     "id": "surfent-terra",
     "internalName": "BOSS_Serpent_Ground",
     "isBoss": true,
@@ -8226,7 +8452,7 @@
     "meleeAttack": 70,
     "name": "Surfent Terra",
     "partnerSkill": null,
-    "price": 5140,
+    "price": 10280,
     "rarity": 8,
     "rideSprintSpeed": 750,
     "runSpeed": 500,
@@ -8328,7 +8554,7 @@
     "elementType1": "dark",
     "elementType2": null,
     "foodAmount": 3,
-    "hp": 75,
+    "hp": 90,
     "id": "maraith",
     "internalName": "BOSS_GhostBeast",
     "isBoss": true,
@@ -8337,7 +8563,7 @@
     "meleeAttack": 50,
     "name": "Maraith",
     "partnerSkill": null,
-    "price": 1570,
+    "price": 3140,
     "rarity": 9,
     "rideSprintSpeed": 900,
     "runSpeed": 600,
@@ -8439,7 +8665,7 @@
     "elementType1": "ground",
     "elementType2": null,
     "foodAmount": 5,
-    "hp": 80,
+    "hp": 96,
     "id": "digtoise",
     "internalName": "BOSS_DrillGame",
     "isBoss": true,
@@ -8448,7 +8674,7 @@
     "meleeAttack": 80,
     "name": "Digtoise",
     "partnerSkill": null,
-    "price": 2980,
+    "price": 5960,
     "rarity": 9,
     "rideSprintSpeed": 420,
     "runSpeed": 300,
@@ -8550,7 +8776,7 @@
     "elementType1": "dark",
     "elementType2": null,
     "foodAmount": 5,
-    "hp": 95,
+    "hp": 114,
     "id": "tombat",
     "internalName": "BOSS_CatBat",
     "isBoss": true,
@@ -8559,7 +8785,7 @@
     "meleeAttack": 100,
     "name": "Tombat",
     "partnerSkill": null,
-    "price": 3810,
+    "price": 7620,
     "rarity": 8,
     "rideSprintSpeed": 550,
     "runSpeed": 400,
@@ -8661,7 +8887,7 @@
     "elementType1": "neutral",
     "elementType2": null,
     "foodAmount": 5,
-    "hp": 120,
+    "hp": 144,
     "id": "lovander",
     "internalName": "BOSS_PinkLizard",
     "isBoss": true,
@@ -8670,7 +8896,7 @@
     "meleeAttack": 70,
     "name": "Lovander",
     "partnerSkill": null,
-    "price": 2450,
+    "price": 4900,
     "rarity": 9,
     "rideSprintSpeed": 850,
     "runSpeed": 750,
@@ -8743,7 +8969,7 @@
     "elementType1": "fire",
     "elementType2": null,
     "foodAmount": 2,
-    "hp": 60,
+    "hp": 72,
     "id": "flambelle",
     "internalName": "BOSS_LavaGirl",
     "isBoss": true,
@@ -8752,7 +8978,7 @@
     "meleeAttack": 100,
     "name": "Flambelle",
     "partnerSkill": null,
-    "price": 2500,
+    "price": 5000,
     "rarity": 8,
     "rideSprintSpeed": 375,
     "runSpeed": 250,
@@ -8854,7 +9080,7 @@
     "elementType1": "fire",
     "elementType2": "dark",
     "foodAmount": 6,
-    "hp": 90,
+    "hp": 108,
     "id": "vanwyrm",
     "internalName": "BOSS_BirdDragon",
     "isBoss": true,
@@ -8863,7 +9089,7 @@
     "meleeAttack": 100,
     "name": "Vanwyrm",
     "partnerSkill": null,
-    "price": 4360,
+    "price": 8720,
     "rarity": 8,
     "rideSprintSpeed": 950,
     "runSpeed": 700,
@@ -8965,7 +9191,7 @@
     "elementType1": "ice",
     "elementType2": "dark",
     "foodAmount": 6,
-    "hp": 90,
+    "hp": 108,
     "id": "vanwyrm-cryst",
     "internalName": "BOSS_BirdDragon_Ice",
     "isBoss": true,
@@ -8974,7 +9200,7 @@
     "meleeAttack": 100,
     "name": "Vanwyrm Cryst",
     "partnerSkill": null,
-    "price": 4610,
+    "price": 9220,
     "rarity": 9,
     "rideSprintSpeed": 950,
     "runSpeed": 700,
@@ -9076,7 +9302,7 @@
     "elementType1": "fire",
     "elementType2": null,
     "foodAmount": 4,
-    "hp": 80,
+    "hp": 96,
     "id": "bushi",
     "internalName": "BOSS_Ronin",
     "isBoss": true,
@@ -9085,7 +9311,118 @@
     "meleeAttack": 100,
     "name": "Bushi",
     "partnerSkill": null,
-    "price": 4520,
+    "price": 9040,
+    "rarity": 9,
+    "rideSprintSpeed": 900,
+    "runSpeed": 600,
+    "shotAttack": 125,
+    "size": "Extra Large",
+    "slowWalkSpeed": 80,
+    "stamina": 100,
+    "support": 100,
+    "title": null,
+    "transportSpeed": 320,
+    "walkSpeed": 160,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 1,
+      "generatingElectricity": 0,
+      "handiwork": 1,
+      "kindling": 2,
+      "lumbering": 3,
+      "medicineProduction": 0,
+      "mining": 0,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 2,
+      "watering": 0
+    },
+    "zukanIndex": -1,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "spirit-fire",
+        "level": 1
+      },
+      {
+        "id": "umbral-surge",
+        "level": 7
+      },
+      {
+        "id": "dark-cannon",
+        "level": 15
+      },
+      {
+        "id": "dark-arrow",
+        "level": 22
+      },
+      {
+        "id": "spirit-flame",
+        "level": 30
+      },
+      {
+        "id": "flame-wall",
+        "level": 40
+      },
+      {
+        "id": "apocalypse",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 0.7,
+    "combiRank": 650,
+    "craftSpeed": 100,
+    "defense": 80,
+    "description": null,
+    "drops": [
+      {
+        "id": "ancient-civilization-parts",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "flame-organ",
+        "max": 8,
+        "min": 4,
+        "rate": 100
+      },
+      {
+        "id": "ingot",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "medium-pal-soul",
+        "max": 2,
+        "min": 1,
+        "rate": 40
+      },
+      {
+        "id": "precious-entrails",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      }
+    ],
+    "elementType1": "fire",
+    "elementType2": "dark",
+    "foodAmount": 4,
+    "hp": 96,
+    "id": "bushi-noct",
+    "internalName": "BOSS_Ronin_Dark",
+    "isBoss": true,
+    "maleProbability": 50,
+    "maxFullStomach": 300,
+    "meleeAttack": 100,
+    "name": "Bushi Noct",
+    "partnerSkill": null,
+    "price": 9040,
     "rarity": 9,
     "rideSprintSpeed": 900,
     "runSpeed": 600,
@@ -9181,7 +9518,7 @@
     "elementType1": "electric",
     "elementType2": null,
     "foodAmount": 7,
-    "hp": 105,
+    "hp": 126,
     "id": "beakon",
     "internalName": "BOSS_ThunderBird",
     "isBoss": true,
@@ -9190,7 +9527,7 @@
     "meleeAttack": 100,
     "name": "Beakon",
     "partnerSkill": null,
-    "price": 7490,
+    "price": 14980,
     "rarity": 9,
     "rideSprintSpeed": 1300,
     "runSpeed": 750,
@@ -9286,7 +9623,7 @@
     "elementType1": "fire",
     "elementType2": null,
     "foodAmount": 7,
-    "hp": 95,
+    "hp": 114,
     "id": "ragnahawk",
     "internalName": "BOSS_RedArmorBird",
     "isBoss": true,
@@ -9295,7 +9632,7 @@
     "meleeAttack": 100,
     "name": "Ragnahawk",
     "partnerSkill": null,
-    "price": 6720,
+    "price": 13440,
     "rarity": 9,
     "rideSprintSpeed": 1400,
     "runSpeed": 800,
@@ -9397,7 +9734,7 @@
     "elementType1": "dark",
     "elementType2": null,
     "foodAmount": 5,
-    "hp": 90,
+    "hp": 108,
     "id": "katress",
     "internalName": "BOSS_CatMage",
     "isBoss": true,
@@ -9406,7 +9743,7 @@
     "meleeAttack": 100,
     "name": "Katress",
     "partnerSkill": null,
-    "price": 4120,
+    "price": 8240,
     "rarity": 9,
     "rideSprintSpeed": 620,
     "runSpeed": 440,
@@ -9425,6 +9762,117 @@
       "generatingElectricity": 0,
       "handiwork": 2,
       "kindling": 0,
+      "lumbering": 0,
+      "medicineProduction": 2,
+      "mining": 0,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 2,
+      "watering": 0
+    },
+    "zukanIndex": -1,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "ignis-blast",
+        "level": 1
+      },
+      {
+        "id": "dark-cannon",
+        "level": 7
+      },
+      {
+        "id": "flare-arrow",
+        "level": 15
+      },
+      {
+        "id": "flare-storm",
+        "level": 22
+      },
+      {
+        "id": "flame-wall",
+        "level": 30
+      },
+      {
+        "id": "flame-funnel",
+        "level": 40
+      },
+      {
+        "id": "fire-ball",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 0.7,
+    "combiRank": 690,
+    "craftSpeed": 100,
+    "defense": 90,
+    "description": null,
+    "drops": [
+      {
+        "id": "ancient-civilization-parts",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "flame-organ",
+        "max": 2,
+        "min": 1,
+        "rate": 100
+      },
+      {
+        "id": "katress-hair",
+        "max": 1,
+        "min": 1,
+        "rate": 50
+      },
+      {
+        "id": "high-grade-technical-manual",
+        "max": 1,
+        "min": 1,
+        "rate": 1
+      },
+      {
+        "id": "precious-pelt",
+        "max": 2,
+        "min": 1,
+        "rate": 100
+      }
+    ],
+    "elementType1": "dark",
+    "elementType2": "fire",
+    "foodAmount": 5,
+    "hp": 114,
+    "id": "katress-ignis",
+    "internalName": "BOSS_CatMage_Fire",
+    "isBoss": true,
+    "maleProbability": 50,
+    "maxFullStomach": 350,
+    "meleeAttack": 100,
+    "name": "Katress Ignis",
+    "partnerSkill": null,
+    "price": 8240,
+    "rarity": 9,
+    "rideSprintSpeed": 620,
+    "runSpeed": 440,
+    "shotAttack": 105,
+    "size": "Extra Large",
+    "slowWalkSpeed": 70,
+    "stamina": 100,
+    "support": 100,
+    "title": null,
+    "transportSpeed": 292,
+    "walkSpeed": 145,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 0,
+      "generatingElectricity": 0,
+      "handiwork": 2,
+      "kindling": 2,
       "lumbering": 0,
       "medicineProduction": 2,
       "mining": 0,
@@ -9508,7 +9956,7 @@
     "elementType1": "fire",
     "elementType2": null,
     "foodAmount": 5,
-    "hp": 90,
+    "hp": 108,
     "id": "wixen",
     "internalName": "BOSS_FoxMage",
     "isBoss": true,
@@ -9517,7 +9965,112 @@
     "meleeAttack": 50,
     "name": "Wixen",
     "partnerSkill": null,
-    "price": 1540,
+    "price": 6160,
+    "rarity": 9,
+    "rideSprintSpeed": 620,
+    "runSpeed": 440,
+    "shotAttack": 110,
+    "size": "Extra Large",
+    "slowWalkSpeed": 70,
+    "stamina": 100,
+    "support": 120,
+    "title": null,
+    "transportSpeed": 292,
+    "walkSpeed": 145,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 0,
+      "generatingElectricity": 0,
+      "handiwork": 3,
+      "kindling": 2,
+      "lumbering": 0,
+      "medicineProduction": 0,
+      "mining": 0,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 2,
+      "watering": 0
+    },
+    "zukanIndex": -1,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "umbral-surge",
+        "level": 1
+      },
+      {
+        "id": "dark-cannon",
+        "level": 7
+      },
+      {
+        "id": "dark-arrow",
+        "level": 15
+      },
+      {
+        "id": "flare-storm",
+        "level": 22
+      },
+      {
+        "id": "spirit-flame",
+        "level": 30
+      },
+      {
+        "id": "flame-wall",
+        "level": 40
+      },
+      {
+        "id": "apocalypse",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 0.7,
+    "combiRank": 1150,
+    "craftSpeed": 100,
+    "defense": 85,
+    "description": null,
+    "drops": [
+      {
+        "id": "ancient-civilization-parts",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "medium-pal-soul",
+        "max": 2,
+        "min": 1,
+        "rate": 100
+      },
+      {
+        "id": "high-grade-technical-manual",
+        "max": 1,
+        "min": 1,
+        "rate": 1
+      },
+      {
+        "id": "precious-pelt",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      }
+    ],
+    "elementType1": "fire",
+    "elementType2": "dark",
+    "foodAmount": 5,
+    "hp": 108,
+    "id": "wixen-noct",
+    "internalName": "BOSS_FoxMage_Dark",
+    "isBoss": true,
+    "maleProbability": 50,
+    "maxFullStomach": 350,
+    "meleeAttack": 50,
+    "name": "Wixen Noct",
+    "partnerSkill": null,
+    "price": 8160,
     "rarity": 9,
     "rideSprintSpeed": 620,
     "runSpeed": 440,
@@ -9619,7 +10172,7 @@
     "elementType1": "grass",
     "elementType2": null,
     "foodAmount": 3,
-    "hp": 90,
+    "hp": 108,
     "id": "verdash",
     "internalName": "BOSS_GrassRabbitMan",
     "isBoss": true,
@@ -9628,7 +10181,7 @@
     "meleeAttack": 100,
     "name": "Verdash",
     "partnerSkill": null,
-    "price": 2200,
+    "price": 4400,
     "rarity": 10,
     "rideSprintSpeed": 700,
     "runSpeed": 500,
@@ -9730,7 +10283,7 @@
     "elementType1": "grass",
     "elementType2": null,
     "foodAmount": 3,
-    "hp": 100,
+    "hp": 120,
     "id": "vaelet",
     "internalName": "BOSS_VioletFairy",
     "isBoss": true,
@@ -9739,7 +10292,7 @@
     "meleeAttack": 100,
     "name": "Vaelet",
     "partnerSkill": null,
-    "price": 1960,
+    "price": 3920,
     "rarity": 9,
     "rideSprintSpeed": 550,
     "runSpeed": 400,
@@ -9841,7 +10394,7 @@
     "elementType1": "ice",
     "elementType2": null,
     "foodAmount": 5,
-    "hp": 110,
+    "hp": 132,
     "id": "sibelyx",
     "internalName": "BOSS_WhiteMoth",
     "isBoss": true,
@@ -9850,7 +10403,7 @@
     "meleeAttack": 90,
     "name": "Sibelyx",
     "partnerSkill": null,
-    "price": 5900,
+    "price": 11800,
     "rarity": 9,
     "rideSprintSpeed": 550,
     "runSpeed": 400,
@@ -9946,7 +10499,7 @@
     "elementType1": "dragon",
     "elementType2": null,
     "foodAmount": 6,
-    "hp": 110,
+    "hp": 132,
     "id": "elphidran",
     "internalName": "BOSS_FairyDragon",
     "isBoss": true,
@@ -9955,7 +10508,7 @@
     "meleeAttack": 80,
     "name": "Elphidran",
     "partnerSkill": null,
-    "price": 5230,
+    "price": 10460,
     "rarity": 9,
     "rideSprintSpeed": 900,
     "runSpeed": 630,
@@ -10051,7 +10604,7 @@
     "elementType1": "dragon",
     "elementType2": "water",
     "foodAmount": 6,
-    "hp": 115,
+    "hp": 138,
     "id": "elphidran-aqua",
     "internalName": "BOSS_FairyDragon_Water",
     "isBoss": true,
@@ -10060,7 +10613,7 @@
     "meleeAttack": 80,
     "name": "Elphidran Aqua",
     "partnerSkill": null,
-    "price": 5320,
+    "price": 10640,
     "rarity": 9,
     "rideSprintSpeed": 900,
     "runSpeed": 630,
@@ -10162,7 +10715,7 @@
     "elementType1": "water",
     "elementType2": null,
     "foodAmount": 1,
-    "hp": 70,
+    "hp": 84,
     "id": "kelpsea",
     "internalName": "BOSS_Kelpie",
     "isBoss": true,
@@ -10171,7 +10724,7 @@
     "meleeAttack": 100,
     "name": "Kelpsea",
     "partnerSkill": null,
-    "price": 1260,
+    "price": 2520,
     "rarity": 8,
     "rideSprintSpeed": 900,
     "runSpeed": 700,
@@ -10273,7 +10826,7 @@
     "elementType1": "fire",
     "elementType2": null,
     "foodAmount": 1,
-    "hp": 70,
+    "hp": 84,
     "id": "kelpsea-ignis",
     "internalName": "BOSS_Kelpie_Fire",
     "isBoss": true,
@@ -10282,7 +10835,7 @@
     "meleeAttack": 100,
     "name": "Kelpsea Ignis",
     "partnerSkill": null,
-    "price": 1240,
+    "price": 2480,
     "rarity": 8,
     "rideSprintSpeed": 900,
     "runSpeed": 700,
@@ -10378,7 +10931,7 @@
     "elementType1": "water",
     "elementType2": "dragon",
     "foodAmount": 6,
-    "hp": 110,
+    "hp": 132,
     "id": "azurobe",
     "internalName": "BOSS_BlueDragon",
     "isBoss": true,
@@ -10387,7 +10940,7 @@
     "meleeAttack": 70,
     "name": "Azurobe",
     "partnerSkill": null,
-    "price": 5600,
+    "price": 11200,
     "rarity": 9,
     "rideSprintSpeed": 900,
     "runSpeed": 600,
@@ -10483,7 +11036,7 @@
     "elementType1": "ice",
     "elementType2": null,
     "foodAmount": 7,
-    "hp": 100,
+    "hp": 120,
     "id": "cryolinx",
     "internalName": "BOSS_WhiteTiger",
     "isBoss": true,
@@ -10492,7 +11045,7 @@
     "meleeAttack": 140,
     "name": "Cryolinx",
     "partnerSkill": null,
-    "price": 8440,
+    "price": 16880,
     "rarity": 9,
     "rideSprintSpeed": 900,
     "runSpeed": 720,
@@ -10588,7 +11141,7 @@
     "elementType1": "fire",
     "elementType2": null,
     "foodAmount": 7,
-    "hp": 105,
+    "hp": 126,
     "id": "blazehowl",
     "internalName": "BOSS_Manticore",
     "isBoss": true,
@@ -10597,7 +11150,7 @@
     "meleeAttack": 100,
     "name": "Blazehowl",
     "partnerSkill": null,
-    "price": 4040,
+    "price": 8080,
     "rarity": 9,
     "rideSprintSpeed": 1000,
     "runSpeed": 750,
@@ -10693,7 +11246,7 @@
     "elementType1": "fire",
     "elementType2": "dark",
     "foodAmount": 7,
-    "hp": 105,
+    "hp": 126,
     "id": "blazehowl-noct",
     "internalName": "BOSS_Manticore_Dark",
     "isBoss": true,
@@ -10702,7 +11255,7 @@
     "meleeAttack": 100,
     "name": "Blazehowl Noct",
     "partnerSkill": null,
-    "price": 4360,
+    "price": 8720,
     "rarity": 9,
     "rideSprintSpeed": 1000,
     "runSpeed": 750,
@@ -10804,7 +11357,7 @@
     "elementType1": "dragon",
     "elementType2": "water",
     "foodAmount": 7,
-    "hp": 110,
+    "hp": 132,
     "id": "relaxaurus",
     "internalName": "BOSS_LazyDragon",
     "isBoss": true,
@@ -10813,7 +11366,7 @@
     "meleeAttack": 110,
     "name": "Relaxaurus",
     "partnerSkill": null,
-    "price": 10240,
+    "price": 20480,
     "rarity": 10,
     "rideSprintSpeed": 900,
     "runSpeed": 650,
@@ -10915,7 +11468,7 @@
     "elementType1": "dragon",
     "elementType2": "electric",
     "foodAmount": 7,
-    "hp": 110,
+    "hp": 132,
     "id": "relaxaurus-lux",
     "internalName": "BOSS_LazyDragon_Electric",
     "isBoss": true,
@@ -10924,7 +11477,7 @@
     "meleeAttack": 110,
     "name": "Relaxaurus Lux",
     "partnerSkill": null,
-    "price": 10380,
+    "price": 20760,
     "rarity": 10,
     "rideSprintSpeed": 900,
     "runSpeed": 650,
@@ -11026,7 +11579,7 @@
     "elementType1": "grass",
     "elementType2": null,
     "foodAmount": 7,
-    "hp": 120,
+    "hp": 144,
     "id": "broncherry",
     "internalName": "BOSS_SakuraSaurus",
     "isBoss": true,
@@ -11035,7 +11588,7 @@
     "meleeAttack": 80,
     "name": "Broncherry",
     "partnerSkill": null,
-    "price": 2920,
+    "price": 5840,
     "rarity": 10,
     "rideSprintSpeed": 600,
     "runSpeed": 350,
@@ -11137,7 +11690,7 @@
     "elementType1": "grass",
     "elementType2": "water",
     "foodAmount": 7,
-    "hp": 120,
+    "hp": 144,
     "id": "broncherry-aqua",
     "internalName": "BOSS_SakuraSaurus_Water",
     "isBoss": true,
@@ -11146,7 +11699,7 @@
     "meleeAttack": 80,
     "name": "Broncherry Aqua",
     "partnerSkill": null,
-    "price": 3110,
+    "price": 6220,
     "rarity": 10,
     "rideSprintSpeed": 600,
     "runSpeed": 350,
@@ -11242,7 +11795,7 @@
     "elementType1": "grass",
     "elementType2": null,
     "foodAmount": 3,
-    "hp": 100,
+    "hp": 120,
     "id": "petallia",
     "internalName": "BOSS_FlowerDoll",
     "isBoss": true,
@@ -11251,7 +11804,7 @@
     "meleeAttack": 100,
     "name": "Petallia",
     "partnerSkill": null,
-    "price": 3590,
+    "price": 7180,
     "rarity": 9,
     "rideSprintSpeed": 700,
     "runSpeed": 550,
@@ -11347,7 +11900,7 @@
     "elementType1": "fire",
     "elementType2": "ground",
     "foodAmount": 5,
-    "hp": 110,
+    "hp": 132,
     "id": "reptyro",
     "internalName": "BOSS_VolcanicMonster",
     "isBoss": true,
@@ -11356,7 +11909,7 @@
     "meleeAttack": 100,
     "name": "Reptyro",
     "partnerSkill": null,
-    "price": 6940,
+    "price": 13880,
     "rarity": 9,
     "rideSprintSpeed": 650,
     "runSpeed": 390,
@@ -11452,7 +12005,7 @@
     "elementType1": "ice",
     "elementType2": "ground",
     "foodAmount": 5,
-    "hp": 110,
+    "hp": 132,
     "id": "reptyro-cryst",
     "internalName": "BOSS_VolcanicMonster_Ice",
     "isBoss": true,
@@ -11461,7 +12014,7 @@
     "meleeAttack": 100,
     "name": "Reptyro Cryst",
     "partnerSkill": null,
-    "price": 7380,
+    "price": 14760,
     "rarity": 9,
     "rideSprintSpeed": 650,
     "runSpeed": 390,
@@ -11557,7 +12110,7 @@
     "elementType1": "neutral",
     "elementType2": null,
     "foodAmount": 7,
-    "hp": 120,
+    "hp": 144,
     "id": "kingpaca",
     "internalName": "BOSS_KingAlpaca",
     "isBoss": true,
@@ -11566,7 +12119,7 @@
     "meleeAttack": 100,
     "name": "Kingpaca",
     "partnerSkill": null,
-    "price": 5800,
+    "price": 11600,
     "rarity": 9,
     "rideSprintSpeed": 800,
     "runSpeed": 500,
@@ -11668,7 +12221,7 @@
     "elementType1": "ice",
     "elementType2": null,
     "foodAmount": 7,
-    "hp": 120,
+    "hp": 144,
     "id": "kingpaca-cryst",
     "internalName": "BOSS_KingAlpaca_Ice",
     "isBoss": true,
@@ -11677,7 +12230,7 @@
     "meleeAttack": 100,
     "name": "Kingpaca Cryst",
     "partnerSkill": null,
-    "price": 6100,
+    "price": 12200,
     "rarity": 9,
     "rideSprintSpeed": 800,
     "runSpeed": 500,
@@ -11779,7 +12332,7 @@
     "elementType1": "grass",
     "elementType2": null,
     "foodAmount": 8,
-    "hp": 150,
+    "hp": 180,
     "id": "mammorest",
     "internalName": "BOSS_GrassMammoth",
     "isBoss": true,
@@ -11788,7 +12341,7 @@
     "meleeAttack": 100,
     "name": "Mammorest",
     "partnerSkill": null,
-    "price": 9450,
+    "price": 18900,
     "rarity": 10,
     "rideSprintSpeed": 700,
     "runSpeed": 430,
@@ -11890,7 +12443,7 @@
     "elementType1": "ice",
     "elementType2": null,
     "foodAmount": 8,
-    "hp": 150,
+    "hp": 180,
     "id": "mammorest-cryst",
     "internalName": "BOSS_GrassMammoth_Ice",
     "isBoss": true,
@@ -11899,7 +12452,7 @@
     "meleeAttack": 100,
     "name": "Mammorest Cryst",
     "partnerSkill": null,
-    "price": 9710,
+    "price": 19160,
     "rarity": 10,
     "rideSprintSpeed": 700,
     "runSpeed": 430,
@@ -12001,7 +12554,7 @@
     "elementType1": "ice",
     "elementType2": null,
     "foodAmount": 8,
-    "hp": 140,
+    "hp": 168,
     "id": "wumpo",
     "internalName": "BOSS_Yeti",
     "isBoss": true,
@@ -12010,7 +12563,7 @@
     "meleeAttack": 100,
     "name": "Wumpo",
     "partnerSkill": null,
-    "price": 5900,
+    "price": 11800,
     "rarity": 9,
     "rideSprintSpeed": 650,
     "runSpeed": 365,
@@ -12112,7 +12665,7 @@
     "elementType1": "grass",
     "elementType2": null,
     "foodAmount": 8,
-    "hp": 140,
+    "hp": 168,
     "id": "wumpo-botan",
     "internalName": "BOSS_Yeti_Grass",
     "isBoss": true,
@@ -12121,7 +12674,7 @@
     "meleeAttack": 100,
     "name": "Wumpo Botan",
     "partnerSkill": null,
-    "price": 5700,
+    "price": 11400,
     "rarity": 9,
     "rideSprintSpeed": 650,
     "runSpeed": 365,
@@ -12217,7 +12770,7 @@
     "elementType1": "ground",
     "elementType2": "grass",
     "foodAmount": 6,
-    "hp": 120,
+    "hp": 144,
     "id": "warsect",
     "internalName": "BOSS_HerculesBeetle",
     "isBoss": true,
@@ -12226,7 +12779,7 @@
     "meleeAttack": 100,
     "name": "Warsect",
     "partnerSkill": null,
-    "price": 6830,
+    "price": 13660,
     "rarity": 10,
     "rideSprintSpeed": 600,
     "runSpeed": 500,
@@ -12250,6 +12803,76 @@
       "mining": 0,
       "oilExtraction": 0,
       "planting": 1,
+      "transporting": 3,
+      "watering": 0
+    },
+    "zukanIndex": -1,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [],
+    "breedOrder": null,
+    "captureRateCorrect": 0.7,
+    "combiRank": 350,
+    "craftSpeed": 100,
+    "defense": 120,
+    "description": null,
+    "drops": [
+      {
+        "id": "ancient-civilization-parts",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "coal",
+        "max": 10,
+        "min": 10,
+        "rate": 100
+      },
+      {
+        "id": "precious-plume",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      }
+    ],
+    "elementType1": "ground",
+    "elementType2": null,
+    "foodAmount": 6,
+    "hp": 144,
+    "id": "warsect-terra",
+    "internalName": "BOSS_HerculesBeetle_Ground",
+    "isBoss": true,
+    "maleProbability": 85,
+    "maxFullStomach": 400,
+    "meleeAttack": 100,
+    "name": "Warsect  Terra",
+    "partnerSkill": null,
+    "price": 15660,
+    "rarity": 10,
+    "rideSprintSpeed": 600,
+    "runSpeed": 500,
+    "shotAttack": 100,
+    "size": "Extra Large",
+    "slowWalkSpeed": 55,
+    "stamina": 100,
+    "support": 100,
+    "title": null,
+    "transportSpeed": 110,
+    "walkSpeed": 110,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 0,
+      "generatingElectricity": 0,
+      "handiwork": 1,
+      "kindling": 0,
+      "lumbering": 0,
+      "medicineProduction": 0,
+      "mining": 3,
+      "oilExtraction": 0,
+      "planting": 0,
       "transporting": 3,
       "watering": 0
     },
@@ -12328,7 +12951,7 @@
     "elementType1": "neutral",
     "elementType2": null,
     "foodAmount": 6,
-    "hp": 110,
+    "hp": 132,
     "id": "fenglope",
     "internalName": "BOSS_FengyunDeeper",
     "isBoss": true,
@@ -12337,7 +12960,7 @@
     "meleeAttack": 110,
     "name": "Fenglope",
     "partnerSkill": null,
-    "price": 2250,
+    "price": 4500,
     "rarity": 9,
     "rideSprintSpeed": 1150,
     "runSpeed": 750,
@@ -12439,7 +13062,7 @@
     "elementType1": "dark",
     "elementType2": null,
     "foodAmount": 5,
-    "hp": 100,
+    "hp": 120,
     "id": "felbat",
     "internalName": "BOSS_CatVampire",
     "isBoss": true,
@@ -12448,7 +13071,7 @@
     "meleeAttack": 100,
     "name": "Felbat",
     "partnerSkill": null,
-    "price": 2100,
+    "price": 4200,
     "rarity": 9,
     "rideSprintSpeed": 700,
     "runSpeed": 550,
@@ -12544,7 +13167,7 @@
     "elementType1": "dragon",
     "elementType2": null,
     "foodAmount": 4,
-    "hp": 105,
+    "hp": 126,
     "id": "quivern",
     "internalName": "BOSS_SkyDragon",
     "isBoss": true,
@@ -12553,7 +13176,7 @@
     "meleeAttack": 100,
     "name": "Quivern",
     "partnerSkill": null,
-    "price": 6830,
+    "price": 13660,
     "rarity": 9,
     "rideSprintSpeed": 1050,
     "runSpeed": 800,
@@ -12586,6 +13209,117 @@
   {
     "activeSkills": [
       {
+        "id": "dragon-cannon",
+        "level": 1
+      },
+      {
+        "id": "wind-cutter",
+        "level": 7
+      },
+      {
+        "id": "seed-machine-gun",
+        "level": 15
+      },
+      {
+        "id": "draconic-breath",
+        "level": 22
+      },
+      {
+        "id": "grass-tornado",
+        "level": 30
+      },
+      {
+        "id": "comet-strike",
+        "level": 40
+      },
+      {
+        "id": "circle-vine",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 0.7,
+    "combiRank": 340,
+    "craftSpeed": 100,
+    "defense": 100,
+    "description": null,
+    "drops": [
+      {
+        "id": "ancient-civilization-parts",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "high-quality-pal-oil",
+        "max": 3,
+        "min": 3,
+        "rate": 100
+      },
+      {
+        "id": "beautiful-flower",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "red-berries",
+        "max": 2,
+        "min": 1,
+        "rate": 60
+      },
+      {
+        "id": "precious-plume",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      }
+    ],
+    "elementType1": "dragon",
+    "elementType2": "grass",
+    "foodAmount": 4,
+    "hp": 126,
+    "id": "quivern-botan",
+    "internalName": "BOSS_SkyDragon_Grass",
+    "isBoss": true,
+    "maleProbability": 50,
+    "maxFullStomach": 300,
+    "meleeAttack": 100,
+    "name": "Quivern Botan",
+    "partnerSkill": null,
+    "price": 15660,
+    "rarity": 9,
+    "rideSprintSpeed": 1050,
+    "runSpeed": 800,
+    "shotAttack": 105,
+    "size": "Extra Large",
+    "slowWalkSpeed": 120,
+    "stamina": 220,
+    "support": 100,
+    "title": null,
+    "transportSpeed": 470,
+    "walkSpeed": 240,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 2,
+      "generatingElectricity": 0,
+      "handiwork": 1,
+      "kindling": 0,
+      "lumbering": 0,
+      "medicineProduction": 0,
+      "mining": 2,
+      "oilExtraction": 0,
+      "planting": 2,
+      "transporting": 3,
+      "watering": 0
+    },
+    "zukanIndex": -1,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
         "id": "power-shot",
         "level": 1
       },
@@ -12604,6 +13338,10 @@
       {
         "id": "ignis-rage",
         "level": 30
+      },
+      {
+        "id": "brawn-impact",
+        "level": 35
       },
       {
         "id": "fire-ball",
@@ -12655,7 +13393,7 @@
     "elementType1": "fire",
     "elementType2": null,
     "foodAmount": 9,
-    "hp": 100,
+    "hp": 120,
     "id": "blazamut",
     "internalName": "BOSS_KingBahamut",
     "isBoss": true,
@@ -12664,11 +13402,116 @@
     "meleeAttack": 150,
     "name": "Blazamut",
     "partnerSkill": null,
-    "price": 10520,
+    "price": 21040,
     "rarity": 10,
     "rideSprintSpeed": 1000,
     "runSpeed": 700,
     "shotAttack": 125,
+    "size": "Extra Large",
+    "slowWalkSpeed": 150,
+    "stamina": 100,
+    "support": 50,
+    "title": null,
+    "transportSpeed": 500,
+    "walkSpeed": 400,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 0,
+      "generatingElectricity": 0,
+      "handiwork": 0,
+      "kindling": 3,
+      "lumbering": 0,
+      "medicineProduction": 0,
+      "mining": 4,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 0,
+      "watering": 0
+    },
+    "zukanIndex": -1,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "dragon-burst",
+        "level": 1
+      },
+      {
+        "id": "ignis-breath",
+        "level": 7
+      },
+      {
+        "id": "flame-wall",
+        "level": 15
+      },
+      {
+        "id": "comet-strike",
+        "level": 22
+      },
+      {
+        "id": "beam-slicer",
+        "level": 30
+      },
+      {
+        "id": "brawn-impact",
+        "level": 40
+      },
+      {
+        "id": "magna-crush",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 0.7,
+    "combiRank": 9,
+    "craftSpeed": 100,
+    "defense": 125,
+    "description": null,
+    "drops": [
+      {
+        "id": "ancient-civilization-parts",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "coal",
+        "max": 10,
+        "min": 10,
+        "rate": 100
+      },
+      {
+        "id": "medium-pal-soul",
+        "max": 1,
+        "min": 1,
+        "rate": 5
+      },
+      {
+        "id": "precious-claw",
+        "max": 1,
+        "min": 1,
+        "rate": 100
+      }
+    ],
+    "elementType1": "dragon",
+    "elementType2": "fire",
+    "foodAmount": 9,
+    "hp": 126,
+    "id": "blazamut-ryu",
+    "internalName": "BOSS_KingBahamut_Dragon",
+    "isBoss": true,
+    "maleProbability": 50,
+    "maxFullStomach": 600,
+    "meleeAttack": 150,
+    "name": "Blazamut Ryu",
+    "partnerSkill": null,
+    "price": 21040,
+    "rarity": 10,
+    "rideSprintSpeed": 1000,
+    "runSpeed": 700,
+    "shotAttack": 130,
     "size": "Extra Large",
     "slowWalkSpeed": 150,
     "stamina": 100,
@@ -12766,7 +13609,7 @@
     "elementType1": "dark",
     "elementType2": null,
     "foodAmount": 8,
-    "hp": 100,
+    "hp": 120,
     "id": "helzephyr",
     "internalName": "BOSS_HadesBird",
     "isBoss": true,
@@ -12775,7 +13618,7 @@
     "meleeAttack": 100,
     "name": "Helzephyr",
     "partnerSkill": null,
-    "price": 7840,
+    "price": 15680,
     "rarity": 9,
     "rideSprintSpeed": 1200,
     "runSpeed": 700,
@@ -12792,6 +13635,111 @@
       "farming": 0,
       "gathering": 0,
       "generatingElectricity": 0,
+      "handiwork": 0,
+      "kindling": 0,
+      "lumbering": 0,
+      "medicineProduction": 0,
+      "mining": 0,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 3,
+      "watering": 0
+    },
+    "zukanIndex": -1,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "spark-blast",
+        "level": 1
+      },
+      {
+        "id": "shockwave",
+        "level": 7
+      },
+      {
+        "id": "dark-arrow",
+        "level": 15
+      },
+      {
+        "id": "nightmare-ball",
+        "level": 22
+      },
+      {
+        "id": "tri-spark",
+        "level": 30
+      },
+      {
+        "id": "thunder-rain",
+        "level": 40
+      },
+      {
+        "id": "thunderstorm",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 0.7,
+    "combiRank": 180,
+    "craftSpeed": 100,
+    "defense": 100,
+    "description": null,
+    "drops": [
+      {
+        "id": "ancient-civilization-parts",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "electric-organ",
+        "max": 3,
+        "min": 1,
+        "rate": 100
+      },
+      {
+        "id": "medium-pal-soul",
+        "max": 1,
+        "min": 1,
+        "rate": 3
+      },
+      {
+        "id": "precious-plume",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      }
+    ],
+    "elementType1": "dark",
+    "elementType2": "electric",
+    "foodAmount": 8,
+    "hp": 126,
+    "id": "helzephyr-lux",
+    "internalName": "BOSS_HadesBird_Electric",
+    "isBoss": true,
+    "maleProbability": 50,
+    "maxFullStomach": 525,
+    "meleeAttack": 100,
+    "name": "Helzephyr Lux",
+    "partnerSkill": null,
+    "price": 17680,
+    "rarity": 9,
+    "rideSprintSpeed": 1200,
+    "runSpeed": 700,
+    "shotAttack": 125,
+    "size": "Extra Large",
+    "slowWalkSpeed": 100,
+    "stamina": 170,
+    "support": 100,
+    "title": null,
+    "transportSpeed": 450,
+    "walkSpeed": 100,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 0,
+      "generatingElectricity": 3,
       "handiwork": 0,
       "kindling": 0,
       "lumbering": 0,
@@ -12877,7 +13825,7 @@
     "elementType1": "dragon",
     "elementType2": "dark",
     "foodAmount": 9,
-    "hp": 100,
+    "hp": 120,
     "id": "astegon",
     "internalName": "BOSS_BlackMetalDragon",
     "isBoss": true,
@@ -12886,7 +13834,7 @@
     "meleeAttack": 100,
     "name": "Astegon",
     "partnerSkill": null,
-    "price": 8200,
+    "price": 16400,
     "rarity": 10,
     "rideSprintSpeed": 900,
     "runSpeed": 600,
@@ -12939,6 +13887,10 @@
         "level": 30
       },
       {
+        "id": "jumping-stinger",
+        "level": 35
+      },
+      {
         "id": "rock-lance",
         "level": 40
       },
@@ -12988,7 +13940,7 @@
     "elementType1": "dark",
     "elementType2": "ground",
     "foodAmount": 7,
-    "hp": 100,
+    "hp": 120,
     "id": "menasting",
     "internalName": "BOSS_DarkScorpion",
     "isBoss": true,
@@ -12997,11 +13949,116 @@
     "meleeAttack": 100,
     "name": "Menasting",
     "partnerSkill": null,
-    "price": 7050,
+    "price": 14100,
     "rarity": 10,
     "rideSprintSpeed": 1200,
     "runSpeed": 1000,
     "shotAttack": 100,
+    "size": "Extra Large",
+    "slowWalkSpeed": 100,
+    "stamina": 100,
+    "support": 100,
+    "title": null,
+    "transportSpeed": 600,
+    "walkSpeed": 200,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 0,
+      "generatingElectricity": 0,
+      "handiwork": 0,
+      "kindling": 0,
+      "lumbering": 2,
+      "medicineProduction": 0,
+      "mining": 3,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 0,
+      "watering": 0
+    },
+    "zukanIndex": -1,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "sand-blast",
+        "level": 1
+      },
+      {
+        "id": "stone-blast",
+        "level": 7
+      },
+      {
+        "id": "stone-cannon",
+        "level": 15
+      },
+      {
+        "id": "sand-tornado",
+        "level": 22
+      },
+      {
+        "id": "jumping-stinger",
+        "level": 30
+      },
+      {
+        "id": "rock-lance",
+        "level": 40
+      },
+      {
+        "id": "rockburst",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 0.7,
+    "combiRank": 250,
+    "craftSpeed": 100,
+    "defense": 130,
+    "description": null,
+    "drops": [
+      {
+        "id": "ancient-civilization-parts",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "crude-oil",
+        "max": 1,
+        "min": 1,
+        "rate": 50
+      },
+      {
+        "id": "flame-organ",
+        "max": 2,
+        "min": 1,
+        "rate": 100
+      },
+      {
+        "id": "precious-claw",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      }
+    ],
+    "elementType1": "ground",
+    "elementType2": null,
+    "foodAmount": 7,
+    "hp": 120,
+    "id": "menasting-terra",
+    "internalName": "BOSS_DarkScorpion_Ground",
+    "isBoss": true,
+    "maleProbability": 50,
+    "maxFullStomach": 475,
+    "meleeAttack": 100,
+    "name": "Menasting Terra",
+    "partnerSkill": null,
+    "price": 16100,
+    "rarity": 10,
+    "rideSprintSpeed": 1200,
+    "runSpeed": 1000,
+    "shotAttack": 105,
     "size": "Extra Large",
     "slowWalkSpeed": 100,
     "stamina": 100,
@@ -13099,7 +14156,7 @@
     "elementType1": "ground",
     "elementType2": null,
     "foodAmount": 6,
-    "hp": 120,
+    "hp": 144,
     "id": "anubis",
     "internalName": "Boss_Anubis",
     "isBoss": true,
@@ -13108,7 +14165,7 @@
     "meleeAttack": 130,
     "name": "Anubis",
     "partnerSkill": null,
-    "price": 9190,
+    "price": 18000,
     "rarity": 10,
     "rideSprintSpeed": 1000,
     "runSpeed": 800,
@@ -13204,7 +14261,7 @@
     "elementType1": "dragon",
     "elementType2": "water",
     "foodAmount": 7,
-    "hp": 130,
+    "hp": 156,
     "id": "jormuntide",
     "internalName": "BOSS_Umihebi",
     "isBoss": true,
@@ -13213,7 +14270,7 @@
     "meleeAttack": 150,
     "name": "Jormuntide",
     "partnerSkill": null,
-    "price": 9320,
+    "price": 18640,
     "rarity": 10,
     "rideSprintSpeed": 800,
     "runSpeed": 525,
@@ -13315,7 +14372,7 @@
     "elementType1": "dragon",
     "elementType2": "fire",
     "foodAmount": 7,
-    "hp": 130,
+    "hp": 156,
     "id": "jormuntide-ignis",
     "internalName": "BOSS_Umihebi_Fire",
     "isBoss": true,
@@ -13324,7 +14381,7 @@
     "meleeAttack": 150,
     "name": "Jormuntide Ignis",
     "partnerSkill": null,
-    "price": 9320,
+    "price": 19000,
     "rarity": 10,
     "rideSprintSpeed": 800,
     "runSpeed": 525,
@@ -13420,7 +14477,7 @@
     "elementType1": "fire",
     "elementType2": null,
     "foodAmount": 8,
-    "hp": 120,
+    "hp": 144,
     "id": "suzaku",
     "internalName": "BOSS_Suzaku",
     "isBoss": true,
@@ -13429,7 +14486,7 @@
     "meleeAttack": 100,
     "name": "Suzaku",
     "partnerSkill": null,
-    "price": 9840,
+    "price": 19680,
     "rarity": 10,
     "rideSprintSpeed": 1200,
     "runSpeed": 850,
@@ -13525,7 +14582,7 @@
     "elementType1": "water",
     "elementType2": null,
     "foodAmount": 8,
-    "hp": 125,
+    "hp": 150,
     "id": "suzaku-aqua",
     "internalName": "BOSS_Suzaku_Water",
     "isBoss": true,
@@ -13534,7 +14591,7 @@
     "meleeAttack": 100,
     "name": "Suzaku Aqua",
     "partnerSkill": null,
-    "price": 10110,
+    "price": 20220,
     "rarity": 10,
     "rideSprintSpeed": 1200,
     "runSpeed": 850,
@@ -13593,6 +14650,10 @@
       {
         "id": "lightning-bolt",
         "level": 50
+      },
+      {
+        "id": "heavy-thunder-tank",
+        "level": 55
       }
     ],
     "breedOrder": 13,
@@ -13636,7 +14697,7 @@
     "elementType1": "electric",
     "elementType2": null,
     "foodAmount": 7,
-    "hp": 105,
+    "hp": 126,
     "id": "grizzbolt",
     "internalName": "BOSS_ElecPanda",
     "isBoss": true,
@@ -13645,7 +14706,7 @@
     "meleeAttack": 120,
     "name": "Grizzbolt",
     "partnerSkill": null,
-    "price": 7720,
+    "price": 15440,
     "rarity": 10,
     "rideSprintSpeed": 650,
     "runSpeed": 470,
@@ -13704,6 +14765,10 @@
       {
         "id": "solar-blast",
         "level": 50
+      },
+      {
+        "id": "bountiful-protection",
+        "level": 55
       }
     ],
     "breedOrder": 92,
@@ -13747,7 +14812,7 @@
     "elementType1": "grass",
     "elementType2": null,
     "foodAmount": 6,
-    "hp": 110,
+    "hp": 132,
     "id": "lyleen",
     "internalName": "BOSS_LilyQueen",
     "isBoss": true,
@@ -13756,7 +14821,7 @@
     "meleeAttack": 100,
     "name": "Lyleen",
     "partnerSkill": null,
-    "price": 7160,
+    "price": 14320,
     "rarity": 10,
     "rideSprintSpeed": 550,
     "runSpeed": 450,
@@ -13858,7 +14923,7 @@
     "elementType1": "dark",
     "elementType2": null,
     "foodAmount": 6,
-    "hp": 110,
+    "hp": 132,
     "id": "lyleen-noct",
     "internalName": "BOSS_LilyQueen_Dark",
     "isBoss": true,
@@ -13867,7 +14932,7 @@
     "meleeAttack": 100,
     "name": "Lyleen Noct",
     "partnerSkill": null,
-    "price": 7610,
+    "price": 15220,
     "rarity": 10,
     "rideSprintSpeed": 550,
     "runSpeed": 450,
@@ -13926,6 +14991,10 @@
       {
         "id": "fire-ball",
         "level": 50
+      },
+      {
+        "id": "raging-flame-wave",
+        "level": 55
       }
     ],
     "breedOrder": 73,
@@ -13963,7 +15032,7 @@
     "elementType1": "fire",
     "elementType2": null,
     "foodAmount": 8,
-    "hp": 100,
+    "hp": 120,
     "id": "faleris",
     "internalName": "BOSS_Horus",
     "isBoss": true,
@@ -13972,7 +15041,7 @@
     "meleeAttack": 100,
     "name": "Faleris",
     "partnerSkill": null,
-    "price": 6720,
+    "price": 13440,
     "rarity": 10,
     "rideSprintSpeed": 1500,
     "runSpeed": 1000,
@@ -14031,6 +15100,10 @@
       {
         "id": "lightning-bolt",
         "level": 50
+      },
+      {
+        "id": "polykeraunos",
+        "level": 55
       }
     ],
     "breedOrder": 134,
@@ -14068,7 +15141,7 @@
     "elementType1": "dragon",
     "elementType2": "electric",
     "foodAmount": 7,
-    "hp": 100,
+    "hp": 120,
     "id": "orserk",
     "internalName": "BOSS_ThunderDragonMan",
     "isBoss": true,
@@ -14077,7 +15150,7 @@
     "meleeAttack": 100,
     "name": "Orserk",
     "partnerSkill": null,
-    "price": 8320,
+    "price": 16640,
     "rarity": 10,
     "rideSprintSpeed": 1200,
     "runSpeed": 900,
@@ -14136,6 +15209,10 @@
       {
         "id": "dark-laser",
         "level": 50
+      },
+      {
+        "id": "divine-disaster-ii",
+        "level": 55
       }
     ],
     "breedOrder": 77,
@@ -14179,7 +15256,7 @@
     "elementType1": "dark",
     "elementType2": null,
     "foodAmount": 8,
-    "hp": 120,
+    "hp": 144,
     "id": "shadowbeak",
     "internalName": "BOSS_BlackGriffon",
     "isBoss": true,
@@ -14188,7 +15265,7 @@
     "meleeAttack": 130,
     "name": "Shadowbeak",
     "partnerSkill": null,
-    "price": 9060,
+    "price": 18120,
     "rarity": 10,
     "rideSprintSpeed": 1300,
     "runSpeed": 850,
@@ -14290,7 +15367,7 @@
     "elementType1": "neutral",
     "elementType2": null,
     "foodAmount": 9,
-    "hp": 130,
+    "hp": 156,
     "id": "paladius",
     "internalName": "BOSS_SaintCentaur",
     "isBoss": true,
@@ -14299,7 +15376,7 @@
     "meleeAttack": 110,
     "name": "Paladius",
     "partnerSkill": null,
-    "price": 8810,
+    "price": 17620,
     "rarity": 20,
     "rideSprintSpeed": 1400,
     "runSpeed": 800,
@@ -14401,7 +15478,7 @@
     "elementType1": "dark",
     "elementType2": null,
     "foodAmount": 9,
-    "hp": 130,
+    "hp": 156,
     "id": "necromus",
     "internalName": "BOSS_BlackCentaur",
     "isBoss": true,
@@ -14410,7 +15487,7 @@
     "meleeAttack": 100,
     "name": "Necromus",
     "partnerSkill": null,
-    "price": 8930,
+    "price": 17860,
     "rarity": 20,
     "rideSprintSpeed": 1600,
     "runSpeed": 900,
@@ -14512,7 +15589,7 @@
     "elementType1": "ice",
     "elementType2": null,
     "foodAmount": 7,
-    "hp": 140,
+    "hp": 168,
     "id": "frostallion",
     "internalName": "BOSS_IceHorse",
     "isBoss": true,
@@ -14521,7 +15598,7 @@
     "meleeAttack": 100,
     "name": "Frostallion",
     "partnerSkill": null,
-    "price": 8440,
+    "price": 16880,
     "rarity": 20,
     "rideSprintSpeed": 1600,
     "runSpeed": 1000,
@@ -14623,7 +15700,7 @@
     "elementType1": "dark",
     "elementType2": null,
     "foodAmount": 7,
-    "hp": 140,
+    "hp": 168,
     "id": "frostallion-noct",
     "internalName": "BOSS_IceHorse_Dark",
     "isBoss": true,
@@ -14632,7 +15709,7 @@
     "meleeAttack": 100,
     "name": "Frostallion Noct",
     "partnerSkill": null,
-    "price": 8560,
+    "price": 17120,
     "rarity": 20,
     "rideSprintSpeed": 1600,
     "runSpeed": 1000,
@@ -14734,7 +15811,7 @@
     "elementType1": "dragon",
     "elementType2": null,
     "foodAmount": 9,
-    "hp": 110,
+    "hp": 132,
     "id": "jetragon",
     "internalName": "BOSS_JetDragon",
     "isBoss": true,
@@ -14743,7 +15820,7 @@
     "meleeAttack": 100,
     "name": "Jetragon",
     "partnerSkill": null,
-    "price": 8680,
+    "price": 17360,
     "rarity": 20,
     "rideSprintSpeed": 3300,
     "runSpeed": 1700,
@@ -14814,7 +15891,7 @@
     "elementType1": "dark",
     "elementType2": null,
     "foodAmount": 4,
-    "hp": 120,
+    "hp": 144,
     "id": "bellanoir",
     "internalName": "BOSS_NightLady",
     "isBoss": true,
@@ -14823,7 +15900,7 @@
     "meleeAttack": 100,
     "name": "Bellanoir",
     "partnerSkill": null,
-    "price": 10030,
+    "price": 20060,
     "rarity": 20,
     "rideSprintSpeed": 800,
     "runSpeed": 600,
@@ -14894,7 +15971,7 @@
     "elementType1": "dark",
     "elementType2": null,
     "foodAmount": 4,
-    "hp": 120,
+    "hp": 144,
     "id": "bellanoir-libero",
     "internalName": "BOSS_NightLady_Dark",
     "isBoss": true,
@@ -14903,7 +15980,7 @@
     "meleeAttack": 100,
     "name": "Bellanoir Libero",
     "partnerSkill": null,
-    "price": 10030,
+    "price": 20060,
     "rarity": 20,
     "rideSprintSpeed": 800,
     "runSpeed": 600,
@@ -14928,6 +16005,1587 @@
       "oilExtraction": 0,
       "planting": 0,
       "transporting": 2,
+      "watering": 0
+    },
+    "zukanIndex": -1,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "dark-cannon",
+        "level": 1
+      },
+      {
+        "id": "dark-arrow",
+        "level": 7
+      },
+      {
+        "id": "air-blade",
+        "level": 15
+      },
+      {
+        "id": "holy-burst",
+        "level": 22
+      },
+      {
+        "id": "seigetsu-blade",
+        "level": 30
+      },
+      {
+        "id": "star-mine",
+        "level": 40
+      },
+      {
+        "id": "moonlight-beam",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 0.7,
+    "combiRank": 345,
+    "craftSpeed": 100,
+    "defense": 110,
+    "description": null,
+    "drops": [
+      {
+        "id": "ancient-civilization-parts",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "cloth",
+        "max": 2,
+        "min": 1,
+        "rate": 60
+      },
+      {
+        "id": "sapphire",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "precious-claw",
+        "max": 1,
+        "min": 1,
+        "rate": 100
+      }
+    ],
+    "elementType1": "dark",
+    "elementType2": "neutral",
+    "foodAmount": 2,
+    "hp": 156,
+    "id": "selyne",
+    "internalName": "BOSS_MoonQueen",
+    "isBoss": true,
+    "maleProbability": 50,
+    "maxFullStomach": 150,
+    "meleeAttack": 100,
+    "name": "Selyne",
+    "partnerSkill": null,
+    "price": 19000,
+    "rarity": 10,
+    "rideSprintSpeed": 550,
+    "runSpeed": 450,
+    "shotAttack": 115,
+    "size": "Extra Large",
+    "slowWalkSpeed": 60,
+    "stamina": 300,
+    "support": 100,
+    "title": null,
+    "transportSpeed": 275,
+    "walkSpeed": 150,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 0,
+      "generatingElectricity": 0,
+      "handiwork": 3,
+      "kindling": 0,
+      "lumbering": 0,
+      "medicineProduction": 3,
+      "mining": 0,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 3,
+      "watering": 0
+    },
+    "zukanIndex": -1,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "aqua-gun",
+        "level": 1
+      },
+      {
+        "id": "bubble-blast",
+        "level": 7
+      },
+      {
+        "id": "acid-rain",
+        "level": 15
+      },
+      {
+        "id": "aqua-burst",
+        "level": 22
+      },
+      {
+        "id": "splash",
+        "level": 30
+      },
+      {
+        "id": "curtain-splash",
+        "level": 40
+      },
+      {
+        "id": "hydro-laser",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 0.7,
+    "combiRank": 795,
+    "craftSpeed": 100,
+    "defense": 85,
+    "description": null,
+    "drops": [
+      {
+        "id": "ancient-civilization-parts",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "pal-fluids",
+        "max": 2,
+        "min": 1,
+        "rate": 100
+      },
+      {
+        "id": "cloth",
+        "max": 2,
+        "min": 1,
+        "rate": 25
+      },
+      {
+        "id": "precious-entrails",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      }
+    ],
+    "elementType1": "water",
+    "elementType2": null,
+    "foodAmount": 2,
+    "hp": 96,
+    "id": "croajiro",
+    "internalName": "BOSS_KendoFrog",
+    "isBoss": true,
+    "maleProbability": 50,
+    "maxFullStomach": 150,
+    "meleeAttack": 100,
+    "name": "Croajiro",
+    "partnerSkill": null,
+    "price": 4080,
+    "rarity": 8,
+    "rideSprintSpeed": 450,
+    "runSpeed": 300,
+    "shotAttack": 100,
+    "size": "Large",
+    "slowWalkSpeed": 33,
+    "stamina": 100,
+    "support": 100,
+    "title": null,
+    "transportSpeed": 300,
+    "walkSpeed": 66,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 1,
+      "generatingElectricity": 0,
+      "handiwork": 1,
+      "kindling": 0,
+      "lumbering": 0,
+      "medicineProduction": 0,
+      "mining": 0,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 1,
+      "watering": 1
+    },
+    "zukanIndex": -1,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "wind-cutter",
+        "level": 1
+      },
+      {
+        "id": "seed-machine-gun",
+        "level": 7
+      },
+      {
+        "id": "multicutter",
+        "level": 15
+      },
+      {
+        "id": "grass-tornado",
+        "level": 22
+      },
+      {
+        "id": "holy-burst",
+        "level": 30
+      },
+      {
+        "id": "circle-vine",
+        "level": 40
+      },
+      {
+        "id": "solar-blast",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 0.7,
+    "combiRank": 905,
+    "craftSpeed": 100,
+    "defense": 80,
+    "description": null,
+    "drops": [
+      {
+        "id": "ancient-civilization-parts",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "beautiful-flower",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "red-berries",
+        "max": 2,
+        "min": 1,
+        "rate": 60
+      },
+      {
+        "id": "precious-entrails",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      }
+    ],
+    "elementType1": "grass",
+    "elementType2": null,
+    "foodAmount": 2,
+    "hp": 108,
+    "id": "lullu",
+    "internalName": "BOSS_LeafPrincess",
+    "isBoss": true,
+    "maleProbability": 50,
+    "maxFullStomach": 150,
+    "meleeAttack": 100,
+    "name": "Lullu",
+    "partnerSkill": null,
+    "price": 6840,
+    "rarity": 8,
+    "rideSprintSpeed": 800,
+    "runSpeed": 400,
+    "shotAttack": 90,
+    "size": "Extra Large",
+    "slowWalkSpeed": 50,
+    "stamina": 100,
+    "support": 100,
+    "title": null,
+    "transportSpeed": 250,
+    "walkSpeed": 100,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 1,
+      "generatingElectricity": 0,
+      "handiwork": 2,
+      "kindling": 0,
+      "lumbering": 0,
+      "medicineProduction": 2,
+      "mining": 0,
+      "oilExtraction": 0,
+      "planting": 2,
+      "transporting": 0,
+      "watering": 0
+    },
+    "zukanIndex": -1,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "poison-blast",
+        "level": 1
+      },
+      {
+        "id": "seed-machine-gun",
+        "level": 7
+      },
+      {
+        "id": "grass-tornado",
+        "level": 15
+      },
+      {
+        "id": "seed-mine",
+        "level": 22
+      },
+      {
+        "id": "spine-vine",
+        "level": 30
+      },
+      {
+        "id": "circle-vine",
+        "level": 40
+      },
+      {
+        "id": "solar-blast",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 0.7,
+    "combiRank": 720,
+    "craftSpeed": 100,
+    "defense": 90,
+    "description": null,
+    "drops": [
+      {
+        "id": "ancient-civilization-parts",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "mushroom",
+        "max": 2,
+        "min": 1,
+        "rate": 100
+      },
+      {
+        "id": "red-berries",
+        "max": 2,
+        "min": 1,
+        "rate": 60
+      },
+      {
+        "id": "precious-entrails",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "high-quality-pal-oil",
+        "max": 1,
+        "min": 1,
+        "rate": 100
+      }
+    ],
+    "elementType1": "grass",
+    "elementType2": null,
+    "foodAmount": 3,
+    "hp": 132,
+    "id": "shroomer",
+    "internalName": "BOSS_MushroomDragon",
+    "isBoss": true,
+    "maleProbability": 50,
+    "maxFullStomach": 270,
+    "meleeAttack": 100,
+    "name": "Shroomer",
+    "partnerSkill": null,
+    "price": 7320,
+    "rarity": 8,
+    "rideSprintSpeed": 700,
+    "runSpeed": 400,
+    "shotAttack": 80,
+    "size": "Extra Large",
+    "slowWalkSpeed": 50,
+    "stamina": 100,
+    "support": 100,
+    "title": null,
+    "transportSpeed": -1,
+    "walkSpeed": 80,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 2,
+      "generatingElectricity": 0,
+      "handiwork": 1,
+      "kindling": 0,
+      "lumbering": 2,
+      "medicineProduction": 0,
+      "mining": 0,
+      "oilExtraction": 0,
+      "planting": 2,
+      "transporting": 0,
+      "watering": 0
+    },
+    "zukanIndex": -1,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "poison-blast",
+        "level": 1
+      },
+      {
+        "id": "shadow-burst",
+        "level": 7
+      },
+      {
+        "id": "grass-tornado",
+        "level": 15
+      },
+      {
+        "id": "seed-mine",
+        "level": 22
+      },
+      {
+        "id": "nightmare-ball",
+        "level": 30
+      },
+      {
+        "id": "circle-vine",
+        "level": 40
+      },
+      {
+        "id": "dark-laser",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 0.7,
+    "combiRank": 730,
+    "craftSpeed": 100,
+    "defense": 90,
+    "description": null,
+    "drops": [
+      {
+        "id": "ancient-civilization-parts",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "venom-gland",
+        "max": 8,
+        "min": 4,
+        "rate": 100
+      },
+      {
+        "id": "mysterious-mushroom",
+        "max": 2,
+        "min": 1,
+        "rate": 100
+      },
+      {
+        "id": "precious-entrails",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      }
+    ],
+    "elementType1": "grass",
+    "elementType2": "dark",
+    "foodAmount": 3,
+    "hp": 132,
+    "id": "shroomer-noct",
+    "internalName": "BOSS_MushroomDragon_Dark",
+    "isBoss": true,
+    "maleProbability": 50,
+    "maxFullStomach": 270,
+    "meleeAttack": 100,
+    "name": "Shroomer Noct",
+    "partnerSkill": null,
+    "price": 8480,
+    "rarity": 8,
+    "rideSprintSpeed": 700,
+    "runSpeed": 400,
+    "shotAttack": 85,
+    "size": "Extra Large",
+    "slowWalkSpeed": 50,
+    "stamina": 100,
+    "support": 100,
+    "title": null,
+    "transportSpeed": -1,
+    "walkSpeed": 80,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 2,
+      "generatingElectricity": 0,
+      "handiwork": 1,
+      "kindling": 0,
+      "lumbering": 2,
+      "medicineProduction": 0,
+      "mining": 0,
+      "oilExtraction": 0,
+      "planting": 2,
+      "transporting": 0,
+      "watering": 0
+    },
+    "zukanIndex": -1,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "power-shot",
+        "level": 1
+      },
+      {
+        "id": "sand-blast",
+        "level": 7
+      },
+      {
+        "id": "stone-blast",
+        "level": 15
+      },
+      {
+        "id": "power-bomb",
+        "level": 22
+      },
+      {
+        "id": "sand-tornado",
+        "level": 30
+      },
+      {
+        "id": "rockburst",
+        "level": 40
+      },
+      {
+        "id": "rock-lance",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 0.7,
+    "combiRank": 1125,
+    "craftSpeed": 100,
+    "defense": 90,
+    "description": null,
+    "drops": [
+      {
+        "id": "ancient-civilization-parts",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "leather",
+        "max": 2,
+        "min": 1,
+        "rate": 100
+      },
+      {
+        "id": "bone",
+        "max": 2,
+        "min": 1,
+        "rate": 60
+      },
+      {
+        "id": "precious-claw",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "high-quality-pal-oil",
+        "max": 1,
+        "min": 1,
+        "rate": 100
+      }
+    ],
+    "elementType1": "ground",
+    "elementType2": null,
+    "foodAmount": 2,
+    "hp": 90,
+    "id": "kikit",
+    "internalName": "BOSS_SmallArmadillo",
+    "isBoss": true,
+    "maleProbability": 50,
+    "maxFullStomach": 225,
+    "meleeAttack": 100,
+    "name": "Kikit",
+    "partnerSkill": null,
+    "price": 5600,
+    "rarity": 8,
+    "rideSprintSpeed": 900,
+    "runSpeed": 800,
+    "shotAttack": 70,
+    "size": "Large",
+    "slowWalkSpeed": 50,
+    "stamina": 100,
+    "support": 100,
+    "title": null,
+    "transportSpeed": 300,
+    "walkSpeed": 100,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 0,
+      "generatingElectricity": 0,
+      "handiwork": 0,
+      "kindling": 0,
+      "lumbering": 0,
+      "medicineProduction": 0,
+      "mining": 1,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 0,
+      "watering": 0
+    },
+    "zukanIndex": -1,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "ignis-blast",
+        "level": 1
+      },
+      {
+        "id": "dark-ball",
+        "level": 7
+      },
+      {
+        "id": "spirit-fire",
+        "level": 15
+      },
+      {
+        "id": "spirit-flame",
+        "level": 22
+      },
+      {
+        "id": "nightmare-ball",
+        "level": 30
+      },
+      {
+        "id": "flame-funnel",
+        "level": 40
+      },
+      {
+        "id": "volcanic-rain",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 0.7,
+    "combiRank": 545,
+    "craftSpeed": 100,
+    "defense": 90,
+    "description": null,
+    "drops": [
+      {
+        "id": "ancient-civilization-parts",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "medium-pal-soul",
+        "max": 2,
+        "min": 1,
+        "rate": 100
+      },
+      {
+        "id": "bone",
+        "max": 2,
+        "min": 1,
+        "rate": 30
+      },
+      {
+        "id": "precious-entrails",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      }
+    ],
+    "elementType1": "dark",
+    "elementType2": "fire",
+    "foodAmount": 7,
+    "hp": 126,
+    "id": "sootseer",
+    "internalName": "BOSS_CandleGhost",
+    "isBoss": true,
+    "maleProbability": 50,
+    "maxFullStomach": 475,
+    "meleeAttack": 100,
+    "name": "Sootseer",
+    "partnerSkill": null,
+    "price": 9780,
+    "rarity": 9,
+    "rideSprintSpeed": 1000,
+    "runSpeed": 800,
+    "shotAttack": 125,
+    "size": "Extra Large",
+    "slowWalkSpeed": 100,
+    "stamina": 100,
+    "support": 100,
+    "title": null,
+    "transportSpeed": 450,
+    "walkSpeed": 250,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 1,
+      "gathering": 1,
+      "generatingElectricity": 0,
+      "handiwork": 2,
+      "kindling": 3,
+      "lumbering": 0,
+      "medicineProduction": 0,
+      "mining": 2,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 0,
+      "watering": 0
+    },
+    "zukanIndex": -1,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "poison-blast",
+        "level": 1
+      },
+      {
+        "id": "dark-cannon",
+        "level": 7
+      },
+      {
+        "id": "stone-blast",
+        "level": 15
+      },
+      {
+        "id": "sand-tornado",
+        "level": 22
+      },
+      {
+        "id": "upper-smash",
+        "level": 30
+      },
+      {
+        "id": "rock-lance",
+        "level": 40
+      },
+      {
+        "id": "dark-laser",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 0.7,
+    "combiRank": 355,
+    "craftSpeed": 100,
+    "defense": 90,
+    "description": null,
+    "drops": [
+      {
+        "id": "ancient-civilization-parts",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "venom-gland",
+        "max": 5,
+        "min": 4,
+        "rate": 100
+      },
+      {
+        "id": "precious-claw",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "ring-of-dark-resistance-1",
+        "max": 1,
+        "min": 1,
+        "rate": 3
+      }
+    ],
+    "elementType1": "dark",
+    "elementType2": "ground",
+    "foodAmount": 4,
+    "hp": 108,
+    "id": "prixter",
+    "internalName": "BOSS_ScorpionMan",
+    "isBoss": true,
+    "maleProbability": 50,
+    "maxFullStomach": 300,
+    "meleeAttack": 100,
+    "name": "Prixter",
+    "partnerSkill": null,
+    "price": 7878,
+    "rarity": 9,
+    "rideSprintSpeed": -1,
+    "runSpeed": 720,
+    "shotAttack": 110,
+    "size": "Extra Large",
+    "slowWalkSpeed": 90,
+    "stamina": 100,
+    "support": 100,
+    "title": null,
+    "transportSpeed": -1,
+    "walkSpeed": 180,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 1,
+      "generatingElectricity": 0,
+      "handiwork": 0,
+      "kindling": 0,
+      "lumbering": 3,
+      "medicineProduction": 1,
+      "mining": 0,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 0,
+      "watering": 0
+    },
+    "zukanIndex": -1,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "power-shot",
+        "level": 1
+      },
+      {
+        "id": "stone-blast",
+        "level": 7
+      },
+      {
+        "id": "stone-cannon",
+        "level": 15
+      },
+      {
+        "id": "rockburst",
+        "level": 22
+      },
+      {
+        "id": "rock-lance",
+        "level": 30
+      },
+      {
+        "id": "ground-cutter",
+        "level": 40
+      },
+      {
+        "id": "sand-twister",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 0.7,
+    "combiRank": 265,
+    "craftSpeed": 100,
+    "defense": 135,
+    "description": null,
+    "drops": [
+      {
+        "id": "ancient-civilization-parts",
+        "max": 6,
+        "min": 4,
+        "rate": 100
+      },
+      {
+        "id": "ore",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "precious-entrails",
+        "max": 6,
+        "min": 4,
+        "rate": 100
+      },
+      {
+        "id": "ring-of-earth-resistance-1",
+        "max": 1,
+        "min": 1,
+        "rate": 3
+      }
+    ],
+    "elementType1": "ground",
+    "elementType2": null,
+    "foodAmount": 7,
+    "hp": 126,
+    "id": "knocklem",
+    "internalName": "BOSS_WingGolem",
+    "isBoss": true,
+    "maleProbability": 50,
+    "maxFullStomach": 475,
+    "meleeAttack": 100,
+    "name": "Knocklem",
+    "partnerSkill": null,
+    "price": 20760,
+    "rarity": 10,
+    "rideSprintSpeed": 700,
+    "runSpeed": 550,
+    "shotAttack": 110,
+    "size": "Extra Large",
+    "slowWalkSpeed": 100,
+    "stamina": 100,
+    "support": 100,
+    "title": null,
+    "transportSpeed": 400,
+    "walkSpeed": 190,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 3,
+      "generatingElectricity": 0,
+      "handiwork": 0,
+      "kindling": 0,
+      "lumbering": 0,
+      "medicineProduction": 0,
+      "mining": 3,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 4,
+      "watering": 0
+    },
+    "zukanIndex": -1,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "sand-blast",
+        "level": 1
+      },
+      {
+        "id": "power-shot",
+        "level": 7
+      },
+      {
+        "id": "stone-blast",
+        "level": 15
+      },
+      {
+        "id": "power-bomb",
+        "level": 22
+      },
+      {
+        "id": "air-blade",
+        "level": 30
+      },
+      {
+        "id": "holy-burst",
+        "level": 40
+      },
+      {
+        "id": "pal-blast",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 0.7,
+    "combiRank": 945,
+    "craftSpeed": 100,
+    "defense": 85,
+    "description": null,
+    "drops": [
+      {
+        "id": "ancient-civilization-parts",
+        "max": 4,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "leather",
+        "max": 2,
+        "min": 1,
+        "rate": 100
+      },
+      {
+        "id": "precious-pelt",
+        "max": 4,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "ring-of-resistance",
+        "max": 1,
+        "min": 1,
+        "rate": 5
+      }
+    ],
+    "elementType1": "neutral",
+    "elementType2": null,
+    "foodAmount": 5,
+    "hp": 102,
+    "id": "yakumo",
+    "internalName": "BOSS_GuardianDog",
+    "isBoss": true,
+    "maleProbability": 50,
+    "maxFullStomach": 350,
+    "meleeAttack": 80,
+    "name": "Yakumo",
+    "partnerSkill": null,
+    "price": 6720,
+    "rarity": 8,
+    "rideSprintSpeed": 520,
+    "runSpeed": 370,
+    "shotAttack": 85,
+    "size": "Extra Large",
+    "slowWalkSpeed": 70,
+    "stamina": 100,
+    "support": 110,
+    "title": null,
+    "transportSpeed": 165,
+    "walkSpeed": 110,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 2,
+      "generatingElectricity": 0,
+      "handiwork": 0,
+      "kindling": 0,
+      "lumbering": 0,
+      "medicineProduction": 0,
+      "mining": 0,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 0,
+      "watering": 0
+    },
+    "zukanIndex": -1,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "air-cannon",
+        "level": 1
+      },
+      {
+        "id": "power-shot",
+        "level": 7
+      },
+      {
+        "id": "stone-cannon",
+        "level": 15
+      },
+      {
+        "id": "power-bomb",
+        "level": 22
+      },
+      {
+        "id": "air-blade",
+        "level": 30
+      },
+      {
+        "id": "wholehearted-stance",
+        "level": 40
+      },
+      {
+        "id": "pal-blast",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 0.7,
+    "combiRank": 665,
+    "craftSpeed": 100,
+    "defense": 100,
+    "description": null,
+    "drops": [
+      {
+        "id": "ancient-civilization-parts",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "bone",
+        "max": 1,
+        "min": 1,
+        "rate": 100
+      },
+      {
+        "id": "precious-pelt",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "ring-of-resistance-1",
+        "max": 1,
+        "min": 1,
+        "rate": 3
+      }
+    ],
+    "elementType1": "neutral",
+    "elementType2": null,
+    "foodAmount": 4,
+    "hp": 108,
+    "id": "dogen",
+    "internalName": "BOSS_SifuDog",
+    "isBoss": true,
+    "maleProbability": 50,
+    "maxFullStomach": 300,
+    "meleeAttack": 100,
+    "name": "Dogen",
+    "partnerSkill": null,
+    "price": 8880,
+    "rarity": 9,
+    "rideSprintSpeed": 550,
+    "runSpeed": 300,
+    "shotAttack": 100,
+    "size": "Extra Large",
+    "slowWalkSpeed": 45,
+    "stamina": 100,
+    "support": 100,
+    "title": null,
+    "transportSpeed": 187,
+    "walkSpeed": 75,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 2,
+      "generatingElectricity": 0,
+      "handiwork": 3,
+      "kindling": 0,
+      "lumbering": 2,
+      "medicineProduction": 1,
+      "mining": 0,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 2,
+      "watering": 0
+    },
+    "zukanIndex": -1,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "sand-blast",
+        "level": 1
+      },
+      {
+        "id": "power-shot",
+        "level": 7
+      },
+      {
+        "id": "stone-blast",
+        "level": 15
+      },
+      {
+        "id": "stone-cannon",
+        "level": 22
+      },
+      {
+        "id": "earth-dash",
+        "level": 30
+      },
+      {
+        "id": "rockburst",
+        "level": 40
+      },
+      {
+        "id": "sand-twister",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 0.7,
+    "combiRank": 675,
+    "craftSpeed": 100,
+    "defense": 80,
+    "description": null,
+    "drops": [
+      {
+        "id": "ancient-civilization-parts",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "bone",
+        "max": 1,
+        "min": 1,
+        "rate": 100
+      },
+      {
+        "id": "precious-plume",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "ring-of-earth-resistance-1",
+        "max": 1,
+        "min": 1,
+        "rate": 3
+      }
+    ],
+    "elementType1": "ground",
+    "elementType2": null,
+    "foodAmount": 4,
+    "hp": 114,
+    "id": "dazemu",
+    "internalName": "BOSS_FeatherOstrich",
+    "isBoss": true,
+    "maleProbability": 50,
+    "maxFullStomach": 300,
+    "meleeAttack": 100,
+    "name": "Dazemu",
+    "partnerSkill": null,
+    "price": 5220,
+    "rarity": 8,
+    "rideSprintSpeed": 1200,
+    "runSpeed": 900,
+    "shotAttack": 90,
+    "size": "Extra Large",
+    "slowWalkSpeed": 80,
+    "stamina": 100,
+    "support": 100,
+    "title": null,
+    "transportSpeed": -1,
+    "walkSpeed": 160,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 2,
+      "generatingElectricity": 0,
+      "handiwork": 0,
+      "kindling": 0,
+      "lumbering": 0,
+      "medicineProduction": 0,
+      "mining": 0,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 0,
+      "watering": 0
+    },
+    "zukanIndex": -1,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "power-shot",
+        "level": 1
+      },
+      {
+        "id": "dark-cannon",
+        "level": 7
+      },
+      {
+        "id": "spirit-flame",
+        "level": 15
+      },
+      {
+        "id": "power-bomb",
+        "level": 22
+      },
+      {
+        "id": "air-blade",
+        "level": 30
+      },
+      {
+        "id": "holy-burst",
+        "level": 40
+      },
+      {
+        "id": "pal-blast",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 0.56,
+    "combiRank": 1200,
+    "craftSpeed": 100,
+    "defense": 130,
+    "description": null,
+    "drops": [
+      {
+        "id": "ancient-civilization-parts",
+        "max": 3,
+        "min": 1,
+        "rate": 100
+      },
+      {
+        "id": "gold-coin",
+        "max": 25000,
+        "min": 14000,
+        "rate": 100
+      },
+      {
+        "id": "dog-coin",
+        "max": 35,
+        "min": 35,
+        "rate": 100
+      },
+      {
+        "id": "training-manual-xl",
+        "max": 1,
+        "min": 1,
+        "rate": 100
+      }
+    ],
+    "elementType1": "neutral",
+    "elementType2": null,
+    "foodAmount": 2,
+    "hp": 72,
+    "id": "mimog",
+    "internalName": "BOSS_MimicDog",
+    "isBoss": true,
+    "maleProbability": 50,
+    "maxFullStomach": 150,
+    "meleeAttack": 100,
+    "name": "Mimog",
+    "partnerSkill": null,
+    "price": 12300,
+    "rarity": 10,
+    "rideSprintSpeed": -1,
+    "runSpeed": 2000,
+    "shotAttack": 60,
+    "size": "Large",
+    "slowWalkSpeed": 40,
+    "stamina": 100,
+    "support": 100,
+    "title": null,
+    "transportSpeed": 160,
+    "walkSpeed": 80,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 1,
+      "generatingElectricity": 0,
+      "handiwork": 0,
+      "kindling": 0,
+      "lumbering": 0,
+      "medicineProduction": 0,
+      "mining": 0,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 0,
+      "watering": 0
+    },
+    "zukanIndex": -1,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "power-shot",
+        "level": 1
+      },
+      {
+        "id": "poison-blast",
+        "level": 7
+      },
+      {
+        "id": "umbral-surge",
+        "level": 15
+      },
+      {
+        "id": "dark-arrow",
+        "level": 22
+      },
+      {
+        "id": "nightmare-ball",
+        "level": 30
+      },
+      {
+        "id": "evil-slash",
+        "level": 40
+      },
+      {
+        "id": "dark-laser",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 0.7,
+    "combiRank": 465,
+    "craftSpeed": 100,
+    "defense": 85,
+    "description": null,
+    "drops": [
+      {
+        "id": "ancient-civilization-parts",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      },
+      {
+        "id": "meteorite-fragment",
+        "max": 10,
+        "min": 3,
+        "rate": 100
+      },
+      {
+        "id": "precious-claw",
+        "max": 1,
+        "min": 1,
+        "rate": 100
+      }
+    ],
+    "elementType1": "dark",
+    "elementType2": null,
+    "foodAmount": 7,
+    "hp": 108,
+    "id": "xenovader",
+    "internalName": "BOSS_DarkAlien",
+    "isBoss": true,
+    "maleProbability": 50,
+    "maxFullStomach": 475,
+    "meleeAttack": 100,
+    "name": "Xenovader",
+    "partnerSkill": null,
+    "price": 13500,
+    "rarity": 9,
+    "rideSprintSpeed": 700,
+    "runSpeed": 550,
+    "shotAttack": 125,
+    "size": "Extra Large",
+    "slowWalkSpeed": 125,
+    "stamina": 100,
+    "support": 100,
+    "title": null,
+    "transportSpeed": 400,
+    "walkSpeed": 245,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 0,
+      "generatingElectricity": 0,
+      "handiwork": 0,
+      "kindling": 0,
+      "lumbering": 2,
+      "medicineProduction": 0,
+      "mining": 0,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 2,
+      "watering": 0
+    },
+    "zukanIndex": -1,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "activeSkills": [
+      {
+        "id": "dragon-cannon",
+        "level": 1
+      },
+      {
+        "id": "dragon-burst",
+        "level": 7
+      },
+      {
+        "id": "air-blade",
+        "level": 15
+      },
+      {
+        "id": "draconic-breath",
+        "level": 22
+      },
+      {
+        "id": "icicle-line",
+        "level": 30
+      },
+      {
+        "id": "comet-strike",
+        "level": 40
+      },
+      {
+        "id": "beam-slicer",
+        "level": 50
+      }
+    ],
+    "breedOrder": null,
+    "captureRateCorrect": 0.7,
+    "combiRank": 435,
+    "craftSpeed": 100,
+    "defense": 130,
+    "description": null,
+    "drops": [
+      {
+        "id": "ancient-civilization-parts",
+        "max": 6,
+        "min": 4,
+        "rate": 100
+      },
+      {
+        "id": "meteorite-fragment",
+        "max": 12,
+        "min": 5,
+        "rate": 100
+      },
+      {
+        "id": "high-quality-pal-oil",
+        "max": 5,
+        "min": 3,
+        "rate": 100
+      },
+      {
+        "id": "precious-entrails",
+        "max": 3,
+        "min": 2,
+        "rate": 100
+      }
+    ],
+    "elementType1": "dragon",
+    "elementType2": null,
+    "foodAmount": 9,
+    "hp": 132,
+    "id": "xenogard",
+    "internalName": "BOSS_WhiteAlienDragon",
+    "isBoss": true,
+    "maleProbability": 50,
+    "maxFullStomach": 600,
+    "meleeAttack": 100,
+    "name": "Xenogard",
+    "partnerSkill": null,
+    "price": 17620,
+    "rarity": 10,
+    "rideSprintSpeed": 1200,
+    "runSpeed": 790,
+    "shotAttack": 120,
+    "size": "Extra Large",
+    "slowWalkSpeed": 115,
+    "stamina": 100,
+    "support": 100,
+    "title": null,
+    "transportSpeed": 500,
+    "walkSpeed": 230,
+    "workSuitabilities": {
+      "cooling": 0,
+      "farming": 0,
+      "gathering": 0,
+      "generatingElectricity": 0,
+      "handiwork": 0,
+      "kindling": 0,
+      "lumbering": 0,
+      "medicineProduction": 0,
+      "mining": 3,
+      "oilExtraction": 0,
+      "planting": 0,
+      "transporting": 0,
       "watering": 0
     },
     "zukanIndex": -1,

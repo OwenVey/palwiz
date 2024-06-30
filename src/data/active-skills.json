@@ -1126,21 +1126,21 @@
   },
   {
     "category": "Shot",
-    "cooldownTime": 20,
+    "cooldownTime": 45,
     "description": "Calls lightning that strikes an enemy after a set amount of time has passed.",
     "effects": [
       {
         "name": "Electrical",
-        "value": 80
+        "value": 100
       }
     ],
     "element": "electric",
-    "id": "lightning-rain",
+    "id": "thunder-rain",
     "internalId": "ThunderRain",
-    "maxRange": 1000,
-    "minRange": 500,
-    "name": "Lightning Rain",
-    "power": 1,
+    "maxRange": 2000,
+    "minRange": 0,
+    "name": "Thunder Rain",
+    "power": 135,
     "specialAttackRates": []
   },
   {
@@ -1939,8 +1939,22 @@
     "specialAttackRates": []
   },
   {
+    "category": "Melee",
+    "cooldownTime": 6,
+    "description": "Chillet's exclusive skill. Gathers a bit of strength and it leaps forward. When landing it's always scared so it closes its eyes.",
+    "effects": [],
+    "element": "dragon",
+    "id": "rocket-slam",
+    "internalId": "Unique_WeaselDragon_FlyingTackle",
+    "maxRange": 1500,
+    "minRange": 300,
+    "name": "Rocket Slam",
+    "power": 50,
+    "specialAttackRates": []
+  },
+  {
     "category": "Shot",
-    "cooldownTime": 4,
+    "cooldownTime": 35,
     "description": "Causes the ground to shake before hurling a massive stone mass at its surroundings.",
     "effects": [
       {
@@ -1951,15 +1965,15 @@
     "element": "ground",
     "id": "rockburst",
     "internalId": "Tremor",
-    "maxRange": 1500,
-    "minRange": 300,
+    "maxRange": 1200,
+    "minRange": 0,
     "name": "Rockburst",
-    "power": 60,
+    "power": 130,
     "specialAttackRates": []
   },
   {
     "category": "Shot",
-    "cooldownTime": 30,
+    "cooldownTime": 60,
     "description": "Creates numerous lumps of ice that are consecutively dropped on a foe's head.",
     "effects": [
       {
@@ -1973,7 +1987,26 @@
     "maxRange": 9999,
     "minRange": 0,
     "name": "Diamond Rain",
-    "power": 140,
+    "power": 160,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 45,
+    "description": "Mows down the frontal area with a beam imbued with dragon power. The area touched by the beam will also explode after a few moments.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 100
+      }
+    ],
+    "element": "dragon",
+    "id": "beam-slicer",
+    "internalId": "BeamSlicer",
+    "maxRange": 4000,
+    "minRange": 0,
+    "name": "Beam Slicer",
+    "power": 130,
     "specialAttackRates": []
   },
   {
@@ -2026,6 +2059,25 @@
         "type": "vsStone_Raid"
       }
     ]
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 35,
+    "description": "Drops a meteorite straight down, generating a shock wave around the impact area.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 100
+      }
+    ],
+    "element": "dragon",
+    "id": "comet-strike",
+    "internalId": "Commet",
+    "maxRange": 9999,
+    "minRange": 0,
+    "name": "Comet Strike",
+    "power": 110,
+    "specialAttackRates": []
   },
   {
     "category": "Shot",
@@ -2125,5 +2177,823 @@
         "type": "vsStone_Raid"
       }
     ]
+  },
+  {
+    "category": "Melee",
+    "cooldownTime": 24,
+    "description": "Menasting's exclusive skill. Jumps high and stabs its prey with its tail. The poison from the tail is deadly.",
+    "effects": [
+      {
+        "name": "Poison",
+        "value": 100
+      }
+    ],
+    "element": "ground",
+    "id": "jumping-stinger",
+    "internalId": "Unique_DarkScorpion_Pierce",
+    "maxRange": 3000,
+    "minRange": 0,
+    "name": "Jumping Stinger",
+    "power": 110,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 55,
+    "description": "Generates stars around the enemy that explode on contact. Stars also explode after some time.",
+    "effects": [],
+    "element": "neutral",
+    "id": "star-mine",
+    "internalId": "StarMine",
+    "maxRange": 9999,
+    "minRange": 0,
+    "name": "Star Mine",
+    "power": 110,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Melee",
+    "cooldownTime": 21,
+    "description": "Dazemu's special skill. Accelerates all at once and rushes forward at high speed.",
+    "effects": [],
+    "element": "ground",
+    "id": "earth-dash",
+    "internalId": "Unique_FeatherOstrich_Tossin",
+    "maxRange": 3500,
+    "minRange": 300,
+    "name": "Earth Dash",
+    "power": 100,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 40,
+    "description": "Sprots sharp roots in and around the enemy's location.",
+    "effects": [
+      {
+        "name": "IvyCling",
+        "value": 100
+      }
+    ],
+    "element": "grass",
+    "id": "circle-vine",
+    "internalId": "RootLance",
+    "maxRange": 9999,
+    "minRange": 0,
+    "name": "Circle Vine",
+    "power": 120,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 50,
+    "description": "Orserk's exclusive skill. Summons numerous thunder spears and hurls them at the enemy. The first spear is imbued with the power of lightning and explodes after a few seconds.",
+    "effects": [
+      {
+        "name": "Electrical",
+        "value": 100
+      }
+    ],
+    "element": "electric",
+    "id": "polykeraunos",
+    "internalId": "Unique_ThunderDragonMan_NumerousSwordAttack",
+    "maxRange": 9999,
+    "minRange": 0,
+    "name": "Polykeraunos",
+    "power": 180,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Melee",
+    "cooldownTime": 42,
+    "description": "Blazamut's exclusive skill. After making a big jump, while moving at high speed in the air, gathers strength and unleashes a punch with full might.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 100
+      }
+    ],
+    "element": "dragon",
+    "id": "magna-crush",
+    "internalId": "Unique_KingBahamut_AirCrash",
+    "maxRange": 9999,
+    "minRange": 0,
+    "name": "Magna Crush",
+    "power": 160,
+    "specialAttackRates": [
+      {
+        "rate": 50,
+        "type": "vsWood_Raid"
+      },
+      {
+        "rate": 50,
+        "type": "vsStone_Raid"
+      }
+    ]
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 22,
+    "description": "Generates a column of water that travels in a straight line.",
+    "effects": [
+      {
+        "name": "Wetness",
+        "value": 100
+      }
+    ],
+    "element": "water",
+    "id": "splash",
+    "internalId": "LineGeyser",
+    "maxRange": 9999,
+    "minRange": 0,
+    "name": "Splash",
+    "power": 90,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 40,
+    "description": "An energy bullet charged with the power of a dragon. Fire at the enemy. When the bullet hits the Causes a wide explosion.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 100
+      }
+    ],
+    "element": "dragon",
+    "id": "charge-cannon",
+    "internalId": "ChargeCanon",
+    "maxRange": 4000,
+    "minRange": 0,
+    "name": "Charge Cannon",
+    "power": 120,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Melee",
+    "cooldownTime": 38,
+    "description": "Blazamut's exclusive skill. Waves and pumps up its arms, the slams them together to create a large explosion in the surrounding area.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 100
+      }
+    ],
+    "element": "fire",
+    "id": "brawn-impact",
+    "internalId": "Unique_KingBahamut_ArmSmash",
+    "maxRange": 600,
+    "minRange": 0,
+    "name": "Brawn Impact",
+    "power": 150,
+    "specialAttackRates": [
+      {
+        "rate": 50,
+        "type": "vsWood_Raid"
+      },
+      {
+        "rate": 50,
+        "type": "vsStone_Raid"
+      }
+    ]
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 35,
+    "description": "Knocklem's exclusive skill. Takes a big swing and throws the ring on its back. The ring flies in a circular trajectory.",
+    "effects": [],
+    "element": "ground",
+    "id": "ground-cutter",
+    "internalId": "Unique_WingGolem_RoundCutter",
+    "maxRange": 3500,
+    "minRange": 0,
+    "name": "Ground Cutter",
+    "power": 145,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 30,
+    "description": "Fires an energy bullet imbued with dragon power at the enemy's location. Upon impact, the bullet shatters and creates a frontal long-range explosion.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 100
+      }
+    ],
+    "element": "dragon",
+    "id": "blast-cannon",
+    "internalId": "BlastCanon",
+    "maxRange": 6000,
+    "minRange": 0,
+    "name": "Blast Cannon",
+    "power": 100,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 40,
+    "description": "Drops meteorites one after another, generating shock waves around the impact areas.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 100
+      }
+    ],
+    "element": "dragon",
+    "id": "comet-barrage",
+    "internalId": "ThreeCommet",
+    "maxRange": 9999,
+    "minRange": 0,
+    "name": "Comet Barrage",
+    "power": 120,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 55,
+    "description": "Drops countless meteorites, generating an array of shock waves.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 100
+      }
+    ],
+    "element": "dragon",
+    "id": "meteorain",
+    "internalId": "CommetRain",
+    "maxRange": 9999,
+    "minRange": 0,
+    "name": "Meteorain",
+    "power": 160,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 45,
+    "description": "Fires countless volcanic bombs into the sky. After a while, the bombs rain down around their originator.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 100
+      }
+    ],
+    "element": "fire",
+    "id": "volcanic-rain",
+    "internalId": "Eruption",
+    "maxRange": 2000,
+    "minRange": 0,
+    "name": "Volcanic Rain",
+    "power": 130,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 42,
+    "description": "Grizzbolt's exclusive skill. Attacks with a minigun pulled out from somewhere. Ends with a single, charged power shot.",
+    "effects": [
+      {
+        "name": "Electrical",
+        "value": 100
+      }
+    ],
+    "element": "electric",
+    "id": "heavy-thunder-tank",
+    "internalId": "Unique_ElecPanda_GatlingAttack",
+    "maxRange": 3000,
+    "minRange": 300,
+    "name": "Heavy Thunder Tank",
+    "power": 160,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 240,
+    "description": "Lyleen's exclusive skill. Uses her healing power to recover her health. Doesn't heal anyone else.",
+    "effects": [],
+    "element": "neutral",
+    "id": "bountiful-protection",
+    "internalId": "Unique_LilyQueen_LilyHealing",
+    "maxRange": 9999,
+    "minRange": 0,
+    "name": "Bountiful Protection",
+    "power": 0,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 30,
+    "description": "Creates a wide explosion of light at the enemy's location and around it.",
+    "effects": [],
+    "element": "neutral",
+    "id": "holy-burst",
+    "internalId": "HolyBlast",
+    "maxRange": 9999,
+    "minRange": 0,
+    "name": "Holy Burst",
+    "power": 120,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 17,
+    "description": "Xenovader's exclusive skill. A flash jump followed by a left-hand slash.",
+    "effects": [
+      {
+        "name": "Darkness",
+        "value": 30
+      }
+    ],
+    "element": "dark",
+    "id": "evil-slash",
+    "internalId": "Unique_DarkAlien_JumpScractch",
+    "maxRange": 3000,
+    "minRange": 500,
+    "name": "Evil Slash",
+    "power": 95,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 40,
+    "description": "Selyne's exclusive skill. Stores energy in the moon on its back, then fires a crescent-shaped beam forward.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 100
+      }
+    ],
+    "element": "neutral",
+    "id": "moonlight-beam",
+    "internalId": "Unique_MoonQueen_MoonBeam",
+    "maxRange": 3000,
+    "minRange": 300,
+    "name": "Moonlight Beam",
+    "power": 170,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 30,
+    "description": "Creates a wall of flames at the enemy's location. The wall of flame will remain for a while, and deal damage to the enemies it touches.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 100
+      }
+    ],
+    "element": "fire",
+    "id": "flame-wall",
+    "internalId": "FlameWall",
+    "maxRange": 5000,
+    "minRange": 0,
+    "name": "Flame Wall",
+    "power": 100,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 20,
+    "description": "Sends out sharp blades of air in a fan shape.",
+    "effects": [],
+    "element": "neutral",
+    "id": "air-blade",
+    "internalId": "AirBlade",
+    "maxRange": 5000,
+    "minRange": 0,
+    "name": "Air Blade",
+    "power": 85,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 24,
+    "description": "Selyne's exclusive skill. Fires two consecutive high-speed blades imbued with the power of moonlight.",
+    "effects": [],
+    "element": "neutral",
+    "id": "seigetsu-blade",
+    "internalId": "Unique_MoonQueen_MoonBlade",
+    "maxRange": 3000,
+    "minRange": 300,
+    "name": "Seigetsu Blade",
+    "power": 110,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Melee",
+    "cooldownTime": 30,
+    "description": "Dogen's exclusive skill. Adopts an aiki stance. While in stance, any attack is nullified, then instantly countered with a full-force palm strike.",
+    "effects": [],
+    "element": "neutral",
+    "id": "wholehearted-stance",
+    "internalId": "Unique_SifuDog_Counter",
+    "maxRange": 9999,
+    "minRange": 0,
+    "name": "Wholehearted Stance",
+    "power": 170,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 40,
+    "description": "Continously creates walls made from water columns at the enemy's location.",
+    "effects": [
+      {
+        "name": "Wetness",
+        "value": 100
+      }
+    ],
+    "element": "water",
+    "id": "curtain-splash",
+    "internalId": "WallSplash",
+    "maxRange": 9999,
+    "minRange": 0,
+    "name": "Curtain Splash",
+    "power": 120,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 35,
+    "description": "A high-speed lightning ball that flies in a straight line. Simultaneously fires slow lightning balls that track the enemy.",
+    "effects": [
+      {
+        "name": "Electrical",
+        "value": 100
+      }
+    ],
+    "element": "electric",
+    "id": "tri-spark",
+    "internalId": "TriSpark",
+    "maxRange": 3000,
+    "minRange": 300,
+    "name": "TriSpark",
+    "power": 110,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 60,
+    "description": "Generates a huge tornado of lightning that moves slowly towards the enemy.",
+    "effects": [],
+    "element": "electric",
+    "id": "thunderstorm",
+    "internalId": "ThunderStorm",
+    "maxRange": 5000,
+    "minRange": 0,
+    "name": "Thunderstorm",
+    "power": 160,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Melee",
+    "cooldownTime": 24,
+    "description": "Prixter's exclusive skill. Closes the distance to the enemy at high speed, then attacks decisively with its pincers.",
+    "effects": [
+      {
+        "name": "Poison",
+        "value": 100
+      }
+    ],
+    "element": "dark",
+    "id": "upper-smash",
+    "internalId": "Unique_ScorpionMan_Uppercut",
+    "maxRange": 3000,
+    "minRange": 0,
+    "name": "Upper Smash",
+    "power": 110,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 40,
+    "description": "Creates multiple spheres of fiery energy, from which countless fireballs shoot towards the enemy.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 100
+      }
+    ],
+    "element": "fire",
+    "id": "flame-funnel",
+    "internalId": "FlameFunnel",
+    "maxRange": 5000,
+    "minRange": 0,
+    "name": "Flame Funnel",
+    "power": 120,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 60,
+    "description": "Creates multiple sand tornadoes. The tornadoes continuously spin in circles.",
+    "effects": [
+      {
+        "name": "Muddy",
+        "value": 100
+      }
+    ],
+    "element": "ground",
+    "id": "sand-twister",
+    "internalId": "SandTwister",
+    "maxRange": 9999,
+    "minRange": 0,
+    "name": "Sand Twister",
+    "power": 160,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 40,
+    "description": "Generates lightning strikes that travel in a straight line in all directions.",
+    "effects": [
+      {
+        "name": "Electrical",
+        "value": 100
+      }
+    ],
+    "element": "electric",
+    "id": "all-range-thunder",
+    "internalId": "RangeThunder",
+    "maxRange": 2000,
+    "minRange": 0,
+    "name": "All Range Thunder",
+    "power": 125,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 60,
+    "description": "Charge the power of lightning to the limit and fires multiple simultaneous electric shocks at the enemy.",
+    "effects": [
+      {
+        "name": "Electrical",
+        "value": 100
+      }
+    ],
+    "element": "electric",
+    "id": "thunder-rail",
+    "internalId": "Railbolt",
+    "maxRange": 3000,
+    "minRange": 500,
+    "name": "Thunder Rail",
+    "power": 200,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 50,
+    "description": "After aiming at the enemy, fires multiple ultra-fast lightning lasers.",
+    "effects": [
+      {
+        "name": "Electrical",
+        "value": 100
+      }
+    ],
+    "element": "electric",
+    "id": "lethal-laser",
+    "internalId": "ShokeiLaser",
+    "maxRange": 5000,
+    "minRange": 0,
+    "name": "Lethal Laser",
+    "power": 170,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 24,
+    "description": "Spread poison balls around you.",
+    "effects": [
+      {
+        "name": "Poison",
+        "value": 500
+      }
+    ],
+    "element": "dark",
+    "id": "poison-shower",
+    "internalId": "BubbleShower",
+    "maxRange": 1000,
+    "minRange": 0,
+    "name": "Poison Shower",
+    "power": 110,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 60,
+    "description": "Charge the power of chaos, Fires a beam of light and darkness at the enemy at the same time.",
+    "effects": [
+      {
+        "name": "Darkness",
+        "value": 100
+      }
+    ],
+    "element": "dark",
+    "id": "chaos-laser",
+    "internalId": "ChaosLaser",
+    "maxRange": 3000,
+    "minRange": 500,
+    "name": "Chaos Laser",
+    "power": 300,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 35,
+    "description": "Generates multiple sharp ice blocks in the sky and fires them at the enemy.",
+    "effects": [
+      {
+        "name": "Freeze",
+        "value": 100
+      }
+    ],
+    "element": "ice",
+    "id": "icicle-bullet",
+    "internalId": "IciclePierce",
+    "maxRange": 3000,
+    "minRange": 100,
+    "name": "Icicle Bullet",
+    "power": 110,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 60,
+    "description": "Creates two huge ice blocks and fires them at the enemy one after another. On impact, it also shocks those close by.",
+    "effects": [
+      {
+        "name": "Freeze",
+        "value": 100
+      }
+    ],
+    "element": "ice",
+    "id": "double-blizzard-spike",
+    "internalId": "DoubleIcicleThrow",
+    "maxRange": 9999,
+    "minRange": 1000,
+    "name": "Double Blizzard Spike",
+    "power": 200,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 50,
+    "description": "Throws icicles in a wide area from under the enemy's feet.",
+    "effects": [
+      {
+        "name": "Freeze",
+        "value": 100
+      }
+    ],
+    "element": "ice",
+    "id": "absolute-frost",
+    "internalId": "IceAge",
+    "maxRange": 3000,
+    "minRange": 100,
+    "name": "Absolute Frost",
+    "power": 140,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 35,
+    "description": "Shoots countless wind swords that fly straight towards the enemy.",
+    "effects": [
+      {
+        "name": "IvyCling",
+        "value": 35
+      }
+    ],
+    "element": "grass",
+    "id": "raid-cutter",
+    "internalId": "RaidCutter",
+    "maxRange": 5000,
+    "minRange": 500,
+    "name": "Raid Cutter",
+    "power": 110,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 22,
+    "description": "Launches sharp blades of air that fan out.",
+    "effects": [
+      {
+        "name": "IvyCling",
+        "value": 35
+      }
+    ],
+    "element": "grass",
+    "id": "wind-edge",
+    "internalId": "WindEdge",
+    "maxRange": 5000,
+    "minRange": 500,
+    "name": "Wind Edge",
+    "power": 90,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 45,
+    "description": "Creates multiple flame tornadoes. The tornado continues to spin in circles.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 100
+      }
+    ],
+    "element": "fire",
+    "id": "flare-twister",
+    "internalId": "FlareTwister",
+    "maxRange": 9999,
+    "minRange": 0,
+    "name": "Flare Twister",
+    "power": 130,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 38,
+    "description": "Faleris' exclusive skill. Generates multiple tornadoes of scorching fire and charges forward. The tornadoes converge in the center and eventually merge into a single massive tornado.",
+    "effects": [
+      {
+        "name": "Burn",
+        "value": 100
+      }
+    ],
+    "element": "fire",
+    "id": "raging-flame-wave",
+    "internalId": "Unique_Horus_PerfectStorm",
+    "maxRange": 3000,
+    "minRange": 0,
+    "name": "Raging Flame Wave",
+    "power": 145,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 45,
+    "description": "Shadowbeak's exclusive skill. As it charges forward, emits countless blue rays that automatically locate and pursue the enemy.",
+    "effects": [],
+    "element": "dark",
+    "id": "divine-disaster-ii",
+    "internalId": "Unique_BlackGriffon_TackleLaser2",
+    "maxRange": 2500,
+    "minRange": 0,
+    "name": "Divine Disaster II",
+    "power": 170,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 24,
+    "description": "Selyne's exclusive skill. Launches three high-speed swords imbued with moonlight power in succession.",
+    "effects": [],
+    "element": "neutral",
+    "id": "seigetsu-flash",
+    "internalId": "Unique_MoonQueen_IceMoonBlade",
+    "maxRange": 3000,
+    "minRange": 300,
+    "name": "Seigetsu Flash",
+    "power": 110,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 40,
+    "description": "Generates a pillar of ice that moves in a straight line.",
+    "effects": [
+      {
+        "name": "Freeze",
+        "value": 100
+      }
+    ],
+    "element": "ice",
+    "id": "icicle-line",
+    "internalId": "IcicleLine",
+    "maxRange": 2500,
+    "minRange": 0,
+    "name": "Icicle Line",
+    "power": 120,
+    "specialAttackRates": []
+  },
+  {
+    "category": "Shot",
+    "cooldownTime": 60,
+    "description": "A skill exclusive to the Lilikin species. Surround yourself with a wind barrier, Returns the blade of wind to the attacking opponent.",
+    "effects": [
+      {
+        "name": "IvyCling",
+        "value": 35
+      }
+    ],
+    "element": "grass",
+    "id": "wind-barrier",
+    "internalId": "Unique_LilyQueen_WindBarrier",
+    "maxRange": 9999,
+    "minRange": 0,
+    "name": "Wind Barrier",
+    "power": 60,
+    "specialAttackRates": []
   }
 ]

@@ -182,6 +182,37 @@
   },
   {
     "energyAmount": 0,
+    "id": "ultimate-sphere",
+    "internalId": "PalSphere_Ultimate",
+    "materials": [
+      {
+        "count": 20,
+        "id": "paldium-fragment",
+        "internalId": "Pal_crystal_S"
+      },
+      {
+        "count": 10,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 5,
+        "id": "carbon-fiber",
+        "internalId": "CarbonFiber"
+      },
+      {
+        "count": 1,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 300000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
     "id": "wooden-club",
     "internalId": "Bat",
     "materials": [
@@ -1229,6 +1260,130 @@
   },
   {
     "energyAmount": 0,
+    "id": "makeshift-handgun-2",
+    "internalId": "MakeshiftHandgun_2",
+    "materials": [
+      {
+        "count": 70,
+        "id": "ingot",
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 20,
+        "id": "high-quality-pal-oil",
+        "internalId": "PalOil"
+      },
+      {
+        "count": 60,
+        "id": "fiber",
+        "internalId": "Fiber"
+      },
+      {
+        "count": 2,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_MakeshiftHandgun_2",
+    "workAmount": 200000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "makeshift-handgun-3",
+    "internalId": "MakeshiftHandgun_3",
+    "materials": [
+      {
+        "count": 105,
+        "id": "ingot",
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 30,
+        "id": "high-quality-pal-oil",
+        "internalId": "PalOil"
+      },
+      {
+        "count": 90,
+        "id": "fiber",
+        "internalId": "Fiber"
+      },
+      {
+        "count": 4,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_MakeshiftHandgun_3",
+    "workAmount": 400000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "makeshift-handgun-4",
+    "internalId": "MakeshiftHandgun_4",
+    "materials": [
+      {
+        "count": 157,
+        "id": "ingot",
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 45,
+        "id": "high-quality-pal-oil",
+        "internalId": "PalOil"
+      },
+      {
+        "count": 135,
+        "id": "fiber",
+        "internalId": "Fiber"
+      },
+      {
+        "count": 8,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_MakeshiftHandgun_4",
+    "workAmount": 800000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "makeshift-handgun-5",
+    "internalId": "MakeshiftHandgun_5",
+    "materials": [
+      {
+        "count": 235,
+        "id": "ingot",
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 67,
+        "id": "high-quality-pal-oil",
+        "internalId": "PalOil"
+      },
+      {
+        "count": 202,
+        "id": "fiber",
+        "internalId": "Fiber"
+      },
+      {
+        "count": 16,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_MakeshiftHandgun_5",
+    "workAmount": 1600000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
     "id": "handgun",
     "internalId": "HandGun_Default",
     "materials": [
@@ -2054,6 +2209,1007 @@
   },
   {
     "energyAmount": 0,
+    "id": "laser-rifle",
+    "internalId": "LaserRifle",
+    "materials": [
+      {
+        "count": 50,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 60,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 40,
+        "id": "carbon-fiber",
+        "internalId": "CarbonFiber"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 300000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "laser-rifle-2",
+    "internalId": "LaserRifle_2",
+    "materials": [
+      {
+        "count": 100,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 120,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 80,
+        "id": "carbon-fiber",
+        "internalId": "CarbonFiber"
+      },
+      {
+        "count": 10,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_LaserRifle_2",
+    "workAmount": 1200000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "laser-rifle-3",
+    "internalId": "LaserRifle_3",
+    "materials": [
+      {
+        "count": 150,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 180,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 120,
+        "id": "carbon-fiber",
+        "internalId": "CarbonFiber"
+      },
+      {
+        "count": 20,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_LaserRifle_3",
+    "workAmount": 2400000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "laser-rifle-4",
+    "internalId": "LaserRifle_4",
+    "materials": [
+      {
+        "count": 225,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 270,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 180,
+        "id": "carbon-fiber",
+        "internalId": "CarbonFiber"
+      },
+      {
+        "count": 30,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_LaserRifle_4",
+    "workAmount": 4800000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "laser-rifle-5",
+    "internalId": "LaserRifle_5",
+    "materials": [
+      {
+        "count": 337,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 405,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 270,
+        "id": "carbon-fiber",
+        "internalId": "CarbonFiber"
+      },
+      {
+        "count": 40,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_LaserRifle_5",
+    "workAmount": 9600000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "flamethrower",
+    "internalId": "FlameThrower",
+    "materials": [
+      {
+        "count": 40,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 50,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 35,
+        "id": "carbon-fiber",
+        "internalId": "CarbonFiber"
+      },
+      {
+        "count": 30,
+        "id": "flame-organ",
+        "internalId": "FireOrgan"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 250000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "flame-thrower-2",
+    "internalId": "FlameThrower_2",
+    "materials": [
+      {
+        "count": 80,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 100,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 70,
+        "id": "carbon-fiber",
+        "internalId": "CarbonFiber"
+      },
+      {
+        "count": 60,
+        "id": "flame-organ",
+        "internalId": "FireOrgan"
+      },
+      {
+        "count": 10,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_FlameThrower_2",
+    "workAmount": 1000000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "flame-thrower-3",
+    "internalId": "FlameThrower_3",
+    "materials": [
+      {
+        "count": 120,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 150,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 105,
+        "id": "carbon-fiber",
+        "internalId": "CarbonFiber"
+      },
+      {
+        "count": 90,
+        "id": "flame-organ",
+        "internalId": "FireOrgan"
+      },
+      {
+        "count": 20,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_FlameThrower_3",
+    "workAmount": 2000000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "flame-thrower-4",
+    "internalId": "FlameThrower_4",
+    "materials": [
+      {
+        "count": 180,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 225,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 157,
+        "id": "carbon-fiber",
+        "internalId": "CarbonFiber"
+      },
+      {
+        "count": 135,
+        "id": "flame-organ",
+        "internalId": "FireOrgan"
+      },
+      {
+        "count": 30,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_FlameThrower_4",
+    "workAmount": 4000000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "flame-thrower-5",
+    "internalId": "FlameThrower_5",
+    "materials": [
+      {
+        "count": 270,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 337,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 235,
+        "id": "carbon-fiber",
+        "internalId": "CarbonFiber"
+      },
+      {
+        "count": 202,
+        "id": "flame-organ",
+        "internalId": "FireOrgan"
+      },
+      {
+        "count": 40,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_FlameThrower_5",
+    "workAmount": 8000000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "grenade-launcher",
+    "internalId": "GrenadeLauncher",
+    "materials": [
+      {
+        "count": 75,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 80,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 60,
+        "id": "carbon-fiber",
+        "internalId": "CarbonFiber"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 400000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "grenade-launcher-2",
+    "internalId": "GrenadeLauncher_2",
+    "materials": [
+      {
+        "count": 150,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 160,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 120,
+        "id": "carbon-fiber",
+        "internalId": "CarbonFiber"
+      },
+      {
+        "count": 10,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_GrenadeLauncher_2",
+    "workAmount": 1600000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "grenade-launcher-3",
+    "internalId": "GrenadeLauncher_3",
+    "materials": [
+      {
+        "count": 225,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 240,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 180,
+        "id": "carbon-fiber",
+        "internalId": "CarbonFiber"
+      },
+      {
+        "count": 20,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_GrenadeLauncher_3",
+    "workAmount": 3200000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "grenade-launcher-4",
+    "internalId": "GrenadeLauncher_4",
+    "materials": [
+      {
+        "count": 337,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 360,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 270,
+        "id": "carbon-fiber",
+        "internalId": "CarbonFiber"
+      },
+      {
+        "count": 30,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_GrenadeLauncher_4",
+    "workAmount": 6400000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "grenade-launcher-5",
+    "internalId": "GrenadeLauncher_5",
+    "materials": [
+      {
+        "count": 505,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 540,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 405,
+        "id": "carbon-fiber",
+        "internalId": "CarbonFiber"
+      },
+      {
+        "count": 40,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_GrenadeLauncher_5",
+    "workAmount": 12800000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "guided-missile-launcher",
+    "internalId": "GuidedMissileLauncher",
+    "materials": [
+      {
+        "count": 100,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 50,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 100,
+        "id": "carbon-fiber",
+        "internalId": "CarbonFiber"
+      },
+      {
+        "count": 20,
+        "id": "circuit-board",
+        "internalId": "MachineParts2"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 600000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "guided-missile-launcher-2",
+    "internalId": "GuidedMissileLauncher_2",
+    "materials": [
+      {
+        "count": 200,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 100,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 200,
+        "id": "carbon-fiber",
+        "internalId": "CarbonFiber"
+      },
+      {
+        "count": 40,
+        "id": "circuit-board",
+        "internalId": "MachineParts2"
+      },
+      {
+        "count": 10,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_GuidedMissileLauncher_2",
+    "workAmount": 2400000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "guided-missile-launcher-3",
+    "internalId": "GuidedMissileLauncher_3",
+    "materials": [
+      {
+        "count": 300,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 150,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 300,
+        "id": "carbon-fiber",
+        "internalId": "CarbonFiber"
+      },
+      {
+        "count": 60,
+        "id": "circuit-board",
+        "internalId": "MachineParts2"
+      },
+      {
+        "count": 20,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_GuidedMissileLauncher_3",
+    "workAmount": 4800000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "guided-missile-launcher-4",
+    "internalId": "GuidedMissileLauncher_4",
+    "materials": [
+      {
+        "count": 450,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 225,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 450,
+        "id": "carbon-fiber",
+        "internalId": "CarbonFiber"
+      },
+      {
+        "count": 90,
+        "id": "circuit-board",
+        "internalId": "MachineParts2"
+      },
+      {
+        "count": 30,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_GuidedMissileLauncher_4",
+    "workAmount": 9600000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "guided-missile-launcher-5",
+    "internalId": "GuidedMissileLauncher_5",
+    "materials": [
+      {
+        "count": 675,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 337,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 675,
+        "id": "carbon-fiber",
+        "internalId": "CarbonFiber"
+      },
+      {
+        "count": 135,
+        "id": "circuit-board",
+        "internalId": "MachineParts2"
+      },
+      {
+        "count": 40,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_GuidedMissileLauncher_5",
+    "workAmount": 19200000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "multi-guided-missile-launcher",
+    "internalId": "MultiGuidedMissileLauncher",
+    "materials": [
+      {
+        "count": 150,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 80,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 120,
+        "id": "carbon-fiber",
+        "internalId": "CarbonFiber"
+      },
+      {
+        "count": 30,
+        "id": "circuit-board",
+        "internalId": "MachineParts2"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_MultiGuidedMissileLauncher",
+    "workAmount": 1000000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "multi-guided-missile-launcher-2",
+    "internalId": "MultiGuidedMissileLauncher_2",
+    "materials": [
+      {
+        "count": 300,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 160,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 240,
+        "id": "carbon-fiber",
+        "internalId": "CarbonFiber"
+      },
+      {
+        "count": 60,
+        "id": "circuit-board",
+        "internalId": "MachineParts2"
+      },
+      {
+        "count": 20,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_MultiGuidedMissileLauncher_2",
+    "workAmount": 4000000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "multi-guided-missile-launcher-3",
+    "internalId": "MultiGuidedMissileLauncher_3",
+    "materials": [
+      {
+        "count": 450,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 240,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 360,
+        "id": "carbon-fiber",
+        "internalId": "CarbonFiber"
+      },
+      {
+        "count": 90,
+        "id": "circuit-board",
+        "internalId": "MachineParts2"
+      },
+      {
+        "count": 30,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_MultiGuidedMissileLauncher_3",
+    "workAmount": 8000000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "multi-guided-missile-launcher-4",
+    "internalId": "MultiGuidedMissileLauncher_4",
+    "materials": [
+      {
+        "count": 675,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 360,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 540,
+        "id": "carbon-fiber",
+        "internalId": "CarbonFiber"
+      },
+      {
+        "count": 135,
+        "id": "circuit-board",
+        "internalId": "MachineParts2"
+      },
+      {
+        "count": 40,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_MultiGuidedMissileLauncher_4",
+    "workAmount": 16000000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "multi-guided-missile-launcher-5",
+    "internalId": "MultiGuidedMissileLauncher_5",
+    "materials": [
+      {
+        "count": 1012,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 540,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 810,
+        "id": "carbon-fiber",
+        "internalId": "CarbonFiber"
+      },
+      {
+        "count": 202,
+        "id": "circuit-board",
+        "internalId": "MachineParts2"
+      },
+      {
+        "count": 50,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_MultiGuidedMissileLauncher_5",
+    "workAmount": 32000000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "gatling-gun",
+    "internalId": "GatlingGun",
+    "materials": [
+      {
+        "count": 150,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 100,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 140,
+        "id": "carbon-fiber",
+        "internalId": "CarbonFiber"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 800000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "gatling-gun-2",
+    "internalId": "GatlingGun_2",
+    "materials": [
+      {
+        "count": 300,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 200,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 280,
+        "id": "carbon-fiber",
+        "internalId": "CarbonFiber"
+      },
+      {
+        "count": 15,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_GatlingGun_2",
+    "workAmount": 3200000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "gatling-gun-3",
+    "internalId": "GatlingGun_3",
+    "materials": [
+      {
+        "count": 450,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 300,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 420,
+        "id": "carbon-fiber",
+        "internalId": "CarbonFiber"
+      },
+      {
+        "count": 25,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_GatlingGun_3",
+    "workAmount": 6400000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "gatling-gun-4",
+    "internalId": "GatlingGun_4",
+    "materials": [
+      {
+        "count": 675,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 450,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 630,
+        "id": "carbon-fiber",
+        "internalId": "CarbonFiber"
+      },
+      {
+        "count": 35,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_GatlingGun_4",
+    "workAmount": 12800000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "gatling-gun-5",
+    "internalId": "GatlingGun_5",
+    "materials": [
+      {
+        "count": 1012,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 675,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 945,
+        "id": "carbon-fiber",
+        "internalId": "CarbonFiber"
+      },
+      {
+        "count": 45,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_GatlingGun_5",
+    "workAmount": 25600000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "meteor-launcher",
+    "internalId": "Launcher_Meteor",
+    "materials": [
+      {
+        "count": 100,
+        "id": "meteorite-fragment",
+        "internalId": "MeteorDrop"
+      },
+      {
+        "count": 30,
+        "id": "refined-ingot",
+        "internalId": "IronIngot"
+      },
+      {
+        "count": 20,
+        "id": "paldium-fragment",
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 200000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
     "id": "homing-sphere-launcher",
     "internalId": "HomingSphereLauncher",
     "materials": [
@@ -2541,6 +3697,37 @@
     "productCount": 1,
     "unlockItemId": "None",
     "workAmount": 13000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "frag-grenade-mk2",
+    "internalId": "FragGrenade_Super",
+    "materials": [
+      {
+        "count": 20,
+        "id": "fiber",
+        "internalId": "Fiber"
+      },
+      {
+        "count": 3,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 3,
+        "id": "gunpowder",
+        "internalId": "Gunpowder2"
+      },
+      {
+        "count": 3,
+        "id": "crude-oil",
+        "internalId": "CrudeOil"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 30000,
     "workableAttribute": 1
   },
   {
@@ -4745,6 +5932,656 @@
   },
   {
     "energyAmount": 0,
+    "id": "plasteel-armor",
+    "internalId": "PlasticArmor",
+    "materials": [
+      {
+        "count": 50,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 30,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 10,
+        "id": "high-quality-cloth",
+        "internalId": "Cloth2"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 300000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "plastic-armor-2",
+    "internalId": "PlasticArmor_2",
+    "materials": [
+      {
+        "count": 100,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 60,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 20,
+        "id": "high-quality-cloth",
+        "internalId": "Cloth2"
+      },
+      {
+        "count": 15,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_PlasticArmor_2",
+    "workAmount": 1200000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "plastic-armor-3",
+    "internalId": "PlasticArmor_3",
+    "materials": [
+      {
+        "count": 150,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 90,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 30,
+        "id": "high-quality-cloth",
+        "internalId": "Cloth2"
+      },
+      {
+        "count": 17,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_PlasticArmor_3",
+    "workAmount": 2400000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "plastic-armor-4",
+    "internalId": "PlasticArmor_4",
+    "materials": [
+      {
+        "count": 225,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 135,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 45,
+        "id": "high-quality-cloth",
+        "internalId": "Cloth2"
+      },
+      {
+        "count": 19,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_PlasticArmor_4",
+    "workAmount": 4800000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "plastic-armor-5",
+    "internalId": "PlasticArmor_5",
+    "materials": [
+      {
+        "count": 337,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 202,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 67,
+        "id": "high-quality-cloth",
+        "internalId": "Cloth2"
+      },
+      {
+        "count": 25,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_PlasticArmor_5",
+    "workAmount": 9600000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "heat-resistant-plasteel-armor",
+    "internalId": "PlasticArmorHeat",
+    "materials": [
+      {
+        "count": 50,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 30,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 10,
+        "id": "high-quality-cloth",
+        "internalId": "Cloth2"
+      },
+      {
+        "count": 20,
+        "id": "flame-organ",
+        "internalId": "FireOrgan"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 400000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "plastic-armor-heat-2",
+    "internalId": "PlasticArmorHeat_2",
+    "materials": [
+      {
+        "count": 100,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 60,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 20,
+        "id": "high-quality-cloth",
+        "internalId": "Cloth2"
+      },
+      {
+        "count": 40,
+        "id": "flame-organ",
+        "internalId": "FireOrgan"
+      },
+      {
+        "count": 15,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_PlasticArmorHeat_2",
+    "workAmount": 1600000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "plastic-armor-heat-3",
+    "internalId": "PlasticArmorHeat_3",
+    "materials": [
+      {
+        "count": 150,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 90,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 30,
+        "id": "high-quality-cloth",
+        "internalId": "Cloth2"
+      },
+      {
+        "count": 60,
+        "id": "flame-organ",
+        "internalId": "FireOrgan"
+      },
+      {
+        "count": 17,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_PlasticArmorHeat_3",
+    "workAmount": 3200000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "plastic-armor-heat-4",
+    "internalId": "PlasticArmorHeat_4",
+    "materials": [
+      {
+        "count": 225,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 135,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 45,
+        "id": "high-quality-cloth",
+        "internalId": "Cloth2"
+      },
+      {
+        "count": 90,
+        "id": "flame-organ",
+        "internalId": "FireOrgan"
+      },
+      {
+        "count": 19,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_PlasticArmorHeat_4",
+    "workAmount": 6400000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "plastic-armor-heat-5",
+    "internalId": "PlasticArmorHeat_5",
+    "materials": [
+      {
+        "count": 337,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 202,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 67,
+        "id": "high-quality-cloth",
+        "internalId": "Cloth2"
+      },
+      {
+        "count": 135,
+        "id": "flame-organ",
+        "internalId": "FireOrgan"
+      },
+      {
+        "count": 25,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_PlasticArmorHeat_5",
+    "workAmount": 12800000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "cold-resistant-plasteel-armor",
+    "internalId": "PlasticArmorCold",
+    "materials": [
+      {
+        "count": 50,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 30,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 10,
+        "id": "high-quality-cloth",
+        "internalId": "Cloth2"
+      },
+      {
+        "count": 20,
+        "id": "ice-organ",
+        "internalId": "IceOrgan"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 400000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "plastic-armor-cold-2",
+    "internalId": "PlasticArmorCold_2",
+    "materials": [
+      {
+        "count": 100,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 60,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 20,
+        "id": "high-quality-cloth",
+        "internalId": "Cloth2"
+      },
+      {
+        "count": 40,
+        "id": "ice-organ",
+        "internalId": "IceOrgan"
+      },
+      {
+        "count": 15,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_PlasticArmorCold_2",
+    "workAmount": 1600000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "plastic-armor-cold-3",
+    "internalId": "PlasticArmorCold_3",
+    "materials": [
+      {
+        "count": 150,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 90,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 30,
+        "id": "high-quality-cloth",
+        "internalId": "Cloth2"
+      },
+      {
+        "count": 60,
+        "id": "ice-organ",
+        "internalId": "IceOrgan"
+      },
+      {
+        "count": 17,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_PlasticArmorCold_3",
+    "workAmount": 3200000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "plastic-armor-cold-4",
+    "internalId": "PlasticArmorCold_4",
+    "materials": [
+      {
+        "count": 225,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 135,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 45,
+        "id": "high-quality-cloth",
+        "internalId": "Cloth2"
+      },
+      {
+        "count": 90,
+        "id": "ice-organ",
+        "internalId": "IceOrgan"
+      },
+      {
+        "count": 19,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_PlasticArmorCold_4",
+    "workAmount": 6400000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "plastic-armor-cold-5",
+    "internalId": "PlasticArmorCold_5",
+    "materials": [
+      {
+        "count": 337,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 202,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 67,
+        "id": "high-quality-cloth",
+        "internalId": "Cloth2"
+      },
+      {
+        "count": 135,
+        "id": "ice-organ",
+        "internalId": "IceOrgan"
+      },
+      {
+        "count": 25,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_PlasticArmorCold_5",
+    "workAmount": 12800000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "lightweight-plasteel-armor",
+    "internalId": "PlasticArmorWeight",
+    "materials": [
+      {
+        "count": 100,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 30,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 10,
+        "id": "high-quality-cloth",
+        "internalId": "Cloth2"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 400000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "plastic-armor-weight-2",
+    "internalId": "PlasticArmorWeight_2",
+    "materials": [
+      {
+        "count": 200,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 60,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 20,
+        "id": "high-quality-cloth",
+        "internalId": "Cloth2"
+      },
+      {
+        "count": 15,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_PlasticArmorWeight_2",
+    "workAmount": 1600000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "plastic-armor-weight-3",
+    "internalId": "PlasticArmorWeight_3",
+    "materials": [
+      {
+        "count": 300,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 90,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 30,
+        "id": "high-quality-cloth",
+        "internalId": "Cloth2"
+      },
+      {
+        "count": 17,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_PlasticArmorWeight_3",
+    "workAmount": 3200000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "plastic-armor-weight-4",
+    "internalId": "PlasticArmorWeight_4",
+    "materials": [
+      {
+        "count": 450,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 135,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 45,
+        "id": "high-quality-cloth",
+        "internalId": "Cloth2"
+      },
+      {
+        "count": 19,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_PlasticArmorWeight_4",
+    "workAmount": 6400000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "plastic-armor-weight-5",
+    "internalId": "PlasticArmorWeight_5",
+    "materials": [
+      {
+        "count": 675,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 202,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 67,
+        "id": "high-quality-cloth",
+        "internalId": "Cloth2"
+      },
+      {
+        "count": 25,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_PlasticArmorWeight_5",
+    "workAmount": 12800000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
     "id": "feathered-hair-band",
     "internalId": "FurHelmet",
     "materials": [
@@ -5241,6 +7078,131 @@
     "productCount": 1,
     "unlockItemId": "Blueprint_StealHelmet_5",
     "workAmount": 3840000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "plasteel-helmet",
+    "internalId": "PlasticHelmet",
+    "materials": [
+      {
+        "count": 40,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 25,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 200000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "plastic-helmet-2",
+    "internalId": "PlasticHelmet_2",
+    "materials": [
+      {
+        "count": 80,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 50,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 15,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_PlasticHelmet_2",
+    "workAmount": 800000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "plastic-helmet-3",
+    "internalId": "PlasticHelmet_3",
+    "materials": [
+      {
+        "count": 120,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 75,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 17,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_PlasticHelmet_3",
+    "workAmount": 1600000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "plastic-helmet-4",
+    "internalId": "PlasticHelmet_4",
+    "materials": [
+      {
+        "count": 180,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 112,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 19,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_PlasticHelmet_4",
+    "workAmount": 3200000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "plastic-helmet-5",
+    "internalId": "PlasticHelmet_5",
+    "materials": [
+      {
+        "count": 270,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 168,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 25,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_PlasticHelmet_5",
+    "workAmount": 6400000,
     "workableAttribute": 1
   },
   {
@@ -7170,6 +9132,506 @@
   },
   {
     "energyAmount": 0,
+    "id": "ribbuny-headband",
+    "internalId": "HeadEquip028",
+    "materials": [
+      {
+        "count": 5,
+        "id": "ribbuny-ribbon",
+        "internalId": "PalItem_PinkRabbit"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_HeadEquip028_1",
+    "workAmount": 10000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "head-equip028-2",
+    "internalId": "HeadEquip028_2",
+    "materials": [
+      {
+        "count": 7,
+        "id": "ribbuny-ribbon",
+        "internalId": "PalItem_PinkRabbit"
+      },
+      {
+        "count": 4,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_HeadEquip028_2",
+    "workAmount": 20000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "head-equip028-3",
+    "internalId": "HeadEquip028_3",
+    "materials": [
+      {
+        "count": 10,
+        "id": "ribbuny-ribbon",
+        "internalId": "PalItem_PinkRabbit"
+      },
+      {
+        "count": 6,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_HeadEquip028_3",
+    "workAmount": 40000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "head-equip028-4",
+    "internalId": "HeadEquip028_4",
+    "materials": [
+      {
+        "count": 15,
+        "id": "ribbuny-ribbon",
+        "internalId": "PalItem_PinkRabbit"
+      },
+      {
+        "count": 8,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_HeadEquip028_4",
+    "workAmount": 80000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "head-equip028-5",
+    "internalId": "HeadEquip028_5",
+    "materials": [
+      {
+        "count": 22,
+        "id": "ribbuny-ribbon",
+        "internalId": "PalItem_PinkRabbit"
+      },
+      {
+        "count": 14,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_HeadEquip028_5",
+    "workAmount": 160000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "leezpunk-hood",
+    "internalId": "HeadEquip025",
+    "materials": [
+      {
+        "count": 5,
+        "id": "leezpunk-crest",
+        "internalId": "PalItem_LizardMan"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_HeadEquip025_1",
+    "workAmount": 10000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "head-equip025-2",
+    "internalId": "HeadEquip025_2",
+    "materials": [
+      {
+        "count": 7,
+        "id": "leezpunk-crest",
+        "internalId": "PalItem_LizardMan"
+      },
+      {
+        "count": 4,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_HeadEquip025_2",
+    "workAmount": 20000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "head-equip025-3",
+    "internalId": "HeadEquip025_3",
+    "materials": [
+      {
+        "count": 10,
+        "id": "leezpunk-crest",
+        "internalId": "PalItem_LizardMan"
+      },
+      {
+        "count": 6,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_HeadEquip025_3",
+    "workAmount": 40000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "head-equip025-4",
+    "internalId": "HeadEquip025_4",
+    "materials": [
+      {
+        "count": 15,
+        "id": "leezpunk-crest",
+        "internalId": "PalItem_LizardMan"
+      },
+      {
+        "count": 8,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_HeadEquip025_4",
+    "workAmount": 80000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "head-equip025-5",
+    "internalId": "HeadEquip025_5",
+    "materials": [
+      {
+        "count": 22,
+        "id": "leezpunk-crest",
+        "internalId": "PalItem_LizardMan"
+      },
+      {
+        "count": 14,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_HeadEquip025_5",
+    "workAmount": 160000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "killamari-cap",
+    "internalId": "HeadEquip026",
+    "materials": [
+      {
+        "count": 5,
+        "id": "killamari-tentacle",
+        "internalId": "PalItem_NegativeOctopus"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_HeadEquip026_1",
+    "workAmount": 10000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "head-equip026-2",
+    "internalId": "HeadEquip026_2",
+    "materials": [
+      {
+        "count": 7,
+        "id": "killamari-tentacle",
+        "internalId": "PalItem_NegativeOctopus"
+      },
+      {
+        "count": 4,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_HeadEquip026_2",
+    "workAmount": 20000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "head-equip026-3",
+    "internalId": "HeadEquip026_3",
+    "materials": [
+      {
+        "count": 10,
+        "id": "killamari-tentacle",
+        "internalId": "PalItem_NegativeOctopus"
+      },
+      {
+        "count": 6,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_HeadEquip026_3",
+    "workAmount": 40000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "head-equip026-4",
+    "internalId": "HeadEquip026_4",
+    "materials": [
+      {
+        "count": 15,
+        "id": "killamari-tentacle",
+        "internalId": "PalItem_NegativeOctopus"
+      },
+      {
+        "count": 8,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_HeadEquip026_4",
+    "workAmount": 80000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "head-equip026-5",
+    "internalId": "HeadEquip026_5",
+    "materials": [
+      {
+        "count": 22,
+        "id": "killamari-tentacle",
+        "internalId": "PalItem_NegativeOctopus"
+      },
+      {
+        "count": 14,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_HeadEquip026_5",
+    "workAmount": 160000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "swee-cap",
+    "internalId": "HeadEquip031",
+    "materials": [
+      {
+        "count": 5,
+        "id": "swee-hair",
+        "internalId": "PalItem_MopBaby"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_HeadEquip031_1",
+    "workAmount": 10000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "head-equip031-2",
+    "internalId": "HeadEquip031_2",
+    "materials": [
+      {
+        "count": 7,
+        "id": "swee-hair",
+        "internalId": "PalItem_MopBaby"
+      },
+      {
+        "count": 4,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_HeadEquip031_2",
+    "workAmount": 20000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "head-equip031-3",
+    "internalId": "HeadEquip031_3",
+    "materials": [
+      {
+        "count": 10,
+        "id": "swee-hair",
+        "internalId": "PalItem_MopBaby"
+      },
+      {
+        "count": 6,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_HeadEquip031_3",
+    "workAmount": 40000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "head-equip031-4",
+    "internalId": "HeadEquip031_4",
+    "materials": [
+      {
+        "count": 15,
+        "id": "swee-hair",
+        "internalId": "PalItem_MopBaby"
+      },
+      {
+        "count": 8,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_HeadEquip031_4",
+    "workAmount": 80000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "head-equip031-5",
+    "internalId": "HeadEquip031_5",
+    "materials": [
+      {
+        "count": 22,
+        "id": "swee-hair",
+        "internalId": "PalItem_MopBaby"
+      },
+      {
+        "count": 14,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_HeadEquip031_5",
+    "workAmount": 160000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "dazzi-hat",
+    "internalId": "HeadEquip032",
+    "materials": [
+      {
+        "count": 5,
+        "id": "dazzi-cloud",
+        "internalId": "PalItem_RaijinDaughter"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_HeadEquip032_1",
+    "workAmount": 10000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "head-equip032-2",
+    "internalId": "HeadEquip032_2",
+    "materials": [
+      {
+        "count": 7,
+        "id": "dazzi-cloud",
+        "internalId": "PalItem_RaijinDaughter"
+      },
+      {
+        "count": 4,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_HeadEquip032_2",
+    "workAmount": 20000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "head-equip032-3",
+    "internalId": "HeadEquip032_3",
+    "materials": [
+      {
+        "count": 10,
+        "id": "dazzi-cloud",
+        "internalId": "PalItem_RaijinDaughter"
+      },
+      {
+        "count": 6,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_HeadEquip032_3",
+    "workAmount": 40000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "head-equip032-4",
+    "internalId": "HeadEquip032_4",
+    "materials": [
+      {
+        "count": 15,
+        "id": "dazzi-cloud",
+        "internalId": "PalItem_RaijinDaughter"
+      },
+      {
+        "count": 8,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_HeadEquip032_4",
+    "workAmount": 80000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "head-equip032-5",
+    "internalId": "HeadEquip032_5",
+    "materials": [
+      {
+        "count": 22,
+        "id": "dazzi-cloud",
+        "internalId": "PalItem_RaijinDaughter"
+      },
+      {
+        "count": 14,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "Blueprint_HeadEquip032_5",
+    "workAmount": 160000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
     "id": "ring-of-mercy",
     "internalId": "Accessory_Nonkilling",
     "materials": [
@@ -7426,6 +9888,137 @@
   },
   {
     "energyAmount": 0,
+    "id": "flamethrower-fuel",
+    "internalId": "FlamethrowerBullet",
+    "materials": [
+      {
+        "count": 1,
+        "id": "crude-oil",
+        "internalId": "CrudeOil"
+      }
+    ],
+    "productCount": 5,
+    "unlockItemId": "None",
+    "workAmount": 100000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "energy-cartridge",
+    "internalId": "LaserBullet",
+    "materials": [
+      {
+        "count": 5,
+        "id": "electric-organ",
+        "internalId": "ElectricOrgan"
+      },
+      {
+        "count": 1,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      }
+    ],
+    "productCount": 5,
+    "unlockItemId": "None",
+    "workAmount": 200000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "grenade-ammo",
+    "internalId": "GrenadeBullet",
+    "materials": [
+      {
+        "count": 1,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 20,
+        "id": "fiber",
+        "internalId": "Fiber"
+      },
+      {
+        "count": 3,
+        "id": "gunpowder",
+        "internalId": "Gunpowder2"
+      }
+    ],
+    "productCount": 3,
+    "unlockItemId": "None",
+    "workAmount": 100000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "missile-ammo",
+    "internalId": "MissileBullet",
+    "materials": [
+      {
+        "count": 1,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 1,
+        "id": "crude-oil",
+        "internalId": "CrudeOil"
+      },
+      {
+        "count": 1,
+        "id": "circuit-board",
+        "internalId": "MachineParts2"
+      },
+      {
+        "count": 1,
+        "id": "pal-fluids",
+        "internalId": "PalFluid"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 200000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "gatling-gun-bullet",
+    "internalId": "GatlingBullet",
+    "materials": [
+      {
+        "count": 1,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 3,
+        "id": "gunpowder",
+        "internalId": "Gunpowder2"
+      }
+    ],
+    "productCount": 5,
+    "unlockItemId": "None",
+    "workAmount": 100000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "meteorite-bullet",
+    "internalId": "MeteorBullet",
+    "materials": [
+      {
+        "count": 2,
+        "id": "meteorite-fragment",
+        "internalId": "MeteorDrop"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 30000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
     "id": "decal-ink",
     "internalId": "InkBullet",
     "materials": [
@@ -7541,6 +10134,37 @@
   },
   {
     "energyAmount": 0,
+    "id": "shield-ultra",
+    "internalId": "Shield_Ultra",
+    "materials": [
+      {
+        "count": 50,
+        "id": "ancient-civilization-parts",
+        "internalId": "PalCrystal_Ex"
+      },
+      {
+        "count": 150,
+        "id": "paldium-fragment",
+        "internalId": "Pal_crystal_S"
+      },
+      {
+        "count": 50,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 30,
+        "id": "ancient-civilization-core",
+        "internalId": "AncientParts2"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 600000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
     "id": "normal-parachute",
     "internalId": "Glider_Old",
     "materials": [
@@ -7615,6 +10239,37 @@
     "productCount": 1,
     "unlockItemId": "None",
     "workAmount": 50000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "glider-tera",
+    "internalId": "Glider_Tera",
+    "materials": [
+      {
+        "count": 40,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 200,
+        "id": "wood",
+        "internalId": "Wood"
+      },
+      {
+        "count": 50,
+        "id": "carbon-fiber",
+        "internalId": "CarbonFiber"
+      },
+      {
+        "count": 20,
+        "id": "high-quality-cloth",
+        "internalId": "cloth2"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 150000,
     "workableAttribute": 1
   },
   {
@@ -8075,6 +10730,32 @@
   },
   {
     "energyAmount": 0,
+    "id": "plasteel",
+    "internalId": "Plastic",
+    "materials": [
+      {
+        "count": 5,
+        "id": "crude-oil",
+        "internalId": "CrudeOil"
+      },
+      {
+        "count": 5,
+        "id": "paldium-fragment",
+        "internalId": "Pal_crystal_S"
+      },
+      {
+        "count": 10,
+        "id": "ore",
+        "internalId": "CopperOre"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 200000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
     "id": "low-quality-recovery-meds",
     "internalId": "Potion_Low",
     "materials": [
@@ -8334,6 +11015,42 @@
   },
   {
     "energyAmount": 0,
+    "id": "mysterious-mushroom-juice",
+    "internalId": "MushroomJuice",
+    "materials": [
+      {
+        "count": 20,
+        "id": "mysterious-mushroom",
+        "internalId": "PoisonMushroom"
+      },
+      {
+        "count": 10,
+        "id": "beautiful-flower",
+        "internalId": "Poppy"
+      },
+      {
+        "count": 10,
+        "id": "horn",
+        "internalId": "Horn"
+      },
+      {
+        "count": 5,
+        "id": "bone",
+        "internalId": "Bone"
+      },
+      {
+        "count": 5,
+        "id": "pal-fluids",
+        "internalId": "PalFluid"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 1000000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
     "id": "memory-wiping-medicine",
     "internalId": "StatusPointResetSan",
     "materials": [
@@ -8388,6 +11105,38 @@
         "count": 5,
         "id": "stone",
         "internalId": "Stone"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 1000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "pal-crystal-s-2",
+    "internalId": "Pal_crystal_S_2",
+    "materials": [
+      {
+        "count": 1,
+        "id": "meteorite-fragment",
+        "internalId": "MeteorDrop"
+      }
+    ],
+    "productCount": 3,
+    "unlockItemId": "None",
+    "workAmount": 1000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "pal-crystal-s-3",
+    "internalId": "Pal_crystal_S_3",
+    "materials": [
+      {
+        "count": 2,
+        "id": "ore",
+        "internalId": "CopperOre"
       }
     ],
     "productCount": 1,
@@ -11710,11 +14459,11 @@
   },
   {
     "energyAmount": 0,
-    "id": "life-remedy",
+    "id": "vital-remedy",
     "internalId": "Elixir_hp_01",
     "materials": [
       {
-        "count": 2,
+        "count": 4,
         "id": "life-lotus-s",
         "internalId": "Lotus_hp_01"
       },
@@ -11745,7 +14494,7 @@
     "internalId": "Elixir_stamina_01",
     "materials": [
       {
-        "count": 2,
+        "count": 4,
         "id": "stamina-lotus-s",
         "internalId": "Lotus_stamina_01"
       },
@@ -11772,11 +14521,11 @@
   },
   {
     "energyAmount": 0,
-    "id": "power-remedy",
+    "id": "might-remedy",
     "internalId": "Elixir_attack_01",
     "materials": [
       {
-        "count": 2,
+        "count": 4,
         "id": "power-lotus-s",
         "internalId": "Lotus_attack_01"
       },
@@ -11807,7 +14556,7 @@
     "internalId": "Elixir_workspeed_01",
     "materials": [
       {
-        "count": 2,
+        "count": 4,
         "id": "speed-lotus-s",
         "internalId": "Lotus_workspeed_01"
       },
@@ -11834,11 +14583,11 @@
   },
   {
     "energyAmount": 0,
-    "id": "carrying-remedy",
+    "id": "burden-remedy",
     "internalId": "Elixir_weight_01",
     "materials": [
       {
-        "count": 2,
+        "count": 4,
         "id": "carrying-lotus-s",
         "internalId": "Lotus_weight_01"
       },
@@ -11865,13 +14614,13 @@
   },
   {
     "energyAmount": 0,
-    "id": "life-elixir",
+    "id": "vital-elixir",
     "internalId": "Elixir_hp_02",
     "materials": [
       {
-        "count": 3,
-        "id": "life-lotus-s",
-        "internalId": "Lotus_hp_01"
+        "count": 6,
+        "id": "life-lotus-l",
+        "internalId": "Lotus_hp_02"
       },
       {
         "count": 3,
@@ -11900,9 +14649,9 @@
     "internalId": "Elixir_stamina_02",
     "materials": [
       {
-        "count": 3,
-        "id": "stamina-lotus-s",
-        "internalId": "Lotus_stamina_01"
+        "count": 6,
+        "id": "stamina-lotus-l",
+        "internalId": "Lotus_stamina_02"
       },
       {
         "count": 3,
@@ -11927,13 +14676,13 @@
   },
   {
     "energyAmount": 0,
-    "id": "power-elixir",
+    "id": "might-elixir",
     "internalId": "Elixir_attack_02",
     "materials": [
       {
-        "count": 3,
-        "id": "power-lotus-s",
-        "internalId": "Lotus_attack_01"
+        "count": 6,
+        "id": "power-lotus-l",
+        "internalId": "Lotus_attack_02"
       },
       {
         "count": 3,
@@ -11962,9 +14711,9 @@
     "internalId": "Elixir_workspeed_02",
     "materials": [
       {
-        "count": 3,
-        "id": "speed-lotus-s",
-        "internalId": "Lotus_workspeed_01"
+        "count": 6,
+        "id": "speed-lotus-l",
+        "internalId": "Lotus_workspeed_02"
       },
       {
         "count": 3,
@@ -11989,13 +14738,13 @@
   },
   {
     "energyAmount": 0,
-    "id": "carrying-elixir",
+    "id": "burden-elixir",
     "internalId": "Elixir_weight_02",
     "materials": [
       {
-        "count": 3,
-        "id": "carrying-lotus-s",
-        "internalId": "Lotus_weight_01"
+        "count": 6,
+        "id": "carrying-lotus-l",
+        "internalId": "Lotus_weight_02"
       },
       {
         "count": 3,
@@ -12068,6 +14817,38 @@
   },
   {
     "energyAmount": 0,
+    "id": "blazamut-ryu-slab",
+    "internalId": "PalSummon_KingBahamut_Dragon",
+    "materials": [
+      {
+        "count": 4,
+        "id": "blazamut-ryu-slab-fragment",
+        "internalId": "PalSummon_KingBahamut_Dragon_Parts"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "PalSummon_KingBahamut_Dragon_Parts",
+    "workAmount": 100000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "blazamut-ryu-ultra-slab",
+    "internalId": "PalSummon_KingBahamut_Dragon_2",
+    "materials": [
+      {
+        "count": 4,
+        "id": "blazamut-ryu-ultra-slab-fragment",
+        "internalId": "PalSummon_KingBahamut_Dragon_Parts_2"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "PalSummon_KingBahamut_Dragon_Parts_2",
+    "workAmount": 500000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
     "id": "pal-upgrade-stone2-1",
     "internalId": "PalUpgradeStone2_1",
     "materials": [
@@ -12123,6 +14904,740 @@
         "count": 2,
         "id": "medium-pal-soul",
         "internalId": "PalUpgradeStone2"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 1000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "witch-s-crown-ultra",
+    "internalId": "HeadEquip001_purple",
+    "materials": [
+      {
+        "count": 1,
+        "id": "ingot",
+        "internalId": "CopperIngot"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 15000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "horns-of-supremacy",
+    "internalId": "HeadEquip041",
+    "materials": [
+      {
+        "count": 1,
+        "id": "ingot",
+        "internalId": "CopperIngot"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 15000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "zoe-hat",
+    "internalId": "GYM_Head_Grass",
+    "materials": [
+      {
+        "count": 1,
+        "id": "cloth",
+        "internalId": "Cloth"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 15000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "axel-hat",
+    "internalId": "GYM_Head_Electric",
+    "materials": [
+      {
+        "count": 1,
+        "id": "cloth",
+        "internalId": "Cloth"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 15000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "lily-hat",
+    "internalId": "GYM_Head_Forest",
+    "materials": [
+      {
+        "count": 1,
+        "id": "cloth",
+        "internalId": "Cloth"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 15000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "victor-hat",
+    "internalId": "GYM_Head_Snow",
+    "materials": [
+      {
+        "count": 1,
+        "id": "cloth",
+        "internalId": "Cloth"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 15000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "marcus-hat",
+    "internalId": "GYM_Head_Desert",
+    "materials": [
+      {
+        "count": 1,
+        "id": "cloth",
+        "internalId": "Cloth"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 15000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "saya-hat",
+    "internalId": "GYM_Head_Sakurajima",
+    "materials": [
+      {
+        "count": 1,
+        "id": "cloth",
+        "internalId": "Cloth"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 15000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "yakumo-saddle",
+    "internalId": "SkillUnlock_GuardianDog",
+    "materials": [
+      {
+        "count": 30,
+        "id": "leather",
+        "internalId": "Leather"
+      },
+      {
+        "count": 50,
+        "id": "fiber",
+        "internalId": "Fiber"
+      },
+      {
+        "count": 30,
+        "id": "ingot",
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 40,
+        "id": "paldium-fragment",
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 40000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "dazemu-saddle",
+    "internalId": "SkillUnlock_FeatherOstrich",
+    "materials": [
+      {
+        "count": 20,
+        "id": "leather",
+        "internalId": "Leather"
+      },
+      {
+        "count": 30,
+        "id": "fiber",
+        "internalId": "Fiber"
+      },
+      {
+        "count": 15,
+        "id": "ingot",
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 20,
+        "id": "paldium-fragment",
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 15000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "chillet-ignis-saddle",
+    "internalId": "SkillUnlock_WeaselDragon_Fire",
+    "materials": [
+      {
+        "count": 20,
+        "id": "leather",
+        "internalId": "Leather"
+      },
+      {
+        "count": 30,
+        "id": "fiber",
+        "internalId": "Fiber"
+      },
+      {
+        "count": 10,
+        "id": "cloth",
+        "internalId": "Cloth"
+      },
+      {
+        "count": 10,
+        "id": "flame-organ",
+        "internalId": "FireOrgan"
+      },
+      {
+        "count": 30,
+        "id": "paldium-fragment",
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 40000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "shroomer-saddle",
+    "internalId": "SkillUnlock_MushroomDragon",
+    "materials": [
+      {
+        "count": 20,
+        "id": "leather",
+        "internalId": "Leather"
+      },
+      {
+        "count": 20,
+        "id": "mushroom",
+        "internalId": "Mushroom"
+      },
+      {
+        "count": 30,
+        "id": "fiber",
+        "internalId": "Fiber"
+      },
+      {
+        "count": 10,
+        "id": "refined-ingot",
+        "internalId": "IronIngot"
+      },
+      {
+        "count": 30,
+        "id": "paldium-fragment",
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 40000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "shroomer-noct-saddle",
+    "internalId": "SkillUnlock_MushroomDragon_Dark",
+    "materials": [
+      {
+        "count": 20,
+        "id": "leather",
+        "internalId": "Leather"
+      },
+      {
+        "count": 20,
+        "id": "mysterious-mushroom",
+        "internalId": "PoisonMushroom"
+      },
+      {
+        "count": 30,
+        "id": "fiber",
+        "internalId": "Fiber"
+      },
+      {
+        "count": 10,
+        "id": "refined-ingot",
+        "internalId": "IronIngot"
+      },
+      {
+        "count": 30,
+        "id": "paldium-fragment",
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 40000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "xenogard-saddle",
+    "internalId": "SkillUnlock_WhiteAlienDragon",
+    "materials": [
+      {
+        "count": 20,
+        "id": "leather",
+        "internalId": "Leather"
+      },
+      {
+        "count": 30,
+        "id": "meteorite-fragment",
+        "internalId": "MeteorDrop"
+      },
+      {
+        "count": 50,
+        "id": "paldium-fragment",
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 100000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "helzephyr-lux-saddle",
+    "internalId": "SkillUnlock_HadesBird_Electric",
+    "materials": [
+      {
+        "count": 30,
+        "id": "leather",
+        "internalId": "Leather"
+      },
+      {
+        "count": 10,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 30,
+        "id": "electric-organ",
+        "internalId": "ElectricOrgan"
+      },
+      {
+        "count": 60,
+        "id": "paldium-fragment",
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 100000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "selyne-saddle",
+    "internalId": "SkillUnlock_MoonQueen",
+    "materials": [
+      {
+        "count": 20,
+        "id": "leather",
+        "internalId": "Leather"
+      },
+      {
+        "count": 30,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 10,
+        "id": "meteorite-fragment",
+        "internalId": "MeteorDrop"
+      },
+      {
+        "count": 60,
+        "id": "paldium-fragment",
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 100000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "quivern-botan-saddle",
+    "internalId": "SkillUnlock_SkyDragon_Grass",
+    "materials": [
+      {
+        "count": 30,
+        "id": "leather",
+        "internalId": "Leather"
+      },
+      {
+        "count": 30,
+        "id": "ingot",
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 20,
+        "id": "cloth",
+        "internalId": "Cloth"
+      },
+      {
+        "count": 40,
+        "id": "paldium-fragment",
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 40000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "blazamut-ryu-saddle",
+    "internalId": "SkillUnlock_KingBahamut_Dragon",
+    "materials": [
+      {
+        "count": 30,
+        "id": "leather",
+        "internalId": "Leather"
+      },
+      {
+        "count": 30,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 50,
+        "id": "flame-organ",
+        "internalId": "FireOrgan"
+      },
+      {
+        "count": 60,
+        "id": "paldium-fragment",
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 100000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "lockpicking-tool-v1",
+    "internalId": "Unlock_Picking_Tier1",
+    "materials": [
+      {
+        "count": 10,
+        "id": "ingot",
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 10,
+        "id": "paldium-fragment",
+        "internalId": "Pal_crystal_S"
+      },
+      {
+        "count": 5,
+        "id": "nail",
+        "internalId": "MachineParts"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 10000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "lockpicking-tool-v2",
+    "internalId": "Unlock_Picking_Tier2",
+    "materials": [
+      {
+        "count": 20,
+        "id": "ingot",
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 20,
+        "id": "paldium-fragment",
+        "internalId": "Pal_crystal_S"
+      },
+      {
+        "count": 10,
+        "id": "nail",
+        "internalId": "MachineParts"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 30000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "lockpicking-tool-v3",
+    "internalId": "Unlock_Picking_Tier3",
+    "materials": [
+      {
+        "count": 30,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 30,
+        "id": "paldium-fragment",
+        "internalId": "Pal_crystal_S"
+      },
+      {
+        "count": 20,
+        "id": "nail",
+        "internalId": "MachineParts"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 100000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "cry-stal-pal-sphere",
+    "internalId": "CryStal_PalSphere",
+    "materials": [
+      {
+        "count": 1,
+        "id": "pal-sphere",
+        "internalId": "PalSphere"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 1000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "cry-stal-pal-sphere-mega",
+    "internalId": "CryStal_PalSphere_Mega",
+    "materials": [
+      {
+        "count": 1,
+        "id": "mega-sphere",
+        "internalId": "PalSphere_Mega"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 1000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "cry-stal-pal-sphere-giga",
+    "internalId": "CryStal_PalSphere_Giga",
+    "materials": [
+      {
+        "count": 1,
+        "id": "giga-sphere",
+        "internalId": "PalSphere_Giga"
+      }
+    ],
+    "productCount": 2,
+    "unlockItemId": "None",
+    "workAmount": 1000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "cry-stal-pal-sphere-tera",
+    "internalId": "CryStal_PalSphere_Tera",
+    "materials": [
+      {
+        "count": 1,
+        "id": "hyper-sphere",
+        "internalId": "PalSphere_Tera"
+      }
+    ],
+    "productCount": 3,
+    "unlockItemId": "None",
+    "workAmount": 1000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "cry-stal-pal-sphere-master",
+    "internalId": "CryStal_PalSphere_Master",
+    "materials": [
+      {
+        "count": 1,
+        "id": "ultra-sphere",
+        "internalId": "PalSphere_Master"
+      }
+    ],
+    "productCount": 5,
+    "unlockItemId": "None",
+    "workAmount": 1000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "cry-stal-pal-sphere-legend",
+    "internalId": "CryStal_PalSphere_Legend",
+    "materials": [
+      {
+        "count": 1,
+        "id": "legendary-sphere",
+        "internalId": "PalSphere_Legend"
+      }
+    ],
+    "productCount": 10,
+    "unlockItemId": "None",
+    "workAmount": 1000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "cry-stal-pal-sphere-ultimate",
+    "internalId": "CryStal_PalSphere_Ultimate",
+    "materials": [
+      {
+        "count": 1,
+        "id": "ultimate-sphere",
+        "internalId": "PalSphere_Ultimate"
+      }
+    ],
+    "productCount": 20,
+    "unlockItemId": "None",
+    "workAmount": 1000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "cattiva-hat",
+    "internalId": "HeadEquip033",
+    "materials": [
+      {
+        "count": 1,
+        "id": "cloth",
+        "internalId": "Cloth"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 1000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "lamball-helm",
+    "internalId": "HeadEquip029",
+    "materials": [
+      {
+        "count": 1,
+        "id": "cloth",
+        "internalId": "Cloth"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 1000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "cawgnito-hat",
+    "internalId": "HeadEquip027",
+    "materials": [
+      {
+        "count": 1,
+        "id": "cloth",
+        "internalId": "Cloth"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 1000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "dumud-helm",
+    "internalId": "HeadEquip030",
+    "materials": [
+      {
+        "count": 1,
+        "id": "cloth",
+        "internalId": "Cloth"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 1000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "sibelyx-hat",
+    "internalId": "HeadEquip024",
+    "materials": [
+      {
+        "count": 1,
+        "id": "cloth",
+        "internalId": "Cloth"
+      }
+    ],
+    "productCount": 1,
+    "unlockItemId": "None",
+    "workAmount": 1000,
+    "workableAttribute": 1
+  },
+  {
+    "energyAmount": 0,
+    "id": "lyleen-floral-cap",
+    "internalId": "HeadEquip023",
+    "materials": [
+      {
+        "count": 1,
+        "id": "cloth",
+        "internalId": "Cloth"
       }
     ],
     "productCount": 1,

@@ -377,6 +377,31 @@
   {
     "buildWork": 0,
     "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "Column for structural support. Made from wood, it breaks easily.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 500,
+    "id": "wooden-pillar",
+    "imageName": "Wooden_pillar",
+    "internalId": "Wooden_pillar",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 2,
+        "id": "wood",
+        "internalId": "Wood"
+      }
+    ],
+    "name": "Wooden Pillar",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Found_Basic"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
     "defense": 5,
     "description": "Massive defensive wall to prevent enemy intrusions. Made from wood, it breaks easily.",
     "deteriorationDamage": 0.05,
@@ -528,31 +553,6 @@
     "buildWork": 0,
     "consumeEnergySpeed": 0,
     "defense": 3,
-    "description": "Slanted roof built on top of walls to keep out the rain and wind. Made from stone, it is reasonably sturdy.",
-    "deteriorationDamage": 0.02,
-    "extinguishBurnWorkAmount": 0,
-    "hp": 1000,
-    "id": "stone-slanted-roof",
-    "imageName": "Stone_SlantedRoof",
-    "internalId": "Stone_SlantedRoof",
-    "materialSubType": "Stone",
-    "materialType": "Stone",
-    "materials": [
-      {
-        "count": 3,
-        "id": "stone",
-        "internalId": "Stone"
-      }
-    ],
-    "name": "Stone Slanted Roof",
-    "requiredEnergyType": null,
-    "typeA": "Foundation",
-    "typeB": "Found_Basic"
-  },
-  {
-    "buildWork": 0,
-    "consumeEnergySpeed": 0,
-    "defense": 3,
     "description": "A roof built on top of walls to keep out the rain and wind. Made from stone, it is reasonably sturdy.",
     "deteriorationDamage": 0.02,
     "extinguishBurnWorkAmount": 0,
@@ -570,6 +570,31 @@
       }
     ],
     "name": "Stone Roof",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Found_Basic"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 3,
+    "description": "Slanted roof built on top of walls to keep out the rain and wind. Made from stone, it is reasonably sturdy.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 1000,
+    "id": "stone-slanted-roof",
+    "imageName": "Stone_SlantedRoof",
+    "internalId": "Stone_SlantedRoof",
+    "materialSubType": "Stone",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 3,
+        "id": "stone",
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Stone Slanted Roof",
     "requiredEnergyType": null,
     "typeA": "Foundation",
     "typeB": "Found_Basic"
@@ -620,6 +645,31 @@
       }
     ],
     "name": "Stone Door",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Found_Basic"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 3,
+    "description": "Column for structural support. Made from stone, it is reasonably sturdy.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 1000,
+    "id": "stone-pillar",
+    "imageName": "Stone_pillar",
+    "internalId": "Stone_pillar",
+    "materialSubType": "Stone",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 3,
+        "id": "stone",
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Stone Pillar",
     "requiredEnergyType": null,
     "typeA": "Foundation",
     "typeB": "Found_Basic"
@@ -927,6 +977,36 @@
   {
     "buildWork": 0,
     "consumeEnergySpeed": 0,
+    "defense": 4,
+    "description": "Column for structural support. Made from metal, it is extremely durable.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "metal-pillar",
+    "imageName": "Metal_pillar",
+    "internalId": "Metal_pillars",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 1,
+        "id": "ingot",
+        "internalId": "CopperIngot"
+      },
+      {
+        "count": 2,
+        "id": "stone",
+        "internalId": "Stone"
+      }
+    ],
+    "name": "Metal Pillar",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Found_Basic"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
     "defense": 5,
     "description": "Massive defensive wall to prevent enemy intrusions. Made from metal, it is extremely durable.",
     "deteriorationDamage": 0.125,
@@ -1060,41 +1140,6 @@
     "typeB": "Infra_Defense"
   },
   {
-    "buildWork": 100000,
-    "consumeEnergySpeed": 100,
-    "defense": 1,
-    "description": "A defensive installation for protecting a base from enemies. It fires high-powered ammunition. Deploy a Pal to it to prepare for battle.",
-    "deteriorationDamage": 0,
-    "extinguishBurnWorkAmount": 0,
-    "hp": 10000,
-    "id": "mounted-gatling-gun",
-    "imageName": "DefenseGatlingGun",
-    "internalId": "DefenseGatlingGun",
-    "materialSubType": "None",
-    "materialType": "None",
-    "materials": [
-      {
-        "count": 30,
-        "id": "refined-ingot",
-        "internalId": "IronIngot"
-      },
-      {
-        "count": 20,
-        "id": "nail",
-        "internalId": "MachineParts"
-      },
-      {
-        "count": 30,
-        "id": "cement",
-        "internalId": "Cement"
-      }
-    ],
-    "name": "Mounted Gatling Gun",
-    "requiredEnergyType": "Electric",
-    "typeA": "Defense",
-    "typeB": "Infra_Defense"
-  },
-  {
     "buildWork": 150000,
     "consumeEnergySpeed": 1000,
     "defense": 3,
@@ -1168,7 +1213,7 @@
     "buildWork": 50000,
     "consumeEnergySpeed": 0,
     "defense": 4,
-    "description": "A Lightning Pal-powered electric generator. Electric equipment won't run without this.",
+    "description": "A power generator fueled by Electric Pals. Electric equipment won't run without this.",
     "deteriorationDamage": 0.1,
     "extinguishBurnWorkAmount": 0,
     "hp": 10000,
@@ -1320,36 +1365,6 @@
     "typeB": "Infra_Storage"
   },
   {
-    "buildWork": 1000,
-    "consumeEnergySpeed": 0,
-    "defense": 1,
-    "description": "en Text",
-    "deteriorationDamage": 0,
-    "extinguishBurnWorkAmount": 0,
-    "hp": 1000,
-    "id": "human-bed",
-    "imageName": "PlayerBed",
-    "internalId": "PlayerBed",
-    "materialSubType": "None",
-    "materialType": "None",
-    "materials": [
-      {
-        "count": 10,
-        "id": "wood",
-        "internalId": "Wood"
-      },
-      {
-        "count": 1,
-        "id": "wool",
-        "internalId": "Wool"
-      }
-    ],
-    "name": "Human Bed",
-    "requiredEnergyType": null,
-    "typeA": "Infrastructure",
-    "typeB": "Infra_Medical"
-  },
-  {
     "buildWork": 2000,
     "consumeEnergySpeed": 0,
     "defense": 2,
@@ -1423,56 +1438,6 @@
     "requiredEnergyType": null,
     "typeA": "Infrastructure",
     "typeB": "Infra_Medical"
-  },
-  {
-    "buildWork": 1000,
-    "consumeEnergySpeed": 0,
-    "defense": 3,
-    "description": "en Text",
-    "deteriorationDamage": 0,
-    "extinguishBurnWorkAmount": 0,
-    "hp": 10000,
-    "id": "shipping-box",
-    "imageName": "ShippingItemBox",
-    "internalId": "ShippingItemBox",
-    "materialSubType": "None",
-    "materialType": "None",
-    "materials": [
-      {
-        "count": 1,
-        "id": "wood",
-        "internalId": "Wood"
-      }
-    ],
-    "name": "Shipping Box",
-    "requiredEnergyType": null,
-    "typeA": "Infrastructure",
-    "typeB": "Infra_Trade"
-  },
-  {
-    "buildWork": 1000,
-    "consumeEnergySpeed": 0,
-    "defense": 3,
-    "description": "en Text",
-    "deteriorationDamage": 0,
-    "extinguishBurnWorkAmount": 0,
-    "hp": 10000,
-    "id": "weapon-chest",
-    "imageName": "WeaponChest",
-    "internalId": "WeaponChest",
-    "materialSubType": "None",
-    "materialType": "None",
-    "materials": [
-      {
-        "count": 1,
-        "id": "wood",
-        "internalId": "Wood"
-      }
-    ],
-    "name": "Weapon Chest",
-    "requiredEnergyType": null,
-    "typeA": "Infrastructure",
-    "typeB": "Infra_Storage"
   },
   {
     "buildWork": 5000,
@@ -2321,7 +2286,7 @@
   },
   {
     "buildWork": 120000,
-    "consumeEnergySpeed": 300,
+    "consumeEnergySpeed": 400,
     "defense": 4,
     "description": "An Assembly Line for producing spheres used for capturing Pals. Through clever management, production speeds have greatly increased. Requires Pals that can work with their hands.",
     "deteriorationDamage": 0.08,
@@ -2355,91 +2320,6 @@
       }
     ],
     "name": "Sphere Assembly Line II",
-    "requiredEnergyType": "Electric",
-    "typeA": "Pal",
-    "typeB": "Pal_Capture"
-  },
-  {
-    "buildWork": 1000,
-    "consumeEnergySpeed": 3,
-    "defense": 3,
-    "description": "en Text",
-    "deteriorationDamage": 0,
-    "extinguishBurnWorkAmount": 0,
-    "hp": 10000,
-    "id": "superior-sphere-factory",
-    "imageName": "SphereFactory_White_01",
-    "internalId": "SphereFactory_White_01",
-    "materialSubType": "None",
-    "materialType": "None",
-    "materials": [
-      {
-        "count": 1,
-        "id": "ingot",
-        "internalId": "CopperIngot"
-      }
-    ],
-    "name": "Superior Sphere Factory Ⅰ",
-    "requiredEnergyType": "Electric",
-    "typeA": "Pal",
-    "typeB": "Pal_Capture"
-  },
-  {
-    "buildWork": 1000,
-    "consumeEnergySpeed": 6,
-    "defense": 3,
-    "description": "en Text",
-    "deteriorationDamage": 0,
-    "extinguishBurnWorkAmount": 0,
-    "hp": 10000,
-    "id": "superior-sphere-factory",
-    "imageName": "SphereFactory_White_02",
-    "internalId": "SphereFactory_White_02",
-    "materialSubType": "None",
-    "materialType": "None",
-    "materials": [
-      {
-        "count": 1,
-        "id": "refined-ingot",
-        "internalId": "IronIngot"
-      },
-      {
-        "count": 5,
-        "id": "ingot",
-        "internalId": "CopperIngot"
-      }
-    ],
-    "name": "Superior Sphere Factory Ⅱ",
-    "requiredEnergyType": "Electric",
-    "typeA": "Pal",
-    "typeB": "Pal_Capture"
-  },
-  {
-    "buildWork": 1000,
-    "consumeEnergySpeed": 8,
-    "defense": 3,
-    "description": "en Text",
-    "deteriorationDamage": 0,
-    "extinguishBurnWorkAmount": 0,
-    "hp": 10000,
-    "id": "superior-sphere-factory",
-    "imageName": "SphereFactory_White_03",
-    "internalId": "SphereFactory_White_03",
-    "materialSubType": "None",
-    "materialType": "None",
-    "materials": [
-      {
-        "count": 1,
-        "id": "pal-metal-ingot",
-        "internalId": "StealIngot"
-      },
-      {
-        "count": 5,
-        "id": "refined-ingot",
-        "internalId": "IronIngot"
-      }
-    ],
-    "name": "Superior Sphere Factory Ⅲ",
     "requiredEnergyType": "Electric",
     "typeA": "Pal",
     "typeB": "Pal_Capture"
@@ -2676,7 +2556,7 @@
   },
   {
     "buildWork": 100000,
-    "consumeEnergySpeed": 300,
+    "consumeEnergySpeed": 500,
     "defense": 4,
     "description": "Allows refinement of Pal Metal Ingot. It requires electricity to use, but is quicker to process. Requires a Fire Pal to light a flame.",
     "deteriorationDamage": 0.08,
@@ -2891,7 +2771,7 @@
   },
   {
     "buildWork": 50000,
-    "consumeEnergySpeed": 300,
+    "consumeEnergySpeed": 400,
     "defense": 4,
     "description": "A High Quality Workbench for producing items and gear. Through clever management, production speeds have greatly increased. Requires Pals that can work with their hands.",
     "deteriorationDamage": 0.06,
@@ -3176,7 +3056,7 @@
   },
   {
     "buildWork": 120000,
-    "consumeEnergySpeed": 300,
+    "consumeEnergySpeed": 400,
     "defense": 4,
     "description": "An Assembly Line for producing weapons and ammunition. Cleverly dividing up work has allowed for production of top-class weapons. Requires Pals that can work with their hands.",
     "deteriorationDamage": 0.08,
@@ -3208,66 +3088,6 @@
     "requiredEnergyType": "Electric",
     "typeA": "Product",
     "typeB": "Prod_Craft"
-  },
-  {
-    "buildWork": 1000,
-    "consumeEnergySpeed": 0,
-    "defense": 1,
-    "description": "en Text",
-    "deteriorationDamage": 0,
-    "extinguishBurnWorkAmount": 0,
-    "hp": 10000,
-    "id": "weapon-factory",
-    "imageName": "WeaponFactry",
-    "internalId": "WeaponFactry",
-    "materialSubType": "None",
-    "materialType": "None",
-    "materials": [
-      {
-        "count": 10,
-        "id": "wood",
-        "internalId": "Wood"
-      },
-      {
-        "count": 10,
-        "id": "stone",
-        "internalId": "Stone"
-      }
-    ],
-    "name": "Weapon Factory",
-    "requiredEnergyType": null,
-    "typeA": "Product",
-    "typeB": "Prod_Craft"
-  },
-  {
-    "buildWork": 1000,
-    "consumeEnergySpeed": 0,
-    "defense": 1,
-    "description": "en Text",
-    "deteriorationDamage": 0,
-    "extinguishBurnWorkAmount": 0,
-    "hp": 10000,
-    "id": "water-well",
-    "imageName": "Well",
-    "internalId": "Well",
-    "materialSubType": "None",
-    "materialType": "None",
-    "materials": [
-      {
-        "count": 10,
-        "id": "wood",
-        "internalId": "Wood"
-      },
-      {
-        "count": 20,
-        "id": "stone",
-        "internalId": "Stone"
-      }
-    ],
-    "name": "Water Well",
-    "requiredEnergyType": null,
-    "typeA": "Product",
-    "typeB": "Prod_Resource"
   },
   {
     "buildWork": 500,
@@ -3525,36 +3345,6 @@
       }
     ],
     "name": "Large Toolbox",
-    "requiredEnergyType": null,
-    "typeA": "Other",
-    "typeB": "Infra_Environment"
-  },
-  {
-    "buildWork": 12000,
-    "consumeEnergySpeed": 0,
-    "defense": 1,
-    "description": "Toolbox V2",
-    "deteriorationDamage": 0,
-    "extinguishBurnWorkAmount": 0,
-    "hp": 500,
-    "id": "tool-box",
-    "imageName": "ToolBoxV2",
-    "internalId": "ToolBoxV2",
-    "materialSubType": "None",
-    "materialType": "None",
-    "materials": [
-      {
-        "count": 100,
-        "id": "wood",
-        "internalId": "Wood"
-      },
-      {
-        "count": 10,
-        "id": "stone",
-        "internalId": "Stone"
-      }
-    ],
-    "name": "ToolBox",
     "requiredEnergyType": null,
     "typeA": "Other",
     "typeB": "Infra_Environment"
@@ -4010,6 +3800,31 @@
       }
     ],
     "name": "Sign",
+    "requiredEnergyType": null,
+    "typeA": "Other",
+    "typeB": "Other"
+  },
+  {
+    "buildWork": 1000,
+    "consumeEnergySpeed": 0,
+    "defense": 1,
+    "description": "A signboard to write on. Can be hung on walls.",
+    "deteriorationDamage": 0.04,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 1000,
+    "id": "wall-mounted-sign",
+    "imageName": "WallSignboard",
+    "internalId": "WallSignboard",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 10,
+        "id": "wood",
+        "internalId": "Wood"
+      }
+    ],
+    "name": "Wall-Mounted Sign",
     "requiredEnergyType": null,
     "typeA": "Other",
     "typeB": "Other"
@@ -7593,5 +7408,545 @@
     "requiredEnergyType": null,
     "typeA": "Other",
     "typeB": "Infra_Environment"
+  },
+  {
+    "buildWork": 50000,
+    "consumeEnergySpeed": 0,
+    "defense": 2,
+    "description": "A feeding box that can be kept cold. Assign an Ice Pal to it and the food inside will be less likely to spoil.",
+    "deteriorationDamage": 0.08,
+    "extinguishBurnWorkAmount": 1000,
+    "hp": 2000,
+    "id": "cold-food-box",
+    "imageName": "CoolerPalFoodBox",
+    "internalId": "CoolerPalFoodBox",
+    "materialSubType": "Wood",
+    "materialType": "Wood",
+    "materials": [
+      {
+        "count": 20,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 20,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 50,
+        "id": "ice-organ",
+        "internalId": "IceOrgan"
+      }
+    ],
+    "name": "Cold Food Box",
+    "requiredEnergyType": null,
+    "typeA": "Food",
+    "typeB": "Food_Basic"
+  },
+  {
+    "buildWork": 120000,
+    "consumeEnergySpeed": 300,
+    "defense": 3,
+    "description": "A dream-like facility that automatically butchers any Pal that is placed inside.",
+    "deteriorationDamage": 0.12,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 4000,
+    "id": "pal-disassembly-conveyor",
+    "imageName": "DismantlingConveyor",
+    "internalId": "DismantlingConveyor",
+    "materialSubType": "Stone",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 100,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 30,
+        "id": "circuit-board",
+        "internalId": "MachineParts2"
+      },
+      {
+        "count": 30,
+        "id": "nail",
+        "internalId": "MachineParts"
+      },
+      {
+        "count": 30,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      }
+    ],
+    "name": "Pal Disassembly Conveyor",
+    "requiredEnergyType": "Electric",
+    "typeA": "Pal",
+    "typeB": "Pal_Modify"
+  },
+  {
+    "buildWork": 500000,
+    "consumeEnergySpeed": 0,
+    "defense": 4,
+    "description": "A power generator fueled by Electric Pals. Larger and with improved power generation efficiency.",
+    "deteriorationDamage": 1,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 100000,
+    "id": "large-power-generator",
+    "imageName": "ElectricGenerator_Large",
+    "internalId": "ElectricGenerator_Large",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 200,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 200,
+        "id": "electric-organ",
+        "internalId": "ElectricOrgan"
+      }
+    ],
+    "name": "Large Power Generator",
+    "requiredEnergyType": null,
+    "typeA": "Infrastructure",
+    "typeB": "Infra_GeneratePower"
+  },
+  {
+    "buildWork": 500000,
+    "consumeEnergySpeed": 6000,
+    "defense": 4,
+    "description": "Equipment required to extract Crude Oil from oil fields. Requires a power supply to operate.",
+    "deteriorationDamage": 1,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 100000,
+    "id": "crude-oil-extractor",
+    "imageName": "OilPump",
+    "internalId": "OilPump",
+    "materialSubType": "None",
+    "materialType": "None",
+    "materials": [
+      {
+        "count": 250,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 50,
+        "id": "circuit-board",
+        "internalId": "MachineParts2"
+      }
+    ],
+    "name": "Crude Oil Extractor",
+    "requiredEnergyType": "Electric",
+    "typeA": "Product",
+    "typeB": "Prod_Resource"
+  },
+  {
+    "buildWork": 30000,
+    "consumeEnergySpeed": 0,
+    "defense": 4,
+    "description": "Facility for producing Coal. Digging Coal is grueling physical work. Leave it to a Pal that is good at mining.",
+    "deteriorationDamage": 0,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 10000,
+    "id": "coal-mine",
+    "imageName": "CoalPit",
+    "internalId": "CoalPit",
+    "materialSubType": "Stone",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 70,
+        "id": "stone",
+        "internalId": "Stone"
+      },
+      {
+        "count": 100,
+        "id": "coal",
+        "internalId": "Coal"
+      },
+      {
+        "count": 30,
+        "id": "paldium-fragment",
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "name": "Coal Mine",
+    "requiredEnergyType": null,
+    "typeA": "Product",
+    "typeB": "Prod_Resource"
+  },
+  {
+    "buildWork": 30000,
+    "consumeEnergySpeed": 0,
+    "defense": 4,
+    "description": "Facility for producing Sulfur. Digging Sulfur is grueling physical work. Leave it to a Pal that is good at mining.",
+    "deteriorationDamage": 0,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 10000,
+    "id": "sulfur-mine",
+    "imageName": "SulfurPit",
+    "internalId": "SulfurPit",
+    "materialSubType": "Stone",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 70,
+        "id": "stone",
+        "internalId": "Stone"
+      },
+      {
+        "count": 100,
+        "id": "sulfur",
+        "internalId": "Sulfur"
+      },
+      {
+        "count": 30,
+        "id": "paldium-fragment",
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "name": "Sulfur Mine",
+    "requiredEnergyType": null,
+    "typeA": "Product",
+    "typeB": "Prod_Resource"
+  },
+  {
+    "buildWork": 100000,
+    "consumeEnergySpeed": 300,
+    "defense": 3,
+    "description": "Facility that crushes Ore and converts it into other materials. Requires a power supply and a Pal with Cooling suitability, but it's very efficient.",
+    "deteriorationDamage": 0.12,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 4000,
+    "id": "refrigerated-crusher",
+    "imageName": "IceCrusher",
+    "internalId": "IceCrusher",
+    "materialSubType": "Stone",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 50,
+        "id": "pal-metal-ingot",
+        "internalId": "StealIngot"
+      },
+      {
+        "count": 30,
+        "id": "plasteel",
+        "internalId": "Plastic"
+      },
+      {
+        "count": 50,
+        "id": "ice-organ",
+        "internalId": "IceOrgan"
+      }
+    ],
+    "name": "Refrigerated Crusher",
+    "requiredEnergyType": "Electric",
+    "typeA": "Product",
+    "typeB": "Prod_Craft"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 4,
+    "description": "A foundation for building walls or facilities on. Made of industrial-strength glass, it's quite sturdy.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "glass-foundation",
+    "imageName": "Glass_foundation",
+    "internalId": "Glass_foundation",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 1,
+        "id": "stone",
+        "internalId": "Stone"
+      },
+      {
+        "count": 2,
+        "id": "paldium-fragment",
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "name": "Glass Foundation",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Found_Basic"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 4,
+    "description": "Walls built on foundations for keeping out intruders. Made of industrial-strength glass, it's quite sturdy.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "glass-wall",
+    "imageName": "Glass_wall",
+    "internalId": "Glass_wall",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 1,
+        "id": "stone",
+        "internalId": "Stone"
+      },
+      {
+        "count": 2,
+        "id": "paldium-fragment",
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "name": "Glass Wall",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Found_Basic"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 4,
+    "description": "Wall with windows, built on foundations for keeping out intruders. Made of industrial-strength glass, it's quite sturdy.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "glass-wall-and-window",
+    "imageName": "Glass_WindowWall",
+    "internalId": "Glass_WindowWall",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 1,
+        "id": "stone",
+        "internalId": "Stone"
+      },
+      {
+        "count": 2,
+        "id": "paldium-fragment",
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "name": "Glass Wall and Window",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Found_Basic"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 4,
+    "description": "Triangular wall built on a foundation for keeping out intruders. Made of industrial-strength glass, it's quite sturdy.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "glass-triangular-wall",
+    "imageName": "Glass_TriangleWall",
+    "internalId": "Glass_TriangleWall",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 1,
+        "id": "stone",
+        "internalId": "Stone"
+      },
+      {
+        "count": 2,
+        "id": "paldium-fragment",
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "name": "Glass Triangular Wall",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Found_Basic"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 4,
+    "description": "A roof built on top of walls to keep out the rain and wind. Made of industrial-strength glass, it's quite sturdy.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "glass-roof",
+    "imageName": "Glass_roof",
+    "internalId": "Glass_roof",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 1,
+        "id": "stone",
+        "internalId": "Stone"
+      },
+      {
+        "count": 2,
+        "id": "paldium-fragment",
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "name": "Glass Roof",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Found_Basic"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 4,
+    "description": "Slanted roof built on top of walls to keep out the rain and wind. Made of industrial-strength glass, it's quite sturdy.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "glass-slanted-roof",
+    "imageName": "Glass_SlantedRoof",
+    "internalId": "Glass_SlantedRoof",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 1,
+        "id": "stone",
+        "internalId": "Stone"
+      },
+      {
+        "count": 2,
+        "id": "paldium-fragment",
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "name": "Glass Slanted Roof",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Found_Basic"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 4,
+    "description": "Stairs placed below a foundation or roof for climbing up. Made of industrial-strength glass, it's quite sturdy.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "glass-stairs",
+    "imageName": "Glass_stair",
+    "internalId": "Glass_stair",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 1,
+        "id": "stone",
+        "internalId": "Stone"
+      },
+      {
+        "count": 2,
+        "id": "paldium-fragment",
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "name": "Glass Stairs",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Found_Basic"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 4,
+    "description": "Door built on a foundation. Becomes an entrance. Made of industrial-strength glass, it's quite sturdy.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "glass-wall-and-door",
+    "imageName": "Glass_DoorWall",
+    "internalId": "Glass_DoorWall",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 1,
+        "id": "stone",
+        "internalId": "Stone"
+      },
+      {
+        "count": 2,
+        "id": "paldium-fragment",
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "name": "Glass Wall and Door",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Found_Basic"
+  },
+  {
+    "buildWork": 0,
+    "consumeEnergySpeed": 0,
+    "defense": 4,
+    "description": "Column for structural support. Made of industrial-strength glass, it's quite sturdy.",
+    "deteriorationDamage": 0.02,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "glass-pillar",
+    "imageName": "Glass_pillar",
+    "internalId": "Glass_pillars",
+    "materialSubType": "Copper",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 1,
+        "id": "stone",
+        "internalId": "Stone"
+      },
+      {
+        "count": 2,
+        "id": "paldium-fragment",
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "name": "Glass Pillar",
+    "requiredEnergyType": null,
+    "typeA": "Foundation",
+    "typeB": "Found_Basic"
+  },
+  {
+    "buildWork": 3000,
+    "consumeEnergySpeed": 0,
+    "defense": 1,
+    "description": "Pal Dressing Facility. Give your Pals a new look! Skins obtained inside and outside the game can be applied here!",
+    "deteriorationDamage": 0,
+    "extinguishBurnWorkAmount": 0,
+    "hp": 2000,
+    "id": "pal-dressing-facility",
+    "imageName": "SkinChange",
+    "internalId": "SkinChange",
+    "materialSubType": "Stone",
+    "materialType": "Stone",
+    "materials": [
+      {
+        "count": 10,
+        "id": "stone",
+        "internalId": "Stone"
+      },
+      {
+        "count": 10,
+        "id": "paldium-fragment",
+        "internalId": "Pal_crystal_S"
+      }
+    ],
+    "name": "Pal Dressing Facility",
+    "requiredEnergyType": null,
+    "typeA": "Pal",
+    "typeB": "Pal_Modify"
   }
 ]

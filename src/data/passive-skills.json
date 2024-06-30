@@ -5,7 +5,7 @@
       {
         "target": "Self",
         "type": "MaxHP",
-        "value": 5
+        "value": 10
       }
     ],
     "internalId": "HP_ACC_up1",
@@ -18,7 +18,7 @@
       {
         "target": "Self",
         "type": "MaxHP",
-        "value": 10
+        "value": 20
       }
     ],
     "internalId": "HP_ACC_up2",
@@ -31,7 +31,7 @@
       {
         "target": "Self",
         "type": "MaxHP",
-        "value": 15
+        "value": 30
       }
     ],
     "internalId": "HP_ACC_up3",
@@ -555,21 +555,39 @@
     "rank": 3
   },
   {
-    "description": "20% increase to Dark attack damage. {EffectValue1}% increase to Ice attack damage.",
+    "description": "30% increase to Dark attack damage. {EffectValue1}% increase to Ice attack damage.",
     "effects": [
       {
         "target": "Self",
         "type": "ElementBoost_Dark",
-        "value": 20
+        "value": 30
       },
       {
         "target": "Self",
         "type": "ElementBoost_Ice",
-        "value": 20
+        "value": 30
       }
     ],
     "internalId": "Witch",
     "name": "Siren of the Void",
+    "rank": 3
+  },
+  {
+    "description": "30% increase to Fire attack damage. {EffectValue1}% increase to Lightning attack damage.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ElementBoost_Fire",
+        "value": 30
+      },
+      {
+        "target": "Self",
+        "type": "ElementBoost_Electricity",
+        "value": 30
+      }
+    ],
+    "internalId": "EternalFlame",
+    "name": "Eternal Flame",
     "rank": 3
   },
   {
@@ -583,7 +601,7 @@
     ],
     "internalId": "MaxInventoryWeight_up",
     "name": "Max Carrying Capacity Lv. 1",
-    "rank": 3
+    "rank": 1
   },
   {
     "description": null,
@@ -596,7 +614,7 @@
     ],
     "internalId": "MaxInventoryWeight_up2",
     "name": "Max Carrying Capacity Lv. 2",
-    "rank": -1
+    "rank": 1
   },
   {
     "description": null,
@@ -609,7 +627,7 @@
     ],
     "internalId": "MaxInventoryWeight_up3",
     "name": "Max Carrying Capacity Lv. 3",
-    "rank": -1
+    "rank": 3
   },
   {
     "description": null,
@@ -1711,5 +1729,230 @@
     "internalId": "NonKilling",
     "name": "Mercy Hit",
     "rank": -1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "MaxInventoryWeight",
+        "value": 50
+      }
+    ],
+    "internalId": "MaxInventoryWeight_up_Equip_1",
+    "name": "Max Carrying Capacity Lv. 1",
+    "rank": -1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "MaxInventoryWeight",
+        "value": 100
+      }
+    ],
+    "internalId": "MaxInventoryWeight_up_Equip_2",
+    "name": "Max Carrying Capacity Lv. 2",
+    "rank": -1
+  },
+  {
+    "description": null,
+    "effects": [
+      {
+        "target": "Self",
+        "type": "MaxInventoryWeight",
+        "value": 200
+      }
+    ],
+    "internalId": "MaxInventoryWeight_up_Equip_3",
+    "name": "Max Carrying Capacity Lv. 3",
+    "rank": -1
+  },
+  {
+    "description": "Does not sleep and continues to work even at night.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "Nocturnal",
+        "value": 0
+      }
+    ],
+    "internalId": "Nocturnal",
+    "name": "Nocturnal",
+    "rank": 1
+  },
+  {
+    "description": "When assigned to a Breeding Farm, egg production time is reduced by 100%.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "BreedSpeed",
+        "value": 100
+      }
+    ],
+    "internalId": "Test_PalEgg_HatchingSpeed_Up",
+    "name": "Philanthropist",
+    "rank": 3
+  },
+  {
+    "description": "Active skill cooldown reduction 30% Attack +10%",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ActiveSkillCoolTime_Decrease",
+        "value": 30
+      },
+      {
+        "target": "Self",
+        "type": "ShotAttack",
+        "value": 10
+      }
+    ],
+    "internalId": "CoolTimeReduction_Up_1",
+    "name": "Serenity",
+    "rank": 3
+  },
+  {
+    "description": "Active skill cooldown reduction 15%",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ActiveSkillCoolTime_Decrease",
+        "value": 15
+      }
+    ],
+    "internalId": "CoolTimeReduction_Up_2",
+    "name": "Impatient",
+    "rank": 1
+  },
+  {
+    "description": "Active skill cooldown extension -15%",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ActiveSkillCoolTime_Decrease",
+        "value": -15
+      }
+    ],
+    "internalId": "CoolTimeReduction_Down_1",
+    "name": "Easygoing",
+    "rank": -1
+  },
+  {
+    "description": "Max stamina +50% *This effect is only valid for rideable pals.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "PalSP_Increase",
+        "value": 50
+      }
+    ],
+    "internalId": "Stamina_Up_1",
+    "name": "Infinite Stamina",
+    "rank": 3
+  },
+  {
+    "description": "Max stamina +25% *This effect is only valid for rideable pals.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "PalSP_Increase",
+        "value": 25
+      }
+    ],
+    "internalId": "Stamina_Up_2",
+    "name": "Fit as a Fiddle",
+    "rank": 1
+  },
+  {
+    "description": "Max Stamina -25% *This effect is only valid for rideable pals.",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "PalSP_Increase",
+        "value": -25
+      }
+    ],
+    "internalId": "Stamina_Down_1",
+    "name": "Sickly",
+    "rank": -1
+  },
+  {
+    "description": "Sale price +5%",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ShopSellPrice_Money_Increase",
+        "value": 5
+      },
+      {
+        "target": "Self",
+        "type": "ShopBuyPrice_Money_Increase",
+        "value": -5
+      }
+    ],
+    "internalId": "SalePrice_Up_1",
+    "name": "Noble",
+    "rank": 3
+  },
+  {
+    "description": "Sale price +3%",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ShopSellPrice_Money_Increase",
+        "value": 3
+      },
+      {
+        "target": "Self",
+        "type": "ShopBuyPrice_Money_Increase",
+        "value": -3
+      }
+    ],
+    "internalId": "SalePrice_Up_2",
+    "name": "Fine Furs",
+    "rank": 1
+  },
+  {
+    "description": "Sale price -10%",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ShopSellPrice_Money_Increase",
+        "value": -10
+      },
+      {
+        "target": "Self",
+        "type": "ShopBuyPrice_Money_Increase",
+        "value": 10
+      }
+    ],
+    "internalId": "SalePrice_Down_1",
+    "name": "Shabby",
+    "rank": -1
+  },
+  {
+    "description": "Attack +10% Fire damage reduction 15% Lightning damage reduction 15%",
+    "effects": [
+      {
+        "target": "Self",
+        "type": "ShotAttack",
+        "value": 10
+      },
+      {
+        "target": "Self",
+        "type": "ElementResist_Fire",
+        "value": 15
+      },
+      {
+        "target": "Self",
+        "type": "ElementBoost_Electricity",
+        "value": 15
+      }
+    ],
+    "internalId": "Alien",
+    "name": "Otherworldly Cells",
+    "rank": 1
   }
 ]

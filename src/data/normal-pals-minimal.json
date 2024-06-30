@@ -348,6 +348,12 @@
     "zukanIndexSuffix": ""
   },
   {
+    "id": "gorirat-terra",
+    "name": "Gorirat Terra",
+    "zukanIndex": 49,
+    "zukanIndexSuffix": "B"
+  },
+  {
     "id": "beegarde",
     "name": "Beegarde",
     "zukanIndex": 50,
@@ -382,6 +388,12 @@
     "name": "Chillet",
     "zukanIndex": 55,
     "zukanIndexSuffix": ""
+  },
+  {
+    "id": "chillet-ignis",
+    "name": "Chillet Ignis",
+    "zukanIndex": 55,
+    "zukanIndexSuffix": "B"
   },
   {
     "id": "univolt",
@@ -510,6 +522,12 @@
     "zukanIndexSuffix": ""
   },
   {
+    "id": "bushi-noct",
+    "name": "Bushi Noct",
+    "zukanIndex": 72,
+    "zukanIndexSuffix": "B"
+  },
+  {
     "id": "beakon",
     "name": "Beakon",
     "zukanIndex": 73,
@@ -528,10 +546,22 @@
     "zukanIndexSuffix": ""
   },
   {
+    "id": "katress-ignis",
+    "name": "Katress Ignis",
+    "zukanIndex": 75,
+    "zukanIndexSuffix": "B"
+  },
+  {
     "id": "wixen",
     "name": "Wixen",
     "zukanIndex": 76,
     "zukanIndexSuffix": ""
+  },
+  {
+    "id": "wixen-noct",
+    "name": "Wixen Noct",
+    "zukanIndex": 76,
+    "zukanIndexSuffix": "B"
   },
   {
     "id": "verdash",
@@ -684,6 +714,12 @@
     "zukanIndexSuffix": ""
   },
   {
+    "id": "warsect-terra",
+    "name": "Warsect  Terra",
+    "zukanIndex": 92,
+    "zukanIndexSuffix": "B"
+  },
+  {
     "id": "fenglope",
     "name": "Fenglope",
     "zukanIndex": 93,
@@ -702,16 +738,34 @@
     "zukanIndexSuffix": ""
   },
   {
+    "id": "quivern-botan",
+    "name": "Quivern Botan",
+    "zukanIndex": 95,
+    "zukanIndexSuffix": "B"
+  },
+  {
     "id": "blazamut",
     "name": "Blazamut",
     "zukanIndex": 96,
     "zukanIndexSuffix": ""
   },
   {
+    "id": "blazamut-ryu",
+    "name": "Blazamut Ryu",
+    "zukanIndex": 96,
+    "zukanIndexSuffix": "B"
+  },
+  {
     "id": "helzephyr",
     "name": "Helzephyr",
     "zukanIndex": 97,
     "zukanIndexSuffix": ""
+  },
+  {
+    "id": "helzephyr-lux",
+    "name": "Helzephyr Lux",
+    "zukanIndex": 97,
+    "zukanIndexSuffix": "B"
   },
   {
     "id": "astegon",
@@ -724,6 +778,12 @@
     "name": "Menasting",
     "zukanIndex": 99,
     "zukanIndexSuffix": ""
+  },
+  {
+    "id": "menasting-terra",
+    "name": "Menasting Terra",
+    "zukanIndex": 99,
+    "zukanIndexSuffix": "B"
   },
   {
     "id": "anubis",
@@ -832,5 +892,95 @@
     "name": "Bellanoir Libero",
     "zukanIndex": 112,
     "zukanIndexSuffix": "B"
+  },
+  {
+    "id": "selyne",
+    "name": "Selyne",
+    "zukanIndex": 113,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "croajiro",
+    "name": "Croajiro",
+    "zukanIndex": 114,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "lullu",
+    "name": "Lullu",
+    "zukanIndex": 115,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "shroomer",
+    "name": "Shroomer",
+    "zukanIndex": 116,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "shroomer-noct",
+    "name": "Shroomer Noct",
+    "zukanIndex": 116,
+    "zukanIndexSuffix": "B"
+  },
+  {
+    "id": "kikit",
+    "name": "Kikit",
+    "zukanIndex": 117,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "sootseer",
+    "name": "Sootseer",
+    "zukanIndex": 118,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "prixter",
+    "name": "Prixter",
+    "zukanIndex": 119,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "knocklem",
+    "name": "Knocklem",
+    "zukanIndex": 120,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "yakumo",
+    "name": "Yakumo",
+    "zukanIndex": 121,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "dogen",
+    "name": "Dogen",
+    "zukanIndex": 122,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "dazemu",
+    "name": "Dazemu",
+    "zukanIndex": 123,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "mimog",
+    "name": "Mimog",
+    "zukanIndex": 124,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "xenovader",
+    "name": "Xenovader",
+    "zukanIndex": 125,
+    "zukanIndexSuffix": ""
+  },
+  {
+    "id": "xenogard",
+    "name": "Xenogard",
+    "zukanIndex": 126,
+    "zukanIndexSuffix": ""
   }
 ]
