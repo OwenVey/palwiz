@@ -153,7 +153,7 @@
   {
     "category": "Melee",
     "cooldownTime": 1,
-    "description": "Chikipi's special skill. Flies at enemies in its sights, attacking them with its sharp beak.",
+    "description": "Chikipi's exclusive skill. Flies at enemies in its sights, attacking them with its sharp beak.",
     "effects": [],
     "element": "neutral",
     "id": "chicken-rush",
@@ -181,7 +181,7 @@
   {
     "category": "Melee",
     "cooldownTime": 1,
-    "description": "Lamball's special skill. Curls into a ball, rolling after any enemies in its way. Becomes dizzy and unable to move after the attack ends.",
+    "description": "Lamball's exclusive skill. Curls into a ball, rolling after any enemies in its way. Becomes dizzy and unable to move after the attack ends.",
     "effects": [],
     "element": "neutral",
     "id": "roly-poly",
@@ -195,7 +195,7 @@
   {
     "category": "Melee",
     "cooldownTime": 1,
-    "description": "Cattiva's special skill. Pursues enemies, repeatedly punching them with both its fists.",
+    "description": "Cattiva's exclusive skill. Pursues enemies, repeatedly punching them with both its fists.",
     "effects": [],
     "element": "neutral",
     "id": "punch-flurry",
@@ -223,7 +223,7 @@
   {
     "category": "Melee",
     "cooldownTime": 2,
-    "description": "Direhowl's special skill. Swiftly leaps at an enemy and bites into them.",
+    "description": "Direhowl's exclusive skill. Swiftly leaps at an enemy and bites into them.",
     "effects": [],
     "element": "neutral",
     "id": "fierce-fang",
@@ -256,7 +256,7 @@
   {
     "category": "Melee",
     "cooldownTime": 2,
-    "description": "Rushoar's special skill. Takes aim at a foe and rushes at them with a mad charge.",
+    "description": "Rushoar's exclusive skill. Takes aim at a foe and rushes at them with a mad charge.",
     "effects": [],
     "element": "neutral",
     "id": "reckless-charge",
@@ -779,11 +779,11 @@
       }
     ],
     "element": "ice",
-    "id": "cryst-breath",
+    "id": "crystal-breath",
     "internalId": "FrostBreath",
     "maxRange": 1000,
     "minRange": 100,
-    "name": "Cryst Breath",
+    "name": "Crystal Breath",
     "power": 90,
     "specialAttackRates": []
   },
@@ -809,7 +809,7 @@
   {
     "category": "Melee",
     "cooldownTime": 24,
-    "description": "Frostallion's exclusive skill. Dashes forward while creating frigid air around its wings, using them to slash enemies.",
+    "description": "Frostallion's exclusive skill. Dashes forward while concentrating frigid air around its wings, using them to slash enemies with icy blade.",
     "effects": [
       {
         "name": "Freeze",
@@ -1075,7 +1075,7 @@
   {
     "category": "Melee",
     "cooldownTime": 28,
-    "description": "Faleris's special skill. Covers its body in a tornado of flames before charging forward.",
+    "description": "Faleris's exclusive skill. Covers its body in a tornado of flames before charging forward.",
     "effects": [
       {
         "name": "Burn",
@@ -1203,7 +1203,7 @@
   {
     "category": "Shot",
     "cooldownTime": 13,
-    "description": "Creates two balls of electric energy that fire numerous bolts of lightning at enemies.",
+    "description": "Creates two balls of electric energy that fire numerous lightning orbs at enemies.",
     "effects": [
       {
         "name": "Electrical",
@@ -1211,11 +1211,11 @@
       }
     ],
     "element": "electric",
-    "id": "plasma-tornado",
+    "id": "plasma-funnel",
     "internalId": "ThunderFunnel",
     "maxRange": 9999,
     "minRange": 500,
-    "name": "Plasma Tornado",
+    "name": "Plasma Funnel",
     "power": 65,
     "specialAttackRates": []
   },
@@ -1241,7 +1241,7 @@
   {
     "category": "Melee",
     "cooldownTime": 22,
-    "description": "Grizzbolt's special skill. After leaping at an enemy and tearing at it twice with its electrically charged claws, it attacks the ground, sending an electric shock throughout the area.",
+    "description": "Grizzbolt's exclusive skill. After leaping at an enemy and tearing at it twice with its electrically charged claws, it attacks the ground, sending an electric shock throughout the area.",
     "effects": [
       {
         "name": "Electrical",
@@ -1316,14 +1316,14 @@
   },
   {
     "category": "Melee",
-    "cooldownTime": 30,
+    "cooldownTime": 1,
     "description": "Univolt's exclusive skill. Generates bolts of lightning all around while charging at its target.",
     "effects": [],
     "element": "electric",
     "id": "lightning-tackle",
     "internalId": "Unique_Kirin_LightningTackle",
-    "maxRange": 2500,
-    "minRange": 0,
+    "maxRange": 3000,
+    "minRange": 1000,
     "name": "Lightning Tackle",
     "power": 100,
     "specialAttackRates": []
@@ -1396,11 +1396,11 @@
       }
     ],
     "element": "ground",
-    "id": "sand-blast",
+    "id": "bog-blast",
     "internalId": "MudShot",
     "maxRange": 3000,
     "minRange": 500,
-    "name": "Sand Blast",
+    "name": "Bog Blast",
     "power": 40,
     "specialAttackRates": []
   },
@@ -1501,7 +1501,7 @@
   {
     "category": "Melee",
     "cooldownTime": 21,
-    "description": "Anubis's special skill. Performs a spin kick with its strong legs, cutting down enemies over a wide area.",
+    "description": "Anubis's exclusive skill. Performs a spin kick with its strong legs, cutting down enemies over a wide area.",
     "effects": [],
     "element": "ground",
     "id": "spinning-roundhouse",
@@ -1529,7 +1529,7 @@
   {
     "category": "Melee",
     "cooldownTime": 28,
-    "description": "Anubis's special skill. Pursues its foe with a high speed dash while releasing energy and unleashes a powerful punch.",
+    "description": "Anubis's exclusive skill. Pursues its foe with a high speed dash while releasing energy and unleashes a powerful punch.",
     "effects": [],
     "element": "ground",
     "id": "forceful-charge",
@@ -1543,7 +1543,7 @@
   {
     "category": "Melee",
     "cooldownTime": 35,
-    "description": "Anubis's special skill. Leaps high into the air before diving to the ground with a punch. The force of the impact deals damage over a wide area.",
+    "description": "Anubis's exclusive skill. Leaps high into the air before diving to the ground with a punch. The force of the impact deals damage over a wide area.",
     "effects": [
       {
         "name": "Muddy",
@@ -1652,7 +1652,7 @@
   {
     "category": "Shot",
     "cooldownTime": 50,
-    "description": "Jetragon's exclusive skill. Flies at enemies on illuminated wings while firing innumerable beams. The beams explode on impact.",
+    "description": "Jetragon's exclusive skill. Illuminates its wings and fires innumerable beams as it flies towards the enemy. The beams explode on impact.",
     "effects": [
       {
         "name": "Burn",
@@ -1671,7 +1671,7 @@
   {
     "category": "Shot",
     "cooldownTime": 55,
-    "description": "Calls down numerous small meteorites and launches them at an enemy.",
+    "description": "Summons numerous small meteorites and launches them at an enemy.",
     "effects": [
       {
         "name": "Burn",
@@ -2214,7 +2214,7 @@
   {
     "category": "Melee",
     "cooldownTime": 21,
-    "description": "Dazemu's special skill. Accelerates all at once and rushes forward at high speed.",
+    "description": "Dazemu's exclusive skill. Accelerates all at once and rushes forward at high speed.",
     "effects": [],
     "element": "ground",
     "id": "earth-dash",
@@ -2266,7 +2266,7 @@
   {
     "category": "Melee",
     "cooldownTime": 42,
-    "description": "Blazamut's exclusive skill. After making a big jump, while moving at high speed in the air, gathers strength and unleashes a punch with full might.",
+    "description": "Blazamut Ryu's exclusive skill. After making a big jump, while moving at high speed in the air, gathers strength and unleashes a punch with full might.",
     "effects": [
       {
         "name": "Burn",
@@ -2471,7 +2471,7 @@
     "cooldownTime": 240,
     "description": "Lyleen's exclusive skill. Uses her healing power to recover her health. Doesn't heal anyone else.",
     "effects": [],
-    "element": "neutral",
+    "element": "grass",
     "id": "bountiful-protection",
     "internalId": "Unique_LilyQueen_LilyHealing",
     "maxRange": 9999,
@@ -2933,7 +2933,7 @@
   {
     "category": "Shot",
     "cooldownTime": 45,
-    "description": "Shadowbeak's exclusive skill. As it charges forward, emits countless blue rays that automatically locate and pursue the enemy.",
+    "description": "Shadowbeak's exclusive skill. Charges forward, generating orbs of light that automatically target enemies and unleash a barrage of lasers.",
     "effects": [],
     "element": "dark",
     "id": "divine-disaster-ii",
@@ -2961,7 +2961,7 @@
   {
     "category": "Shot",
     "cooldownTime": 40,
-    "description": "Generates a pillar of ice that moves in a straight line.",
+    "description": "Generates pillars of ice that moves in a straight line.",
     "effects": [
       {
         "name": "Freeze",

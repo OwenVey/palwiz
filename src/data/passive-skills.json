@@ -1783,7 +1783,7 @@
     "rank": 1
   },
   {
-    "description": "When assigned to a Breeding Farm, egg production time is reduced by 100%.",
+    "description": "When assigned to a Breeding Farm, breeding speed is increased by 100%.",
     "effects": [
       {
         "target": "Self",
@@ -1879,7 +1879,7 @@
     "rank": -1
   },
   {
-    "description": "Sale price +5%",
+    "description": "Increases the value of items when sold by +5%",
     "effects": [
       {
         "target": "Self",
@@ -1897,7 +1897,7 @@
     "rank": 3
   },
   {
-    "description": "Sale price +3%",
+    "description": "Increases the value of items when sold by +3%",
     "effects": [
       {
         "target": "Self",

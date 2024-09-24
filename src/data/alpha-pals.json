@@ -121,7 +121,7 @@
         "level": 7
       },
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 15
       },
       {
@@ -444,7 +444,7 @@
         "level": 1
       },
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 7
       },
       {
@@ -666,7 +666,7 @@
         "level": 1
       },
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 7
       },
       {
@@ -771,7 +771,7 @@
         "level": 1
       },
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 7
       },
       {
@@ -1077,7 +1077,7 @@
         "level": 15
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 22
       },
       {
@@ -1301,7 +1301,7 @@
         "level": 30
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 40
       },
       {
@@ -1386,7 +1386,7 @@
   {
     "activeSkills": [
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 1
       },
       {
@@ -1501,7 +1501,7 @@
         "level": 1
       },
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 7
       },
       {
@@ -1727,7 +1727,7 @@
         "level": 7
       },
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 15
       },
       {
@@ -1828,7 +1828,7 @@
         "level": 1
       },
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 7
       },
       {
@@ -2017,7 +2017,7 @@
         "level": 15
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 22
       },
       {
@@ -2120,7 +2120,7 @@
         "level": 1
       },
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 7
       },
       {
@@ -2338,7 +2338,7 @@
   {
     "activeSkills": [
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 1
       },
       {
@@ -2554,7 +2554,7 @@
   {
     "activeSkills": [
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 1
       },
       {
@@ -2667,7 +2667,7 @@
         "level": 7
       },
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 15
       },
       {
@@ -2679,7 +2679,7 @@
         "level": 30
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 40
       },
       {
@@ -2879,7 +2879,7 @@
         "level": 1
       },
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 7
       },
       {
@@ -3212,7 +3212,7 @@
         "level": 1
       },
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 7
       },
       {
@@ -3640,7 +3640,7 @@
   {
     "activeSkills": [
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 1
       },
       {
@@ -3765,7 +3765,7 @@
         "level": 30
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 40
       },
       {
@@ -4082,7 +4082,7 @@
         "level": 1
       },
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 7
       },
       {
@@ -4197,7 +4197,7 @@
         "level": 7
       },
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 15
       },
       {
@@ -4308,7 +4308,7 @@
         "level": 7
       },
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 15
       },
       {
@@ -5821,7 +5821,7 @@
         "level": 7
       },
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 15
       },
       {
@@ -6035,7 +6035,7 @@
   {
     "activeSkills": [
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 1
       },
       {
@@ -6146,7 +6146,7 @@
   {
     "activeSkills": [
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 1
       },
       {
@@ -6261,7 +6261,7 @@
         "level": 1
       },
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 7
       },
       {
@@ -6572,7 +6572,7 @@
   {
     "activeSkills": [
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 1
       },
       {
@@ -6697,7 +6697,7 @@
         "level": 30
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 40
       },
       {
@@ -6804,7 +6804,7 @@
         "level": 22
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 30
       },
       {
@@ -6917,7 +6917,7 @@
         "level": 30
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 40
       },
       {
@@ -7300,7 +7300,7 @@
   {
     "activeSkills": [
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 1
       },
       {
@@ -7542,7 +7542,7 @@
         "level": 30
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 40
       },
       {
@@ -7633,7 +7633,7 @@
   {
     "activeSkills": [
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 1
       },
       {
@@ -7972,7 +7972,7 @@
         "level": 15
       },
       {
-        "id": "plasma-tornado",
+        "id": "plasma-funnel",
         "level": 22
       },
       {
@@ -8174,7 +8174,7 @@
         "level": 1
       },
       {
-        "id": "plasma-tornado",
+        "id": "plasma-funnel",
         "level": 7
       },
       {
@@ -8380,7 +8380,7 @@
   {
     "activeSkills": [
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 1
       },
       {
@@ -9134,7 +9134,7 @@
         "level": 15
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 22
       },
       {
@@ -10337,7 +10337,7 @@
         "level": 15
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 22
       },
       {
@@ -10993,7 +10993,7 @@
         "level": 30
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 40
       },
       {
@@ -11514,7 +11514,7 @@
         "level": 1
       },
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 7
       },
       {
@@ -11954,7 +11954,7 @@
         "level": 15
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 22
       },
       {
@@ -12047,7 +12047,7 @@
   {
     "activeSkills": [
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 1
       },
       {
@@ -12168,7 +12168,7 @@
         "level": 22
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 30
       },
       {
@@ -12263,7 +12263,7 @@
   {
     "activeSkills": [
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 1
       },
       {
@@ -12394,7 +12394,7 @@
         "level": 30
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 40
       },
       {
@@ -12501,7 +12501,7 @@
         "level": 22
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 30
       },
       {
@@ -13867,7 +13867,7 @@
   {
     "activeSkills": [
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 1
       },
       {
@@ -13982,7 +13982,7 @@
   {
     "activeSkills": [
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 1
       },
       {
@@ -14531,7 +14531,7 @@
         "level": 15
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 22
       },
       {
@@ -14866,7 +14866,7 @@
         "level": 15
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 22
       },
       {
@@ -15540,7 +15540,7 @@
         "level": 30
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 40
       },
       {
@@ -16548,7 +16548,7 @@
         "level": 1
       },
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 7
       },
       {
@@ -16927,13 +16927,13 @@
     ],
     "elementType1": "ground",
     "elementType2": null,
-    "foodAmount": 7,
+    "foodAmount": 9,
     "hp": 126,
     "id": "knocklem",
     "internalName": "BOSS_WingGolem",
     "isBoss": true,
     "maleProbability": 50,
-    "maxFullStomach": 475,
+    "maxFullStomach": 600,
     "meleeAttack": 100,
     "name": "Knocklem",
     "partnerSkill": null,
@@ -16970,7 +16970,7 @@
   {
     "activeSkills": [
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 1
       },
       {
@@ -17032,7 +17032,7 @@
     ],
     "elementType1": "neutral",
     "elementType2": null,
-    "foodAmount": 5,
+    "foodAmount": 3,
     "hp": 102,
     "id": "yakumo",
     "internalName": "BOSS_GuardianDog",
@@ -17180,7 +17180,7 @@
   {
     "activeSkills": [
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 1
       },
       {

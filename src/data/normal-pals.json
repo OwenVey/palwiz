@@ -107,7 +107,7 @@
         "level": 7
       },
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 15
       },
       {
@@ -388,7 +388,7 @@
         "level": 1
       },
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 7
       },
       {
@@ -582,7 +582,7 @@
         "level": 1
       },
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 7
       },
       {
@@ -673,7 +673,7 @@
         "level": 1
       },
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 7
       },
       {
@@ -966,7 +966,7 @@
         "level": 15
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 22
       },
       {
@@ -1162,7 +1162,7 @@
         "level": 30
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 40
       },
       {
@@ -1233,7 +1233,7 @@
   {
     "activeSkills": [
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 1
       },
       {
@@ -1334,7 +1334,7 @@
         "level": 1
       },
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 7
       },
       {
@@ -1532,7 +1532,7 @@
         "level": 7
       },
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 15
       },
       {
@@ -1619,7 +1619,7 @@
         "level": 1
       },
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 7
       },
       {
@@ -1648,7 +1648,7 @@
     "combiRank": 1380,
     "craftSpeed": 100,
     "defense": 70,
-    "description": "It has few friends because of the perpetually grouchy look on its face, but it is in fact kindhearted. Some have seen it feeding Vixywho have strayed from their pack.",
+    "description": "It has few friends because of the perpetually grouchy look on its face, but it is in fact kindhearted. Some have seen it feeding Vixy who have strayed from their pack.",
     "drops": [
       {
         "id": "venom-gland",
@@ -1710,7 +1710,7 @@
         "level": 1
       },
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 7
       },
       {
@@ -1809,7 +1809,7 @@
         "level": 15
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 22
       },
       {
@@ -1898,7 +1898,7 @@
         "level": 1
       },
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 7
       },
       {
@@ -2094,7 +2094,7 @@
   {
     "activeSkills": [
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 1
       },
       {
@@ -2282,7 +2282,7 @@
   {
     "activeSkills": [
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 1
       },
       {
@@ -2381,7 +2381,7 @@
         "level": 7
       },
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 15
       },
       {
@@ -2393,7 +2393,7 @@
         "level": 30
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 40
       },
       {
@@ -2565,7 +2565,7 @@
         "level": 1
       },
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 7
       },
       {
@@ -2862,7 +2862,7 @@
         "level": 1
       },
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 7
       },
       {
@@ -3234,7 +3234,7 @@
   {
     "activeSkills": [
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 1
       },
       {
@@ -3345,7 +3345,7 @@
         "level": 30
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 40
       },
       {
@@ -3632,7 +3632,7 @@
         "level": 1
       },
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 7
       },
       {
@@ -3733,7 +3733,7 @@
         "level": 7
       },
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 15
       },
       {
@@ -3836,7 +3836,7 @@
         "level": 7
       },
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 15
       },
       {
@@ -5195,7 +5195,7 @@
         "level": 7
       },
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 15
       },
       {
@@ -5381,7 +5381,7 @@
   {
     "activeSkills": [
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 1
       },
       {
@@ -5478,7 +5478,7 @@
   {
     "activeSkills": [
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 1
       },
       {
@@ -5579,7 +5579,7 @@
         "level": 1
       },
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 7
       },
       {
@@ -5860,7 +5860,7 @@
   {
     "activeSkills": [
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 1
       },
       {
@@ -5971,7 +5971,7 @@
         "level": 30
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 40
       },
       {
@@ -6064,7 +6064,7 @@
         "level": 22
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 30
       },
       {
@@ -6163,7 +6163,7 @@
         "level": 30
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 40
       },
       {
@@ -6267,7 +6267,7 @@
     "combiRank": 790,
     "craftSpeed": 100,
     "defense": 80,
-    "description": "When curled up it spins so fast that sparks fly. Sparks also fly when it feels excited. If you stroke it too much, sparks fly!",
+    "description": "It can curl up its body and roll around so fast that sparks fly. Sparks also fly when it feels excited. If you stroke it too much, this pal will get fired up, literally!",
     "drops": [
       {
         "id": "leather",
@@ -6454,7 +6454,7 @@
         "level": 30
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 40
       },
       {
@@ -6531,7 +6531,7 @@
   {
     "activeSkills": [
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 1
       },
       {
@@ -6745,7 +6745,7 @@
         "level": 30
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 40
       },
       {
@@ -6834,7 +6834,7 @@
   {
     "activeSkills": [
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 1
       },
       {
@@ -7131,7 +7131,7 @@
         "level": 15
       },
       {
-        "id": "plasma-tornado",
+        "id": "plasma-funnel",
         "level": 22
       },
       {
@@ -7305,7 +7305,7 @@
         "level": 1
       },
       {
-        "id": "plasma-tornado",
+        "id": "plasma-funnel",
         "level": 7
       },
       {
@@ -7483,7 +7483,7 @@
   {
     "activeSkills": [
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 1
       },
       {
@@ -7710,7 +7710,7 @@
     "combiRank": 850,
     "craftSpeed": 100,
     "defense": 120,
-    "description": "A walking contradiction, possessing the strongest shell and the only drill capable of piercing it. |Digtoise's Fable| is a popular children's tale.",
+    "description": "A Digtoise possessing the strongest shell and the only drill capable of piercing it, ponders the contradictions of the world in the popular children's tale, |Digtoise's Fable|.",
     "drops": [
       {
         "id": "ore",
@@ -8198,7 +8198,7 @@
         "level": 15
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 22
       },
       {
@@ -9277,7 +9277,7 @@
         "level": 15
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 22
       },
       {
@@ -9849,7 +9849,7 @@
         "level": 30
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 40
       },
       {
@@ -10306,7 +10306,7 @@
         "level": 1
       },
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 7
       },
       {
@@ -10690,7 +10690,7 @@
         "level": 15
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 22
       },
       {
@@ -10769,7 +10769,7 @@
   {
     "activeSkills": [
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 1
       },
       {
@@ -10876,7 +10876,7 @@
         "level": 22
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 30
       },
       {
@@ -10957,7 +10957,7 @@
   {
     "activeSkills": [
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 1
       },
       {
@@ -11080,7 +11080,7 @@
         "level": 30
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 40
       },
       {
@@ -11093,7 +11093,7 @@
     "combiRank": 290,
     "craftSpeed": 100,
     "defense": 90,
-    "description": "The vegetation on its back varies from individual to individual. There was a time when seeds of presumed extinct plants were found still frozen on the back of a Mammorest Cryst.",
+    "description": "The vegetation on its back varies between individuals. There was a time when seeds of presumed extinct plants were found still frozen on the back of a Mammorest Cryst.",
     "drops": [
       {
         "id": "high-quality-pal-oil",
@@ -11179,7 +11179,7 @@
         "level": 22
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 30
       },
       {
@@ -12395,7 +12395,7 @@
   {
     "activeSkills": [
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 1
       },
       {
@@ -12496,7 +12496,7 @@
   {
     "activeSkills": [
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 1
       },
       {
@@ -12529,7 +12529,7 @@
     "combiRank": 250,
     "craftSpeed": 100,
     "defense": 130,
-    "description": "The main body is an entity made of energy, with nothing inside. It stuffs earth and minerals into its outer shell, achieving overwhelming mass. Those who are struck by it can only let out hellish groans.",
+    "description": "Being made of pure energy, its insides are completely hollow. It stuffs earth and minerals into its outer shell, achieving overwhelming mass. Those who are struck by it can only let out hellish groans.",
     "drops": [
       {
         "id": "crude-oil",
@@ -12987,7 +12987,7 @@
         "level": 15
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 22
       },
       {
@@ -13286,7 +13286,7 @@
         "level": 15
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 22
       },
       {
@@ -13888,7 +13888,7 @@
         "level": 30
       },
       {
-        "id": "cryst-breath",
+        "id": "crystal-breath",
         "level": 40
       },
       {
@@ -14405,7 +14405,7 @@
     "meleeAttack": 100,
     "name": "Selyne",
     "partnerSkill": {
-      "description": "Can be ridden as a flying mount. Enhances Fire and Dark attacks while mounted.",
+      "description": "Can be ridden as a flying mount. Enhances Neutral and Dark attacks while mounted.",
       "group": "Flying Mount",
       "name": "Celestial Darkness"
     },
@@ -14834,7 +14834,7 @@
         "level": 1
       },
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 7
       },
       {
@@ -14863,7 +14863,7 @@
     "combiRank": 1125,
     "craftSpeed": 100,
     "defense": 90,
-    "description": "A decade ago, Kikit soccer was popular. However, it quickly fell out of favor due to fierce opposition from the Free Pal Alliance. Nevertheless, the Kikits themselves didn't mind because it helped shed their old carapace.",
+    "description": "A decade ago, Kikit soccer was popular. However, it quickly fell out of favor due to fierce opposition from the Free Pal Alliance. Nevertheless, the Kikit's themselves didn't mind because it helped shed their old carapace.",
     "drops": [
       {
         "id": "leather",
@@ -15160,7 +15160,7 @@
     "combiRank": 265,
     "craftSpeed": 100,
     "defense": 135,
-    "description": "Can be disassembled into 215 parts, and even if the parts are scattered, it will reassemble itself and start moving again. If parts from different individuals are mixed it will manfunction due to mistaken identity.",
+    "description": "Can be disassembled into 215 parts, and even if the parts are scattered, it will reassemble itself and start moving again. If parts from different individuals are mixed it will malfunction due to mistaken identity.",
     "drops": [
       {
         "id": "ore",
@@ -15218,7 +15218,7 @@
   {
     "activeSkills": [
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 1
       },
       {
@@ -15400,7 +15400,7 @@
   {
     "activeSkills": [
       {
-        "id": "sand-blast",
+        "id": "bog-blast",
         "level": 1
       },
       {
